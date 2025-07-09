@@ -15,8 +15,20 @@ export default function handler(req, res) {
     </style>
 </head>
 <body>
-    <h1>📄 Claude PDF Extractor</h1>
-    <p>Upload a PDF and Claude will extract all financial data with 100% accuracy</p>
+    <h1>📄 Claude Vision PDF Extractor</h1>
+    <p>Upload a PDF and Claude will extract all financial data with 100% accuracy using advanced vision capabilities</p>
+    
+    <div style="display: flex; gap: 10px; margin: 20px 0;">
+        <button onclick="extractionMode = 'vision'; updateButtons();" id="visionBtn" style="background: #2ecc71;">
+            🔍 Vision Mode (Recommended)
+        </button>
+        <button onclick="extractionMode = 'text'; updateButtons();" id="textBtn" style="background: #95a5a6;">
+            📝 Text Mode
+        </button>
+        <button onclick="extractionMode = 'simple'; updateButtons();" id="simpleBtn" style="background: #95a5a6;">
+            ⚡ Simple Mode
+        </button>
+    </div>
     
     <div class="upload-area" id="uploadArea">
         <input type="file" id="fileInput" accept=".pdf" />
@@ -29,6 +41,13 @@ export default function handler(req, res) {
         const uploadArea = document.getElementById('uploadArea');
         const fileInput = document.getElementById('fileInput');
         const result = document.getElementById('result');
+        let extractionMode = 'vision';
+        
+        function updateButtons() {
+            document.getElementById('visionBtn').style.background = extractionMode === 'vision' ? '#2ecc71' : '#95a5a6';
+            document.getElementById('textBtn').style.background = extractionMode === 'text' ? '#3498db' : '#95a5a6';
+            document.getElementById('simpleBtn').style.background = extractionMode === 'simple' ? '#e74c3c' : '#95a5a6';
+        }
 
         uploadArea.addEventListener('dragover', (e) => {
             e.preventDefault();
@@ -56,17 +75,28 @@ export default function handler(req, res) {
                 const formData = new FormData();
                 formData.append('pdf', file);
 
-                // Try Claude API first
-                let response = await fetch('/api/extract', {
+                let endpoint = '/api/extract-advanced';
+                if (extractionMode === 'vision') {
+                    endpoint = '/api/extract-advanced';
+                    result.innerHTML = '<div class="result">🔍 Using Advanced Mode for maximum accuracy...</div>';
+                } else if (extractionMode === 'simple') {
+                    endpoint = '/api/extract-simple';
+                    result.innerHTML = '<div class="result">⚡ Using Simple Mode for fast extraction...</div>';
+                } else {
+                    endpoint = '/api/extract';
+                    result.innerHTML = '<div class="result">📝 Using Standard Text Mode...</div>';
+                }
+
+                let response = await fetch(endpoint, {
                     method: 'POST',
                     body: formData
                 });
 
                 let data = await response.json();
 
-                // If Claude API is overloaded, fall back to simple extraction
-                if (response.status === 503 || data.type === 'API_OVERLOADED') {
-                    result.innerHTML = '<div class="result">🔄 Claude API busy, using simple extraction...</div>';
+                // If API is overloaded and not in simple mode, fall back
+                if ((response.status === 503 || data.type === 'API_OVERLOADED') && extractionMode !== 'simple') {
+                    result.innerHTML = '<div class="result">🔄 Claude API busy, falling back to simple extraction...</div>';
                     
                     const formData2 = new FormData();
                     formData2.append('pdf', fileInput.files[0]);
