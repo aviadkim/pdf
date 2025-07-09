@@ -1,0 +1,19 @@
+{
+  "name": "claude-pdf-vercel",
+  "version": "1.0.0",
+  "description": "Claude Vision PDF extractor for Vercel",
+  "main": "api/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build needed'"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1",
+    "formidable": "^3.5.1",
+    "@anthropic-ai/sdk": "^0.24.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
