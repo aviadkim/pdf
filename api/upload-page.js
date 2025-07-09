@@ -42,7 +42,7 @@ export default function handler(req, res) {
                 reader.onload = async function(e) {
                     const base64 = e.target.result.split(',')[1];
                     
-                    const response = await fetch('/api/upload-base64', {
+                    const response = await fetch('/api/working-extract', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({
