@@ -133,6 +133,18 @@ export default function handler(req, res) {
             <div class="upload-section" id="uploadArea">
                 <p>📄 Upload your PDF document</p>
                 <input type="file" id="pdfInput" accept=".pdf" />
+                <div style="margin: 10px 0;">
+                    <label for="scaleSelect">Image Quality: </label>
+                    <select id="scaleSelect" style="padding: 5px; margin-left: 10px;">
+                        <option value="3">High Quality (3x scale)</option>
+                        <option value="2" selected>Standard Quality (2x scale)</option>
+                        <option value="1.5">Medium Quality (1.5x scale)</option>
+                        <option value="1">Low Quality (1x scale)</option>
+                    </select>
+                    <p style="font-size: 12px; color: #666; margin-top: 5px;">
+                        📄 For large PDFs (10+ pages), use Medium or Low quality to avoid size limits
+                    </p>
+                </div>
                 <button onclick="convertPDFToImage()">Convert to Image</button>
             </div>
         </div>
@@ -206,7 +218,7 @@ export default function handler(req, res) {
                 result.innerHTML = \`<div class="loading">📄 Found \${totalPages} pages. Converting all pages...</div>\`;
                 
                 // Convert all pages to images
-                const scale = 2; // Higher scale for better quality
+                const scale = parseFloat(document.getElementById('scaleSelect').value);
                 const allPagesCanvas = document.createElement('canvas');
                 const allPagesContext = allPagesCanvas.getContext('2d');
                 
@@ -257,13 +269,28 @@ export default function handler(req, res) {
                 // Convert to base64
                 convertedImageBase64 = allPagesCanvas.toDataURL('image/png').split(',')[1];
                 
+                // Calculate size info
+                const imageSizeKB = Math.round((convertedImageBase64.length * 0.75) / 1024);
+                const imageSizeMB = Math.round(imageSizeKB / 1024 * 100) / 100;
+                
                 // Show preview
                 const imagePreview = document.getElementById('imagePreview');
+                const sizeWarning = imageSizeMB > 5 ? 
+                    \`<div style="background: #ffebee; padding: 10px; border-radius: 5px; margin: 10px 0; color: #c62828;">
+                        ⚠️ Image size (\${imageSizeMB}MB) exceeds recommended limit (5MB). Consider using lower quality.
+                    </div>\` : 
+                    \`<div style="background: #e8f5e8; padding: 10px; border-radius: 5px; margin: 10px 0; color: #2e7d32;">
+                        ✅ Image size (\${imageSizeMB}MB) is within limits.
+                    </div>\`;
+                    
                 imagePreview.innerHTML = \`
                     <img src="data:image/png;base64,\${convertedImageBase64}" class="preview-image" alt="PDF Preview - All \${totalPages} Pages">
                     <p>✅ PDF converted to image successfully!</p>
                     <p><strong>Pages converted:</strong> \${totalPages}</p>
+                    <p><strong>Image size:</strong> \${imageSizeMB}MB (\${imageSizeKB}KB)</p>
                     <p><strong>Total height:</strong> \${totalHeight}px</p>
+                    <p><strong>Scale used:</strong> \${scale}x</p>
+                    \${sizeWarning}
                 \`;
                 
                 document.getElementById('convertSection').style.display = 'block';
@@ -324,14 +351,26 @@ export default function handler(req, res) {
             try {
                 result.innerHTML = '<div class="loading">🔍 Claude is analyzing your document with vision API...</div>';
                 
-                const response = await fetch('/api/vision-extract', {
+                // Calculate image size before sending
+                const imageSizeKB = Math.round((convertedImageBase64.length * 0.75) / 1024);
+                const imageSizeMB = Math.round(imageSizeKB / 1024 * 100) / 100;
+                
+                result.innerHTML = \`<div class="loading">🔍 Claude is analyzing your document (\${imageSizeMB}MB image)...</div>\`;
+                
+                const response = await fetch('/api/smart-vision-extract', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
                         imageBase64: convertedImageBase64,
-                        filename: pdfInput.files[0]?.name || 'document.pdf'
+                        filename: pdfInput.files[0]?.name || 'document.pdf',
+                        imageInfo: {
+                            totalPages: document.getElementById('imagePreview').innerHTML.includes('Pages converted:') ? 
+                                parseInt(document.getElementById('imagePreview').innerHTML.match(/Pages converted:<\/strong>\s*(\d+)/)?.[1]) : 1,
+                            sizeKB: imageSizeKB,
+                            sizeMB: imageSizeMB
+                        }
                     })
                 });
 
@@ -373,14 +412,51 @@ export default function handler(req, res) {
                         </div>
                     \`;
                 } else {
-                    result.innerHTML = \`
+                    let errorContent = \`
                         <div class="result error">
                             <h3>❌ Extraction Failed</h3>
                             <p><strong>Error:</strong> \${data.error}</p>
                             <p><strong>Details:</strong> \${data.details || 'No additional details'}</p>
-                            \${data.retry ? '<p>Please try again in a few moments.</p>' : ''}
+                    \`;
+                    
+                    // Handle specific error types
+                    if (data.error === 'Image too large' || data.type === 'REQUEST_TOO_LARGE') {
+                        errorContent += \`
+                            <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+                                <h4>💡 Solutions for Large PDFs:</h4>
+                                <ul>
+                                    <li>Try uploading fewer pages at once</li>
+                                    <li>Use lower quality PDF conversion</li>
+                                    <li>Consider splitting the PDF into smaller sections</li>
+                                </ul>
+                            </div>
+                        \`;
+                        
+                        if (data.imageSize) {
+                            errorContent += \`
+                                <p><strong>Image Size:</strong> \${data.imageSize.sizeMB}MB (\${data.imageSize.sizeKB}KB)</p>
+                                <p><strong>Maximum Supported:</strong> ~5MB</p>
+                            \`;
+                        }
+                    }
+                    
+                    if (data.suggestions) {
+                        errorContent += \`
+                            <div style="background: #e8f5e8; padding: 15px; border-radius: 5px; margin: 10px 0;">
+                                <h4>📝 Suggestions:</h4>
+                                <ul>
+                                    \${data.suggestions.map(s => \`<li>\${s}</li>\`).join('')}
+                                </ul>
+                            </div>
+                        \`;
+                    }
+                    
+                    errorContent += \`
+                            \${data.retry ? '<p><strong>⏳ This is a temporary issue.</strong> Please try again in a few moments.</p>' : ''}
                         </div>
                     \`;
+                    
+                    result.innerHTML = errorContent;
                 }
             } catch (error) {
                 result.innerHTML = \`
