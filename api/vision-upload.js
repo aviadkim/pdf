@@ -200,34 +200,75 @@ export default function handler(req, res) {
                 
                 const arrayBuffer = await file.arrayBuffer();
                 const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
-                const page = await pdf.getPage(1); // Get first page
                 
+                // Get total pages
+                const totalPages = pdf.numPages;
+                result.innerHTML = \`<div class="loading">📄 Found \${totalPages} pages. Converting all pages...</div>\`;
+                
+                // Convert all pages to images
                 const scale = 2; // Higher scale for better quality
-                const viewport = page.getViewport({ scale });
+                const allPagesCanvas = document.createElement('canvas');
+                const allPagesContext = allPagesCanvas.getContext('2d');
                 
-                const canvas = document.createElement('canvas');
-                const context = canvas.getContext('2d');
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
+                // Calculate total height needed
+                let totalHeight = 0;
+                let maxWidth = 0;
+                const pageHeights = [];
                 
-                await page.render({
-                    canvasContext: context,
-                    viewport: viewport
-                }).promise;
+                // First pass: calculate dimensions
+                for (let i = 1; i <= totalPages; i++) {
+                    const page = await pdf.getPage(i);
+                    const viewport = page.getViewport({ scale });
+                    pageHeights.push(viewport.height);
+                    totalHeight += viewport.height;
+                    maxWidth = Math.max(maxWidth, viewport.width);
+                }
+                
+                // Set canvas size for all pages
+                allPagesCanvas.width = maxWidth;
+                allPagesCanvas.height = totalHeight;
+                
+                // Second pass: render all pages
+                let currentY = 0;
+                for (let i = 1; i <= totalPages; i++) {
+                    const page = await pdf.getPage(i);
+                    const viewport = page.getViewport({ scale });
+                    
+                    // Create temporary canvas for this page
+                    const tempCanvas = document.createElement('canvas');
+                    const tempContext = tempCanvas.getContext('2d');
+                    tempCanvas.width = viewport.width;
+                    tempCanvas.height = viewport.height;
+                    
+                    // Render page to temporary canvas
+                    await page.render({
+                        canvasContext: tempContext,
+                        viewport: viewport
+                    }).promise;
+                    
+                    // Copy to main canvas
+                    allPagesContext.drawImage(tempCanvas, 0, currentY);
+                    currentY += viewport.height;
+                    
+                    // Update progress
+                    result.innerHTML = \`<div class="loading">📄 Converting page \${i} of \${totalPages}...</div>\`;
+                }
                 
                 // Convert to base64
-                convertedImageBase64 = canvas.toDataURL('image/png').split(',')[1];
+                convertedImageBase64 = allPagesCanvas.toDataURL('image/png').split(',')[1];
                 
                 // Show preview
                 const imagePreview = document.getElementById('imagePreview');
                 imagePreview.innerHTML = \`
-                    <img src="data:image/png;base64,\${convertedImageBase64}" class="preview-image" alt="PDF Preview">
+                    <img src="data:image/png;base64,\${convertedImageBase64}" class="preview-image" alt="PDF Preview - All \${totalPages} Pages">
                     <p>✅ PDF converted to image successfully!</p>
+                    <p><strong>Pages converted:</strong> \${totalPages}</p>
+                    <p><strong>Total height:</strong> \${totalHeight}px</p>
                 \`;
                 
                 document.getElementById('convertSection').style.display = 'block';
                 document.getElementById('manualStep').style.display = 'block';
-                result.innerHTML = '<div class="result success">✅ PDF converted! Now click "Extract Data with Claude Vision"</div>';
+                result.innerHTML = \`<div class="result success">✅ All \${totalPages} pages converted! Now click "Extract Data with Claude Vision"</div>\`;
                 
             } catch (error) {
                 console.error('PDF conversion error:', error);
