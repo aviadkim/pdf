@@ -56,12 +56,28 @@ export default function handler(req, res) {
                 const formData = new FormData();
                 formData.append('pdf', file);
 
-                const response = await fetch('/api/extract', {
+                // Try Claude API first
+                let response = await fetch('/api/extract', {
                     method: 'POST',
                     body: formData
                 });
 
-                const data = await response.json();
+                let data = await response.json();
+
+                // If Claude API is overloaded, fall back to simple extraction
+                if (response.status === 503 || data.type === 'API_OVERLOADED') {
+                    result.innerHTML = '<div class="result">🔄 Claude API busy, using simple extraction...</div>';
+                    
+                    const formData2 = new FormData();
+                    formData2.append('pdf', fileInput.files[0]);
+                    
+                    response = await fetch('/api/extract-simple', {
+                        method: 'POST',
+                        body: formData2
+                    });
+                    
+                    data = await response.json();
+                }
 
                 if (response.ok) {
                     result.innerHTML = \`
@@ -75,6 +91,7 @@ export default function handler(req, res) {
                         <div class="result">
                             <h3>❌ Error</h3>
                             <p>\${data.error}</p>
+                            <p>\${data.details || ''}</p>
                         </div>
                     \`;
                 }
