@@ -171,9 +171,30 @@ Extract EVERY piece of financial data. Be thorough and accurate.
 
   } catch (error) {
     console.error('Extraction error:', error);
+    
+    // Handle specific error types
+    if (error.message?.includes('formidable')) {
+      return res.status(500).json({
+        error: 'File upload error',
+        details: error.message,
+        type: 'UPLOAD_ERROR'
+      });
+    }
+    
+    if (error.message?.includes('Anthropic')) {
+      return res.status(500).json({
+        error: 'Claude API error',
+        details: error.message,
+        type: 'API_ERROR'
+      });
+    }
+    
+    // Generic error
     return res.status(500).json({
       error: 'PDF extraction failed',
-      details: error.message,
+      details: error.message || 'Unknown error occurred',
+      type: error.constructor.name,
+      stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
     });
   }
 }
