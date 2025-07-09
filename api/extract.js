@@ -130,12 +130,35 @@ Extract EVERY piece of financial data. Be thorough and accurate.
 
     const startTime = Date.now();
     
-    const response = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
-      max_tokens: 4000,
-      temperature: 0,
-      messages: [{ role: 'user', content: extractionPrompt }],
-    });
+    // Try API call with retry logic
+    let response;
+    let retries = 3;
+    let lastError;
+    
+    while (retries > 0) {
+      try {
+        response = await anthropic.messages.create({
+          model: 'claude-3-5-sonnet-20241022',
+          max_tokens: 4000,
+          temperature: 0,
+          messages: [{ role: 'user', content: extractionPrompt }],
+        });
+        break; // Success, exit loop
+      } catch (error) {
+        lastError = error;
+        if (error.message?.includes('overloaded') && retries > 1) {
+          console.log(`API overloaded, retrying... (${retries - 1} attempts left)`);
+          await new Promise(resolve => setTimeout(resolve, 2000)); // Wait 2 seconds
+          retries--;
+        } else {
+          throw error; // Re-throw if not overloaded or no retries left
+        }
+      }
+    }
+    
+    if (!response) {
+      throw lastError || new Error('Failed to get response from Claude API');
+    }
 
     const processingTime = Date.now() - startTime;
     const extractedText = response.content[0].text;
@@ -181,11 +204,12 @@ Extract EVERY piece of financial data. Be thorough and accurate.
       });
     }
     
-    if (error.message?.includes('Anthropic')) {
-      return res.status(500).json({
-        error: 'Claude API error',
-        details: error.message,
-        type: 'API_ERROR'
+    if (error.message?.includes('Anthropic') || error.message?.includes('overloaded')) {
+      return res.status(503).json({
+        error: 'Claude API temporarily unavailable',
+        details: 'The AI service is currently overloaded. Please try again in a few moments.',
+        type: 'API_OVERLOADED',
+        retry: true
       });
     }
     
