@@ -9,9 +9,19 @@ export const config = {
   },
 };
 
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
+// Initialize Anthropic with error handling
+let anthropic;
+try {
+  if (!process.env.ANTHROPIC_API_KEY) {
+    console.error('ANTHROPIC_API_KEY is not set');
+  } else {
+    anthropic = new Anthropic({
+      apiKey: process.env.ANTHROPIC_API_KEY,
+    });
+  }
+} catch (error) {
+  console.error('Failed to initialize Anthropic:', error);
+}
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -28,6 +38,15 @@ export default async function handler(req, res) {
   }
 
   try {
+    // Check if API key is configured
+    if (!anthropic) {
+      return res.status(500).json({ 
+        error: 'API not configured',
+        details: 'ANTHROPIC_API_KEY is missing. Please add it in Vercel Environment Variables.',
+        help: 'Go to Vercel Dashboard > Settings > Environment Variables'
+      });
+    }
+
     const form = formidable({
       maxFileSize: 10 * 1024 * 1024, // 10MB
       filter: ({ name, originalFilename, mimetype }) => {
