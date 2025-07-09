@@ -75,16 +75,16 @@ export default function handler(req, res) {
                 const formData = new FormData();
                 formData.append('pdf', file);
 
-                let endpoint = '/api/extract-fixed';
+                let endpoint = '/api/extract-basic';
                 if (extractionMode === 'vision') {
-                    endpoint = '/api/extract-fixed';
-                    result.innerHTML = '<div class="result">🔍 Using Fixed Advanced Mode for maximum accuracy...</div>';
+                    endpoint = '/api/extract-basic';
+                    result.innerHTML = '<div class="result">🔍 Using Basic Claude Mode...</div>';
                 } else if (extractionMode === 'simple') {
-                    endpoint = '/api/extract-simple';
-                    result.innerHTML = '<div class="result">⚡ Using Simple Mode for fast extraction...</div>';
+                    endpoint = '/api/extract-basic';
+                    result.innerHTML = '<div class="result">⚡ Using Basic Pattern Mode...</div>';
                 } else {
-                    endpoint = '/api/extract-fixed';
-                    result.innerHTML = '<div class="result">📝 Using Fixed Text Mode...</div>';
+                    endpoint = '/api/extract-basic';
+                    result.innerHTML = '<div class="result">📝 Using Basic Text Mode...</div>';
                 }
 
                 let response = await fetch(endpoint, {
