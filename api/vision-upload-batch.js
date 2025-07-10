@@ -366,22 +366,152 @@ export default function handler(req, res) {
                     updateBatchStatus(\`Batch \${batchIndex + 1}: Pages \${startPage}-\${endPage} (\${batchSizeMB}MB) ✅\`);
                 }
                 
-                // Now send all batches to the API
-                updateBatchStatus('All batches prepared. Sending to Claude Vision API for extraction...');
+                // Process batches sequentially (one at a time)
+                updateBatchStatus('All batches prepared. Processing each batch sequentially...');
                 
-                const response = await fetch('/api/batch-vision-extract', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        imageBatches: batches,
-                        filename: file.name,
-                        totalPages: totalPages
-                    })
+                const batchResults = [];
+                const allHoldings = [];
+                const assetCategories = {};
+                let portfolioInfo = null;
+                let totalValue = 0;
+                
+                for (let i = 0; i < batches.length; i++) {
+                    const batch = batches[i];
+                    updateProgress(i, batches.length, \`Processing batch \${i + 1} of \${batches.length}...\`);
+                    updateBatchStatus(\`Sending batch \${i + 1} to Claude Vision API...\`);
+                    
+                    try {
+                        const response = await fetch('/api/single-batch-extract', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                imageBase64: batch.imageBase64,
+                                startPage: batch.startPage,
+                                endPage: batch.endPage,
+                                batchNumber: i + 1,
+                                totalBatches: batches.length,
+                                filename: file.name,
+                                totalPages: totalPages
+                            })
+                        });
+
+                        const batchData = await response.json();
+                        
+                        if (response.ok) {
+                            batchResults.push(batchData);
+                            updateBatchStatus(\`✅ Batch \${i + 1} completed - Found \${batchData.data?.holdings?.length || 0} holdings\`);
+                            
+                            // Merge results
+                            if (batchData.data && !batchData.data.error) {
+                                // Update portfolio info (take the first complete one found)
+                                if (!portfolioInfo && batchData.data.portfolioInfo && batchData.data.portfolioInfo.clientName) {
+                                    portfolioInfo = batchData.data.portfolioInfo;
+                                    if (portfolioInfo.portfolioTotal && portfolioInfo.portfolioTotal.value) {
+                                        totalValue = portfolioInfo.portfolioTotal.value;
+                                    }
+                                }
+
+                                // Collect all holdings
+                                if (batchData.data.holdings && Array.isArray(batchData.data.holdings)) {
+                                    allHoldings.push(...batchData.data.holdings);
+                                }
+
+                                // Merge asset allocation
+                                if (batchData.data.assetAllocation && Array.isArray(batchData.data.assetAllocation)) {
+                                    batchData.data.assetAllocation.forEach(category => {
+                                        if (!assetCategories[category.category]) {
+                                            assetCategories[category.category] = {
+                                                value: 0,
+                                                percentage: category.percentage
+                                            };
+                                        }
+                                        assetCategories[category.category].value += category.value || 0;
+                                    });
+                                }
+                            }
+                        } else {
+                            updateBatchStatus(\`❌ Batch \${i + 1} failed: \${batchData.error}\`);
+                            batchResults.push({ error: batchData.error, batchNumber: i + 1 });
+                        }
+                        
+                        // Add delay between batches to avoid rate limits
+                        if (i < batches.length - 1) {
+                            await new Promise(resolve => setTimeout(resolve, 1000));
+                        }
+                        
+                    } catch (error) {
+                        console.error(\`Batch \${i + 1} error:\`, error);
+                        updateBatchStatus(\`❌ Batch \${i + 1} network error: \${error.message}\`);
+                        batchResults.push({ error: error.message, batchNumber: i + 1 });
+                    }
+                }
+                
+                // Remove duplicate holdings (by ISIN)
+                const uniqueHoldings = [];
+                const seenISINs = new Set();
+                
+                allHoldings.forEach(holding => {
+                    if (holding.isin && !seenISINs.has(holding.isin)) {
+                        seenISINs.add(holding.isin);
+                        uniqueHoldings.push(holding);
+                    } else if (!holding.isin) {
+                        // Keep holdings without ISIN
+                        uniqueHoldings.push(holding);
+                    }
                 });
 
-                const data = await response.json();
+                // Convert asset categories object back to array
+                const assetAllocationArray = Object.entries(assetCategories).map(([category, data]) => ({
+                    category,
+                    value: data.value,
+                    percentage: data.percentage
+                }));
+
+                // Calculate summary statistics
+                const totalHoldingsValue = uniqueHoldings.reduce((sum, h) => sum + (h.currentValue || 0), 0);
+
+                const data = {
+                    data: {
+                        portfolioInfo: portfolioInfo || {
+                            clientName: 'Not found',
+                            bankName: 'Cornèr Banca SA',
+                            accountNumber: 'Not found',
+                            reportDate: new Date().toISOString().split('T')[0],
+                            portfolioTotal: {
+                                value: totalValue || totalHoldingsValue,
+                                currency: 'USD'
+                            }
+                        },
+                        holdings: uniqueHoldings.sort((a, b) => (b.currentValue || 0) - (a.currentValue || 0)),
+                        assetAllocation: assetAllocationArray,
+                        performance: {
+                            ytd: null,
+                            ytdPercent: 'N/A',
+                            totalGainLoss: uniqueHoldings.reduce((sum, h) => sum + (h.gainLoss || 0), 0)
+                        },
+                        summary: {
+                            totalHoldings: uniqueHoldings.length,
+                            totalBatches: batches.length,
+                            pagesProcessed: totalPages,
+                            extractionAccuracy: 'high',
+                            method: 'sequential-batch-processing',
+                            batchDetails: batchResults.map((result, idx) => ({
+                                batch: idx + 1,
+                                pages: \`\${batches[idx].startPage}-\${batches[idx].endPage}\`,
+                                holdingsFound: result.data?.holdings?.length || 0,
+                                processingTime: result.metadata?.processingTime || 'N/A',
+                                error: result.error
+                            }))
+                        }
+                    },
+                    metadata: {
+                        totalProcessingTime: 'Calculated from sequential batches',
+                        method: 'sequential-batch-processing',
+                        totalBatches: batches.length
+                    }
+                };
 
                 if (response.ok) {
                     extractedData = data.data;
