@@ -293,15 +293,24 @@ export default function handler(req, res) {
                 
                 updateBatchStatus(\`Processing \${totalPages} pages in batches for 100% accuracy...\`);
                 
-                // Determine batch size (5 pages per batch for optimal processing)
-                const PAGES_PER_BATCH = 5;
+                // Determine batch size (3 pages per batch to stay under size limits)
+                const PAGES_PER_BATCH = 3;
                 const totalBatches = Math.ceil(totalPages / PAGES_PER_BATCH);
                 const batches = [];
                 
                 updateBatchStatus(\`Splitting PDF into \${totalBatches} batches (\${PAGES_PER_BATCH} pages each)...\`);
                 
-                // Use high quality for 100% accuracy
-                const scale = 3; // Always use highest quality
+                // Use adaptive quality based on page count for 100% accuracy
+                // For large PDFs, we need to balance quality with size limits
+                let scale = 3; // Start with highest quality
+                if (totalPages > 10) {
+                    scale = 2.5; // Reduce slightly for medium PDFs
+                }
+                if (totalPages > 15) {
+                    scale = 2; // Standard quality for large PDFs
+                }
+                
+                console.log(\`Using scale \${scale} for \${totalPages} pages\`);
                 
                 // Process PDF in batches
                 for (let batchIndex = 0; batchIndex < totalBatches; batchIndex++) {
@@ -348,9 +357,65 @@ export default function handler(req, res) {
                     }
                     
                     // Convert to base64
-                    const batchBase64 = batchCanvas.toDataURL('image/png').split(',')[1];
-                    const batchSizeKB = Math.round((batchBase64.length * 0.75) / 1024);
-                    const batchSizeMB = Math.round(batchSizeKB / 1024 * 100) / 100;
+                    let batchBase64 = batchCanvas.toDataURL('image/png').split(',')[1];
+                    let batchSizeKB = Math.round((batchBase64.length * 0.75) / 1024);
+                    let batchSizeMB = Math.round(batchSizeKB / 1024 * 100) / 100;
+                    
+                    // If batch is too large, reduce quality and retry
+                    if (batchSizeMB > 4) {
+                        updateBatchStatus(\`Batch \${batchIndex + 1} too large (\${batchSizeMB}MB), reducing quality...\`);
+                        
+                        // Reduce scale and recreate batch
+                        const reducedScale = Math.max(1, scale * 0.7); // Reduce by 30%
+                        
+                        // Recalculate dimensions with reduced scale
+                        let reducedBatchHeight = 0;
+                        let reducedMaxWidth = 0;
+                        
+                        for (let i = startPage; i <= endPage; i++) {
+                            const page = await pdf.getPage(i);
+                            const viewport = page.getViewport({ scale: reducedScale });
+                            reducedBatchHeight += viewport.height;
+                            reducedMaxWidth = Math.max(reducedMaxWidth, viewport.width);
+                        }
+                        
+                        // Recreate canvas with reduced scale
+                        batchCanvas.width = reducedMaxWidth;
+                        batchCanvas.height = reducedBatchHeight;
+                        batchContext.clearRect(0, 0, batchCanvas.width, batchCanvas.height);
+                        
+                        // Re-render pages with reduced scale
+                        let reducedCurrentY = 0;
+                        for (let i = startPage; i <= endPage; i++) {
+                            const page = await pdf.getPage(i);
+                            const viewport = page.getViewport({ scale: reducedScale });
+                            
+                            const tempCanvas = document.createElement('canvas');
+                            const tempContext = tempCanvas.getContext('2d');
+                            tempCanvas.width = viewport.width;
+                            tempCanvas.height = viewport.height;
+                            
+                            await page.render({
+                                canvasContext: tempContext,
+                                viewport: viewport
+                            }).promise;
+                            
+                            batchContext.drawImage(tempCanvas, 0, reducedCurrentY);
+                            reducedCurrentY += viewport.height;
+                        }
+                        
+                        // Re-convert to base64
+                        batchBase64 = batchCanvas.toDataURL('image/png').split(',')[1];
+                        batchSizeKB = Math.round((batchBase64.length * 0.75) / 1024);
+                        batchSizeMB = Math.round(batchSizeKB / 1024 * 100) / 100;
+                        
+                        updateBatchStatus(\`Batch \${batchIndex + 1} reduced to \${batchSizeMB}MB using \${reducedScale}x scale\`);
+                    }
+                    
+                    // Final size check
+                    if (batchSizeMB > 4.5) {
+                        updateBatchStatus(\`⚠️ Batch \${batchIndex + 1} still large (\${batchSizeMB}MB) - may fail\`);
+                    }
                     
                     // Add batch preview
                     addBatchPreview(batchIndex + 1, startPage, endPage, batchCanvas.toDataURL('image/png'), batchSizeMB);
@@ -513,9 +578,9 @@ export default function handler(req, res) {
                     }
                 };
 
-                if (response.ok) {
-                    extractedData = data.data;
-                    updateProgress(totalBatches, totalBatches, 'Processing complete!');
+                // Sequential processing completed
+                extractedData = data.data;
+                updateProgress(totalBatches, totalBatches, 'Processing complete!');
                     
                     const summary = \`
                         <strong>Total Holdings Found:</strong> \${extractedData.holdings.length}<br>
@@ -529,15 +594,6 @@ export default function handler(req, res) {
                     
                     // Show preview of results
                     showResultsPreview(extractedData);
-                } else {
-                    result.innerHTML = \`
-                        <div class="result error">
-                            <h3>❌ Extraction Failed</h3>
-                            <p><strong>Error:</strong> \${data.error}</p>
-                            <p><strong>Details:</strong> \${data.details || 'No additional details'}</p>
-                        </div>
-                    \`;
-                }
             } catch (error) {
                 console.error('PDF processing error:', error);
                 result.innerHTML = \`
