@@ -29,9 +29,9 @@ export default async function handler(req, res) {
     console.log('📁 File:', filename);
     console.log('📊 Buffer size:', pdfBuffer.length);
     
-    // Check environment variables
-    const azureKey = process.env.AZURE_DOCUMENT_INTELLIGENCE_KEY;
-    const azureEndpoint = process.env.AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT;
+    // Check environment variables (support both naming conventions)
+    const azureKey = process.env.AZURE_DOCUMENT_INTELLIGENCE_KEY || process.env.AZURE_FORM_KEY;
+    const azureEndpoint = process.env.AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT || process.env.AZURE_FORM_ENDPOINT;
     const claudeKey = process.env.ANTHROPIC_API_KEY;
     
     console.log('🔑 Environment check:');
