@@ -32,16 +32,24 @@ export default async function handler(req, res) {
     } else {
       // Try to extract from PDF
       try {
-        console.log('Attempting PDF text extraction...');
+        console.log('Attempting PDF text extraction with pdf-parse...');
         const pdfParse = (await import('pdf-parse')).default;
         const pdfBuffer = Buffer.from(pdfBase64, 'base64');
         const pdfData = await pdfParse(pdfBuffer);
         extractedText = pdfData.text;
         console.log(`PDF extraction successful: ${extractedText.length} characters`);
       } catch (pdfError) {
-        console.log('PDF extraction failed, trying Azure only:', pdfError.message);
-        // Fall back to Azure-only extraction
-        return await processWithAzureOnly(pdfBase64, filename, res, startTime);
+        console.log('pdf-parse failed, trying alternative extraction:', pdfError.message);
+        
+        // Try alternative PDF extraction method for Vercel compatibility
+        try {
+          extractedText = await extractPDFTextAlternative(pdfBase64);
+          console.log(`Alternative PDF extraction successful: ${extractedText.length} characters`);
+        } catch (altError) {
+          console.log('Alternative PDF extraction also failed, using Azure only:', altError.message);
+          // Fall back to Azure-only extraction
+          return await processWithAzureOnly(pdfBase64, filename, res, startTime);
+        }
       }
     }
 
@@ -64,6 +72,13 @@ export default async function handler(req, res) {
 // Process with Azure Form Recognizer only
 async function processWithAzureOnly(pdfBase64, filename, res, startTime) {
   console.log('Processing with Azure Form Recognizer only...');
+  
+  if (!pdfBase64) {
+    return res.status(400).json({
+      error: 'No PDF data provided for Azure processing',
+      details: 'pdfBase64 is required for Azure Form Recognizer'
+    });
+  }
   
   try {
     const azureResults = await extractWithAzure(pdfBase64);
@@ -118,7 +133,7 @@ async function processWithBothMethods(extractedText, pdfBase64, filename, startT
   
   // Step 2: Azure Form Recognizer
   let azureUsed = false;
-  if (process.env.AZURE_FORM_ENDPOINT && process.env.AZURE_FORM_KEY) {
+  if (process.env.AZURE_FORM_ENDPOINT && process.env.AZURE_FORM_KEY && pdfBase64) {
     try {
       console.log('Running Azure Form Recognizer...');
       results.azureResults = await extractWithAzure(pdfBase64);
@@ -129,8 +144,9 @@ async function processWithBothMethods(extractedText, pdfBase64, filename, startT
       results.azureResults = { error: azureError.message, holdings: [] };
     }
   } else {
-    console.log('Azure credentials not configured, skipping Azure extraction');
-    results.azureResults = { error: 'Credentials not configured', holdings: [] };
+    const reason = !pdfBase64 ? 'No PDF data provided' : 'Credentials not configured';
+    console.log(`Azure extraction skipped: ${reason}`);
+    results.azureResults = { error: reason, holdings: [] };
   }
   
   // Step 3: Merge results
@@ -427,4 +443,43 @@ function categorizeByISIN(isin) {
   if (isin.startsWith('CH')) return 'Swiss Securities';
   if (isin.startsWith('XD')) return 'Funds';
   return 'Other';
+}
+
+// Alternative PDF text extraction for Vercel compatibility
+async function extractPDFTextAlternative(pdfBase64) {
+  console.log('Using alternative PDF text extraction...');
+  
+  // Simple fallback: try to extract basic text content
+  // This is a minimal implementation that works when pdf-parse fails
+  const pdfBuffer = Buffer.from(pdfBase64, 'base64');
+  
+  // Convert buffer to string and look for basic text patterns
+  const rawString = pdfBuffer.toString('binary');
+  
+  // Extract basic text patterns that might contain financial data
+  const textPatterns = [];
+  
+  // Look for ISIN patterns
+  const isinMatches = rawString.match(/[A-Z]{2}[A-Z0-9]{9}[0-9]/g) || [];
+  textPatterns.push(...isinMatches);
+  
+  // Look for USD amounts
+  const usdMatches = rawString.match(/USD\s*[\d']+/g) || [];
+  textPatterns.push(...usdMatches);
+  
+  // Look for basic text content
+  const textContent = rawString.replace(/[^\x20-\x7E]/g, ' ') // Remove non-printable chars
+    .replace(/\s+/g, ' ') // Normalize whitespace
+    .trim();
+  
+  if (textContent.length > 100) {
+    return textContent;
+  }
+  
+  // If we found patterns, construct basic text
+  if (textPatterns.length > 0) {
+    return textPatterns.join('\n');
+  }
+  
+  throw new Error('No extractable text found in PDF');
 }
