@@ -1,0 +1,512 @@
+{
+  "portfolioInfo": {
+    "clientName": "MESSOS ENTERPRISES LTD.",
+    "clientNumber": "366223",
+    "currency": "USD",
+    "valuationDate": "30.04.2025"
+  },
+  "portfolioTotal": {
+    "value": 19461320,
+    "currency": "USD"
+  },
+  "assetAllocation": [
+    {
+      "category": "Liquidity",
+      "value": 168206,
+      "percentage": "0.86%",
+      "currency": "USD"
+    },
+    {
+      "category": "Bonds",
+      "value": 123850946,
+      "percentage": "3.64%",
+      "currency": "USD"
+    },
+    {
+      "category": "Equities",
+      "value": 24177,
+      "percentage": "0.12%",
+      "currency": "USD"
+    },
+    {
+      "category": "Structured products",
+      "value": 68577143,
+      "percentage": "5.24%",
+      "currency": "USD"
+    },
+    {
+      "category": "Other assets",
+      "value": 26129,
+      "percentage": "0.13%",
+      "currency": "USD"
+    },
+    {
+      "category": "Bonds",
+      "value": 110097765,
+      "percentage": "6.57%",
+      "currency": "USD"
+    }
+  ],
+  "individualHoldings": [
+    {
+      "isin": "XD0466760473",
+      "security": "EXIGENT ENHANCED INCOME FUND LTD SHS A SERIES",
+      "value": 46676047,
+      "quantity": 0,
+      "price": 8.3748,
+      "currency": "USD",
+      "type": "",
+      "maturity": null,
+      "coupon": null
+    },
+    {
+      "isin": "XS1700087403",
+      "security": "NATIXIS STRUC.NOTES",
+      "value": 39877135,
+      "quantity": 0,
+      "price": 91.0217,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "20.06.2026",
+      "coupon": null
+    },
+    {
+      "isin": "XS2754416860",
+      "security": "GOLDMAN SACHS",
+      "value": 30098529,
+      "quantity": 0,
+      "price": 30.04,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "17.01.2030",
+      "coupon": 17.1
+    },
+    {
+      "isin": "CH0244767585",
+      "security": "Security CH0244767585",
+      "value": 24476758,
+      "quantity": 0,
+      "price": 3.91,
+      "currency": "USD",
+      "type": "",
+      "maturity": null,
+      "coupon": null
+    },
+    {
+      "isin": "XS2714429128",
+      "security": "EMERALD BAY NOTES",
+      "value": 4462102,
+      "quantity": 0,
+      "price": 100.4462,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "17.09.2029",
+      "coupon": null
+    },
+    {
+      "isin": "XS2567543397",
+      "security": "BOFA",
+      "value": 2450000,
+      "quantity": 0,
+      "price": 29.05,
+      "currency": "USD",
+      "type": "",
+      "maturity": null,
+      "coupon": 18.6
+    },
+    {
+      "isin": "XS2824054402",
+      "security": "Security XS2824054402",
+      "value": 2000104,
+      "quantity": 0,
+      "price": 5,
+      "currency": "USD",
+      "type": "",
+      "maturity": null,
+      "coupon": 29.5
+    },
+    {
+      "isin": "XS2761230684",
+      "security": "Security XS2761230684",
+      "value": 2000103,
+      "quantity": 0,
+      "price": 17.01,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "13.02.2030",
+      "coupon": 13.2
+    },
+    {
+      "isin": "XS2746319610",
+      "security": "DEUTSCHE BANK NOTES",
+      "value": 2000103,
+      "quantity": 0,
+      "price": 8.11,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "01.03.2030",
+      "coupon": null
+    },
+    {
+      "isin": "XS2588105036",
+      "security": "CANADIAN IMPERIAL BANK OF COMMERCE NOTES",
+      "value": 2000100,
+      "quantity": 0,
+      "price": 100.2,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "22.02.2028",
+      "coupon": 23.2
+    },
+    {
+      "isin": "XS2848820754",
+      "security": "GLOBAL RE",
+      "value": 2000100,
+      "quantity": 0,
+      "price": 100.2,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "01.08.2034",
+      "coupon": null
+    },
+    {
+      "isin": "XS2381717250",
+      "security": "BANK OF AMERICA",
+      "value": 2000100,
+      "quantity": 0,
+      "price": 29.04,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "19.12.2034",
+      "coupon": null
+    },
+    {
+      "isin": "XS2105981117",
+      "security": "GOLDMAN SACHS GR.STRUCT.NOTE",
+      "value": 1600000,
+      "quantity": 0,
+      "price": 100.5243,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "20.12.2028",
+      "coupon": null
+    },
+    {
+      "isin": "XS2838389430",
+      "security": "Security XS2838389430",
+      "value": 1600000,
+      "quantity": 0,
+      "price": 26.04,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "26.04.2033",
+      "coupon": null
+    },
+    {
+      "isin": "XS2964611052",
+      "security": "GOLDMAN SACHS",
+      "value": 1470000,
+      "quantity": 0,
+      "price": 30.04,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "14.02.2035",
+      "coupon": null
+    },
+    {
+      "isin": "XS2792098779",
+      "security": "BNP PARIBAS ISS STRUCT.NOTE",
+      "value": 1200000,
+      "quantity": 0,
+      "price": 8.01,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "02.12.2034",
+      "coupon": null
+    },
+    {
+      "isin": "XS2110079584",
+      "security": "Security XS2110079584",
+      "value": 1100000,
+      "quantity": 0,
+      "price": 18.06,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": null,
+      "coupon": null
+    },
+    {
+      "isin": "XS2692298537",
+      "security": "Security XS2692298537",
+      "value": 1000107,
+      "quantity": 0,
+      "price": 5,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "07.11.2029",
+      "coupon": 18.9
+    },
+    {
+      "isin": "XS0461497009",
+      "security": "Security XS0461497009",
+      "value": 1000101,
+      "quantity": 0,
+      "price": 8.11,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "08.11.2028",
+      "coupon": 8.11
+    },
+    {
+      "isin": "XS2407295554",
+      "security": "NOVUS CAPITAL STRUCT.NOTE",
+      "value": 1000000,
+      "quantity": 0,
+      "price": 100.5243,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "12.01.2028",
+      "coupon": null
+    },
+    {
+      "isin": "XS2829712830",
+      "security": "Security XS2829712830",
+      "value": 999692,
+      "quantity": 0,
+      "price": 1.08,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "30.09.2034",
+      "coupon": null
+    },
+    {
+      "isin": "XS3035947103",
+      "security": "REG S",
+      "value": 800000,
+      "quantity": 0,
+      "price": 100,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "28.03.2036",
+      "coupon": null
+    },
+    {
+      "isin": "XS2519369867",
+      "security": "BCO SAFRA CAYMAN",
+      "value": 728897,
+      "quantity": 0,
+      "price": 100.7288,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "21.06.2027",
+      "coupon": null
+    },
+    {
+      "isin": "XS2665592833",
+      "security": "Security XS2665592833",
+      "value": 690000,
+      "quantity": 0,
+      "price": 99.099,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "18.09.2028",
+      "coupon": 18.9
+    },
+    {
+      "isin": "XS2829752976",
+      "security": "GOLDMAN SACHS",
+      "value": 679097,
+      "quantity": 0,
+      "price": 18.11,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "18.11.2034",
+      "coupon": null
+    },
+    {
+      "isin": "CH1269060229",
+      "security": "Security CH1269060229",
+      "value": 623797,
+      "quantity": 0,
+      "price": 100.6237,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "26.05.2028",
+      "coupon": 26.5
+    },
+    {
+      "isin": "LU2228214107",
+      "security": "PREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB",
+      "value": 530444,
+      "quantity": 0,
+      "price": 81.5304,
+      "currency": "USD",
+      "type": "",
+      "maturity": null,
+      "coupon": null
+    },
+    {
+      "isin": "XS2315191069",
+      "security": "Security XS2315191069",
+      "value": 524197,
+      "quantity": 0,
+      "price": 21.06,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "08.01.2029",
+      "coupon": null
+    },
+    {
+      "isin": "XS2782869916",
+      "security": "CITIGROUP GLBL",
+      "value": 440000,
+      "quantity": 0,
+      "price": 9.05,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "09.05.2034",
+      "coupon": null
+    },
+    {
+      "isin": "XS2252299883",
+      "security": "GROUP",
+      "value": 366499,
+      "quantity": 0,
+      "price": 100.3664,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "15.05.2026",
+      "coupon": null
+    },
+    {
+      "isin": "CH1908490000",
+      "security": "IBAN:",
+      "value": 366223,
+      "quantity": 0,
+      "price": 639.32,
+      "currency": "USD",
+      "type": "",
+      "maturity": null,
+      "coupon": null
+    },
+    {
+      "isin": "XS2736388732",
+      "security": "CIBC",
+      "value": 250000,
+      "quantity": 0,
+      "price": 13.02,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "20.12.2031",
+      "coupon": null
+    },
+    {
+      "isin": "XS2530201644",
+      "security": "Security XS2530201644",
+      "value": 200099,
+      "quantity": 0,
+      "price": 23.02,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "23.02.2027",
+      "coupon": 23.5
+    },
+    {
+      "isin": "XS2381723902",
+      "security": "JPMORGAN CHASE",
+      "value": 200095,
+      "quantity": 0,
+      "price": 100.2,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "29.10.2034",
+      "coupon": null
+    },
+    {
+      "isin": "XS2912278723",
+      "security": "GOLDMAN SACHS EMTN",
+      "value": 200093,
+      "quantity": 0,
+      "price": 30.04,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "17.10.2034",
+      "coupon": null
+    },
+    {
+      "isin": "XS2594173093",
+      "security": "Security XS2594173093",
+      "value": 200000,
+      "quantity": 0,
+      "price": 20.06,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "27.09.2029",
+      "coupon": null
+    },
+    {
+      "isin": "XS2953741100",
+      "security": "Security XS2953741100",
+      "value": 198096,
+      "quantity": 0,
+      "price": 18.11,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "11.12.2034",
+      "coupon": null
+    },
+    {
+      "isin": "XS2481066111",
+      "security": "JPMORGAN CHASE",
+      "value": 100097,
+      "quantity": 0,
+      "price": 30.04,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "03.02.2035",
+      "coupon": null
+    },
+    {
+      "isin": "XS2993414619",
+      "security": "ORDINARY USD",
+      "value": 100000,
+      "quantity": 0,
+      "price": 28.03,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "28.03.2035",
+      "coupon": null
+    },
+    {
+      "isin": "XS2631782468",
+      "security": "LUMINIS REPACK NOTES",
+      "value": 18197,
+      "quantity": 0,
+      "price": 98.0181,
+      "currency": "USD",
+      "type": "Bond",
+      "maturity": "25.05.2029",
+      "coupon": null
+    }
+  ],
+  "performance": {
+    "periodStart": "01.01.2025",
+    "periodEnd": "30.04.2025",
+    "ytdPercentage": "1.51%",
+    "ytdValue": 288587
+  },
+  "metadata": {
+    "pages": 19,
+    "extractionDate": "2025-07-10T07:46:31.698Z",
+    "basicHoldings": 40,
+    "advancedHoldings": 24,
+    "totalAfterMerge": 40
+  },
+  "accuracy": {
+    "portfolioInfo": 100,
+    "portfolioTotal": 100,
+    "assetAllocation": 100,
+    "holdings": 100,
+    "overall": 100
+  }
+}
