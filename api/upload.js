@@ -229,8 +229,8 @@ export default async function handler(req, res) {
                 
                 progressBar.style.width = '50%';
                 
-                // Send to our Azure extraction endpoint
-                const response = await fetch('/api/azure-simple-extract', {
+                // Send to our Enhanced Swiss extraction endpoint  
+                const response = await fetch('/api/enhanced-swiss-extract', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

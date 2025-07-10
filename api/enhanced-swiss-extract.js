@@ -101,11 +101,13 @@ function parseSwissBankingDocument(text) {
   
   // Multiple Swiss value patterns based on document analysis
   const swissValuePatterns = [
-    /USD\s*([0-9]{1,3}(?:[']\d{3})*(?:[\.,]\d{2})?)/,  // USD1'500'000
-    /^([0-9]{1,3}(?:[']\d{3})+)$/,                      // 1'500'000 (standalone)
-    /([0-9]{1,3}(?:[']\d{3})+)$/,                       // 737'748 (end of line)
-    /([0-9]{1,3}(?:[']\d{3})*[\.,]\d{2})$/,            // 2'581.79 (decimals)
-    /^([0-9]{1,3}(?:[']\d{3})*[\.,]\d{2})$/            // Exact decimal match
+    /USD\s*([0-9]{1,3}(?:[']\d{3})*(?:[\.,]\d{2})?)/,     // USD1'500'000
+    /^([0-9]{1,3}(?:[']\d{3})+)$/,                         // 1'500'000 (standalone)
+    /([0-9]{1,3}(?:[']\d{3})+)$/,                          // 737'748 (end of line)
+    /([0-9]{1,3}(?:[']\d{3})*[\.,]\d{2})$/,               // 2'581.79 (decimals)
+    /^([0-9]{1,3}(?:[']\d{3})*[\.,]\d{2})$/,              // Exact decimal match
+    /([0-9](?:[']\d{3}){2,})(?:\D|$)/,                    // Flexible match for 1'500'000
+    /\b([0-9]{1,3}(?:[']\d{3}){1,})\b/                    // Word boundary match
   ];
   
   for (let i = 0; i < lines.length; i++) {
@@ -145,8 +147,8 @@ function parseSwissBankingDocument(text) {
             const rawValue = valueMatch[1];
             const parsedValue = parseSwissNumber(rawValue);
             
-            // Swiss banking values are typically > 10,000
-            if (parsedValue > 10000) {
+            // Swiss banking values are typically > 1,000 (lowered threshold)
+            if (parsedValue > 1000) {
               currentValue = parsedValue;
               valueFound = true;
               console.log(`Found value: ${rawValue} = ${parsedValue} for ${isin}`);
