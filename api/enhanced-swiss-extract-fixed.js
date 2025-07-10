@@ -38,6 +38,9 @@ export default async function handler(req, res) {
     console.log('   Azure key:', azureKey ? 'PRESENT' : 'MISSING');
     console.log('   Azure endpoint:', azureEndpoint ? 'PRESENT' : 'MISSING');
     console.log('   Claude key:', claudeKey ? 'PRESENT' : 'MISSING');
+    console.log('   AZURE_FORM_KEY:', process.env.AZURE_FORM_KEY ? 'FOUND' : 'NOT FOUND');
+    console.log('   AZURE_FORM_ENDPOINT:', process.env.AZURE_FORM_ENDPOINT ? 'FOUND' : 'NOT FOUND');
+    console.log('   ANTHROPIC_API_KEY:', process.env.ANTHROPIC_API_KEY ? 'FOUND' : 'NOT FOUND');
     
     let extractedData = null;
     let method = 'Unknown';
