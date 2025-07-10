@@ -288,18 +288,50 @@ function extractHoldingsFromTable(table) {
       for (const rowCell of rowCells) {
         const cellContent = rowCell.content || '';
         
-        // Look for security name (longer text)
-        if (cellContent.length > 10 && !cellContent.match(/[0-9]{4}/) && cellContent !== isin) {
-          securityName = cellContent;
+        // Look for security name (improved detection)
+        if (cellContent.length > 5 && cellContent !== isin && !cellContent.match(/^[\d']+$/)) {
+          // Prefer longer, more descriptive names
+          if (!securityName || cellContent.length > securityName.length) {
+            // Skip if it looks like a number or date
+            if (!cellContent.match(/^\d{2}[./]\d{2}/) && !cellContent.match(/^USD/) && !cellContent.match(/^[\d']+$/)) {
+              securityName = cellContent;
+            }
+          }
         }
         
-        // Look for USD values
-        const valueMatch = cellContent.match(/USD\s*([\d']+(?:\.\d+)?)|(\d[\d']*\.?\d*)\s*USD/);
-        if (valueMatch) {
-          const valueStr = valueMatch[1] || valueMatch[2];
-          const parsedValue = parseSwissNumber(valueStr);
-          if (parsedValue > 1000) { // Likely a real value
-            value = parsedValue;
+        // Look for USD values with improved patterns
+        const valuePatterns = [
+          /USD\s*([\d']+(?:\.\d+)?)/,
+          /([\d']+(?:\.\d+)?)\s*USD/,
+          /([\d']+)\s*(?:\d{2,3})/,  // Swiss format: 4'667'604
+          /(\d{1,3}(?:'?\d{3})*(?:\.\d{2})?)/  // General number with apostrophes
+        ];
+        
+        for (const pattern of valuePatterns) {
+          const match = cellContent.match(pattern);
+          if (match) {
+            const valueStr = match[1];
+            const parsedValue = parseSwissNumber(valueStr);
+            if (parsedValue > 1000) { // Likely a real value
+              value = Math.max(value, parsedValue); // Take the largest value found
+            }
+          }
+        }
+        
+        // Also check adjacent cells for values
+        const adjacentCells = cells.filter(c => 
+          Math.abs(c.rowIndex - cell.rowIndex) <= 1 && 
+          Math.abs(c.columnIndex - cell.columnIndex) <= 2
+        );
+        
+        for (const adjCell of adjacentCells) {
+          const adjContent = adjCell.content || '';
+          const adjMatch = adjContent.match(/([\d']{4,})/); // Look for large numbers
+          if (adjMatch) {
+            const adjValue = parseSwissNumber(adjMatch[1]);
+            if (adjValue > value && adjValue > 10000) {
+              value = adjValue;
+            }
           }
         }
       }

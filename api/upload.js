@@ -277,6 +277,9 @@ export default async function handler(req, res) {
         }
 
         function displayResults(data) {
+            // Store data for downloads
+            storeExtractionData(data.data);
+            
             const holdings = data.data?.holdings || [];
             const metadata = data.metadata || {};
             const portfolioInfo = data.data?.portfolioInfo || {};
@@ -336,6 +339,23 @@ export default async function handler(req, res) {
                 if (holdings.length > 20) {
                     html += \`<p style="text-align: center; margin-top: 20px;"><em>... and \${holdings.length - 20} more holdings</em></p>\`;
                 }
+
+                // Add download buttons
+                html += \`
+                    <div style="text-align: center; margin-top: 30px; padding: 20px; background: white; border-radius: 8px;">
+                        <h3>📥 Export Data</h3>
+                        <p>Download your extracted portfolio data in various formats:</p>
+                        <button onclick="downloadCSV()" class="upload-btn" style="margin: 5px;">
+                            📊 Download CSV
+                        </button>
+                        <button onclick="downloadJSON()" class="upload-btn" style="margin: 5px;">
+                            📄 Download JSON
+                        </button>
+                        <button onclick="downloadExcel()" class="upload-btn" style="margin: 5px;">
+                            📈 Download Excel Data
+                        </button>
+                    </div>
+                \`;
             } else {
                 html += '<div class="status error">❌ No holdings found in the PDF</div>';
             }
@@ -355,6 +375,141 @@ export default async function handler(req, res) {
         function formatCurrency(value) {
             if (!value) return 'N/A';
             return new Intl.NumberFormat('en-US').format(value);
+        }
+
+        // Global variable to store the last extraction results
+        let lastExtractionData = null;
+
+        // Store extraction data globally for download
+        function storeExtractionData(data) {
+            lastExtractionData = data;
+        }
+
+        // Download functions
+        async function downloadCSV() {
+            if (!lastExtractionData) {
+                alert('No data available for download');
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/export-csv', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        data: lastExtractionData,
+                        format: 'csv',
+                        filename: 'portfolio-extract-' + new Date().toISOString().split('T')[0]
+                    })
+                });
+
+                if (response.ok) {
+                    const blob = await response.blob();
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    a.download = 'portfolio-extract.csv';
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                } else {
+                    alert('Failed to generate CSV');
+                }
+            } catch (error) {
+                console.error('Download error:', error);
+                alert('Failed to download CSV');
+            }
+        }
+
+        async function downloadJSON() {
+            if (!lastExtractionData) {
+                alert('No data available for download');
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/export-csv', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        data: lastExtractionData,
+                        format: 'json',
+                        filename: 'portfolio-extract-' + new Date().toISOString().split('T')[0]
+                    })
+                });
+
+                if (response.ok) {
+                    const blob = await response.blob();
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    a.download = 'portfolio-extract.json';
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                } else {
+                    alert('Failed to generate JSON');
+                }
+            } catch (error) {
+                console.error('Download error:', error);
+                alert('Failed to download JSON');
+            }
+        }
+
+        async function downloadExcel() {
+            if (!lastExtractionData) {
+                alert('No data available for download');
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/export-csv', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        data: lastExtractionData,
+                        format: 'excel',
+                        filename: 'portfolio-extract-' + new Date().toISOString().split('T')[0]
+                    })
+                });
+
+                if (response.ok) {
+                    const excelData = await response.json();
+                    // Create Excel file manually
+                    const csvContent = convertToCSV(excelData.data);
+                    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    a.download = 'portfolio-extract.csv';
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                } else {
+                    alert('Failed to generate Excel data');
+                }
+            } catch (error) {
+                console.error('Download error:', error);
+                alert('Failed to download Excel data');
+            }
+        }
+
+        function convertToCSV(data) {
+            // Simple CSV conversion
+            let csv = 'Position,Security Name,ISIN,Current Value,Currency,Category\\n';
+            data.holdings.forEach(holding => {
+                csv += \`\${holding.position},"\${holding.securityName}",\${holding.isin},\${holding.currentValue},\${holding.currency},\${holding.category}\\n\`;
+            });
+            return csv;
         }
     </script>
 </body>
