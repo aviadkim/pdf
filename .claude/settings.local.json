@@ -18,7 +18,11 @@
       "Bash(git push:*)",
       "Bash(git pull:*)",
       "Bash(git checkout:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "WebFetch(domain:pdf-five-nu.vercel.app)",
+      "Bash(curl:*)",
+      "Bash(cat:*)",
+      "Bash(mv:*)"
     ],
     "deny": []
   }
