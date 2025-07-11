@@ -9,8 +9,9 @@
     }
   },
   "routes": [
-    { "src": "/", "dest": "/api/index" },
-    { "src": "/api/extract", "dest": "/api/extract-optimized" }
+    { "src": "/", "dest": "/api/family-office-upload" },
+    { "src": "/api/extract", "dest": "/api/ultimate-pdf-processor" },
+    { "src": "/upload", "dest": "/api/family-office-upload" }
   ],
   "env": {
     "NODE_ENV": "production"
