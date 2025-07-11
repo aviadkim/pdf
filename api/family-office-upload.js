@@ -29,8 +29,8 @@ export default async function handler(req, res) {
       
       console.log('🏛️ Family Office Upload:', filename);
       
-      // Process the PDF using the enhanced multiline Messos processor
-      const processResponse = await fetch(`${req.headers.origin || 'https://pdf-five-nu.vercel.app'}/api/multiline-messos-processor`, {
+      // Process the PDF using the fixed Messos processor (fallback until multiline deploys)
+      const processResponse = await fetch(`${req.headers.origin || 'https://pdf-five-nu.vercel.app'}/api/fixed-messos-processor`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
