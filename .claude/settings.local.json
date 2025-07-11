@@ -22,7 +22,13 @@
       "WebFetch(domain:pdf-five-nu.vercel.app)",
       "Bash(curl:*)",
       "Bash(cat:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Bash(npm ls:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(pdfinfo:*)",
+      "Bash(pdftotext:*)",
+      "Bash(python3:*)",
+      "Bash(git clone:*)"
     ],
     "deny": []
   }
