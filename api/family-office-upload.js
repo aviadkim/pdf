@@ -6,7 +6,6 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  res.setHeader('Content-Type', 'text/html; charset=utf-8');
   
   if (req.method === 'OPTIONS') {
     return res.status(200).end();
@@ -14,8 +13,11 @@ export default async function handler(req, res) {
   
   if (req.method === 'GET') {
     // Return the upload interface
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
     res.status(200).send(getFamilyOfficeInterface());
   } else if (req.method === 'POST') {
+    // Set JSON content type for POST requests
+    res.setHeader('Content-Type', 'application/json; charset=utf-8');
     // Handle file upload and processing
     try {
       const { pdfBase64, filename } = req.body;
@@ -511,8 +513,8 @@ function getFamilyOfficeInterface() {
                 
                 processingStatus.textContent = 'Sending to AI processing engine...';
                 
-                // Send to fixed Messos processor
-                const response = await fetch('/api/fixed-messos-processor', {
+                // Send to family office upload handler (with smart fallback)
+                const response = await fetch('/api/family-office-upload', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

@@ -28,7 +28,8 @@
       "Bash(pdfinfo:*)",
       "Bash(pdftotext:*)",
       "Bash(python3:*)",
-      "Bash(git clone:*)"
+      "Bash(git clone:*)",
+      "Bash(pnpm install:*)"
     ],
     "deny": []
   }
