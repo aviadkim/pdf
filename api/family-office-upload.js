@@ -29,8 +29,8 @@ export default async function handler(req, res) {
       
       console.log('🏛️ Family Office Upload:', filename);
       
-      // Process the PDF using the ultimate processor
-      const processResponse = await fetch(`${req.headers.origin || 'https://pdf-five-nu.vercel.app'}/api/ultimate-pdf-processor`, {
+      // Process the PDF using the serverless processor
+      const processResponse = await fetch(`${req.headers.origin || 'https://pdf-five-nu.vercel.app'}/api/serverless-pdf-processor`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -495,8 +495,8 @@ function getFamilyOfficeInterface() {
                 
                 processingStatus.textContent = 'Sending to AI processing engine...';
                 
-                // Send to ultimate processor
-                const response = await fetch('/api/ultimate-pdf-processor', {
+                // Send to serverless processor
+                const response = await fetch('/api/serverless-pdf-processor', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
