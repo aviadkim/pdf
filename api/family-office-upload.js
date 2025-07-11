@@ -513,8 +513,8 @@ function getFamilyOfficeInterface() {
                 
                 processingStatus.textContent = 'Sending to AI processing engine...';
                 
-                // Send to family office upload handler (with smart fallback)
-                const response = await fetch('/api/family-office-upload', {
+                // Send directly to fixed processor (proven working version)
+                const response = await fetch('/api/fixed-messos-processor', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

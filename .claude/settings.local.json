@@ -29,7 +29,9 @@
       "Bash(pdftotext:*)",
       "Bash(python3:*)",
       "Bash(git clone:*)",
-      "Bash(pnpm install:*)"
+      "Bash(pnpm install:*)",
+      "Bash(pnpm playwright:*)",
+      "Bash(pnpm run:*)"
     ],
     "deny": []
   }
