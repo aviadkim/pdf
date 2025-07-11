@@ -29,14 +29,30 @@ export default async function handler(req, res) {
       
       console.log('🏛️ Family Office Upload:', filename);
       
-      // Process the PDF using the fixed Messos processor (fallback until multiline deploys)
-      const processResponse = await fetch(`${req.headers.origin || 'https://pdf-five-nu.vercel.app'}/api/fixed-messos-processor`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ pdfBase64, filename })
-      });
+      // Try enhanced multiline processor first, fallback to fixed processor
+      let processResponse;
+      try {
+        processResponse = await fetch(`${req.headers.origin || 'https://pdf-five-nu.vercel.app'}/api/multiline-messos-processor`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ pdfBase64, filename })
+        });
+        
+        if (!processResponse.ok) {
+          throw new Error('Multiline processor not available');
+        }
+      } catch (error) {
+        console.log('Falling back to fixed processor:', error.message);
+        processResponse = await fetch(`${req.headers.origin || 'https://pdf-five-nu.vercel.app'}/api/fixed-messos-processor`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ pdfBase64, filename })
+        });
+      }
       
       const processResult = await processResponse.json();
       
