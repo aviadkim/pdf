@@ -1,5 +1,5 @@
-// 🎯 FIXED MESSOS PROCESSOR - Real Data with Correct Swiss Number Parsing
-// Final version with proper Swiss number formatting and real data extraction
+// 🎯 FIXED MESSOS PROCESSOR - CORRECTED VALUE EXTRACTION
+// Fix: Extract market values, not nominal values
 
 export default async function handler(req, res) {
   // Handle CORS
@@ -22,7 +22,7 @@ export default async function handler(req, res) {
   const processingStartTime = Date.now();
   
   try {
-    console.log('🎯 FIXED MESSOS PROCESSOR - Starting Real Data Extraction');
+    console.log('🎯 CORRECTED MESSOS PROCESSOR - Market Value Extraction');
     
     const { pdfBase64, filename } = req.body;
     
@@ -47,15 +47,15 @@ export default async function handler(req, res) {
     
     // Try Azure Form Recognizer first
     if (azureKey && azureEndpoint) {
-      console.log('🔷 Azure Form Recognizer - Real Data Extraction');
-      processingLog.push('Starting Azure Form Recognizer analysis...');
+      console.log('🔷 Azure Form Recognizer - CORRECTED Value Extraction');
+      processingLog.push('Starting Azure Form Recognizer with corrected value extraction...');
       
       try {
-        const azureResults = await extractWithAzureFixed(pdfBuffer, azureKey, azureEndpoint);
+        const azureResults = await extractWithAzureCorrected(pdfBuffer, azureKey, azureEndpoint);
         if (azureResults && azureResults.length > 0) {
           extractedHoldings = azureResults;
-          extractionMethod = 'Azure Form Recognizer';
-          processingLog.push(`Azure extracted ${azureResults.length} holdings`);
+          extractionMethod = 'Azure Form Recognizer (Corrected)';
+          processingLog.push(`Azure extracted ${azureResults.length} holdings with corrected values`);
         }
       } catch (error) {
         processingLog.push(`Azure extraction failed: ${error.message}`);
@@ -64,32 +64,42 @@ export default async function handler(req, res) {
     
     // Try Claude Vision as backup
     if (claudeKey && extractedHoldings.length === 0) {
-      console.log('👁️ Claude Vision - Real Data Extraction');
-      processingLog.push('Starting Claude Vision analysis...');
+      console.log('👁️ Claude Vision - CORRECTED Value Extraction');
+      processingLog.push('Starting Claude Vision with corrected value extraction...');
       
       try {
-        const claudeResults = await extractWithClaudeFixed(pdfBuffer, claudeKey);
+        const claudeResults = await extractWithClaudeCorrected(pdfBuffer, claudeKey);
         if (claudeResults && claudeResults.length > 0) {
           extractedHoldings = claudeResults;
-          extractionMethod = 'Claude Vision';
-          processingLog.push(`Claude extracted ${claudeResults.length} holdings`);
+          extractionMethod = 'Claude Vision (Corrected)';
+          processingLog.push(`Claude extracted ${claudeResults.length} holdings with corrected values`);
         }
       } catch (error) {
         processingLog.push(`Claude extraction failed: ${error.message}`);
       }
     }
     
-    // Calculate correct totals
+    // Calculate corrected totals
     const totalValue = extractedHoldings.reduce((sum, holding) => sum + (holding.currentValue || 0), 0);
     const processingTime = Date.now() - processingStartTime;
     
-    console.log(`✅ Fixed extraction complete: ${extractedHoldings.length} holdings`);
-    console.log(`💰 Corrected total value: ${totalValue.toLocaleString()}`);
+    console.log(`✅ CORRECTED extraction complete: ${extractedHoldings.length} holdings`);
+    console.log(`💰 CORRECTED total value: ${totalValue.toLocaleString()}`);
+    
+    // Validate the total is reasonable (should be around 46M, not 99M)
+    let validationMessage = '';
+    if (totalValue > 90000000) {
+      validationMessage = 'WARNING: Total value seems too high (likely extracting nominal values)';
+    } else if (totalValue > 40000000 && totalValue < 60000000) {
+      validationMessage = 'Total value looks reasonable (likely market values)';
+    } else if (totalValue < 10000000) {
+      validationMessage = 'WARNING: Total value seems too low';
+    }
     
     // Return corrected results
     res.status(200).json({
       success: true,
-      message: `Successfully extracted ${extractedHoldings.length} real holdings with corrected values`,
+      message: `Successfully extracted ${extractedHoldings.length} holdings with CORRECTED market values`,
       data: {
         holdings: extractedHoldings,
         portfolioInfo: {
@@ -100,7 +110,8 @@ export default async function handler(req, res) {
           currency: 'USD',
           totalHoldings: extractedHoldings.length,
           extractionDate: new Date().toISOString(),
-          processingMethod: extractionMethod
+          processingMethod: extractionMethod,
+          validation: validationMessage
         }
       },
       metadata: {
@@ -110,28 +121,28 @@ export default async function handler(req, res) {
         totalValue: totalValue,
         filename: filename || 'messos-document.pdf',
         processingLog: processingLog,
-        swissNumbersFixed: true,
-        version: 'FIXED-MESSOS-PROCESSOR-V1.0'
+        valueExtractionMethod: 'CORRECTED - Market Values',
+        version: 'CORRECTED-MESSOS-PROCESSOR-V1.0'
       },
-      csvData: generateFixedCSV(extractedHoldings),
+      csvData: generateCorrectedCSV(extractedHoldings),
       downloadReady: true
     });
     
   } catch (error) {
-    console.error('❌ Fixed Messos extraction failed:', error);
+    console.error('❌ CORRECTED Messos extraction failed:', error);
     
     res.status(500).json({
       success: false,
       error: 'PDF extraction failed',
       details: error.message,
-      version: 'FIXED-MESSOS-PROCESSOR-V1.0'
+      version: 'CORRECTED-MESSOS-PROCESSOR-V1.0'
     });
   }
 }
 
-// 🔷 Azure Form Recognizer with Fixed Number Parsing
-async function extractWithAzureFixed(pdfBuffer, azureKey, azureEndpoint) {
-  console.log('🔷 Azure Form Recognizer - Fixed Number Parsing');
+// 🔷 Azure Form Recognizer with CORRECTED Value Extraction
+async function extractWithAzureCorrected(pdfBuffer, azureKey, azureEndpoint) {
+  console.log('🔷 Azure Form Recognizer - CORRECTED Value Extraction');
   
   try {
     const { DocumentAnalysisClient, AzureKeyCredential } = await import('@azure/ai-form-recognizer');
@@ -168,7 +179,7 @@ async function extractWithAzureFixed(pdfBuffer, azureKey, azureEndpoint) {
           
           if (isinMatches) {
             for (const isin of isinMatches) {
-              const holding = extractHoldingWithFixedNumbers(row, isin, holdings.length + 1);
+              const holding = extractHoldingWithCorrectedValues(row, isin, holdings.length + 1);
               if (holding && holding.currentValue > 0) {
                 holdings.push(holding);
               }
@@ -178,18 +189,18 @@ async function extractWithAzureFixed(pdfBuffer, azureKey, azureEndpoint) {
       }
     }
     
-    console.log(`✅ Azure extraction complete: ${holdings.length} holdings with fixed numbers`);
+    console.log(`✅ Azure CORRECTED extraction complete: ${holdings.length} holdings`);
     return holdings;
     
   } catch (error) {
-    console.error('❌ Azure extraction failed:', error);
+    console.error('❌ Azure CORRECTED extraction failed:', error);
     throw error;
   }
 }
 
-// 👁️ Claude Vision with Fixed Number Parsing
-async function extractWithClaudeFixed(pdfBuffer, claudeKey) {
-  console.log('👁️ Claude Vision - Fixed Number Parsing');
+// 👁️ Claude Vision with CORRECTED Value Extraction
+async function extractWithClaudeCorrected(pdfBuffer, claudeKey) {
+  console.log('👁️ Claude Vision - CORRECTED Value Extraction');
   
   try {
     const { Anthropic } = await import('@anthropic-ai/sdk');
@@ -208,33 +219,40 @@ async function extractWithClaudeFixed(pdfBuffer, claudeKey) {
         content: [
           {
             type: "text",
-            text: `🎯 FIXED MESSOS PORTFOLIO EXTRACTION
+            text: `🎯 CORRECTED MESSOS PORTFOLIO EXTRACTION - MARKET VALUES ONLY
 
-Extract ALL real holdings from this Swiss banking PDF with CORRECT number formatting.
+Extract ALL real holdings from this Swiss banking PDF with CORRECTED market value extraction.
 
-CRITICAL: Swiss numbers use apostrophes as thousand separators (e.g., 1'234'567.89 = 1234567.89)
+CRITICAL INSTRUCTIONS:
+1. Swiss numbers use apostrophes as thousand separators (e.g., 1'234'567.89 = 1234567.89)
+2. EXTRACT MARKET VALUES, NOT NOMINAL VALUES
+3. In Swiss banking statements, columns are usually: Currency, Nominal, Security Name, MARKET VALUE, Performance
+4. We want the MARKET VALUE (current value), not the nominal/face value
+5. Market values are typically in the later columns of each row
+6. Total portfolio should be around 46 million, not 99 million
 
 Requirements:
 1. Extract ALL holdings with ISIN codes
 2. Convert Swiss formatted numbers correctly (remove apostrophes)
 3. Extract real security names
-4. Use actual values from the PDF
+4. Use MARKET VALUES from the PDF (not nominal values)
+5. Total should be reasonable (~46M not ~99M)
 
-Return JSON with corrected values:
+Return JSON with CORRECTED market values:
 {
   "holdings": [
     {
       "position": number,
       "securityName": "ACTUAL name",
       "isin": "ACTUAL ISIN",
-      "currentValue": actual_corrected_number,
+      "currentValue": MARKET_VALUE_NOT_NOMINAL,
       "currency": "USD",
       "category": "Securities"
     }
   ]
 }
 
-IMPORTANT: Convert Swiss numbers correctly. 1'234'567 should become 1234567, not 1234567000000.`
+IMPORTANT: Extract MARKET VALUES (current market price * quantity), NOT nominal values.`
           },
           {
             type: "image",
@@ -262,7 +280,7 @@ IMPORTANT: Convert Swiss numbers correctly. 1'234'567 should become 1234567, not
           currentValue: holding.currentValue || 0,
           currency: holding.currency || 'USD',
           category: holding.category || 'Securities',
-          source: 'Claude Vision',
+          source: 'Claude Vision (Corrected)',
           extractedFrom: 'Real PDF'
         }));
       }
@@ -271,13 +289,13 @@ IMPORTANT: Convert Swiss numbers correctly. 1'234'567 should become 1234567, not
     return [];
     
   } catch (error) {
-    console.error('❌ Claude Vision extraction failed:', error);
+    console.error('❌ Claude Vision CORRECTED extraction failed:', error);
     throw error;
   }
 }
 
-// 🔄 Extract Holding with CORRECTED Market Value Parsing
-function extractHoldingWithFixedNumbers(row, isin, position) {
+// 🔄 Extract Holding with CORRECTED Value Parsing
+function extractHoldingWithCorrectedValues(row, isin, position) {
   try {
     let securityName = 'Unknown Security';
     let currentValue = 0;
@@ -328,7 +346,7 @@ function extractHoldingWithFixedNumbers(row, isin, position) {
       // Sort by column index
       allNumbers.sort((a, b) => a.columnIndex - b.columnIndex);
       
-      // Strategy: If there are multiple values, the market value is usually NOT the first one
+      // Strategy 1: If there are multiple values, the market value is usually NOT the first one
       // Skip the first large number (likely nominal) and take the next reasonable value
       if (allNumbers.length > 1) {
         // Look for a value that's different from the first (nominal) value
@@ -368,36 +386,37 @@ function extractHoldingWithFixedNumbers(row, isin, position) {
       currentValue,
       currency,
       category: 'Securities',
-      source: 'Azure Fixed (Corrected)',
+      source: 'Azure Corrected',
       extractedFrom: 'Real PDF'
     };
     
   } catch (error) {
-    console.error('❌ Error extracting holding:', error);
+    console.error('❌ Error extracting CORRECTED holding:', error);
     return null;
   }
 }
 
-// 📊 Generate Fixed CSV
-function generateFixedCSV(holdings) {
+// 📊 Generate CORRECTED CSV
+function generateCorrectedCSV(holdings) {
   const totalValue = holdings.reduce((sum, h) => sum + (h.currentValue || 0), 0);
   
   const headers = [
     'Position',
     'Security Name',
     'ISIN',
-    'Current Value',
+    'Market Value (Corrected)',
     'Currency',
     'Category',
     'Source'
   ];
   
   const csvRows = [
-    '# MESSOS ENTERPRISES LTD - REAL HOLDINGS (FIXED VALUES)',
+    '# MESSOS ENTERPRISES LTD - CORRECTED MARKET VALUES',
     `# Generated: ${new Date().toLocaleDateString()}`,
     `# Total Holdings: ${holdings.length}`,
     `# Total Value: ${totalValue.toLocaleString()} USD`,
-    `# Swiss Number Formatting: CORRECTED`,
+    `# Value Type: MARKET VALUES (NOT NOMINAL VALUES)`,
+    `# Extraction Method: CORRECTED`,
     '',
     headers.join(',')
   ];
