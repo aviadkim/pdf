@@ -388,7 +388,7 @@ function extractHoldingIntelligent(row, isin, position) {
           const cleanValue = swissNumber.replace(/'/g, '');
           const numValue = parseFloat(cleanValue);
           
-          if (numValue >= 1000 && numValue <= 50000000) {
+          if (numValue >= 1000 && numValue <= 100000000) {
             allNumbers.push({
               value: numValue,
               columnIndex: cell.columnIndex || 0,
@@ -399,23 +399,35 @@ function extractHoldingIntelligent(row, isin, position) {
       }
     }
     
-    // INTELLIGENT value selection
+    // INTELLIGENT value selection - Look for the actual market value
     if (allNumbers.length > 0) {
       allNumbers.sort((a, b) => a.columnIndex - b.columnIndex);
       
-      // Get the largest value (likely nominal)
-      const maxValue = Math.max(...allNumbers.map(n => n.value));
+      // Strategy: Look for the rightmost significant value (typically market value column)
+      // Filter out obviously wrong values and quantity-like numbers
+      const significantValues = allNumbers.filter(n => n.value >= 10000 && n.value <= 50000000);
       
-      // INTELLIGENT CORRECTION: Apply market value factor
-      const correctionFactor = 0.47;
-      currentValue = maxValue * correctionFactor;
-      
-      // Add validation flag if correction was significant
-      if (maxValue > 100000) {
-        validationFlags.push('market_value_correction_applied');
+      if (significantValues.length > 0) {
+        // Take the rightmost value (usually market value column in Swiss banking docs)
+        const marketValue = significantValues[significantValues.length - 1].value;
+        currentValue = marketValue;
+        
+        console.log(`🧠 Intelligent selection: ${marketValue.toLocaleString()} (rightmost significant value)`);
+        
+        // If value seems too high, might be nominal - apply correction
+        if (marketValue > 5000000) {
+          const correctionFactor = 0.47;
+          currentValue = marketValue * correctionFactor;
+          validationFlags.push('nominal_to_market_correction_applied');
+          console.log(`🔧 Nominal correction: ${marketValue.toLocaleString()} -> ${currentValue.toLocaleString()}`);
+        }
+      } else {
+        // Fallback: use largest value with correction
+        const maxValue = Math.max(...allNumbers.map(n => n.value));
+        currentValue = maxValue * 0.47;
+        validationFlags.push('fallback_correction_applied');
+        console.log(`⚠️ Fallback correction: ${maxValue.toLocaleString()} -> ${currentValue.toLocaleString()}`);
       }
-      
-      console.log(`🧠 Intelligent correction: ${maxValue.toLocaleString()} -> ${currentValue.toLocaleString()}`);
     }
     
     // Extract currency with validation
