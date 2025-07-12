@@ -1,8 +1,8 @@
 // 🧠 Intelligent Messos Processor
 // Orchestrates extraction with comprehensive validation
 
-import { SwissBankingValidator } from '../validators/swiss_banking_validator.js';
-import { PortfolioCrossValidator } from '../validators/portfolio_cross_validator.js';
+import { SwissBankingValidator } from './validators/swiss_banking_validator.js';
+import { PortfolioCrossValidator } from './validators/portfolio_cross_validator.js';
 
 export default async function handler(req, res) {
   // Handle CORS
