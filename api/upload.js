@@ -142,10 +142,10 @@ export default async function handler(req, res) {
 </head>
 <body>
     <div class="header">
-        <h1>🎯 Multi-Engine Fusion Processor</h1>
-        <p><strong>🚀 TARGET: 100% ACCURACY • Azure + Camelot + PDFPlumber + YFinance</strong><br>
-        ✅ Swiss Banking Specialist • Real-time Validation<br>
-        🧠 Multi-Engine Intelligence + Precision Corrections</p>
+        <h1>🧠 Universal Intelligence Router</h1>
+        <p><strong>🚀 YOLO MODE: AI-POWERED DOCUMENT PROCESSING</strong><br>
+        🎯 Auto-Institution Detection • Optimal Processor Selection<br>
+        📚 Real-time Learning • Claude Code-level Understanding</p>
     </div>
 
     <div class="upload-container">
@@ -239,7 +239,7 @@ export default async function handler(req, res) {
             extractBtn.disabled = true;
             progressContainer.style.display = 'block';
             results.style.display = 'block';
-            results.innerHTML = '<div class="status processing">🎯 Processing with Enhanced Hybrid Processor...<br>🧠 Step 1: Intelligent extraction with screenshot insights<br>🔗 Step 2: Multi-row security structure analysis<br>💰 Step 3: Precise column mapping based on your table<br>🎯 Step 4: Apply exact values from screenshot analysis</div>';
+            results.innerHTML = '<div class="status processing">🧠 Processing with Universal Intelligence Router...<br>🎯 Step 1: AI-powered institution detection<br>⚡ Step 2: Optimal processor selection<br>🚀 Step 3: Route to specialized processor<br>📚 Step 4: Real-time learning and adaptation<br>🔍 Step 5: Intelligence enhancement and validation</div>';
 
             try {
                 // Convert file to base64
@@ -248,8 +248,8 @@ export default async function handler(req, res) {
                 
                 progressBar.style.width = '50%';
                 
-                // Send to our Enhanced Hybrid Processor with Screenshot Corrections
-                const response = await fetch('/api/hybrid-precise-processor', {
+                // Send to our Universal Intelligence Router (YOLO MODE ACTIVATED)
+                const response = await fetch('/api/intelligence-router', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
