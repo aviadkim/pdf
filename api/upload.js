@@ -142,10 +142,10 @@ export default async function handler(req, res) {
 </head>
 <body>
     <div class="header">
-        <h1>🎯 Hybrid Precise Processor</h1>
-        <p><strong>✅ ACHIEVEMENT UNLOCKED: 100% Individual Security Accuracy</strong><br>
-        🏆 A+ Grade • Toronto Dominion, Harp Issuer, UBS Stock - All Perfect<br>
-        🧠 Intelligent Extraction + Precise Corrections</p>
+        <h1>🧠 Table-Aware Processor</h1>
+        <p><strong>🚀 REVOLUTIONARY: Spatial Intelligence & Table Structure Understanding</strong><br>
+        🏆 Understands Column-Row Relationships • Multi-Row Bond Recognition<br>
+        🧠 Corner Bank Specialist • Real-Time Validation Agent</p>
     </div>
 
     <div class="upload-container">
@@ -239,7 +239,7 @@ export default async function handler(req, res) {
             extractBtn.disabled = true;
             progressContainer.style.display = 'block';
             results.style.display = 'block';
-            results.innerHTML = '<div class="status processing">🎯 Processing with Hybrid Precise Processor...<br>🧠 Step 1: Intelligent extraction<br>🔧 Step 2: Applying precise corrections<br>✅ Step 3: Validating known securities</div>';
+            results.innerHTML = '<div class="status processing">🧠 Processing with Table-Aware Processor...<br>🔍 Step 1: Document Intelligence Agent<br>🧠 Step 2: Table Parsing Agent - Spatial Intelligence<br>✅ Step 3: Validation Agent<br>🔧 Step 4: Real-Time Correction Agent</div>';
 
             try {
                 // Convert file to base64
@@ -248,8 +248,8 @@ export default async function handler(req, res) {
                 
                 progressBar.style.width = '50%';
                 
-                // Send to our Hybrid Precise Processor endpoint  
-                const response = await fetch('/api/hybrid-precise-processor', {
+                // Send to our Table-Aware Processor endpoint  
+                const response = await fetch('/api/table-aware-processor', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -305,14 +305,18 @@ export default async function handler(req, res) {
             const totalValue = data.data?.totalValue || 0;
             const accuracy = data.data?.accuracy || 0;
             const qualityGrade = validation.qualityGrade || 'Unknown';
+            const structureConfidence = validation.structureConfidence || 0;
+            const institutionDetected = validation.institutionDetected || 'Unknown';
 
             let html = \`
                 <div class="status success">
-                    ✅ <strong>Hybrid Precise Processor - Extraction Complete!</strong><br>
-                    Method: \${metadata.extractionMethod || 'Hybrid Intelligence'}<br>
+                    ✅ <strong>Table-Aware Processor - Revolutionary Extraction Complete!</strong><br>
+                    Method: \${metadata.extractionMethod || 'Table-Aware Spatial Intelligence'}<br>
+                    Institution: \${institutionDetected}<br>
                     Processing Time: \${metadata.processingTime || 'N/A'}<br>
                     Total Value: $\${totalValue.toLocaleString()}<br>
-                    Accuracy: \${(accuracy * 100).toFixed(2)}%<br>
+                    Spatial Accuracy: \${(accuracy * 100).toFixed(2)}%<br>
+                    Structure Confidence: <strong>\${structureConfidence}%</strong><br>
                     Quality Grade: <strong>\${qualityGrade}</strong><br>
                     Holdings Found: <strong>\${holdings.length}</strong>
                 </div>
@@ -337,18 +341,30 @@ export default async function handler(req, res) {
                 html += \`</div>\`;
             }
 
-            // Portfolio summary using hybrid processor data
+            // Show processing intelligence
+            const processingSteps = data.debug?.processingSteps || [];
+            if (processingSteps.length > 0) {
+                html += \`
+                    <div style="background: white; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                        <h3>🧠 Spatial Intelligence Process</h3>
+                        \${processingSteps.map(step => \`<p style="margin: 5px 0;">• \${step}</p>\`).join('')}
+                    </div>
+                \`;
+            }
+
+            // Portfolio summary using table-aware processor data
             const accuracyColor = accuracy > 0.95 ? '#28a745' : accuracy > 0.7 ? '#ffc107' : '#dc3545';
-            const accuracyExplanation = accuracy < 0.9 ? 
-                '<br><small style="color: #6c757d;">💡 Total accuracy reflects sum differences, but individual securities are 100% correct</small>' : '';
+            const structureColor = structureConfidence > 90 ? '#28a745' : structureConfidence > 70 ? '#ffc107' : '#dc3545';
             
             html += \`
                 <div style="background: white; padding: 15px; border-radius: 8px; margin: 15px 0;">
                     <h3>💰 Portfolio Summary</h3>
+                    <p><strong>Institution:</strong> \${institutionDetected}</p>
                     <p><strong>Total Value:</strong> $\${totalValue.toLocaleString()} USD</p>
                     <p><strong>Target Value:</strong> $19,464,431 USD</p>
-                    <p><strong>Total Accuracy:</strong> <span style="color: \${accuracyColor}; font-weight: bold;">\${(accuracy * 100).toFixed(2)}%</span>\${accuracyExplanation}</p>
-                    <p><strong>Individual Security Accuracy:</strong> <span style="color: #28a745; font-weight: bold;">100%</span> (3/3 known securities perfect)</p>
+                    <p><strong>Spatial Accuracy:</strong> <span style="color: \${accuracyColor}; font-weight: bold;">\${(accuracy * 100).toFixed(2)}%</span></p>
+                    <p><strong>Structure Confidence:</strong> <span style="color: \${structureColor}; font-weight: bold;">\${structureConfidence}%</span> (Table understanding)</p>
+                    <p><strong>Extraction Method:</strong> Table-Aware Spatial Intelligence</p>
                 </div>
             \`;
 
