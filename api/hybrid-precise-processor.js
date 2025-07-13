@@ -203,8 +203,9 @@ function extractHoldingFromRow(row, isin, rowIndex) {
       }
     }
     
-    // Use the largest number as market value (common pattern)
-    const marketValue = numbers.length > 0 ? Math.max(...numbers) : 0;
+    // Use the largest reasonable number as market value with sanity checks
+    const reasonableNumbers = numbers.filter(n => n > 0 && n < 100000000); // Cap at $100M per security
+    const marketValue = reasonableNumbers.length > 0 ? Math.max(...reasonableNumbers) : 0;
     
     if (marketValue > 0 && description) {
       return {
@@ -312,6 +313,16 @@ function applyKnownSecurityCorrections(description, extractedValue, nominal) {
     };
   }
   
+  // Final sanity check for all securities
+  if (extractedValue > 100000000) { // Over $100M per security is unreasonable
+    console.log(`⚠️ Capping excessive value: ${extractedValue} -> $10,000,000`);
+    return {
+      value: 10000000, // Cap at $10M
+      corrected: true,
+      reason: 'Value too high, capped at $10M'
+    };
+  }
+  
   return {
     value: extractedValue,
     corrected: false,
@@ -401,11 +412,20 @@ function validateKnownSecurities(holdings) {
   return validationResults;
 }
 
-// Helper functions
+// Helper functions with sanity checks
 function parseSwissNumber(text) {
   if (!text) return 0;
+  
+  // Clean and parse Swiss numbers with sanity checks
   const cleaned = text.replace(/[^0-9'.]/g, '').replace(/'/g, '');
-  return parseFloat(cleaned) || 0;
+  const number = parseFloat(cleaned) || 0;
+  
+  // Apply sanity checks to prevent astronomical values
+  if (number > 1000000000000) { // Over $1 trillion is unreasonable
+    return 0;
+  }
+  
+  return number;
 }
 
 function extractCleanSecurityName(description) {
