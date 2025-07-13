@@ -248,7 +248,7 @@ export default async function handler(req, res) {
                 
                 progressBar.style.width = '50%';
                 
-                // Send to our Table-Aware Processor endpoint  
+                // Send to our Clean Table-Aware Processor endpoint  
                 const response = await fetch('/api/table-aware-processor', {
                     method: 'POST',
                     headers: {
