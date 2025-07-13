@@ -239,7 +239,7 @@ export default async function handler(req, res) {
             extractBtn.disabled = true;
             progressContainer.style.display = 'block';
             results.style.display = 'block';
-            results.innerHTML = '<div class="status processing">🎯 Processing with Hybrid Precise Processor...<br>🧠 Step 1: Intelligent extraction from all tables<br>🔧 Step 2: Applying precise corrections for known securities<br>✅ Step 3: Validating Toronto Dominion, Harp Issuer, UBS Stock</div>';
+            results.innerHTML = '<div class="status processing">🎯 Processing with Enhanced Hybrid Processor...<br>🧠 Step 1: Intelligent extraction with screenshot insights<br>🔗 Step 2: Multi-row security structure analysis<br>💰 Step 3: Precise column mapping based on your table<br>🎯 Step 4: Apply exact values from screenshot analysis</div>';
 
             try {
                 // Convert file to base64
@@ -248,7 +248,7 @@ export default async function handler(req, res) {
                 
                 progressBar.style.width = '50%';
                 
-                // Send to our Hybrid Precise Processor endpoint (A+ grade, 39 securities)
+                // Send to our Enhanced Hybrid Processor with Screenshot Corrections
                 const response = await fetch('/api/hybrid-precise-processor', {
                     method: 'POST',
                     headers: {
