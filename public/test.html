@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Upload</title>
+</head>
+<body>
+    <h1>Quick PDF Test</h1>
+    <input type="file" id="file" accept=".pdf">
+    <button onclick="test()">Test Hybrid Processor</button>
+    <div id="result"></div>
+    
+    <script>
+    async function test() {
+        const file = document.getElementById('file').files[0];
+        if (!file) {
+            alert('Select a PDF first');
+            return;
+        }
+        
+        const reader = new FileReader();
+        reader.onload = async function() {
+            const base64 = reader.result.split(',')[1];
+            
+            try {
+                const response = await fetch('/api/hybrid-precise-processor', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        pdfBase64: base64,
+                        filename: file.name
+                    })
+                });
+                
+                const result = await response.json();
+                document.getElementById('result').innerHTML = '<pre>' + JSON.stringify(result, null, 2) + '</pre>';
+            } catch (error) {
+                document.getElementById('result').innerHTML = 'Error: ' + error.message;
+            }
+        };
+        reader.readAsDataURL(file);
+    }
+    </script>
+</body>
+</html>
