@@ -1,0 +1,15 @@
+[Unit]
+Description=Claude Code Automated Monitor
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/path/to/your/project
+ExecStart=/usr/bin/node automation/claude-code-monitor.js
+Restart=always
+RestartSec=10
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
