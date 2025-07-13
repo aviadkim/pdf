@@ -142,10 +142,10 @@ export default async function handler(req, res) {
 </head>
 <body>
     <div class="header">
-        <h1>🎯 Hybrid Precise Processor</h1>
-        <p><strong>🏆 A+ GRADE: 39 Securities • 74% Accuracy • $26M+ Value</strong><br>
-        ✅ Toronto Dominion $199,080 • Harp Issuer $1,507,550<br>
-        🧠 Intelligent Extraction + Precision Corrections</p>
+        <h1>🎯 Multi-Engine Fusion Processor</h1>
+        <p><strong>🚀 TARGET: 100% ACCURACY • Azure + Camelot + PDFPlumber + YFinance</strong><br>
+        ✅ Swiss Banking Specialist • Real-time Validation<br>
+        🧠 Multi-Engine Intelligence + Precision Corrections</p>
     </div>
 
     <div class="upload-container">
