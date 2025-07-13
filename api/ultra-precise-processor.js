@@ -199,10 +199,8 @@ function analyzeTableHeaders(tableMatrix, maxRows) {
   
   const allHeaders = headerText.join(' ').toLowerCase();
   
-  // Check if this is the bonds table (more flexible matching)
-  const isBondsTable = (allHeaders.includes('description') || allHeaders.includes('security') || allHeaders.includes('name')) && 
-                      (allHeaders.includes('valuation') || allHeaders.includes('value') || allHeaders.includes('amount')) && 
-                      (allHeaders.includes('currency') || allHeaders.includes('usd') || allHeaders.includes('chf'));
+  // Check if this is a financial table (very inclusive matching like intelligent processor)
+  const isBondsTable = true; // Process ALL tables and look for financial data in each
   
   if (!isBondsTable) {
     return { isBondsTable: false };
@@ -276,60 +274,64 @@ function extractHoldingsUltraPrecise(tableMatrix, maxRows, maxCols, headerAnalys
   const holdings = [];
   const { columnMap } = headerAnalysis;
   
-  // Process data rows (skip first 3 header rows)
+  // Process data rows using ISIN-based detection (like intelligent processor)
   for (let row = 3; row < maxRows; row++) {
     const rowData = tableMatrix[row] || {};
     
     // Skip empty rows
     if (Object.keys(rowData).length === 0) continue;
     
-    // Extract values from specific columns
-    const description = rowData[columnMap.description] || '';
-    const nominal = rowData[columnMap.nominal] || '';
-    const usdValuation = rowData[columnMap.usdValuation] || '';
-    const currency = rowData[columnMap.currency] || 'USD';
+    // First try ISIN-based detection (like intelligent processor)
+    const rowText = Object.values(rowData).join(' ');
+    const isinMatches = rowText.match(/[A-Z]{2}[A-Z0-9]{10}/g);
     
-    // Skip only if completely empty rows
-    if (!description && !usdValuation) continue;
-    if (description.length < 3 && !usdValuation) continue;
+    if (!isinMatches || isinMatches.length === 0) continue; // Only process rows with ISINs
     
-    // Extract ISIN from description (make it optional for broader extraction)
-    const isinMatch = description.match(/([A-Z]{2}[A-Z0-9]{10})/);
-    const isin = isinMatch ? isinMatch[1] : `MISSING_${holdings.length + 1}`;
-    
-    // Parse USD valuation - THIS IS THE KEY FIX!
-    let marketValue = parseUSDValuation(usdValuation);
-    
-    // Apply specific corrections for known securities
-    const correctedValue = applyKnownSecurityCorrections(description, marketValue, nominal);
-    
-    if (correctedValue.value > 10 && description.length > 3) { // More inclusive threshold
-      const holding = {
-        position: holdings.length + 1,
-        securityName: extractCleanSecurityName(description),
-        name: extractCleanSecurityName(description),
-        isin: isin,
-        quantity: parseSwissNumber(nominal),
-        marketValue: correctedValue.value,
-        currentValue: correctedValue.value,
-        originalValue: marketValue,
-        currency: currency,
-        category: categorizeByISIN(isin),
-        extractionConfidence: 0.99,
-        extractionSource: 'ultra-precise-mapper',
-        source: 'Ultra-Precise Column Mapper',
-        rowIndex: row,
-        columnUsed: columnMap.usdValuation,
-        correctionApplied: correctedValue.corrected,
-        correctionReason: correctedValue.reason,
-        rawUSDValuation: usdValuation,
-        ultraPrecise: true
-      };
+    // Process each ISIN found in the row (like intelligent processor)
+    for (const isin of isinMatches) {
+      // Extract values from specific columns or fallback to row data
+      const description = rowData[columnMap.description] || rowText.split(' ').slice(0, 15).join(' ') || '';
+      const nominal = rowData[columnMap.nominal] || '';
+      const usdValuation = rowData[columnMap.usdValuation] || '';
+      const currency = rowData[columnMap.currency] || 'USD';
       
-      holdings.push(holding);
-      console.log(`💎 Ultra-precise: ${holding.name} = $${holding.marketValue.toLocaleString()}`);
-    }
-  }
+      // Skip only if no meaningful data
+      if (!description && !usdValuation) continue;
+      
+      // Parse USD valuation - THIS IS THE KEY FIX!
+      let marketValue = parseUSDValuation(usdValuation);
+      
+      // Apply specific corrections for known securities
+      const correctedValue = applyKnownSecurityCorrections(description, marketValue, nominal);
+    
+      if (correctedValue.value >= 1000 || (correctedValue.value > 100 && description.length > 5)) { // Better threshold like intelligent processor
+        const holding = {
+          position: holdings.length + 1,
+          securityName: extractCleanSecurityName(description),
+          name: extractCleanSecurityName(description),
+          isin: isin,
+          quantity: parseSwissNumber(nominal),
+          marketValue: correctedValue.value,
+          currentValue: correctedValue.value,
+          originalValue: marketValue,
+          currency: currency,
+          category: categorizeByISIN(isin),
+          extractionConfidence: 0.99,
+          extractionSource: 'ultra-precise-mapper',
+          source: 'Ultra-Precise Column Mapper',
+          rowIndex: row,
+          columnUsed: columnMap.usdValuation,
+          correctionApplied: correctedValue.corrected,
+          correctionReason: correctedValue.reason,
+          rawUSDValuation: usdValuation,
+          ultraPrecise: true
+        };
+        
+        holdings.push(holding);
+        console.log(`💎 Ultra-precise: ${holding.name} = $${holding.marketValue.toLocaleString()}`);
+      }
+    } // Close inner ISIN loop
+  } // Close row loop
   
   return holdings;
 }
