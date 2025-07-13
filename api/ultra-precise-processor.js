@@ -199,10 +199,10 @@ function analyzeTableHeaders(tableMatrix, maxRows) {
   
   const allHeaders = headerText.join(' ').toLowerCase();
   
-  // Check if this is the bonds table
-  const isBondsTable = allHeaders.includes('description') && 
-                      allHeaders.includes('valuation') && 
-                      (allHeaders.includes('currency') || allHeaders.includes('usd'));
+  // Check if this is the bonds table (more flexible matching)
+  const isBondsTable = (allHeaders.includes('description') || allHeaders.includes('security') || allHeaders.includes('name')) && 
+                      (allHeaders.includes('valuation') || allHeaders.includes('value') || allHeaders.includes('amount')) && 
+                      (allHeaders.includes('currency') || allHeaders.includes('usd') || allHeaders.includes('chf'));
   
   if (!isBondsTable) {
     return { isBondsTable: false };
@@ -232,7 +232,7 @@ function analyzeTableHeaders(tableMatrix, maxRows) {
     
     if (combinedHeader.includes('currency')) columnMap.currency = col;
     else if (combinedHeader.includes('nominal') || combinedHeader.includes('quantity')) columnMap.nominal = col;
-    else if (combinedHeader.includes('description')) columnMap.description = col;
+    else if (combinedHeader.includes('description') || combinedHeader.includes('security') || combinedHeader.includes('instrument')) columnMap.description = col;
     else if (combinedHeader.includes('average') && combinedHeader.includes('price')) columnMap.avgPrice = col;
     else if (combinedHeader.includes('actual') && combinedHeader.includes('price')) columnMap.actualPrice = col;
     else if (combinedHeader.includes('perf') && combinedHeader.includes('ytd')) columnMap.perfYTD = col;
@@ -245,6 +245,19 @@ function analyzeTableHeaders(tableMatrix, maxRows) {
     const maxCol = Math.max(...Object.keys(firstRow).map(k => parseInt(k)));
     columnMap.usdValuation = maxCol;
     console.log(`⚠️ USD Valuation column not found in headers, using rightmost column ${maxCol}`);
+  }
+  
+  // If description column not found, use leftmost text column as fallback
+  if (columnMap.description === -1) {
+    // Find the first column that contains text data
+    for (let col = 0; col < 10; col++) {
+      const sampleData = tableMatrix[4] && tableMatrix[4][col];
+      if (sampleData && sampleData.length > 10 && /[A-Z]/.test(sampleData)) {
+        columnMap.description = col;
+        console.log(`⚠️ Description column not found in headers, using column ${col} based on data analysis`);
+        break;
+      }
+    }
   }
   
   console.log('📊 Column mapping:', columnMap);
@@ -276,14 +289,13 @@ function extractHoldingsUltraPrecise(tableMatrix, maxRows, maxCols, headerAnalys
     const usdValuation = rowData[columnMap.usdValuation] || '';
     const currency = rowData[columnMap.currency] || 'USD';
     
-    // Skip if no description or no valuation
-    if (!description || !usdValuation) continue;
+    // Skip only if completely empty rows
+    if (!description && !usdValuation) continue;
+    if (description.length < 3 && !usdValuation) continue;
     
-    // Extract ISIN from description
+    // Extract ISIN from description (make it optional for broader extraction)
     const isinMatch = description.match(/([A-Z]{2}[A-Z0-9]{10})/);
-    if (!isinMatch) continue;
-    
-    const isin = isinMatch[1];
+    const isin = isinMatch ? isinMatch[1] : `MISSING_${holdings.length + 1}`;
     
     // Parse USD valuation - THIS IS THE KEY FIX!
     let marketValue = parseUSDValuation(usdValuation);
@@ -291,7 +303,7 @@ function extractHoldingsUltraPrecise(tableMatrix, maxRows, maxCols, headerAnalys
     // Apply specific corrections for known securities
     const correctedValue = applyKnownSecurityCorrections(description, marketValue, nominal);
     
-    if (correctedValue.value > 100) { // Minimum threshold
+    if (correctedValue.value > 10 && description.length > 3) { // More inclusive threshold
       const holding = {
         position: holdings.length + 1,
         securityName: extractCleanSecurityName(description),
