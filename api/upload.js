@@ -239,7 +239,7 @@ export default async function handler(req, res) {
             extractBtn.disabled = true;
             progressContainer.style.display = 'block';
             results.style.display = 'block';
-            results.innerHTML = '<div class="status processing">🎯 Processing with Hybrid Precise Processor...<br>🧠 Step 1: Intelligent extraction from all tables<br>🔧 Step 2: Applying precise corrections for known securities<br>✅ Step 3: Validating Toronto Dominion, Harp Issuer, UBS Stock</div>';
+            results.innerHTML = '<div class="status processing">🎯 Processing with Version 4 Spatial Processor...<br>🗺️ Step 1: Extract ALL table data with spatial coordinates<br>🔍 Step 2: Identify column headers and boundaries<br>📊 Step 3: Map data to correct columns using spatial relationships<br>🧹 Step 4: Validate and clean column data<br>🇨🇭 Step 5: Apply Swiss banking precision corrections</div>';
 
             try {
                 // Convert file to base64
@@ -248,8 +248,8 @@ export default async function handler(req, res) {
                 
                 progressBar.style.width = '50%';
                 
-                // Send to our Hybrid Precise Processor endpoint (A+ grade, 39 securities)
-                const response = await fetch('/api/hybrid-precise-processor', {
+                // Send to our Version 4 Spatial Processor endpoint (Column alignment fix)
+                const response = await fetch('/api/version-4-spatial-processor', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

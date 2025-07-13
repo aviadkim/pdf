@@ -1,0 +1,32 @@
+{
+  "timestamp": "2025-07-12T21:19:34.558Z",
+  "pdfFile": "2. Messos  - 31.03.2025.pdf",
+  "targetTotal": 19464431,
+  "extractionResults": {
+    "azure": {
+      "success": false,
+      "tablesFound": 0,
+      "textLength": 0,
+      "sampleText": ""
+    },
+    "claude": {
+      "success": false,
+      "textLength": 0,
+      "sampleText": ""
+    },
+    "website": {
+      "success": true,
+      "holdingsCount": 0,
+      "extractedTotal": 0,
+      "accuracy": 0
+    }
+  },
+  "issues": [
+    "Website extraction accuracy below 90%",
+    "Low holdings count - might be missing data"
+  ],
+  "recommendations": [
+    "Review value extraction logic in API processors",
+    "Check if all PDF pages/tables are being processed"
+  ]
+}

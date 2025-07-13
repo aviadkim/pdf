@@ -215,14 +215,17 @@ async function identifyColumnHeaders(allTableData) {
   let headerRow = null;
   let columnHeaders = {};
   
-  // Look for typical financial column headers in first 5 rows
-  for (let i = 0; i < Math.min(5, sortedRowKeys.length); i++) {
+  // Look for typical financial column headers in first 10 rows (more flexible)
+  for (let i = 0; i < Math.min(10, sortedRowKeys.length); i++) {
     const rowKey = sortedRowKeys[i];
     const row = rowGroups[rowKey];
     
     const headerScore = calculateHeaderScore(row);
-    if (headerScore > 0.7) { // High confidence it's a header row
+    console.log(`🔍 Row ${i}: Score ${headerScore.toFixed(2)}, Cells: ${row.map(c => c.content).join(' | ')}`);
+    
+    if (headerScore > 0.3) { // Much lower threshold for header detection
       headerRow = row;
+      console.log(`✅ Header row found at index ${i} with score ${headerScore.toFixed(2)}`);
       break;
     }
   }
@@ -296,7 +299,11 @@ async function mapDataToColumns(allTableData, columnMapping) {
     const rowCells = rowGroups[rowKey];
     
     // Skip header rows and empty rows
-    if (rowCells.length < 3) continue;
+    if (rowCells.length < 2) continue;
+    
+    // Skip rows that look like headers
+    const rowScore = calculateHeaderScore(rowCells);
+    if (rowScore > 0.4) continue;
     
     // Sort cells by X coordinate
     rowCells.sort((a, b) => a.x - b.x);
@@ -361,8 +368,9 @@ async function mapDataToColumns(allTableData, columnMapping) {
       }
     }
     
-    // Only include securities with valid security name and ISIN
-    if (security.securityName && security.isin) {
+    // Include securities with either valid security name OR ISIN (more flexible)
+    if ((security.securityName && security.securityName.length > 5) || 
+        (security.isin && /^[A-Z]{2}[A-Z0-9]{10}$/.test(security.isin))) {
       security.position = mappedSecurities.length + 1;
       security.currentValue = security.marketValue;
       mappedSecurities.push(security);
@@ -479,16 +487,35 @@ async function applySwissPrecisionCorrections(cleanedSecurities) {
 
 function calculateHeaderScore(row) {
   // Calculate likelihood that this row contains column headers
-  const headerKeywords = ['security', 'name', 'isin', 'quantity', 'price', 'value', 'currency', 'category'];
+  const headerKeywords = [
+    'security', 'name', 'isin', 'quantity', 'price', 'value', 'currency', 'category',
+    'description', 'code', 'shares', 'nominal', 'market', 'valuation', 'ccy',
+    'instrument', 'asset', 'bond', 'equity', 'cash', 'position', 'amount',
+    'bezeichnung', 'wert', 'kurs', 'anzahl', 'wahrung' // German terms
+  ];
   let score = 0;
   
   for (const cell of row) {
     const content = cell.content.toLowerCase();
+    
+    // High score for exact keyword matches
     if (headerKeywords.some(keyword => content.includes(keyword))) {
-      score += 0.3;
+      score += 0.4;
     }
-    if (content.length > 3 && content.length < 20) {
-      score += 0.1; // Reasonable header length
+    
+    // Moderate score for reasonable header length
+    if (content.length > 2 && content.length < 30) {
+      score += 0.1;
+    }
+    
+    // Small bonus for containing capital letters (typical headers)
+    if (/[A-Z]/.test(cell.content)) {
+      score += 0.05;
+    }
+    
+    // Small bonus for not being purely numeric (unlikely header)
+    if (!/^\d+([.,]\d+)*$/.test(content)) {
+      score += 0.05;
     }
   }
   

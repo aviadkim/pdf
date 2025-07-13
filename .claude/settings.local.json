@@ -31,7 +31,15 @@
       "Bash(git clone:*)",
       "Bash(pnpm install:*)",
       "Bash(pnpm playwright:*)",
-      "Bash(pnpm run:*)"
+      "Bash(pnpm run:*)",
+      "Bash(echo:*)",
+      "Bash(cp:*)",
+      "Bash(for file in *.js)",
+      "Bash(do mv \"$file\" \"$file%.js.cjs\")",
+      "Bash(done)",
+      "Bash(env)",
+      "Bash(./automation/setup-monitoring.sh:*)",
+      "Bash(./automation/start-monitoring.sh:*)"
     ],
     "deny": []
   }
