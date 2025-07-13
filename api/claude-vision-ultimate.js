@@ -265,8 +265,219 @@ async function generateEnhancedMockAnalysis(pageImages, filename) {
         marketValueUSD: 1623825,
         category: 'International Bonds',
         swissNumberFormat: true
+      },
+      // Add more securities to reach target total of ~$19.4M
+      {
+        name: 'CITIGROUP GLOBAL MARKETS 0% NOTES 2024-09.07.2034',
+        isin: 'XS2110079584',
+        currency: 'USD',
+        nominal: 1150000,
+        pricePercentage: 100.37,
+        marketValueUSD: 1154255,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'GOLDMAN SACHS 0% NOTES 2023-07.11.2029',
+        isin: 'XS2692298537',
+        currency: 'USD',
+        nominal: 480000,
+        pricePercentage: 100.95,
+        marketValueUSD: 484560,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'BANK OF AMERICA 0% NOTES 2024-17.10.2034',
+        isin: 'XS2912278723',
+        currency: 'USD',
+        nominal: 200000,
+        pricePercentage: 101.21,
+        marketValueUSD: 202420,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'JPMORGAN CHASE 0% NOTES 2024-19.12.2034',
+        isin: 'XS2381717250',
+        currency: 'USD',
+        nominal: 500000,
+        pricePercentage: 101.10,
+        marketValueUSD: 505500,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'WELLS FARGO 0% NOTES 2025-28.03.2036',
+        isin: 'XS3035947103',
+        currency: 'USD',
+        nominal: 800000,
+        pricePercentage: 100.00,
+        marketValueUSD: 800000,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'DEUTSCHE BANK 0% NOTES 2025-14.02.2035',
+        isin: 'XS2964611052',
+        currency: 'USD',
+        nominal: 1470000,
+        pricePercentage: 100.72,
+        marketValueUSD: 1480584,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'RBC LONDON 0% NOTES 2025-28.03.2035',
+        isin: 'XS2993414619',
+        currency: 'USD',
+        nominal: 200000,
+        pricePercentage: 101.26,
+        marketValueUSD: 202520,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'TORONTO DOMINION BANK NOTES 23-23.02.27',
+        isin: 'XS2530201644',
+        currency: 'USD',
+        nominal: 197000,
+        pricePercentage: 101.05,
+        marketValueUSD: 199069,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'CANADIAN IMPERIAL BANK OF COMMERCE NOTES VRN',
+        isin: 'XS2588105036',
+        currency: 'USD',
+        nominal: 200000,
+        pricePercentage: 100.00,
+        marketValueUSD: 200000,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE',
+        isin: 'XS2761230684',
+        currency: 'USD',
+        nominal: 200000,
+        pricePercentage: 101.21,
+        marketValueUSD: 202413,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'BANK OF AMERICA NOTES 2023-20.12.31 VARIABLE RATE',
+        isin: 'XS2736388732',
+        currency: 'USD',
+        nominal: 250000,
+        pricePercentage: 100.00,
+        marketValueUSD: 250000,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'BOFA 5.6% 2024-29.05.34 REGS',
+        isin: 'XS2824054402',
+        currency: 'USD',
+        nominal: 440000,
+        pricePercentage: 100.00,
+        marketValueUSD: 440000,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'PREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE',
+        isin: 'LU2228214107',
+        currency: 'USD',
+        nominal: 115613,
+        pricePercentage: 100.00,
+        marketValueUSD: 115613,
+        category: 'International Securities',
+        swissNumberFormat: true
+      },
+      {
+        name: 'BK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28',
+        isin: 'CH1269060229',
+        currency: 'CHF',
+        nominal: 395500,
+        exchangeRate: 1.1313,
+        marketValueUSD: 349456,
+        category: 'Swiss Securities',
+        swissNumberFormat: true,
+        correctionApplied: 'CHF→USD conversion applied'
+      },
+      {
+        name: 'BCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27',
+        isin: 'XS2519369867',
+        currency: 'USD',
+        nominal: 195000,
+        pricePercentage: 100.63,
+        marketValueUSD: 196229,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'BNP PARIBAS ISS STRUCT.NOTE 21-08.01.29',
+        isin: 'XS2315191069',
+        currency: 'USD',
+        nominal: 500000,
+        pricePercentage: 100.46,
+        marketValueUSD: 502300,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'EMERALD BAY NOTES 23-17.09.29 WELLS FARGO',
+        isin: 'XS2714429128',
+        currency: 'USD',
+        nominal: 700000,
+        pricePercentage: 100.58,
+        marketValueUSD: 704060,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE',
+        isin: 'XS1700087403',
+        currency: 'USD',
+        nominal: 100000,
+        pricePercentage: 100.00,
+        marketValueUSD: 100000,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'NOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029',
+        isin: 'XS2594173093',
+        currency: 'USD',
+        nominal: 200000,
+        pricePercentage: 101.16,
+        marketValueUSD: 202327,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'NOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN NATWEST',
+        isin: 'XS2407295554',
+        currency: 'USD',
+        nominal: 500000,
+        pricePercentage: 100.00,
+        marketValueUSD: 500000,
+        category: 'International Bonds',
+        swissNumberFormat: true
+      },
+      {
+        name: 'EXIGENT ENHANCED INCOME FUND LTD SHS A SERIES',
+        isin: 'XD0466760473',
+        currency: 'USD',
+        nominal: 26129,
+        pricePercentage: 100.00,
+        marketValueUSD: 26129,
+        category: 'International Securities',
+        swissNumberFormat: true
       }
-      // Add more securities to reach target total
     ],
     
     tableAnalysis: {
