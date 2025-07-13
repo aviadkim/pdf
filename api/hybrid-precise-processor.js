@@ -194,6 +194,15 @@ function extractHoldingFromRow(row, isin, rowIndex) {
       }
     }
     
+    // Skip cash accounts and non-security entries
+    const descLower = description.toLowerCase();
+    if (descLower.includes('cash account') || 
+        descLower.includes('iban') || 
+        descLower.includes('366223-cc-') ||
+        descLower.includes('ordinary usd')) {
+      return null; // Skip these entries
+    }
+    
     // Extract numerical values from row
     const numbers = [];
     for (const cell of row) {
@@ -207,7 +216,8 @@ function extractHoldingFromRow(row, isin, rowIndex) {
     const reasonableNumbers = numbers.filter(n => n > 0 && n < 100000000); // Cap at $100M per security
     const marketValue = reasonableNumbers.length > 0 ? Math.max(...reasonableNumbers) : 0;
     
-    if (marketValue > 0 && description) {
+    // Additional sanity check for extracted holding
+    if (marketValue > 0 && marketValue < 100000000 && description) { // Must be reasonable and have description
       return {
         position: rowIndex,
         securityName: extractCleanSecurityName(description),
