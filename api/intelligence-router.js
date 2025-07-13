@@ -335,34 +335,56 @@ async function routeToProcessor(pdfBase64, filename, processorSelection) {
   }
   
   try {
-    // Simulate internal API call to specialized processor
+    // Make real API call to specialized processor
     console.log(`📡 Calling ${endpoint}...`);
     
-    // For Corner Bank documents, use our proven hybrid processor
-    if (processorSelection.processor === 'hybrid-precise-processor') {
-      // This would be an internal call to our hybrid processor
-      return simulateHybridProcessorCall(pdfBase64, filename);
-    }
+    const fetch = (await import('node-fetch')).default;
     
-    // For UBS documents, use UBS processor
-    if (processorSelection.processor === 'ubs-processor') {
-      return simulateUBSProcessorCall(pdfBase64, filename);
-    }
+    const response = await fetch(`https://pdf-five-nu.vercel.app${endpoint}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        pdfBase64: pdfBase64,
+        filename: filename
+      }),
+      timeout: 60000
+    });
     
-    // For Claude Vision, use AI processing
-    if (processorSelection.processor === 'claude-vision-processor') {
-      return simulateClaudeVisionCall(pdfBase64, filename);
+    if (response.ok) {
+      const result = await response.json();
+      console.log(`✅ ${processorSelection.processor} completed successfully`);
+      console.log(`📊 Holdings found: ${result.data?.holdings?.length || 0}`);
+      return result;
+    } else {
+      throw new Error(`HTTP ${response.status}: ${await response.text()}`);
     }
-    
-    // Default to universal processor
-    return simulateUniversalProcessorCall(pdfBase64, filename);
     
   } catch (error) {
     console.error(`❌ Processor ${processorSelection.processor} failed:`, error);
     
-    // Fallback to hybrid processor
+    // Fallback to hybrid processor with real API call
     console.log('🔄 Falling back to hybrid processor...');
-    return simulateHybridProcessorCall(pdfBase64, filename);
+    try {
+      const fetch = (await import('node-fetch')).default;
+      const fallbackResponse = await fetch('https://pdf-five-nu.vercel.app/api/hybrid-precise-processor', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          pdfBase64: pdfBase64,
+          filename: filename
+        }),
+        timeout: 60000
+      });
+      
+      if (fallbackResponse.ok) {
+        return await fallbackResponse.json();
+      } else {
+        throw new Error(`Fallback failed: HTTP ${fallbackResponse.status}`);
+      }
+    } catch (fallbackError) {
+      console.error('❌ Fallback processor also failed:', fallbackError);
+      throw new Error('All processors failed');
+    }
   }
 }
 
@@ -402,86 +424,7 @@ function extractDocumentText(pdfBase64, filename) {
   return 'financial document portfolio securities holdings';
 }
 
-async function simulateHybridProcessorCall(pdfBase64, filename) {
-  // Simulate our proven hybrid processor results
-  return {
-    success: true,
-    data: {
-      holdings: [], // Would contain 39 securities
-      totalValue: 26238058,
-      accuracy: 0.74,
-      extractionMethod: 'Hybrid Precise Processor'
-    },
-    validation: {
-      qualityGrade: 'A+',
-      institutionDetected: 'Corner Bank (Messos)'
-    },
-    metadata: {
-      processingTime: '8000ms',
-      version: 'Hybrid-Precise-1.0'
-    }
-  };
-}
-
-async function simulateUBSProcessorCall(pdfBase64, filename) {
-  return {
-    success: true,
-    data: {
-      holdings: [], // Would contain UBS securities
-      totalValue: 5000000,
-      accuracy: 0.85,
-      extractionMethod: 'UBS Wealth Management Processor'
-    },
-    validation: {
-      qualityGrade: 'A+',
-      institutionDetected: 'UBS Wealth Management'
-    },
-    metadata: {
-      processingTime: '6000ms',
-      version: 'UBS-Processor-1.0'
-    }
-  };
-}
-
-async function simulateClaudeVisionCall(pdfBase64, filename) {
-  return {
-    success: true,
-    data: {
-      holdings: [], // Would contain AI-extracted securities
-      totalValue: 0,
-      accuracy: 0.97,
-      extractionMethod: 'Claude Vision AI'
-    },
-    validation: {
-      qualityGrade: 'A++',
-      claudeVisionPowered: true
-    },
-    metadata: {
-      processingTime: '15000ms',
-      version: 'Claude-Vision-1.0'
-    }
-  };
-}
-
-async function simulateUniversalProcessorCall(pdfBase64, filename) {
-  return {
-    success: true,
-    data: {
-      holdings: [],
-      totalValue: 0,
-      accuracy: 0.80,
-      extractionMethod: 'Universal Processor'
-    },
-    validation: {
-      qualityGrade: 'B+',
-      universalProcessing: true
-    },
-    metadata: {
-      processingTime: '10000ms',
-      version: 'Universal-1.0'
-    }
-  };
-}
+// Simulation functions removed - now using real API calls
 
 async function updateInstitutionKnowledge(institutionAnalysis, processingResult) {
   // Update learning database with new patterns
