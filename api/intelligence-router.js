@@ -2,6 +2,12 @@
 // YOLO MODE: Revolutionary AI-powered document routing and processing
 // The brain that decides which processor to use for maximum accuracy
 
+// Import processor handlers directly to avoid circular HTTP calls
+import hybridPreciseProcessor from './hybrid-precise-processor.js';
+import ubsProcessor from './ubs-processor.js';
+import claudeVisionProcessor from './claude-vision-processor.js';
+import universalProcessor from './universal-processor.js';
+
 export default async function handler(req, res) {
   // Handle CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -335,52 +341,52 @@ async function routeToProcessor(pdfBase64, filename, processorSelection) {
   }
   
   try {
-    // Make real API call to specialized processor
-    console.log(`📡 Calling ${endpoint}...`);
+    // Call processor function directly to avoid circular HTTP calls
+    console.log(`📡 Calling ${processorSelection.processor} directly...`);
     
-    const fetch = (await import('node-fetch')).default;
-    
-    const response = await fetch(`https://pdf-five-nu.vercel.app${endpoint}`, {
+    // Create mock request and response objects for internal calls
+    const mockReq = {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        pdfBase64: pdfBase64,
-        filename: filename
-      }),
-      timeout: 60000
-    });
+      body: { pdfBase64, filename }
+    };
     
-    if (response.ok) {
-      const result = await response.json();
-      console.log(`✅ ${processorSelection.processor} completed successfully`);
-      console.log(`📊 Holdings found: ${result.data?.holdings?.length || 0}`);
-      return result;
+    let result;
+    
+    // Call the appropriate processor function directly
+    if (processorSelection.processor === 'hybrid-precise-processor') {
+      const mockRes = createMockResponse();
+      await hybridPreciseProcessor(mockReq, mockRes);
+      result = mockRes.jsonData;
+    } else if (processorSelection.processor === 'ubs-processor') {
+      const mockRes = createMockResponse();
+      await ubsProcessor(mockReq, mockRes);
+      result = mockRes.jsonData;
+    } else if (processorSelection.processor === 'claude-vision-processor') {
+      const mockRes = createMockResponse();
+      await claudeVisionProcessor(mockReq, mockRes);
+      result = mockRes.jsonData;
+    } else if (processorSelection.processor === 'universal-processor') {
+      const mockRes = createMockResponse();
+      await universalProcessor(mockReq, mockRes);
+      result = mockRes.jsonData;
     } else {
-      throw new Error(`HTTP ${response.status}: ${await response.text()}`);
+      throw new Error(`Unknown processor: ${processorSelection.processor}`);
     }
+    
+    console.log(`✅ ${processorSelection.processor} completed successfully`);
+    console.log(`📊 Holdings found: ${result?.data?.holdings?.length || 0}`);
+    return result;
     
   } catch (error) {
     console.error(`❌ Processor ${processorSelection.processor} failed:`, error);
     
-    // Fallback to hybrid processor with real API call
+    // Fallback to hybrid processor with direct call
     console.log('🔄 Falling back to hybrid processor...');
     try {
-      const fetch = (await import('node-fetch')).default;
-      const fallbackResponse = await fetch('https://pdf-five-nu.vercel.app/api/hybrid-precise-processor', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          pdfBase64: pdfBase64,
-          filename: filename
-        }),
-        timeout: 60000
-      });
-      
-      if (fallbackResponse.ok) {
-        return await fallbackResponse.json();
-      } else {
-        throw new Error(`Fallback failed: HTTP ${fallbackResponse.status}`);
-      }
+      const fallbackReq = { method: 'POST', body: { pdfBase64, filename } };
+      const fallbackRes = createMockResponse();
+      await hybridPreciseProcessor(fallbackReq, fallbackRes);
+      return fallbackRes.jsonData;
     } catch (fallbackError) {
       console.error('❌ Fallback processor also failed:', fallbackError);
       throw new Error('All processors failed');
@@ -424,7 +430,32 @@ function extractDocumentText(pdfBase64, filename) {
   return 'financial document portfolio securities holdings';
 }
 
-// Simulation functions removed - now using real API calls
+// Mock response object for internal processor calls
+function createMockResponse() {
+  return {
+    jsonData: null,
+    statusCode: 200,
+    headers: {},
+    setHeader: function(name, value) {
+      this.headers[name] = value;
+    },
+    status: function(code) {
+      this.statusCode = code;
+      return this;
+    },
+    json: function(data) {
+      this.jsonData = data;
+      return this;
+    },
+    send: function(data) {
+      this.jsonData = data;
+      return this;
+    },
+    end: function() {
+      return this;
+    }
+  };
+}
 
 async function updateInstitutionKnowledge(institutionAnalysis, processingResult) {
   // Update learning database with new patterns
