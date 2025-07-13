@@ -142,10 +142,10 @@ export default async function handler(req, res) {
 </head>
 <body>
     <div class="header">
-        <h1>🧠 Universal Intelligence Router</h1>
-        <p><strong>🚀 YOLO MODE: AI-POWERED DOCUMENT PROCESSING</strong><br>
-        🎯 Auto-Institution Detection • Optimal Processor Selection<br>
-        📚 Real-time Learning • Claude Code-level Understanding</p>
+        <h1>🧠 Claude Vision Ultimate</h1>
+        <p><strong>🚀 YOLO MODE: CLAUDE CODE-LEVEL SWISS BANKING PROCESSING</strong><br>
+        🎯 Swiss Number Parsing • CHF→USD Conversion • Bond Math Corrections<br>
+        📚 Systematic Error Fixes • Premium Accuracy (99.9%+ Target)</p>
     </div>
 
     <div class="upload-container">
@@ -239,7 +239,7 @@ export default async function handler(req, res) {
             extractBtn.disabled = true;
             progressContainer.style.display = 'block';
             results.style.display = 'block';
-            results.innerHTML = '<div class="status processing">🧠 Processing with Universal Intelligence Router...<br>🎯 Step 1: AI-powered institution detection<br>⚡ Step 2: Optimal processor selection<br>🚀 Step 3: Route to specialized processor<br>📚 Step 4: Real-time learning and adaptation<br>🔍 Step 5: Intelligence enhancement and validation</div>';
+            results.innerHTML = '<div class="status processing">🧠 Processing with Claude Vision Ultimate...<br>🎯 Step 1: PDF to high-quality images<br>⚡ Step 2: Claude API vision analysis<br>🚀 Step 3: Swiss banking data processing<br>📚 Step 4: CHF→USD conversion & systematic fixes<br>🔍 Step 5: Validation against Corner Bank targets</div>';
 
             try {
                 // Convert file to base64
@@ -248,8 +248,8 @@ export default async function handler(req, res) {
                 
                 progressBar.style.width = '50%';
                 
-                // Send to our Universal Intelligence Router (YOLO MODE ACTIVATED)
-                const response = await fetch('/api/intelligence-router', {
+                // Send to Claude Vision Ultimate (YOLO MODE ACTIVATED)
+                const response = await fetch('/api/claude-vision-ultimate', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
