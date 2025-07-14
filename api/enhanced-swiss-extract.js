@@ -71,7 +71,7 @@ export default async function handler(req, res) {
 
     // Convert PDF to images using enhanced strategy
     const images = await convertPDFToImages(pdfBuffer);
-    console.log(`נ“¸ Generated ${images.length} images for processing`);
+    console.log(`׳ ֲג€ֲ¸ Generated ${images.length} images for processing`);
 
     // Process with Azure Document Intelligence
     let extractedData;
@@ -93,16 +93,16 @@ export default async function handler(req, res) {
     processingData.extractedData = extractedData;
     processingData.method = client ? 'Azure Document Intelligence' : 'Enhanced Mock Data';
 
-    // נ§  AI MONITORING: Observe and learn from this processing
+    // ׳ ֲֲ§ֲ  AI MONITORING: Observe and learn from this processing
     const observation = await aiMonitor.observeProcessing(req, res, processingData);
 
-    // נ”® PREDICTIVE ANALYSIS: Get predictions for future improvements
+    // ׳ ֲג€ֲ® PREDICTIVE ANALYSIS: Get predictions for future improvements
     const predictions = await aiMonitor.predictIssues({
       filename: pdfFile.originalFilename,
       size: pdfFile.size
     });
 
-    // נ¯ QUALITY ASSESSMENT: Evaluate extraction quality
+    // ׳ ֲֲֲ¯ QUALITY ASSESSMENT: Evaluate extraction quality
     const qualityAssessment = aiMonitor.assessDataQuality(extractedData);
 
     return res.status(200).json({
@@ -136,7 +136,7 @@ export default async function handler(req, res) {
     processingData.processingTime = Date.now() - startTime;
     processingData.error = error.message;
 
-    // נ§  AI MONITORING: Learn from failures too
+    // ׳ ֲֲ§ֲ  AI MONITORING: Learn from failures too
     try {
       await aiMonitor.observeProcessing(req, res, processingData);
     } catch (monitorError) {
@@ -170,7 +170,7 @@ async function convertPDFToImages(pdfBuffer) {
     const convert = fromBuffer(pdfBuffer, options);
     const results = await convert.bulk(-1, { responseType: 'buffer' });
 
-    console.log(`נ“„ Converted ${results.length} pages to images`);
+    console.log(`׳ ֲג€ג€ Converted ${results.length} pages to images`);
     return results.map(result => result.buffer);
 
   } catch (error) {
@@ -186,7 +186,7 @@ async function processWithAzureDocumentIntelligence(imageBuffers, filename) {
     const allExtractedData = [];
 
     for (let i = 0; i < imageBuffers.length; i++) {
-      console.log(`נ”„ Processing image ${i + 1}/${imageBuffers.length} with Azure`);
+      console.log(`׳ ֲג€ג€ Processing image ${i + 1}/${imageBuffers.length} with Azure`);
 
       const poller = await client.beginAnalyzeDocument(
         'prebuilt-layout',
