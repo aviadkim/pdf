@@ -1,0 +1,134 @@
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="27.779185">
+<testsuite name="render-upload-test.spec.js" timestamp="2025-07-16T16:38:44.127Z" hostname="chromium" tests="2" failures="1" skipped="0" time="25.379" errors="0">
+<testcase name="Render PDF Upload and Accuracy Test › Upload Messos PDF and analyze extraction accuracy" classname="render-upload-test.spec.js" time="11.183">
+<system-out>
+<![CDATA[Navigating to Render deployment...
+Page loaded successfully
+Uploading PDF: C:\Users\aviad\OneDrive\Desktop\pdf-main\2. Messos  - 31.03.2025.pdf
+Waiting for processing to complete...
+Processing completed successfully
+Result items found: [33m26[39m
+ - 🚀 MCP-Enhanced Platform Ready
+ - 📄 Upload any financial PDF to see extracted data
+ - 🎯 Expected: Messos PDF with XS2530201644 = $199,080
+ - ✅ File selected: 2. Messos  - 31.03.2025.pdf (0.60 MB)
+ - 🎯 Messos document detected! Processing with enhanced accuracy...
+ - 🚀 Starting MCP-enhanced processing...
+ - 🔍 Step 1: Institution detection and format analysis
+ - ⚡ Step 2: Dual-engine processing (Text + OCR)
+ - 🌐 Step 3: Web fetch integration for validation
+ - 🎯 Step 4: AI-powered accuracy validation
+ - 📡 Sending to bulletproof processor...
+ - ✅ Processing completed successfully!
+ - 💰 Total Portfolio Value: $652,030,799
+ - 📊 Securities Extracted: 39
+ - 🎯 Confidence Level: 90.0%
+ - 📄 PDF Pages: 19
+ - 🔍 OCR Pages Processed: 0
+ - 🔧 Processing Methods: text-extraction
+ - 📋 Extracted Securities:
+ - 🎯 TARGET FOUND: XS2530201644 = USD 199,080 ✅ CORRECT
+ - ... and 34 more securities
+ - 🚀 MCP Enhancement Features:
+ - ✅ MCP Integration Active
+ - ✅ Web Fetch Integration
+ - ✅ Dual-Engine Processing
+ - ✅ Institution Detection
+Extracted values:
+  Total Value: 652030799
+  Securities Count: 39
+  Confidence: 90%
+Portfolio value accuracy: -3149.86%
+  Expected: $19,464,431
+  Extracted: $652,030,799
+  Difference: $632,566,368
+]]>
+</system-out>
+</testcase>
+<testcase name="Render PDF Upload and Accuracy Test › Test different processing options" classname="render-upload-test.spec.js" time="14.196">
+<failure message="render-upload-test.spec.js:259:7 Test different processing options" type="FAILURE">
+<![CDATA[  [chromium] › render-upload-test.spec.js:259:7 › Render PDF Upload and Accuracy Test › Test different processing options 
+
+    TimeoutError: locator.setChecked: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('#mcpEnabled')
+        - locator resolved to <input checked type="checkbox" id="mcpEnabled"/>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        18 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      274 |       
+      275 |       // Set options
+    > 276 |       await page.locator('#mcpEnabled').setChecked(opt.mcp);
+          |                                         ^
+      277 |       await page.locator('#webFetchEnabled').setChecked(opt.webFetch);
+      278 |       await page.locator('#dualEngineEnabled').setChecked(opt.dualEngine);
+      279 |       await page.locator('#institutionDetection').setChecked(opt.institution);
+        at C:\Users\aviad\OneDrive\Desktop\pdf-main\tests\render-upload-test.spec.js:276:41
+
+    Error: Accuracy 0.00% is below required 99.5%
+
+      326 |     // Fail the test if accuracy is below 99.5%
+      327 |     if (detailedResults.accuracyAnalysis.accuracyPercentage < 99.5) {
+    > 328 |       throw new Error(`Accuracy ${detailedResults.accuracyAnalysis.accuracyPercentage.toFixed(2)}% is below required 99.5%`);
+          |             ^
+      329 |     }
+      330 |   });
+      331 | });
+        at C:\Users\aviad\OneDrive\Desktop\pdf-main\tests\render-upload-test.spec.js:328:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\render-upload-test-Render--25c19-ifferent-processing-options-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\render-upload-test-Render--25c19-ifferent-processing-options-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\render-upload-test-Render--25c19-ifferent-processing-options-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Navigating to Render deployment...
+Page loaded successfully
+
+Testing with options: { mcp: [33mtrue[39m, webFetch: [33mtrue[39m, dualEngine: [33mtrue[39m, institution: [33mtrue[39m }
+
+Testing with options: { mcp: [33mfalse[39m, webFetch: [33mtrue[39m, dualEngine: [33mtrue[39m, institution: [33mtrue[39m }
+
+=== UPLOAD TEST SUMMARY ===
+PDF File: 2. Messos  - 31.03.2025.pdf
+Deployment URL: https://pdf-fzzi.onrender.com
+
+Extraction Results:
+  Total Value: $652,030,799
+  Securities Count: 39
+  Confidence: 90%
+
+Accuracy Analysis:
+  Correct Extractions: 0/0
+  Accuracy: 0.00%
+
+Detailed results saved to: render-test-results\upload-accuracy-analysis.json
+
+[[ATTACHMENT|render-upload-test-Render--25c19-ifferent-processing-options-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|render-upload-test-Render--25c19-ifferent-processing-options-chromium\video.webm]]
+
+[[ATTACHMENT|render-upload-test-Render--25c19-ifferent-processing-options-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

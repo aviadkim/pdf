@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-07-16T16:38:45.537Z",
+  "pdfFile": "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\2. Messos  - 31.03.2025.pdf",
+  "url": "https://pdf-fzzi.onrender.com",
+  "extractionResults": {
+    "totalValue": 652030799,
+    "securitiesCount": 39,
+    "confidence": 90,
+    "rawResults": [
+      "🚀 MCP-Enhanced Platform Ready",
+      "📄 Upload any financial PDF to see extracted data",
+      "🎯 Expected: Messos PDF with XS2530201644 = $199,080",
+      "✅ File selected: 2. Messos  - 31.03.2025.pdf (0.60 MB)",
+      "🎯 Messos document detected! Processing with enhanced accuracy...",
+      "🚀 Starting MCP-enhanced processing...",
+      "🔍 Step 1: Institution detection and format analysis",
+      "⚡ Step 2: Dual-engine processing (Text + OCR)",
+      "🌐 Step 3: Web fetch integration for validation",
+      "🎯 Step 4: AI-powered accuracy validation",
+      "📡 Sending to bulletproof processor...",
+      "✅ Processing completed successfully!",
+      "💰 Total Portfolio Value: $652,030,799",
+      "📊 Securities Extracted: 39",
+      "🎯 Confidence Level: 90.0%",
+      "📄 PDF Pages: 19",
+      "🔍 OCR Pages Processed: 0",
+      "🔧 Processing Methods: text-extraction",
+      "📋 Extracted Securities:",
+      "🎯 TARGET FOUND: XS2530201644 = USD 199,080 ✅ CORRECT",
+      "... and 34 more securities",
+      "🚀 MCP Enhancement Features:",
+      "✅ MCP Integration Active",
+      "✅ Web Fetch Integration",
+      "✅ Dual-Engine Processing",
+      "✅ Institution Detection"
+    ]
+  },
+  "accuracyAnalysis": {
+    "totalSecurities": 0,
+    "correctExtractions": 0,
+    "missingSecurities": [],
+    "incorrectValues": [],
+    "accuracyPercentage": 0,
+    "portfolioValueAccuracy": -3149.857999959002
+  },
+  "errors": []
+}

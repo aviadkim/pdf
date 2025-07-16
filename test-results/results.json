@@ -1,0 +1,381 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\playwright.config.js",
+    "rootDir": "C:/Users/aviad/OneDrive/Desktop/pdf-main/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/aviad/OneDrive/Desktop/pdf-main/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/aviad/OneDrive/Desktop/pdf-main/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.1",
+    "workers": 4,
+    "webServer": {
+      "command": "npm run start:server",
+      "port": 3000,
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "render-upload-test.spec.js",
+      "file": "render-upload-test.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Render PDF Upload and Accuracy Test",
+          "file": "render-upload-test.spec.js",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Upload Messos PDF and analyze extraction accuracy",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11183,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Navigating to Render deployment...\n"
+                        },
+                        {
+                          "text": "Page loaded successfully\n"
+                        },
+                        {
+                          "text": "Uploading PDF: C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\2. Messos  - 31.03.2025.pdf\n"
+                        },
+                        {
+                          "text": "Waiting for processing to complete...\n"
+                        },
+                        {
+                          "text": "Processing completed successfully\n"
+                        },
+                        {
+                          "text": "Result items found: \u001b[33m26\u001b[39m\n"
+                        },
+                        {
+                          "text": " - 🚀 MCP-Enhanced Platform Ready\n"
+                        },
+                        {
+                          "text": " - 📄 Upload any financial PDF to see extracted data\n"
+                        },
+                        {
+                          "text": " - 🎯 Expected: Messos PDF with XS2530201644 = $199,080\n"
+                        },
+                        {
+                          "text": " - ✅ File selected: 2. Messos  - 31.03.2025.pdf (0.60 MB)\n"
+                        },
+                        {
+                          "text": " - 🎯 Messos document detected! Processing with enhanced accuracy...\n"
+                        },
+                        {
+                          "text": " - 🚀 Starting MCP-enhanced processing...\n"
+                        },
+                        {
+                          "text": " - 🔍 Step 1: Institution detection and format analysis\n"
+                        },
+                        {
+                          "text": " - ⚡ Step 2: Dual-engine processing (Text + OCR)\n"
+                        },
+                        {
+                          "text": " - 🌐 Step 3: Web fetch integration for validation\n"
+                        },
+                        {
+                          "text": " - 🎯 Step 4: AI-powered accuracy validation\n"
+                        },
+                        {
+                          "text": " - 📡 Sending to bulletproof processor...\n"
+                        },
+                        {
+                          "text": " - ✅ Processing completed successfully!\n"
+                        },
+                        {
+                          "text": " - 💰 Total Portfolio Value: $652,030,799\n"
+                        },
+                        {
+                          "text": " - 📊 Securities Extracted: 39\n"
+                        },
+                        {
+                          "text": " - 🎯 Confidence Level: 90.0%\n"
+                        },
+                        {
+                          "text": " - 📄 PDF Pages: 19\n"
+                        },
+                        {
+                          "text": " - 🔍 OCR Pages Processed: 0\n"
+                        },
+                        {
+                          "text": " - 🔧 Processing Methods: text-extraction\n"
+                        },
+                        {
+                          "text": " - 📋 Extracted Securities:\n"
+                        },
+                        {
+                          "text": " - 🎯 TARGET FOUND: XS2530201644 = USD 199,080 ✅ CORRECT\n"
+                        },
+                        {
+                          "text": " - ... and 34 more securities\n"
+                        },
+                        {
+                          "text": " - 🚀 MCP Enhancement Features:\n"
+                        },
+                        {
+                          "text": " - ✅ MCP Integration Active\n"
+                        },
+                        {
+                          "text": " - ✅ Web Fetch Integration\n"
+                        },
+                        {
+                          "text": " - ✅ Dual-Engine Processing\n"
+                        },
+                        {
+                          "text": " - ✅ Institution Detection\n"
+                        },
+                        {
+                          "text": "Extracted values:\n"
+                        },
+                        {
+                          "text": "  Total Value: 652030799\n"
+                        },
+                        {
+                          "text": "  Securities Count: 39\n"
+                        },
+                        {
+                          "text": "  Confidence: 90%\n"
+                        },
+                        {
+                          "text": "Portfolio value accuracy: -3149.86%\n"
+                        },
+                        {
+                          "text": "  Expected: $19,464,431\n"
+                        },
+                        {
+                          "text": "  Extracted: $652,030,799\n"
+                        },
+                        {
+                          "text": "  Difference: $632,566,368\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-16T16:38:45.554Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7ea57b60c98692ae74ab-426c8cecd82388a9f058",
+              "file": "render-upload-test.spec.js",
+              "line": 80,
+              "column": 7
+            },
+            {
+              "title": "Test different processing options",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 14196,
+                      "error": {
+                        "message": "TimeoutError: locator.setChecked: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#mcpEnabled')\u001b[22m\n\u001b[2m    - locator resolved to <input checked type=\"checkbox\" id=\"mcpEnabled\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    18 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.setChecked: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#mcpEnabled')\u001b[22m\n\u001b[2m    - locator resolved to <input checked type=\"checkbox\" id=\"mcpEnabled\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    18 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\tests\\render-upload-test.spec.js:276:41",
+                        "location": {
+                          "file": "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\tests\\render-upload-test.spec.js",
+                          "column": 41,
+                          "line": 276
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 274 |\u001b[39m       \n \u001b[90m 275 |\u001b[39m       \u001b[90m// Set options\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 276 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#mcpEnabled'\u001b[39m)\u001b[33m.\u001b[39msetChecked(opt\u001b[33m.\u001b[39mmcp)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 277 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#webFetchEnabled'\u001b[39m)\u001b[33m.\u001b[39msetChecked(opt\u001b[33m.\u001b[39mwebFetch)\u001b[33m;\u001b[39m\n \u001b[90m 278 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#dualEngineEnabled'\u001b[39m)\u001b[33m.\u001b[39msetChecked(opt\u001b[33m.\u001b[39mdualEngine)\u001b[33m;\u001b[39m\n \u001b[90m 279 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#institutionDetection'\u001b[39m)\u001b[33m.\u001b[39msetChecked(opt\u001b[33m.\u001b[39minstitution)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\tests\\render-upload-test.spec.js",
+                            "column": 41,
+                            "line": 276
+                          },
+                          "message": "TimeoutError: locator.setChecked: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#mcpEnabled')\u001b[22m\n\u001b[2m    - locator resolved to <input checked type=\"checkbox\" id=\"mcpEnabled\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    18 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  274 |       \n  275 |       // Set options\n> 276 |       await page.locator('#mcpEnabled').setChecked(opt.mcp);\n      |                                         ^\n  277 |       await page.locator('#webFetchEnabled').setChecked(opt.webFetch);\n  278 |       await page.locator('#dualEngineEnabled').setChecked(opt.dualEngine);\n  279 |       await page.locator('#institutionDetection').setChecked(opt.institution);\n    at C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\tests\\render-upload-test.spec.js:276:41"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\tests\\render-upload-test.spec.js",
+                            "column": 13,
+                            "line": 328
+                          },
+                          "message": "Error: Accuracy 0.00% is below required 99.5%\n\n  326 |     // Fail the test if accuracy is below 99.5%\n  327 |     if (detailedResults.accuracyAnalysis.accuracyPercentage < 99.5) {\n> 328 |       throw new Error(`Accuracy ${detailedResults.accuracyAnalysis.accuracyPercentage.toFixed(2)}% is below required 99.5%`);\n      |             ^\n  329 |     }\n  330 |   });\n  331 | });\n    at C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\tests\\render-upload-test.spec.js:328:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Navigating to Render deployment...\n"
+                        },
+                        {
+                          "text": "Page loaded successfully\n"
+                        },
+                        {
+                          "text": "\nTesting with options: { mcp: \u001b[33mtrue\u001b[39m, webFetch: \u001b[33mtrue\u001b[39m, dualEngine: \u001b[33mtrue\u001b[39m, institution: \u001b[33mtrue\u001b[39m }\n"
+                        },
+                        {
+                          "text": "\nTesting with options: { mcp: \u001b[33mfalse\u001b[39m, webFetch: \u001b[33mtrue\u001b[39m, dualEngine: \u001b[33mtrue\u001b[39m, institution: \u001b[33mtrue\u001b[39m }\n"
+                        },
+                        {
+                          "text": "\n=== UPLOAD TEST SUMMARY ===\n"
+                        },
+                        {
+                          "text": "PDF File: 2. Messos  - 31.03.2025.pdf\n"
+                        },
+                        {
+                          "text": "Deployment URL: https://pdf-fzzi.onrender.com\n"
+                        },
+                        {
+                          "text": "\nExtraction Results:\n"
+                        },
+                        {
+                          "text": "  Total Value: $652,030,799\n"
+                        },
+                        {
+                          "text": "  Securities Count: 39\n"
+                        },
+                        {
+                          "text": "  Confidence: 90%\n"
+                        },
+                        {
+                          "text": "\nAccuracy Analysis:\n"
+                        },
+                        {
+                          "text": "  Correct Extractions: 0/0\n"
+                        },
+                        {
+                          "text": "  Accuracy: 0.00%\n"
+                        },
+                        {
+                          "text": "\nDetailed results saved to: render-test-results\\upload-accuracy-analysis.json\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-16T16:38:57.529Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\test-results\\render-upload-test-Render--25c19-ifferent-processing-options-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\test-results\\render-upload-test-Render--25c19-ifferent-processing-options-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\test-results\\render-upload-test-Render--25c19-ifferent-processing-options-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\tests\\render-upload-test.spec.js",
+                        "column": 41,
+                        "line": 276
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7ea57b60c98692ae74ab-d4d7e7f29fc0782e722b",
+              "file": "render-upload-test.spec.js",
+              "line": 259,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-07-16T16:38:44.067Z",
+    "duration": 27779.184999999998,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
