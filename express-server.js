@@ -56,13 +56,21 @@ app.post('/api/pdf-extract', async (req, res) => {
         const pdfBuffer = Buffer.from(pdfBase64, 'base64');
         const pdfData = await pdfParse(pdfBuffer);
         
+        // Extract securities using Swiss financial patterns
+        const securities = extractSecurities(pdfData.text);
+        const totalValue = securities.reduce((sum, s) => sum + (s.value || 0), 0);
+        
         res.json({
             success: true,
             message: 'PDF parsed successfully',
+            extractedData: {
+                securities: securities,
+                totalValue: totalValue,
+                confidence: securities.length > 0 ? 0.85 : 0.1
+            },
             pdfInfo: {
                 pages: pdfData.numpages,
-                textLength: pdfData.text.length,
-                extractedText: pdfData.text.substring(0, 500) + '...'
+                textLength: pdfData.text.length
             }
         });
         
@@ -85,6 +93,58 @@ app.get('/', (req, res) => {
         timestamp: new Date().toISOString()
     });
 });
+
+// Swiss financial data extraction function
+function extractSecurities(text) {
+    const securities = [];
+    
+    // ISIN pattern matching
+    const isinRegex = /ISIN[:\s]*([A-Z]{2}[A-Z0-9]{9}[0-9])/g;
+    let match;
+    
+    while ((match = isinRegex.exec(text)) !== null) {
+        const isin = match[1];
+        const position = match.index;
+        
+        // Extract context around ISIN
+        const contextStart = Math.max(0, position - 500);
+        const contextEnd = Math.min(text.length, position + 500);
+        const context = text.substring(contextStart, contextEnd);
+        
+        // Extract security name (usually before ISIN)
+        const nameMatch = context.match(/([A-Z\s&]+)\s*ISIN/);
+        const name = nameMatch ? nameMatch[1].trim() : 'Unknown Security';
+        
+        // Extract value (Swiss format with apostrophes)
+        const valueMatches = context.match(/(\d{1,3}(?:'\d{3})*(?:\.\d{2})?)/g);
+        let value = 0;
+        
+        if (valueMatches) {
+            // Find the largest value (likely the total)
+            const values = valueMatches.map(v => parseSwissNumber(v)).filter(v => v > 1000);
+            value = Math.max(...values, 0);
+        }
+        
+        // Extract currency
+        const currencyMatch = context.match(/\b(USD|EUR|CHF|GBP)\b/);
+        const currency = currencyMatch ? currencyMatch[1] : 'USD';
+        
+        securities.push({
+            isin: isin,
+            name: name,
+            value: value,
+            currency: currency
+        });
+    }
+    
+    return securities;
+}
+
+// Parse Swiss number format (e.g., "199'080" -> 199080)
+function parseSwissNumber(swissNumber) {
+    if (!swissNumber) return 0;
+    return parseFloat(swissNumber.replace(/'/g, '')) || 0;
+}
 
 // Start server
 app.listen(PORT, '0.0.0.0', () => {

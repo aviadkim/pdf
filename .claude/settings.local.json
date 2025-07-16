@@ -70,7 +70,8 @@
       "WebFetch(domain:vercel.com)",
       "WebFetch(domain:render.com)",
       "WebFetch(domain:docs.render.com)",
-      "WebFetch(domain:api.render.com)"
+      "WebFetch(domain:api.render.com)",
+      "WebFetch(domain:docs.anthropic.com)"
     ],
     "deny": []
   }
