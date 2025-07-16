@@ -118,18 +118,43 @@ function extractSecurities(text) {
         const contextEnd = Math.min(text.length, position + 500);
         const context = text.substring(contextStart, contextEnd);
         
-        // Extract security name (usually before ISIN)
-        const nameMatch = context.match(/([A-Z\s&]+)\s*ISIN/);
-        const name = nameMatch ? nameMatch[1].trim() : 'Unknown Security';
+        // Extract security name (usually before ISIN) - simplified extraction
+        let name = '';
         
-        // Extract value (Swiss format with apostrophes)
+        // Look for patterns before ISIN - simplified version
+        const namePatterns = [
+            /([A-Z][A-Z\s&,.-]+(?:NOTES?|BONDS?|BANK|CORP|LIMITED|LTD|INC|AG|SA|PLC|FUND|TRUST|FINANCIAL|CAPITAL|TREASURY|GOVERNMENT|MUNICIPAL|CORPORATE))\s*ISIN/i,
+            /([A-Z][A-Z\s&,.'-]+)\s*ISIN/i
+        ];
+        
+        for (const pattern of namePatterns) {
+            const match = context.match(pattern);
+            if (match && match[1]) {
+                name = match[1].trim();
+                break;
+            }
+        }
+        
+        if (!name) {
+            name = '';
+        }
+        
+        // Extract value (Swiss format with apostrophes) - more precise approach
         const valueMatches = context.match(/(\d{1,3}(?:'\d{3})*(?:\.\d{2})?)/g);
         let value = 0;
         
         if (valueMatches) {
-            // Find the largest value (likely the total)
-            const values = valueMatches.map(v => parseSwissNumber(v)).filter(v => v > 1000);
-            value = Math.max(...values, 0);
+            // Look for value patterns near "Value:" or currency indicators
+            const valuePattern = /(?:Value:|USD|EUR|CHF)\s*([\d']+(?:\.\d{2})?)/i;
+            const valueMatch = context.match(valuePattern);
+            
+            if (valueMatch) {
+                value = parseSwissNumber(valueMatch[1]);
+            } else {
+                // Fallback: Find the most reasonable value (not too small, not too large)
+                const values = valueMatches.map(v => parseSwissNumber(v)).filter(v => v > 1000 && v < 1000000000);
+                value = values.length > 0 ? Math.max(...values) : 0;
+            }
         }
         
         // Extract currency
