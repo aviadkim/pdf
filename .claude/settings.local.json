@@ -71,7 +71,9 @@
       "WebFetch(domain:render.com)",
       "WebFetch(domain:docs.render.com)",
       "WebFetch(domain:api.render.com)",
-      "WebFetch(domain:docs.anthropic.com)"
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(gh repo view:*)",
+      "Bash(gh api:*)"
     ],
     "deny": []
   }
