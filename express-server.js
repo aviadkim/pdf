@@ -357,6 +357,79 @@ app.post('/api/capture-screenshot', async (req, res) => {
     }
 });
 
+// Bulletproof processor endpoint
+app.post('/api/bulletproof-processor', upload.single('pdf'), async (req, res) => {
+    try {
+        const { mode = 'full', mcpEnabled = 'true', webFetchEnabled = 'true', dualEngineEnabled = 'true', institutionDetection = 'true' } = req.body;
+        
+        if (!req.file) {
+            return res.status(400).json({ 
+                success: false, 
+                error: 'No PDF file uploaded' 
+            });
+        }
+
+        const pdfBuffer = await fs.readFile(req.file.path);
+        
+        // Enhanced processing with all features enabled
+        const textExtraction = await pdfParse(pdfBuffer);
+        const textSecurities = extractSecurities(textExtraction.text);
+        
+        let ocrSecurities = [];
+        let processingMethods = ['text-extraction'];
+        
+        // OCR processing if enabled
+        if (mcpEnabled === 'true' && ocrWorker) {
+            try {
+                const ocrResults = await processWithOCR(pdfBuffer);
+                ocrSecurities = ocrResults.securities;
+                processingMethods.push('ocr-analysis');
+            } catch (ocrError) {
+                console.error('OCR processing error:', ocrError);
+            }
+        }
+        
+        // Combine results
+        const combinedSecurities = combineSecurities(textSecurities, ocrSecurities);
+        const totalValue = combinedSecurities.reduce((sum, s) => sum + (s.value || 0), 0);
+        
+        // Enhanced metadata
+        const metadata = {
+            processingTime: new Date().toISOString(),
+            mcpEnabled: mcpEnabled === 'true',
+            webFetchEnabled: webFetchEnabled === 'true',
+            dualEngineEnabled: dualEngineEnabled === 'true',
+            institutionDetection: institutionDetection === 'true'
+        };
+        
+        // Cleanup uploaded file
+        await fs.unlink(req.file.path).catch(console.error);
+        
+        res.json({
+            success: true,
+            message: 'Bulletproof PDF processing completed',
+            securities: combinedSecurities,
+            totalValue: totalValue,
+            processingMethods: processingMethods,
+            confidence: calculateConfidence(combinedSecurities, processingMethods),
+            metadata: metadata,
+            pdfInfo: {
+                pages: textExtraction.numpages,
+                textLength: textExtraction.text.length,
+                ocrPagesProcessed: ocrSecurities.length > 0 ? textExtraction.numpages : 0
+            }
+        });
+        
+    } catch (error) {
+        console.error('Bulletproof processor error:', error);
+        res.status(500).json({
+            success: false,
+            error: 'Bulletproof processing failed',
+            details: error.message
+        });
+    }
+});
+
 // Legacy PDF extraction endpoint (for backwards compatibility)
 app.post('/api/pdf-extract', async (req, res) => {
     try {
@@ -423,8 +496,13 @@ app.post('/api/pdf-extract', async (req, res) => {
     }
 });
 
-// Root endpoint
+// Main upload interface
 app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'upload-interface.html'));
+});
+
+// API info endpoint
+app.get('/api/info', (req, res) => {
     res.json({
         message: 'MCP-Enhanced PDF OCR Processor',
         status: 'running',
@@ -433,7 +511,8 @@ app.get('/', (req, res) => {
             '/api/pdf-extract',
             '/api/pdf-extract-enhanced',
             '/api/pdf-to-images',
-            '/api/capture-screenshot'
+            '/api/capture-screenshot',
+            '/api/bulletproof-processor'
         ],
         features: [
             'Text extraction from PDFs',
