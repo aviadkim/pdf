@@ -6,8 +6,8 @@ services:
     name: mcp-pdf-processor
     env: node
     plan: standard  # $25/month - 2GB RAM, 1 CPU
-    buildCommand: npm install && npm run build:render
-    startCommand: npm run start:render
+    buildCommand: npm install
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
@@ -19,7 +19,7 @@ services:
         value: false
       - key: PORT
         value: 10000
-    dockerfilePath: ./Dockerfile.render
+    dockerfilePath: ./Dockerfile
 
   # Optional: Redis for caching MCP results
   - type: redis
