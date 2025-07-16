@@ -22,6 +22,10 @@
       "dest": "/api/mcp/pdf-processor.js"
     },
     {
+      "src": "/api/real-pdf-extractor",
+      "dest": "/api/real-pdf-extractor.js"
+    },
+    {
       "src": "/live-demo",
       "dest": "/public/live-demo.html"
     },
