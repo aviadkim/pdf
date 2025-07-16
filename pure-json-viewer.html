@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔍 Pure JSON Extractor - View Complete Raw Data</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: #252526;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #007acc;
+            border-radius: 8px;
+            color: white;
+        }
+        
+        .title {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .upload-area {
+            border: 3px dashed #007acc;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin: 20px 0;
+            background: #2d2d30;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .upload-area:hover {
+            border-color: #00a8ff;
+            background: #323233;
+        }
+        
+        .upload-area.dragover {
+            border-color: #00a8ff;
+            background: #1e3a5f;
+        }
+        
+        .btn {
+            background: #007acc;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .btn:hover {
+            background: #005a9e;
+        }
+        
+        .btn:disabled {
+            background: #555;
+            cursor: not-allowed;
+        }
+        
+        .json-container {
+            margin-top: 20px;
+            background: #1e1e1e;
+            border: 1px solid #3e3e42;
+            border-radius: 5px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        
+        .json-header {
+            background: #007acc;
+            color: white;
+            padding: 10px 15px;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .json-content {
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.4;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-card {
+            background: #2d2d30;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #007acc;
+        }
+        
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #007acc;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #cccccc;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #007acc;
+        }
+        
+        .spinner {
+            border: 4px solid #555;
+            border-top: 4px solid #007acc;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .error {
+            background: #5a1f1f;
+            border: 1px solid #d32f2f;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #ffcdd2;
+        }
+        
+        .success {
+            background: #1b3d1b;
+            border: 1px solid #4caf50;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #c8e6c9;
+        }
+        
+        .tab-buttons {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .tab-btn {
+            background: #2d2d30;
+            color: #cccccc;
+            border: 1px solid #3e3e42;
+            padding: 10px 20px;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .tab-btn.active {
+            background: #007acc;
+            color: white;
+            border-color: #007acc;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .download-btn {
+            background: #28a745;
+            margin-left: 10px;
+        }
+        
+        .download-btn:hover {
+            background: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">🔍 Pure JSON Extractor</h1>
+            <p class="subtitle">Extract 100% Raw Data to JSON - No Processing, Just Complete Data</p>
+        </div>
+        
+        <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()">
+            <h3>📄 Drop PDF here or click to select</h3>
+            <p>Upload any PDF to extract complete raw data as JSON</p>
+            <input type="file" id="fileInput" accept=".pdf" style="display: none;" onchange="handleFileSelect(this.files[0])">
+        </div>
+        
+        <div style="text-align: center;">
+            <button class="btn" onclick="extractJSON()" id="extractBtn" disabled>
+                🔍 Extract Complete JSON
+            </button>
+            <button class="btn" onclick="testWithMessos()">
+                🧪 Test with Messos PDF
+            </button>
+        </div>
+        
+        <div id="results"></div>
+    </div>
+
+    <script>
+        let selectedFile = null;
+        let currentJSON = null;
+        const API_URL = 'http://localhost:3001';
+        
+        // Drag and drop functionality
+        const uploadArea = document.getElementById('uploadArea');
+        
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+        
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0 && files[0].type === 'application/pdf') {
+                handleFileSelect(files[0]);
+            }
+        });
+        
+        function handleFileSelect(file) {
+            if (file && file.type === 'application/pdf') {
+                selectedFile = file;
+                document.getElementById('extractBtn').disabled = false;
+                document.querySelector('.upload-area h3').textContent = `📄 ${file.name} selected`;
+                document.querySelector('.upload-area p').textContent = `Ready to extract (${(file.size / 1024).toFixed(1)}KB)`;
+            }
+        }
+        
+        async function extractJSON() {
+            if (!selectedFile) {
+                alert('Please select a PDF file first');
+                return;
+            }
+            
+            showLoading();
+            
+            try {
+                const base64 = await fileToBase64(selectedFile);
+                
+                const response = await fetch(`${API_URL}/api/pure-json-extractor`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        pdfBase64: base64,
+                        filename: selectedFile.name
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok && result.success) {
+                    currentJSON = result.completeJSON;
+                    showResults(result);
+                } else {
+                    showError(result.error || 'Extraction failed', result.details);
+                }
+                
+            } catch (error) {
+                showError('Network error', error.message);
+            }
+        }
+        
+        async function testWithMessos() {
+            showLoading();
+            
+            try {
+                const response = await fetch(`${API_URL}/api/pure-json-extractor`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        testMode: true,
+                        filename: 'Messos - Pure JSON Test'
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok && result.success) {
+                    currentJSON = result.completeJSON;
+                    showResults(result);
+                } else {
+                    showError(result.error || 'Test failed', result.details);
+                }
+                
+            } catch (error) {
+                showError('Network error', error.message);
+            }
+        }
+        
+        function fileToBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = () => resolve(reader.result.split(',')[1]);
+                reader.onerror = error => reject(error);
+            });
+        }
+        
+        function showLoading() {
+            document.getElementById('results').innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <h3>🔍 Extracting Complete Raw Data...</h3>
+                    <p>Processing PDF with all available methods to create complete JSON</p>
+                </div>
+            `;
+        }
+        
+        function showResults(result) {
+            const json = result.completeJSON;
+            const stats = json.metadata.statistics || {};
+            
+            let html = `
+                <div class="success">
+                    <h3>✅ Complete JSON Extraction Successful!</h3>
+                    <p><strong>Processing Time:</strong> ${result.processingTime}ms</p>
+                    <p><strong>Methods Used:</strong> ${json.metadata.methods.join(', ')}</p>
+                    
+                    <button class="btn download-btn" onclick="downloadJSON()">
+                        💾 Download Complete JSON
+                    </button>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">${stats.totalWords?.toLocaleString() || 0}</div>
+                        <div class="stat-label">Total Words</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${stats.totalNumbers?.toLocaleString() || 0}</div>
+                        <div class="stat-label">Total Numbers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${stats.totalISINs || 0}</div>
+                        <div class="stat-label">ISINs Found</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${stats.totalAmounts?.toLocaleString() || 0}</div>
+                        <div class="stat-label">Amounts Found</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${stats.ocrElements || 0}</div>
+                        <div class="stat-label">OCR Elements</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${json.metadata.totalElements?.toLocaleString() || 0}</div>
+                        <div class="stat-label">Total Elements</div>
+                    </div>
+                </div>
+                
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="showTab('overview')">📊 Overview</button>
+                    <button class="tab-btn" onclick="showTab('complete')">🔍 Complete JSON</button>
+                    <button class="tab-btn" onclick="showTab('text')">📝 Raw Text</button>
+                    <button class="tab-btn" onclick="showTab('patterns')">🎯 Patterns</button>
+                    <button class="tab-btn" onclick="showTab('ocr')">👁️ OCR Results</button>
+                </div>
+                
+                <div id="tab-overview" class="tab-content active">
+                    <div class="json-container">
+                        <div class="json-header">📊 Data Overview & Statistics</div>
+                        <div class="json-content">${JSON.stringify({
+                            metadata: json.metadata,
+                            statistics: stats,
+                            methodsUsed: json.metadata.methods,
+                            sampleText: json.rawText.fullText.substring(0, 500) + '...',
+                            sampleISINs: json.patterns.isins.slice(0, 5),
+                            sampleAmounts: json.patterns.amounts.slice(0, 10)
+                        }, null, 2)}</div>
+                    </div>
+                </div>
+                
+                <div id="tab-complete" class="tab-content">
+                    <div class="json-container">
+                        <div class="json-header">🔍 Complete JSON Data (All ${json.metadata.totalElements.toLocaleString()} Elements)</div>
+                        <div class="json-content">${JSON.stringify(json, null, 2)}</div>
+                    </div>
+                </div>
+                
+                <div id="tab-text" class="tab-content">
+                    <div class="json-container">
+                        <div class="json-header">📝 Raw Text Content (${json.rawText.lines.length} lines)</div>
+                        <div class="json-content">${JSON.stringify({
+                            fullText: json.rawText.fullText,
+                            lines: json.rawText.lines,
+                            allWords: json.allWords.slice(0, 100),
+                            allNumbers: json.allNumbers.slice(0, 50)
+                        }, null, 2)}</div>
+                    </div>
+                </div>
+                
+                <div id="tab-patterns" class="tab-content">
+                    <div class="json-container">
+                        <div class="json-header">🎯 Extracted Patterns</div>
+                        <div class="json-content">${JSON.stringify(json.patterns, null, 2)}</div>
+                    </div>
+                </div>
+                
+                <div id="tab-ocr" class="tab-content">
+                    <div class="json-container">
+                        <div class="json-header">👁️ OCR & Python Results</div>
+                        <div class="json-content">${JSON.stringify({
+                            ocrResults: json.ocrResults,
+                            pythonResults: json.pythonResults
+                        }, null, 2)}</div>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('results').innerHTML = html;
+        }
+        
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+            event.target.classList.add('active');
+        }
+        
+        function downloadJSON() {
+            if (!currentJSON) {
+                alert('No JSON data to download');
+                return;
+            }
+            
+            const dataStr = JSON.stringify(currentJSON, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(dataBlob);
+            link.download = `${currentJSON.metadata.filename.replace('.pdf', '')}_complete_extraction.json`;
+            link.click();
+        }
+        
+        function showError(error, details) {
+            document.getElementById('results').innerHTML = `
+                <div class="error">
+                    <h3>❌ JSON Extraction Failed</h3>
+                    <p><strong>Error:</strong> ${error}</p>
+                    ${details ? `<p><strong>Details:</strong> ${details}</p>` : ''}
+                    
+                    <div style="margin-top: 15px;">
+                        <h4>💡 Troubleshooting:</h4>
+                        <ul>
+                            <li>Make sure the local server is running: <code>node local-test-server.js</code></li>
+                            <li>Verify PDF is valid and not corrupted</li>
+                            <li>Check server logs for detailed error information</li>
+                        </ul>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

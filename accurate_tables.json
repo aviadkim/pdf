@@ -1,0 +1,386 @@
+{
+  "financial_data": [
+    {
+      "ISIN": "CH1908490000",
+      "Name": "Security CH1908490000",
+      "Quantity": "1,908,490,000,366,223,104",
+      "Price": "N/A",
+      "Market Value": "N/A",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2993414619",
+      "Name": "Security XS2993414619",
+      "Quantity": "2,993,414,619",
+      "Price": "N/A",
+      "Market Value": "N/A",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2530201644",
+      "Name": "TORONTO DOMINION BANK NOTES 23-23.02.27",
+      "Quantity": "200,000",
+      "Price": "$99.1991",
+      "Market Value": "$199,080.00",
+      "Portfolio %": "1.02%"
+    },
+    {
+      "ISIN": "XS2588105036",
+      "Name": "CANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08....",
+      "Quantity": "200,000",
+      "Price": "$99.6285",
+      "Market Value": "$200,288.00",
+      "Portfolio %": "1.03%"
+    },
+    {
+      "ISIN": "XS2665592833",
+      "Name": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.202...",
+      "Quantity": "1,500,000",
+      "Price": "$98.3700",
+      "Market Value": "$1,507,550.00",
+      "Portfolio %": "7.75%"
+    },
+    {
+      "ISIN": "XS2692298537",
+      "Name": "GOLDMAN SACHS 0% NOTES 23-07.11.29",
+      "Quantity": "690,000",
+      "Price": "$106.9200",
+      "Market Value": "$737,748.00",
+      "Portfolio %": "3.79%"
+    },
+    {
+      "ISIN": "XS2754416860",
+      "Name": "LUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30",
+      "Quantity": "100,000",
+      "Price": "$97.1400",
+      "Market Value": "$98,202.00",
+      "Portfolio %": "0.50%"
+    },
+    {
+      "ISIN": "XS2761230684",
+      "Name": "CIBC 0% NOTES 2024-13.02.2030",
+      "Quantity": "100,000",
+      "Price": "$102.2448",
+      "Market Value": "$102,506.00",
+      "Portfolio %": "0.53%"
+    },
+    {
+      "ISIN": "XS2736388732",
+      "Name": "BANK OF AMERICA NOTES 2023-20.12.31",
+      "Quantity": "250,000",
+      "Price": "$99.2500",
+      "Market Value": "$256,958.00",
+      "Portfolio %": "1.32%"
+    },
+    {
+      "ISIN": "XS2782869916",
+      "Name": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-0...",
+      "Quantity": "50,000",
+      "Price": "$97.3340",
+      "Market Value": "$48,667.00",
+      "Portfolio %": "0.25%"
+    },
+    {
+      "ISIN": "XS2824054402",
+      "Name": "BOFA 5.6% 2024-29.05.34",
+      "Quantity": "440,000",
+      "Price": "$103.9900",
+      "Market Value": "$478,158.00",
+      "Portfolio %": "2.46%"
+    },
+    {
+      "ISIN": "XS2567543397",
+      "Name": "GS 10Y CALLABLE NOTE 2024-18.06.2034",
+      "Quantity": "2,450,000",
+      "Price": "$100.5200",
+      "Market Value": "$2,570,405.00",
+      "Portfolio %": "13.21%"
+    },
+    {
+      "ISIN": "XS2110079584",
+      "Name": "Security XS2110079584",
+      "Quantity": "2,110,079,584",
+      "Price": "N/A",
+      "Market Value": "N/A",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2848820754",
+      "Name": "Security XS2848820754",
+      "Quantity": "2,848,820,754",
+      "Price": "N/A",
+      "Market Value": "$2,848,820,754.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2829712830",
+      "Name": "Security XS2829712830",
+      "Quantity": "2,829,712,830",
+      "Price": "N/A",
+      "Market Value": "N/A",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2912278723",
+      "Name": "Security XS2912278723",
+      "Quantity": "2,912,278,723",
+      "Price": "N/A",
+      "Market Value": "N/A",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2381723902",
+      "Name": "Security XS2381723902",
+      "Quantity": "2,381,723,902",
+      "Price": "N/A",
+      "Market Value": "$2,381,723,902.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2829752976",
+      "Name": "Security XS2829752976",
+      "Quantity": "2,829,752,976",
+      "Price": "N/A",
+      "Market Value": "$2,829,752,976.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2953741100",
+      "Name": "Security XS2953741100",
+      "Quantity": "2,953,741,100",
+      "Price": "N/A",
+      "Market Value": "N/A",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2381717250",
+      "Name": "Security XS2381717250",
+      "Quantity": "2,381,717,250",
+      "Price": "N/A",
+      "Market Value": "N/A",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2481066111",
+      "Name": "Security XS2481066111",
+      "Quantity": "2,481,066,111",
+      "Price": "N/A",
+      "Market Value": "N/A",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2964611052",
+      "Name": "Security XS2964611052",
+      "Quantity": "2,964,611,052",
+      "Price": "N/A",
+      "Market Value": "N/A",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS3035947103",
+      "Name": "Security XS3035947103",
+      "Quantity": "3,035,947,103",
+      "Price": "N/A",
+      "Market Value": "$3,035,947,103.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "LU2228214107",
+      "Name": "Security LU2228214107",
+      "Quantity": "2,228,214,107",
+      "Price": "N/A",
+      "Market Value": "$2,228,214,107.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "CH1269060229",
+      "Name": "Security CH1269060229",
+      "Quantity": "1,269,060,229",
+      "Price": "N/A",
+      "Market Value": "$1,269,060,229.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS0461497009",
+      "Name": "Security XS0461497009",
+      "Quantity": "461,497,009",
+      "Price": "N/A",
+      "Market Value": "$461,497,009.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2746319610",
+      "Name": "Security XS2746319610",
+      "Quantity": "2,746,319,610",
+      "Price": "N/A",
+      "Market Value": "$2,746,319,610.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "CH0244767585",
+      "Name": "Security CH0244767585",
+      "Quantity": "244,767,585",
+      "Price": "N/A",
+      "Market Value": "$244,767,585.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2519369867",
+      "Name": "Security XS2519369867",
+      "Quantity": "2,519,369,867",
+      "Price": "N/A",
+      "Market Value": "$2,519,369,867.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2315191069",
+      "Name": "Security XS2315191069",
+      "Quantity": "2,315,191,069",
+      "Price": "N/A",
+      "Market Value": "$2,315,191,069.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2792098779",
+      "Name": "Security XS2792098779",
+      "Quantity": "2,792,098,779",
+      "Price": "N/A",
+      "Market Value": "N/A",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2714429128",
+      "Name": "Security XS2714429128",
+      "Quantity": "2,714,429,128",
+      "Price": "N/A",
+      "Market Value": "$2,714,429,128.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2105981117",
+      "Name": "Security XS2105981117",
+      "Quantity": "2,105,981,117",
+      "Price": "N/A",
+      "Market Value": "$2,105,981,117.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2838389430",
+      "Name": "Security XS2838389430",
+      "Quantity": "2,838,389,430",
+      "Price": "N/A",
+      "Market Value": "$2,838,389,430.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2631782468",
+      "Name": "Security XS2631782468",
+      "Quantity": "2,631,782,468",
+      "Price": "N/A",
+      "Market Value": "$2,631,782,468.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS1700087403",
+      "Name": "Security XS1700087403",
+      "Quantity": "1,700,087,403",
+      "Price": "N/A",
+      "Market Value": "$1,700,087,403.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2594173093",
+      "Name": "Security XS2594173093",
+      "Quantity": "2,594,173,093",
+      "Price": "N/A",
+      "Market Value": "$2,594,173,093.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2407295554",
+      "Name": "Security XS2407295554",
+      "Quantity": "2,407,295,554",
+      "Price": "N/A",
+      "Market Value": "$2,407,295,554.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XS2252299883",
+      "Name": "Security XS2252299883",
+      "Quantity": "2,252,299,883",
+      "Price": "N/A",
+      "Market Value": "$2,252,299,883.00",
+      "Portfolio %": "N/A"
+    },
+    {
+      "ISIN": "XD0466760473",
+      "Name": "Security XD0466760473",
+      "Quantity": "466,760,473",
+      "Price": "N/A",
+      "Market Value": "$466,760,473.00",
+      "Portfolio %": "N/A"
+    }
+  ],
+  "performance_data": [
+    {
+      "ISIN": "XS2530201644",
+      "Market Value": "$199,080.00",
+      "YTD Performance": "0.25%",
+      "Total Performance": "-1.00%"
+    },
+    {
+      "ISIN": "XS2588105036",
+      "Market Value": "$200,288.00",
+      "YTD Performance": "0.47%",
+      "Total Performance": "-0.57%"
+    },
+    {
+      "ISIN": "XS2665592833",
+      "Market Value": "$1,507,550.00",
+      "YTD Performance": "1.49%",
+      "Total Performance": "-0.74%"
+    },
+    {
+      "ISIN": "XS2692298537",
+      "Market Value": "$737,748.00",
+      "YTD Performance": "2.26%",
+      "Total Performance": "6.81%"
+    },
+    {
+      "ISIN": "XS2754416860",
+      "Market Value": "$98,202.00",
+      "YTD Performance": "1.16%",
+      "Total Performance": "-3.05%"
+    },
+    {
+      "ISIN": "XS2761230684",
+      "Market Value": "$102,506.00",
+      "YTD Performance": "2.24%",
+      "Total Performance": "2.04%"
+    },
+    {
+      "ISIN": "XS2736388732",
+      "Market Value": "$256,958.00",
+      "YTD Performance": "-2.58%",
+      "Total Performance": "-0.95%"
+    },
+    {
+      "ISIN": "XS2782869916",
+      "Market Value": "$48,667.00",
+      "YTD Performance": "1.07%",
+      "Total Performance": "-2.86%"
+    },
+    {
+      "ISIN": "XS2824054402",
+      "Market Value": "$478,158.00",
+      "YTD Performance": "1.81%",
+      "Total Performance": "3.78%"
+    },
+    {
+      "ISIN": "XS2567543397",
+      "Market Value": "$2,570,405.00",
+      "YTD Performance": "1.26%",
+      "Total Performance": "0.42%"
+    }
+  ]
+}

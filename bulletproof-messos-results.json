@@ -1,0 +1,102 @@
+{
+  "timestamp": "2025-07-15T06:37:35.940Z",
+  "expectedTotal": 19464431,
+  "extractedTotal": 26129,
+  "accuracy": 0.13423973195003658,
+  "holdingsFound": 1,
+  "serverAccuracy": "0.134",
+  "success": false,
+  "rawResult": {
+    "success": true,
+    "message": "Bulletproof processing complete: 0.134% accuracy",
+    "data": {
+      "holdings": [
+        {
+          "position": 931,
+          "securityName": "-87.30% 31.12.2023 EXIGENT ENHANCED INCOME FUND LTD SHS A SERIES 2019 1 ISIN:",
+          "isin": "XD0466760473",
+          "quantity": 0,
+          "unitPrice": 0,
+          "totalValue": 26129,
+          "currency": "USD",
+          "extractionMethod": "hybrid-reconstruction",
+          "sourceMethod": "hybrid-reconstruction",
+          "sourceConfidence": 85
+        }
+      ],
+      "totalValue": 26129,
+      "targetValue": 19464431,
+      "accuracy": 0.0013423973195003749,
+      "accuracyPercent": "0.134",
+      "success": false
+    },
+    "analysis": {
+      "pdfType": {
+        "type": "hybrid",
+        "confidence": 95,
+        "details": {
+          "textQuality": 1,
+          "extractableText": "\n\neuioaeuioa\nValuation\nasof 31.03.2025\nSwift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27",
+          "structure": {
+            "pages": 19,
+            "hasComplexLayout": true,
+            "lineVariability": 0.10638297872340426,
+            "averageLineLength": 28.575729068673564,
+            "containsTables": true
+          },
+          "visual": {
+            "hasImages": false,
+            "hasComplexTables": true,
+            "estimatedComplexity": "high"
+          }
+        },
+        "recommendedMethod": "text-plus-vision"
+      },
+      "extractionMethods": [
+        "pattern-based-extraction",
+        "hybrid-reconstruction"
+      ],
+      "iterationsPerformed": 1,
+      "validationResults": {
+        "finalTotal": 26129,
+        "targetTotal": 19464431,
+        "securitiesFound": 1,
+        "finalAccuracy": 0.0013423973195003749
+      },
+      "processingTime": "2267ms"
+    },
+    "debug": {
+      "detectionDetails": {
+        "textQuality": 1,
+        "extractableText": "\n\neuioaeuioa\nValuation\nasof 31.03.2025\nSwift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27",
+        "structure": {
+          "pages": 19,
+          "hasComplexLayout": true,
+          "lineVariability": 0.10638297872340426,
+          "averageLineLength": 28.575729068673564,
+          "containsTables": true
+        },
+        "visual": {
+          "hasImages": false,
+          "hasComplexTables": true,
+          "estimatedComplexity": "high"
+        }
+      },
+      "extractionAttempts": 2,
+      "refinementSteps": [
+        {
+          "iteration": 1,
+          "beforeTotal": 26129,
+          "beforeAccuracy": 0.0013423973195003749,
+          "appliedFixes": [
+            "Checked for missing securities"
+          ],
+          "afterTotal": 26129,
+          "afterAccuracy": 0.0013423973195003749,
+          "improvement": 0
+        }
+      ],
+      "failureReasons": []
+    }
+  }
+}

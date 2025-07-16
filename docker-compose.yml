@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  financeai-pro:
+    build: .
+    ports:
+      - "3001:3001"
+    volumes:
+      - ".:/app"
+      - "/tmp/paddle_processing:/tmp/paddle_processing"
+    environment:
+      - NODE_ENV=production
+      - OMP_NUM_THREADS=2
+      - OPENBLAS_NUM_THREADS=2
+      - PYTHONPATH=/app
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped

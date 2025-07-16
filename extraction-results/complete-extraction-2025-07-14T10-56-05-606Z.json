@@ -1,0 +1,3696 @@
+{
+  "document_info": {
+    "bank_name": "Corner Bank",
+    "client_name": "MESSOS ENTERPRISES LTD.",
+    "valuation_date": "31.03.2025",
+    "currency": "USD",
+    "total_value": 0
+  },
+  "securities": [],
+  "raw_data": {
+    "ocr_items": [],
+    "pdf_items": [
+      {
+        "page": 1,
+        "text_items": [
+          {
+            "text": "euioa",
+            "x": 32,
+            "y": 562,
+            "width": 5,
+            "height": 2,
+            "fontSize": 2
+          },
+          {
+            "text": "euioa",
+            "x": 32,
+            "y": 562,
+            "width": 5,
+            "height": 2,
+            "fontSize": 2
+          },
+          {
+            "text": "",
+            "x": 252,
+            "y": 440,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Valuation",
+            "x": 252,
+            "y": 440,
+            "width": 114,
+            "height": 30,
+            "fontSize": 30
+          },
+          {
+            "text": "as of 31.03.2025",
+            "x": 163,
+            "y": 407,
+            "width": 202,
+            "height": 30,
+            "fontSize": 30
+          },
+          {
+            "text": "",
+            "x": 32,
+            "y": 21,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Swift CBLUCH2280A // Clearing 8490 // CHE-105.962.409 IVA",
+            "x": 32,
+            "y": 21,
+            "width": 168,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "Tel. +41 44 218 10 20 // Fax +41 44 218 10 29 // info@corner.ch // corner.ch",
+            "x": 32,
+            "y": 29,
+            "width": 204,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "Cornèr Banca SA // Tödistrasse 27 // Postfach 1640 // 8027 Zürich_Switzerland // Hauptsitz Via Canova 16, 6901 Lugano_Switzerland",
+            "x": 32,
+            "y": 37,
+            "width": 361,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "",
+            "x": 163,
+            "y": 373,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "MESSOS ENTERPRISES LTD.",
+            "x": 163,
+            "y": 373,
+            "width": 197,
+            "height": 14,
+            "fontSize": 14
+          },
+          {
+            "text": "",
+            "x": 324,
+            "y": 352,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "366223",
+            "x": 324,
+            "y": 352,
+            "width": 37,
+            "height": 11,
+            "fontSize": 11
+          },
+          {
+            "text": "Client Number //",
+            "x": 242,
+            "y": 352,
+            "width": 80,
+            "height": 11,
+            "fontSize": 11
+          },
+          {
+            "text": "USD",
+            "x": 338,
+            "y": 336,
+            "width": 23,
+            "height": 11,
+            "fontSize": 11
+          },
+          {
+            "text": "Valuation currency //",
+            "x": 234,
+            "y": 336,
+            "width": 101,
+            "height": 11,
+            "fontSize": 11
+          },
+          {
+            "text": "Undefined",
+            "x": 307,
+            "y": 321,
+            "width": 54,
+            "height": 11,
+            "fontSize": 11
+          },
+          {
+            "text": "Investment profile //",
+            "x": 208,
+            "y": 321,
+            "width": 97,
+            "height": 11,
+            "fontSize": 11
+          },
+          {
+            "text": "Medium-high",
+            "x": 292,
+            "y": 305,
+            "width": 69,
+            "height": 11,
+            "fontSize": 11
+          },
+          {
+            "text": "Risk Profile //",
+            "x": 225,
+            "y": 305,
+            "width": 65,
+            "height": 11,
+            "fontSize": 11
+          }
+        ]
+      },
+      {
+        "page": 2,
+        "text_items": [
+          {
+            "text": "Index",
+            "x": 738,
+            "y": 512,
+            "width": 34,
+            "height": 13,
+            "fontSize": 13
+          },
+          {
+            "text": "",
+            "x": 645,
+            "y": 556,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "MESSOS ENTERPRISES LTD.",
+            "x": 645,
+            "y": 556,
+            "width": 126,
+            "height": 9,
+            "fontSize": 9
+          },
+          {
+            "text": "",
+            "x": 689,
+            "y": 547,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Valuation as of 31.03.2025",
+            "x": 689,
+            "y": 547,
+            "width": 82,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "Client Number 366223",
+            "x": 702,
+            "y": 539,
+            "width": 69,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "",
+            "x": 37,
+            "y": 517,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "aeouiAEOUI",
+            "x": 37,
+            "y": 517,
+            "width": 11,
+            "height": 2,
+            "fontSize": 2
+          },
+          {
+            "text": " ",
+            "x": 48,
+            "y": 517,
+            "width": 18,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "aeouiAEOUI",
+            "x": 66,
+            "y": 517,
+            "width": 11,
+            "height": 2,
+            "fontSize": 2
+          },
+          {
+            "text": "",
+            "x": 662,
+            "y": 27,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Print date 01.04.2025 // Page I",
+            "x": 662,
+            "y": 27,
+            "width": 112,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 32,
+            "y": 21,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Swift CBLUCH2280A // Clearing 8490 // CHE-105.962.409 IVA",
+            "x": 32,
+            "y": 21,
+            "width": 168,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "Tel. +41 44 218 10 20 // Fax +41 44 218 10 29 // info@corner.ch // corner.ch",
+            "x": 32,
+            "y": 29,
+            "width": 204,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "Cornèr Banca SA // Tödistrasse 27 // Postfach 1640 // 8027 Zürich_Switzerland // Hauptsitz Via Canova 16, 6901 Lugano_Switzerland",
+            "x": 32,
+            "y": 37,
+            "width": 361,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "",
+            "x": 445,
+            "y": 488,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "1",
+            "x": 445,
+            "y": 488,
+            "width": 6,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Summary",
+            "x": 39,
+            "y": 488,
+            "width": 52,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "2",
+            "x": 445,
+            "y": 470,
+            "width": 6,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Asset Allocation",
+            "x": 39,
+            "y": 470,
+            "width": 90,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "2",
+            "x": 445,
+            "y": 453,
+            "width": 6,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Assets and Liabilities Structure",
+            "x": 82,
+            "y": 453,
+            "width": 157,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "3",
+            "x": 445,
+            "y": 435,
+            "width": 6,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Currency allocation",
+            "x": 82,
+            "y": 435,
+            "width": 98,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "4",
+            "x": 445,
+            "y": 417,
+            "width": 6,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Performance Overview/Evolution",
+            "x": 39,
+            "y": 417,
+            "width": 180,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "5",
+            "x": 445,
+            "y": 399,
+            "width": 6,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Asset Listing",
+            "x": 39,
+            "y": 399,
+            "width": 72,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "5",
+            "x": 445,
+            "y": 381,
+            "width": 6,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Liquidity and liabilities",
+            "x": 82,
+            "y": 381,
+            "width": 111,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "6",
+            "x": 445,
+            "y": 363,
+            "width": 6,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Bonds",
+            "x": 82,
+            "y": 363,
+            "width": 33,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "10",
+            "x": 439,
+            "y": 346,
+            "width": 13,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Equities",
+            "x": 82,
+            "y": 346,
+            "width": 41,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "11",
+            "x": 439,
+            "y": 328,
+            "width": 13,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Structured products",
+            "x": 82,
+            "y": 328,
+            "width": 100,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "13",
+            "x": 439,
+            "y": 310,
+            "width": 13,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Other assets",
+            "x": 82,
+            "y": 310,
+            "width": 65,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "14",
+            "x": 439,
+            "y": 292,
+            "width": 13,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Expected Cash Flows (Overview)",
+            "x": 39,
+            "y": 292,
+            "width": 180,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "15",
+            "x": 439,
+            "y": 274,
+            "width": 13,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Glossary",
+            "x": 39,
+            "y": 274,
+            "width": 49,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "17",
+            "x": 439,
+            "y": 256,
+            "width": 13,
+            "height": 12,
+            "fontSize": 12
+          },
+          {
+            "text": "Notices and other information",
+            "x": 39,
+            "y": 256,
+            "width": 164,
+            "height": 12,
+            "fontSize": 12
+          }
+        ]
+      },
+      {
+        "page": 3,
+        "text_items": [
+          {
+            "text": "Summary",
+            "x": 713,
+            "y": 512,
+            "width": 59,
+            "height": 13,
+            "fontSize": 13
+          },
+          {
+            "text": "",
+            "x": 645,
+            "y": 556,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "MESSOS ENTERPRISES LTD.",
+            "x": 645,
+            "y": 556,
+            "width": 126,
+            "height": 9,
+            "fontSize": 9
+          },
+          {
+            "text": "",
+            "x": 689,
+            "y": 547,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Valuation as of 31.03.2025",
+            "x": 689,
+            "y": 547,
+            "width": 82,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "Client Number 366223",
+            "x": 702,
+            "y": 539,
+            "width": 69,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "",
+            "x": 37,
+            "y": 517,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "aeouiAEOUI",
+            "x": 37,
+            "y": 517,
+            "width": 11,
+            "height": 2,
+            "fontSize": 2
+          },
+          {
+            "text": " ",
+            "x": 48,
+            "y": 517,
+            "width": 18,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "aeouiAEOUI",
+            "x": 66,
+            "y": 517,
+            "width": 11,
+            "height": 2,
+            "fontSize": 2
+          },
+          {
+            "text": "",
+            "x": 32,
+            "y": 21,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Swift CBLUCH2280A // Clearing 8490 // CHE-105.962.409 IVA",
+            "x": 32,
+            "y": 21,
+            "width": 168,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "Tel. +41 44 218 10 20 // Fax +41 44 218 10 29 // info@corner.ch // corner.ch",
+            "x": 32,
+            "y": 29,
+            "width": 204,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "Cornèr Banca SA // Tödistrasse 27 // Postfach 1640 // 8027 Zürich_Switzerland // Hauptsitz Via Canova 16, 6901 Lugano_Switzerland",
+            "x": 32,
+            "y": 37,
+            "width": 361,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "",
+            "x": 33,
+            "y": 54,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Note // Blocked guarantees",
+            "x": 33,
+            "y": 54,
+            "width": 97,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 77,
+            "y": 488,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Other assets",
+            "x": 77,
+            "y": 488,
+            "width": 39,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "Structured products",
+            "x": 56,
+            "y": 437,
+            "width": 60,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "Equities",
+            "x": 92,
+            "y": 336,
+            "width": 25,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "Liquidity",
+            "x": 316,
+            "y": 488,
+            "width": 25,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "Bonds",
+            "x": 316,
+            "y": 354,
+            "width": 20,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "",
+            "x": 203,
+            "y": 395,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Assets",
+            "x": 203,
+            "y": 395,
+            "width": 27,
+            "height": 9,
+            "fontSize": 9
+          },
+          {
+            "text": "",
+            "x": 102,
+            "y": 266,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "CHF",
+            "x": 102,
+            "y": 266,
+            "width": 14,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "USD",
+            "x": 316,
+            "y": 82,
+            "width": 15,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "",
+            "x": 195,
+            "y": 173,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Currencies",
+            "x": 195,
+            "y": 173,
+            "width": 44,
+            "height": 9,
+            "fontSize": 9
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 494,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Assets",
+            "x": 418,
+            "y": 494,
+            "width": 26,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 444,
+            "y": 494,
+            "width": 203,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Countervalue USD",
+            "x": 647,
+            "y": 494,
+            "width": 70,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 717,
+            "y": 494,
+            "width": 12,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Weight in %",
+            "x": 730,
+            "y": 494,
+            "width": 46,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 476,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Liquidity",
+            "x": 418,
+            "y": 476,
+            "width": 29,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 448,
+            "y": 476,
+            "width": 241,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "103'770",
+            "x": 689,
+            "y": 476,
+            "width": 28,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 717,
+            "y": 476,
+            "width": 36,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.53%",
+            "x": 753,
+            "y": 476,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 463,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Bonds",
+            "x": 418,
+            "y": 463,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 441,
+            "y": 463,
+            "width": 238,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "12'363'974",
+            "x": 678,
+            "y": 463,
+            "width": 39,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 717,
+            "y": 463,
+            "width": 31,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "63.52%",
+            "x": 748,
+            "y": 463,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 450,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Equities",
+            "x": 418,
+            "y": 450,
+            "width": 29,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 447,
+            "y": 450,
+            "width": 247,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "24'319",
+            "x": 693,
+            "y": 450,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 717,
+            "y": 450,
+            "width": 36,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.12%",
+            "x": 753,
+            "y": 450,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 437,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Mixed funds",
+            "x": 418,
+            "y": 437,
+            "width": 43,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 424,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Structured products",
+            "x": 418,
+            "y": 424,
+            "width": 70,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 488,
+            "y": 424,
+            "width": 194,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "6'946'239",
+            "x": 683,
+            "y": 424,
+            "width": 34,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 717,
+            "y": 424,
+            "width": 31,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "35.69%",
+            "x": 748,
+            "y": 424,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 411,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Precious metals",
+            "x": 418,
+            "y": 411,
+            "width": 57,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 397,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Real Estate",
+            "x": 418,
+            "y": 397,
+            "width": 42,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 384,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Other assets",
+            "x": 418,
+            "y": 384,
+            "width": 46,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 464,
+            "y": 384,
+            "width": 230,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "26'129",
+            "x": 693,
+            "y": 384,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 717,
+            "y": 384,
+            "width": 36,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.13%",
+            "x": 753,
+            "y": 384,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Total",
+            "x": 418,
+            "y": 366,
+            "width": 19,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 437,
+            "y": 366,
+            "width": 241,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "19'464'431",
+            "x": 678,
+            "y": 366,
+            "width": 39,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 717,
+            "y": 366,
+            "width": 27,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "100.00%",
+            "x": 744,
+            "y": 366,
+            "width": 32,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Thereof accrued interest",
+            "x": 418,
+            "y": 356,
+            "width": 87,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 505,
+            "y": 356,
+            "width": 184,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "345'057",
+            "x": 689,
+            "y": 356,
+            "width": 28,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 325,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Income",
+            "x": 418,
+            "y": 325,
+            "width": 28,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 446,
+            "y": 325,
+            "width": 200,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Countervalue USD",
+            "x": 647,
+            "y": 325,
+            "width": 71,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 307,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Collected",
+            "x": 418,
+            "y": 307,
+            "width": 34,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 452,
+            "y": 307,
+            "width": 242,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "84'967",
+            "x": 693,
+            "y": 307,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 294,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Accruals",
+            "x": 418,
+            "y": 294,
+            "width": 31,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 449,
+            "y": 294,
+            "width": 240,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "345'057",
+            "x": 689,
+            "y": 294,
+            "width": 28,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 261,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Currencies",
+            "x": 418,
+            "y": 261,
+            "width": 42,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 460,
+            "y": 261,
+            "width": 52,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Value",
+            "x": 512,
+            "y": 261,
+            "width": 21,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 534,
+            "y": 261,
+            "width": 17,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Exchange Rates",
+            "x": 551,
+            "y": 261,
+            "width": 62,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 613,
+            "y": 261,
+            "width": 34,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Countervalue USD",
+            "x": 647,
+            "y": 261,
+            "width": 71,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 717,
+            "y": 261,
+            "width": 12,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Weight in %",
+            "x": 730,
+            "y": 261,
+            "width": 46,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 242,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "USD",
+            "x": 418,
+            "y": 242,
+            "width": 17,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 435,
+            "y": 242,
+            "width": 243,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "19'440'112",
+            "x": 678,
+            "y": 242,
+            "width": 39,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 717,
+            "y": 242,
+            "width": 31,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "99.88%",
+            "x": 748,
+            "y": 242,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 418,
+            "y": 229,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "CHF",
+            "x": 418,
+            "y": 229,
+            "width": 16,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 435,
+            "y": 229,
+            "width": 75,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "21'496",
+            "x": 510,
+            "y": 229,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 534,
+            "y": 229,
+            "width": 23,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "1.1313",
+            "x": 556,
+            "y": 229,
+            "width": 25,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 581,
+            "y": 229,
+            "width": 23,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.8839",
+            "x": 603,
+            "y": 229,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 628,
+            "y": 229,
+            "width": 65,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "24'319",
+            "x": 693,
+            "y": 229,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 717,
+            "y": 229,
+            "width": 36,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.12%",
+            "x": 753,
+            "y": 229,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Total",
+            "x": 418,
+            "y": 211,
+            "width": 19,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 437,
+            "y": 211,
+            "width": 241,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "19'464'431",
+            "x": 678,
+            "y": 211,
+            "width": 39,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 717,
+            "y": 211,
+            "width": 27,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "100.00%",
+            "x": 744,
+            "y": 211,
+            "width": 32,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 648,
+            "y": 27,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Print date 01.04.2025 // Page 1/17",
+            "x": 648,
+            "y": 27,
+            "width": 125,
+            "height": 8,
+            "fontSize": 8
+          }
+        ]
+      },
+      {
+        "page": 4,
+        "text_items": [
+          {
+            "text": "Assets and Liabilities Structure",
+            "x": 578,
+            "y": 512,
+            "width": 193,
+            "height": 13,
+            "fontSize": 13
+          },
+          {
+            "text": "",
+            "x": 645,
+            "y": 556,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "MESSOS ENTERPRISES LTD.",
+            "x": 645,
+            "y": 556,
+            "width": 126,
+            "height": 9,
+            "fontSize": 9
+          },
+          {
+            "text": "",
+            "x": 689,
+            "y": 547,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Valuation as of 31.03.2025",
+            "x": 689,
+            "y": 547,
+            "width": 82,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "Client Number 366223",
+            "x": 702,
+            "y": 539,
+            "width": 69,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "",
+            "x": 37,
+            "y": 517,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "aeouiAEOUI",
+            "x": 37,
+            "y": 517,
+            "width": 11,
+            "height": 2,
+            "fontSize": 2
+          },
+          {
+            "text": " ",
+            "x": 48,
+            "y": 517,
+            "width": 18,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "aeouiAEOUI",
+            "x": 66,
+            "y": 517,
+            "width": 11,
+            "height": 2,
+            "fontSize": 2
+          },
+          {
+            "text": "",
+            "x": 32,
+            "y": 21,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Swift CBLUCH2280A // Clearing 8490 // CHE-105.962.409 IVA",
+            "x": 32,
+            "y": 21,
+            "width": 168,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "Tel. +41 44 218 10 20 // Fax +41 44 218 10 29 // info@corner.ch // corner.ch",
+            "x": 32,
+            "y": 29,
+            "width": 204,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "Cornèr Banca SA // Tödistrasse 27 // Postfach 1640 // 8027 Zürich_Switzerland // Hauptsitz Via Canova 16, 6901 Lugano_Switzerland",
+            "x": 32,
+            "y": 37,
+            "width": 361,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "",
+            "x": 38,
+            "y": 494,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Asset Allocation",
+            "x": 38,
+            "y": 494,
+            "width": 62,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 100,
+            "y": 494,
+            "width": 153,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Countervalue USD",
+            "x": 254,
+            "y": 494,
+            "width": 70,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 494,
+            "width": 45,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Weight",
+            "x": 369,
+            "y": 494,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Liquidity",
+            "x": 38,
+            "y": 476,
+            "width": 34,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 72,
+            "y": 476,
+            "width": 224,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "103'770",
+            "x": 295,
+            "y": 476,
+            "width": 29,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 476,
+            "width": 50,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.53%",
+            "x": 374,
+            "y": 476,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Cash accounts",
+            "x": 38,
+            "y": 464,
+            "width": 53,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 91,
+            "y": 464,
+            "width": 213,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "6'070",
+            "x": 305,
+            "y": 464,
+            "width": 19,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 464,
+            "width": 49,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.03%",
+            "x": 374,
+            "y": 464,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Money Market",
+            "x": 38,
+            "y": 452,
+            "width": 51,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 89,
+            "y": 452,
+            "width": 212,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "97'700",
+            "x": 300,
+            "y": 452,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 452,
+            "width": 49,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.50%",
+            "x": 374,
+            "y": 452,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Fixed deposits and fiduciaries",
+            "x": 38,
+            "y": 441,
+            "width": 106,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Bonds",
+            "x": 38,
+            "y": 423,
+            "width": 25,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 63,
+            "y": 423,
+            "width": 222,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "12'363'974",
+            "x": 285,
+            "y": 423,
+            "width": 39,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 423,
+            "width": 45,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "63.52%",
+            "x": 369,
+            "y": 423,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Bonds",
+            "x": 38,
+            "y": 411,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 61,
+            "y": 411,
+            "width": 225,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "11'002'508",
+            "x": 285,
+            "y": 411,
+            "width": 39,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 411,
+            "width": 45,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "56.53%",
+            "x": 369,
+            "y": 411,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Bond funds / certificates",
+            "x": 38,
+            "y": 400,
+            "width": 86,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 124,
+            "y": 400,
+            "width": 166,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "1'361'466",
+            "x": 290,
+            "y": 400,
+            "width": 34,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 400,
+            "width": 50,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "6.99%",
+            "x": 374,
+            "y": 400,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Convertibles",
+            "x": 38,
+            "y": 388,
+            "width": 44,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Equities",
+            "x": 38,
+            "y": 371,
+            "width": 31,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 69,
+            "y": 371,
+            "width": 230,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "24'319",
+            "x": 300,
+            "y": 371,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 371,
+            "width": 50,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.12%",
+            "x": 374,
+            "y": 371,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Equities",
+            "x": 38,
+            "y": 359,
+            "width": 29,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 67,
+            "y": 359,
+            "width": 234,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "24'319",
+            "x": 300,
+            "y": 359,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 359,
+            "width": 49,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.12%",
+            "x": 374,
+            "y": 359,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Equity funds/certificates",
+            "x": 38,
+            "y": 347,
+            "width": 85,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Mixed funds",
+            "x": 38,
+            "y": 330,
+            "width": 47,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Structured products",
+            "x": 38,
+            "y": 312,
+            "width": 77,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 115,
+            "y": 312,
+            "width": 174,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "6'946'239",
+            "x": 289,
+            "y": 312,
+            "width": 35,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 312,
+            "width": 45,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "35.69%",
+            "x": 369,
+            "y": 312,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Structured products (Bonds)",
+            "x": 38,
+            "y": 301,
+            "width": 101,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 139,
+            "y": 301,
+            "width": 151,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "5'956'439",
+            "x": 290,
+            "y": 301,
+            "width": 34,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 301,
+            "width": 45,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "30.60%",
+            "x": 369,
+            "y": 301,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Structured products (Equities)",
+            "x": 38,
+            "y": 289,
+            "width": 106,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 145,
+            "y": 289,
+            "width": 151,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "989'800",
+            "x": 296,
+            "y": 289,
+            "width": 28,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 289,
+            "width": 50,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "5.09%",
+            "x": 374,
+            "y": 289,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Various Certificates",
+            "x": 38,
+            "y": 277,
+            "width": 70,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Metal accounts and precious metals",
+            "x": 38,
+            "y": 260,
+            "width": 138,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Metal accounts",
+            "x": 38,
+            "y": 248,
+            "width": 54,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Precious metals",
+            "x": 38,
+            "y": 237,
+            "width": 57,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Real Estate",
+            "x": 38,
+            "y": 219,
+            "width": 43,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Other assets",
+            "x": 38,
+            "y": 201,
+            "width": 48,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 87,
+            "y": 201,
+            "width": 213,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "26'129",
+            "x": 300,
+            "y": 201,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 201,
+            "width": 50,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.13%",
+            "x": 374,
+            "y": 201,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Hedge Funds & Private Equity",
+            "x": 38,
+            "y": 190,
+            "width": 108,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 146,
+            "y": 190,
+            "width": 154,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "26'129",
+            "x": 300,
+            "y": 190,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 190,
+            "width": 49,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.13%",
+            "x": 374,
+            "y": 190,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Alternative UCITS",
+            "x": 38,
+            "y": 178,
+            "width": 64,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Commodity funds",
+            "x": 38,
+            "y": 167,
+            "width": 63,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Options",
+            "x": 38,
+            "y": 155,
+            "width": 28,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 417,
+            "y": 494,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Liabilities and obligations",
+            "x": 417,
+            "y": 494,
+            "width": 99,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 516,
+            "y": 494,
+            "width": 189,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Countervalue USD",
+            "x": 705,
+            "y": 494,
+            "width": 71,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Liabilities",
+            "x": 417,
+            "y": 476,
+            "width": 37,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 417,
+            "y": 464,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Cash accounts",
+            "x": 417,
+            "y": 464,
+            "width": 53,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 417,
+            "y": 453,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Fixed advance",
+            "x": 417,
+            "y": 453,
+            "width": 52,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Profit & loss",
+            "x": 417,
+            "y": 438,
+            "width": 47,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 417,
+            "y": 426,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "FRA / IRS",
+            "x": 417,
+            "y": 426,
+            "width": 36,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 417,
+            "y": 415,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Futures",
+            "x": 417,
+            "y": 415,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 417,
+            "y": 403,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Fx Forwards",
+            "x": 417,
+            "y": 403,
+            "width": 44,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 38,
+            "y": 135,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Total assets",
+            "x": 38,
+            "y": 135,
+            "width": 46,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 84,
+            "y": 135,
+            "width": 200,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "19'464'431",
+            "x": 285,
+            "y": 135,
+            "width": 39,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 324,
+            "y": 135,
+            "width": 41,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "100.00%",
+            "x": 365,
+            "y": 135,
+            "width": 32,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Portfolio Total",
+            "x": 38,
+            "y": 116,
+            "width": 54,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 93,
+            "y": 116,
+            "width": 192,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "19'464'431",
+            "x": 285,
+            "y": 116,
+            "width": 39,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 417,
+            "y": 135,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Total gain/loss of liabilities and obligations",
+            "x": 417,
+            "y": 135,
+            "width": 165,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 582,
+            "y": 135,
+            "width": 189,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0",
+            "x": 771,
+            "y": 135,
+            "width": 4,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 648,
+            "y": 27,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Print date 01.04.2025 // Page 2/17",
+            "x": 648,
+            "y": 27,
+            "width": 125,
+            "height": 8,
+            "fontSize": 8
+          }
+        ]
+      },
+      {
+        "page": 5,
+        "text_items": [
+          {
+            "text": "Currency allocation",
+            "x": 651,
+            "y": 512,
+            "width": 121,
+            "height": 13,
+            "fontSize": 13
+          },
+          {
+            "text": "",
+            "x": 645,
+            "y": 556,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "MESSOS ENTERPRISES LTD.",
+            "x": 645,
+            "y": 556,
+            "width": 126,
+            "height": 9,
+            "fontSize": 9
+          },
+          {
+            "text": "",
+            "x": 689,
+            "y": 547,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Valuation as of 31.03.2025",
+            "x": 689,
+            "y": 547,
+            "width": 82,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "Client Number 366223",
+            "x": 702,
+            "y": 539,
+            "width": 69,
+            "height": 7,
+            "fontSize": 7
+          },
+          {
+            "text": "",
+            "x": 37,
+            "y": 517,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "aeouiAEOUI",
+            "x": 37,
+            "y": 517,
+            "width": 11,
+            "height": 2,
+            "fontSize": 2
+          },
+          {
+            "text": " ",
+            "x": 48,
+            "y": 517,
+            "width": 18,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "aeouiAEOUI",
+            "x": 66,
+            "y": 517,
+            "width": 11,
+            "height": 2,
+            "fontSize": 2
+          },
+          {
+            "text": "",
+            "x": 32,
+            "y": 21,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Swift CBLUCH2280A // Clearing 8490 // CHE-105.962.409 IVA",
+            "x": 32,
+            "y": 21,
+            "width": 168,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "Tel. +41 44 218 10 20 // Fax +41 44 218 10 29 // info@corner.ch // corner.ch",
+            "x": 32,
+            "y": 29,
+            "width": 204,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "Cornèr Banca SA // Tödistrasse 27 // Postfach 1640 // 8027 Zürich_Switzerland // Hauptsitz Via Canova 16, 6901 Lugano_Switzerland",
+            "x": 32,
+            "y": 37,
+            "width": 361,
+            "height": 6,
+            "fontSize": 6
+          },
+          {
+            "text": "",
+            "x": 38,
+            "y": 494,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Asset Allocation",
+            "x": 38,
+            "y": 494,
+            "width": 62,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 100,
+            "y": 494,
+            "width": 100,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Countervalue USD",
+            "x": 200,
+            "y": 494,
+            "width": 71,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 271,
+            "y": 494,
+            "width": 17,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Weight",
+            "x": 288,
+            "y": 494,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 315,
+            "y": 494,
+            "width": 47,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "USD",
+            "x": 361,
+            "y": 494,
+            "width": 17,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 378,
+            "y": 494,
+            "width": 27,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "CHF",
+            "x": 406,
+            "y": 494,
+            "width": 16,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Liquidity",
+            "x": 38,
+            "y": 476,
+            "width": 34,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 72,
+            "y": 476,
+            "width": 170,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "103'770",
+            "x": 242,
+            "y": 476,
+            "width": 29,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 270,
+            "y": 476,
+            "width": 21,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.53%",
+            "x": 292,
+            "y": 476,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 315,
+            "y": 476,
+            "width": 41,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.53%",
+            "x": 356,
+            "y": 476,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Cash accounts",
+            "x": 38,
+            "y": 464,
+            "width": 53,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 91,
+            "y": 464,
+            "width": 160,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "6'070",
+            "x": 251,
+            "y": 464,
+            "width": 19,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 271,
+            "y": 464,
+            "width": 21,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.03%",
+            "x": 292,
+            "y": 464,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 314,
+            "y": 464,
+            "width": 41,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.03%",
+            "x": 355,
+            "y": 464,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Money Market",
+            "x": 38,
+            "y": 452,
+            "width": 51,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 89,
+            "y": 452,
+            "width": 158,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "97'700",
+            "x": 247,
+            "y": 452,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 271,
+            "y": 452,
+            "width": 21,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.50%",
+            "x": 292,
+            "y": 452,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 314,
+            "y": 452,
+            "width": 41,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.50%",
+            "x": 355,
+            "y": 452,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Fixed deposits and fiduciaries",
+            "x": 38,
+            "y": 441,
+            "width": 106,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Bonds",
+            "x": 38,
+            "y": 423,
+            "width": 25,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 63,
+            "y": 423,
+            "width": 168,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "12'363'974",
+            "x": 231,
+            "y": 423,
+            "width": 39,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 270,
+            "y": 423,
+            "width": 17,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "63.52%",
+            "x": 287,
+            "y": 423,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 315,
+            "y": 423,
+            "width": 37,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "63.52%",
+            "x": 351,
+            "y": 423,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Bonds",
+            "x": 38,
+            "y": 411,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 61,
+            "y": 411,
+            "width": 171,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "11'002'508",
+            "x": 232,
+            "y": 411,
+            "width": 39,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 271,
+            "y": 411,
+            "width": 17,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "56.53%",
+            "x": 287,
+            "y": 411,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 314,
+            "y": 411,
+            "width": 37,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "56.53%",
+            "x": 351,
+            "y": 411,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Bond funds / certificates",
+            "x": 38,
+            "y": 400,
+            "width": 86,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 124,
+            "y": 400,
+            "width": 112,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "1'361'466",
+            "x": 236,
+            "y": 400,
+            "width": 34,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 270,
+            "y": 400,
+            "width": 21,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "6.99%",
+            "x": 292,
+            "y": 400,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 314,
+            "y": 400,
+            "width": 41,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "6.99%",
+            "x": 355,
+            "y": 400,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Convertibles",
+            "x": 38,
+            "y": 388,
+            "width": 44,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Equities",
+            "x": 38,
+            "y": 371,
+            "width": 31,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 69,
+            "y": 371,
+            "width": 177,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "24'319",
+            "x": 246,
+            "y": 371,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 270,
+            "y": 371,
+            "width": 21,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.12%",
+            "x": 292,
+            "y": 371,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 315,
+            "y": 371,
+            "width": 85,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.12%",
+            "x": 399,
+            "y": 371,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Equities",
+            "x": 38,
+            "y": 359,
+            "width": 29,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 67,
+            "y": 359,
+            "width": 180,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "24'319",
+            "x": 247,
+            "y": 359,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 270,
+            "y": 359,
+            "width": 21,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.12%",
+            "x": 292,
+            "y": 359,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 314,
+            "y": 359,
+            "width": 85,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.12%",
+            "x": 399,
+            "y": 359,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Equity funds/certificates",
+            "x": 38,
+            "y": 347,
+            "width": 85,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Mixed funds",
+            "x": 38,
+            "y": 330,
+            "width": 47,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Structured products",
+            "x": 38,
+            "y": 312,
+            "width": 77,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 115,
+            "y": 312,
+            "width": 120,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "6'946'239",
+            "x": 235,
+            "y": 312,
+            "width": 35,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 270,
+            "y": 312,
+            "width": 17,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "35.69%",
+            "x": 287,
+            "y": 312,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 314,
+            "y": 312,
+            "width": 37,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "35.69%",
+            "x": 351,
+            "y": 312,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Structured products (Bonds)",
+            "x": 38,
+            "y": 301,
+            "width": 101,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 139,
+            "y": 301,
+            "width": 98,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "5'956'439",
+            "x": 236,
+            "y": 301,
+            "width": 34,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 270,
+            "y": 301,
+            "width": 17,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "30.60%",
+            "x": 287,
+            "y": 301,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 314,
+            "y": 301,
+            "width": 37,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "30.60%",
+            "x": 351,
+            "y": 301,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Structured products (Equities)",
+            "x": 38,
+            "y": 289,
+            "width": 106,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 145,
+            "y": 289,
+            "width": 98,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "989'800",
+            "x": 242,
+            "y": 289,
+            "width": 28,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 270,
+            "y": 289,
+            "width": 21,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "5.09%",
+            "x": 292,
+            "y": 289,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 314,
+            "y": 289,
+            "width": 41,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "5.09%",
+            "x": 355,
+            "y": 289,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Various Certificates",
+            "x": 38,
+            "y": 277,
+            "width": 70,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Metal accounts and precious metals",
+            "x": 38,
+            "y": 260,
+            "width": 138,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Metal accounts",
+            "x": 38,
+            "y": 248,
+            "width": 54,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Precious metals",
+            "x": 38,
+            "y": 237,
+            "width": 57,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Real Estate",
+            "x": 38,
+            "y": 219,
+            "width": 43,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Other assets",
+            "x": 38,
+            "y": 201,
+            "width": 48,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 87,
+            "y": 201,
+            "width": 160,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "26'129",
+            "x": 246,
+            "y": 201,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 270,
+            "y": 201,
+            "width": 21,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.13%",
+            "x": 292,
+            "y": 201,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 315,
+            "y": 201,
+            "width": 41,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.13%",
+            "x": 356,
+            "y": 201,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Hedge Funds & Private Equity",
+            "x": 38,
+            "y": 190,
+            "width": 108,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 146,
+            "y": 190,
+            "width": 101,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "26'129",
+            "x": 247,
+            "y": 190,
+            "width": 24,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 270,
+            "y": 190,
+            "width": 21,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.13%",
+            "x": 292,
+            "y": 190,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 314,
+            "y": 190,
+            "width": 41,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.13%",
+            "x": 355,
+            "y": 190,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Alternative UCITS",
+            "x": 38,
+            "y": 178,
+            "width": 64,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Commodity funds",
+            "x": 38,
+            "y": 167,
+            "width": 63,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Options",
+            "x": 38,
+            "y": 155,
+            "width": 28,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "Total assets",
+            "x": 38,
+            "y": 135,
+            "width": 46,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 84,
+            "y": 135,
+            "width": 147,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "19'464'431",
+            "x": 231,
+            "y": 135,
+            "width": 39,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 270,
+            "y": 135,
+            "width": 12,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "100.00%",
+            "x": 283,
+            "y": 135,
+            "width": 32,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 314,
+            "y": 135,
+            "width": 37,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "99.88%",
+            "x": 351,
+            "y": 135,
+            "width": 27,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": " ",
+            "x": 378,
+            "y": 135,
+            "width": 21,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "0.12%",
+            "x": 399,
+            "y": 135,
+            "width": 23,
+            "height": 8,
+            "fontSize": 8
+          },
+          {
+            "text": "",
+            "x": 648,
+            "y": 27,
+            "width": 0,
+            "height": 0,
+            "fontSize": 0
+          },
+          {
+            "text": "Print date 01.04.2025 // Page 3/17",
+            "x": 648,
+            "y": 27,
+            "width": 125,
+            "height": 8,
+            "fontSize": 8
+          }
+        ]
+      }
+    ]
+  }
+}

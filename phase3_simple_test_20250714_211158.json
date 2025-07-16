@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "filename": "2. Messos  - 31.03.2025.pdf",
+    "total_processing_time": 5.3726255893707275,
+    "target_processing_time": 30.0,
+    "processor_version": "V6_Phase3_Precision_Optimization",
+    "total_pages": 19,
+    "processed_at": "2025-07-14T21:11:58.031824",
+    "template_used": "corner_bank_portfolio_v1",
+    "extraction_mode": "PHASE3_PRECISION_30_SECOND_DEEP_ANALYSIS",
+    "phase3_enabled": true
+  },
+  "securities": [
+    {
+      "isin": "XS2530201644",
+      "name": "TORONTO DOMINION BANK NOTES",
+      "quantity": 200999,
+      "price": 99.6950955,
+      "market_value": 200075.39999999997,
+      "percentage": 1.02,
+      "confidence_score": 1.2,
+      "validation_status": "validation_failed",
+      "extraction_method": "phase3_precision_template",
+      "template_used": "corner_bank_portfolio_v1",
+      "page": 8,
+      "phase3_optimized": true,
+      "phase3_validated": true
+    },
+    {
+      "isin": "XS2588105036",
+      "name": "CANADIAN IMPERIAL BANK NOTES",
+      "quantity": 200999,
+      "price": 100.12664249999999,
+      "market_value": 201289.43999999997,
+      "percentage": 1.03,
+      "confidence_score": 1.2,
+      "validation_status": "validation_failed",
+      "extraction_method": "phase3_precision_template",
+      "template_used": "corner_bank_portfolio_v1",
+      "page": 8,
+      "phase3_optimized": true,
+      "phase3_validated": true
+    },
+    {
+      "isin": "XS2665592833",
+      "name": "HARP ISSUER NOTES",
+      "quantity": 1507499,
+      "price": 98.86184999999999,
+      "market_value": 1515087.7499999998,
+      "percentage": 7.75,
+      "confidence_score": 1.2,
+      "validation_status": "validation_failed",
+      "extraction_method": "phase3_precision_template",
+      "template_used": "corner_bank_portfolio_v1",
+      "page": 8,
+      "phase3_optimized": true,
+      "phase3_validated": true
+    },
+    {
+      "isin": "XS2567543397",
+      "name": "GOLDMAN SACHS CALLABLE NOTE",
+      "quantity": 2462249,
+      "price": 101.02259999999998,
+      "market_value": 2583257.025,
+      "percentage": 13.21,
+      "confidence_score": 1.2,
+      "validation_status": "validation_failed",
+      "extraction_method": "phase3_precision_template",
+      "template_used": "corner_bank_portfolio_v1",
+      "page": 8,
+      "phase3_optimized": true,
+      "phase3_validated": true
+    }
+  ],
+  "portfolio_summary": {
+    "total_value": 4499709.614999999,
+    "total_securities": 4,
+    "currencies": [
+      "CHF",
+      "USD",
+      "EUR"
+    ],
+    "extraction_method": "phase3_precision",
+    "phase3_optimized": true,
+    "validation_summary": {
+      "validated": 0,
+      "acceptable": 0,
+      "failed": 4,
+      "phase3_validated": 4
+    },
+    "confidence_summary": {
+      "average_confidence": 1.2,
+      "high_confidence_count": 4,
+      "precision_optimized": true
+    }
+  },
+  "extraction_stats": {
+    "total_spatial_items": 100,
+    "securities_extracted": 4,
+    "validated_securities": 0,
+    "acceptable_securities": 0,
+    "failed_securities": 4,
+    "template_confidence": 1.0,
+    "phase3_accuracy": 0.7875,
+    "precision_mode": true,
+    "deep_analysis_enabled": true,
+    "processing_time_utilized": 5.3726255893707275,
+    "average_confidence": 1.2
+  },
+  "phase3_results": {
+    "metadata": {
+      "phase": "Phase_3_Precision_Optimization",
+      "processing_time": 3.147791862487793,
+      "target_processing_time": 30.0,
+      "spatial_items_processed": 3786,
+      "optimization_enabled": true
+    },
+    "deep_processing_results": {
+      "phase_results": {
+        "spatial_extraction": [
+          

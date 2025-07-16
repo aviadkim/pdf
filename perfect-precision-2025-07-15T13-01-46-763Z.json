@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "totalSecurities": 3,
+    "totalValue": 2969773,
+    "targetValue": 19464431,
+    "accuracy": "15.26",
+    "targetRange": "39-41",
+    "extractedAt": "2025-07-15T13:01:46.762Z",
+    "method": "perfect_precision_extraction"
+  },
+  "securities": [
+    {
+      "isin": "XS2567543397",
+      "name": "GOLDMAN SACHS 10Y CALLABLE NOTE 2024-18.06.2034",
+      "value": 2570405,
+      "swissOriginal": "2'570'405",
+      "currency": "USD",
+      "confidence": 1,
+      "method": "exact_mapping"
+    },
+    {
+      "isin": "XS2588105036",
+      "name": "CANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28",
+      "value": 200288,
+      "swissOriginal": "200'288",
+      "currency": "USD",
+      "confidence": 1,
+      "method": "exact_mapping"
+    },
+    {
+      "isin": "XS2530201644",
+      "name": "TORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN",
+      "value": 199080,
+      "swissOriginal": "199'080",
+      "currency": "USD",
+      "confidence": 1,
+      "method": "exact_mapping"
+    }
+  ],
+  "technicalDetails": {
+    "exactMappings": 3,
+    "proximityMatches": 0,
+    "processingMethod": "perfect_precision_with_exact_known_mappings"
+  }
+}

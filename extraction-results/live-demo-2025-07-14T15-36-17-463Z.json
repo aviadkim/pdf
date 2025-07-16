@@ -1,0 +1,410 @@
+{
+  "metadata": {
+    "filename": "2. Messos  - 31.03.2025.pdf",
+    "pages": 19,
+    "processing_time": 3.351,
+    "extraction_method": "Universal Pattern Recognition"
+  },
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "page": 7,
+      "name": "RBC LONDON",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 1908490000366223000,
+      "percentage": 0.03,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2530201644",
+      "page": 8,
+      "name": "TORONTO DOMINION BANK NOTES",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2761230684,
+      "percentage": 0.25,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2588105036",
+      "page": 8,
+      "name": "HARP ISSUER",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2761230684,
+      "percentage": 0.25,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2665592833",
+      "page": 8,
+      "name": "GOLDMAN SACHS",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2761230684,
+      "percentage": 0.25,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2692298537",
+      "page": 8,
+      "name": "GOLDMAN SACHS",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2761230684,
+      "percentage": 0.25,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2754416860",
+      "page": 8,
+      "name": "VARIABLE RATE  USD",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2761230684,
+      "percentage": 0.25,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2761230684",
+      "page": 8,
+      "name": "VARIABLE RATE  USD",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2761230684,
+      "percentage": 0.25,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2736388732",
+      "page": 8,
+      "name": "BANK OF AMERICA NOTES",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2761230684,
+      "percentage": 0.25,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2782869916",
+      "page": 9,
+      "name": "REGS  USD",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2912278723,
+      "percentage": 1.07,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2824054402",
+      "page": 9,
+      "name": "REGS  USD",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2912278723,
+      "percentage": 1.07,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2567543397",
+      "page": 9,
+      "name": "Y CALLABLE NOTE",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2912278723,
+      "percentage": 1.07,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2110079584",
+      "page": 9,
+      "name": "REGS  USD",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2912278723,
+      "percentage": 1.07,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2848820754",
+      "page": 9,
+      "name": "GOLDMAN SACHS EMTN",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2912278723,
+      "percentage": 1.07,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2829712830",
+      "page": 9,
+      "name": "GOLDMAN SACHS EMTN",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2912278723,
+      "percentage": 1.07,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2912278723",
+      "page": 9,
+      "name": "BANK OF AMERICA",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2912278723,
+      "percentage": 1.07,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2381723902",
+      "page": 9,
+      "name": null,
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2912278723,
+      "percentage": 1.07,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2829752976",
+      "page": 10,
+      "name": "BANK OF AMERICA",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 3035947103,
+      "percentage": 0.73,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2953741100",
+      "page": 10,
+      "name": "BANK OF AMERICA",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 3035947103,
+      "percentage": 0.73,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2381717250",
+      "page": 10,
+      "name": "JPMORGAN CHASE",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 3035947103,
+      "percentage": 0.73,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2481066111",
+      "page": 10,
+      "name": "GOLDMAN SACHS",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 3035947103,
+      "percentage": 0.73,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2964611052",
+      "page": 10,
+      "name": "DEUTSCHE BANK",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 3035947103,
+      "percentage": 0.73,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS3035947103",
+      "page": 10,
+      "name": "PREMIUM ALT",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 3035947103,
+      "percentage": 0.73,
+      "currency": "USD"
+    },
+    {
+      "isin": "LU2228214107",
+      "page": 10,
+      "name": "BK JULIUS BAER CAP",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 3035947103,
+      "percentage": 0.73,
+      "currency": "USD"
+    },
+    {
+      "isin": "CH1269060229",
+      "page": 10,
+      "name": null,
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 3035947103,
+      "percentage": 0.73,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS0461497009",
+      "page": 11,
+      "name": "DEUTSCHE BANK NOTES",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2746319610,
+      "percentage": 1.54,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2746319610",
+      "page": 11,
+      "name": "SOCIETE GENERALE",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2746319610,
+      "percentage": 1.54,
+      "currency": "USD"
+    },
+    {
+      "isin": "CH0244767585",
+      "page": 12,
+      "name": "UBS GROUP INC NAMEN",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 244767585,
+      "percentage": 3.1,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2519369867",
+      "page": 13,
+      "name": "BNP PARIBAS ISS STRUCT",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2838389430,
+      "percentage": 2.01,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2315191069",
+      "page": 13,
+      "name": "BNP PARIBAS ISS STRUCT",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2838389430,
+      "percentage": 2.01,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2792098779",
+      "page": 13,
+      "name": "CITIGROUP  USD",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2838389430,
+      "percentage": 2.01,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2714429128",
+      "page": 13,
+      "name": "GOLDMAN SACHS GR",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2838389430,
+      "percentage": 2.01,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2105981117",
+      "page": 13,
+      "name": "LUMINIS REPACK NOTES",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2838389430,
+      "percentage": 2.01,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2838389430",
+      "page": 13,
+      "name": "LUMINIS REPACK NOTES",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2838389430,
+      "percentage": 2.01,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2631782468",
+      "page": 13,
+      "name": "FED RES BK SOFR US  P",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2838389430,
+      "percentage": 2.01,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS1700087403",
+      "page": 14,
+      "name": "NOVUS CAPITAL CREDIT LINKED NOTES",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2594173093,
+      "percentage": 0.07,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2594173093",
+      "page": 14,
+      "name": "NOVUS CAPITAL CREDIT LINKED NOTES",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2594173093,
+      "percentage": 0.07,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2407295554",
+      "page": 14,
+      "name": "NOVUS CAPITAL STRUCTURED NOTES",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2594173093,
+      "percentage": 0.07,
+      "currency": "USD"
+    },
+    {
+      "isin": "XS2252299883",
+      "page": 14,
+      "name": "INTERBK LIBOR",
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 2594173093,
+      "percentage": 0.07,
+      "currency": "USD"
+    },
+    {
+      "isin": "XD0466760473",
+      "page": 15,
+      "name": null,
+      "quantity": 2025,
+      "price": 31.03,
+      "market_value": 466760473,
+      "percentage": 0,
+      "currency": "USD"
+    }
+  ],
+  "portfolio_summary": {
+    "total_value": 1908490103730230000,
+    "total_securities": 39
+  },
+  "extraction_stats": {
+    "total_text_items": 2112,
+    "numbers_found": 1614,
+    "isins_found": 39,
+    "tables_detected": 0
+  }
+}

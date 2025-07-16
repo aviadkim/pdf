@@ -6,6 +6,11 @@ import bulletproofProcessor from './api/bulletproof-processor.js';
 import twoStageProcessor from './api/two-stage-processor.js';
 import superClaudeYoloProcessor from './api/superclaude-yolo-ultimate.js';
 import paddleFinancialProcessor from './api/paddle-financial-processor.js';
+import true100PercentExtractor from './api/true-100-percent-extractor.js';
+import pureJSONExtractor from './api/pure-json-extractor.js';
+import tableAwareExtractor from './api/table-aware-extractor.js';
+import properTableExtractor from './api/proper-table-extractor.js';
+import mcpEnhancedProcessor from './api/mcp-enhanced-processor.js';
 
 const app = express();
 const PORT = 3001;
@@ -24,6 +29,11 @@ app.get('/', (req, res) => {
       'POST /api/two-stage-processor',
       'POST /api/superclaude-yolo-ultimate',
       'POST /api/paddle-financial-processor',
+      'POST /api/true-100-percent-extractor',
+      'POST /api/pure-json-extractor',
+      'POST /api/table-aware-extractor',
+      'POST /api/proper-table-extractor',
+      'POST /api/mcp-enhanced-processor',
       'POST /test'
     ]
   });
@@ -250,6 +260,256 @@ app.post('/api/paddle-financial-processor', async (req, res) => {
   }
 });
 
+// True 100% Extractor endpoint
+app.post('/api/true-100-percent-extractor', async (req, res) => {
+  console.log('🎯 True 100% Extractor request received');
+  
+  // Create mock Vercel request/response objects
+  const mockReq = {
+    method: 'POST',
+    body: req.body
+  };
+  
+  const mockRes = {
+    statusCode: 200,
+    headers: {},
+    body: null,
+    setHeader: function(name, value) {
+      this.headers[name] = value;
+    },
+    status: function(code) {
+      this.statusCode = code;
+      return this;
+    },
+    json: function(data) {
+      this.body = data;
+      return this;
+    },
+    end: function() {
+      return this;
+    }
+  };
+  
+  try {
+    await true100PercentExtractor(mockReq, mockRes);
+    
+    // Send the response
+    res.status(mockRes.statusCode);
+    Object.keys(mockRes.headers).forEach(key => {
+      res.setHeader(key, mockRes.headers[key]);
+    });
+    res.json(mockRes.body);
+    
+  } catch (error) {
+    console.error('❌ True 100% Extractor error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Internal server error',
+      details: error.message
+    });
+  }
+});
+
+// Pure JSON Extractor endpoint
+app.post('/api/pure-json-extractor', async (req, res) => {
+  console.log('🔍 Pure JSON Extractor request received');
+  
+  // Create mock Vercel request/response objects
+  const mockReq = {
+    method: 'POST',
+    body: req.body
+  };
+  
+  const mockRes = {
+    statusCode: 200,
+    headers: {},
+    body: null,
+    setHeader: function(name, value) {
+      this.headers[name] = value;
+    },
+    status: function(code) {
+      this.statusCode = code;
+      return this;
+    },
+    json: function(data) {
+      this.body = data;
+      return this;
+    },
+    end: function() {
+      return this;
+    }
+  };
+  
+  try {
+    await pureJSONExtractor(mockReq, mockRes);
+    
+    // Send the response
+    res.status(mockRes.statusCode);
+    Object.keys(mockRes.headers).forEach(key => {
+      res.setHeader(key, mockRes.headers[key]);
+    });
+    res.json(mockRes.body);
+    
+  } catch (error) {
+    console.error('❌ Pure JSON Extractor error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Internal server error',
+      details: error.message
+    });
+  }
+});
+
+// Table-Aware Extractor endpoint
+app.post('/api/table-aware-extractor', async (req, res) => {
+  console.log('📊 Table-Aware Extractor request received');
+  
+  // Create mock Vercel request/response objects
+  const mockReq = {
+    method: 'POST',
+    body: req.body
+  };
+  
+  const mockRes = {
+    statusCode: 200,
+    headers: {},
+    body: null,
+    setHeader: function(name, value) {
+      this.headers[name] = value;
+    },
+    status: function(code) {
+      this.statusCode = code;
+      return this;
+    },
+    json: function(data) {
+      this.body = data;
+      return this;
+    },
+    end: function() {
+      return this;
+    }
+  };
+  
+  try {
+    await tableAwareExtractor(mockReq, mockRes);
+    
+    // Send the response
+    res.status(mockRes.statusCode);
+    Object.keys(mockRes.headers).forEach(key => {
+      res.setHeader(key, mockRes.headers[key]);
+    });
+    res.json(mockRes.body);
+    
+  } catch (error) {
+    console.error('❌ Table-Aware Extractor error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Internal server error',
+      details: error.message
+    });
+  }
+});
+
+// Proper Table Extractor endpoint
+app.post('/api/proper-table-extractor', async (req, res) => {
+  console.log('📊 Proper Table Extractor request received');
+  
+  // Create mock Vercel request/response objects
+  const mockReq = {
+    method: 'POST',
+    body: req.body
+  };
+  
+  const mockRes = {
+    statusCode: 200,
+    headers: {},
+    body: null,
+    setHeader: function(name, value) {
+      this.headers[name] = value;
+    },
+    status: function(code) {
+      this.statusCode = code;
+      return this;
+    },
+    json: function(data) {
+      this.body = data;
+      return this;
+    },
+    end: function() {
+      return this;
+    }
+  };
+  
+  try {
+    await properTableExtractor(mockReq, mockRes);
+    
+    // Send the response
+    res.status(mockRes.statusCode);
+    Object.keys(mockRes.headers).forEach(key => {
+      res.setHeader(key, mockRes.headers[key]);
+    });
+    res.json(mockRes.body);
+    
+  } catch (error) {
+    console.error('❌ Proper Table Extractor error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Internal server error',
+      details: error.message
+    });
+  }
+});
+
+// MCP-Enhanced Processor endpoint (YOLO MODE)
+app.post('/api/mcp-enhanced-processor', async (req, res) => {
+  console.log('🚀 MCP-Enhanced Processor request received - YOLO MODE');
+  
+  // Create mock Vercel request/response objects
+  const mockReq = {
+    method: 'POST',
+    body: req.body
+  };
+  
+  const mockRes = {
+    statusCode: 200,
+    headers: {},
+    body: null,
+    setHeader: function(name, value) {
+      this.headers[name] = value;
+    },
+    status: function(code) {
+      this.statusCode = code;
+      return this;
+    },
+    json: function(data) {
+      this.body = data;
+      return this;
+    },
+    end: function() {
+      return this;
+    }
+  };
+  
+  try {
+    await mcpEnhancedProcessor(mockReq, mockRes);
+    
+    // Send the response
+    res.status(mockRes.statusCode);
+    Object.keys(mockRes.headers).forEach(key => {
+      res.setHeader(key, mockRes.headers[key]);
+    });
+    res.json(mockRes.body);
+    
+  } catch (error) {
+    console.error('❌ MCP-Enhanced Processor error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Internal server error',
+      details: error.message
+    });
+  }
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`🚀 Local test server running on http://localhost:${PORT}`);
@@ -257,6 +517,11 @@ app.listen(PORT, () => {
   console.log(`🎯 Two-stage processor endpoint: http://localhost:${PORT}/api/two-stage-processor`);
   console.log(`💀 SuperClaude YOLO processor endpoint: http://localhost:${PORT}/api/superclaude-yolo-ultimate`);
   console.log(`🏦 Paddle Financial processor endpoint: http://localhost:${PORT}/api/paddle-financial-processor`);
+  console.log(`🎯 True 100% Extractor endpoint: http://localhost:${PORT}/api/true-100-percent-extractor`);
+  console.log(`🔍 Pure JSON Extractor endpoint: http://localhost:${PORT}/api/pure-json-extractor`);
+  console.log(`📊 Table-Aware Extractor endpoint: http://localhost:${PORT}/api/table-aware-extractor`);
+  console.log(`📊 Proper Table Extractor endpoint: http://localhost:${PORT}/api/proper-table-extractor`);
+  console.log(`🚀 MCP-Enhanced Processor endpoint: http://localhost:${PORT}/api/mcp-enhanced-processor`);
 });
 
 export default app;

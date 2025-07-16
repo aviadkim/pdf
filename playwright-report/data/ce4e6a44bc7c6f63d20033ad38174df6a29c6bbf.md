@@ -1,0 +1,128 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - link "📄 Phase 3 PDF Platform":
+    - /url: dashboard.html
+  - navigation:
+    - link "Dashboard":
+      - /url: dashboard.html
+    - link "History":
+      - /url: history.html
+    - link "Templates":
+      - /url: templates.html
+    - link "Analytics":
+      - /url: analytics.html
+    - link "Logout":
+      - /url: "#"
+- main:
+  - heading "Analytics & Reports" [level=1]
+  - combobox:
+    - option "Last 7 days"
+    - option "Last 30 days" [selected]
+    - option "Last 3 months"
+    - option "Last year"
+    - option "Custom range"
+  - text: Total Documents 📄 1,247 ↗ +12% from last period Average Accuracy 🎯 99.2% ↗ +0.3% from last period Total Portfolio Value 💰 $28.4B ↗ +8.7% from last period Processing Time ⏱️ 8.3s ↘ -2.1s faster
+  - heading "Processing Trends" [level=3]
+  - button "Volume"
+  - button "Accuracy"
+  - button "Processing Time"
+  - text: 📊 Volume Trends Chart Interactive visualization showing volume over the last 30 days
+  - heading "Performance Metrics" [level=3]
+  - button "📊 Export"
+  - button "🔄 Refresh"
+  - table:
+    - rowgroup:
+      - row "Metric Current Target Performance Trend":
+        - cell "Metric"
+        - cell "Current"
+        - cell "Target"
+        - cell "Performance"
+        - cell "Trend"
+    - rowgroup:
+      - row "Extraction Accuracy 99.5% 99.0% Excellent ↗ +0.3%":
+        - cell "Extraction Accuracy"
+        - cell "99.5%"
+        - cell "99.0%"
+        - cell "Excellent"
+        - cell "↗ +0.3%"
+      - row "Processing Speed 8.3s avg 10.0s Excellent ↗ +15%":
+        - cell "Processing Speed"
+        - cell "8.3s avg"
+        - cell "10.0s"
+        - cell "Excellent"
+        - cell "↗ +15%"
+      - row "Success Rate 98.7% 95.0% Excellent ↗ +1.2%":
+        - cell "Success Rate"
+        - cell "98.7%"
+        - cell "95.0%"
+        - cell "Excellent"
+        - cell "↗ +1.2%"
+      - row "Error Rate 1.3% 5.0% Excellent ↘ -0.7%":
+        - cell "Error Rate"
+        - cell "1.3%"
+        - cell "5.0%"
+        - cell "Excellent"
+        - cell "↘ -0.7%"
+  - heading "Top Performing Documents" [level=3]
+  - link "👁️ View All":
+    - /url: history.html
+  - table:
+    - rowgroup:
+      - row "Document Accuracy Securities Portfolio Value Processing Time":
+        - cell "Document"
+        - cell "Accuracy"
+        - cell "Securities"
+        - cell "Portfolio Value"
+        - cell "Processing Time"
+    - rowgroup:
+      - row "messos_portfolio_2024.pdf Swiss Portfolio 99.8% 42 $4.4B 7.2s":
+        - cell "messos_portfolio_2024.pdf Swiss Portfolio"
+        - cell "99.8%"
+        - cell "42"
+        - cell "$4.4B"
+        - cell "7.2s"
+      - row "credit_suisse_report.pdf Bank Statement 99.6% 38 $3.2B 8.1s":
+        - cell "credit_suisse_report.pdf Bank Statement"
+        - cell "99.6%"
+        - cell "38"
+        - cell "$3.2B"
+        - cell "8.1s"
+      - row "ubs_holdings.pdf Securities List 99.4% 45 $2.8B 9.3s":
+        - cell "ubs_holdings.pdf Securities List"
+        - cell "99.4%"
+        - cell "45"
+        - cell "$2.8B"
+        - cell "9.3s"
+  - heading "Template Usage Analytics" [level=3]
+  - link "⚙️ Manage":
+    - /url: templates.html
+  - table:
+    - rowgroup:
+      - row "Template Usage Count Avg Accuracy Success Rate Performance":
+        - cell "Template"
+        - cell "Usage Count"
+        - cell "Avg Accuracy"
+        - cell "Success Rate"
+        - cell "Performance"
+    - rowgroup:
+      - row "Swiss Portfolio Standard Built-in template 247 99.5% 98.8% Excellent":
+        - cell "Swiss Portfolio Standard Built-in template"
+        - cell "247"
+        - cell "99.5%"
+        - cell "98.8%"
+        - cell "Excellent"
+      - row "Messos Bank Format Built-in template 156 98.7% 97.4% Excellent":
+        - cell "Messos Bank Format Built-in template"
+        - cell "156"
+        - cell "98.7%"
+        - cell "97.4%"
+        - cell "Excellent"
+      - row "Generic Securities List Built-in template 89 94.2% 92.1% Good":
+        - cell "Generic Securities List Built-in template"
+        - cell "89"
+        - cell "94.2%"
+        - cell "92.1%"
+        - cell "Good"
+```

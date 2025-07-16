@@ -1,0 +1,53 @@
+{
+  "extraction_results": {
+    "metadata": {
+      "processing_time": 0.012588,
+      "extraction_method": "Template-Based 100% Accuracy Engine",
+      "template_used": "none",
+      "version": "2.0_template_based",
+      "filename": "2. Messos  - 31.03.2025.pdf",
+      "total_pages": 19,
+      "processed_at": "2025-07-14T19:42:56.550700",
+      "processor_version": "V4_Template_Based_100_Accuracy",
+      "total_processing_time": 6.667775
+    },
+    "securities": [],
+    "portfolio_summary": {
+      "total_value": 0,
+      "total_securities": 0,
+      "currencies": [
+        "CHF",
+        "USD"
+      ],
+      "validation_summary": {
+        "validated": 0,
+        "acceptable": 0,
+        "failed": 0,
+        "incomplete": 0
+      }
+    },
+    "extraction_stats": {
+      "securities_extracted": 0,
+      "validated_securities": 0,
+      "acceptable_securities": 0,
+      "failed_securities": 0,
+      "average_confidence": 0,
+      "template_accuracy": 0,
+      "total_spatial_items": 3786,
+      "spatial_precision": "maximum",
+      "template_system": "enabled",
+      "target_accuracy": "100%"
+    }
+  },
+  "accuracy_analysis": {
+    "overall_metrics": {
+      "error": "No securities extracted"
+    },
+    "individual_security_analysis": {},
+    "field_accuracy": {},
+    "mathematical_validation": {},
+    "template_performance": {}
+  },
+  "test_timestamp": "20250714_194256",
+  "test_mode": "aggressive_100_accuracy"
+}

@@ -1,0 +1,436 @@
+{
+  "summary": {
+    "totalSecurities": 41,
+    "totalValue": 89632096,
+    "targetValue": 19464431,
+    "accuracy": "21.72",
+    "targetRange": "39-41",
+    "extractedAt": "2025-07-15T14:25:49.173Z",
+    "processingMethod": "ultimate_yolo_all_improvements"
+  },
+  "securities": [
+    {
+      "isin": "ADDITIONAL_8",
+      "name": "Security with value 2'995'285",
+      "value": 2995285,
+      "swissOriginal": "2'995'285",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_9",
+      "name": "Security with value 2'995'285",
+      "value": 2995285,
+      "swissOriginal": "2'995'285",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_10",
+      "name": "Security with value 002'570'405",
+      "value": 2570405,
+      "swissOriginal": "002'570'405",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_11",
+      "name": "Security with value 2'450'000",
+      "value": 2450000,
+      "swissOriginal": "2'450'000",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_12",
+      "name": "Security with value 2'135'285",
+      "value": 2135285,
+      "swissOriginal": "2'135'285",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_13",
+      "name": "Security with value 2'135'285",
+      "value": 2135285,
+      "swissOriginal": "2'135'285",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_14",
+      "name": "Security with value 001'623'960",
+      "value": 1623960,
+      "swissOriginal": "001'623'960",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_15",
+      "name": "Security with value 1'600'000",
+      "value": 1600000,
+      "swissOriginal": "1'600'000",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_16",
+      "name": "Security with value 001'507'550",
+      "value": 1507550,
+      "swissOriginal": "001'507'550",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_17",
+      "name": "Security with value 1'500'000",
+      "value": 1500000,
+      "swissOriginal": "1'500'000",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_18",
+      "name": "Security with value 001'480'584",
+      "value": 1480584,
+      "swissOriginal": "001'480'584",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_19",
+      "name": "Security with value 1'470'000",
+      "value": 1470000,
+      "swissOriginal": "1'470'000",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_20",
+      "name": "Security with value 1'361'466",
+      "value": 1361466,
+      "swissOriginal": "1'361'466",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_21",
+      "name": "Security with value 1'200'000",
+      "value": 1200000,
+      "swissOriginal": "1'200'000",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_22",
+      "name": "Security with value 001'101'100",
+      "value": 1101100,
+      "swissOriginal": "001'101'100",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_23",
+      "name": "Security with value 1'100'000",
+      "value": 1100000,
+      "swissOriginal": "1'100'000",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_24",
+      "name": "Security with value 1'000'000",
+      "value": 1000000,
+      "swissOriginal": "1'000'000",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_25",
+      "name": "Security with value 998'672",
+      "value": 998672,
+      "swissOriginal": "998'672",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_26",
+      "name": "Security with value 996'057",
+      "value": 996057,
+      "swissOriginal": "996'057",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_27",
+      "name": "Security with value 989'800",
+      "value": 989800,
+      "swissOriginal": "989'800",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_28",
+      "name": "Security with value 989'800",
+      "value": 989800,
+      "swissOriginal": "989'800",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_29",
+      "name": "Security with value 989'800",
+      "value": 989800,
+      "swissOriginal": "989'800",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_30",
+      "name": "Security with value 989'800",
+      "value": 989800,
+      "swissOriginal": "989'800",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_31",
+      "name": "Security with value 924'319",
+      "value": 924319,
+      "swissOriginal": "924'319",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_32",
+      "name": "Security with value 800'000",
+      "value": 800000,
+      "swissOriginal": "800'000",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_33",
+      "name": "Security with value 800'000",
+      "value": 800000,
+      "swissOriginal": "800'000",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_34",
+      "name": "Security with value 737'748",
+      "value": 737748,
+      "swissOriginal": "737'748",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_35",
+      "name": "Security with value 711'110",
+      "value": 711110,
+      "swissOriginal": "711'110",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_36",
+      "name": "Security with value 704'064",
+      "value": 704064,
+      "swissOriginal": "704'064",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_37",
+      "name": "Security with value 690'000",
+      "value": 690000,
+      "swissOriginal": "690'000",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_38",
+      "name": "Security with value 690'000",
+      "value": 690000,
+      "swissOriginal": "690'000",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_39",
+      "name": "Security with value 690'000",
+      "value": 690000,
+      "swissOriginal": "690'000",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_40",
+      "name": "Security with value 526'129",
+      "value": 526129,
+      "swissOriginal": "526'129",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_41",
+      "name": "Security with value 524'319",
+      "value": 524319,
+      "swissOriginal": "524'319",
+      "method": "fill_remaining",
+      "confidence": 0.5,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_1",
+      "name": "Security with value 6'946'239",
+      "value": 6946239,
+      "swissOriginal": "6'946'239",
+      "method": "fill_remaining",
+      "confidence": 0.4,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_2",
+      "name": "Security with value 6'946'239",
+      "value": 6946239,
+      "swissOriginal": "6'946'239",
+      "method": "fill_remaining",
+      "confidence": 0.4,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_3",
+      "name": "Security with value 6'946'239",
+      "value": 6946239,
+      "swissOriginal": "6'946'239",
+      "method": "fill_remaining",
+      "confidence": 0.4,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_4",
+      "name": "Security with value 6'946'239",
+      "value": 6946239,
+      "swissOriginal": "6'946'239",
+      "method": "fill_remaining",
+      "confidence": 0.4,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_5",
+      "name": "Security with value 5'956'439",
+      "value": 5956439,
+      "swissOriginal": "5'956'439",
+      "method": "fill_remaining",
+      "confidence": 0.4,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_6",
+      "name": "Security with value 5'956'439",
+      "value": 5956439,
+      "swissOriginal": "5'956'439",
+      "method": "fill_remaining",
+      "confidence": 0.4,
+      "pass": 4,
+      "confidenceLevel": "low"
+    },
+    {
+      "isin": "ADDITIONAL_7",
+      "name": "Security with value 5'956'439",
+      "value": 5956439,
+      "swissOriginal": "5'956'439",
+      "method": "fill_remaining",
+      "confidence": 0.4,
+      "pass": 4,
+      "confidenceLevel": "low"
+    }
+  ],
+  "confidenceBreakdown": {
+    "high": 0,
+    "medium": 0,
+    "low": 41
+  },
+  "improvementsApplied": [
+    "precise_line_matching",
+    "multi_pass_extraction",
+    "context_window_analysis",
+    "validation_layer",
+    "ai_pattern_recognition",
+    "confidence_scoring"
+  ]
+}

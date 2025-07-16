@@ -1,19 +1,45 @@
-export default function handler(req, res) {
-  const hasApiKey = !!process.env.ANTHROPIC_API_KEY;
-  const keyLength = process.env.ANTHROPIC_API_KEY?.length || 0;
-  const keyPreview = process.env.ANTHROPIC_API_KEY 
-    ? `${process.env.ANTHROPIC_API_KEY.substring(0, 7)}...${process.env.ANTHROPIC_API_KEY.slice(-4)}`
-    : 'NOT SET';
+// 🧪 TEST API - Optimized for Puppeteer/Playwright
+export default async function handler(req, res) {
+  console.log('🧪 TEST API - Optimized for testing tools');
+  
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', '*');
+  res.setHeader('X-Test-API', 'true');
 
-  res.status(200).json({
-    status: 'API Key Test',
-    apiKeySet: hasApiKey,
-    keyLength: keyLength,
-    keyPreview: keyPreview,
-    environment: process.env.NODE_ENV || 'production',
-    timestamp: new Date().toISOString(),
-    message: hasApiKey 
-      ? '✅ API key is configured' 
-      : '❌ API key is missing - please add ANTHROPIC_API_KEY in Vercel settings'
-  });
+  if (req.method === 'OPTIONS') {
+    res.status(200).json({ 
+      message: 'Test API ready',
+      methods: ['GET', 'POST', 'OPTIONS'],
+      testOptimized: true
+    });
+    return;
+  }
+
+  if (req.method === 'GET') {
+    res.status(200).json({
+      message: 'Test API is running',
+      status: 'healthy',
+      timestamp: new Date().toISOString(),
+      testOptimized: true,
+      endpoints: {
+        health: '/api/test',
+        extract: '/api/public-extract'
+      }
+    });
+    return;
+  }
+
+  if (req.method === 'POST') {
+    res.status(200).json({
+      message: 'Test API POST endpoint',
+      received: true,
+      body: req.body,
+      headers: req.headers,
+      testOptimized: true
+    });
+    return;
+  }
+
+  res.status(405).json({ error: 'Method not allowed' });
 }

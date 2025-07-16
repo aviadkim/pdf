@@ -4,7 +4,7 @@ import FormData from 'form-data';
 import fetch from 'node-fetch';
 import puppeteer from 'puppeteer';
 
-const VERCEL_URL = 'https://pdf-main-c4y6onuiz-aviads-projects-0f56b7ac.vercel.app';
+const VERCEL_URL = 'https://pdf-main-dj1iqj4v4-aviads-projects-0f56b7ac.vercel.app';
 
 async function testCompleteSolution() {
   console.log('🎯 COMPLETE SOLUTION TEST');
