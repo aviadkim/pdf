@@ -25,37 +25,8 @@
     "start:render": "node index.js",
     "build:render": "echo 'Render build complete'"
   },
-  "dependencies": {
-    "@anthropic-ai/sdk": "^0.27.0",
-    "@azure/ai-form-recognizer": "^5.0.0",
-    "@modelcontextprotocol/sdk": "^0.5.0",
-    "@vercel/mcp-adapter": "^1.0.0",
-    "axios": "^1.10.0",
-    "canvas": "^3.1.2",
-    "cors": "^2.8.5",
-    "exceljs": "^4.4.0",
-    "express": "^5.1.0",
-    "form-data": "^4.0.3",
-    "formidable": "^3.5.4",
-    "multer": "^1.4.4",
-    "node-fetch": "^3.3.2",
-    "node-notifier": "^10.0.1",
-    "node-tesseract-ocr": "^2.2.1",
-    "office-js": "^0.1.0",
-    "pdf-parse": "^1.1.1",
-    "pdf2pic": "^3.2.0",
-    "playwright": "^1.54.1",
-    "puppeteer": "^24.13.0",
-    "sharp": "^0.34.3",
-    "socket.io": "^4.7.4",
-    "tesseract.js": "^6.0.1",
-    "xlsx": "^0.18.5",
-    "zod": "^4.0.5"
-  },
-  "devDependencies": {
-    "@playwright/test": "^1.40.0",
-    "nodemon": "^3.0.2"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0"
   },
