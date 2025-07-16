@@ -24,8 +24,8 @@ function extractSecurities(text) {
             console.log(`Position: ${position}`);
             
             // Extract context around ISIN
-            const contextStart = Math.max(0, position - 500);
-            const contextEnd = Math.min(text.length, position + 500);
+            const contextStart = Math.max(0, position - 300);
+            const contextEnd = Math.min(text.length, position + 300);
             const context = text.substring(contextStart, contextEnd);
             
             console.log(`\\nContext around ISIN:`);
@@ -101,8 +101,8 @@ function extractSecurities(text) {
         }
         
         // Extract context around ISIN for processing
-        const contextStart = Math.max(0, position - 500);
-        const contextEnd = Math.min(text.length, position + 500);
+        const contextStart = Math.max(0, position - 300);
+        const contextEnd = Math.min(text.length, position + 300);
         const context = text.substring(contextStart, contextEnd);
         
         // Extract security name
