@@ -1,7 +1,10 @@
 // 🎯 REAL PDF EXTRACTOR - No cheating, real data extraction
 // Uses only pdf-parse (built into Vercel) to extract actual data from PDF
 
-export default async function handler(req, res) {
+import express from 'express';
+const router = express.Router();
+
+router.post('/', async (req, res) => {
   // Set CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -30,8 +33,8 @@ export default async function handler(req, res) {
     if (testMode) {
       // Use the built-in Messos PDF for testing
       try {
-        const fs = require('fs');
-        const path = require('path');
+        const fs = await import('fs');
+        const path = await import('path');
         
         // Try different possible paths for the Messos PDF
         const possiblePaths = [
@@ -102,7 +105,7 @@ export default async function handler(req, res) {
     console.log(`📄 Processing: ${actualFilename} (${Math.round(pdfBuffer.length/1024)}KB)`);
 
     // Use pdf-parse which should be available on Vercel
-    const pdfParse = require('pdf-parse');
+    const pdfParse = await import('pdf-parse').then(m => m.default);
     const pdfData = await pdfParse(pdfBuffer);
     
     console.log(`📊 PDF parsed: ${pdfData.numpages} pages, ${pdfData.text.length} characters`);
@@ -275,3 +278,5 @@ function calculateConfidence(securities) {
   
   return totalConfidence / securities.length;
 }
+
+export default router;

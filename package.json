@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "node -e \"console.log('Dev server running on http://localhost:3000')\"",
     "build": "mkdir -p public && echo 'Vercel build complete' > public/index.html",
+    "start": "node index.js",
     "mcp": "node mcp-server.js",
     "test": "node test-messos-processing.js",
     "test-json": "node test-json-fix.js",
@@ -22,7 +23,7 @@
     "test:all": "npx playwright test --reporter=html",
     "start:server": "node playwright-server.js",
     "setup:playwright": "npm install @playwright/test && npx playwright install",
-    "start:render": "node local-test-server.js",
+    "start:render": "node index.js",
     "build:render": "echo 'Render build complete'"
   },
   "dependencies": {

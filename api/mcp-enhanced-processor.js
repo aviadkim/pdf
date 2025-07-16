@@ -11,7 +11,10 @@ import { spawn } from 'child_process';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export default async function handler(req, res) {
+import express from 'express';
+const router = express.Router();
+
+router.post('/', async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
@@ -890,3 +893,5 @@ function calculateAccuracy(extracted, target) {
   if (target === 0) return 0;
   return Math.min(extracted, target) / Math.max(extracted, target);
 }
+
+export default router;
