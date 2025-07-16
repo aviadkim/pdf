@@ -1,7 +1,9 @@
-// Test script to simulate real PDF processing
+// Test text extraction capabilities
+const express = require('express');
+const cors = require('cors');
 
-// Create test PDF content with Swiss financial data
-const testPdfContent = `
+// Test with raw text that simulates PDF content
+const testTextContent = `
 Portfolio Statement - Messos Bank
 Date: 31.03.2025
 
@@ -20,13 +22,9 @@ Value: 200'288.00
 TOTAL PORTFOLIO VALUE: 399'368.00 USD
 `;
 
-// Simulate PDF base64 encoding
-const testBase64 = Buffer.from(testPdfContent).toString('base64');
-
-// Test function
-async function testPdfExtraction() {
+async function testTextExtraction() {
     try {
-        console.log('🚀 Testing PDF Extraction on Render...\n');
+        console.log('🚀 Testing Text Extraction on Render...\n');
         
         const response = await fetch('https://pdf-fzzi.onrender.com/api/pdf-extract', {
             method: 'POST',
@@ -34,12 +32,13 @@ async function testPdfExtraction() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                pdfBase64: testBase64
+                textContent: testTextContent,
+                testMode: false
             })
         });
         
         const result = await response.json();
-        console.log('PDF Extraction Result:');
+        console.log('Text Extraction Result:');
         console.log(JSON.stringify(result, null, 2));
         
         if (result.success && result.extractedData) {
@@ -60,4 +59,4 @@ async function testPdfExtraction() {
 }
 
 // Run test
-testPdfExtraction();
+testTextExtraction();

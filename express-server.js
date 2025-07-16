@@ -24,7 +24,7 @@ app.get('/api/test', (req, res) => {
 // PDF extraction endpoint
 app.post('/api/pdf-extract', async (req, res) => {
     try {
-        const { pdfBase64, testMode } = req.body;
+        const { pdfBase64, testMode, textContent } = req.body;
         
         if (testMode) {
             // Return test data for now
@@ -46,18 +46,25 @@ app.post('/api/pdf-extract', async (req, res) => {
             });
         }
         
-        if (!pdfBase64) {
+        let extractedText = '';
+        
+        if (textContent) {
+            // Direct text extraction test
+            extractedText = textContent;
+        } else if (pdfBase64) {
+            // PDF processing
+            const pdfBuffer = Buffer.from(pdfBase64, 'base64');
+            const pdfData = await pdfParse(pdfBuffer);
+            extractedText = pdfData.text;
+        } else {
             return res.status(400).json({ 
                 success: false, 
-                error: 'No PDF data provided' 
+                error: 'No PDF data or text content provided' 
             });
         }
         
-        const pdfBuffer = Buffer.from(pdfBase64, 'base64');
-        const pdfData = await pdfParse(pdfBuffer);
-        
         // Extract securities using Swiss financial patterns
-        const securities = extractSecurities(pdfData.text);
+        const securities = extractSecurities(extractedText);
         const totalValue = securities.reduce((sum, s) => sum + (s.value || 0), 0);
         
         res.json({
@@ -69,8 +76,8 @@ app.post('/api/pdf-extract', async (req, res) => {
                 confidence: securities.length > 0 ? 0.85 : 0.1
             },
             pdfInfo: {
-                pages: pdfData.numpages,
-                textLength: pdfData.text.length
+                textLength: extractedText.length,
+                extractionMethod: textContent ? 'direct' : 'pdf-parse'
             }
         });
         
