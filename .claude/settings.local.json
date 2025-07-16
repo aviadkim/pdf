@@ -67,7 +67,9 @@
       "Bash(gh auth:*)",
       "Bash(dir:*)",
       "Bash(npx playwright install:*)",
-      "WebFetch(domain:vercel.com)"
+      "WebFetch(domain:vercel.com)",
+      "WebFetch(domain:render.com)",
+      "WebFetch(domain:docs.render.com)"
     ],
     "deny": []
   }

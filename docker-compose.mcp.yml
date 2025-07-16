@@ -1,0 +1,61 @@
+# 🐳 MCP-Enhanced PDF Processor - Docker Compose Configuration
+# Production-ready deployment with real browser automation
+
+version: '3.8'
+
+services:
+  mcp-pdf-processor:
+    build: 
+      context: .
+      dockerfile: Dockerfile.mcp
+    container_name: mcp-pdf-processor
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - MCP_MODE=enhanced
+      - PLAYWRIGHT_BROWSERS_PATH=/app/.playwright
+      - LOG_LEVEL=info
+    volumes:
+      # Mount for PDF uploads
+      - ./uploads:/app/uploads
+      # Mount for processing output
+      - ./output:/app/output
+      # Mount for temporary files
+      - /tmp/mcp_processing:/tmp/mcp_processing
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/api/test"]
+      interval: 30s
+      timeout: 15s
+      retries: 3
+      start_period: 90s
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '1.0'
+        reservations:
+          memory: 1G
+          cpus: '0.5'
+    networks:
+      - mcp-network
+
+  # Optional: Add a Redis cache for MCP results
+  redis-cache:
+    image: redis:7-alpine
+    container_name: mcp-redis-cache
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    networks:
+      - mcp-network
+
+networks:
+  mcp-network:
+    driver: bridge
+
+volumes:
+  redis-data:

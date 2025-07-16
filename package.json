@@ -21,7 +21,9 @@
     "test:selfheal": "npx playwright test tests/self-healing.spec.js",
     "test:all": "npx playwright test --reporter=html",
     "start:server": "node playwright-server.js",
-    "setup:playwright": "npm install @playwright/test && npx playwright install"
+    "setup:playwright": "npm install @playwright/test && npx playwright install",
+    "start:render": "node local-test-server.js",
+    "build:render": "echo 'Render build complete'"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.27.0",

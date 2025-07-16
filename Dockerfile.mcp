@@ -1,0 +1,74 @@
+# 🚀 MCP-Enhanced PDF Processor - Production Docker Container
+# Complete environment with Playwright, Puppeteer, and MCP support
+
+FROM node:20-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies for browser automation
+RUN apt-get update && apt-get install -y \
+    # Playwright dependencies
+    libnspr4 \
+    libnss3 \
+    libasound2t64 \
+    libxss1 \
+    libgconf-2-4 \
+    libxrandr2 \
+    libasound2 \
+    libpangocairo-1.0-0 \
+    libatk1.0-0 \
+    libcairo-gobject2 \
+    libgtk-3-0 \
+    libgdk-pixbuf2.0-0 \
+    # Puppeteer dependencies
+    libgbm1 \
+    libxcomposite1 \
+    libxdamage1 \
+    libxfixes3 \
+    # PDF processing dependencies
+    poppler-utils \
+    # Python for enhanced processing
+    python3 \
+    python3-pip \
+    # Build tools
+    build-essential \
+    # Cleanup
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy package files
+COPY package*.json ./
+
+# Install Node.js dependencies
+RUN npm ci --only=production
+
+# Install Playwright browsers
+RUN npx playwright install chromium
+
+# Install Python dependencies for enhanced processing
+COPY requirements_paddle.txt .
+RUN pip3 install --no-cache-dir -r requirements_paddle.txt
+
+# Copy application files
+COPY . .
+
+# Create directories for processing
+RUN mkdir -p /tmp/mcp_processing/screenshots
+RUN mkdir -p /tmp/mcp_processing/output
+
+# Set environment variables
+ENV NODE_ENV=production
+ENV MCP_MODE=enhanced
+ENV PLAYWRIGHT_BROWSERS_PATH=/app/.playwright
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+ENV PUPPETEER_EXECUTABLE_PATH=/app/.playwright/chromium-*/chrome-linux/chrome
+
+# Expose port
+EXPOSE 3001
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=15s --start-period=90s --retries=3 \
+    CMD curl -f http://localhost:3001/api/test || exit 1
+
+# Start the MCP-enhanced server
+CMD ["node", "local-test-server.js"]
