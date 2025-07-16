@@ -1,24 +1,13 @@
-# Simple Dockerfile for basic functionality
-FROM node:20-slim
+FROM node:20-alpine
 
-# Set working directory
 WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
+COPY package*.json* ./
 
-# Install dependencies
-RUN npm ci --only=production
+RUN npm install --production
 
-# Copy application code
 COPY . .
 
-# Set environment variables
-ENV NODE_ENV=production
-ENV PORT=10000
-
-# Expose port
 EXPOSE 10000
 
-# Start command
-CMD ["npm", "start"]
+CMD ["node", "minimal-server.js"]
