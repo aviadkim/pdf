@@ -6,6 +6,9 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs').promises;
 
+// Import the complete financial parser system
+const { CompleteFinancialParser } = require('./complete-financial-parser.js');
+
 const app = express();
 const PORT = process.env.PORT || 10000;
 
