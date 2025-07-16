@@ -1,60 +1,92 @@
-# 🐳 FinanceAI Pro - Production Docker Container
-# Complete PaddleOCR environment with all system dependencies
+# 🚀 Render.com Optimized Dockerfile
+# MCP-Enhanced PDF Processor with full browser automation support
 
-FROM python:3.12-slim
+FROM node:20-slim
+
+# Install system dependencies for Puppeteer and Playwright
+RUN apt-get update && apt-get install -y \
+    # Chromium dependencies
+    ca-certificates \
+    fonts-liberation \
+    libasound2 \
+    libatk-bridge2.0-0 \
+    libatk1.0-0 \
+    libc6 \
+    libcairo2 \
+    libcups2 \
+    libdbus-1-3 \
+    libexpat1 \
+    libfontconfig1 \
+    libgbm1 \
+    libgcc1 \
+    libglib2.0-0 \
+    libgtk-3-0 \
+    libnspr4 \
+    libnss3 \
+    libpango-1.0-0 \
+    libpangocairo-1.0-0 \
+    libstdc++6 \
+    libx11-6 \
+    libx11-xcb1 \
+    libxcb1 \
+    libxcomposite1 \
+    libxcursor1 \
+    libxdamage1 \
+    libxext6 \
+    libxfixes3 \
+    libxi6 \
+    libxrandr2 \
+    libxrender1 \
+    libxss1 \
+    libxtst6 \
+    lsb-release \
+    wget \
+    xdg-utils \
+    # PDF processing
+    poppler-utils \
+    # Build tools
+    build-essential \
+    python3 \
+    python3-pip \
+    # Cleanup
+    && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
 WORKDIR /app
 
-# Install system dependencies for PaddleOCR and PDF processing
-RUN apt-get update && apt-get install -y \
-    # PaddleOCR system dependencies
-    libgomp1 \
-    libglib2.0-0 \
-    libsm6 \
-    libxext6 \
-    libxrender-dev \
-    libfontconfig1 \
-    libxss1 \
-    libgconf-2-4 \
-    # PDF processing dependencies
-    poppler-utils \
-    # Node.js for FastAPI server
-    curl \
-    # Build tools
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install Node.js 18
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
-    && apt-get install -y nodejs
-
-# Copy Python requirements and install
-COPY requirements_paddle.txt .
-RUN pip install --no-cache-dir -r requirements_paddle.txt
-
-# Copy Node.js dependencies and install
+# Copy package files
 COPY package*.json ./
+
+# Install Node.js dependencies
 RUN npm ci --only=production
 
-# Copy application files
+# Install Playwright browsers (Render supports this!)
+RUN npx playwright install chromium
+RUN npx playwright install-deps chromium
+
+# Copy application code
 COPY . .
 
-# Create directories for processing
-RUN mkdir -p /tmp/paddle_processing/output
+# Install Python dependencies for enhanced processing
+COPY requirements_paddle.txt .
+RUN pip3 install --no-cache-dir -r requirements_paddle.txt
 
-# Set environment variables for optimal performance
-ENV OMP_NUM_THREADS=2
-ENV OPENBLAS_NUM_THREADS=2
-ENV PYTHONPATH=/app
+# Create processing directories
+RUN mkdir -p /tmp/mcp_processing/screenshots
+RUN mkdir -p /tmp/mcp_processing/output
+
+# Set environment variables for Render
 ENV NODE_ENV=production
+ENV MCP_MODE=enhanced
+ENV PORT=10000
+ENV PLAYWRIGHT_BROWSERS_PATH=/app/.playwright
 
-# Expose ports
-EXPOSE 3001
+# Expose port (Render default)
+EXPOSE 10000
 
 # Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-    CMD curl -f http://localhost:3001/ || exit 1
+HEALTHCHECK --interval=30s --timeout=15s --start-period=120s --retries=3 \
+    CMD curl -f http://localhost:10000/api/test || exit 1
 
-# Start the application
-CMD ["node", "local-test-server.js"]
+# Start command
+CMD ["npm", "run", "start:render"]
