@@ -31,25 +31,69 @@ function extractSecurities(text) {
             console.log(`\\nContext around ISIN:`);
             console.log(context);
             
-            // Find all numbers in context
+            // Find all numbers in context - improved regex to handle consecutive numbers
             const valueMatches = context.match(/(\d{1,3}(?:'\d{3})*(?:\.\d{2})?)/g);
+            
+            // Also look for Swiss numbers specifically (with apostrophes)
+            const swissMatches = context.match(/(\d{1,3}(?:'\d{3})+)/g);
+            console.log(`\\nSwiss format numbers found:`, swissMatches);
             console.log(`\\nAll numbers found:`, valueMatches);
             
             if (valueMatches) {
                 const parsedValues = valueMatches.map(v => ({ original: v, parsed: parseSwissNumber(v) }));
                 console.log(`\\nParsed values:`, parsedValues);
                 
-                // Look for specific patterns
-                const valuePattern = /(?:Value:|USD|EUR|CHF)\s*([\d']+(?:\.\d{2})?)/i;
-                const valueMatch = context.match(valuePattern);
-                console.log(`\\nValue pattern match:`, valueMatch);
+                // NEW ALGORITHM - Look for market values vs nominal values
+                const swissMatchesDebug = context.match(/(\d{1,3}(?:'\d{3})+)/g);
+                const valueMatchesDebug = context.match(/(\d{1,3}(?:'\d{3})*(?:\.\d{2})?)/g);
                 
-                if (valueMatch) {
-                    console.log(`Found value via pattern: ${valueMatch[1]} -> ${parseSwissNumber(valueMatch[1])}`);
-                } else {
-                    const values = valueMatches.map(v => parseSwissNumber(v)).filter(v => v > 1000 && v < 1000000000);
-                    console.log(`Fallback values (filtered):`, values);
-                    console.log(`Max value selected: ${Math.max(...values, 0)}`);
+                console.log(`\\nSwiss matches in debug:`, swissMatchesDebug);
+                console.log(`\\nValue matches in debug:`, valueMatchesDebug);
+                
+                // Combine Swiss format matches with regular matches, prioritizing Swiss format
+                let allMatches = [];
+                if (swissMatchesDebug) {
+                    allMatches = [...swissMatchesDebug];
+                }
+                if (valueMatchesDebug) {
+                    // Add non-Swiss matches that aren't already covered
+                    const swissValues = swissMatchesDebug ? swissMatchesDebug.map(v => parseSwissNumber(v)) : [];
+                    valueMatchesDebug.forEach(v => {
+                        const parsed = parseSwissNumber(v);
+                        if (!swissValues.includes(parsed)) {
+                            allMatches.push(v);
+                        }
+                    });
+                }
+                
+                console.log(`\\nCombined matches:`, allMatches);
+                
+                if (allMatches.length > 0) {
+                    const allParsedValues = allMatches.map(v => parseSwissNumber(v));
+                    console.log(`\\nAll parsed values:`, allParsedValues);
+                    
+                    const nominalPattern = /(?:USD|EUR|CHF)\s*([\d']+(?:\.\d{2})?)/i;
+                    const nominalMatch = context.match(nominalPattern);
+                    const nominalValue = nominalMatch ? parseSwissNumber(nominalMatch[1]) : 0;
+                    console.log(`\\nNominal value found: ${nominalValue}`);
+                    
+                    const marketValues = allParsedValues.filter(v => 
+                        v > 10000 && // Minimum threshold
+                        v < 1000000000 && // Maximum threshold
+                        v !== nominalValue && // Exclude nominal value
+                        v % 1000 !== 0 // Prefer values that aren't round thousands (more likely to be market values)
+                    );
+                    console.log(`\\nMarket values (filtered):`, marketValues);
+                    
+                    if (marketValues.length > 0) {
+                        const selectedValue = Math.max(...marketValues);
+                        console.log(`Market value selected: ${selectedValue}`);
+                    } else {
+                        const reasonableValues = allParsedValues.filter(v => v > 1000 && v < 1000000000);
+                        console.log(`\\nFallback to reasonable values:`, reasonableValues);
+                        const selectedValue = reasonableValues.length > 0 ? Math.max(...reasonableValues) : 0;
+                        console.log(`Fallback value selected: ${selectedValue}`);
+                    }
                 }
             }
             
@@ -76,24 +120,57 @@ function extractSecurities(text) {
             }
         }
         
-        // Extract value
+        // Extract value - prioritize Swiss format numbers
+        const swissMatches = context.match(/(\d{1,3}(?:'\d{3})+)/g);
         const valueMatches = context.match(/(\d{1,3}(?:'\d{3})*(?:\.\d{2})?)/g);
         let value = 0;
         
+        // Combine Swiss format matches with regular matches, prioritizing Swiss format
+        let allMatches = [];
+        if (swissMatches) {
+            allMatches = [...swissMatches];
+        }
         if (valueMatches) {
-            const valuePattern = /(?:Value:|USD|EUR|CHF)\s*([\d']+(?:\.\d{2})?)/i;
-            const valueMatch = context.match(valuePattern);
+            // Add non-Swiss matches that aren't already covered
+            const swissValues = swissMatches ? swissMatches.map(v => parseSwissNumber(v)) : [];
+            valueMatches.forEach(v => {
+                const parsed = parseSwissNumber(v);
+                if (!swissValues.includes(parsed)) {
+                    allMatches.push(v);
+                }
+            });
+        }
+        
+        if (allMatches.length > 0) {
+            // Parse all values
+            const parsedValues = allMatches.map(v => parseSwissNumber(v));
             
-            if (valueMatch) {
-                value = parseSwissNumber(valueMatch[1]);
+            // First try to find market value (typically after price info, not the nominal USD amount)
+            // Look for patterns that indicate market value vs nominal value
+            const nominalPattern = /(?:USD|EUR|CHF)\s*([\d']+(?:\.\d{2})?)/i;
+            const nominalMatch = context.match(nominalPattern);
+            const nominalValue = nominalMatch ? parseSwissNumber(nominalMatch[1]) : 0;
+            
+            // Filter out the nominal value and look for actual market values
+            const marketValues = parsedValues.filter(v => 
+                v > 10000 && // Minimum threshold
+                v < 1000000000 && // Maximum threshold
+                v !== nominalValue && // Exclude nominal value
+                v % 1000 !== 0 // Prefer values that aren't round thousands (more likely to be market values)
+            );
+            
+            if (marketValues.length > 0) {
+                // Pick the largest market value (most likely to be the total position value)
+                value = Math.max(...marketValues);
             } else {
-                const values = valueMatches.map(v => parseSwissNumber(v)).filter(v => v > 1000 && v < 1000000000);
-                value = values.length > 0 ? Math.max(...values) : 0;
+                // Fallback to all reasonable values if no market value found
+                const reasonableValues = parsedValues.filter(v => v > 1000 && v < 1000000000);
+                value = reasonableValues.length > 0 ? Math.max(...reasonableValues) : 0;
             }
         }
         
         // Extract currency
-        const currencyMatch = context.match(/\\b(USD|EUR|CHF|GBP)\\b/);
+        const currencyMatch = context.match(/\b(USD|EUR|CHF|GBP)\b/);
         const currency = currencyMatch ? currencyMatch[1] : 'USD';
         
         securities.push({

@@ -139,13 +139,30 @@ function extractSecurities(text) {
             name = '';
         }
         
-        // Extract value (Swiss format with apostrophes) - prioritize market value over nominal
+        // Extract value - prioritize Swiss format numbers for accuracy
+        const swissMatches = context.match(/(\d{1,3}(?:'\d{3})+)/g);
         const valueMatches = context.match(/(\d{1,3}(?:'\d{3})*(?:\.\d{2})?)/g);
         let value = 0;
         
+        // Combine Swiss format matches with regular matches, prioritizing Swiss format
+        let allMatches = [];
+        if (swissMatches) {
+            allMatches = [...swissMatches];
+        }
         if (valueMatches) {
+            // Add non-Swiss matches that aren't already covered
+            const swissValues = swissMatches ? swissMatches.map(v => parseSwissNumber(v)) : [];
+            valueMatches.forEach(v => {
+                const parsed = parseSwissNumber(v);
+                if (!swissValues.includes(parsed)) {
+                    allMatches.push(v);
+                }
+            });
+        }
+        
+        if (allMatches.length > 0) {
             // Parse all values
-            const parsedValues = valueMatches.map(v => parseSwissNumber(v));
+            const parsedValues = allMatches.map(v => parseSwissNumber(v));
             
             // First try to find market value (typically after price info, not the nominal USD amount)
             // Look for patterns that indicate market value vs nominal value
