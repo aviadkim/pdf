@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 10000
 
-CMD ["node", "minimal-server.js"]
+CMD ["node", "express-server.js"]
