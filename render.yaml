@@ -4,10 +4,8 @@
 services:
   - type: web
     name: mcp-pdf-processor
-    env: node
+    env: docker
     plan: standard  # $25/month - 2GB RAM, 1 CPU
-    buildCommand: npm install
-    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
