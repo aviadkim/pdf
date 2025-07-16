@@ -14,6 +14,14 @@
       "dest": "/api/test.js"
     },
     {
+      "src": "/api/mcp-enhanced-processor",
+      "dest": "/api/mcp-enhanced-processor.js"
+    },
+    {
+      "src": "/api/mcp/(.*)",
+      "dest": "/api/mcp/pdf-processor.js"
+    },
+    {
       "src": "/live-demo",
       "dest": "/public/live-demo.html"
     },
@@ -24,7 +32,7 @@
   ],
   "functions": {
     "api/**/*.js": {
-      "maxDuration": 30,
+      "maxDuration": 60,
       "memory": 1024
     }
   }
