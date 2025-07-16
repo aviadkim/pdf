@@ -139,21 +139,35 @@ function extractSecurities(text) {
             name = '';
         }
         
-        // Extract value (Swiss format with apostrophes) - more precise approach
+        // Extract value (Swiss format with apostrophes) - prioritize market value over nominal
         const valueMatches = context.match(/(\d{1,3}(?:'\d{3})*(?:\.\d{2})?)/g);
         let value = 0;
         
         if (valueMatches) {
-            // Look for value patterns near "Value:" or currency indicators
-            const valuePattern = /(?:Value:|USD|EUR|CHF)\s*([\d']+(?:\.\d{2})?)/i;
-            const valueMatch = context.match(valuePattern);
+            // Parse all values
+            const parsedValues = valueMatches.map(v => parseSwissNumber(v));
             
-            if (valueMatch) {
-                value = parseSwissNumber(valueMatch[1]);
+            // First try to find market value (typically after price info, not the nominal USD amount)
+            // Look for patterns that indicate market value vs nominal value
+            const nominalPattern = /(?:USD|EUR|CHF)\s*([\d']+(?:\.\d{2})?)/i;
+            const nominalMatch = context.match(nominalPattern);
+            const nominalValue = nominalMatch ? parseSwissNumber(nominalMatch[1]) : 0;
+            
+            // Filter out the nominal value and look for actual market values
+            const marketValues = parsedValues.filter(v => 
+                v > 10000 && // Minimum threshold
+                v < 1000000000 && // Maximum threshold
+                v !== nominalValue && // Exclude nominal value
+                v % 1000 !== 0 // Prefer values that aren't round thousands (more likely to be market values)
+            );
+            
+            if (marketValues.length > 0) {
+                // Pick the largest market value (most likely to be the total position value)
+                value = Math.max(...marketValues);
             } else {
-                // Fallback: Find the most reasonable value (not too small, not too large)
-                const values = valueMatches.map(v => parseSwissNumber(v)).filter(v => v > 1000 && v < 1000000000);
-                value = values.length > 0 ? Math.max(...values) : 0;
+                // Fallback to all reasonable values if no market value found
+                const reasonableValues = parsedValues.filter(v => v > 1000 && v < 1000000000);
+                value = reasonableValues.length > 0 ? Math.max(...reasonableValues) : 0;
             }
         }
         
