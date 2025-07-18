@@ -29,6 +29,11 @@ app.use('/temp_annotations', express.static('temp_annotations'));
 // Initialize Smart OCR Learning System
 const smartOCRSystem = new SmartOCRLearningSystem();
 
+// Wait for system initialization
+setTimeout(() => {
+    console.log('🔄 Smart OCR system initialization complete');
+}, 2000);
+
 // Main route
 app.get('/', (req, res) => {
     res.send(`
@@ -96,20 +101,36 @@ app.get('/api/smart-ocr-test', (req, res) => {
 
 // Get system statistics
 app.get('/api/smart-ocr-stats', (req, res) => {
-    const stats = smartOCRSystem.getStats();
-    res.json({
-        success: true,
-        stats: stats
-    });
+    try {
+        const stats = smartOCRSystem.getStats();
+        res.json({
+            success: true,
+            stats: stats
+        });
+    } catch (error) {
+        console.error('Stats error:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
 });
 
 // Get learned patterns
 app.get('/api/smart-ocr-patterns', (req, res) => {
-    const patterns = smartOCRSystem.getPatterns();
-    res.json({
-        success: true,
-        patterns: patterns
-    });
+    try {
+        const patterns = smartOCRSystem.getPatterns();
+        res.json({
+            success: true,
+            patterns: patterns
+        });
+    } catch (error) {
+        console.error('Patterns error:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
 });
 
 // Process PDF with Smart OCR
