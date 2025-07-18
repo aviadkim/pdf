@@ -5,6 +5,7 @@ const pdfParse = require('pdf-parse');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs').promises;
+const fsSync = require('fs');
 
 // Import only the smart OCR components
 const SmartOCRLearningSystem = require('./smart-ocr-learning-system.js');
@@ -200,6 +201,107 @@ app.post('/api/smart-ocr-learn', async (req, res) => {
 // Serve smart annotation interface
 app.get('/smart-annotation', (req, res) => {
     res.sendFile(path.join(__dirname, 'smart-annotation-interface.html'));
+});
+
+// Legacy API endpoints for compatibility
+app.get('/api/test', (req, res) => {
+    res.json({
+        status: 'healthy',
+        service: 'Smart OCR Learning System',
+        version: '1.0.0',
+        compatibility: 'legacy-endpoint',
+        timestamp: new Date().toISOString()
+    });
+});
+
+app.post('/api/pdf-extract', upload.single('pdf'), async (req, res) => {
+    try {
+        if (!req.file) {
+            return res.status(400).json({ 
+                success: false, 
+                error: 'No PDF file uploaded' 
+            });
+        }
+
+        const pdfBuffer = await fs.readFile(req.file.path);
+        const results = await smartOCRSystem.processPDF(pdfBuffer, {
+            filename: req.file.originalname,
+            enableLearning: true,
+            usePatterns: true,
+            legacyCompatibility: true
+        });
+
+        // Clean up uploaded file
+        await fs.unlink(req.file.path);
+
+        res.json({
+            success: true,
+            results: results,
+            accuracy: results.accuracy,
+            securities: results.ocrResults?.securities || [],
+            legacy: true
+        });
+    } catch (error) {
+        console.error('Legacy PDF extraction error:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
+});
+
+app.post('/api/bulletproof-processor', upload.single('pdf'), async (req, res) => {
+    try {
+        if (!req.file) {
+            return res.status(400).json({ 
+                success: false, 
+                error: 'No PDF file uploaded' 
+            });
+        }
+
+        const pdfBuffer = await fs.readFile(req.file.path);
+        const results = await smartOCRSystem.processPDF(pdfBuffer, {
+            filename: req.file.originalname,
+            enableLearning: true,
+            usePatterns: true,
+            bulletproofMode: true
+        });
+
+        // Clean up uploaded file
+        await fs.unlink(req.file.path);
+
+        res.json({
+            success: true,
+            results: results,
+            accuracy: results.accuracy,
+            securities: results.ocrResults?.securities || [],
+            total: results.ocrResults?.total || 0,
+            bulletproof: true
+        });
+    } catch (error) {
+        console.error('Bulletproof processor error:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
+});
+
+// Handle GET requests to POST-only endpoints
+app.get('/api/pdf-extract', (req, res) => {
+    res.status(405).json({
+        success: false,
+        error: 'Method Not Allowed',
+        message: 'This endpoint only accepts POST requests with PDF files'
+    });
+});
+
+app.get('/api/bulletproof-processor', (req, res) => {
+    res.status(405).json({
+        success: false,
+        error: 'Method Not Allowed',
+        message: 'This endpoint only accepts POST requests with PDF files'
+    });
 });
 
 // Start server
