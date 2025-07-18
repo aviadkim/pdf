@@ -1,0 +1,55 @@
+# Smart OCR Learning System - Docker Configuration
+# Optimized for Render deployment with annotation learning capabilities
+
+FROM node:18-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies for PDF processing
+RUN apk add --no-cache \
+    python3 \
+    py3-pip \
+    build-base \
+    cairo-dev \
+    pango-dev \
+    giflib-dev \
+    libpng-dev \
+    libjpeg-turbo-dev \
+    freetype-dev \
+    fontconfig \
+    ttf-dejavu \
+    ghostscript \
+    poppler-utils \
+    curl
+
+# Copy package files
+COPY package*.json ./
+
+# Install Node.js dependencies
+RUN npm ci --only=production
+
+# Copy application files
+COPY . .
+
+# Create necessary directories
+RUN mkdir -p /app/smart-ocr-data \
+    /app/temp_smart_ocr \
+    /app/temp_annotations \
+    /app/test-results
+
+# Set environment variables
+ENV NODE_ENV=production
+ENV PORT=10002
+ENV MISTRAL_API_KEY=""
+ENV MISTRAL_ENDPOINT=https://api.mistral.ai/v1
+
+# Expose port
+EXPOSE 10002
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD curl -f http://localhost:10002/api/smart-ocr-test || exit 1
+
+# Start the application
+CMD ["npm", "start"]

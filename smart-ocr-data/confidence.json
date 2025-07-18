@@ -1,0 +1,206 @@
+{
+  "totalDocuments": 28,
+  "totalAnnotations": 140,
+  "accuracyHistory": [
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80
+  ],
+  "patternMatches": 0,
+  "successfulPredictions": 0,
+  "learningCurve": [
+    {
+      "timestamp": "2025-07-18T10:07:05.817Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.821Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.826Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.830Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.834Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.836Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.840Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.845Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.848Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.852Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.855Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.860Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.862Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.865Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.868Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.870Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.874Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.876Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.879Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.882Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.886Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.891Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.894Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.897Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.901Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.905Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.908Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    },
+    {
+      "timestamp": "2025-07-18T10:07:05.911Z",
+      "accuracy": 80,
+      "totalPatterns": 0,
+      "totalRelationships": 0
+    }
+  ]
+}

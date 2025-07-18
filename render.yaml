@@ -1,26 +1,27 @@
 # 🚀 Render.com Deployment Configuration
-# MCP-Enhanced PDF Processor with full Puppeteer/Playwright support
+# Smart OCR Learning System with Visual Annotation
 
 services:
   - type: web
-    name: mcp-pdf-processor
-    env: docker
-    plan: standard  # $25/month - 2GB RAM, 1 CPU
+    name: smart-ocr-learning-system
+    env: node
+    plan: starter  # Starter tier - 1GB RAM, 0.5 CPU
+    buildCommand: npm install
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
-      - key: MCP_MODE
-        value: enhanced
-      - key: PLAYWRIGHT_BROWSERS_PATH
-        value: /opt/render/.playwright
-      - key: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD
-        value: false
       - key: PORT
-        value: 10000
-    dockerfilePath: ./Dockerfile
-
-  # Optional: Redis for caching MCP results
-  - type: redis
-    name: mcp-cache
-    plan: starter  # Free tier available
-    ipAllowList: []
+        sync: false
+      - key: MISTRAL_API_KEY
+        sync: false
+      - key: MISTRAL_ENDPOINT
+        value: https://api.mistral.ai/v1
+    healthCheckPath: /api/smart-ocr-test
+    scaling:
+      minInstances: 1
+      maxInstances: 3
+    disk:
+      name: smart-ocr-storage
+      mountPath: /tmp
+      sizeGB: 2
