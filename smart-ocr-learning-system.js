@@ -161,6 +161,29 @@ class SmartOCRLearningSystem {
         return this.stats.learningRate || this.config.learningRate;
     }
 
+    getStats() {
+        return {
+            currentAccuracy: this.getCurrentAccuracy(),
+            patternCount: this.getPatternCount(),
+            documentCount: this.getDocumentCount(),
+            annotationCount: this.getAnnotationCount(),
+            accuracyGain: this.getAccuracyGain(),
+            confidenceScore: this.getConfidenceScore(),
+            learningRate: this.getLearningRate(),
+            mistralEnabled: !!this.config.mistralApiKey,
+            targetAccuracy: this.config.targetAccuracy
+        };
+    }
+
+    getPatterns() {
+        return {
+            tablePatterns: this.getTablePatterns(),
+            fieldRelationships: this.getFieldRelationships(),
+            layoutTemplates: this.getLayoutTemplates(),
+            corrections: this.getCorrectionHistory()
+        };
+    }
+
     getTablePatterns() {
         return Array.from(this.patternEngine.tablePatterns.entries()).map(([key, value]) => ({
             id: key,
