@@ -4,10 +4,10 @@
 services:
   - type: web
     name: smart-ocr-learning-system
-    env: node
+    env: docker
     plan: starter  # Starter tier - 1GB RAM, 0.5 CPU
-    buildCommand: npm install
-    startCommand: npm start
+    dockerfilePath: ./Dockerfile.smart-ocr
+    dockerCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
