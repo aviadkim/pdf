@@ -24,7 +24,7 @@
     "test:annotation": "node test-annotation-system.js",
     "start:server": "node playwright-server.mjs",
     "setup:playwright": "npm install @playwright/test && npx playwright install",
-    "start:render": "node express-server.js",
+    "start:render": "node smart-ocr-server.js",
     "build:render": "npm install"
   },
   "dependencies": {
