@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-07-20T08:45:30.226Z",
+  "tests": [
+    {
+      "name": "System Connectivity",
+      "endpoint": "https://pdf-fzzi.onrender.com",
+      "success": true,
+      "details": {
+        "status": 200,
+        "statusText": "OK",
+        "accessible": true
+      }
+    },
+    {
+      "name": "System Capabilities",
+      "endpoint": "/api/system-capabilities",
+      "success": false,
+      "details": {
+        "status": 404,
+        "error": "Endpoint not available"
+      }
+    },
+    {
+      "name": "Bulletproof Processor",
+      "endpoint": "/api/bulletproof-processor",
+      "success": false,
+      "details": {
+        "status": 500,
+        "error": "{\"success\":false,\"error\":\"Could not execute GraphicsMagick/ImageMagick: gm \\\"identify\\\" \\\"-ping\\\" \\\"-format\\\" \\\"%p\\\" \\\"-\\\" this most likely means the gm/convert binaries can't be found\"}",
+        "processing_time": 444
+      }
+    },
+    {
+      "name": "Ultra-Accurate Extraction",
+      "endpoint": "/api/ultra-accurate-extract",
+      "success": false,
+      "details": {
+        "status": 404,
+        "error": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/ultra-accurate-extract</pre>\n</body>\n</html>\n",
+        "processing_time": 156
+      }
+    },
+    {
+      "name": "Phase 2 Enhanced Extraction",
+      "endpoint": "/api/phase2-enhanced-extract",
+      "success": false,
+      "details": {
+        "status": 404,
+        "error": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/phase2-enhanced-extract</pre>\n</body>\n</html>\n",
+        "processing_time": 263
+      }
+    },
+    {
+      "name": "Mistral OCR Integration",
+      "endpoint": "/api/mistral-ocr-extract",
+      "success": false,
+      "details": {
+        "status": 404,
+        "error": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/mistral-ocr-extract</pre>\n</body>\n</html>\n",
+        "processing_time": 169,
+        "likely_reason": "Other error"
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 6,
+    "successful_tests": 1,
+    "failed_tests": 5,
+    "success_rate": 16.666666666666664,
+    "extraction_engines": {
+      "total": 4,
+      "working": 0,
+      "success_rate": 0
+    },
+    "deployment_status": "PARTIALLY_DEPLOYED",
+    "recommendations": [
+      "Deploy latest code - new endpoints not available yet",
+      "Some extraction engines are working - continue with available methods",
+      "Wait for automatic deployment or trigger manual redeploy"
+    ]
+  }
+}

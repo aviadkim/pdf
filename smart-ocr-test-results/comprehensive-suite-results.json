@@ -1,0 +1,209 @@
+{
+  "timestamp": "2025-07-20T10:29:55.571Z",
+  "baseUrl": "https://pdf-fzzi.onrender.com",
+  "totalTests": 20,
+  "passedTests": 18,
+  "failedTests": 2,
+  "testCategories": {
+    "health": {
+      "totalTests": 3,
+      "passedTests": 3,
+      "failedTests": 0,
+      "tests": [
+        {
+          "name": "Basic Connectivity",
+          "passed": true,
+          "details": "Status: 200"
+        },
+        {
+          "name": "GraphicsMagick Handling",
+          "passed": true,
+          "details": "System continues to function despite GraphicsMagick issues"
+        },
+        {
+          "name": "Mistral Integration",
+          "passed": true,
+          "details": "Mistral is enabled and functional"
+        }
+      ]
+    },
+    "learning": {
+      "totalTests": 3,
+      "passedTests": 3,
+      "failedTests": 0,
+      "tests": [
+        {
+          "name": "Accuracy Validation",
+          "passed": true,
+          "details": "Current accuracy: 80.5%",
+          "accuracy": 80.5
+        },
+        {
+          "name": "Pattern Count",
+          "passed": true,
+          "details": "Pattern count: 16",
+          "patterns": 16
+        },
+        {
+          "name": "Annotation Count",
+          "passed": true,
+          "details": "Annotation count: 22",
+          "annotations": 22
+        }
+      ]
+    },
+    "annotation": {
+      "totalTests": 3,
+      "passedTests": 2,
+      "failedTests": 1,
+      "tests": [
+        {
+          "name": "Add Annotation",
+          "passed": false,
+          "details": "Failed to add annotation: Request failed with status code 400",
+          "testData": {
+            "pattern": "test-pattern-1753007396142",
+            "value": "test-value",
+            "confidence": 0.95
+          }
+        },
+        {
+          "name": "Pattern Retrieval",
+          "passed": true,
+          "details": "Retrieved 27 patterns from API",
+          "patternCount": 27
+        },
+        {
+          "name": "Annotation Persistence",
+          "passed": true,
+          "details": "Annotations are being tracked in stats",
+          "currentCount": 22
+        }
+      ]
+    },
+    "api": {
+      "totalTests": 3,
+      "passedTests": 2,
+      "failedTests": 1,
+      "tests": [
+        {
+          "name": "Stats API",
+          "passed": true,
+          "details": "Status: 200",
+          "endpoint": "/api/smart-ocr-stats",
+          "method": "GET",
+          "responseSize": 209
+        },
+        {
+          "name": "Patterns API",
+          "passed": true,
+          "details": "Status: 200",
+          "endpoint": "/api/smart-ocr-patterns",
+          "method": "GET",
+          "responseSize": 9034
+        },
+        {
+          "name": "Learn API",
+          "passed": false,
+          "details": "Error: Request failed with status code 400",
+          "endpoint": "/api/smart-ocr-learn",
+          "method": "POST",
+          "status": 400
+        }
+      ]
+    },
+    "performance": {
+      "totalTests": 3,
+      "passedTests": 3,
+      "failedTests": 0,
+      "tests": [
+        {
+          "name": "Response Time",
+          "passed": true,
+          "details": "Response time: 76ms",
+          "responseTime": 76
+        },
+        {
+          "name": "Error Handling",
+          "passed": true,
+          "details": "Proper 404 response for invalid endpoint"
+        },
+        {
+          "name": "Malformed Data Handling",
+          "passed": true,
+          "details": "Proper error response for invalid data"
+        }
+      ]
+    },
+    "ui": {
+      "totalTests": 5,
+      "passedTests": 5,
+      "failedTests": 0,
+      "tests": [
+        {
+          "name": "Homepage UI and Navigation",
+          "passed": true,
+          "details": [
+            "✅ Correct title found",
+            "✅ Main heading found",
+            "✅ Found 1 navigation links",
+            "  - \n            Open Annotation Interface\n        : https://pdf-fzzi.onrender.com/smart-annotation",
+            "✅ File upload input found"
+          ],
+          "screenshots": [
+            "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\smart-ocr-test-screenshots\\homepage-1753007399688.png"
+          ]
+        },
+        {
+          "name": "Annotation Interface",
+          "passed": true,
+          "details": [
+            "✅ Annotation page loaded: 🧠 Smart Financial PDF OCR",
+            "⚠️ Pattern input not found",
+            "⚠️ Value input not found",
+            "⚠️ Submit button not found",
+            "✅ Submit button (text) found",
+            "📊 Found 0 annotation elements"
+          ],
+          "screenshots": [
+            "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\smart-ocr-test-screenshots\\annotation-interface-1753007400888.png"
+          ]
+        },
+        {
+          "name": "API Endpoints",
+          "passed": true,
+          "details": [
+            "✅ Stats API: Status 200",
+            "✅ Patterns API: Status 200",
+            "  - Patterns: [object Object]",
+            "⚠️ Learn API: Status 400"
+          ],
+          "screenshots": []
+        },
+        {
+          "name": "Form Submissions and Interactions",
+          "passed": true,
+          "details": [
+            "✅ Process button found",
+            "✅ Process button is enabled",
+            "📊 Found 0 dropdown menus",
+            "📊 Interactive elements: 2 buttons, 1 inputs"
+          ],
+          "screenshots": [
+            "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\smart-ocr-test-screenshots\\form-interactions-1753007404244.png"
+          ]
+        },
+        {
+          "name": "Learning System Stats",
+          "passed": true,
+          "details": [
+            "✅ Stats API returned data",
+            "⚠️ No patterns data returned"
+          ],
+          "screenshots": []
+        }
+      ]
+    }
+  },
+  "successRate": "90.00"
+}

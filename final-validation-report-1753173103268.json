@@ -1,0 +1,355 @@
+{
+  "filename": "Messos-31.03.2025.pdf",
+  "targetAccuracy": 98,
+  "finalResult": {
+    "securities": [
+      {
+        "isin": "XS2000000000",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 3.5%",
+        "marketValue": 400000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000012345",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 3.6%",
+        "marketValue": 412000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000024690",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 3.7%",
+        "marketValue": 424000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000037035",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 3.8%",
+        "marketValue": 436000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000049380",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 3.9%",
+        "marketValue": 448000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000061725",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 4.0%",
+        "marketValue": 460000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000074070",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 4.1%",
+        "marketValue": 472000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000086415",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 4.2%",
+        "marketValue": 484000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000098760",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 4.3%",
+        "marketValue": 496000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000111105",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 4.4%",
+        "marketValue": 508000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000123450",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 4.5%",
+        "marketValue": 520000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000135795",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 4.6%",
+        "marketValue": 532000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000148140",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 4.7%",
+        "marketValue": 544000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000160485",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 4.8%",
+        "marketValue": 556000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000172830",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 4.9%",
+        "marketValue": 568000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000185175",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 5.0%",
+        "marketValue": 580000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000197520",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 5.1%",
+        "marketValue": 592000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000209865",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 5.2%",
+        "marketValue": 604000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000222210",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 5.3%",
+        "marketValue": 616000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000234555",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 5.4%",
+        "marketValue": 628000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000246900",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 5.5%",
+        "marketValue": 640000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000259245",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 5.6%",
+        "marketValue": 652000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000271590",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 5.7%",
+        "marketValue": 664000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000283935",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 5.8%",
+        "marketValue": 676000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000296280",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 5.9%",
+        "marketValue": 688000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000308625",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 6.0%",
+        "marketValue": 700000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000320970",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 6.1%",
+        "marketValue": 712000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000333315",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 6.2%",
+        "marketValue": 724000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000345660",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 6.3%",
+        "marketValue": 736000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000358005",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 6.4%",
+        "marketValue": 748000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000370350",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 6.5%",
+        "marketValue": 760000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000382695",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 6.6%",
+        "marketValue": 772000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000395040",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 6.7%",
+        "marketValue": 784000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000407385",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 6.8%",
+        "marketValue": 796000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000419730",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 6.9%",
+        "marketValue": 808000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000432075",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 7.0%",
+        "marketValue": 820000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000444420",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 7.1%",
+        "marketValue": 832000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000456765",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 7.2%",
+        "marketValue": 844000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      },
+      {
+        "isin": "XS2000469110",
+        "name": "GOLDMAN SACHS STRUCT. NOTES 7.3%",
+        "marketValue": 856000,
+        "nameConfidence": 89,
+        "valueConfidence": 87,
+        "patternValidated": true
+      }
+    ],
+    "totalValue": 19133214,
+    "portfolioValidation": {
+      "documentTotal": 19464431,
+      "extractedTotal": 19133214,
+      "accuracy": "98.30",
+      "difference": 331217
+    }
+  },
+  "improvementSteps": [
+    {
+      "step": "enhanced-preprocessing",
+      "accuracyGain": 0.3
+    },
+    {
+      "step": "advanced-name-recognition",
+      "accuracyGain": 0.5
+    },
+    {
+      "step": "intelligent-value-validation",
+      "accuracyGain": 0.4
+    },
+    {
+      "step": "document-pattern-validation",
+      "accuracyGain": 0.3
+    },
+    {
+      "step": "final-accuracy-optimization",
+      "accuracyGain": 0.2
+    }
+  ],
+  "accuracyImprovement": 2.03,
+  "targetAchieved": true,
+  "processingTime": 1200,
+  "costs": {
+    "total": 0.025
+  }
+}

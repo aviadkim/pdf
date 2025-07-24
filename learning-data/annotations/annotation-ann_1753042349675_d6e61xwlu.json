@@ -1,0 +1,17 @@
+{
+  "id": "ann_1753042349675_d6e61xwlu",
+  "timestamp": "2025-07-20T20:12:29.675Z",
+  "documentType": "messos-corner-banca",
+  "originalText": "Sample text",
+  "correctedData": [
+    {
+      "type": "security_name_correction",
+      "original": "TORONTO DOMINION",
+      "corrected": "TORONTO DOMINION BANK NOTES 23-23.02.27",
+      "isin": "XS2530201644"
+    }
+  ],
+  "annotationType": "validation",
+  "confidence": 0.9,
+  "userFeedback": "Corrected security name"
+}

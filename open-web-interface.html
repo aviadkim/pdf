@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open PDF Perfect Extractor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        
+        .instructions {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        .step {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .link-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 20px 40px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .status {
+            margin-top: 30px;
+            padding: 15px;
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 10px;
+            color: #155724;
+        }
+        
+        .troubleshooting {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 PDF Perfect Extractor</h1>
+        
+        <div class="instructions">
+            <h2>📋 How to Access the Web Interface:</h2>
+            
+            <div class="step">
+                <strong>Step 1:</strong> Click the button below to open the web interface
+            </div>
+            
+            <div class="step">
+                <strong>Step 2:</strong> Upload your PDF file (drag & drop or click to select)
+            </div>
+            
+            <div class="step">
+                <strong>Step 3:</strong> Click "Process PDF Document" button
+            </div>
+            
+            <div class="step">
+                <strong>Step 4:</strong> Watch real-time logs and see results
+            </div>
+        </div>
+        
+        <a href="http://localhost:3000" class="link-button" target="_blank">
+            🚀 Open PDF Perfect Extractor
+        </a>
+        
+        <div class="status">
+            <strong>✅ Server Status:</strong> Running on http://localhost:3000<br>
+            <strong>🇨🇭 Swiss Formatting:</strong> Ready for 199'080 → $199,080<br>
+            <strong>🌐 MCP Context 7:</strong> Enhanced development mode active
+        </div>
+        
+        <div class="troubleshooting">
+            <h3>🔧 Troubleshooting:</h3>
+            <p>If the link doesn't work:</p>
+            <ul style="text-align: left;">
+                <li>Make sure the server is running (check console)</li>
+                <li>Try: <strong>http://127.0.0.1:3000</strong></li>
+                <li>Check if port 3000 is blocked by firewall</li>
+                <li>Try a different browser</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        // Auto-open the interface after 3 seconds
+        setTimeout(() => {
+            window.open('http://localhost:3000', '_blank');
+        }, 3000);
+        
+        // Add status checking
+        setInterval(async () => {
+            try {
+                const response = await fetch('http://localhost:3000/api/status');
+                const status = document.querySelector('.status');
+                if (response.ok) {
+                    status.style.background = '#d4edda';
+                    status.innerHTML = `
+                        <strong>✅ Server Status:</strong> Running and ready<br>
+                        <strong>🇨🇭 Swiss Formatting:</strong> Ready for 199'080 → $199,080<br>
+                        <strong>🌐 MCP Context 7:</strong> Enhanced development mode active
+                    `;
+                } else {
+                    throw new Error('Server not responding');
+                }
+            } catch (error) {
+                const status = document.querySelector('.status');
+                status.style.background = '#f8d7da';
+                status.innerHTML = `
+                    <strong>❌ Server Status:</strong> Not responding<br>
+                    <strong>🔧 Action:</strong> Check if server is running
+                `;
+            }
+        }, 5000);
+    </script>
+</body>
+</html>

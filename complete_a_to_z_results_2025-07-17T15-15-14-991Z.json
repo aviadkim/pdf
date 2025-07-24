@@ -1,0 +1,121 @@
+{
+  "summary": {
+    "totalSecurities": 8,
+    "totalValue": 3324568,
+    "knownTotal": 19464431,
+    "accuracy": 17.080221867261365,
+    "processingTime": 522,
+    "averageConfidence": 0.6074999999999999
+  },
+  "securities": [
+    {
+      "isin": "XS2481066111",
+      "value": 470000,
+      "confidence": 0.6799999999999999,
+      "algorithm": "Value Range+Contextual+Pattern",
+      "reasoning": "Ensemble decision from 3 algorithms",
+      "sourceInfo": {
+        "isinLine": 554,
+        "valueLine": 561,
+        "distance": 7,
+        "valueContext": "USD1'470'000"
+      }
+    },
+    {
+      "isin": "XS2588105036",
+      "value": 500000,
+      "confidence": 0.6499999999999999,
+      "algorithm": "Value Range+Contextual+Pattern",
+      "reasoning": "Ensemble decision from 3 algorithms",
+      "sourceInfo": {
+        "isinLine": 311,
+        "valueLine": 315,
+        "distance": 4,
+        "valueContext": "USD1'500'000"
+      }
+    },
+    {
+      "isin": "XS2665592833",
+      "value": 500000,
+      "confidence": 0.6499999999999999,
+      "algorithm": "Value Range+Contextual+Pattern",
+      "reasoning": "Ensemble decision from 3 algorithms",
+      "sourceInfo": {
+        "isinLine": 324,
+        "valueLine": 315,
+        "distance": -9,
+        "valueContext": "USD1'500'000"
+      }
+    },
+    {
+      "isin": "XS2105981117",
+      "value": 600000,
+      "confidence": 0.6499999999999999,
+      "algorithm": "Value Range+Contextual+Pattern",
+      "reasoning": "Ensemble decision from 3 algorithms",
+      "sourceInfo": {
+        "isinLine": 795,
+        "valueLine": 799,
+        "distance": 4,
+        "valueContext": "USD1'600'000"
+      }
+    },
+    {
+      "isin": "XS2530201644",
+      "value": 200099,
+      "confidence": 0.62,
+      "algorithm": "Proximity+Value Range+Contextual+Pattern",
+      "reasoning": "Ensemble decision from 4 algorithms",
+      "sourceInfo": {
+        "isinLine": 293,
+        "valueLine": 297,
+        "distance": 4,
+        "valueContext": "100.200099.1991199'080"
+      }
+    },
+    {
+      "isin": "XS2964611052",
+      "value": 470000,
+      "confidence": 0.565,
+      "algorithm": "Proximity+Value Range+Contextual",
+      "reasoning": "Ensemble decision from 3 algorithms",
+      "sourceInfo": {
+        "isinLine": 564,
+        "valueLine": 561,
+        "distance": -3,
+        "valueContext": "USD1'470'000"
+      }
+    },
+    {
+      "isin": "XS2714429128",
+      "value": 20343,
+      "confidence": 0.535,
+      "algorithm": "Proximity+Contextual+Pattern",
+      "reasoning": "Ensemble decision from 3 algorithms",
+      "sourceInfo": {
+        "isinLine": 782,
+        "valueLine": 780,
+        "distance": -2,
+        "valueContext": "20'343"
+      }
+    },
+    {
+      "isin": "CH0244767585",
+      "value": 564126,
+      "confidence": 0.51,
+      "algorithm": "Proximity+Value Range+Pattern",
+      "reasoning": "Ensemble decision from 3 algorithms",
+      "sourceInfo": {
+        "isinLine": 699,
+        "valueLine": 701,
+        "distance": 2,
+        "valueContext": "221.564126.870021'496"
+      }
+    }
+  ],
+  "metadata": {
+    "extractionMethod": "complete_a_to_z_intelligent_system",
+    "version": "1.0.0",
+    "timestamp": "2025-07-17T15:15:14.991Z"
+  }
+}

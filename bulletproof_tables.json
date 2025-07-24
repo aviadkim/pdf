@@ -1,0 +1,1004 @@
+{
+  "basic_info": [
+    {
+      "ISIN": "CH1908490000",
+      "Name": "IBAN: CH1908490000366223002",
+      "Currency": "USD",
+      "Page": 7
+    },
+    {
+      "ISIN": "XS2993414619",
+      "Name": "XS2993414619 Valorn.:",
+      "Currency": "USD",
+      "Page": 7
+    },
+    {
+      "ISIN": "XS2530201644",
+      "Name": "XS2530201644 Valorn.:",
+      "Currency": "USD",
+      "Page": 8
+    },
+    {
+      "ISIN": "XS2588105036",
+      "Name": "XS2588105036 Valorn.:",
+      "Currency": "USD",
+      "Page": 8
+    },
+    {
+      "ISIN": "XS2665592833",
+      "Name": "XS2665592833 Valorn.:",
+      "Currency": "USD",
+      "Page": 8
+    },
+    {
+      "ISIN": "XS2692298537",
+      "Name": "XS2692298537 Valorn.:",
+      "Currency": "USD",
+      "Page": 8
+    },
+    {
+      "ISIN": "XS2754416860",
+      "Name": "XS2754416860 Valorn.:",
+      "Currency": "USD",
+      "Page": 8
+    },
+    {
+      "ISIN": "XS2761230684",
+      "Name": "XS2761230684 Valorn.:",
+      "Currency": "USD",
+      "Page": 8
+    },
+    {
+      "ISIN": "XS2736388732",
+      "Name": "XS2736388732 Valorn.:",
+      "Currency": "USD",
+      "Page": 8
+    },
+    {
+      "ISIN": "XS2782869916",
+      "Name": "XS2782869916 Valorn.:",
+      "Currency": "USD",
+      "Page": 9
+    },
+    {
+      "ISIN": "XS2824054402",
+      "Name": "XS2824054402 Valorn.:",
+      "Currency": "USD",
+      "Page": 9
+    },
+    {
+      "ISIN": "XS2567543397",
+      "Name": "XS2567543397 Valorn.:",
+      "Currency": "USD",
+      "Page": 9
+    },
+    {
+      "ISIN": "XS2110079584",
+      "Name": "XS2110079584 Valorn.:",
+      "Currency": "USD",
+      "Page": 9
+    },
+    {
+      "ISIN": "XS2848820754",
+      "Name": "XS2848820754 Valorn.:",
+      "Currency": "USD",
+      "Page": 9
+    },
+    {
+      "ISIN": "XS2829712830",
+      "Name": "XS2829712830 Valorn.:",
+      "Currency": "USD",
+      "Page": 9
+    },
+    {
+      "ISIN": "XS2912278723",
+      "Name": "XS2912278723 Valorn.:",
+      "Currency": "USD",
+      "Page": 9
+    },
+    {
+      "ISIN": "XS2381723902",
+      "Name": "XS2381723902 Valorn.:",
+      "Currency": "USD",
+      "Page": 9
+    },
+    {
+      "ISIN": "XS2829752976",
+      "Name": "XS2829752976 Valorn.:",
+      "Currency": "USD",
+      "Page": 10
+    },
+    {
+      "ISIN": "XS2953741100",
+      "Name": "XS2953741100 Valorn.:",
+      "Currency": "USD",
+      "Page": 10
+    },
+    {
+      "ISIN": "XS2381717250",
+      "Name": "XS2381717250 Valorn.:",
+      "Currency": "USD",
+      "Page": 10
+    },
+    {
+      "ISIN": "XS2481066111",
+      "Name": "XS2481066111 Valorn.:",
+      "Currency": "USD",
+      "Page": 10
+    },
+    {
+      "ISIN": "XS2964611052",
+      "Name": "XS2964611052 Valorn.:",
+      "Currency": "USD",
+      "Page": 10
+    },
+    {
+      "ISIN": "XS3035947103",
+      "Name": "XS3035947103 Valorn.:",
+      "Currency": "USD",
+      "Page": 10
+    },
+    {
+      "ISIN": "LU2228214107",
+      "Name": "LU2228214107 Valorn.:",
+      "Currency": "USD",
+      "Page": 10
+    },
+    {
+      "ISIN": "CH1269060229",
+      "Name": "CH1269060229 Valorn.:",
+      "Currency": "USD",
+      "Page": 10
+    },
+    {
+      "ISIN": "XS0461497009",
+      "Name": "XS0461497009 Valorn.:",
+      "Currency": "USD",
+      "Page": 11
+    },
+    {
+      "ISIN": "XS2746319610",
+      "Name": "XS2746319610 Valorn.:",
+      "Currency": "USD",
+      "Page": 11
+    },
+    {
+      "ISIN": "CH0244767585",
+      "Name": "CH0244767585 Valorn.: -87.87%",
+      "Currency": "CHF",
+      "Page": 12
+    },
+    {
+      "ISIN": "XS2519369867",
+      "Name": "XS2519369867 Valorn.:",
+      "Currency": "USD",
+      "Page": 13
+    },
+    {
+      "ISIN": "XS2315191069",
+      "Name": "XS2315191069 Valorn.:",
+      "Currency": "USD",
+      "Page": 13
+    },
+    {
+      "ISIN": "XS2792098779",
+      "Name": "XS2792098779 Valorn.:",
+      "Currency": "USD",
+      "Page": 13
+    },
+    {
+      "ISIN": "XS2714429128",
+      "Name": "XS2714429128 Valorn.:",
+      "Currency": "USD",
+      "Page": 13
+    },
+    {
+      "ISIN": "XS2105981117",
+      "Name": "XS2105981117 Valorn.:",
+      "Currency": "USD",
+      "Page": 13
+    },
+    {
+      "ISIN": "XS2838389430",
+      "Name": "XS2838389430 Valorn.:",
+      "Currency": "USD",
+      "Page": 13
+    },
+    {
+      "ISIN": "XS2631782468",
+      "Name": "XS2631782468 Valorn.:",
+      "Currency": "USD",
+      "Page": 13
+    },
+    {
+      "ISIN": "XS1700087403",
+      "Name": "XS1700087403 Valorn.:",
+      "Currency": "USD",
+      "Page": 14
+    },
+    {
+      "ISIN": "XS2594173093",
+      "Name": "XS2594173093 Valorn.:",
+      "Currency": "USD",
+      "Page": 14
+    },
+    {
+      "ISIN": "XS2407295554",
+      "Name": "XS2407295554 Valorn.:",
+      "Currency": "USD",
+      "Page": 14
+    },
+    {
+      "ISIN": "XS2252299883",
+      "Name": "XS2252299883 Valorn.:",
+      "Currency": "USD",
+      "Page": 14
+    },
+    {
+      "ISIN": "XD0466760473",
+      "Name": "XD0466760473 Valorn.:",
+      "Currency": "USD",
+      "Page": 15
+    }
+  ],
+  "financial_data": [
+    {
+      "ISIN": "CH1908490000",
+      "Quantity": "6,069",
+      "Price": "$28.0300",
+      "Market Value": "$6,069.77",
+      "Portfolio %": "0.50%"
+    },
+    {
+      "ISIN": "XS2993414619",
+      "Quantity": "100,000",
+      "Price": "$28.0300",
+      "Market Value": "$100,000.00",
+      "Portfolio %": "0.50%"
+    },
+    {
+      "ISIN": "XS2530201644",
+      "Quantity": "200,000",
+      "Price": "$23.0200",
+      "Market Value": "$200,000.00",
+      "Portfolio %": "1.03%"
+    },
+    {
+      "ISIN": "XS2588105036",
+      "Quantity": "200,000",
+      "Price": "$22.0800",
+      "Market Value": "$200,000.00",
+      "Portfolio %": "7.75%"
+    },
+    {
+      "ISIN": "XS2665592833",
+      "Quantity": "1,500,000",
+      "Price": "$18.0900",
+      "Market Value": "$1,500,000.00",
+      "Portfolio %": "3.79%"
+    },
+    {
+      "ISIN": "XS2692298537",
+      "Quantity": "690,000",
+      "Price": "$100.1000",
+      "Market Value": "$690,000.00",
+      "Portfolio %": "0.50%"
+    },
+    {
+      "ISIN": "XS2754416860",
+      "Quantity": "100,000",
+      "Price": "$17.0100",
+      "Market Value": "$100,000.00",
+      "Portfolio %": "0.53%"
+    },
+    {
+      "ISIN": "XS2761230684",
+      "Quantity": "100,000",
+      "Price": "$13.0200",
+      "Market Value": "$100,000.00",
+      "Portfolio %": "1.32%"
+    },
+    {
+      "ISIN": "XS2736388732",
+      "Quantity": "250,000",
+      "Price": "$20.1200",
+      "Market Value": "$250,000.00",
+      "Portfolio %": "1.32%"
+    },
+    {
+      "ISIN": "XS2782869916",
+      "Quantity": "50,000",
+      "Price": "$100.2000",
+      "Market Value": "$50,000.00",
+      "Portfolio %": "2.46%"
+    },
+    {
+      "ISIN": "XS2824054402",
+      "Quantity": "440,000",
+      "Price": "$29.0500",
+      "Market Value": "$440,000.00",
+      "Portfolio %": "13.21%"
+    },
+    {
+      "ISIN": "XS2567543397",
+      "Quantity": "2,450,000",
+      "Price": "$18.0600",
+      "Market Value": "$2,450,000.00",
+      "Portfolio %": "5.66%"
+    },
+    {
+      "ISIN": "XS2110079584",
+      "Quantity": "1,100,000",
+      "Price": "$100.1000",
+      "Market Value": "$1,100,000.00",
+      "Portfolio %": "0.46%"
+    },
+    {
+      "ISIN": "XS2848820754",
+      "Quantity": "90,000",
+      "Price": "$100.2000",
+      "Market Value": "$90,000.00",
+      "Portfolio %": "0.47%"
+    },
+    {
+      "ISIN": "XS2829712830",
+      "Quantity": "100,000",
+      "Price": "$30.0900",
+      "Market Value": "$100,000.00",
+      "Portfolio %": "1.02%"
+    },
+    {
+      "ISIN": "XS2912278723",
+      "Quantity": "200,000",
+      "Price": "$17.1000",
+      "Market Value": "$200,000.00",
+      "Portfolio %": "0.49%"
+    },
+    {
+      "ISIN": "XS2381723902",
+      "Quantity": "100,000",
+      "Price": "$29.1000",
+      "Market Value": "$100,000.00",
+      "Portfolio %": "0.49%"
+    },
+    {
+      "ISIN": "XS2829752976",
+      "Quantity": "250,000",
+      "Price": "$99.6790",
+      "Market Value": "$250,000.00",
+      "Portfolio %": "0.75%"
+    },
+    {
+      "ISIN": "XS2953741100",
+      "Quantity": "150,000",
+      "Price": "$11.1200",
+      "Market Value": "$150,000.00",
+      "Portfolio %": "2.60%"
+    },
+    {
+      "ISIN": "XS2381717250",
+      "Quantity": "500,000",
+      "Price": "$19.1200",
+      "Market Value": "$500,000.00",
+      "Portfolio %": "0.25%"
+    },
+    {
+      "ISIN": "XS2481066111",
+      "Quantity": "50,000",
+      "Price": "$100.1000",
+      "Market Value": "$50,000.00",
+      "Portfolio %": "7.61%"
+    },
+    {
+      "ISIN": "XS2964611052",
+      "Quantity": "1,470,000",
+      "Price": "$14.0200",
+      "Market Value": "$1,470,000.00",
+      "Portfolio %": "4.11%"
+    },
+    {
+      "ISIN": "XS3035947103",
+      "Quantity": "800,000",
+      "Price": "$28.0300",
+      "Market Value": "$800,000.00",
+      "Portfolio %": "0.59%"
+    },
+    {
+      "ISIN": "LU2228214107",
+      "Quantity": "2,581",
+      "Price": "$81.5304",
+      "Market Value": "$2,581.79",
+      "Portfolio %": "1.76%"
+    },
+    {
+      "ISIN": "CH1269060229",
+      "Quantity": "350,000",
+      "Price": "$26.0500",
+      "Market Value": "$350,000.00",
+      "Portfolio %": "3.25%"
+    },
+    {
+      "ISIN": "XS0461497009",
+      "Quantity": "690,000",
+      "Price": "$100.1000",
+      "Market Value": "$690,000.00",
+      "Portfolio %": "0.99%"
+    },
+    {
+      "ISIN": "XS2746319610",
+      "Quantity": "140,000",
+      "Price": "$32.4600",
+      "Market Value": "$140,000.00",
+      "Portfolio %": "63.52%"
+    },
+    {
+      "ISIN": "CH0244767585",
+      "Quantity": "800",
+      "Price": "$221.5641",
+      "Market Value": "$21,496.00",
+      "Portfolio %": "0.12%"
+    },
+    {
+      "ISIN": "XS2519369867",
+      "Quantity": "200,000",
+      "Price": "$21.0600",
+      "Market Value": "$200,000.00",
+      "Portfolio %": "2.58%"
+    },
+    {
+      "ISIN": "XS2315191069",
+      "Quantity": "500,000",
+      "Price": "$100.5241",
+      "Market Value": "$500,000.00",
+      "Portfolio %": "5.93%"
+    },
+    {
+      "ISIN": "XS2792098779",
+      "Quantity": "1,200,000",
+      "Price": "$100.0000",
+      "Market Value": "$1,200,000.00",
+      "Portfolio %": "3.62%"
+    },
+    {
+      "ISIN": "XS2714429128",
+      "Quantity": "690,000",
+      "Price": "$17.0900",
+      "Market Value": "$690,000.00",
+      "Portfolio %": "2.49%"
+    },
+    {
+      "ISIN": "XS2105981117",
+      "Quantity": "500,000",
+      "Price": "$20.1200",
+      "Market Value": "$500,000.00",
+      "Portfolio %": "8.34%"
+    },
+    {
+      "ISIN": "XS2838389430",
+      "Quantity": "1,600,000",
+      "Price": "$26.0400",
+      "Market Value": "$1,600,000.00",
+      "Portfolio %": "2.51%"
+    },
+    {
+      "ISIN": "XS2631782468",
+      "Quantity": "500,000",
+      "Price": "$25.0500",
+      "Market Value": "$500,000.00",
+      "Portfolio %": "2.51%"
+    },
+    {
+      "ISIN": "XS1700087403",
+      "Quantity": "100,000",
+      "Price": "$20.6000",
+      "Market Value": "$100,000.00",
+      "Portfolio %": "0.99%"
+    },
+    {
+      "ISIN": "XS2594173093",
+      "Quantity": "200,000",
+      "Price": "$27.0900",
+      "Market Value": "$200,000.00",
+      "Portfolio %": "2.62%"
+    },
+    {
+      "ISIN": "XS2407295554",
+      "Quantity": "500,000",
+      "Price": "$12.0100",
+      "Market Value": "$500,000.00",
+      "Portfolio %": "2.62%"
+    },
+    {
+      "ISIN": "XS2252299883",
+      "Quantity": "1,000,000",
+      "Price": "$15.0500",
+      "Market Value": "$1,000,000.00",
+      "Portfolio %": "35.69%"
+    },
+    {
+      "ISIN": "XD0466760473",
+      "Quantity": "204",
+      "Price": "$204.0710",
+      "Market Value": "$2,019.00",
+      "Portfolio %": "0.13%"
+    }
+  ],
+  "performance_data": [
+    {
+      "ISIN": "CH1908490000",
+      "YTD Performance": "0.03%",
+      "Total Performance": "-2.30%",
+      "Market Value": "$6,069.77"
+    },
+    {
+      "ISIN": "XS2993414619",
+      "YTD Performance": "-2.30%",
+      "Total Performance": "-2.30%",
+      "Market Value": "$100,000.00"
+    },
+    {
+      "ISIN": "XS2530201644",
+      "YTD Performance": "0.25%",
+      "Total Performance": "-1.00%",
+      "Market Value": "$200,000.00"
+    },
+    {
+      "ISIN": "XS2588105036",
+      "YTD Performance": "0.47%",
+      "Total Performance": "-0.57%",
+      "Market Value": "$200,000.00"
+    },
+    {
+      "ISIN": "XS2665592833",
+      "YTD Performance": "1.49%",
+      "Total Performance": "-0.74%",
+      "Market Value": "$1,500,000.00"
+    },
+    {
+      "ISIN": "XS2692298537",
+      "YTD Performance": "2.26%",
+      "Total Performance": "6.81%",
+      "Market Value": "$690,000.00"
+    },
+    {
+      "ISIN": "XS2754416860",
+      "YTD Performance": "1.16%",
+      "Total Performance": "-3.05%",
+      "Market Value": "$100,000.00"
+    },
+    {
+      "ISIN": "XS2761230684",
+      "YTD Performance": "2.24%",
+      "Total Performance": "2.04%",
+      "Market Value": "$100,000.00"
+    },
+    {
+      "ISIN": "XS2736388732",
+      "YTD Performance": "-2.58%",
+      "Total Performance": "-0.95%",
+      "Market Value": "$250,000.00"
+    },
+    {
+      "ISIN": "XS2782869916",
+      "YTD Performance": "1.07%",
+      "Total Performance": "-2.86%",
+      "Market Value": "$50,000.00"
+    },
+    {
+      "ISIN": "XS2824054402",
+      "YTD Performance": "5.60%",
+      "Total Performance": "1.81%",
+      "Market Value": "$440,000.00"
+    },
+    {
+      "ISIN": "XS2567543397",
+      "YTD Performance": "1.26%",
+      "Total Performance": "0.42%",
+      "Market Value": "$2,450,000.00"
+    },
+    {
+      "ISIN": "XS2110079584",
+      "YTD Performance": "1.50%",
+      "Total Performance": "N/A",
+      "Market Value": "$1,100,000.00"
+    },
+    {
+      "ISIN": "XS2848820754",
+      "YTD Performance": "2.35%",
+      "Total Performance": "-0.14%",
+      "Market Value": "$90,000.00"
+    },
+    {
+      "ISIN": "XS2829712830",
+      "YTD Performance": "1.16%",
+      "Total Performance": "-7.68%",
+      "Market Value": "$100,000.00"
+    },
+    {
+      "ISIN": "XS2912278723",
+      "YTD Performance": "1.92%",
+      "Total Performance": "-0.63%",
+      "Market Value": "$200,000.00"
+    },
+    {
+      "ISIN": "XS2381723902",
+      "YTD Performance": "1.09%",
+      "Total Performance": "-4.13%",
+      "Market Value": "$100,000.00"
+    },
+    {
+      "ISIN": "XS2829752976",
+      "YTD Performance": "0.73%",
+      "Total Performance": "-2.86%",
+      "Market Value": "$250,000.00"
+    },
+    {
+      "ISIN": "XS2953741100",
+      "YTD Performance": "1.90%",
+      "Total Performance": "-1.46%",
+      "Market Value": "$150,000.00"
+    },
+    {
+      "ISIN": "XS2381717250",
+      "YTD Performance": "3.70%",
+      "Total Performance": "0.90%",
+      "Market Value": "$500,000.00"
+    },
+    {
+      "ISIN": "XS2481066111",
+      "YTD Performance": "-1.10%",
+      "Total Performance": "-1.10%",
+      "Market Value": "$50,000.00"
+    },
+    {
+      "ISIN": "XS2964611052",
+      "YTD Performance": "0.72%",
+      "Total Performance": "0.72%",
+      "Market Value": "$1,470,000.00"
+    },
+    {
+      "ISIN": "LU2228214107",
+      "YTD Performance": "N/A",
+      "Total Performance": "-45.08%",
+      "Market Value": "$2,581.79"
+    },
+    {
+      "ISIN": "CH1269060229",
+      "YTD Performance": "1.14%",
+      "Total Performance": "-3.00%",
+      "Market Value": "$350,000.00"
+    },
+    {
+      "ISIN": "XS0461497009",
+      "YTD Performance": "1.54%",
+      "Total Performance": "0.79%",
+      "Market Value": "$690,000.00"
+    },
+    {
+      "ISIN": "XS2746319610",
+      "YTD Performance": "3.10%",
+      "Total Performance": "2.30%",
+      "Market Value": "$140,000.00"
+    },
+    {
+      "ISIN": "CH0244767585",
+      "YTD Performance": "-3.10%",
+      "Total Performance": "-87.90%",
+      "Market Value": "$21,496.00"
+    },
+    {
+      "ISIN": "XS2519369867",
+      "YTD Performance": "-2.01%",
+      "Total Performance": "-2.72%",
+      "Market Value": "$200,000.00"
+    },
+    {
+      "ISIN": "XS2315191069",
+      "YTD Performance": "0.22%",
+      "Total Performance": "-1.52%",
+      "Market Value": "$500,000.00"
+    },
+    {
+      "ISIN": "XS2792098779",
+      "YTD Performance": "-1.83%",
+      "Total Performance": "-3.81%",
+      "Market Value": "$1,200,000.00"
+    },
+    {
+      "ISIN": "XS2714429128",
+      "YTD Performance": "-1.94%",
+      "Total Performance": "-1.35%",
+      "Market Value": "$690,000.00"
+    },
+    {
+      "ISIN": "XS2105981117",
+      "YTD Performance": "-0.21%",
+      "Total Performance": "-3.76%",
+      "Market Value": "$500,000.00"
+    },
+    {
+      "ISIN": "XS2838389430",
+      "YTD Performance": "5.70%",
+      "Total Performance": "0.35%",
+      "Market Value": "$1,600,000.00"
+    },
+    {
+      "ISIN": "XS2631782468",
+      "YTD Performance": "0.28%",
+      "Total Performance": "-0.54%",
+      "Market Value": "$500,000.00"
+    },
+    {
+      "ISIN": "XS1700087403",
+      "YTD Performance": "-0.07%",
+      "Total Performance": "8.40%",
+      "Market Value": "$100,000.00"
+    },
+    {
+      "ISIN": "XS2594173093",
+      "YTD Performance": "-1.90%",
+      "Total Performance": "-2.88%",
+      "Market Value": "$200,000.00"
+    },
+    {
+      "ISIN": "XS2407295554",
+      "YTD Performance": "4.36%",
+      "Total Performance": "0.19%",
+      "Market Value": "$500,000.00"
+    },
+    {
+      "ISIN": "XS2252299883",
+      "YTD Performance": "0.60%",
+      "Total Performance": "-1.38%",
+      "Market Value": "$1,000,000.00"
+    },
+    {
+      "ISIN": "XD0466760473",
+      "YTD Performance": "N/A",
+      "Total Performance": "-87.30%",
+      "Market Value": "$2,019.00"
+    }
+  ],
+  "bond_details": [
+    {
+      "ISIN": "CH1908490000",
+      "Maturity": "28.03.2035",
+      "Coupon": "N/A",
+      "Price": "$28.0300"
+    },
+    {
+      "ISIN": "XS2993414619",
+      "Maturity": "28.03.2035",
+      "Coupon": "N/A",
+      "Price": "$28.0300"
+    },
+    {
+      "ISIN": "XS2530201644",
+      "Maturity": "23.02.2027",
+      "Coupon": "23.50%",
+      "Price": "$23.0200"
+    },
+    {
+      "ISIN": "XS2588105036",
+      "Maturity": "28.03.2025",
+      "Coupon": "23.20%",
+      "Price": "$22.0800"
+    },
+    {
+      "ISIN": "XS2665592833",
+      "Maturity": "18.09.2028",
+      "Coupon": "18.90%",
+      "Price": "$18.0900"
+    },
+    {
+      "ISIN": "XS2692298537",
+      "Maturity": "07.11.2029",
+      "Coupon": "N/A",
+      "Price": "$100.1000"
+    },
+    {
+      "ISIN": "XS2754416860",
+      "Maturity": "17.01.2030",
+      "Coupon": "17.10%",
+      "Price": "$17.0100"
+    },
+    {
+      "ISIN": "XS2761230684",
+      "Maturity": "13.02.2030",
+      "Coupon": "13.20%",
+      "Price": "$13.0200"
+    },
+    {
+      "ISIN": "XS2736388732",
+      "Maturity": "20.12.2031",
+      "Coupon": "N/A",
+      "Price": "$20.1200"
+    },
+    {
+      "ISIN": "XS2782869916",
+      "Maturity": "31.03.2025",
+      "Coupon": "N/A",
+      "Price": "$100.2000"
+    },
+    {
+      "ISIN": "XS2824054402",
+      "Maturity": "29.05.2026",
+      "Coupon": "29.50%",
+      "Price": "$29.0500"
+    },
+    {
+      "ISIN": "XS2567543397",
+      "Maturity": "18.06.2034",
+      "Coupon": "18.60%",
+      "Price": "$18.0600"
+    },
+    {
+      "ISIN": "XS2110079584",
+      "Maturity": "09.07.2026",
+      "Coupon": "N/A",
+      "Price": "$100.1000"
+    },
+    {
+      "ISIN": "XS2848820754",
+      "Maturity": "31.03.2025",
+      "Coupon": "N/A",
+      "Price": "$100.2000"
+    },
+    {
+      "ISIN": "XS2829712830",
+      "Maturity": "30.09.2024",
+      "Coupon": "N/A",
+      "Price": "$30.0900"
+    },
+    {
+      "ISIN": "XS2912278723",
+      "Maturity": "17.10.2034",
+      "Coupon": "N/A",
+      "Price": "$17.1000"
+    },
+    {
+      "ISIN": "XS2381723902",
+      "Maturity": "31.03.2025",
+      "Coupon": "N/A",
+      "Price": "$29.1000"
+    },
+    {
+      "ISIN": "XS2829752976",
+      "Maturity": "18.11.2034",
+      "Coupon": "N/A",
+      "Price": "$99.6790"
+    },
+    {
+      "ISIN": "XS2953741100",
+      "Maturity": "11.12.2034",
+      "Coupon": "N/A",
+      "Price": "$11.1200"
+    },
+    {
+      "ISIN": "XS2381717250",
+      "Maturity": "19.12.2034",
+      "Coupon": "N/A",
+      "Price": "$19.1200"
+    },
+    {
+      "ISIN": "XS2481066111",
+      "Maturity": "03.02.2035",
+      "Coupon": "N/A",
+      "Price": "$100.1000"
+    },
+    {
+      "ISIN": "XS2964611052",
+      "Maturity": "14.02.2035",
+      "Coupon": "N/A",
+      "Price": "$14.0200"
+    },
+    {
+      "ISIN": "XS3035947103",
+      "Maturity": "28.03.2025",
+      "Coupon": "N/A",
+      "Price": "$28.0300"
+    },
+    {
+      "ISIN": "LU2228214107",
+      "Maturity": "13.09.2024",
+      "Coupon": "N/A",
+      "Price": "$81.5304"
+    },
+    {
+      "ISIN": "CH1269060229",
+      "Maturity": "31.03.2025",
+      "Coupon": "26.50%",
+      "Price": "$26.0500"
+    },
+    {
+      "ISIN": "XS0461497009",
+      "Maturity": "08.11.2028",
+      "Coupon": "8.11%",
+      "Price": "$100.1000"
+    },
+    {
+      "ISIN": "XS2746319610",
+      "Maturity": "01.03.2030",
+      "Coupon": "N/A",
+      "Price": "$32.4600"
+    },
+    {
+      "ISIN": "CH0244767585",
+      "Maturity": "31.03.2025",
+      "Coupon": "N/A",
+      "Price": "$221.5641"
+    },
+    {
+      "ISIN": "XS2519369867",
+      "Maturity": "28.02.2025",
+      "Coupon": "N/A",
+      "Price": "$21.0600"
+    },
+    {
+      "ISIN": "XS2315191069",
+      "Maturity": "08.01.2029",
+      "Coupon": "N/A",
+      "Price": "$100.5241"
+    },
+    {
+      "ISIN": "XS2792098779",
+      "Maturity": "02.12.2034",
+      "Coupon": "N/A",
+      "Price": "$100.0000"
+    },
+    {
+      "ISIN": "XS2714429128",
+      "Maturity": "27.03.2025",
+      "Coupon": "N/A",
+      "Price": "$17.0900"
+    },
+    {
+      "ISIN": "XS2105981117",
+      "Maturity": "31.03.2025",
+      "Coupon": "N/A",
+      "Price": "$20.1200"
+    },
+    {
+      "ISIN": "XS2838389430",
+      "Maturity": "26.04.2033",
+      "Coupon": "N/A",
+      "Price": "$26.0400"
+    },
+    {
+      "ISIN": "XS2631782468",
+      "Maturity": "31.03.2025",
+      "Coupon": "N/A",
+      "Price": "$25.0500"
+    },
+    {
+      "ISIN": "XS1700087403",
+      "Maturity": "31.03.2025",
+      "Coupon": "N/A",
+      "Price": "$20.6000"
+    },
+    {
+      "ISIN": "XS2594173093",
+      "Maturity": "27.09.2029",
+      "Coupon": "N/A",
+      "Price": "$27.0900"
+    },
+    {
+      "ISIN": "XS2407295554",
+      "Maturity": "31.03.2025",
+      "Coupon": "N/A",
+      "Price": "$12.0100"
+    },
+    {
+      "ISIN": "XS2252299883",
+      "Maturity": "28.03.2025",
+      "Coupon": "N/A",
+      "Price": "$15.0500"
+    },
+    {
+      "ISIN": "XD0466760473",
+      "Maturity": "31.12.2023",
+      "Coupon": "N/A",
+      "Price": "$204.0710"
+    }
+  ]
+}

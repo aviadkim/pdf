@@ -1,0 +1,76 @@
+{
+  "timestamp": "2025-07-20T10:29:46.546Z",
+  "workflow_steps": [
+    {
+      "step": 1,
+      "name": "Upload and Process",
+      "success": false,
+      "fallback": "smart-ocr",
+      "data": {
+        "success": true,
+        "stats": {
+          "currentAccuracy": 80,
+          "patternCount": 16,
+          "documentCount": 0,
+          "annotationCount": 22,
+          "accuracyGain": 0,
+          "confidenceScore": 80,
+          "learningRate": 0.1,
+          "mistralEnabled": true,
+          "targetAccuracy": 99.9
+        }
+      }
+    },
+    {
+      "step": 2,
+      "name": "Extract Data",
+      "success": false,
+      "fallback": "smart-ocr-stats",
+      "data": {
+        "success": true,
+        "stats": {
+          "currentAccuracy": 80,
+          "patternCount": 16,
+          "documentCount": 0,
+          "annotationCount": 22,
+          "accuracyGain": 0,
+          "confidenceScore": 80,
+          "learningRate": 0.1,
+          "mistralEnabled": true,
+          "targetAccuracy": 99.9
+        }
+      }
+    },
+    {
+      "step": 3,
+      "name": "Annotate Errors",
+      "success": true,
+      "patterns_count": 0
+    },
+    {
+      "step": 4,
+      "name": "Learn from Annotations",
+      "success": true,
+      "patterns_learned": 0
+    },
+    {
+      "step": 5,
+      "name": "Verify Improvement",
+      "success": true,
+      "final_stats": {
+        "currentAccuracy": 80.5,
+        "patternCount": 16,
+        "documentCount": 0,
+        "annotationCount": 22,
+        "accuracyGain": 0.5,
+        "confidenceScore": 80,
+        "learningRate": 0.1,
+        "mistralEnabled": true,
+        "targetAccuracy": 99.9
+      }
+    }
+  ],
+  "final_accuracy": 80.5,
+  "securities_extracted": 0,
+  "total_value": 0
+}

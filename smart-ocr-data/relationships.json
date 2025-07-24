@@ -1,0 +1,95 @@
+{
+  "fieldRelationships": [
+    [
+      "4e9ae1e3-febc-424b-829c-833285edf648",
+      {
+        "id": "4e9ae1e3-febc-424b-829c-833285edf648",
+        "type": "connection",
+        "coordinates": {
+          "x": 150,
+          "y": 40,
+          "width": 50,
+          "height": 20
+        },
+        "content": "price-link",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:11:17.386Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "38b02801-6aac-4063-a182-5415ce472625",
+      {
+        "id": "38b02801-6aac-4063-a182-5415ce472625",
+        "type": "relationship",
+        "coordinates": {
+          "x": 300,
+          "y": 40,
+          "width": 100,
+          "height": 20
+        },
+        "content": "name-value-relationship",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:11:30.851Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "3803a110-953b-4b76-a714-d9c256652d4f",
+      {
+        "id": "3803a110-953b-4b76-a714-d9c256652d4f",
+        "type": "connection",
+        "coordinates": {
+          "x1": 100,
+          "y1": 200,
+          "x2": 300,
+          "y2": 250
+        },
+        "content": "ISIN-Value",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:50:47.393Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "c84f0f27-50bc-4d5a-8c16-9caae89faae8",
+      {
+        "id": "c84f0f27-50bc-4d5a-8c16-9caae89faae8",
+        "type": "relationship",
+        "coordinates": {
+          "x": 350,
+          "y": 300,
+          "width": 150,
+          "height": 25
+        },
+        "content": "Value-Total",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:51:09.653Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "20dabb81-9ab2-49fd-a1fd-7454c7f290de",
+      {
+        "id": "20dabb81-9ab2-49fd-a1fd-7454c7f290de",
+        "type": "connection",
+        "coordinates": {
+          "x1": 100,
+          "y1": 200,
+          "x2": 300,
+          "y2": 250
+        },
+        "content": "ISIN-Value Connection",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T13:38:38.582Z",
+        "usageCount": 0
+      }
+    ]
+  ],
+  "timestamp": "2025-07-18T13:38:38.595Z"
+}

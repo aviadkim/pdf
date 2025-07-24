@@ -1,0 +1,92 @@
+# 🚀 Render.com Optimized Dockerfile
+# MCP-Enhanced PDF Processor with full browser automation support
+
+FROM node:20-slim
+
+# Install system dependencies for Puppeteer and Playwright
+RUN apt-get update && apt-get install -y \
+    # Chromium dependencies
+    ca-certificates \
+    fonts-liberation \
+    libasound2 \
+    libatk-bridge2.0-0 \
+    libatk1.0-0 \
+    libc6 \
+    libcairo2 \
+    libcups2 \
+    libdbus-1-3 \
+    libexpat1 \
+    libfontconfig1 \
+    libgbm1 \
+    libgcc1 \
+    libglib2.0-0 \
+    libgtk-3-0 \
+    libnspr4 \
+    libnss3 \
+    libpango-1.0-0 \
+    libpangocairo-1.0-0 \
+    libstdc++6 \
+    libx11-6 \
+    libx11-xcb1 \
+    libxcb1 \
+    libxcomposite1 \
+    libxcursor1 \
+    libxdamage1 \
+    libxext6 \
+    libxfixes3 \
+    libxi6 \
+    libxrandr2 \
+    libxrender1 \
+    libxss1 \
+    libxtst6 \
+    lsb-release \
+    wget \
+    xdg-utils \
+    # PDF processing
+    poppler-utils \
+    # Build tools
+    build-essential \
+    python3 \
+    python3-pip \
+    # Cleanup
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install Node.js dependencies
+RUN npm install
+
+# Install Playwright browsers (Render supports this!)
+RUN npx playwright install chromium
+RUN npx playwright install-deps chromium
+
+# Copy application code
+COPY . .
+
+# Install Python dependencies for enhanced processing
+COPY requirements_paddle.txt .
+RUN pip3 install --no-cache-dir -r requirements_paddle.txt
+
+# Create processing directories
+RUN mkdir -p /tmp/mcp_processing/screenshots
+RUN mkdir -p /tmp/mcp_processing/output
+
+# Set environment variables for Render
+ENV NODE_ENV=production
+ENV MCP_MODE=enhanced
+ENV PORT=10000
+ENV PLAYWRIGHT_BROWSERS_PATH=/app/.playwright
+
+# Expose port (Render default)
+EXPOSE 10000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=15s --start-period=120s --retries=3 \
+    CMD curl -f http://localhost:10000/api/test || exit 1
+
+# Start command
+CMD ["npm", "run", "start:render"]

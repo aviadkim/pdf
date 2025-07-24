@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-07-20T05:13:49.145Z",
+  "summary": {
+    "totalSecurities": 0,
+    "totalValue": 0,
+    "totalQuantity": 0,
+    "currency": "CHF",
+    "accuracy": {
+      "valueAccuracy": 0,
+      "countAccuracy": 0,
+      "overallAccuracy": "0.00"
+    }
+  },
+  "securities": [],
+  "validation": {
+    "expectedTotal": 19464431,
+    "expectedSecurities": 40,
+    "valueDifference": -19464431,
+    "missingSecurities": 40
+  }
+}

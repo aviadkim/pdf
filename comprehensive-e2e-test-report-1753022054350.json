@@ -1,0 +1,90 @@
+{
+  "timestamp": "2025-07-20T14:34:14.347Z",
+  "testSuite": "Comprehensive End-to-End PDF Processing Workflow",
+  "baseUrl": "https://pdf-fzzi.onrender.com",
+  "results": {
+    "mistralOCR": {
+      "endpointAccessibility": false,
+      "apiConfiguration": false,
+      "pdfUploadFunctionality": false,
+      "textExtraction": false,
+      "structuredDataExtraction": false,
+      "accuracyMetrics": true,
+      "errors": [
+        "Endpoint returns 404 - not properly registered",
+        "System capabilities error: Unexpected token 'C', \"\nCannot GET\"... is not valid JSON",
+        "PDF upload interface missing components",
+        "Unexpected POST response: 404"
+      ]
+    },
+    "annotationSystem": {
+      "interfaceAccessibility": true,
+      "fileUploadForms": false,
+      "interactiveElements": true,
+      "feedbackMechanism": true,
+      "visualAnnotationTools": true,
+      "errors": [
+        "File upload forms missing or incomplete"
+      ]
+    },
+    "learningSystem": {
+      "annotationCapture": true,
+      "annotationStorage": false,
+      "learningFromCorrections": true,
+      "feedbackLoop": false,
+      "improvementMetrics": true,
+      "errors": []
+    },
+    "completeWorkflow": {
+      "fullPipeline": true,
+      "errorHandling": true,
+      "differentPDFTypes": false,
+      "accuracyProgression": true,
+      "performanceMetrics": {
+        "pipelineTime": 1504
+      },
+      "errors": []
+    },
+    "performance": {
+      "loadTimes": {
+        "homepage": 936,
+        "annotation": 1008
+      },
+      "networkRequests": {},
+      "memoryUsage": {
+        "JSHeapUsedSize": 1.43,
+        "JSHeapTotalSize": 2.13
+      },
+      "errors": []
+    },
+    "screenshots": [],
+    "summary": {}
+  },
+  "summary": {
+    "mistralOCR": {
+      "passed": 1,
+      "total": 6,
+      "percentage": 17
+    },
+    "annotationSystem": {
+      "passed": 4,
+      "total": 5,
+      "percentage": 80
+    },
+    "learningSystem": {
+      "passed": 3,
+      "total": 5,
+      "percentage": 60
+    },
+    "completeWorkflow": {
+      "passed": 3,
+      "total": 4,
+      "percentage": 75
+    },
+    "overall": {
+      "passed": 11,
+      "total": 20,
+      "percentage": 55
+    }
+  }
+}

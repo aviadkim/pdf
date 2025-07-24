@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-07-20T14:36:53.105Z",
+  "testType": "Focused Annotation System Test",
+  "baseUrl": "https://pdf-fzzi.onrender.com",
+  "results": {
+    "interface": {
+      "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+      "loaded": true,
+      "contentAnalysis": {
+        "hasAnnotationContent": true,
+        "hasOCRContent": true,
+        "hasSmartContent": true,
+        "hasFinancialContent": true
+      }
+    },
+    "functionality": {
+      "elements": {
+        "fileInputs": 1,
+        "buttons": 8,
+        "forms": 0,
+        "links": 0
+      },
+      "fileInput": {
+        "visible": false,
+        "enabled": true,
+        "accept": ".pdf",
+        "name": null
+      },
+      "buttons": [
+        {
+          "text": "📋 Headers",
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "text": "📊 Data Rows",
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "text": "🔗 Connect",
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "text": "✨ Highlight",
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "text": "✏️ Correct",
+          "visible": true,
+          "enabled": true
+        }
+      ]
+    },
+    "userExperience": {
+      "design": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+        "fontSize": "16px"
+      },
+      "performance": {
+        "domContentLoaded": 1.7000000476837158,
+        "loadComplete": 0,
+        "totalLoadTime": 188.5
+      }
+    },
+    "screenshots": [
+      {
+        "name": "interface-loaded",
+        "description": "Annotation interface fully loaded",
+        "filename": "annotation-test-interface-loaded-1753022179722.png",
+        "timestamp": "2025-07-20T14:36:19.722Z"
+      },
+      {
+        "name": "responsive-desktop",
+        "description": "Desktop viewport test",
+        "filename": "annotation-test-responsive-desktop-1753022210802.png",
+        "timestamp": "2025-07-20T14:36:50.802Z"
+      },
+      {
+        "name": "responsive-tablet",
+        "description": "Tablet viewport test",
+        "filename": "annotation-test-responsive-tablet-1753022211764.png",
+        "timestamp": "2025-07-20T14:36:51.764Z"
+      },
+      {
+        "name": "responsive-mobile",
+        "description": "Mobile viewport test",
+        "filename": "annotation-test-responsive-mobile-1753022212592.png",
+        "timestamp": "2025-07-20T14:36:52.592Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,779 @@
+{
+  "success": true,
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "price": null,
+      "factor": null,
+      "marketValue": 97700,
+      "originalLine": "100.000097.700097'700",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2530201644",
+      "price": null,
+      "factor": null,
+      "marketValue": 199080,
+      "originalLine": "100.200099.1991199'080",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2588105036",
+      "price": null,
+      "factor": null,
+      "marketValue": 1500000,
+      "originalLine": "USD1'500'000",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2692298537",
+      "price": null,
+      "factor": null,
+      "marketValue": 737748,
+      "originalLine": "100.1000106.9200737'748",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2754416860",
+      "price": 100,
+      "factor": 200097,
+      "marketValue": 14009202,
+      "originalLine": "100.200097.140098'202",
+      "method": "pattern_1_separation"
+    },
+    {
+      "isin": "XS2761230684",
+      "price": null,
+      "factor": null,
+      "marketValue": 102506,
+      "originalLine": "100.2000102.2448102'506",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2736388732",
+      "price": null,
+      "factor": null,
+      "marketValue": 256958,
+      "originalLine": "100.200099.2500256'958",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2824054402",
+      "price": null,
+      "factor": null,
+      "marketValue": 478158,
+      "originalLine": "100.2000103.9900478'158",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2567543397",
+      "price": null,
+      "factor": null,
+      "marketValue": 2450000,
+      "originalLine": "USD2'450'000",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2567543397",
+      "price": 100,
+      "factor": 1000100,
+      "marketValue": 5200570,
+      "originalLine": "100.1000100.52002'570'405",
+      "method": "pattern_1_separation"
+    },
+    {
+      "isin": "XS2110079584",
+      "price": null,
+      "factor": null,
+      "marketValue": 1100000,
+      "originalLine": "USD1'100'000",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2110079584",
+      "price": 100,
+      "factor": 1000100,
+      "marketValue": 1000101,
+      "originalLine": "100.1000100.10001'101'100",
+      "method": "pattern_1_separation"
+    },
+    {
+      "isin": "XS2829712830",
+      "price": 99,
+      "factor": 999692,
+      "marketValue": 32009320,
+      "originalLine": "99.999692.320092'320",
+      "method": "pattern_1_separation"
+    },
+    {
+      "isin": "XS2912278723",
+      "price": null,
+      "factor": null,
+      "marketValue": 199131,
+      "originalLine": "100.200099.5654199'131",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2953741100",
+      "price": null,
+      "factor": null,
+      "marketValue": 146625,
+      "originalLine": "99.198097.7500146'625",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2381717250",
+      "price": null,
+      "factor": null,
+      "marketValue": 505500,
+      "originalLine": "100.2000101.1000505'500",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2481066111",
+      "price": 100,
+      "factor": 100099,
+      "marketValue": 4500,
+      "originalLine": "100.100099.000049'500",
+      "method": "pattern_1_separation"
+    },
+    {
+      "isin": "XS2964611052",
+      "price": null,
+      "factor": null,
+      "marketValue": 1470000,
+      "originalLine": "USD1'470'000",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2964611052",
+      "price": 100,
+      "factor": 100,
+      "marketValue": 7200480,
+      "originalLine": "100.0000100.72001'480'584",
+      "method": "pattern_1_separation"
+    },
+    {
+      "isin": "XS0461497009",
+      "price": null,
+      "factor": null,
+      "marketValue": 711110,
+      "originalLine": "100.1000100.8900711'110",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2746319610",
+      "price": null,
+      "factor": null,
+      "marketValue": 192100,
+      "originalLine": "100.2000102.5000192'100",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "CH0244767585",
+      "price": null,
+      "factor": null,
+      "marketValue": 21496,
+      "originalLine": "221.564126.870021'496",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2315191069",
+      "price": 100,
+      "factor": 524199,
+      "marketValue": 50305,
+      "originalLine": "100.524199.0000502'305",
+      "method": "pattern_1_separation"
+    },
+    {
+      "isin": "XS2792098779",
+      "price": null,
+      "factor": null,
+      "marketValue": 1200000,
+      "originalLine": "USD1'200'000",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2792098779",
+      "price": 100,
+      "factor": 96,
+      "marketValue": 1930154,
+      "originalLine": "100.000096.19301'154'316",
+      "method": "pattern_1_separation"
+    },
+    {
+      "isin": "XS2105981117",
+      "price": null,
+      "factor": null,
+      "marketValue": 1600000,
+      "originalLine": "USD1'600'000",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2838389430",
+      "price": null,
+      "factor": null,
+      "marketValue": 1600000,
+      "originalLine": "USD1'600'000",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2838389430",
+      "price": 100,
+      "factor": 100097,
+      "marketValue": 800623,
+      "originalLine": "100.100097.08001'623'960",
+      "method": "pattern_1_separation"
+    },
+    {
+      "isin": "XS2594173093",
+      "price": null,
+      "factor": null,
+      "marketValue": 193464,
+      "originalLine": "99.059296.2100193'464",
+      "method": "swiss_format_direct"
+    },
+    {
+      "isin": "XS2407295554",
+      "price": null,
+      "factor": null,
+      "marketValue": 1000000,
+      "originalLine": "USD1'000'000",
+      "method": "swiss_format_direct"
+    }
+  ],
+  "totalValue": 77966831,
+  "accuracy": 24.96501493051577,
+  "method": "visual_table_analysis",
+  "textAnalysis": {
+    "concatenatedLines": [
+      {
+        "isin": "XS2993414619",
+        "lineIndex": 254,
+        "content": "100.000097.700097'700",
+        "rawNumbers": [
+          "100.000097",
+          "700097'700",
+          "000097",
+          "700097"
+        ],
+        "possibleValues": [
+          100.000097,
+          700097700,
+          97,
+          700097,
+          7700,
+          70009
+        ]
+      },
+      {
+        "isin": "XS2530201644",
+        "lineIndex": 297,
+        "content": "100.200099.1991199'080",
+        "rawNumbers": [
+          "100.200099",
+          "1991199'080",
+          "200099",
+          "1991199"
+        ],
+        "possibleValues": [
+          100.200099,
+          1991199080,
+          200099,
+          1991199,
+          9080,
+          199119
+        ]
+      },
+      {
+        "isin": "XS2588105036",
+        "lineIndex": 315,
+        "content": "USD1'500'000",
+        "rawNumbers": [
+          "1'500"
+        ],
+        "possibleValues": [
+          1500
+        ]
+      },
+      {
+        "isin": "XS2692298537",
+        "lineIndex": 334,
+        "content": "100.1000106.9200737'748",
+        "rawNumbers": [
+          "100.100010",
+          "6.920073",
+          "9200737'748",
+          "1000106",
+          "9200737"
+        ],
+        "possibleValues": [
+          100.10001,
+          6.920073,
+          9200737748,
+          1000106,
+          9200737,
+          7748,
+          920073
+        ]
+      },
+      {
+        "isin": "XS2754416860",
+        "lineIndex": 345,
+        "content": "100.200097.140098'202",
+        "rawNumbers": [
+          "100.200097",
+          "140098'202",
+          "200097",
+          "140098"
+        ],
+        "possibleValues": [
+          100.200097,
+          140098202,
+          200097,
+          140098,
+          8202,
+          14009
+        ]
+      },
+      {
+        "isin": "XS2761230684",
+        "lineIndex": 357,
+        "content": "100.2000102.2448102'506",
+        "rawNumbers": [
+          "100.200010",
+          "2.244810",
+          "2448102'506",
+          "2000102",
+          "2448102"
+        ],
+        "possibleValues": [
+          100.20001,
+          2.24481,
+          2448102506,
+          2000102,
+          2448102,
+          2506,
+          244810
+        ]
+      },
+      {
+        "isin": "XS2736388732",
+        "lineIndex": 369,
+        "content": "100.200099.2500256'958",
+        "rawNumbers": [
+          "100.200099",
+          "2500256'958",
+          "200099",
+          "2500256"
+        ],
+        "possibleValues": [
+          100.200099,
+          2500256958,
+          200099,
+          2500256,
+          6958,
+          250025
+        ]
+      },
+      {
+        "isin": "XS2824054402",
+        "lineIndex": 422,
+        "content": "100.2000103.9900478'158",
+        "rawNumbers": [
+          "100.200010",
+          "3.990047",
+          "9900478'158",
+          "2000103",
+          "9900478"
+        ],
+        "possibleValues": [
+          100.20001,
+          3.990047,
+          9900478158,
+          2000103,
+          9900478,
+          8158,
+          990047
+        ]
+      },
+      {
+        "isin": "XS2567543397",
+        "lineIndex": 427,
+        "content": "USD2'450'000",
+        "rawNumbers": [
+          "2'450"
+        ],
+        "possibleValues": [
+          2450
+        ]
+      },
+      {
+        "isin": "XS2567543397",
+        "lineIndex": 434,
+        "content": "100.1000100.52002'570'405",
+        "rawNumbers": [
+          "100.100010",
+          "0.52002",
+          "52002'570",
+          "1000100",
+          "52002"
+        ],
+        "possibleValues": [
+          100.10001,
+          0.52002,
+          52002570,
+          1000100,
+          52002,
+          2570,
+          5200,
+          570405
+        ]
+      },
+      {
+        "isin": "XS2110079584",
+        "lineIndex": 439,
+        "content": "USD1'100'000",
+        "rawNumbers": [
+          "1'100"
+        ],
+        "possibleValues": [
+          1100
+        ]
+      },
+      {
+        "isin": "XS2110079584",
+        "lineIndex": 445,
+        "content": "100.1000100.10001'101'100",
+        "rawNumbers": [
+          "100.100010",
+          "0.10001",
+          "10001'101",
+          "1000100",
+          "10001"
+        ],
+        "possibleValues": [
+          100.10001,
+          0.10001,
+          10001101,
+          1000100,
+          10001,
+          1101,
+          101100
+        ]
+      },
+      {
+        "isin": "XS2829712830",
+        "lineIndex": 466,
+        "content": "99.999692.320092'320",
+        "rawNumbers": [
+          "99.999692",
+          "320092'320",
+          "999692",
+          "320092"
+        ],
+        "possibleValues": [
+          99.999692,
+          320092320,
+          999692,
+          320092,
+          2320,
+          32009
+        ]
+      },
+      {
+        "isin": "XS2912278723",
+        "lineIndex": 476,
+        "content": "100.200099.5654199'131",
+        "rawNumbers": [
+          "100.200099",
+          "5654199'131",
+          "200099",
+          "5654199"
+        ],
+        "possibleValues": [
+          100.200099,
+          5654199131,
+          200099,
+          5654199,
+          9131,
+          565419
+        ]
+      },
+      {
+        "isin": "XS2953741100",
+        "lineIndex": 537,
+        "content": "99.198097.7500146'625",
+        "rawNumbers": [
+          "99.198097",
+          "7500146'625",
+          "198097",
+          "7500146"
+        ],
+        "possibleValues": [
+          99.198097,
+          7500146625,
+          198097,
+          7500146,
+          6625,
+          750014
+        ]
+      },
+      {
+        "isin": "XS2381717250",
+        "lineIndex": 547,
+        "content": "100.2000101.1000505'500",
+        "rawNumbers": [
+          "100.200010",
+          "1.100050",
+          "1000505'500",
+          "2000101",
+          "1000505"
+        ],
+        "possibleValues": [
+          100.20001,
+          1.10005,
+          1000505500,
+          2000101,
+          1000505,
+          5500,
+          100050
+        ]
+      },
+      {
+        "isin": "XS2481066111",
+        "lineIndex": 557,
+        "content": "100.100099.000049'500",
+        "rawNumbers": [
+          "100.100099",
+          "000049'500",
+          "100099",
+          "000049"
+        ],
+        "possibleValues": [
+          100.100099,
+          49500,
+          100099,
+          49,
+          9500
+        ]
+      },
+      {
+        "isin": "XS2964611052",
+        "lineIndex": 561,
+        "content": "USD1'470'000",
+        "rawNumbers": [
+          "1'470"
+        ],
+        "possibleValues": [
+          1470
+        ]
+      },
+      {
+        "isin": "XS2964611052",
+        "lineIndex": 567,
+        "content": "100.0000100.72001'480'584",
+        "rawNumbers": [
+          "100.000010",
+          "0.72001",
+          "72001'480",
+          "0000100",
+          "72001"
+        ],
+        "possibleValues": [
+          100.00001,
+          0.72001,
+          72001480,
+          100,
+          72001,
+          1480,
+          7200,
+          480584
+        ]
+      },
+      {
+        "isin": "XS0461497009",
+        "lineIndex": 643,
+        "content": "100.1000100.8900711'110",
+        "rawNumbers": [
+          "100.100010",
+          "0.890071",
+          "8900711'110",
+          "1000100",
+          "8900711"
+        ],
+        "possibleValues": [
+          100.10001,
+          0.890071,
+          8900711110,
+          1000100,
+          8900711,
+          1110,
+          890071
+        ]
+      },
+      {
+        "isin": "XS2746319610",
+        "lineIndex": 655,
+        "content": "100.2000102.5000192'100",
+        "rawNumbers": [
+          "100.200010",
+          "2.500019",
+          "5000192'100",
+          "2000102",
+          "5000192"
+        ],
+        "possibleValues": [
+          100.20001,
+          2.500019,
+          5000192100,
+          2000102,
+          5000192,
+          2100,
+          500019
+        ]
+      },
+      {
+        "isin": "CH0244767585",
+        "lineIndex": 701,
+        "content": "221.564126.870021'496",
+        "rawNumbers": [
+          "221.564126",
+          "870021'496",
+          "564126",
+          "870021"
+        ],
+        "possibleValues": [
+          221.564126,
+          870021496,
+          564126,
+          870021,
+          1496,
+          87002
+        ]
+      },
+      {
+        "isin": "XS2315191069",
+        "lineIndex": 758,
+        "content": "100.524199.0000502'305",
+        "rawNumbers": [
+          "100.524199",
+          "0000502'305",
+          "524199",
+          "0000502"
+        ],
+        "possibleValues": [
+          100.524199,
+          502305,
+          524199,
+          502,
+          2305
+        ]
+      },
+      {
+        "isin": "XS2792098779",
+        "lineIndex": 763,
+        "content": "USD1'200'000",
+        "rawNumbers": [
+          "1'200"
+        ],
+        "possibleValues": [
+          1200
+        ]
+      },
+      {
+        "isin": "XS2792098779",
+        "lineIndex": 769,
+        "content": "100.000096.19301'154'316",
+        "rawNumbers": [
+          "100.000096",
+          "19301'154",
+          "000096",
+          "19301"
+        ],
+        "possibleValues": [
+          100.000096,
+          19301154,
+          96,
+          19301,
+          1154,
+          1930,
+          154316
+        ]
+      },
+      {
+        "isin": "XS2105981117",
+        "lineIndex": 799,
+        "content": "USD1'600'000",
+        "rawNumbers": [
+          "1'600"
+        ],
+        "possibleValues": [
+          1600
+        ]
+      },
+      {
+        "isin": "XS2838389430",
+        "lineIndex": 799,
+        "content": "USD1'600'000",
+        "rawNumbers": [
+          "1'600"
+        ],
+        "possibleValues": [
+          1600
+        ]
+      },
+      {
+        "isin": "XS2838389430",
+        "lineIndex": 806,
+        "content": "100.100097.08001'623'960",
+        "rawNumbers": [
+          "100.100097",
+          "08001'623",
+          "100097",
+          "08001"
+        ],
+        "possibleValues": [
+          100.100097,
+          8001623,
+          100097,
+          8001,
+          1623,
+          623960
+        ]
+      },
+      {
+        "isin": "XS2594173093",
+        "lineIndex": 872,
+        "content": "99.059296.2100193'464",
+        "rawNumbers": [
+          "99.059296",
+          "2100193'464",
+          "059296",
+          "2100193"
+        ],
+        "possibleValues": [
+          99.059296,
+          2100193464,
+          59296,
+          2100193,
+          3464,
+          210019
+        ]
+      },
+      {
+        "isin": "XS2407295554",
+        "lineIndex": 891,
+        "content": "USD1'000'000",
+        "rawNumbers": [
+          "1'000"
+        ],
+        "possibleValues": [
+          1000
+        ]
+      }
+    ],
+    "totalLines": 1063,
+    "isinCount": 39
+  }
+}

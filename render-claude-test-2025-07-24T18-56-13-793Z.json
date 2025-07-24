@@ -1,0 +1,19 @@
+{
+  "deployment": {
+    "status": "healthy",
+    "version": "v4.6-smart-isin-extraction",
+    "timestamp": "2025-07-24T18:56:13.729Z",
+    "uptime": 8471.444428997
+  },
+  "claudeApiStatus": {
+    "success": true,
+    "model": "claude-3-5-sonnet-20241022",
+    "message": "Claude Vision API connected successfully"
+  },
+  "pageByPageAvailable": true,
+  "enhancedEndpointReady": "Smart processor (Claude if key available, text fallback)",
+  "accuracyTest": {
+    "status": "error",
+    "error": "Cannot find module 'form-data'\nRequire stack:\n- C:\\Users\\Aviad\\Desktop\\pdf-main\\test-render-claude-integration.js"
+  }
+}

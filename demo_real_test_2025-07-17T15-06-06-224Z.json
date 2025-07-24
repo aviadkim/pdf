@@ -1,0 +1,523 @@
+{
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "value": 366223,
+      "raw": "366223",
+      "confidence": 0.7999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -9,
+      "foundAt": {
+        "isinLine": 252,
+        "valueLine": 243
+      },
+      "reasoning": "reasonable market value range, not a round quantity number"
+    },
+    {
+      "isin": "XS2530201644",
+      "value": 200099,
+      "raw": "200099",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": 4,
+      "foundAt": {
+        "isinLine": 293,
+        "valueLine": 297
+      },
+      "reasoning": "reasonable market value range, appropriate distance (4 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2588105036",
+      "value": 200099,
+      "raw": "200099",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -5,
+      "foundAt": {
+        "isinLine": 311,
+        "valueLine": 306
+      },
+      "reasoning": "reasonable market value range, appropriate distance (5 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2665592833",
+      "value": 32000,
+      "raw": "32'000",
+      "confidence": 0.9999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -2,
+      "foundAt": {
+        "isinLine": 324,
+        "valueLine": 322
+      },
+      "reasoning": "reasonable market value range, Swiss number format, appropriate distance (2 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2692298537",
+      "value": 32000,
+      "raw": "32'000",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -9,
+      "foundAt": {
+        "isinLine": 331,
+        "valueLine": 322
+      },
+      "reasoning": "reasonable market value range, Swiss number format, not a round quantity number"
+    },
+    {
+      "isin": "XS2754416860",
+      "value": 1000106,
+      "raw": "1000106",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -7,
+      "foundAt": {
+        "isinLine": 341,
+        "valueLine": 334
+      },
+      "reasoning": "reasonable market value range, appropriate distance (7 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2761230684",
+      "value": 200097,
+      "raw": "200097",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -8,
+      "foundAt": {
+        "isinLine": 353,
+        "valueLine": 345
+      },
+      "reasoning": "reasonable market value range, appropriate distance (8 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2736388732",
+      "value": 2000102,
+      "raw": "2000102",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -8,
+      "foundAt": {
+        "isinLine": 365,
+        "valueLine": 357
+      },
+      "reasoning": "reasonable market value range, appropriate distance (8 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2782869916",
+      "value": 200097,
+      "raw": "200097",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -4,
+      "foundAt": {
+        "isinLine": 411,
+        "valueLine": 407
+      },
+      "reasoning": "reasonable market value range, appropriate distance (4 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2824054402",
+      "value": 20602,
+      "raw": "20'602",
+      "confidence": 0.9999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": 7,
+      "foundAt": {
+        "isinLine": 418,
+        "valueLine": 425
+      },
+      "reasoning": "reasonable market value range, Swiss number format, appropriate distance (7 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2567543397",
+      "value": 20602,
+      "raw": "20'602",
+      "confidence": 0.9999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -5,
+      "foundAt": {
+        "isinLine": 430,
+        "valueLine": 425
+      },
+      "reasoning": "reasonable market value range, Swiss number format, appropriate distance (5 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2110079584",
+      "value": 107665,
+      "raw": "107'665",
+      "confidence": 0.9999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -5,
+      "foundAt": {
+        "isinLine": 442,
+        "valueLine": 437
+      },
+      "reasoning": "reasonable market value range, Swiss number format, appropriate distance (5 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2848820754",
+      "value": 2000100,
+      "raw": "2000100",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -4,
+      "foundAt": {
+        "isinLine": 457,
+        "valueLine": 453
+      },
+      "reasoning": "reasonable market value range, appropriate distance (4 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2829712830",
+      "value": 999692,
+      "raw": "999692",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": 3,
+      "foundAt": {
+        "isinLine": 463,
+        "valueLine": 466
+      },
+      "reasoning": "reasonable market value range, appropriate distance (3 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2912278723",
+      "value": 999692,
+      "raw": "999692",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -7,
+      "foundAt": {
+        "isinLine": 473,
+        "valueLine": 466
+      },
+      "reasoning": "reasonable market value range, appropriate distance (7 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2381723902",
+      "value": 37954,
+      "raw": "37954",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -5,
+      "foundAt": {
+        "isinLine": 488,
+        "valueLine": 483
+      },
+      "reasoning": "reasonable market value range, appropriate distance (5 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2829752976",
+      "value": 679096,
+      "raw": "679096",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -4,
+      "foundAt": {
+        "isinLine": 528,
+        "valueLine": 524
+      },
+      "reasoning": "reasonable market value range, appropriate distance (4 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2953741100",
+      "value": 198097,
+      "raw": "198097",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": 3,
+      "foundAt": {
+        "isinLine": 534,
+        "valueLine": 537
+      },
+      "reasoning": "reasonable market value range, appropriate distance (3 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2381717250",
+      "value": 198097,
+      "raw": "198097",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -7,
+      "foundAt": {
+        "isinLine": 544,
+        "valueLine": 537
+      },
+      "reasoning": "reasonable market value range, appropriate distance (7 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2481066111",
+      "value": 49500,
+      "raw": "000049'500",
+      "confidence": 0.9999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": 3,
+      "foundAt": {
+        "isinLine": 554,
+        "valueLine": 557
+      },
+      "reasoning": "reasonable market value range, Swiss number format, appropriate distance (3 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2964611052",
+      "value": 49500,
+      "raw": "000049'500",
+      "confidence": 0.9999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -7,
+      "foundAt": {
+        "isinLine": 564,
+        "valueLine": 557
+      },
+      "reasoning": "reasonable market value range, Swiss number format, appropriate distance (7 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS3035947103",
+      "value": 800000,
+      "raw": "0000800'000",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -4,
+      "foundAt": {
+        "isinLine": 579,
+        "valueLine": 575
+      },
+      "reasoning": "reasonable market value range, Swiss number format, appropriate distance (4 lines)"
+    },
+    {
+      "isin": "LU2228214107",
+      "value": 530444,
+      "raw": "530444",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -4,
+      "foundAt": {
+        "isinLine": 590,
+        "valueLine": 586
+      },
+      "reasoning": "reasonable market value range, appropriate distance (4 lines), not a round quantity number"
+    },
+    {
+      "isin": "CH1269060229",
+      "value": 623797,
+      "raw": "623797",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -5,
+      "foundAt": {
+        "isinLine": 602,
+        "valueLine": 597
+      },
+      "reasoning": "reasonable market value range, appropriate distance (5 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS0461497009",
+      "value": 14969,
+      "raw": "14'969",
+      "confidence": 0.9999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": 7,
+      "foundAt": {
+        "isinLine": 639,
+        "valueLine": 646
+      },
+      "reasoning": "reasonable market value range, Swiss number format, appropriate distance (7 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2746319610",
+      "value": 14969,
+      "raw": "14'969",
+      "confidence": 0.9999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -5,
+      "foundAt": {
+        "isinLine": 651,
+        "valueLine": 646
+      },
+      "reasoning": "reasonable market value range, Swiss number format, appropriate distance (5 lines), not a round quantity number"
+    },
+    {
+      "isin": "CH0244767585",
+      "value": 564126,
+      "raw": "564126",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": 2,
+      "foundAt": {
+        "isinLine": 699,
+        "valueLine": 701
+      },
+      "reasoning": "reasonable market value range, appropriate distance (2 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2519369867",
+      "value": 728897,
+      "raw": "728897",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -5,
+      "foundAt": {
+        "isinLine": 748,
+        "valueLine": 743
+      },
+      "reasoning": "reasonable market value range, appropriate distance (5 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2315191069",
+      "value": 502305,
+      "raw": "0000502'305",
+      "confidence": 0.9999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": 4,
+      "foundAt": {
+        "isinLine": 754,
+        "valueLine": 758
+      },
+      "reasoning": "reasonable market value range, Swiss number format, appropriate distance (4 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2792098779",
+      "value": 502305,
+      "raw": "0000502'305",
+      "confidence": 0.9999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -8,
+      "foundAt": {
+        "isinLine": 766,
+        "valueLine": 758
+      },
+      "reasoning": "reasonable market value range, Swiss number format, appropriate distance (8 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2714429128",
+      "value": 20343,
+      "raw": "20'343",
+      "confidence": 0.9999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -2,
+      "foundAt": {
+        "isinLine": 782,
+        "valueLine": 780
+      },
+      "reasoning": "reasonable market value range, Swiss number format, appropriate distance (2 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2105981117",
+      "value": 20343,
+      "raw": "20'343",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -15,
+      "foundAt": {
+        "isinLine": 795,
+        "valueLine": 780
+      },
+      "reasoning": "reasonable market value range, Swiss number format, not a round quantity number"
+    },
+    {
+      "isin": "XS2838389430",
+      "value": 70680,
+      "raw": "70'680",
+      "confidence": 0.9999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": 7,
+      "foundAt": {
+        "isinLine": 802,
+        "valueLine": 809
+      },
+      "reasoning": "reasonable market value range, Swiss number format, appropriate distance (7 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2631782468",
+      "value": 70680,
+      "raw": "70'680",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -11,
+      "foundAt": {
+        "isinLine": 820,
+        "valueLine": 809
+      },
+      "reasoning": "reasonable market value range, Swiss number format, not a round quantity number"
+    },
+    {
+      "isin": "XS1700087403",
+      "value": 21798,
+      "raw": "021798",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -4,
+      "foundAt": {
+        "isinLine": 862,
+        "valueLine": 858
+      },
+      "reasoning": "reasonable market value range, appropriate distance (4 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2594173093",
+      "value": 59296,
+      "raw": "059296",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": 4,
+      "foundAt": {
+        "isinLine": 868,
+        "valueLine": 872
+      },
+      "reasoning": "reasonable market value range, appropriate distance (4 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2407295554",
+      "value": 5243100,
+      "raw": "5243100",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -5,
+      "foundAt": {
+        "isinLine": 886,
+        "valueLine": 881
+      },
+      "reasoning": "reasonable market value range, appropriate distance (5 lines), not a round quantity number"
+    },
+    {
+      "isin": "XS2252299883",
+      "value": 366498,
+      "raw": "366498",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -4,
+      "foundAt": {
+        "isinLine": 899,
+        "valueLine": 895
+      },
+      "reasoning": "reasonable market value range, appropriate distance (4 lines), not a round quantity number"
+    },
+    {
+      "isin": "XD0466760473",
+      "value": 3748128,
+      "raw": "3748128",
+      "confidence": 0.8999999999999999,
+      "method": "intelligent_pattern_matching",
+      "distance": -4,
+      "foundAt": {
+        "isinLine": 947,
+        "valueLine": 943
+      },
+      "reasoning": "reasonable market value range, appropriate distance (4 lines), not a round quantity number"
+    }
+  ],
+  "summary": {
+    "totalSecurities": 39,
+    "totalValue": 23494098,
+    "expectedTotal": 19464431,
+    "accuracy": 82.84817318800663,
+    "averageConfidence": 0.9282051282051279,
+    "confidenceDistribution": {
+      "high": 38,
+      "medium": 1,
+      "low": 0
+    }
+  }
+}

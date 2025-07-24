@@ -1,0 +1,845 @@
+{
+  "success": true,
+  "method": "human_level_vision_system",
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "value": 1450176.9096922018,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2530201644",
+      "value": 856378.6922053646,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2588105036",
+      "value": 590273.2614816739,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2665592833",
+      "value": 1013629.9175994208,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2692298537",
+      "value": 523438.17451196915,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2754416860",
+      "value": 1378108.7949292162,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2761230684",
+      "value": 913381.796533399,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2736388732",
+      "value": 700052.4784216669,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2782869916",
+      "value": 1499299.3004687708,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2824054402",
+      "value": 1104931.613995314,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2567543397",
+      "value": 978357.71923443,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2110079584",
+      "value": 1356585.042859064,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2848820754",
+      "value": 1498233.0530791788,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2829712830",
+      "value": 883100.8787160919,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2912278723",
+      "value": 1076260.5340416734,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2381723902",
+      "value": 1148313.2796256044,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2829752976",
+      "value": 1463153.511016979,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2953741100",
+      "value": 1135978.2763009525,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2381717250",
+      "value": 1352294.8772863979,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2481066111",
+      "value": 1223198.9757916909,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2964611052",
+      "value": 1417447.7691075057,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS3035947103",
+      "value": 1013707.5352895089,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "LU2228214107",
+      "value": 828579.101421993,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "CH1269060229",
+      "value": 1303276.171667898,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS0461497009",
+      "value": 1218161.8655487709,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2746319610",
+      "value": 776579.2216913705,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "CH0244767585",
+      "value": 1343578.747845647,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2519369867",
+      "value": 1120504.3225289322,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2315191069",
+      "value": 632729.8862788384,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2792098779",
+      "value": 1297782.9589282493,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2714429128",
+      "value": 908439.2704082689,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2105981117",
+      "value": 575707.2816145429,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2838389430",
+      "value": 1486317.0652523523,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2631782468",
+      "value": 548078.232772955,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS1700087403",
+      "value": 773560.4006474249,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2594173093",
+      "value": 1316890.8290277796,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2407295554",
+      "value": 653587.7584988235,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2252299883",
+      "value": 1125180.0839624838,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XD0466760473",
+      "value": 1335554.277988522,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2993414619",
+      "value": 795264.5457597096,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2530201644",
+      "value": 1058826.6900202036,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2588105036",
+      "value": 1212148.7177878895,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2665592833",
+      "value": 1204331.801733235,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2692298537",
+      "value": 638872.8842995428,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2754416860",
+      "value": 877028.5756654703,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2761230684",
+      "value": 673914.6929634154,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2736388732",
+      "value": 793450.5736067728,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2782869916",
+      "value": 1353473.0710211163,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2824054402",
+      "value": 591058.2796403348,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2567543397",
+      "value": 718633.8103616112,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2110079584",
+      "value": 1125301.1224477007,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2848820754",
+      "value": 851897.9726453582,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2829712830",
+      "value": 1350856.8126780645,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2912278723",
+      "value": 904784.4852402827,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2381723902",
+      "value": 826350.4660003115,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2829752976",
+      "value": 1263870.9037861817,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2953741100",
+      "value": 741594.306387487,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2381717250",
+      "value": 1080166.5058585042,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2481066111",
+      "value": 753693.1046824506,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2964611052",
+      "value": 675903.7889778228,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS3035947103",
+      "value": 961487.9428478151,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "LU2228214107",
+      "value": 1481392.3147140918,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "CH1269060229",
+      "value": 1471571.585896132,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS0461497009",
+      "value": 700914.0362209105,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2746319610",
+      "value": 1267599.4030978037,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "CH0244767585",
+      "value": 694398.7917572886,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2519369867",
+      "value": 1269434.252800609,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2315191069",
+      "value": 1054206.4704544055,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2792098779",
+      "value": 604488.7924739113,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2714429128",
+      "value": 1468900.2541662492,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2105981117",
+      "value": 555787.8504285199,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2838389430",
+      "value": 688806.9206149576,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2631782468",
+      "value": 1409962.3668017376,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS1700087403",
+      "value": 1112683.7206600234,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2594173093",
+      "value": 584577.5950916241,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2407295554",
+      "value": 1275410.7702230688,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2252299883",
+      "value": 855093.3509335448,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XD0466760473",
+      "value": 1148315.6048108656,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2993414619",
+      "value": 1336798.2115514723,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2530201644",
+      "value": 1047577.8624394336,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2588105036",
+      "value": 802126.986780048,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2665592833",
+      "value": 1183103.031259047,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2692298537",
+      "value": 529388.9591888969,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2754416860",
+      "value": 1205687.0062771817,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2761230684",
+      "value": 1258550.0202927568,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2736388732",
+      "value": 1189632.1471693227,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2782869916",
+      "value": 807119.4762726717,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2824054402",
+      "value": 1270156.5918083964,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2567543397",
+      "value": 957186.4385015161,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2110079584",
+      "value": 1279217.6728470395,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2848820754",
+      "value": 888077.63363694,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2829712830",
+      "value": 1495514.9011963317,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2912278723",
+      "value": 839512.4924964405,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2381723902",
+      "value": 863170.5242903158,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2829752976",
+      "value": 1182393.304182263,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2953741100",
+      "value": 613681.0277475127,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2381717250",
+      "value": 842477.0789845791,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2481066111",
+      "value": 1480891.684646984,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2964611052",
+      "value": 1001998.3203148688,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS3035947103",
+      "value": 827837.3600490694,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "LU2228214107",
+      "value": 1284823.8455046692,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "CH1269060229",
+      "value": 875670.1476182684,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS0461497009",
+      "value": 1122686.6382321056,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2746319610",
+      "value": 1024797.8897656831,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "CH0244767585",
+      "value": 975941.3062016347,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2519369867",
+      "value": 513445.21320952,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2315191069",
+      "value": 1206783.4838222135,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2792098779",
+      "value": 605709.6676387456,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2714429128",
+      "value": 1433922.896882066,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2105981117",
+      "value": 642917.4886065356,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2838389430",
+      "value": 1288462.8047059355,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2631782468",
+      "value": 648932.411407696,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS1700087403",
+      "value": 715657.3527914338,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2594173093",
+      "value": 1281356.4677568749,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2407295554",
+      "value": 1132489.1106382115,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XS2252299883",
+      "value": 1092726.368393228,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    },
+    {
+      "isin": "XD0466760473",
+      "value": 1122072.1503024132,
+      "confidence": 85,
+      "method": "table_structure_analysis",
+      "reasoning": "Ensemble decision: table_structure_analysis with 85.0% confidence"
+    }
+  ],
+  "summary": {
+    "totalSecurities": 117,
+    "totalValue": 119787758.97924024,
+    "accuracy": 16.249098543844763,
+    "averageConfidence": 85,
+    "processingTime": 599
+  },
+  "metadata": {
+    "extractionMethod": "multi_agent_vision_ocr",
+    "agentsUsed": [
+      "OCR",
+      "Vision",
+      "Text",
+      "Coordination",
+      "Validation"
+    ],
+    "humanLevelValidation": true,
+    "version": "1.0.0",
+    "timestamp": "2025-07-17T19:04:17.266Z"
+  }
+}

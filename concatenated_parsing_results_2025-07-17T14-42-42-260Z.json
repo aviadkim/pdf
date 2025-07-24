@@ -1,0 +1,230 @@
+{
+  "success": true,
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "value": 700097,
+      "reasoning": "Parsed from concatenated line: \"100.000097.700097'700\" -> 100, 97, 700,097, 700,097,700 -> selected 700,097",
+      "isinLine": 252
+    },
+    {
+      "isin": "XS2530201644",
+      "value": 1991199,
+      "reasoning": "Parsed from concatenated line: \"100.200099.1991199'080\" -> 100, 200,099, 1,991,199, 1,991,199,080 -> selected 1,991,199",
+      "isinLine": 293
+    },
+    {
+      "isin": "XS2588105036",
+      "value": 1031,
+      "reasoning": "Swiss format number: 1'031 from line \"1'031\"",
+      "isinLine": 311
+    },
+    {
+      "isin": "XS2665592833",
+      "value": 32000,
+      "reasoning": "Swiss format number: 32'000 from line \"32'000\"",
+      "isinLine": 324
+    },
+    {
+      "isin": "XS2692298537",
+      "value": 9200737,
+      "reasoning": "Parsed from concatenated line: \"100.1000106.9200737'748\" -> 100, 1,000,106, 9,200,737, 9,200,737,748 -> selected 9,200,737",
+      "isinLine": 331
+    },
+    {
+      "isin": "XS2754416860",
+      "value": 200097,
+      "reasoning": "Parsed from concatenated line: \"100.200097.140098'202\" -> 100, 200,097, 140,098, 140,098,202 -> selected 200,097",
+      "isinLine": 341
+    },
+    {
+      "isin": "XS2761230684",
+      "value": 2448102,
+      "reasoning": "Parsed from concatenated line: \"100.2000102.2448102'506\" -> 100, 2,000,102, 2,448,102, 2,448,102,506 -> selected 2,448,102",
+      "isinLine": 353
+    },
+    {
+      "isin": "XS2736388732",
+      "value": 2500256,
+      "reasoning": "Parsed from concatenated line: \"100.200099.2500256'958\" -> 100, 200,099, 2,500,256, 2,500,256,958 -> selected 2,500,256",
+      "isinLine": 365
+    },
+    {
+      "isin": "XS2782869916",
+      "value": 440000,
+      "reasoning": "Swiss format number: 440'000 from line \"USD440'000\"",
+      "isinLine": 411
+    },
+    {
+      "isin": "XS2824054402",
+      "value": 9900478,
+      "reasoning": "Parsed from concatenated line: \"100.2000103.9900478'158\" -> 100, 2,000,103, 9,900,478, 9,900,478,158 -> selected 9,900,478",
+      "isinLine": 418
+    },
+    {
+      "isin": "XS2567543397",
+      "value": 1000100,
+      "reasoning": "Parsed from concatenated line: \"100.1000100.52002'570'405\" -> 100, 1,000,100, 52,002, 52,002,570 -> selected 1,000,100",
+      "isinLine": 430
+    },
+    {
+      "isin": "XS2110079584",
+      "value": 1000100,
+      "reasoning": "Parsed from concatenated line: \"100.1000100.10001'101'100\" -> 100, 1,000,100, 10,001, 10,001,101 -> selected 1,000,100",
+      "isinLine": 442
+    },
+    {
+      "isin": "XS2848820754",
+      "value": 100000,
+      "reasoning": "Swiss format number: 100'000 from line \"USD100'000\"",
+      "isinLine": 457
+    },
+    {
+      "isin": "XS2829712830",
+      "value": 999692,
+      "reasoning": "Parsed from concatenated line: \"99.999692.320092'320\" -> 99, 999,692, 320,092, 320,092,320 -> selected 999,692",
+      "isinLine": 463
+    },
+    {
+      "isin": "XS2912278723",
+      "value": 5654199,
+      "reasoning": "Parsed from concatenated line: \"100.200099.5654199'131\" -> 100, 200,099, 5,654,199, 5,654,199,131 -> selected 5,654,199",
+      "isinLine": 473
+    },
+    {
+      "isin": "XS2829752976",
+      "value": 150000,
+      "reasoning": "Swiss format number: 150'000 from line \"USD150'000\"",
+      "isinLine": 528
+    },
+    {
+      "isin": "XS2953741100",
+      "value": 7500146,
+      "reasoning": "Parsed from concatenated line: \"99.198097.7500146'625\" -> 99, 198,097, 7,500,146, 7,500,146,625 -> selected 7,500,146",
+      "isinLine": 534
+    },
+    {
+      "isin": "XS2381717250",
+      "value": 2000101,
+      "reasoning": "Parsed from concatenated line: \"100.2000101.1000505'500\" -> 100, 2,000,101, 1,000,505, 1,000,505,500 -> selected 2,000,101",
+      "isinLine": 544
+    },
+    {
+      "isin": "XS2481066111",
+      "value": 100099,
+      "reasoning": "Parsed from concatenated line: \"100.100099.000049'500\" -> 100, 100,099, 49, 49,500 -> selected 100,099",
+      "isinLine": 554
+    },
+    {
+      "isin": "XS2964611052",
+      "value": 72001,
+      "reasoning": "Parsed from concatenated line: \"100.0000100.72001'480'584\" -> 100, 100, 72,001, 72,001,480 -> selected 72,001",
+      "isinLine": 564
+    },
+    {
+      "isin": "XS3035947103",
+      "value": 2581,
+      "reasoning": "Swiss format number: 2'581 from line \"USD2'581.79\"",
+      "isinLine": 579
+    },
+    {
+      "isin": "LU2228214107",
+      "value": 350000,
+      "reasoning": "Swiss format number: 350'000 from line \"USD350'000\"",
+      "isinLine": 590
+    },
+    {
+      "isin": "CH1269060229",
+      "value": 1043,
+      "reasoning": "Swiss format number: 1'043 from line \"1'043\"",
+      "isinLine": 602
+    },
+    {
+      "isin": "XS0461497009",
+      "value": 8900711,
+      "reasoning": "Parsed from concatenated line: \"100.1000100.8900711'110\" -> 100, 1,000,100, 8,900,711, 8,900,711,110 -> selected 8,900,711",
+      "isinLine": 639
+    },
+    {
+      "isin": "XS2746319610",
+      "value": 5000192,
+      "reasoning": "Parsed from concatenated line: \"100.2000102.5000192'100\" -> 100, 2,000,102, 5,000,192, 5,000,192,100 -> selected 5,000,192",
+      "isinLine": 651
+    },
+    {
+      "isin": "CH0244767585",
+      "value": 870021,
+      "reasoning": "Parsed from concatenated line: \"221.564126.870021'496\" -> 221, 564,126, 870,021, 870,021,496 -> selected 870,021",
+      "isinLine": 699
+    },
+    {
+      "isin": "XS2519369867",
+      "value": 500000,
+      "reasoning": "Swiss format number: 500'000 from line \"USD500'000\"",
+      "isinLine": 748
+    },
+    {
+      "isin": "XS2315191069",
+      "value": 524199,
+      "reasoning": "Parsed from concatenated line: \"100.524199.0000502'305\" -> 100, 524,199, 502, 502,305 -> selected 524,199",
+      "isinLine": 754
+    },
+    {
+      "isin": "XS2792098779",
+      "value": 19301,
+      "reasoning": "Parsed from concatenated line: \"100.000096.19301'154'316\" -> 100, 96, 19,301, 19,301,154 -> selected 19,301",
+      "isinLine": 766
+    },
+    {
+      "isin": "XS2714429128",
+      "value": 20343,
+      "reasoning": "Swiss format number: 20'343 from line \"20'343\"",
+      "isinLine": 782
+    },
+    {
+      "isin": "XS2105981117",
+      "value": 1600000,
+      "reasoning": "Swiss format number: 1'600'000 from line \"USD1'600'000\"",
+      "isinLine": 795
+    },
+    {
+      "isin": "XS2838389430",
+      "value": 8001623,
+      "reasoning": "Parsed from concatenated line: \"100.100097.08001'623'960\" -> 100, 100,097, 8,001, 8,001,623 -> selected 8,001,623",
+      "isinLine": 802
+    },
+    {
+      "isin": "XS2631782468",
+      "value": 1416,
+      "reasoning": "Swiss format number: 1'416 from line \"1'416\"",
+      "isinLine": 820
+    },
+    {
+      "isin": "XS1700087403",
+      "value": 200000,
+      "reasoning": "Swiss format number: 200'000 from line \"USD200'000\"",
+      "isinLine": 862
+    },
+    {
+      "isin": "XS2594173093",
+      "value": 2100193,
+      "reasoning": "Parsed from concatenated line: \"99.059296.2100193'464\" -> 99, 59,296, 2,100,193, 2,100,193,464 -> selected 2,100,193",
+      "isinLine": 868
+    },
+    {
+      "isin": "XS2407295554",
+      "value": 6514,
+      "reasoning": "Swiss format number: 6'514 from line \"6'514\"",
+      "isinLine": 886
+    },
+    {
+      "isin": "XD0466760473",
+      "value": 26129,
+      "reasoning": "Swiss format number: 26'129 from line \"Total Other assets26'129USD0.13%\"",
+      "isinLine": 947
+    }
+  ],
+  "totalValue": 74114701,
+  "accuracy": 26.2625777846692,
+  "method": "concatenated_parsing"
+}

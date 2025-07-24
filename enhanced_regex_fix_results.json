@@ -1,0 +1,293 @@
+{
+  "success": true,
+  "method": "enhanced_regex_fixed",
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "name": "Switzerland",
+      "marketValue": 8490,
+      "extractionMethod": "enhanced_regex",
+      "context": "Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf T..."
+    },
+    {
+      "isin": "XS2530201644",
+      "name": "corner.ch",
+      "marketValue": 6901,
+      "extractionMethod": "enhanced_regex",
+      "context": " info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Sw..."
+    },
+    {
+      "isin": "XS2588105036",
+      "name": "Ordinary Bonds",
+      "marketValue": 32000,
+      "extractionMethod": "enhanced_regex",
+      "context": "riptionPerf YTD\nNominal/\nQuantity\nBonds, Bond funds, Convertible bonds, Interest options\nUSD200'000\n..."
+    },
+    {
+      "isin": "XS2665592833",
+      "name": "Ordinary Bonds",
+      "marketValue": 32000,
+      "extractionMethod": "enhanced_regex",
+      "context": ".200099.1991199'080\n-1.00%\n28.03.2025\n682\nTORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN\nUSD200'0..."
+    },
+    {
+      "isin": "XS2692298537",
+      "name": "Ordinary Bonds",
+      "marketValue": 2030,
+      "extractionMethod": "enhanced_regex",
+      "context": "'031\nCANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28\nISIN: XS2588105036  //  Valorn.: 112286204..."
+    },
+    {
+      "isin": "XS2754416860",
+      "name": "Ordinary Bonds",
+      "marketValue": 25000,
+      "extractionMethod": "enhanced_regex",
+      "context": "\n7.75%\nSE.195\n99.099098.37001'507'550\n-0.74%\n31.03.2025\n32'000\nHARP ISSUER (4% MIN/5,5% MAX) NOTES 2..."
+    },
+    {
+      "isin": "XS2761230684",
+      "name": "Ordinary Bonds",
+      "marketValue": 2031,
+      "extractionMethod": "enhanced_regex",
+      "context": "000\n2.26%\n3.79%\nISIN: XS2692298537  //  Valorn.: 129157183\nOrdinary Bonds  //  Maturity: 07.11.2029\n..."
+    },
+    {
+      "isin": "XS2736388732",
+      "name": "Ordinary Bonds",
+      "marketValue": 2031,
+      "extractionMethod": "enhanced_regex",
+      "context": "orn.: 132648671\nOrdinary Bonds  //  Maturity: 17.01.2030\nCoupon: 17.1  //  Annual  5.238%  //  Days:..."
+    },
+    {
+      "isin": "XS2782869916",
+      "name": "Switzerland",
+      "marketValue": 6901,
+      "extractionMethod": "enhanced_regex",
+      "context": "Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPe..."
+    },
+    {
+      "isin": "XS2824054402",
+      "name": "Ordinary Bonds",
+      "marketValue": 20602,
+      "extractionMethod": "enhanced_regex",
+      "context": "rice currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acqu..."
+    },
+    {
+      "isin": "XS2567543397",
+      "name": "Ordinary Bonds",
+      "marketValue": 20602,
+      "extractionMethod": "enhanced_regex",
+      "context": "05.34\n100.200097.334048'667\n-2.86%\n31.03.2025\nCITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-\nISIN..."
+    },
+    {
+      "isin": "XS2110079584",
+      "name": "Ordinary Bonds",
+      "marketValue": 10001,
+      "extractionMethod": "enhanced_regex",
+      "context": "5337661\nOrdinary Bonds  //  Callable: 29.05.2026\nCoupon: 29.5  //  Annual  5.6%  //  Days: 301  //  ..."
+    },
+    {
+      "isin": "XS2848820754",
+      "name": "Zero Bonds",
+      "marketValue": 2034,
+      "extractionMethod": "enhanced_regex",
+      "context": "\nCoupon: 18.6  //  Annual  5.61%  //  Days: 282  //  YTM: 5.53\nPRC: 5.00\n100.1000100.52002'570'405\n0..."
+    },
+    {
+      "isin": "XS2829712830",
+      "name": "Zero Bonds",
+      "marketValue": 2034,
+      "extractionMethod": "enhanced_regex",
+      "context": "25\n107'665\nGS 10Y CALLABLE NOTE 2024-18.06.2034\nUSD1'100'000\n1.50%\n5.66%\nISIN: XS2110079584  //  Val..."
+    },
+    {
+      "isin": "XS2912278723",
+      "name": "Zero Bonds",
+      "marketValue": 2034,
+      "extractionMethod": "enhanced_regex",
+      "context": "00%\n31.03.2025\nCITIGROUP 0% MTN 2024-09.07.34 REGS\nUSD90'000\n2.35%\n0.46%\nGLOBAL RE\n100.2000100.06009..."
+    },
+    {
+      "isin": "XS2381723902",
+      "name": "Ordinary Bonds",
+      "marketValue": 2034,
+      "extractionMethod": "enhanced_regex",
+      "context": " Valorn.: 134735316\nOrdinary Bonds  //  Maturity: 30.09.2034\nYTM: 5.64  //  PRC: 5.00\n99.999692.3200..."
+    },
+    {
+      "isin": "XS2829752976",
+      "name": "Switzerland",
+      "marketValue": 6901,
+      "extractionMethod": "enhanced_regex",
+      "context": "_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nP..."
+    },
+    {
+      "isin": "XS2953741100",
+      "name": "Ordinary Bonds",
+      "marketValue": 2035,
+      "extractionMethod": "enhanced_regex",
+      "context": "on in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAvera..."
+    },
+    {
+      "isin": "XS2381717250",
+      "name": "Ordinary Bonds",
+      "marketValue": 2035,
+      "extractionMethod": "enhanced_regex",
+      "context": "ble bonds, Interest options\nUSD250'000\n0.73%\n1.24%\n18.11.2034\n99.679096.8300242'075\n-2.86%\n27.03.202..."
+    },
+    {
+      "isin": "XS2481066111",
+      "name": "inary Bonds",
+      "marketValue": 2035,
+      "extractionMethod": "enhanced_regex",
+      "context": "inary Bonds  //  Maturity: 18.11.2034\nYTM: 5.65  //  PRC: 5.00\nUSD150'000\n1.90%\n0.75%\nISIN: XS295374..."
+    },
+    {
+      "isin": "XS2964611052",
+      "name": "Zero Bonds",
+      "marketValue": 2035,
+      "extractionMethod": "enhanced_regex",
+      "context": "-1.46%\n27.03.2025\nBANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S\nUSD500'000\n3.70%\n2.60%\nISIN: XS23817..."
+    },
+    {
+      "isin": "XS3035947103",
+      "name": "Zero Bonds",
+      "marketValue": 2035,
+      "extractionMethod": "enhanced_regex",
+      "context": "l  orn.: 126294402\nZero Bonds  //  Maturity: 03.02.2035\nYTM: 0.10  //  PRC: 5.00\n100.100099.000049'5..."
+    },
+    {
+      "isin": "LU2228214107",
+      "name": "Zero Bonds",
+      "marketValue": 2036,
+      "extractionMethod": "enhanced_regex",
+      "context": " 141235167\nZero Bonds  //  Maturity: 14.02.2035\nYTM: 5.41  //  PRC: 5.00\n100.0000100.72001'480'584\n0..."
+    },
+    {
+      "isin": "CH1269060229",
+      "name": "Ordinary Bonds",
+      "marketValue": 2581,
+      "extractionMethod": "enhanced_regex",
+      "context": ".00%\n28.03.2025\nWELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36\nISIN: XS3035947103  //  Valorn...."
+    },
+    {
+      "isin": "XS0461497009",
+      "name": "corner.ch",
+      "marketValue": 48600,
+      "extractionMethod": "enhanced_regex",
+      "context": " info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Sw..."
+    },
+    {
+      "isin": "XS2746319610",
+      "name": "Ordinary Bonds",
+      "marketValue": 14969,
+      "extractionMethod": "enhanced_regex",
+      "context": "cy\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition pri..."
+    },
+    {
+      "isin": "CH0244767585",
+      "name": "corner.ch",
+      "marketValue": 21810,
+      "extractionMethod": "enhanced_regex",
+      "context": "1029// info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zür..."
+    },
+    {
+      "isin": "XS2519369867",
+      "name": "Switzerland",
+      "marketValue": 6901,
+      "extractionMethod": "enhanced_regex",
+      "context": "40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof ass..."
+    },
+    {
+      "isin": "XS2315191069",
+      "name": "Other convertible bonds",
+      "marketValue": 154316,
+      "extractionMethod": "enhanced_regex",
+      "context": "y\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice D..."
+    },
+    {
+      "isin": "XS2792098779",
+      "name": "Other convertible bonds",
+      "marketValue": 19301,
+      "extractionMethod": "enhanced_regex",
+      "context": "00.728897.9853196'221\n-2.72%\n28.02.2025\n250\nBCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%\nISIN:..."
+    },
+    {
+      "isin": "XS2714429128",
+      "name": "Structured Bonds",
+      "marketValue": 7305,
+      "extractionMethod": "enhanced_regex",
+      "context": "y: 08.01.2029\nDays: 82  //  PRC: 5.0 0\nPrice to be verified\n100.524199.0000502'305\n-1.52%\n31.03.2025..."
+    },
+    {
+      "isin": "XS2105981117",
+      "name": "REG-S VRN",
+      "marketValue": 19301,
+      "extractionMethod": "enhanced_regex",
+      "context": "urity: 02.12.2034  //  PRC: 5.00\nPrice to be verified\n100.000096.19301'154'316\n-3.81%\n31.03.2025\nCIT..."
+    },
+    {
+      "isin": "XS2838389430",
+      "name": "REG-S VRN",
+      "marketValue": 4625,
+      "extractionMethod": "enhanced_regex",
+      "context": "064\n-1.35%\n27.03.2025\n20'343\nEMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN\nISIN: XS2714429128  /..."
+    },
+    {
+      "isin": "XS2631782468",
+      "name": "Structured Bonds",
+      "marketValue": 8001,
+      "extractionMethod": "enhanced_regex",
+      "context": " //  Val  orn.: 114118068\nStructured Bonds  //  Maturity: 20.12.2028\nDays: 10  //  PRC: 4.0 0\nPrice ..."
+    },
+    {
+      "isin": "XS1700087403",
+      "name": "Switzerland",
+      "marketValue": 6901,
+      "extractionMethod": "enhanced_regex",
+      "context": "stfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\n..."
+    },
+    {
+      "isin": "XS2594173093",
+      "name": "Structured Bonds",
+      "marketValue": 6514,
+      "extractionMethod": "enhanced_regex",
+      "context": "rrency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPr..."
+    },
+    {
+      "isin": "XS2407295554",
+      "name": "Structured Bonds",
+      "marketValue": 6514,
+      "extractionMethod": "enhanced_regex",
+      "context": "00087403  //  Valorn.: 39877135\nStructured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00\nPrice to b..."
+    },
+    {
+      "isin": "XS2252299883",
+      "name": "VRN ON",
+      "marketValue": 6514,
+      "extractionMethod": "enhanced_regex",
+      "context": "'464\n-2.88%\n31.03.2025\n1'044\nNOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029\nUSD500'000\n4.36%\n2.62..."
+    },
+    {
+      "isin": "XD0466760473",
+      "name": "Switzerland",
+      "marketValue": 21810,
+      "extractionMethod": "enhanced_regex",
+      "context": "ach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin ..."
+    },
+    {
+      "isin": "CH1908490000",
+      "name": "corner.ch",
+      "marketValue": 6901,
+      "extractionMethod": "enhanced_regex",
+      "context": "1029// info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zür..."
+    }
+  ],
+  "analysis": {
+    "total_securities": 40,
+    "securities_with_values": 40,
+    "total_value": 558701,
+    "target_total": 19464431,
+    "accuracy": 2.8703690336491214
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "recommendation": {
+    "primary_approach": "OPTIMIZE_CURRENT_SYSTEM",
+    "confidence": "HIGH",
+    "expected_accuracy_gain": "3-5%",
+    "implementation_timeline": "3-5 days",
+    "risk_level": "LOW",
+    "action_plan": {
+      "immediate": [
+        "Analyze the 5 missing ISINs in current extraction",
+        "Debug XS2746319610 value extraction issue",
+        "Test section boundary detection improvements",
+        "Add enhanced proximity-based value matching"
+      ],
+      "short_term": [
+        "Implement currency conversion handling",
+        "Add multi-page table continuation logic",
+        "Enhance known corrections database",
+        "Create accuracy monitoring dashboard"
+      ],
+      "long_term": [
+        "Consider Claude Vision API integration",
+        "Implement machine learning for pattern recognition",
+        "Add support for multiple bank formats",
+        "Build automated accuracy validation"
+      ]
+    },
+    "technical_improvements": [
+      {
+        "target": "Missing ISINs",
+        "current_issue": "5 ISINs not found by current system",
+        "solution": "Improve ISIN detection patterns, check document sections",
+        "expected_gain": "2%"
+      },
+      {
+        "target": "Value Alignment",
+        "current_issue": "XS2746319610 extracts $12M instead of $140K",
+        "solution": "Better column alignment and context analysis",
+        "expected_gain": "1.5%"
+      },
+      {
+        "target": "Section Detection",
+        "current_issue": "Portfolio vs summary section confusion",
+        "solution": "Enhanced boundary detection algorithms",
+        "expected_gain": "1%"
+      },
+      {
+        "target": "Swiss Format",
+        "current_issue": "Apostrophe separator edge cases",
+        "solution": "Improved Swiss number format parsing",
+        "expected_gain": "0.5%"
+      }
+    ],
+    "alternative_consideration": {
+      "approach": "UNSTRUCTURED_IO_RETRY",
+      "condition": "If accuracy target >97% is required",
+      "requirements": [
+        "Resolve Windows compatibility issues",
+        "Python environment standardization",
+        "Performance optimization",
+        "Cost-benefit analysis for API usage"
+      ],
+      "timeline": "2-3 weeks",
+      "risk": "MEDIUM-HIGH"
+    },
+    "success_metrics": {
+      "target_accuracy": "95-97%",
+      "target_securities": "40 (complete list)",
+      "target_gap": "<CHF 1,000,000",
+      "processing_time": "<2 seconds",
+      "reliability": ">99%"
+    }
+  },
+  "implementation_guide": {
+    "phase_1": {
+      "title": "Missing ISIN Analysis (Day 1-2)",
+      "description": "Identify why 5 ISINs are not found",
+      "steps": [
+        "Review current ISIN detection regex patterns",
+        "Check if missing ISINs are in different document sections",
+        "Analyze text around missing ISINs for pattern differences",
+        "Test expanded ISIN detection rules"
+      ],
+      "expected_outcome": "Find 2-3 additional ISINs"
+    },
+    "phase_2": {
+      "title": "Value Alignment Fix (Day 2-3)",
+      "description": "Fix XS2746319610 and similar misalignment issues",
+      "steps": [
+        "Debug specific line extraction for XS2746319610",
+        "Implement better column detection algorithms",
+        "Add context-aware value selection",
+        "Test with known problematic securities"
+      ],
+      "expected_outcome": "Correct major value misalignments"
+    },
+    "phase_3": {
+      "title": "Enhanced Validation (Day 4-5)",
+      "description": "Improve accuracy validation and error detection",
+      "steps": [
+        "Add real-time accuracy monitoring",
+        "Implement outlier detection for extracted values",
+        "Create automated accuracy reports",
+        "Add confidence scoring for extractions"
+      ],
+      "expected_outcome": "95%+ accuracy with monitoring"
+    }
+  },
+  "cost_benefit": {
+    "current_optimization": {
+      "development_cost": "20-30 hours",
+      "maintenance_cost": "Minimal (existing system)",
+      "infrastructure_cost": "$0 (no new dependencies)",
+      "expected_benefit": "CHF 1,000,000+ accuracy improvement",
+      "roi": "Very High",
+      "risk": "Very Low"
+    },
+    "unstructured_io": {
+      "development_cost": "80-120 hours",
+      "maintenance_cost": "High (Python deps, compatibility)",
+      "infrastructure_cost": "$500-2000/month (API costs)",
+      "expected_benefit": "CHF 1,500,000+ accuracy improvement",
+      "roi": "Medium",
+      "risk": "High (compatibility issues)"
+    },
+    "recommendation": "CURRENT_OPTIMIZATION",
+    "reasoning": [
+      "5x faster implementation time",
+      "No additional infrastructure costs",
+      "Proven reliability and compatibility",
+      "80% of potential benefit for 20% of effort",
+      "Maintainable by existing team"
+    ]
+  },
+  "generated_at": "2025-07-17T05:29:52.310Z"
+}

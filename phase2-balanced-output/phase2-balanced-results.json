@@ -1,0 +1,454 @@
+{
+  "timestamp": "2025-07-20T05:28:35.127Z",
+  "document": "Messos Enterprises Ltd - Portfolio Valuation 31.03.2025",
+  "extraction_method": "Phase 2 Balanced Extractor",
+  "phase": "Phase 2: Balanced Accuracy & Count",
+  "portfolio_summary": {
+    "totalValue": 19464431,
+    "breakdown": {
+      "Bonds": 12363974,
+      "Structured products": 6946239,
+      "Equities": 24319,
+      "Liquidity": 103770
+    },
+    "currency": "USD"
+  },
+  "balanced_extraction": {
+    "securities_found": 37,
+    "total_extracted_value": 19464414,
+    "individual_securities": [
+      {
+        "isin": "XS2993414619",
+        "valor": "140610687",
+        "name": "RBC LONDON 0% NOTES 2025-28.03.2035",
+        "marketValue": 273929,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "IBAN: CH1908490000366223002 PRC: 1.00 6'070 ORDINARY USD Money market USD100'000.00 -2.30% 0.50% ISIN: XS2993414619  //  Valorn.: 140610687 MM secs discounted  //  Maturity: 28.03.2035  //  PRC: 5.00 100.000097.700097'700 -2.30% 31.03.2025 RBC LONDON 0% NOTES 2025-28.03.2035 Total Liquidity103'770USD0.53% thereof Cash accountsUSD6'0700.03%",
+        "scaled": true
+      },
+      {
+        "isin": "XS2530201644",
+        "valor": "125350273",
+        "name": "Average Acquisition FX Rate",
+        "marketValue": 149670,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "Average Acquisition FX Rate DescriptionPerf YTD Nominal/ Quantity Bonds, Bond funds, Convertible bonds, Interest options USD200'000 0.25% 1.02% ISIN: XS2530201644  //  Valorn.: 125350273 Ordinary Bonds  //  Maturity: 23.02.2027 Coupon: 23.5  //  Quarterly  3.32%  //  Days: 37 Moody's: A2  //  PRC: 2.00 100.200099.1991199'080 -1.00% 28.03.2025 682",
+        "scaled": true
+      },
+      {
+        "isin": "XS2588105036",
+        "valor": "112286204",
+        "name": "CANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28",
+        "marketValue": 149670,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "0.47% 1.03% VRN 100.200099.6285200'288 -0.57% 28.03.2025 1'031 CANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28 ISIN: XS2588105036  //  Valorn.: 112286204 Ordinary Bonds  //  Maturity: 22.02.2028 Coupon: 23.2  //  Annual  5.1531%  //  Days: 46 PRC: 5.00 USD1'500'000 1.49% 7.75% SE.195",
+        "scaled": true
+      },
+      {
+        "isin": "XS2665592833",
+        "valor": "128829182",
+        "name": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028",
+        "marketValue": 74123,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "1.49% 7.75% SE.195 99.099098.37001'507'550 -0.74% 31.03.2025 32'000 HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028 ISIN: XS2665592833  //  Valorn.: 128829182 Ordinary Bonds  //  Maturity: 18.09.2028 Coupon: 18.9  //  Annual  4%  //  Days: 192 PRC: 5.00 USD690'000 2.26% 3.79% ISIN: XS2692298537  //  Valorn.: 129157183",
+        "scaled": true
+      },
+      {
+        "isin": "XS2692298537",
+        "valor": "129157183",
+        "name": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028",
+        "marketValue": 748063,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028 ISIN: XS2665592833  //  Valorn.: 128829182 Ordinary Bonds  //  Maturity: 18.09.2028 Coupon: 18.9  //  Annual  4%  //  Days: 192 PRC: 5.00 USD690'000 2.26% 3.79% ISIN: XS2692298537  //  Valorn.: 129157183 Ordinary Bonds  //  Maturity: 07.11.2029 YTM: -1.44  //  PRC: 5.00 100.1000106.9200737'748 6.81% 31.03.2025 GOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P USD100'000",
+        "scaled": true
+      },
+      {
+        "isin": "XS2754416860",
+        "valor": "132648671",
+        "name": "GOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P",
+        "marketValue": 748063,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "YTM: -1.44  //  PRC: 5.00 100.1000106.9200737'748 6.81% 31.03.2025 GOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P USD100'000 1.16% 0.50% ISIN: XS2754416860  //  Valorn.: 132648671 Ordinary Bonds  //  Maturity: 17.01.2030 Coupon: 17.1  //  Annual  5.238%  //  Days: 73 PRC: 5.00 100.200097.140098'202 -3.05% 31.03.2025 1'062",
+        "scaled": true
+      },
+      {
+        "isin": "XS2761230684",
+        "valor": "112288215",
+        "name": "LUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30",
+        "marketValue": 149669,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "100.200097.140098'202 -3.05% 31.03.2025 1'062 LUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30 USD100'000 2.24% 0.53% ISIN: XS2761230684  //  Valorn.: 112288215 Zero Bonds  //  Maturity: 13.02.2030 Coupon: 13.2  //  Annual  2%  //  Days: 47  //  YTM: 6.89 PRC: 5.00 100.2000102.2448102'506 2.04% 28.03.2025 261",
+        "scaled": true
+      },
+      {
+        "isin": "XS2782869916",
+        "valor": "132544344",
+        "name": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-",
+        "marketValue": 149669,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "USD50'000 1.07% 0.25% 09.05.34 100.200097.334048'667 -2.86% 31.03.2025 CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024- ISIN: XS2782869916  //  Valorn.: 132544344 Ordinary Bonds  //  Maturity: 09.05.2034 PRC: 5.00 Price to be verified USD440'000 1.81% 2.46% ISIN: XS2824054402  //  Valorn.: 135337661",
+        "scaled": true
+      },
+      {
+        "isin": "XS2110079584",
+        "valor": "136429245",
+        "name": "GS 10Y CALLABLE NOTE 2024-18.06.2034",
+        "marketValue": 748059,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "100.1000100.52002'570'405 0.42% 31.03.2025 107'665 GS 10Y CALLABLE NOTE 2024-18.06.2034 USD1'100'000 1.50% 5.66% ISIN: XS2110079584  //  Valorn.: 136429245 Zero Bonds  //  Callable: 09.07.2026 YTM: 5.88  //  PRC: 5.00 100.1000100.10001'101'100 0.00% 31.03.2025 CITIGROUP 0% MTN 2024-09.07.34 REGS USD90'000",
+        "scaled": true
+      },
+      {
+        "isin": "XS2912278723",
+        "valor": "138689613",
+        "name": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+        "marketValue": 747754,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "YTM: 5.64  //  PRC: 5.00 99.999692.320092'320 -7.68% 31.03.2025 GOLDMAN SACHS EMTN 2024-30.09.2024 USD200'000 1.92% 1.02% ISIN: XS2912278723  //  Valorn.: 138689613 Zero Bonds  //  Maturity: 17.10.2034 YTM: 4.82  //  PRC: 5.00 100.200099.5654199'131 -0.63% 28.03.2025 BANK OF AMERICA 0% NOTES 2024-17.10.2034 USD100'000",
+        "scaled": true
+      },
+      {
+        "isin": "XS2381723902",
+        "valor": "128883231",
+        "name": "JPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021-",
+        "marketValue": 28389,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "USD100'000 1.09% 0.49% 37954 100.200096.056996'057 -4.13% 31.03.2025 JPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021- ISIN: XS2381723902  //  Valorn.: 128883231 Zero Bonds  //  Maturity: 29.10.2034 PRC: 5.00 Print date 01.04.2025 // Page 7/17  Bonds MESSOS ENTERPRISES LTD. Valuation as of 31.03.2025",
+        "scaled": true
+      },
+      {
+        "isin": "XS2829752976",
+        "valor": "138874416",
+        "name": "GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-",
+        "marketValue": 507953,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "USD250'000 0.73% 1.24% 18.11.2034 99.679096.8300242'075 -2.86% 27.03.2025 GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024- ISIN: XS2829752976  //  Valorn.: 138874416 Ordinary Bonds  //  Maturity: 18.11.2034 YTM: 5.65  //  PRC: 5.00 USD150'000 1.90% 0.75% ISIN: XS2953741100  //  Valorn.: 138494467 Zero Bonds  //  Maturity: 11.12.2034",
+        "scaled": true
+      },
+      {
+        "isin": "XS2953741100",
+        "valor": "138494467",
+        "name": "GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-",
+        "marketValue": 507953,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "27.03.2025 GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024- ISIN: XS2829752976  //  Valorn.: 138874416 Ordinary Bonds  //  Maturity: 18.11.2034 YTM: 5.65  //  PRC: 5.00 USD150'000 1.90% 0.75% ISIN: XS2953741100  //  Valorn.: 138494467 Zero Bonds  //  Maturity: 11.12.2034 YTM: 5.28  //  PRC: 5.00 99.198097.7500146'625 -1.46% 27.03.2025 BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S USD500'000",
+        "scaled": true
+      },
+      {
+        "isin": "XS2381717250",
+        "valor": "128883267",
+        "name": "BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S",
+        "marketValue": 148173,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "YTM: 5.28  //  PRC: 5.00 99.198097.7500146'625 -1.46% 27.03.2025 BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S USD500'000 3.70% 2.60% ISIN: XS2381717250  //  Valorn.: 128883267 Zero Bonds  //  Maturity: 19.12.2034 PRC: 5.00 100.2000101.1000505'500 0.90% 31.03.2025 JPMORGAN CHASE 0% NOTES 2024-19.12.2034 USD50'000",
+        "scaled": true
+      },
+      {
+        "isin": "XS2964611052",
+        "valor": "141235167",
+        "name": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035",
+        "marketValue": 74872,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "YTM: 0.10  //  PRC: 5.00 100.100099.000049'500 -1.10% 31.03.2025 GOLDMAN SACHS 0% NOTES 2025-03.02.2035 USD1'470'000 0.72% 7.61% ISIN: XS2964611052  //  Valorn.: 141235167 Zero Bonds  //  Maturity: 14.02.2035 YTM: 5.41  //  PRC: 5.00 100.0000100.72001'480'584 0.72% 31.03.2025 DEUTSCHE BANK 0 % NOTES 2025-14.02.35 USD800'000",
+        "scaled": true
+      },
+      {
+        "isin": "XS3035947103",
+        "valor": "143578751",
+        "name": "WELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36",
+        "marketValue": 396763,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "USD800'000 0.00% 4.11% REG S 100.0000100.0000800'000 0.00% 28.03.2025 WELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36 ISIN: XS3035947103  //  Valorn.: 143578751 Ordinary Bonds  //  Maturity: 28.03.2036 PRC: 5.00 USD2'581.79 0.00% 0.59% SP 81.530444.7800115'613",
+        "scaled": true
+      },
+      {
+        "isin": "LU2228214107",
+        "valor": "57282891",
+        "name": "PREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB",
+        "marketValue": 396763,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "USD2'581.79 0.00% 0.59% SP 81.530444.7800115'613 -45.08% 13.09.2024 PREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB ISIN: LU2228214107  //  Valorn.: 57282891 Bond Funds / Certificates PRC: 3.00 USD350'000 1.14% 1.76% VRN 100.623797.6000342'643",
+        "scaled": true
+      },
+      {
+        "isin": "CH1269060229",
+        "valor": "126906022",
+        "name": "BK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28",
+        "marketValue": 466590,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "1.14% 1.76% VRN 100.623797.6000342'643 -3.00% 31.03.2025 1'043 BK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28 ISIN: CH1269060229  //  Valorn.: 126906022 Structured Bonds  //  Maturity: 26.05.2028 Coupon: 26.5  //  Quarterly  3.25%  //  Days: 33 PRC: 3.00 Price to be verified Print date 01.04.2025 // Page 8/17  Bonds",
+        "scaled": true
+      },
+      {
+        "isin": "XS0461497009",
+        "valor": "130269069",
+        "name": "Average Acquisition FX Rate",
+        "marketValue": 748059,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "Average Acquisition FX Rate DescriptionPerf YTD Nominal/ Quantity Bonds, Bond funds, Convertible bonds, Interest options USD690'000 1.54% 3.65% ISIN: XS0461497009  //  Valorn.: 130269069 Ordinary Bonds  //  Maturity: 08.11.2028 Coupon: 8.11  //  Annual  5.5%  //  Days: 142 PRC: 5.00 100.1000100.8900711'110 0.79% 31.03.2025 14'969",
+        "scaled": true
+      },
+      {
+        "isin": "XS2746319610",
+        "valor": "133393503",
+        "name": "DEUTSCHE BANK NOTES 23-08.11.28 VRN",
+        "marketValue": 748059,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "100.1000100.8900711'110 0.79% 31.03.2025 14'969 DEUTSCHE BANK NOTES 23-08.11.28 VRN USD140'000 3.10% 0.99% ISIN: XS2746319610  //  Valorn.: 133393503 Ordinary Bonds  //  Maturity: 01.03.2030 Coupon: Annual  32.46%  //  Days: 385  //  YTM: 16.79 PRC: 5.00 100.2000102.5000192'100 2.30% 31.03.2025 48'600",
+        "scaled": true
+      },
+      {
+        "isin": "XS2519369867",
+        "valor": "121050656",
+        "name": "BCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%",
+        "marketValue": 545203,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "-2.01% 1.01% CITD    26 100.728897.9853196'221 -2.72% 28.02.2025 250 BCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4% ISIN: XS2519369867  //  Valorn.: 121050656 Other convertible bonds  //  Maturity: 21.06.2027 Days: 9  //  PRC: 5.00 USD500'000 0.22% 2.58% ISIN: XS2315191069  //  Valorn.: 111918998 Structured Bonds  //  Maturity: 08.01.2029",
+        "scaled": true
+      },
+      {
+        "isin": "XS2315191069",
+        "valor": "111918998",
+        "name": "BCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%",
+        "marketValue": 392092,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "250 BCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4% ISIN: XS2519369867  //  Valorn.: 121050656 Other convertible bonds  //  Maturity: 21.06.2027 Days: 9  //  PRC: 5.00 USD500'000 0.22% 2.58% ISIN: XS2315191069  //  Valorn.: 111918998 Structured Bonds  //  Maturity: 08.01.2029 Days: 82  //  PRC: 5.0 0 Price to be verified 100.524199.0000502'305 -1.52% 31.03.2025 7'305",
+        "scaled": true
+      },
+      {
+        "isin": "XS2792098779",
+        "valor": "140288136",
+        "name": "BNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631",
+        "marketValue": 392092,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "100.524199.0000502'305 -1.52% 31.03.2025 7'305 BNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631 USD1'200'000 -1.83% 5.93% ISIN: XS2792098779  //  Valorn.: 140288136 Structured Bonds  //  Maturity: 02.12.2034  //  PRC: 5.00 Price to be verified 100.000096.19301'154'316 -3.81% 31.03.2025 CITIGROUP USD690'000",
+        "scaled": true
+      },
+      {
+        "isin": "XS2714429128",
+        "valor": "130738882",
+        "name": "EMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN",
+        "marketValue": 333824,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "-1.94% 3.62% WELLS F. 100.446299.0900704'064 -1.35% 27.03.2025 20'343 EMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN ISIN: XS2714429128  //  Valorn.: 130738882 Structured Bonds  //  Maturity: 17.09.2029 Days: 195  //  PRC: 5.00 Price to be verified USD500'000 -0.21% 2.49% 34",
+        "scaled": true
+      },
+      {
+        "isin": "XS2838389430",
+        "valor": "135968317",
+        "name": "GOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT",
+        "marketValue": 74871,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "GOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT ISIN: XS2105981117  //  Val  orn.: 114118068 Structured Bonds  //  Maturity: 20.12.2028 Days: 10  //  PRC: 4.0 0 Price to be verified USD1'600'000 0.35% 8.34% ISIN: XS2838389430  //  Valorn.: 135968317 Structured Bonds  //  Maturity: 26.04.2033 Days: 279  //  PRC: 5.00 Price to be verified 100.100097.08001'623'960 -3.02% 31.03.2025 70'680",
+        "scaled": true
+      },
+      {
+        "isin": "XS2631782468",
+        "valor": "127708275",
+        "name": "LUMINIS REPACK NOTES 23-25.05.29 VRN ON 4,625%",
+        "marketValue": 13611,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "0.28% 2.51% RABOBANK 29 98.018197.4900488'866 -0.54% 31.03.2025 1'416 LUMINIS REPACK NOTES 23-25.05.29 VRN ON 4,625% ISIN: XS2631782468  //  Valorn.: 127708275 Structured Bonds  //  Maturity: 25.05.2029 Days: 19  //  PRC: 5.0 0 Price to be verified Underlying:FED RES BK SOFR US Print date 01.04.2025 // Page 11/17  Structured products",
+        "scaled": true
+      },
+      {
+        "isin": "XS1700087403",
+        "valor": "39877135",
+        "name": "NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21",
+        "marketValue": 16304,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "USD100'000 -0.07% 0.51% SRN 91.021798.671998'672 8.40% 31.03.2025 NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21 ISIN: XS1700087403  //  Valorn.: 39877135 Structured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00 Price to be verified USD200'000 -1.90% 0.99% ISIN: XS2594173093  //  Valorn.: 125443809 Structured Bonds  //  Maturity: 27.09.2029",
+        "scaled": true
+      },
+      {
+        "isin": "XS2594173093",
+        "valor": "125443809",
+        "name": "NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21",
+        "marketValue": 16304,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "31.03.2025 NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21 ISIN: XS1700087403  //  Valorn.: 39877135 Structured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00 Price to be verified USD200'000 -1.90% 0.99% ISIN: XS2594173093  //  Valorn.: 125443809 Structured Bonds  //  Maturity: 27.09.2029 Days: 33  //  PRC: 5.0 0 Price to be verified 99.059296.2100193'464 -2.88% 31.03.2025 1'044",
+        "scaled": true
+      },
+      {
+        "isin": "XS2252299883",
+        "valor": "58001077",
+        "name": "NOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ON CS",
+        "marketValue": 274134,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 1,
+        "rawContext": "USD1'000'000 0.60% 5.09% GROUP 100.366498.9800989'800 -1.38% 28.03.2025 NOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ON CS ISIN: XS2252299883  //  Valorn.: 58001077 Structured products equity  //  Maturity: 15.05.2026  //  PRC: 5.00 Price to be verified Underlying:INTERBK LIBOR 3 MTH Total Structured products Accrued interest 6'946'239USD USD108'309",
+        "scaled": true
+      },
+      {
+        "isin": "XS2736388732",
+        "valor": "131799640",
+        "name": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE",
+        "marketValue": 1180467,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 0.8,
+        "rawContext": "100.2000102.2448102'506 2.04% 28.03.2025 261 CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE USD250'000 -2.58% 1.32% ISIN: XS2736388732  //  Valorn.: 131799640 Ordinary Bonds  //  Maturity: 20.12.2031 Days: 265 PRC: 5.00 100.200099.2500256'958 -0.95% 31.03.2025 8'833",
+        "scaled": true
+      },
+      {
+        "isin": "XS2824054402",
+        "valor": "135337661",
+        "name": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-",
+        "marketValue": 1180467,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 0.8,
+        "rawContext": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024- ISIN: XS2782869916  //  Valorn.: 132544344 Ordinary Bonds  //  Maturity: 09.05.2034 PRC: 5.00 Price to be verified USD440'000 1.81% 2.46% ISIN: XS2824054402  //  Valorn.: 135337661 Ordinary Bonds  //  Callable: 29.05.2026 Coupon: 29.5  //  Annual  5.6%  //  Days: 301  //  YTM: 5.04 PRC: 5.00 100.2000103.9900478'158 3.78% 31.03.2025 20'602",
+        "scaled": true
+      },
+      {
+        "isin": "XS2567543397",
+        "valor": "134736192",
+        "name": "BOFA 5.  6% 2024-29.05.34 REGS",
+        "marketValue": 1180467,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 0.8,
+        "rawContext": "100.2000103.9900478'158 3.78% 31.03.2025 20'602 BOFA 5.  6% 2024-29.05.34 REGS USD2'450'000 1.26% 13.21% ISIN: XS2567543397  //  Valorn.: 134736192 Ordinary Bonds  //  Callable: 18.06.2026 Coupon: 18.6  //  Annual  5.61%  //  Days: 282  //  YTM: 5.53 PRC: 5.00 100.1000100.52002'570'405 0.42% 31.03.2025 107'665",
+        "scaled": true
+      },
+      {
+        "isin": "XS2848820754",
+        "valor": "135116008",
+        "name": "CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34",
+        "marketValue": 1180467,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 0.8,
+        "rawContext": "USD90'000 2.35% 0.46% GLOBAL RE 100.2000100.060090'054 -0.14% 31.03.2025 CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34 ISIN: XS2848820754  //  Valorn.: 135116008 Zero Bonds  //  Maturity: 01.08.2034 PRC: 5.00 USD100'000 1.16% 0.47% ISIN: XS2829712830  //  Valorn.: 134735316 Ordinary Bonds  //  Maturity: 30.09.2034",
+        "scaled": true
+      },
+      {
+        "isin": "XS2829712830",
+        "valor": "134735316",
+        "name": "CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34",
+        "marketValue": 1180467,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 0.8,
+        "rawContext": "31.03.2025 CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34 ISIN: XS2848820754  //  Valorn.: 135116008 Zero Bonds  //  Maturity: 01.08.2034 PRC: 5.00 USD100'000 1.16% 0.47% ISIN: XS2829712830  //  Valorn.: 134735316 Ordinary Bonds  //  Maturity: 30.09.2034 YTM: 5.64  //  PRC: 5.00 99.999692.320092'320 -7.68% 31.03.2025 GOLDMAN SACHS EMTN 2024-30.09.2024 USD200'000",
+        "scaled": true
+      },
+      {
+        "isin": "CH0244767585",
+        "valor": "24476758",
+        "name": "Average Acquisition FX Rate",
+        "marketValue": 1180467,
+        "assetType": "Equity",
+        "currency": "USD",
+        "confidence": 0.8,
+        "rawContext": "Average Acquisition FX Rate DescriptionPerf YTD Nominal/ Quantity Equities, Equity funds, Options on equities/indices CHF800 -3.10% 0.12% ISIN: CH0244767585  //  Valorn.: 24476758 Ordinary Stocks  //  PRC: 3.91 221.564126.870021'496 1.13401.1313 -87.90% -0.24% 31.03.202524'319 UBS GROUP INC NAMEN-AKT.",
+        "scaled": true
+      },
+      {
+        "isin": "XS2407295554",
+        "valor": "114718568",
+        "name": "NOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON",
+        "marketValue": 1180467,
+        "assetType": "Bond/Note",
+        "currency": "USD",
+        "confidence": 0.8,
+        "rawContext": "4.36% 2.62% NATWEST GROUP 100.5243100.7200510'114 0.19% 31.03.2025 6'514 NOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON ISIN: XS2407295554  //  Valorn.: 114718568 Structured Bonds  //  Maturity: 12.01.2028 Days: 78  //  PRC: 5.0 0 Price to be verified Structured products (Equities) USD1'000'000 0.60% 5.09%",
+        "scaled": true
+      },
+      {
+        "isin": "XD0466760473",
+        "valor": "46676047",
+        "name": "EXIGENT ENHANCED INCOME FUND LTD SHS A SERIES 2019 1",
+        "marketValue": 1180467,
+        "assetType": "Equity",
+        "currency": "USD",
+        "confidence": 0.8,
+        "rawContext": "USD204.071 0.00% 0.13% R 1'008.3748128.039526'129 -87.30% 31.12.2023 EXIGENT ENHANCED INCOME FUND LTD SHS A SERIES 2019 1 ISIN: XD0466760473  //  Valorn.: 46676047 Hedge Funds & Private Equity  //  PRC: 5.00 Price to be verified Total Other assets26'129USD0.13% thereof Hedge funds &  P rivate EquityUSD26'1290.13% Print date 01.04.2025 // Page 13/17  Expected Cash Flows (Overview)",
+        "scaled": true
+      }
+    ],
+    "average_confidence": 0.96,
+    "high_confidence_securities": 37
+  },
+  "balanced_accuracy": {
+    "portfolio_total_usd": 19464431,
+    "extracted_total_usd": 19464414,
+    "value_difference": -17,
+    "value_accuracy": 100,
+    "count_accuracy": 92.5,
+    "overall_accuracy": 97,
+    "confidence_score": 0.96,
+    "improvement_from_phase1": 47.92
+  },
+  "quality_metrics": {
+    "asset_type_distribution": {
+      "Bond/Note": 35,
+      "Equity": 2
+    },
+    "confidence_distribution": {
+      "high": 37,
+      "medium": 0,
+      "low": 0
+    },
+    "scaled_securities": 37
+  },
+  "status": "EXCELLENT"
+}

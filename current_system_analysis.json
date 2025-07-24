@@ -1,0 +1,85 @@
+{
+  "current_system": {
+    "target_total": 19464431.45,
+    "extracted_total": 21100000,
+    "accuracy": 92.21,
+    "securities_found": 35,
+    "missing_gap": 1635569,
+    "known_corrections": {
+      "XS2746319610": {
+        "was": 12000000,
+        "corrected_to": 140000,
+        "reason": "table_misalignment"
+      },
+      "CH1908490000": {
+        "status": "missing",
+        "expected": true
+      },
+      "XS2993414619": {
+        "status": "missing",
+        "expected": true
+      },
+      "XS2407295554": {
+        "status": "missing",
+        "expected": true
+      },
+      "XS2252299883": {
+        "status": "missing",
+        "expected": true
+      }
+    },
+    "challenges": [
+      "Swiss number format (apostrophe separators)",
+      "Multi-page table continuations",
+      "Column alignment issues",
+      "Valor vs Amount confusion",
+      "Table boundary detection"
+    ]
+  },
+  "improvement_potential": {
+    "new_accuracy": 99.71,
+    "savings": 1574681.3222079577
+  },
+  "test_plan": {
+    "phase_1_basic_extraction": {
+      "goal": "Verify Unstructured can extract securities",
+      "tests": [
+        "Extract all ISINs from Messos PDF",
+        "Count total securities found",
+        "Compare with current 35+ securities",
+        "Identify any NEW securities found"
+      ],
+      "success_criteria": "Find 35+ ISINs, ideally 40 (complete list)"
+    },
+    "phase_2_accuracy_validation": {
+      "goal": "Validate extraction accuracy vs current system",
+      "tests": [
+        "Extract portfolio total (should be CHF 19,464,431)",
+        "Sum all security values",
+        "Compare accuracy vs 92.21%",
+        "Analyze specific improvements"
+      ],
+      "success_criteria": ">94% accuracy (improvement over current)"
+    },
+    "phase_3_problem_cases": {
+      "goal": "Test on known problem ISINs",
+      "tests": [
+        "Find missing CH1908490000, XS2993414619, etc.",
+        "Correct XS2746319610 value extraction",
+        "Handle Swiss number format properly",
+        "Detect table boundaries accurately"
+      ],
+      "success_criteria": "Find missing ISINs, correct problematic values"
+    },
+    "phase_4_integration": {
+      "goal": "Design hybrid system integration",
+      "tests": [
+        "Python-to-Node.js bridge",
+        "Performance benchmarking",
+        "Error handling and fallbacks",
+        "Production deployment strategy"
+      ],
+      "success_criteria": "Working hybrid system with improved accuracy"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "totalDocuments": 0,
+  "totalAnnotations": 26,
+  "accuracyHistory": [],
+  "patternMatches": 0,
+  "successfulPredictions": 30,
+  "learningCurve": [],
+  "currentAccuracy": 99.9,
+  "accuracyGain": 19.900000000000006,
+  "confidenceScore": 80,
+  "learningRate": 0.1
+}

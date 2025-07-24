@@ -1,0 +1,27 @@
+node_modules/
+.env
+.env.local
+.env.production
+.vercel
+*.log
+.DS_StoreSuperClaude/
+
+# API Keys and Secrets
+*.key
+*.pem
+config/secrets.json
+
+# Temporary files
+temp/
+temp_*/
+uploads/
+*.tmp
+
+# Test results
+test-results/
+playwright-report/
+coverage/
+
+# Build artifacts
+dist/
+build/

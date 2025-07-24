@@ -1,0 +1,292 @@
+{
+  "success": true,
+  "method": "ocr_windows_compatible",
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "value": 366223,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+14 lines)"
+    },
+    {
+      "isin": "XS2530201644",
+      "value": 200099,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+4 lines)"
+    },
+    {
+      "isin": "XS2588105036",
+      "value": 99098,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+8 lines)"
+    },
+    {
+      "isin": "XS2665592833",
+      "value": 1000106,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+10 lines)"
+    },
+    {
+      "isin": "XS2692298537",
+      "value": 200097,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+14 lines)"
+    },
+    {
+      "isin": "XS2754416860",
+      "value": 200097,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+4 lines)"
+    },
+    {
+      "isin": "XS2761230684",
+      "value": 2000102,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+4 lines)"
+    },
+    {
+      "isin": "XS2736388732",
+      "value": 200099,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+4 lines)"
+    },
+    {
+      "isin": "XS2782869916",
+      "value": 20602,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+14 lines)"
+    },
+    {
+      "isin": "XS2824054402",
+      "value": 450000,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+9 lines)"
+    },
+    {
+      "isin": "XS2567543397",
+      "value": 1000100,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+4 lines)"
+    },
+    {
+      "isin": "XS2110079584",
+      "value": 1000100,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+3 lines)"
+    },
+    {
+      "isin": "XS2848820754",
+      "value": 999692,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+9 lines)"
+    },
+    {
+      "isin": "XS2829712830",
+      "value": 200099,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+13 lines)"
+    },
+    {
+      "isin": "XS2912278723",
+      "value": 200099,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+3 lines)"
+    },
+    {
+      "isin": "XS2381723902",
+      "value": 366223,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+8 lines)"
+    },
+    {
+      "isin": "XS2829752976",
+      "value": 198097,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+9 lines)"
+    },
+    {
+      "isin": "XS2953741100",
+      "value": 2000101,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+13 lines)"
+    },
+    {
+      "isin": "XS2381717250",
+      "value": 100099,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+13 lines)"
+    },
+    {
+      "isin": "XS2481066111",
+      "value": 100099,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+3 lines)"
+    },
+    {
+      "isin": "XS2964611052",
+      "value": 49500,
+      "confidence": 85,
+      "method": "format",
+      "reasoning": "Swiss number format"
+    },
+    {
+      "isin": "XS3035947103",
+      "value": 623797,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+18 lines)"
+    },
+    {
+      "isin": "LU2228214107",
+      "value": 623797,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+7 lines)"
+    },
+    {
+      "isin": "CH1269060229",
+      "value": 21810,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+13 lines)"
+    },
+    {
+      "isin": "XS0461497009",
+      "value": 1000100,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+4 lines)"
+    },
+    {
+      "isin": "XS2746319610",
+      "value": 2000102,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+4 lines)"
+    },
+    {
+      "isin": "CH0244767585",
+      "value": 366223,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+16 lines)"
+    },
+    {
+      "isin": "XS2519369867",
+      "value": 524199,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+10 lines)"
+    },
+    {
+      "isin": "XS2315191069",
+      "value": 524199,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+4 lines)"
+    },
+    {
+      "isin": "XS2792098779",
+      "value": 20343,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+14 lines)"
+    },
+    {
+      "isin": "XS2714429128",
+      "value": 524396,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+8 lines)"
+    },
+    {
+      "isin": "XS2105981117",
+      "value": 70680,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+14 lines)"
+    },
+    {
+      "isin": "XS2838389430",
+      "value": 100097,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+4 lines)"
+    },
+    {
+      "isin": "XS2631782468",
+      "value": 21810,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+13 lines)"
+    },
+    {
+      "isin": "XS1700087403",
+      "value": 5243100,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+19 lines)"
+    },
+    {
+      "isin": "XS2594173093",
+      "value": 59296,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+4 lines)"
+    },
+    {
+      "isin": "XS2407295554",
+      "value": 366498,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+9 lines)"
+    },
+    {
+      "isin": "XS2252299883",
+      "value": 43930.6,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+9 lines)"
+    },
+    {
+      "isin": "XD0466760473",
+      "value": 21810,
+      "confidence": 80,
+      "method": "pattern",
+      "reasoning": "Common distance pattern (+13 lines)"
+    }
+  ],
+  "summary": {
+    "totalSecurities": 39,
+    "totalValue": 23106919.6,
+    "accuracy": 84.23637307328494,
+    "averageConfidence": 80,
+    "processingTime": 372
+  },
+  "metadata": {
+    "extractionMethod": "windows_compatible_multi_strategy",
+    "platform": "Windows",
+    "version": "1.0.0",
+    "timestamp": "2025-07-17T19:16:35.763Z"
+  }
+}

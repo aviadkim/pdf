@@ -1,0 +1,12 @@
+FORCE DEPLOYMENT - ${new Date().toISOString()}
+
+This file forces Render to redeploy with the latest code that includes:
+- Claude Vision API integration
+- Fixed memory storage (no file paths)
+- ANTHROPIC_API_KEY support
+- All SIGTERM crash fixes
+
+The Claude API key is already working on pdf-production service.
+We just need the new code to be deployed.
+
+Deploy commit: d0b3a49

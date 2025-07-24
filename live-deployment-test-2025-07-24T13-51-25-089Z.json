@@ -1,0 +1,152 @@
+{
+  "deployment": {
+    "status": "online",
+    "responseTime": 741,
+    "statusCode": 200,
+    "headers": {
+      "date": "Thu, 24 Jul 2025 13:51:19 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "etag": "W/\"e5-40rHYND6h7K5Zkq9wFkjnOvupIM\"",
+      "rndr-id": "a4a1f173-de29-4eb6",
+      "vary": "Accept-Encoding",
+      "x-powered-by": "Express",
+      "x-render-origin-server": "Render",
+      "cf-cache-status": "DYNAMIC",
+      "server": "cloudflare",
+      "cf-ray": "9643e4416fdb8cd1-TLV",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "endpoints": {
+    "/api/openai-test": {
+      "status": "working",
+      "responseTime": 679,
+      "data": {
+        "success": true,
+        "status": "ok",
+        "model": "gpt-4o-mini",
+        "message": "OpenAI connection successful",
+        "timestamp": "2025-07-24T13:51:20.529Z",
+        "endpoint": "/api/openai-test"
+      }
+    },
+    "/api/claude-test": {
+      "status": "working",
+      "responseTime": 1799,
+      "data": {
+        "success": true,
+        "message": "Claude Vision API connected successfully",
+        "model": "claude-3-5-sonnet-20241022",
+        "timestamp": "2025-07-24T13:51:22.333Z",
+        "endpoint": "/api/claude-test",
+        "costEstimate": {
+          "inputTokens": 8000,
+          "outputTokens": 2000,
+          "inputCost": 0,
+          "outputCost": 0,
+          "totalCost": 0.0001,
+          "costBreakdown": {
+            "perInputToken": 3e-9,
+            "perOutputToken": 1.5e-8,
+            "imageProcessing": "included in input tokens"
+          },
+          "estimatedMonthly": {
+            "per100PDFs": 0.01,
+            "per1000PDFs": 0.05
+          }
+        }
+      }
+    },
+    "/api/system-capabilities": {
+      "status": "working",
+      "responseTime": 239,
+      "data": {
+        "success": true,
+        "system": "Advanced PDF Processing System v3.0",
+        "capabilities": {
+          "ultra_accurate_extraction": {
+            "available": true,
+            "target_accuracy": "90%+",
+            "endpoint": "/api/ultra-accurate-extract",
+            "features": [
+              "multi_method_text_extraction",
+              "advanced_pattern_recognition",
+              "enhanced_isin_detection",
+              "improved_number_extraction",
+              "multi_strategy_matching",
+              "context_validation",
+              "accuracy_optimization"
+            ]
+          },
+          "phase2_enhanced_extraction": {
+            "available": true,
+            "target_accuracy": "70-80%",
+            "endpoint": "/api/phase2-enhanced-extract",
+            "features": [
+              "intelligent_document_analysis",
+              "advanced_security_extraction",
+              "enhanced_value_extraction",
+              "intelligent_validation"
+            ]
+          },
+          "mistral_ocr": {
+            "available": false,
+            "target_accuracy": "94.89%",
+            "endpoint": "/api/mistral-ocr-extract",
+            "model": "mistral-ocr-latest",
+            "features": [
+              "high_accuracy_ocr",
+              "table_structure_recognition",
+              "markdown_output",
+              "multi_language_support"
+            ]
+          },
+          "phase3_annotation_learning": {
+            "available": true,
+            "port": 10003,
+            "features": [
+              "human_annotation_interface",
+              "correction_feedback_loops",
+              "pattern_learning",
+              "accuracy_improvement"
+            ]
+          }
+        },
+        "environment": {
+          "mistral_api_configured": false,
+          "max_file_size": "50MB",
+          "supported_formats": [
+            "PDF"
+          ],
+          "processing_timeout": "2 minutes"
+        },
+        "timestamp": "2025-07-24T13:51:22.568Z"
+      }
+    }
+  },
+  "pdfTests": {
+    "/api/bulletproof-processor": {
+      "status": "failed",
+      "error": "Invalid JSON response",
+      "responseTime": 555
+    },
+    "/api/openai-extract": {
+      "status": "failed",
+      "error": "Invalid JSON response",
+      "responseTime": 729
+    },
+    "/api/claude-vision-extract": {
+      "status": "failed",
+      "error": "Invalid JSON response",
+      "responseTime": 731
+    },
+    "/api/pdf-extract": {
+      "status": "failed",
+      "error": "Invalid JSON response",
+      "responseTime": 528
+    }
+  }
+}

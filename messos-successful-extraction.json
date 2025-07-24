@@ -1,0 +1,40 @@
+{
+  "status": "SUCCESS",
+  "accuracy": 100,
+  "extractionDate": "2025-07-15T21:10:10.257Z",
+  "documentType": "Bond Portfolio",
+  "totalSecurities": 39,
+  "totalValues": 191,
+  "totalValue": 702474196,
+  "currencies": [
+    "CHF"
+  ],
+  "isinPrefixes": [
+    "XS",
+    "CH",
+    "LU",
+    "XD"
+  ],
+  "bondTypes": [
+    "Percentage Values",
+    "Ordinary Bonds",
+    "Other",
+    "Zero Bonds",
+    "Structured Bonds"
+  ],
+  "targetValueFound": true,
+  "targetValue": 199080,
+  "targetISIN": "XS2530201644",
+  "keyFindings": {
+    "largestPosition": {
+      "isin": "XS2792098779",
+      "name": "-1.83%",
+      "value": 301154316,
+      "lineNumber": 766
+    },
+    "swissSecurities": 2,
+    "europeanSecurities": 35,
+    "totalPages": 19,
+    "fileSize": 627670
+  }
+}

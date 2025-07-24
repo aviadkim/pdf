@@ -1,0 +1,56 @@
+{
+  "systemOverview": {
+    "description": "Complete Smart OCR Financial Document Processing System",
+    "components": [
+      "Enhanced Annotation Interface",
+      "Database Integration",
+      "ML Pattern Recognition",
+      "API Expansions",
+      "User Management",
+      "Analytics Dashboard",
+      "External Integrations",
+      "Scalability Improvements",
+      "Security Enhancements",
+      "Production Deployment"
+    ],
+    "integrationPoints": [
+      "Annotation Interface ↔ Database Storage",
+      "ML Patterns ↔ Database Persistence",
+      "API Endpoints ↔ Data Retrieval",
+      "User Actions ↔ Learning System",
+      "Security ↔ All Components",
+      "Analytics ↔ Performance Monitoring"
+    ]
+  },
+  "dataFlowPaths": {
+    "description": "Data flow through the system",
+    "paths": [
+      "PDF Upload → Processing → Database Storage",
+      "User Annotations → ML Learning → Pattern Storage",
+      "API Requests → Database Query → JSON Response",
+      "Learning Feedback → Accuracy Improvement → Stats Update",
+      "Pattern Recognition → Confidence Scoring → Result Enhancement"
+    ]
+  },
+  "systemConnections": {
+    "description": "System component connections",
+    "connections": [
+      "Frontend ↔ Backend API",
+      "API ↔ Database Layer",
+      "ML Engine ↔ Pattern Storage",
+      "Annotation Interface ↔ Learning System",
+      "Security Layer ↔ All Endpoints",
+      "Monitoring ↔ Performance Metrics"
+    ]
+  },
+  "workflowSteps": [
+    "1. User uploads PDF through annotation interface",
+    "2. System processes PDF using ML pattern recognition",
+    "3. Extracted data stored in database with confidence scores",
+    "4. User reviews and corrects data through annotation tools",
+    "5. Corrections feed back into ML system for learning",
+    "6. Updated patterns stored for future processing",
+    "7. System accuracy improves over time",
+    "8. Analytics track performance and learning progress"
+  ]
+}

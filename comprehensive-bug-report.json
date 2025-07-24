@@ -1,0 +1,95 @@
+{
+  "summary": {
+    "totalTests": 14,
+    "passed": 14,
+    "failed": 7,
+    "successRate": "100.00%",
+    "timestamp": "2025-07-18T16:09:10.292Z"
+  },
+  "criticalIssues": [
+    {
+      "category": "SMART_OCR",
+      "test": "Stats endpoint failed",
+      "message": "Status: 304",
+      "timestamp": "2025-07-18T16:09:07.499Z"
+    }
+  ],
+  "bugs": [
+    {
+      "severity": "HIGH",
+      "category": "API",
+      "description": "GET /api/smart-ocr-test: Expected 200, got 304",
+      "timestamp": "2025-07-18T16:08:55.469Z"
+    },
+    {
+      "severity": "HIGH",
+      "category": "API",
+      "description": "GET /api/smart-ocr-stats: Expected 200, got 304",
+      "timestamp": "2025-07-18T16:08:56.479Z"
+    },
+    {
+      "severity": "HIGH",
+      "category": "API",
+      "description": "GET /api/smart-ocr-patterns: Expected 200, got 500",
+      "timestamp": "2025-07-18T16:08:57.482Z"
+    },
+    {
+      "severity": "HIGH",
+      "category": "API",
+      "description": "GET /api/test: Expected 200, got 404",
+      "timestamp": "2025-07-18T16:08:58.483Z"
+    },
+    {
+      "severity": "HIGH",
+      "category": "API",
+      "description": "GET /api/pdf-extract: Expected 405, got 404",
+      "timestamp": "2025-07-18T16:08:59.498Z"
+    },
+    {
+      "severity": "HIGH",
+      "category": "API",
+      "description": "GET /api/bulletproof-processor: Expected 405, got 404",
+      "timestamp": "2025-07-18T16:09:00.509Z"
+    },
+    {
+      "severity": "HIGH",
+      "category": "UI",
+      "description": "UI consistency test failed: page.waitForTimeout is not a function",
+      "timestamp": "2025-07-18T16:09:01.657Z"
+    },
+    {
+      "severity": "HIGH",
+      "category": "ERROR_HANDLING",
+      "description": "https://pdf-fzzi.onrender.com/api/smart-ocr-process: Expected 405, got 404",
+      "timestamp": "2025-07-18T16:09:05.882Z"
+    },
+    {
+      "severity": "HIGH",
+      "category": "SMART_OCR",
+      "description": "Stats endpoint failed: Status: 304",
+      "timestamp": "2025-07-18T16:09:07.499Z"
+    }
+  ],
+  "warnings": [],
+  "performance": [
+    {
+      "metric": "Page Load Time",
+      "value": 993,
+      "unit": "ms",
+      "status": "PASS"
+    },
+    {
+      "metric": "JavaScript Heap Size",
+      "value": 1,
+      "unit": "MB",
+      "status": "PASS"
+    }
+  ],
+  "recommendations": [
+    "Fix Smart OCR system initialization and API endpoints",
+    "Improve UI consistency and ensure all essential elements are present",
+    "Fix API endpoint responses and error handling",
+    "Implement comprehensive error logging and monitoring",
+    "Add automated testing to CI/CD pipeline"
+  ]
+}

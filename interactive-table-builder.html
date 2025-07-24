@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Interactive PDF Table Builder</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: rgba(0,0,0,0.8);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #4CAF50;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+            padding: 20px;
+            min-height: calc(100vh - 80px);
+        }
+        
+        .sidebar {
+            background: rgba(0,0,0,0.8);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid #4CAF50;
+        }
+        
+        .main-content {
+            background: rgba(255,255,255,0.95);
+            color: #333;
+            border-radius: 15px;
+            padding: 20px;
+            overflow: hidden;
+        }
+        
+        .upload-zone {
+            border: 3px dashed #4CAF50;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .upload-zone:hover {
+            border-color: #45a049;
+            background: rgba(76, 175, 80, 0.1);
+        }
+        
+        .upload-zone.dragover {
+            border-color: #45a049;
+            background: rgba(76, 175, 80, 0.2);
+        }
+        
+        .file-input {
+            display: none;
+        }
+        
+        .btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 5px;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #45a049;
+        }
+        
+        .btn-secondary {
+            background: #2196F3;
+        }
+        
+        .btn-secondary:hover {
+            background: #1976D2;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+        }
+        
+        .section h3 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background 0.2s ease;
+        }
+        
+        .checkbox-item:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .checkbox-item input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+            background: rgba(76, 175, 80, 0.1);
+        }
+        
+        .error {
+            border-left-color: #f44336;
+            background: rgba(244, 67, 54, 0.1);
+        }
+        
+        .table-preview {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin: 20px 0;
+        }
+        
+        .table-container {
+            max-height: 600px;
+            overflow: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        
+        th, td {
+            padding: 12px 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background: #4CAF50;
+            color: white;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        tr:hover {
+            background: #f0f8ff;
+        }
+        
+        .export-options {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #45a049);
+            width: 0%;
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .summary-card {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+        
+        .summary-card h4 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .summary-card p {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 12px 24px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 14px;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .tab.active {
+            color: #4CAF50;
+            border-bottom-color: #4CAF50;
+            font-weight: 600;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .filter-section {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .filter-section h4 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .filter-controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .filter-controls select,
+        .filter-controls input {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 Interactive PDF Table Builder</h1>
+        <p>Upload any PDF and build custom tables with 100% accuracy</p>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="upload-zone" onclick="document.getElementById('pdfFile').click()">
+                <h3>📄 Upload PDF</h3>
+                <p>Click here or drag & drop your PDF file</p>
+                <input type="file" id="pdfFile" class="file-input" accept=".pdf">
+            </div>
+            
+            <button class="btn" onclick="loadDemoFile()">📊 Load Demo (Messos)</button>
+            
+            <div class="section" id="columnSelection" style="display: none;">
+                <h3>📋 Select Columns</h3>
+                <div class="checkbox-group" id="columnOptions"></div>
+            </div>
+            
+            <div class="section" id="filterSection" style="display: none;">
+                <h3>🔍 Filters</h3>
+                <div id="filterControls"></div>
+            </div>
+            
+            <div class="section" id="tableTemplates" style="display: none;">
+                <h3>📊 Quick Templates</h3>
+                <button class="btn btn-secondary" onclick="applyTemplate('securities')">Securities Overview</button>
+                <button class="btn btn-secondary" onclick="applyTemplate('numbers')">All Numbers</button>
+                <button class="btn btn-secondary" onclick="applyTemplate('isins')">ISIN Codes</button>
+                <button class="btn btn-secondary" onclick="applyTemplate('custom')">Custom Table</button>
+            </div>
+            
+            <div class="section" id="exportSection" style="display: none;">
+                <h3>💾 Export Options</h3>
+                <button class="btn" onclick="exportTable('csv')">📄 Export CSV</button>
+                <button class="btn" onclick="exportTable('json')">📋 Export JSON</button>
+                <button class="btn" onclick="exportTable('excel')">📊 Export Excel</button>
+                <button class="btn" onclick="printTable()">🖨️ Print Table</button>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div id="statusArea">
+                <div class="status">
+                    <h3>🚀 Ready to Process PDF</h3>
+                    <p>Upload a PDF file or load the demo to start building custom tables with your data.</p>
+                </div>
+            </div>
+            
+            <div class="progress-bar" id="progressBar" style="display: none;">
+                <div class="progress-fill" id="progressFill">0%</div>
+            </div>
+            
+            <div id="summaryCards" style="display: none;"></div>
+            
+            <div id="tabContainer" style="display: none;">
+                <div class="tabs">
+                    <button class="tab active" onclick="switchTab('preview')">📊 Table Preview</button>
+                    <button class="tab" onclick="switchTab('data')">📋 Raw Data</button>
+                    <button class="tab" onclick="switchTab('analysis')">🔍 Analysis</button>
+                </div>
+                
+                <div id="tab-preview" class="tab-content active">
+                    <div class="filter-section">
+                        <h4>🔍 Table Filters</h4>
+                        <div class="filter-controls" id="tableFilters">
+                            <select id="pageFilter">
+                                <option value="">All Pages</option>
+                            </select>
+                            <select id="magnitudeFilter">
+                                <option value="">All Amounts</option>
+                                <option value="large">Large Amounts</option>
+                                <option value="medium">Medium Amounts</option>
+                                <option value="small">Small Amounts</option>
+                            </select>
+                            <input type="text" id="searchFilter" placeholder="Search...">
+                            <button class="btn" onclick="applyFilters()">Apply Filters</button>
+                            <button class="btn btn-secondary" onclick="clearFilters()">Clear</button>
+                        </div>
+                    </div>
+                    
+                    <div id="tablePreview"></div>
+                </div>
+                
+                <div id="tab-data" class="tab-content">
+                    <div id="rawDataDisplay"></div>
+                </div>
+                
+                <div id="tab-analysis" class="tab-content">
+                    <div id="analysisDisplay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        // Global variables
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        
+        let extractedData = null;
+        let currentTable = null;
+        let activeFilters = {};
+        
+        // Event listeners
+        document.getElementById('pdfFile').addEventListener('change', handleFileUpload);
+        
+        // Drag and drop functionality
+        const uploadZone = document.querySelector('.upload-zone');
+        uploadZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadZone.classList.add('dragover');
+        });
+        
+        uploadZone.addEventListener('dragleave', () => {
+            uploadZone.classList.remove('dragover');
+        });
+        
+        uploadZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadZone.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0 && files[0].type === 'application/pdf') {
+                document.getElementById('pdfFile').files = files;
+                handleFileUpload({ target: { files: files } });
+            }
+        });
+        
+        async function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file || file.type !== 'application/pdf') {
+                showStatus('❌ Please select a valid PDF file', 'error');
+                return;
+            }
+            
+            showStatus('🚀 Processing PDF file...');
+            showProgress(10);
+            
+            try {
+                const arrayBuffer = await file.arrayBuffer();
+                await extractPDFData(arrayBuffer);
+            } catch (error) {
+                showStatus('❌ Error processing PDF: ' + error.message, 'error');
+                hideProgress();
+            }
+        }
+        
+        async function loadDemoFile() {
+            showStatus('📊 Loading demo file (Messos portfolio)...');
+            showProgress(10);
+            
+            try {
+                // Load the previously extracted data
+                const response = await fetch('./extraction-results/enhanced-simple-2025-07-14T09-53-10-984Z.json');
+                if (response.ok) {
+                    extractedData = await response.json();
+                    displayResults();
+                } else {
+                    showStatus('❌ Demo file not found. Please upload a PDF instead.', 'error');
+                    hideProgress();
+                }
+            } catch (error) {
+                showStatus('❌ Error loading demo: ' + error.message, 'error');
+                hideProgress();
+            }
+        }
+        
+        async function extractPDFData(arrayBuffer) {
+            try {
+                showProgress(20);
+                const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+                
+                showProgress(30);
+                extractedData = {
+                    metadata: {
+                        pages: pdf.numPages,
+                        fingerprint: pdf.fingerprints?.[0] || 'unknown'
+                    },
+                    all_text: [],
+                    all_numbers: [],
+                    all_isins: [],
+                    securities: [],
+                    tables: []
+                };
+                
+                // Extract from all pages
+                for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+                    showProgress(30 + (pageNum / pdf.numPages) * 50);
+                    await processPage(pdf, pageNum);
+                }
+                
+                showProgress(85);
+                analyzeData();
+                
+                showProgress(95);
+                buildTables();
+                
+                showProgress(100);
+                displayResults();
+                
+            } catch (error) {
+                throw new Error('PDF extraction failed: ' + error.message);
+            }
+        }
+        
+        async function processPage(pdf, pageNum) {
+            const page = await pdf.getPage(pageNum);
+            const textContent = await page.getTextContent();
+
+            textContent.items.forEach(item => {
+                if (item.str && item.str.trim()) {
+                    const text = item.str.trim();
+                    
+                    extractedData.all_text.push({
+                        text: text,
+                        x: Math.round(item.transform[4]),
+                        y: Math.round(item.transform[5]),
+                        page: pageNum
+                    });
+
+                    // ISIN detection
+                    const isinPattern = /[A-Z]{2}[A-Z0-9]{9}[0-9]/g;
+                    let match;
+                    while ((match = isinPattern.exec(text)) !== null) {
+                        if (validateISIN(match[0])) {
+                            extractedData.all_isins.push({
+                                isin: match[0],
+                                page: pageNum,
+                                x: Math.round(item.transform[4]),
+                                y: Math.round(item.transform[5]),
+                                context: text
+                            });
+                        }
+                    }
+
+                    // Number detection
+                    const numberPatterns = [
+                        /^-?\d{1,3}(?:'\d{3})*(?:[.,]\d+)?$/,
+                        /^-?\d{1,3}(?:,\d{3})*(?:\.\d+)?$/,
+                        /^-?\d+[.,]\d+$/,
+                        /^-?\d+$/
+                    ];
+
+                    numberPatterns.forEach(pattern => {
+                        if (pattern.test(text)) {
+                            let cleanNum = text.replace(/'/g, '').replace(/,/g, '');
+                            if (text.includes(',') && text.includes('.') && text.lastIndexOf(',') > text.lastIndexOf('.')) {
+                                cleanNum = text.replace(/\./g, '').replace(',', '.');
+                            }
+                            
+                            const parsed = parseFloat(cleanNum);
+                            if (!isNaN(parsed) && Math.abs(parsed) > 0) {
+                                extractedData.all_numbers.push({
+                                    original: text,
+                                    parsed: parsed,
+                                    page: pageNum,
+                                    x: Math.round(item.transform[4]),
+                                    y: Math.round(item.transform[5]),
+                                    magnitude: getMagnitude(parsed)
+                                });
+                            }
+                        }
+                    });
+                }
+            });
+        }
+        
+        function validateISIN(isin) {
+            return isin.length === 12 && /^[A-Z]{2}[A-Z0-9]{9}[0-9]$/.test(isin);
+        }
+        
+        function getMagnitude(num) {
+            const abs = Math.abs(num);
+            if (abs > 1000000) return 'large';
+            if (abs > 10000) return 'medium';
+            if (abs > 100) return 'small';
+            return 'tiny';
+        }
+        
+        function analyzeData() {
+            // Map ISINs to nearby data
+            extractedData.all_isins.forEach(isin => {
+                const security = {
+                    isin: isin.isin,
+                    page: isin.page,
+                    position: { x: isin.x, y: isin.y },
+                    relatedNumbers: [],
+                    marketValue: null,
+                    description: ''
+                };
+
+                // Find related numbers
+                extractedData.all_numbers.forEach(num => {
+                    if (num.page === isin.page) {
+                        const distance = Math.sqrt(Math.pow(num.x - isin.x, 2) + Math.pow(num.y - isin.y, 2));
+                        if (distance <= 100) {
+                            security.relatedNumbers.push(num);
+                            if (num.magnitude === 'large' && (!security.marketValue || num.parsed > security.marketValue)) {
+                                security.marketValue = num.parsed;
+                            }
+                        }
+                    }
+                });
+
+                // Find description
+                extractedData.all_text.forEach(textItem => {
+                    if (textItem.page === isin.page && textItem.text.length > 10) {
+                        const distance = Math.sqrt(Math.pow(textItem.x - isin.x, 2) + Math.pow(textItem.y - isin.y, 2));
+                        if (distance <= 150 && !isNumberOrISIN(textItem.text)) {
+                            if (!security.description || textItem.text.length > security.description.length) {
+                                security.description = textItem.text;
+                            }
+                        }
+                    }
+                });
+
+                extractedData.securities.push(security);
+            });
+        }
+        
+        function isNumberOrISIN(text) {
+            return /^[\d'.,%-]+$/.test(text) || /^[A-Z]{2}[A-Z0-9]{9}[0-9]$/.test(text);
+        }
+        
+        function buildTables() {
+            extractedData.tables = [
+                {
+                    name: 'Securities Overview',
+                    headers: ['ISIN', 'Description', 'Market Value', 'Page', 'Related Numbers'],
+                    data: extractedData.securities.map(sec => [
+                        sec.isin,
+                        sec.description || 'N/A',
+                        formatCurrency(sec.marketValue),
+                        sec.page,
+                        sec.relatedNumbers.length
+                    ])
+                },
+                {
+                    name: 'All Numbers',
+                    headers: ['Original', 'Parsed Value', 'Magnitude', 'Page', 'Position'],
+                    data: extractedData.all_numbers.map(num => [
+                        num.original,
+                        num.parsed.toLocaleString(),
+                        num.magnitude,
+                        num.page,
+                        `(${num.x}, ${num.y})`
+                    ])
+                },
+                {
+                    name: 'ISIN Codes',
+                    headers: ['ISIN', 'Page', 'Position', 'Context'],
+                    data: extractedData.all_isins.map(isin => [
+                        isin.isin,
+                        isin.page,
+                        `(${isin.x}, ${isin.y})`,
+                        isin.context.substring(0, 50) + '...'
+                    ])
+                },
+                {
+                    name: 'Large Amounts',
+                    headers: ['Amount', 'Original Format', 'Page', 'Magnitude'],
+                    data: extractedData.all_numbers
+                        .filter(num => num.magnitude === 'large')
+                        .sort((a, b) => b.parsed - a.parsed)
+                        .map(num => [
+                            formatCurrency(num.parsed),
+                            num.original,
+                            num.page,
+                            num.magnitude
+                        ])
+                }
+            ];
+        }
+        
+        function displayResults() {
+            hideProgress();
+            
+            // Show summary cards
+            showSummaryCards();
+            
+            // Show controls
+            document.getElementById('columnSelection').style.display = 'block';
+            document.getElementById('tableTemplates').style.display = 'block';
+            document.getElementById('exportSection').style.display = 'block';
+            document.getElementById('tabContainer').style.display = 'block';
+            
+            // Populate column options
+            populateColumnOptions();
+            
+            // Show default table
+            applyTemplate('securities');
+            
+            // Update status
+            showStatus('✅ PDF processed successfully! Choose a table template or build your own.');
+        }
+        
+        function showSummaryCards() {
+            const container = document.getElementById('summaryCards');
+            container.style.display = 'block';
+            container.innerHTML = `
+                <div class="summary-card">
+                    <h4>${extractedData.metadata.pages}</h4>
+                    <p>Pages Processed</p>
+                </div>
+                <div class="summary-card">
+                    <h4>${extractedData.all_text.length}</h4>
+                    <p>Text Elements</p>
+                </div>
+                <div class="summary-card">
+                    <h4>${extractedData.all_numbers.length}</h4>
+                    <p>Numbers Found</p>
+                </div>
+                <div class="summary-card">
+                    <h4>${extractedData.all_isins.length}</h4>
+                    <p>ISIN Codes</p>
+                </div>
+                <div class="summary-card">
+                    <h4>${extractedData.securities.length}</h4>
+                    <p>Securities Mapped</p>
+                </div>
+            `;
+        }
+        
+        function populateColumnOptions() {
+            const container = document.getElementById('columnOptions');
+            const allColumns = [
+                'ISIN', 'Description', 'Market Value', 'Page', 'Position', 
+                'Related Numbers', 'Original Format', 'Parsed Value', 'Magnitude', 'Context'
+            ];
+            
+            container.innerHTML = allColumns.map(col => `
+                <div class="checkbox-item">
+                    <input type="checkbox" id="col-${col}" value="${col}">
+                    <label for="col-${col}">${col}</label>
+                </div>
+            `).join('');
+        }
+        
+        function applyTemplate(templateName) {
+            const table = extractedData.tables.find(t => 
+                t.name.toLowerCase().includes(templateName.toLowerCase()) ||
+                templateName === 'securities' && t.name === 'Securities Overview' ||
+                templateName === 'numbers' && t.name === 'All Numbers' ||
+                templateName === 'isins' && t.name === 'ISIN Codes'
+            );
+            
+            if (table) {
+                currentTable = table;
+                displayTable(table);
+                populateFilters();
+            }
+        }
+        
+        function displayTable(table) {
+            const container = document.getElementById('tablePreview');
+            
+            const html = `
+                <div class="table-preview">
+                    <h3>${table.name} (${table.data.length} rows)</h3>
+                    <div class="export-options">
+                        <button class="btn" onclick="exportCurrentTable('csv')">📄 CSV</button>
+                        <button class="btn" onclick="exportCurrentTable('json')">📋 JSON</button>
+                        <button class="btn" onclick="copyToClipboard()">📋 Copy</button>
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>${table.headers.map(h => `<th>${h}</th>`).join('')}</tr>
+                            </thead>
+                            <tbody>
+                                ${table.data.map(row => 
+                                    `<tr>${row.map(cell => `<td>${cell}</td>`).join('')}</tr>`
+                                ).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            `;
+            
+            container.innerHTML = html;
+        }
+        
+        function populateFilters() {
+            const pageFilter = document.getElementById('pageFilter');
+            const pages = [...new Set(extractedData.all_text.map(item => item.page))].sort((a, b) => a - b);
+            
+            pageFilter.innerHTML = '<option value="">All Pages</option>' +
+                pages.map(page => `<option value="${page}">Page ${page}</option>`).join('');
+        }
+        
+        function applyFilters() {
+            // Implementation for filtering the current table
+            console.log('Applying filters...');
+        }
+        
+        function clearFilters() {
+            document.getElementById('pageFilter').value = '';
+            document.getElementById('magnitudeFilter').value = '';
+            document.getElementById('searchFilter').value = '';
+            applyFilters();
+        }
+        
+        function switchTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+            event.target.classList.add('active');
+            
+            if (tabName === 'data') {
+                displayRawData();
+            } else if (tabName === 'analysis') {
+                displayAnalysis();
+            }
+        }
+        
+        function displayRawData() {
+            const container = document.getElementById('rawDataDisplay');
+            container.innerHTML = `
+                <h3>📋 Raw Extracted Data</h3>
+                <div class="section">
+                    <h4>📝 All Text (${extractedData.all_text.length} items)</h4>
+                    <pre style="max-height: 300px; overflow-y: auto; background: #f5f5f5; padding: 15px; border-radius: 5px;">
+${extractedData.all_text.slice(0, 50).map(item => `Page ${item.page}: "${item.text}"`).join('\n')}
+${extractedData.all_text.length > 50 ? '\n... and ' + (extractedData.all_text.length - 50) + ' more items' : ''}
+                    </pre>
+                </div>
+            `;
+        }
+        
+        function displayAnalysis() {
+            const container = document.getElementById('analysisDisplay');
+            
+            const largeNumbers = extractedData.all_numbers.filter(n => n.magnitude === 'large');
+            const totalValue = largeNumbers.reduce((sum, num) => sum + num.parsed, 0);
+            
+            container.innerHTML = `
+                <h3>🔍 Data Analysis</h3>
+                
+                <div class="summary-cards">
+                    <div class="summary-card">
+                        <h4>${formatCurrency(totalValue)}</h4>
+                        <p>Total Large Amounts</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>${Math.round((extractedData.all_isins.length / extractedData.securities.length) * 100)}%</h4>
+                        <p>ISIN Match Rate</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h4>📊 Number Distribution</h4>
+                    <p>Large amounts (>$1M): ${extractedData.all_numbers.filter(n => n.magnitude === 'large').length}</p>
+                    <p>Medium amounts ($10K-$1M): ${extractedData.all_numbers.filter(n => n.magnitude === 'medium').length}</p>
+                    <p>Small amounts (<$10K): ${extractedData.all_numbers.filter(n => n.magnitude === 'small').length}</p>
+                </div>
+                
+                <div class="section">
+                    <h4>🏦 Securities by Page</h4>
+                    ${Array.from(new Set(extractedData.securities.map(s => s.page)))
+                        .sort((a, b) => a - b)
+                        .map(page => {
+                            const securities = extractedData.securities.filter(s => s.page === page);
+                            return `<p>Page ${page}: ${securities.length} securities</p>`;
+                        }).join('')}
+                </div>
+            `;
+        }
+        
+        function exportCurrentTable(format) {
+            if (!currentTable) return;
+            
+            if (format === 'csv') {
+                const csv = currentTable.headers.join(',') + '\n' +
+                           currentTable.data.map(row => 
+                               row.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(',')
+                           ).join('\n');
+                
+                downloadFile(csv, `${currentTable.name.replace(/\s+/g, '-').toLowerCase()}.csv`, 'text/csv');
+            }
+            
+            if (format === 'json') {
+                const jsonData = {
+                    table_name: currentTable.name,
+                    headers: currentTable.headers,
+                    data: currentTable.data,
+                    exported_at: new Date().toISOString()
+                };
+                
+                downloadFile(JSON.stringify(jsonData, null, 2), `${currentTable.name.replace(/\s+/g, '-').toLowerCase()}.json`, 'application/json');
+            }
+        }
+        
+        function downloadFile(content, filename, mimeType) {
+            const blob = new Blob([content], { type: mimeType });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+        
+        function copyToClipboard() {
+            if (!currentTable) return;
+            
+            const text = currentTable.headers.join('\t') + '\n' +
+                        currentTable.data.map(row => row.join('\t')).join('\n');
+            
+            navigator.clipboard.writeText(text).then(() => {
+                showStatus('✅ Table copied to clipboard!');
+                setTimeout(() => showStatus('✅ PDF processed successfully! Choose a table template or build your own.'), 3000);
+            });
+        }
+        
+        function printTable() {
+            if (!currentTable) return;
+            
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(`
+                <html>
+                <head>
+                    <title>${currentTable.name}</title>
+                    <style>
+                        body { font-family: Arial, sans-serif; margin: 20px; }
+                        table { width: 100%; border-collapse: collapse; }
+                        th, td { padding: 8px; text-align: left; border: 1px solid #ddd; }
+                        th { background-color: #f2f2f2; }
+                    </style>
+                </head>
+                <body>
+                    <h1>${currentTable.name}</h1>
+                    <table>
+                        <thead>
+                            <tr>${currentTable.headers.map(h => `<th>${h}</th>`).join('')}</tr>
+                        </thead>
+                        <tbody>
+                            ${currentTable.data.map(row => 
+                                `<tr>${row.map(cell => `<td>${cell}</td>`).join('')}</tr>`
+                            ).join('')}
+                        </tbody>
+                    </table>
+                </body>
+                </html>
+            `);
+            printWindow.document.close();
+            printWindow.print();
+        }
+        
+        function formatCurrency(amount) {
+            if (!amount || isNaN(amount)) return 'N/A';
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 0
+            }).format(amount);
+        }
+        
+        function showStatus(message, type = 'info') {
+            const container = document.getElementById('statusArea');
+            const className = type === 'error' ? 'status error' : 'status';
+            container.innerHTML = `<div class="${className}"><p>${message}</p></div>`;
+        }
+        
+        function showProgress(percent) {
+            const progressBar = document.getElementById('progressBar');
+            const progressFill = document.getElementById('progressFill');
+            
+            progressBar.style.display = 'block';
+            progressFill.style.width = percent + '%';
+            progressFill.textContent = Math.round(percent) + '%';
+        }
+        
+        function hideProgress() {
+            document.getElementById('progressBar').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

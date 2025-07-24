@@ -1,0 +1,295 @@
+{
+  "testSummary": {
+    "totalTests": 200,
+    "passed": 171,
+    "failed": 29,
+    "successRate": "85.50%",
+    "totalDuration": "109s",
+    "timestamp": "2025-07-22T05:54:25.026Z"
+  },
+  "performanceStats": {
+    "averageLoadTime": 611,
+    "maxLoadTime": 3938,
+    "minLoadTime": 89,
+    "memoryLeakDetected": true,
+    "slowRequests": 0,
+    "fastRequests": 111
+  },
+  "scenarioBreakdown": {
+    "Homepage Stability": {
+      "total": 50,
+      "passed": 50,
+      "failed": 0,
+      "issues": []
+    },
+    "PDF Upload Interface": {
+      "total": 30,
+      "passed": 30,
+      "failed": 0,
+      "issues": [
+        "No drag-and-drop zone detected"
+      ]
+    },
+    "Processing Endpoints": {
+      "total": 25,
+      "passed": 6,
+      "failed": 19,
+      "issues": [
+        "/api/bulletproof-processor returned 404 - Test 1",
+        "/api/smart-ocr returned 404 - Test 2",
+        "/api/pdf-extract returned 404 - Test 4",
+        "/api/bulletproof-processor returned 404 - Test 5",
+        "/api/smart-ocr returned 404 - Test 6",
+        "/api/pdf-extract returned 404 - Test 8",
+        "/api/bulletproof-processor returned 404 - Test 9",
+        "/api/smart-ocr returned 404 - Test 10",
+        "/api/pdf-extract returned 404 - Test 12",
+        "/api/bulletproof-processor returned 404 - Test 13",
+        "/api/smart-ocr returned 404 - Test 14",
+        "/api/pdf-extract returned 404 - Test 16",
+        "/api/bulletproof-processor returned 404 - Test 17",
+        "/api/smart-ocr returned 404 - Test 18",
+        "/api/pdf-extract returned 404 - Test 20",
+        "/api/bulletproof-processor returned 404 - Test 21",
+        "/api/smart-ocr returned 404 - Test 22",
+        "/api/pdf-extract returned 404 - Test 24",
+        "/api/bulletproof-processor returned 404 - Test 25"
+      ]
+    },
+    "Error Handling": {
+      "total": 20,
+      "passed": 20,
+      "failed": 0,
+      "issues": []
+    },
+    "Performance Under Load": {
+      "total": 15,
+      "passed": 15,
+      "failed": 0,
+      "issues": []
+    },
+    "Memory Leaks": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0,
+      "issues": []
+    },
+    "Concurrent Users": {
+      "total": 20,
+      "passed": 20,
+      "failed": 0,
+      "issues": []
+    },
+    "API Response Times": {
+      "total": 30,
+      "passed": 20,
+      "failed": 10,
+      "issues": [
+        "/api/smart-ocr returned 404 - Test 1",
+        "/api/smart-ocr returned 404 - Test 4",
+        "/api/smart-ocr returned 404 - Test 7",
+        "/api/smart-ocr returned 404 - Test 10",
+        "/api/smart-ocr returned 404 - Test 13",
+        "/api/smart-ocr returned 404 - Test 16",
+        "/api/smart-ocr returned 404 - Test 19",
+        "/api/smart-ocr returned 404 - Test 22",
+        "/api/smart-ocr returned 404 - Test 25",
+        "/api/smart-ocr returned 404 - Test 28"
+      ]
+    }
+  },
+  "criticalIssues": [
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/bulletproof-processor returned 404 - Test 1",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:47.896Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/smart-ocr returned 404 - Test 2",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:48.089Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/pdf-extract returned 404 - Test 4",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:48.549Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/bulletproof-processor returned 404 - Test 5",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:48.753Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/smart-ocr returned 404 - Test 6",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:48.945Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/pdf-extract returned 404 - Test 8",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:49.375Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/bulletproof-processor returned 404 - Test 9",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:49.556Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/smart-ocr returned 404 - Test 10",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:49.746Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/pdf-extract returned 404 - Test 12",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:50.153Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/bulletproof-processor returned 404 - Test 13",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:50.318Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/smart-ocr returned 404 - Test 14",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:50.481Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/pdf-extract returned 404 - Test 16",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:52.357Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/bulletproof-processor returned 404 - Test 17",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:53.795Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/smart-ocr returned 404 - Test 18",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:54.230Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/pdf-extract returned 404 - Test 20",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:54.610Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/bulletproof-processor returned 404 - Test 21",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:54.844Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/smart-ocr returned 404 - Test 22",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:55.011Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/pdf-extract returned 404 - Test 24",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:57.608Z"
+    },
+    {
+      "category": "Processing Endpoints",
+      "message": "/api/bulletproof-processor returned 404 - Test 25",
+      "severity": "HIGH",
+      "timestamp": "2025-07-22T05:53:58.157Z"
+    },
+    {
+      "category": "API Response Times",
+      "message": "/api/smart-ocr returned 404 - Test 1",
+      "severity": "MEDIUM",
+      "timestamp": "2025-07-22T05:54:18.120Z"
+    },
+    {
+      "category": "API Response Times",
+      "message": "/api/smart-ocr returned 404 - Test 4",
+      "severity": "MEDIUM",
+      "timestamp": "2025-07-22T05:54:18.787Z"
+    },
+    {
+      "category": "API Response Times",
+      "message": "/api/smart-ocr returned 404 - Test 7",
+      "severity": "MEDIUM",
+      "timestamp": "2025-07-22T05:54:19.477Z"
+    },
+    {
+      "category": "API Response Times",
+      "message": "/api/smart-ocr returned 404 - Test 10",
+      "severity": "MEDIUM",
+      "timestamp": "2025-07-22T05:54:20.208Z"
+    },
+    {
+      "category": "API Response Times",
+      "message": "/api/smart-ocr returned 404 - Test 13",
+      "severity": "MEDIUM",
+      "timestamp": "2025-07-22T05:54:20.827Z"
+    },
+    {
+      "category": "API Response Times",
+      "message": "/api/smart-ocr returned 404 - Test 16",
+      "severity": "MEDIUM",
+      "timestamp": "2025-07-22T05:54:21.485Z"
+    },
+    {
+      "category": "API Response Times",
+      "message": "/api/smart-ocr returned 404 - Test 19",
+      "severity": "MEDIUM",
+      "timestamp": "2025-07-22T05:54:22.142Z"
+    },
+    {
+      "category": "API Response Times",
+      "message": "/api/smart-ocr returned 404 - Test 22",
+      "severity": "MEDIUM",
+      "timestamp": "2025-07-22T05:54:22.774Z"
+    },
+    {
+      "category": "API Response Times",
+      "message": "/api/smart-ocr returned 404 - Test 25",
+      "severity": "MEDIUM",
+      "timestamp": "2025-07-22T05:54:23.663Z"
+    },
+    {
+      "category": "API Response Times",
+      "message": "/api/smart-ocr returned 404 - Test 28",
+      "severity": "MEDIUM",
+      "timestamp": "2025-07-22T05:54:24.417Z"
+    }
+  ],
+  "errorBreakdown": {
+    "HIGH": 19,
+    "MEDIUM": 10
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "category": "Stability",
+      "issue": "High failure rate detected",
+      "recommendation": "Investigate and fix critical stability issues before production use"
+    },
+    {
+      "priority": "CRITICAL",
+      "category": "Memory Management",
+      "issue": "Memory leak detected",
+      "recommendation": "Review JavaScript code for memory leaks and implement proper cleanup"
+    }
+  ]
+}

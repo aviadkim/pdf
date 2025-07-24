@@ -1,0 +1,27 @@
+FROM python:3.9-slim
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libmagic1 \
+    poppler-utils \
+    tesseract-ocr \
+    libreoffice \
+    pandoc \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Unstructured-IO
+RUN pip install unstructured[all-docs]
+
+# Install additional dependencies
+RUN pip install nltk spacy opencv-python pillow numpy pandas
+
+# Download spacy model
+RUN python -m spacy download en_core_web_sm
+
+# Copy application
+COPY . /app
+WORKDIR /app
+
+# Run Unstructured-IO processing
+CMD ["python", "safe_unstructured.py"]

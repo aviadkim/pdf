@@ -1,0 +1,395 @@
+{
+  "success": true,
+  "method": "surgical_improvement",
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "name": "1.00 6'070 ORDINARY Money market USD100'000.00 -2.30% 0.50%",
+      "value": 6069.77,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual ..."
+    },
+    {
+      "isin": "XS2530201644",
+      "name": "funds, Convertible bonds, Interest options USD200'000 0.25% 1.02%",
+      "value": 200000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": " info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf..."
+    },
+    {
+      "isin": "XS2588105036",
+      "name": "28.03.2025 1'031 CANADIAN IMPERIAL BANK COMMERCE NOTES 23-22.08.28",
+      "value": 200000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "riptionPerf YTD\nNominal/\nQuantity\nBonds, Bond funds, Convertible bonds, Interest options\nUSD200'000\n0.25%\n1.02%\nISIN: XS2530201644  //  Valorn.: 125350273\nOrdinary Bonds  //  Maturity: 23.02.2027\nCoup..."
+    },
+    {
+      "isin": "XS2665592833",
+      "name": "32'000 HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028",
+      "value": 200000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": ".200099.1991199'080\n-1.00%\n28.03.2025\n682\nTORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN\nUSD200'000\n0.47%\n1.03%\nVRN\n100.200099.6285200'288\n-0.57%\n28.03.2025\n1'031\nCANADIAN IMPERIAL BANK OF COMMERCE..."
+    },
+    {
+      "isin": "XS2692298537",
+      "name": "Bonds 18.09.2028 18.9 Annual 5.00 USD690'000 2.26% 3.79%",
+      "value": 1500000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "'031\nCANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28\nISIN: XS2588105036  //  Valorn.: 112286204\nOrdinary Bonds  //  Maturity: 22.02.2028\nCoupon: 23.2  //  Annual  5.1531%  //  Days: 46\nPRC: 5.00\n..."
+    },
+    {
+      "isin": "XS2754416860",
+      "name": "GOLDMAN SACHS NOTES 23-07.11.29 SERIES USD100'000 1.16% 0.50%",
+      "value": 690000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "\n7.75%\nSE.195\n99.099098.37001'507'550\n-0.74%\n31.03.2025\n32'000\nHARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028\nISIN: XS2665592833  //  Valorn.: 128829182\nOrdinary Bonds  //  Maturity: 18.09.2028\nC..."
+    },
+    {
+      "isin": "XS2761230684",
+      "name": "(4.2 MIN/5.5 MAX) NOTES 2024-17.01.30 USD100'000 2.24% 0.53%",
+      "value": 100000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "000\n2.26%\n3.79%\nISIN: XS2692298537  //  Valorn.: 129157183\nOrdinary Bonds  //  Maturity: 07.11.2029\nYTM: -1.44  //  PRC: 5.00\n100.1000106.9200737'748\n6.81%\n31.03.2025\nGOLDMAN SACHS 0% NOTES 23-07.11.2..."
+    },
+    {
+      "isin": "XS2736388732",
+      "name": "CIBC NOTES 2024-13.02.2030 VARIABLE RATE USD250'000 -2.58% 1.32%",
+      "value": 100000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "orn.: 132648671\nOrdinary Bonds  //  Maturity: 17.01.2030\nCoupon: 17.1  //  Annual  5.238%  //  Days: 73\nPRC: 5.00\n100.200097.140098'202\n-3.05%\n31.03.2025\n1'062\nLUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024..."
+    },
+    {
+      "isin": "XS2782869916",
+      "name": "CITIGROUP GLBL 5.65 CALL FIXED RATE NOTES 2024-",
+      "value": 50000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nA..."
+    },
+    {
+      "isin": "XS2824054402",
+      "name": "Bonds 09.05.2034 5.00 Price verified USD440'000 1.81% 2.46%",
+      "value": 50000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "rice currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nBonds, Bond funds, C..."
+    },
+    {
+      "isin": "XS2567543397",
+      "name": "31.03.2025 20'602 BOFA 2024-29.05.34 REGS USD2'450'000 1.26% 13.21%",
+      "value": 440000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "05.34\n100.200097.334048'667\n-2.86%\n31.03.2025\nCITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-\nISIN: XS2782869916  //  Valorn.: 132544344\nOrdinary Bonds  //  Maturity: 09.05.2034\nPRC: 5.00\nPrice to b..."
+    },
+    {
+      "isin": "XS2848820754",
+      "name": "-0.14% 31.03.2025 CITIGROUP GLBL MEDIUM TERM NOTES 2024-01.08.34",
+      "value": 1100000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "\nCoupon: 18.6  //  Annual  5.61%  //  Days: 282  //  YTM: 5.53\nPRC: 5.00\n100.1000100.52002'570'405\n0.42%\n31.03.2025\n107'665\nGS 10Y CALLABLE NOTE 2024-18.06.2034\nUSD1'100'000\n1.50%\n5.66%\nISIN: XS211007..."
+    },
+    {
+      "isin": "XS2829712830",
+      "name": "XS2848820754 Zero Bonds 01.08.2034 5.00 USD100'000 1.16% 0.47%",
+      "value": 1100000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "25\n107'665\nGS 10Y CALLABLE NOTE 2024-18.06.2034\nUSD1'100'000\n1.50%\n5.66%\nISIN: XS2110079584  //  Valorn.: 136429245\nZero Bonds  //  Callable: 09.07.2026\nYTM: 5.88  //  PRC: 5.00\n100.1000100.10001'101'..."
+    },
+    {
+      "isin": "XS2912278723",
+      "name": "31.03.2025 GOLDMAN SACHS EMTN 2024-30.09.2024 USD200'000 1.92% 1.02%",
+      "value": 90000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "00%\n31.03.2025\nCITIGROUP 0% MTN 2024-09.07.34 REGS\nUSD90'000\n2.35%\n0.46%\nGLOBAL RE\n100.2000100.060090'054\n-0.14%\n31.03.2025\nCITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34\nISIN: XS2848820754  //  V..."
+    },
+    {
+      "isin": "XS2381723902",
+      "name": "-4.13% 31.03.2025 JPMORGAN CHASE NOTES 2024-29.10.34 SERIES 2021-",
+      "value": 200000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": " Valorn.: 134735316\nOrdinary Bonds  //  Maturity: 30.09.2034\nYTM: 5.64  //  PRC: 5.00\n99.999692.320092'320\n-7.68%\n31.03.2025\nGOLDMAN SACHS EMTN 2024-30.09.2024\nUSD200'000\n1.92%\n1.02%\nISIN: XS291227872..."
+    },
+    {
+      "isin": "XS2829752976",
+      "name": "27.03.2025 GOLDMAN SACHS EURO MEDIUM TERM NOTES 2024-",
+      "value": 250000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\n..."
+    },
+    {
+      "isin": "XS2953741100",
+      "name": "Ordinary Bonds 18.11.2034 5.65 5.00 USD150'000 1.90% 0.75%",
+      "value": 250000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "on in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nBonds, Bond f..."
+    },
+    {
+      "isin": "XS2381717250",
+      "name": "BANK AMERICA NOTES 2024-11.12.34 REG USD500'000 3.70% 2.60%",
+      "value": 250000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "ble bonds, Interest options\nUSD250'000\n0.73%\n1.24%\n18.11.2034\n99.679096.8300242'075\n-2.86%\n27.03.2025\nGOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-\nISIN: XS2829752976  //  Valorn.: 138874416\nOrdinary ..."
+    },
+    {
+      "isin": "XS2481066111",
+      "name": "31.03.2025 JPMORGAN CHASE NOTES 2024-19.12.2034 USD50'000 -1.10% 0.25%",
+      "value": 150000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "inary Bonds  //  Maturity: 18.11.2034\nYTM: 5.65  //  PRC: 5.00\nUSD150'000\n1.90%\n0.75%\nISIN: XS2953741100  //  Valorn.: 138494467\nZero Bonds  //  Maturity: 11.12.2034\nYTM: 5.28  //  PRC: 5.00\n99.198097..."
+    },
+    {
+      "isin": "XS2964611052",
+      "name": "31.03.2025 GOLDMAN SACHS NOTES 2025-03.02.2035 USD1'470'000 0.72% 7.61%",
+      "value": 500000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "-1.46%\n27.03.2025\nBANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S\nUSD500'000\n3.70%\n2.60%\nISIN: XS2381717250  //  Valorn.: 128883267\nZero Bonds  //  Maturity: 19.12.2034\nPRC: 5.00\n100.2000101.1000505'500..."
+    },
+    {
+      "isin": "XS3035947103",
+      "name": "28.03.2025 WELLS FARGO EURO MEDIUM TERM NOTES 2025-28.03.36",
+      "value": 1470000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "l  orn.: 126294402\nZero Bonds  //  Maturity: 03.02.2035\nYTM: 0.10  //  PRC: 5.00\n100.100099.000049'500\n-1.10%\n31.03.2025\nGOLDMAN SACHS 0% NOTES 2025-03.02.2035\nUSD1'470'000\n0.72%\n7.61%\nISIN: XS2964611..."
+    },
+    {
+      "isin": "LU2228214107",
+      "name": "-45.08% 13.09.2024 PREMIUM ALT.S.A. SICAV-SIF COMMERCIAL FINANCE OPP.XB",
+      "value": 800000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": " 141235167\nZero Bonds  //  Maturity: 14.02.2035\nYTM: 5.41  //  PRC: 5.00\n100.0000100.72001'480'584\n0.72%\n31.03.2025\nDEUTSCHE BANK 0 % NOTES 2025-14.02.35\nUSD800'000\n0.00%\n4.11%\nREG S\n100.0000100.00008..."
+    },
+    {
+      "isin": "CH1269060229",
+      "name": "-3.00% 31.03.2025 1'043 JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28",
+      "value": 2581.79,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": ".00%\n28.03.2025\nWELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36\nISIN: XS3035947103  //  Valorn.: 143578751\nOrdinary Bonds  //  Maturity: 28.03.2036\nPRC: 5.00\nUSD2'581.79\n0.00%\n0.59%\nSP\n81.530444...."
+    },
+    {
+      "isin": "XS0461497009",
+      "name": "funds, Convertible bonds, Interest options USD690'000 1.54% 3.65%",
+      "value": 690000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": " info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf..."
+    },
+    {
+      "isin": "XS2746319610",
+      "name": "DEUTSCHE BANK NOTES 23-08.11.28 VRN USD140'000 3.10% 0.99%",
+      "value": 690000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "cy\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nBonds, Bond funds, Convertible ..."
+    },
+    {
+      "isin": "CH0244767585",
+      "name": "Equities, Equity funds, Options equities/indices CHF800 -3.10% 0.12%",
+      "value": 24319,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "1029// info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Tota..."
+    },
+    {
+      "isin": "XS2519369867",
+      "name": "-2.72% 28.02.2025 BCO SAFRA CAYMAN STRUCT.NOTE 2022-21.06.27 3,4%",
+      "value": 200000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue U..."
+    },
+    {
+      "isin": "XS2315191069",
+      "name": "Other convertible bonds 21.06.2027 5.00 USD500'000 0.22% 2.58%",
+      "value": 200000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "y\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nStru..."
+    },
+    {
+      "isin": "XS2792098779",
+      "name": "PARIBAS ISS STRUCT.NOTE 21-08.01.29 DBDK USD1'200'000 -1.83% 5.93%",
+      "value": 500000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "00.728897.9853196'221\n-2.72%\n28.02.2025\n250\nBCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%\nISIN: XS2519369867  //  Valorn.: 121050656\nOther convertible bonds  //  Maturity: 21.06.2027\nDays: 9  // ..."
+    },
+    {
+      "isin": "XS2714429128",
+      "name": "20'343 EMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN",
+      "value": 1200000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "y: 08.01.2029\nDays: 82  //  PRC: 5.0 0\nPrice to be verified\n100.524199.0000502'305\n-1.52%\n31.03.2025\n7'305\nBNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631\nUSD1'200'000\n-1.83%\n5.93%\nISIN: XS2792..."
+    },
+    {
+      "isin": "XS2105981117",
+      "name": "-3.76% 31.03.2025 GOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN NAT",
+      "value": 690000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "urity: 02.12.2034  //  PRC: 5.00\nPrice to be verified\n100.000096.19301'154'316\n-3.81%\n31.03.2025\nCITIGROUP\nUSD690'000\n-1.94%\n3.62%\nWELLS F.\n100.446299.0900704'064\n-1.35%\n27.03.2025\n20'343\nEMERALD BAY ..."
+    },
+    {
+      "isin": "XS2838389430",
+      "name": "Bonds 20.12.2028 4.0 Price verified USD1'600'000 0.35% 8.34%",
+      "value": 500000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "064\n-1.35%\n27.03.2025\n20'343\nEMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN\nISIN: XS2714429128  //  Valorn.: 130738882\nStructured Bonds  //  Maturity: 17.09.2029\nDays: 195  //  PRC: 5.00\nPrice to b..."
+    },
+    {
+      "isin": "XS2631782468",
+      "name": "31.03.2025 1'416 LUMINIS REPACK NOTES 23-25.05.29 VRN 4,625%",
+      "value": 1600000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": " //  Val  orn.: 114118068\nStructured Bonds  //  Maturity: 20.12.2028\nDays: 10  //  PRC: 4.0 0\nPrice to be verified\nUSD1'600'000\n0.35%\n8.34%\nISIN: XS2838389430  //  Valorn.: 135968317\nStructured Bonds ..."
+    },
+    {
+      "isin": "XS1700087403",
+      "name": "91.021798.671998'672 8.40% 31.03.2025 NATIXIS STRUC.NOTES 19-20.6.26 VRN 4,75%ME",
+      "value": 100000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "stfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCou..."
+    },
+    {
+      "isin": "XS2594173093",
+      "name": "Bonds 20.06.2026 5.00 Price verified USD200'000 -1.90% 0.99%",
+      "value": 100000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "rrency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity..."
+    },
+    {
+      "isin": "XS2407295554",
+      "name": "0.19% 31.03.2025 6'514 NOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN",
+      "value": 200000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "00087403  //  Valorn.: 39877135\nStructured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00\nPrice to be verified\nUSD200'000\n-1.90%\n0.99%\nISIN: XS2594173093  //  Valorn.: 125443809\nStructured Bonds  //  ..."
+    },
+    {
+      "isin": "XS2252299883",
+      "name": "100.366498.9800989'800 -1.38% 28.03.2025 NOVUS CAPITAL STRUCTURED NOTES 20-15.05",
+      "value": 500000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "inSummary": false,
+      "extractionMethod": "currency_prefixed",
+      "context": "'464\n-2.88%\n31.03.2025\n1'044\nNOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029\nUSD500'000\n4.36%\n2.62%\nNATWEST GROUP\n100.5243100.7200510'114\n0.19%\n31.03.2025\n6'514\nNOVUS CAPITAL STRUCT.NOTE 2021-12.01...."
+    }
+  ],
+  "totalValue": 16892970.56,
+  "accuracy": 86.78892570761508,
+  "metadata": {
+    "processingTime": 366,
+    "documentAnalysis": {
+      "format": "international",
+      "primaryCurrency": "USD",
+      "portfolioTotal": 19464431,
+      "swissNumberCount": 949,
+      "internationalNumberCount": 989,
+      "isSwissDocument": false
+    },
+    "surgicalEnhancement": true,
+    "provenBase": "86.79%",
+    "noHardcodedValues": true,
+    "legitimateExtraction": true,
+    "completeSystem": true,
+    "swissFormatSupported": true
+  }
+}

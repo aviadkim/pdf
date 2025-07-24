@@ -1,0 +1,893 @@
+{
+  "summary": {
+    "totalTests": 200,
+    "passed": 56,
+    "failed": 144,
+    "successRate": "28.00",
+    "totalDuration": 2231182,
+    "averageTestTime": "11155.91"
+  },
+  "mistralTests": {
+    "total": 28,
+    "successful": 0,
+    "successRate": "0.00"
+  },
+  "annotationTests": {
+    "total": 56,
+    "successful": 0,
+    "successRate": "0.00"
+  },
+  "performance": {
+    "averageLoadTime": 0,
+    "screenshots": 179,
+    "errors": 144
+  },
+  "errors": [
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 1541,
+      "timestamp": "2025-07-20T13:33:10.110Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "Expected content not found: Annotation interface",
+      "duration": 1851,
+      "timestamp": "2025-07-20T13:33:10.697Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "Expected content not found: Pattern Learning",
+      "duration": 2582,
+      "timestamp": "2025-07-20T13:33:11.262Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 246,
+      "timestamp": "2025-07-20T13:33:12.084Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "Expected content not found: Annotation interface",
+      "duration": 1342,
+      "timestamp": "2025-07-20T13:33:12.773Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "Expected content not found: Pattern Learning",
+      "duration": 1634,
+      "timestamp": "2025-07-20T13:33:12.907Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 247,
+      "timestamp": "2025-07-20T13:33:12.920Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "Expected content not found: Annotation interface",
+      "duration": 2019,
+      "timestamp": "2025-07-20T13:33:14.251Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 691,
+      "timestamp": "2025-07-20T13:33:14.364Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1652,
+      "timestamp": "2025-07-20T13:33:15.208Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 323,
+      "timestamp": "2025-07-20T13:33:15.488Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 259,
+      "timestamp": "2025-07-20T13:33:16.132Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1579,
+      "timestamp": "2025-07-20T13:33:16.597Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 368,
+      "timestamp": "2025-07-20T13:33:17.153Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 512,
+      "timestamp": "2025-07-20T13:33:18.212Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 303,
+      "timestamp": "2025-07-20T13:33:19.672Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361669,
+      "timestamp": "2025-07-20T13:39:12.349Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 362418,
+      "timestamp": "2025-07-20T13:39:16.055Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "Expected content not found: Annotation interface",
+      "duration": 1313,
+      "timestamp": "2025-07-20T13:39:17.859Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 362557,
+      "timestamp": "2025-07-20T13:39:18.664Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1338,
+      "timestamp": "2025-07-20T13:39:19.763Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 257,
+      "timestamp": "2025-07-20T13:39:20.605Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361755,
+      "timestamp": "2025-07-20T13:39:20.980Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "Expected content not found: Annotation interface",
+      "duration": 1310,
+      "timestamp": "2025-07-20T13:39:21.380Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 211,
+      "timestamp": "2025-07-20T13:39:21.411Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361676,
+      "timestamp": "2025-07-20T13:39:21.974Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1380,
+      "timestamp": "2025-07-20T13:39:23.393Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1248,
+      "timestamp": "2025-07-20T13:39:24.011Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 213,
+      "timestamp": "2025-07-20T13:39:24.188Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 249,
+      "timestamp": "2025-07-20T13:39:25.031Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1390,
+      "timestamp": "2025-07-20T13:39:26.023Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1224,
+      "timestamp": "2025-07-20T13:39:26.411Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 190,
+      "timestamp": "2025-07-20T13:39:26.795Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1208,
+      "timestamp": "2025-07-20T13:39:27.128Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 266,
+      "timestamp": "2025-07-20T13:39:27.651Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1367,
+      "timestamp": "2025-07-20T13:39:28.367Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1361,
+      "timestamp": "2025-07-20T13:39:29.077Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 216,
+      "timestamp": "2025-07-20T13:39:29.156Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 213,
+      "timestamp": "2025-07-20T13:39:29.861Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 241,
+      "timestamp": "2025-07-20T13:39:29.977Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 189,
+      "timestamp": "2025-07-20T13:39:30.628Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361705,
+      "timestamp": "2025-07-20T13:45:23.729Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361688,
+      "timestamp": "2025-07-20T13:45:27.325Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1355,
+      "timestamp": "2025-07-20T13:45:29.315Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361644,
+      "timestamp": "2025-07-20T13:45:29.884Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1388,
+      "timestamp": "2025-07-20T13:45:31.337Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 244,
+      "timestamp": "2025-07-20T13:45:32.142Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361607,
+      "timestamp": "2025-07-20T13:45:32.158Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361647,
+      "timestamp": "2025-07-20T13:45:32.846Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1220,
+      "timestamp": "2025-07-20T13:45:32.905Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 204,
+      "timestamp": "2025-07-20T13:45:32.940Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1359,
+      "timestamp": "2025-07-20T13:45:34.848Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1221,
+      "timestamp": "2025-07-20T13:45:35.002Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 227,
+      "timestamp": "2025-07-20T13:45:35.657Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 240,
+      "timestamp": "2025-07-20T13:45:36.467Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1352,
+      "timestamp": "2025-07-20T13:45:36.962Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1230,
+      "timestamp": "2025-07-20T13:45:37.229Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 196,
+      "timestamp": "2025-07-20T13:45:37.729Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1261,
+      "timestamp": "2025-07-20T13:45:37.919Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 429,
+      "timestamp": "2025-07-20T13:45:39.265Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1727,
+      "timestamp": "2025-07-20T13:45:39.532Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 2005,
+      "timestamp": "2025-07-20T13:45:40.877Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 619,
+      "timestamp": "2025-07-20T13:45:41.053Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 325,
+      "timestamp": "2025-07-20T13:45:41.908Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 307,
+      "timestamp": "2025-07-20T13:45:42.040Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "EBUSY: resource busy or locked, unlink 'C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\test-temp\\test-document.pdf'",
+      "duration": 2401,
+      "timestamp": "2025-07-20T13:45:42.549Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 270,
+      "timestamp": "2025-07-20T13:45:42.975Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1247,
+      "timestamp": "2025-07-20T13:45:48.738Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1366,
+      "timestamp": "2025-07-20T13:45:50.689Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 233,
+      "timestamp": "2025-07-20T13:45:51.490Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 173,
+      "timestamp": "2025-07-20T13:45:52.224Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361644,
+      "timestamp": "2025-07-20T13:51:35.163Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 362546,
+      "timestamp": "2025-07-20T13:51:39.603Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1353,
+      "timestamp": "2025-07-20T13:51:40.304Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1368,
+      "timestamp": "2025-07-20T13:51:42.250Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 230,
+      "timestamp": "2025-07-20T13:51:43.064Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 203,
+      "timestamp": "2025-07-20T13:51:43.859Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361938,
+      "timestamp": "2025-07-20T13:51:44.716Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1248,
+      "timestamp": "2025-07-20T13:51:45.065Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 362399,
+      "timestamp": "2025-07-20T13:51:45.981Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1454,
+      "timestamp": "2025-07-20T13:51:47.102Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 239,
+      "timestamp": "2025-07-20T13:51:47.912Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 277,
+      "timestamp": "2025-07-20T13:51:48.769Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1273,
+      "timestamp": "2025-07-20T13:51:49.893Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1255,
+      "timestamp": "2025-07-20T13:51:51.360Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1402,
+      "timestamp": "2025-07-20T13:51:51.886Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 395,
+      "timestamp": "2025-07-20T13:51:52.895Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1426,
+      "timestamp": "2025-07-20T13:51:53.378Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 243,
+      "timestamp": "2025-07-20T13:51:53.762Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 257,
+      "timestamp": "2025-07-20T13:51:54.228Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361571,
+      "timestamp": "2025-07-20T13:51:54.385Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 266,
+      "timestamp": "2025-07-20T13:51:55.076Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1281,
+      "timestamp": "2025-07-20T13:51:59.612Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1464,
+      "timestamp": "2025-07-20T13:52:01.680Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 269,
+      "timestamp": "2025-07-20T13:52:02.544Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 230,
+      "timestamp": "2025-07-20T13:52:03.367Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361713,
+      "timestamp": "2025-07-20T13:57:46.156Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361786,
+      "timestamp": "2025-07-20T13:57:51.133Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1244,
+      "timestamp": "2025-07-20T13:57:52.283Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1533,
+      "timestamp": "2025-07-20T13:57:54.477Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 217,
+      "timestamp": "2025-07-20T13:57:55.347Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361800,
+      "timestamp": "2025-07-20T13:57:56.199Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 209,
+      "timestamp": "2025-07-20T13:57:56.203Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1197,
+      "timestamp": "2025-07-20T13:57:56.584Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1413,
+      "timestamp": "2025-07-20T13:57:58.647Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 224,
+      "timestamp": "2025-07-20T13:57:59.530Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 343,
+      "timestamp": "2025-07-20T13:58:00.526Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1214,
+      "timestamp": "2025-07-20T13:58:01.899Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1377,
+      "timestamp": "2025-07-20T13:58:03.924Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 217,
+      "timestamp": "2025-07-20T13:58:04.774Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 228,
+      "timestamp": "2025-07-20T13:58:05.635Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361743,
+      "timestamp": "2025-07-20T13:58:05.706Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1381,
+      "timestamp": "2025-07-20T13:58:11.129Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1430,
+      "timestamp": "2025-07-20T13:58:13.288Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 212,
+      "timestamp": "2025-07-20T13:58:14.141Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 217,
+      "timestamp": "2025-07-20T13:58:15.001Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 541534,
+      "timestamp": "2025-07-20T14:00:57.208Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1207,
+      "timestamp": "2025-07-20T14:01:02.892Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1495,
+      "timestamp": "2025-07-20T14:01:05.032Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 229,
+      "timestamp": "2025-07-20T14:01:05.894Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 204,
+      "timestamp": "2025-07-20T14:01:06.738Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361711,
+      "timestamp": "2025-07-20T14:03:58.592Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361618,
+      "timestamp": "2025-07-20T14:04:02.776Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1339,
+      "timestamp": "2025-07-20T14:04:04.720Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1386,
+      "timestamp": "2025-07-20T14:04:06.830Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 206,
+      "timestamp": "2025-07-20T14:04:07.602Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361677,
+      "timestamp": "2025-07-20T14:04:07.941Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 336,
+      "timestamp": "2025-07-20T14:04:08.515Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1226,
+      "timestamp": "2025-07-20T14:04:08.549Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1435,
+      "timestamp": "2025-07-20T14:04:10.652Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 232,
+      "timestamp": "2025-07-20T14:04:11.589Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 204,
+      "timestamp": "2025-07-20T14:04:12.360Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1225,
+      "timestamp": "2025-07-20T14:04:13.600Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1481,
+      "timestamp": "2025-07-20T14:04:15.672Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 259,
+      "timestamp": "2025-07-20T14:04:16.544Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361684,
+      "timestamp": "2025-07-20T14:04:17.365Z"
+    },
+    {
+      "test": "Patterns API Test",
+      "error": "HTTP 404: ",
+      "duration": 315,
+      "timestamp": "2025-07-20T14:04:17.755Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361626,
+      "timestamp": "2025-07-20T14:07:08.994Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1291,
+      "timestamp": "2025-07-20T14:07:14.825Z"
+    },
+    {
+      "test": "Annotation Interface Test",
+      "error": "HTTP 304: ",
+      "duration": 1349,
+      "timestamp": "2025-07-20T14:07:16.888Z"
+    },
+    {
+      "test": "Stats API Test",
+      "error": "HTTP 404: ",
+      "duration": 250,
+      "timestamp": "2025-07-20T14:07:17.952Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361744,
+      "timestamp": "2025-07-20T14:10:10.865Z"
+    },
+    {
+      "test": "Mistral OCR Processing Test",
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "duration": 361824,
+      "timestamp": "2025-07-20T14:10:14.761Z"
+    },
+    {
+      "test": "Homepage Load Test",
+      "error": "HTTP 304: ",
+      "duration": 1270,
+      "timestamp": "2025-07-20T14:10:16.495Z"
+    }
+  ],
+  "timestamp": "2025-07-20T14:10:17.605Z",
+  "deploymentUrl": "https://pdf-fzzi.onrender.com"
+}

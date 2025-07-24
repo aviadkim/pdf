@@ -1,0 +1,191 @@
+{
+  "workflowDemonstrations": "Specific Workflow Demonstrations Report",
+  "timestamp": "2025-07-21T14:29:06.361Z",
+  "productionUrl": "https://pdf-fzzi.onrender.com",
+  "workflows": [
+    {
+      "name": "New User Onboarding",
+      "steps": [
+        {
+          "action": "Homepage visit",
+          "time": 846,
+          "success": true
+        },
+        {
+          "action": "Content exploration",
+          "elements": {
+            "headings": [
+              "🧠 Smart OCR Learning System",
+              "🔧 PDF Processing",
+              "📊 System Status",
+              "🎨 Visual Annotation"
+            ],
+            "buttons": [
+              "Process PDF with Smart OCR",
+              "Open Annotation Interface"
+            ],
+            "links": [
+              "Open Annotation Interface"
+            ]
+          },
+          "success": true
+        },
+        {
+          "action": "Navigation to annotation",
+          "success": true
+        },
+        {
+          "action": "Interface assessment",
+          "capabilities": {
+            "uploadElements": 3,
+            "toolElements": 13,
+            "progressElements": 6,
+            "hasUploadCapability": true
+          },
+          "success": true
+        }
+      ],
+      "screenshots": [
+        "workflow-demonstrations/screenshots/01-new-user-homepage.png",
+        "workflow-demonstrations/screenshots/02-new-user-annotation-interface.png"
+      ],
+      "timestamp": "2025-07-21T14:29:02.027Z"
+    },
+    {
+      "name": "PDF Upload Workflow",
+      "uploadCapabilities": {
+        "fileInputs": [
+          {
+            "id": "fileInput",
+            "name": "",
+            "accept": ".pdf",
+            "multiple": false
+          }
+        ],
+        "dropZones": 0,
+        "uploadButtons": [
+          "🚀 Process Document"
+        ],
+        "totalUploadElements": 2
+      },
+      "interactionTests": {
+        "fileInputEvents": true,
+        "buttonHover": true
+      },
+      "screenshots": [
+        "workflow-demonstrations/screenshots/03-pdf-upload-workflow.png"
+      ],
+      "timestamp": "2025-07-21T14:29:04.885Z"
+    },
+    {
+      "name": "System Monitoring",
+      "statsData": {
+        "currentAccuracy": 80,
+        "patternCount": 19,
+        "documentCount": 0,
+        "annotationCount": 26,
+        "accuracyGain": 0,
+        "confidenceScore": 80,
+        "learningRate": 0.1,
+        "mistralEnabled": true,
+        "targetAccuracy": 99.9
+      },
+      "responseTime": "Fast",
+      "dataAvailable": true,
+      "timestamp": "2025-07-21T14:29:05.556Z"
+    },
+    {
+      "name": "ML Pattern Monitoring",
+      "patternSummary": {
+        "totalCategories": 4,
+        "tablePatterns": 14,
+        "securityPatterns": 0,
+        "documentPatterns": 0
+      },
+      "patternsAvailable": true,
+      "timestamp": "2025-07-21T14:29:05.646Z"
+    },
+    {
+      "name": "API Integration Workflow",
+      "endpoints": [
+        {
+          "name": "Health Check",
+          "path": "/api/smart-ocr-test",
+          "status": 200,
+          "ok": true,
+          "responseTime": 211,
+          "dataPreview": {
+            "hasData": true,
+            "keys": [
+              "status",
+              "service",
+              "version",
+              "mistralEnabled",
+              "endpoints"
+            ],
+            "dataSize": 279
+          },
+          "timestamp": "2025-07-21T14:29:05.866Z"
+        },
+        {
+          "name": "System Stats",
+          "path": "/api/smart-ocr-stats",
+          "status": 200,
+          "ok": true,
+          "responseTime": 81,
+          "dataPreview": {
+            "hasData": true,
+            "keys": [
+              "success",
+              "stats"
+            ],
+            "dataSize": 205
+          },
+          "timestamp": "2025-07-21T14:29:05.951Z"
+        },
+        {
+          "name": "ML Patterns",
+          "path": "/api/smart-ocr-patterns",
+          "status": 200,
+          "ok": true,
+          "responseTime": 79,
+          "dataPreview": {
+            "hasData": true,
+            "keys": [
+              "success",
+              "patterns"
+            ],
+            "dataSize": 10084
+          },
+          "timestamp": "2025-07-21T14:29:06.033Z"
+        },
+        {
+          "name": "Learning Endpoint",
+          "path": "/api/smart-ocr-learn",
+          "status": 404,
+          "ok": false,
+          "responseTime": 77,
+          "dataPreview": null,
+          "timestamp": "2025-07-21T14:29:06.111Z"
+        },
+        {
+          "name": "Processing Endpoint",
+          "path": "/api/smart-ocr-process",
+          "status": 404,
+          "ok": false,
+          "responseTime": 246,
+          "dataPreview": null,
+          "timestamp": "2025-07-21T14:29:06.358Z"
+        }
+      ],
+      "successRate": 60,
+      "averageResponseTime": 138.8,
+      "timestamp": "2025-07-21T14:29:06.358Z"
+    }
+  ],
+  "summary": {
+    "totalWorkflows": 5,
+    "successfulWorkflows": 5,
+    "screenshotsCaptured": 3
+  }
+}

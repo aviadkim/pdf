@@ -1,0 +1,252 @@
+{
+  "raw_patterns": [
+    {
+      "type": "isin",
+      "value": "XS2993414619",
+      "page": 7,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2530201644",
+      "page": 8,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2588105036",
+      "page": 8,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2665592833",
+      "page": 8,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2692298537",
+      "page": 8,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2754416860",
+      "page": 8,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2761230684",
+      "page": 8,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2736388732",
+      "page": 8,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2782869916",
+      "page": 9,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2824054402",
+      "page": 9,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2567543397",
+      "page": 9,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2110079584",
+      "page": 9,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2848820754",
+      "page": 9,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2829712830",
+      "page": 9,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2912278723",
+      "page": 9,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2381723902",
+      "page": 9,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2829752976",
+      "page": 10,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2953741100",
+      "page": 10,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2381717250",
+      "page": 10,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2481066111",
+      "page": 10,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2964611052",
+      "page": 10,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS3035947103",
+      "page": 10,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "LU2228214107",
+      "page": 10,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "CH1269060229",
+      "page": 10,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS0461497009",
+      "page": 11,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2746319610",
+      "page": 11,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "CH0244767585",
+      "page": 12,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2519369867",
+      "page": 13,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2315191069",
+      "page": 13,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2792098779",
+      "page": 13,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2714429128",
+      "page": 13,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2105981117",
+      "page": 13,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2838389430",
+      "page": 13,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2631782468",
+      "page": 13,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS1700087403",
+      "page": 14,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2594173093",
+      "page": 14,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2407295554",
+      "page": 14,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XS2252299883",
+      "page": 14,
+      "confidence": 0.95
+    },
+    {
+      "type": "isin",
+      "value": "XD0466760473",
+      "page": 15,
+      "confidence": 0.95
+    }
+  ],
+  "quality_metrics": {
+    "confidence_score": 100,
+    "completeness_score": 100,
+    "validation_status": "EXCELLENT"
+  },
+  "document_info": {
+    "bank_name": "In addition to conventional type bonds, this category also includes: convertible bonds with a right to subscribe for shares or hybrid bonds, bond funds and",
+    "client_name": "MESSOS ENTERPRISES LTD.",
+    "account_number": "",
+    "valuation_date": "01.04.2025",
+    "currency": "USD",
+    "document_type": "portfolio_statement",
+    "pages": 19
+  }
+}

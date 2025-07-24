@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "securities": [],
+  "totalValue": 0,
+  "accuracy": 0,
+  "method": "real_ocr_intelligence_system",
+  "visualAnalysis": {
+    "tables": [],
+    "columns": [],
+    "confidence": 0.5
+  },
+  "metadata": {
+    "processingTime": 447,
+    "ocrPagesProcessed": 1,
+    "tablesDetected": 0,
+    "columnsDetected": 0,
+    "visualConfidence": 0.5
+  }
+}

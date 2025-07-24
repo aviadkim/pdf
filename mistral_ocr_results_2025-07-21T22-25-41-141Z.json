@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "method": "fallback_pdf_parse",
+  "securities": [],
+  "summary": {
+    "totalSecurities": 0,
+    "totalValue": 0,
+    "accuracy": 0,
+    "averageConfidence": 60
+  },
+  "metadata": {
+    "extractionMethod": "fallback_text_extraction",
+    "fallback": true,
+    "legitimate": true
+  }
+}

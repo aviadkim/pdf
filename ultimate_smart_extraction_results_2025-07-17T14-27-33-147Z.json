@@ -1,0 +1,169 @@
+{
+  "success": true,
+  "method": "ultimate_smart_extraction",
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "name": "market USD100'000.00 -2.30% 0.50% ISIN:",
+      "value": 6070,
+      "currency": "USD",
+      "confidence": 0.7,
+      "method": "context_proximity_extraction",
+      "structureContext": "section",
+      "tableColumn": "none",
+      "reasoning": "Extracted from context proximity (distance: 65)"
+    },
+    {
+      "isin": "XS2848820754",
+      "name": "MEDIUM TERM NOTES 2024-01.08.34 ISIN:",
+      "value": 2024,
+      "currency": "USD",
+      "confidence": 0.7,
+      "method": "context_proximity_extraction",
+      "structureContext": "section",
+      "tableColumn": "none",
+      "reasoning": "Extracted from context proximity (distance: 20)"
+    },
+    {
+      "isin": "XS2829712830",
+      "name": "5.00 USD100'000 1.16% 0.47% ISIN:",
+      "value": 2034,
+      "currency": "USD",
+      "confidence": 0.7,
+      "method": "context_proximity_extraction",
+      "structureContext": "section",
+      "tableColumn": "none",
+      "reasoning": "Extracted from context proximity (distance: 44)"
+    },
+    {
+      "isin": "XS2912278723",
+      "name": "2024-30.09.2024 USD200'000 1.92% 1.02% ISIN:",
+      "value": 2024,
+      "currency": "USD",
+      "confidence": 0.7,
+      "method": "context_proximity_extraction",
+      "structureContext": "section",
+      "tableColumn": "none",
+      "reasoning": "Extracted from context proximity (distance: 34)"
+    },
+    {
+      "isin": "XS2381723902",
+      "name": "NOTES 2024-29.10.34 SERIES 2021- ISIN:",
+      "value": 2021,
+      "currency": "USD",
+      "confidence": 0.7,
+      "method": "context_proximity_extraction",
+      "structureContext": "section",
+      "tableColumn": "none",
+      "reasoning": "Extracted from context proximity (distance: 12)"
+    },
+    {
+      "isin": "LU2228214107",
+      "name": "SICAV-SIF COMMERCIAL FINANCE OPP.XB ISIN:",
+      "value": 2024,
+      "currency": "USD",
+      "confidence": 0.7,
+      "method": "context_proximity_extraction",
+      "structureContext": "section",
+      "tableColumn": "none",
+      "reasoning": "Extracted from context proximity (distance: 66)"
+    },
+    {
+      "isin": "CH1269060229",
+      "name": "BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28 ISIN:",
+      "value": 1043,
+      "currency": "USD",
+      "confidence": 0.7,
+      "method": "context_proximity_extraction",
+      "structureContext": "section",
+      "tableColumn": "none",
+      "reasoning": "Extracted from context proximity (distance: 68)"
+    },
+    {
+      "isin": "XS2714429128",
+      "name": "23-17.09.29 S.2023-05 REG-S VRN ISIN:",
+      "value": 2023,
+      "currency": "USD",
+      "confidence": 0.7,
+      "method": "context_proximity_extraction",
+      "structureContext": "section",
+      "tableColumn": "none",
+      "reasoning": "Extracted from context proximity (distance: 24)"
+    },
+    {
+      "isin": "XS2105981117",
+      "name": "GR.STRUCT.NOTE 21-20.12.28 VRN NAT ISIN:",
+      "value": 2025,
+      "currency": "USD",
+      "confidence": 0.7,
+      "method": "context_proximity_extraction",
+      "structureContext": "section",
+      "tableColumn": "none",
+      "reasoning": "Extracted from context proximity (distance: 67)"
+    },
+    {
+      "isin": "XS2838389430",
+      "name": "verified USD1'600'000 0.35% 8.34% ISIN:",
+      "value": 600000,
+      "currency": "USD",
+      "confidence": 0.7,
+      "method": "context_proximity_extraction",
+      "structureContext": "section",
+      "tableColumn": "none",
+      "reasoning": "Extracted from context proximity (distance: 26)"
+    },
+    {
+      "isin": "XS2631782468",
+      "name": "NOTES 23-25.05.29 VRN 4,625% ISIN:",
+      "value": 4625,
+      "currency": "USD",
+      "confidence": 0.7,
+      "method": "context_proximity_extraction",
+      "structureContext": "section",
+      "tableColumn": "none",
+      "reasoning": "Extracted from context proximity (distance: 13)"
+    },
+    {
+      "isin": "XS2407295554",
+      "name": "CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ISIN:",
+      "value": 2021,
+      "currency": "USD",
+      "confidence": 0.7,
+      "method": "context_proximity_extraction",
+      "structureContext": "section",
+      "tableColumn": "none",
+      "reasoning": "Extracted from context proximity (distance: 27)"
+    },
+    {
+      "isin": "XS2252299883",
+      "name": "CAPITAL STRUCTURED NOTES 20-15.05.26 ISIN:",
+      "value": 2025,
+      "currency": "USD",
+      "confidence": 0.7,
+      "method": "context_proximity_extraction",
+      "structureContext": "section",
+      "tableColumn": "none",
+      "reasoning": "Extracted from context proximity (distance: 60)"
+    }
+  ],
+  "totalValue": 629959,
+  "accuracy": 3.236462447836261,
+  "metadata": {
+    "processingTime": 432,
+    "completeData": {
+      "totalLines": 1063,
+      "totalNumbers": 1273,
+      "totalISINs": 39
+    },
+    "smartStructure": {
+      "documentType": "swiss_portfolio",
+      "tablesFound": 0,
+      "sectionsFound": 88,
+      "structureConfidence": 0.6
+    },
+    "ultimateApproach": true,
+    "completeDataExtraction": true,
+    "smartStructureUnderstanding": true,
+    "financialIntelligence": true
+  }
+}

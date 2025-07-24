@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/extract",
+      "dest": "/api/extract.js"
+    },
+    {
+      "src": "/api/public-extract",
+      "dest": "/api/public-extract.js"
+    },
+    {
+      "src": "/api/test",
+      "dest": "/api/test.js"
+    },
+    {
+      "src": "/live-demo",
+      "dest": "/public/live-demo.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ],
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 30,
+      "memory": 1024
+    }
+  }
+}

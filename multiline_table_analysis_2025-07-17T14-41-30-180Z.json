@@ -1,0 +1,658 @@
+{
+  "success": true,
+  "securities": [
+    {
+      "isin": "XS2665592833",
+      "value": 32000,
+      "reasoning": "Market value candidate (32'000) from line: \"32'000\"",
+      "isinLine": 324,
+      "valueLine": 322,
+      "quantity": null,
+      "allNumbers": [
+        {
+          "value": 31.03,
+          "type": "percentage",
+          "line": 0
+        },
+        {
+          "value": 2025,
+          "type": "year",
+          "line": 0
+        },
+        {
+          "value": 32000,
+          "type": "market_value_candidate",
+          "line": 1
+        },
+        {
+          "value": 4,
+          "type": "percentage",
+          "line": 2
+        },
+        {
+          "value": 5,
+          "type": "percentage",
+          "line": 2
+        },
+        {
+          "value": 5,
+          "type": "percentage",
+          "line": 2
+        },
+        {
+          "value": 2023,
+          "type": "year",
+          "line": 2
+        },
+        {
+          "value": 18.09,
+          "type": "percentage",
+          "line": 2
+        },
+        {
+          "value": 2028,
+          "type": "year",
+          "line": 2
+        },
+        {
+          "value": 128829182,
+          "type": "valor_number",
+          "line": 3
+        },
+        {
+          "value": 18.09,
+          "type": "percentage",
+          "line": 4
+        },
+        {
+          "value": 2028,
+          "type": "year",
+          "line": 4
+        },
+        {
+          "value": 18.9,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 4,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 192,
+          "type": "small_number",
+          "line": 5
+        },
+        {
+          "value": 5,
+          "type": "percentage",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "isin": "XS2692298537",
+      "value": 1000106,
+      "reasoning": "Largest number (1000106) from line: \"100.1000106.9200737'748\"",
+      "isinLine": 331,
+      "valueLine": 334,
+      "quantity": null,
+      "allNumbers": [
+        {
+          "value": 0,
+          "type": "small_number",
+          "line": 0
+        },
+        {
+          "value": 2.26,
+          "type": "percentage",
+          "line": 1
+        },
+        {
+          "value": 3.79,
+          "type": "percentage",
+          "line": 2
+        },
+        {
+          "value": 129157183,
+          "type": "valor_number",
+          "line": 3
+        },
+        {
+          "value": 7.11,
+          "type": "percentage",
+          "line": 4
+        },
+        {
+          "value": 2029,
+          "type": "year",
+          "line": 4
+        },
+        {
+          "value": 1.44,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 5,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 100,
+          "type": "small_number",
+          "line": 6
+        },
+        {
+          "value": 1000106,
+          "type": "large_number",
+          "line": 6
+        },
+        {
+          "value": 9200737748,
+          "type": "unknown",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "isin": "XS2567543397",
+      "value": 450000,
+      "reasoning": "Largest number (450'000) from line: \"USD2'450'000\"",
+      "isinLine": 430,
+      "valueLine": 427,
+      "quantity": 450000,
+      "allNumbers": [
+        {
+          "value": 450000,
+          "type": "quantity",
+          "line": 0
+        },
+        {
+          "value": 1.26,
+          "type": "percentage",
+          "line": 1
+        },
+        {
+          "value": 13.21,
+          "type": "percentage",
+          "line": 2
+        },
+        {
+          "value": 134736192,
+          "type": "valor_number",
+          "line": 3
+        },
+        {
+          "value": 18.06,
+          "type": "percentage",
+          "line": 4
+        },
+        {
+          "value": 2026,
+          "type": "year",
+          "line": 4
+        },
+        {
+          "value": 18.6,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 5.61,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 282,
+          "type": "small_number",
+          "line": 5
+        },
+        {
+          "value": 5.53,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 5,
+          "type": "percentage",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "isin": "XS2110079584",
+      "value": 1000100.10001,
+      "reasoning": "Market value candidate (1000100.10001) from line: \"100.1000100.10001'101'100\"",
+      "isinLine": 442,
+      "valueLine": 445,
+      "quantity": 100000,
+      "allNumbers": [
+        {
+          "value": 100000,
+          "type": "quantity",
+          "line": 0
+        },
+        {
+          "value": 1.5,
+          "type": "percentage",
+          "line": 1
+        },
+        {
+          "value": 5.66,
+          "type": "percentage",
+          "line": 2
+        },
+        {
+          "value": 136429245,
+          "type": "valor_number",
+          "line": 3
+        },
+        {
+          "value": 9.07,
+          "type": "percentage",
+          "line": 4
+        },
+        {
+          "value": 2026,
+          "type": "year",
+          "line": 4
+        },
+        {
+          "value": 5.88,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 5,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 100,
+          "type": "small_number",
+          "line": 6
+        },
+        {
+          "value": 1000100.10001,
+          "type": "market_value_candidate",
+          "line": 6
+        },
+        {
+          "value": 101100,
+          "type": "market_value_candidate",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "isin": "XS2381717250",
+      "value": 2000101,
+      "reasoning": "Largest number (2000101) from line: \"100.2000101.1000505'500\"",
+      "isinLine": 544,
+      "valueLine": 547,
+      "quantity": null,
+      "allNumbers": [
+        {
+          "value": 0,
+          "type": "small_number",
+          "line": 0
+        },
+        {
+          "value": 3.7,
+          "type": "percentage",
+          "line": 1
+        },
+        {
+          "value": 2.6,
+          "type": "percentage",
+          "line": 2
+        },
+        {
+          "value": 128883267,
+          "type": "valor_number",
+          "line": 3
+        },
+        {
+          "value": 19.12,
+          "type": "percentage",
+          "line": 4
+        },
+        {
+          "value": 2034,
+          "type": "year",
+          "line": 4
+        },
+        {
+          "value": 5,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 100,
+          "type": "small_number",
+          "line": 6
+        },
+        {
+          "value": 2000101,
+          "type": "large_number",
+          "line": 6
+        },
+        {
+          "value": 1000505500,
+          "type": "unknown",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "isin": "XS2481066111",
+      "value": 49500,
+      "reasoning": "Market value candidate (000049'500) from line: \"100.100099.000049'500\"",
+      "isinLine": 554,
+      "valueLine": 557,
+      "quantity": null,
+      "allNumbers": [
+        {
+          "value": 0,
+          "type": "small_number",
+          "line": 0
+        },
+        {
+          "value": 1.1,
+          "type": "percentage",
+          "line": 1
+        },
+        {
+          "value": 0.25,
+          "type": "percentage",
+          "line": 2
+        },
+        {
+          "value": 126294402,
+          "type": "unknown",
+          "line": 3
+        },
+        {
+          "value": 3.02,
+          "type": "percentage",
+          "line": 4
+        },
+        {
+          "value": 2035,
+          "type": "year",
+          "line": 4
+        },
+        {
+          "value": 0.1,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 5,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 100.100099,
+          "type": "price",
+          "line": 6
+        },
+        {
+          "value": 49500,
+          "type": "market_value_candidate",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "isin": "XS2964611052",
+      "value": 480584,
+      "reasoning": "Market value candidate (480'584) from line: \"100.0000100.72001'480'584\"",
+      "isinLine": 564,
+      "valueLine": 567,
+      "quantity": 470000,
+      "allNumbers": [
+        {
+          "value": 470000,
+          "type": "quantity",
+          "line": 0
+        },
+        {
+          "value": 0.72,
+          "type": "percentage",
+          "line": 1
+        },
+        {
+          "value": 7.61,
+          "type": "percentage",
+          "line": 2
+        },
+        {
+          "value": 141235167,
+          "type": "valor_number",
+          "line": 3
+        },
+        {
+          "value": 14.02,
+          "type": "percentage",
+          "line": 4
+        },
+        {
+          "value": 2035,
+          "type": "year",
+          "line": 4
+        },
+        {
+          "value": 5.41,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 5,
+          "type": "percentage",
+          "line": 5
+        },
+        {
+          "value": 100,
+          "type": "small_number",
+          "line": 6
+        },
+        {
+          "value": 100.72001,
+          "type": "price",
+          "line": 6
+        },
+        {
+          "value": 480584,
+          "type": "market_value_candidate",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "isin": "XS2792098779",
+      "value": 200000,
+      "reasoning": "Largest number (200'000) from line: \"USD1'200'000\"",
+      "isinLine": 766,
+      "valueLine": 763,
+      "quantity": 200000,
+      "allNumbers": [
+        {
+          "value": 200000,
+          "type": "quantity",
+          "line": 0
+        },
+        {
+          "value": 1.83,
+          "type": "percentage",
+          "line": 1
+        },
+        {
+          "value": 5.93,
+          "type": "percentage",
+          "line": 2
+        },
+        {
+          "value": 140288136,
+          "type": "valor_number",
+          "line": 3
+        },
+        {
+          "value": 2.12,
+          "type": "percentage",
+          "line": 4
+        },
+        {
+          "value": 2034,
+          "type": "year",
+          "line": 4
+        },
+        {
+          "value": 5,
+          "type": "percentage",
+          "line": 4
+        },
+        {
+          "value": 100.000096,
+          "type": "price",
+          "line": 6
+        },
+        {
+          "value": 19301154316,
+          "type": "unknown",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "isin": "XS2714429128",
+      "value": 20343,
+      "reasoning": "Market value candidate (20'343) from line: \"20'343\"",
+      "isinLine": 782,
+      "valueLine": 780,
+      "quantity": null,
+      "allNumbers": [
+        {
+          "value": 27.03,
+          "type": "percentage",
+          "line": 0
+        },
+        {
+          "value": 2025,
+          "type": "year",
+          "line": 0
+        },
+        {
+          "value": 20343,
+          "type": "market_value_candidate",
+          "line": 1
+        },
+        {
+          "value": 23,
+          "type": "small_number",
+          "line": 2
+        },
+        {
+          "value": 17.09,
+          "type": "percentage",
+          "line": 2
+        },
+        {
+          "value": 29,
+          "type": "small_number",
+          "line": 2
+        },
+        {
+          "value": 2023,
+          "type": "year",
+          "line": 2
+        },
+        {
+          "value": 5,
+          "type": "small_number",
+          "line": 2
+        },
+        {
+          "value": 130738882,
+          "type": "valor_number",
+          "line": 3
+        },
+        {
+          "value": 17.09,
+          "type": "percentage",
+          "line": 4
+        },
+        {
+          "value": 2029,
+          "type": "year",
+          "line": 4
+        },
+        {
+          "value": 195,
+          "type": "small_number",
+          "line": 5
+        },
+        {
+          "value": 5,
+          "type": "percentage",
+          "line": 5
+        }
+      ]
+    },
+    {
+      "isin": "XS2838389430",
+      "value": 600000,
+      "reasoning": "Largest number (600'000) from line: \"USD1'600'000\"",
+      "isinLine": 802,
+      "valueLine": 799,
+      "quantity": 600000,
+      "allNumbers": [
+        {
+          "value": 600000,
+          "type": "quantity",
+          "line": 0
+        },
+        {
+          "value": 0.35,
+          "type": "percentage",
+          "line": 1
+        },
+        {
+          "value": 8.34,
+          "type": "percentage",
+          "line": 2
+        },
+        {
+          "value": 135968317,
+          "type": "valor_number",
+          "line": 3
+        },
+        {
+          "value": 26.04,
+          "type": "percentage",
+          "line": 4
+        },
+        {
+          "value": 2033,
+          "type": "year",
+          "line": 4
+        },
+        {
+          "value": 279,
+          "type": "small_number",
+          "line": 5
+        },
+        {
+          "value": 5,
+          "type": "percentage",
+          "line": 5
+        }
+      ]
+    }
+  ],
+  "totalValue": 5832734.10001,
+  "accuracy": 29.96611665663384,
+  "analysis": "multiline_table_analysis"
+}

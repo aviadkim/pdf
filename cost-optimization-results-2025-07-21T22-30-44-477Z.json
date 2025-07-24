@@ -1,0 +1,85 @@
+{
+  "results": [
+    {
+      "success": true,
+      "model": "mistral-small-latest",
+      "securities": [
+        {
+          "isin": "CH0012221716",
+          "name": "Nestlé SA",
+          "value": 12500
+        },
+        {
+          "isin": "CH0012221716",
+          "name": "Nestlé SA",
+          "value": 12500
+        },
+        {
+          "isin": "CH0012221716",
+          "name": "Nestlé SA",
+          "value": 12500
+        },
+        {
+          "isin": "CH0012221716",
+          "name": "Nestlé SA",
+          "value": 12500
+        }
+      ],
+      "totalValue": 50000,
+      "confidence": 0.9,
+      "cost": 0.0001236,
+      "tokensUsed": 618,
+      "processingTime": 1753137044451
+    },
+    {
+      "success": true,
+      "model": "mistral-small-latest",
+      "securities": [
+        {
+          "isin": "CH0012221716",
+          "name": "Nestlé SA",
+          "value": 12500
+        },
+        {
+          "isin": "CH0012221716",
+          "name": "Nestlé SA",
+          "value": 12500
+        },
+        {
+          "isin": "CH0012221716",
+          "name": "Nestlé SA",
+          "value": 12500
+        },
+        {
+          "isin": "CH0012221716",
+          "name": "Nestlé SA",
+          "value": 12500
+        }
+      ],
+      "totalValue": 50000,
+      "confidence": 0.9,
+      "cost": 0.0001236,
+      "tokensUsed": 618,
+      "processingTime": 1753137044451
+    }
+  ],
+  "businessMetrics": {
+    "totalProcessed": 1,
+    "totalCost": "$0.00",
+    "avgCostPerPDF": "$0.0001",
+    "avgAccuracy": "90.0%",
+    "avgProcessingTime": "2.9s",
+    "cacheHitRate": "100.0%",
+    "modelUsage": {
+      "small": 1,
+      "medium": 0,
+      "large": 0
+    },
+    "profitMargin": "100.0%"
+  },
+  "recommendations": {
+    "pricing": "$0.25-0.50 per PDF",
+    "subscription": "$49-99/month for 1000 PDFs",
+    "enterprise": "Custom pricing for 10k+ PDFs/month"
+  }
+}

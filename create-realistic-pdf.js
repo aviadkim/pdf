@@ -1,0 +1,274 @@
+#!/usr/bin/env node
+
+/**
+ * CREATE REALISTIC PDF
+ * 
+ * Creates a more realistic PDF that might reveal upload/processing issues
+ */
+
+const fs = require('fs');
+
+// Create a larger, more complex PDF that might cause issues
+const realisticPdfContent = `%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R 4 0 R]
+/Count 2
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 5 0 R
+/Resources <<
+  /Font <<
+    /F1 6 0 R
+  >>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 7 0 R
+/Resources <<
+  /Font <<
+    /F1 6 0 R
+  >>
+>>
+>>
+endobj
+
+5 0 obj
+<<
+/Length 2500
+>>
+stream
+BT
+/F1 12 Tf
+50 750 Td
+(MESSOS FINANCIAL SERVICES AG) Tj
+0 -20 Td
+(Portfolio Statement - Quarterly Report Q4 2024) Tj
+0 -20 Td
+(Client: John Doe | Account: CH91 0873 1234 5678 9012 3) Tj
+0 -20 Td
+(Report Date: 31.12.2024 | Currency: CHF) Tj
+
+0 -40 Td
+(EQUITY HOLDINGS - INTERNATIONAL DIVERSIFICATION) Tj
+0 -25 Td
+(ISIN: US0378331005 | Apple Inc. | Qty: 150 | Price: USD 195.89 | Value: CHF 27,234.56) Tj
+0 -15 Td
+(ISIN: CH0012032048 | Roche Holding AG | Qty: 75 | Price: CHF 268.50 | Value: CHF 20,137.50) Tj
+0 -15 Td
+(ISIN: DE0007164600 | SAP SE | Qty: 100 | Price: EUR 132.45 | Value: CHF 14,567.89) Tj
+0 -15 Td
+(ISIN: GB0002162385 | BP PLC | Qty: 500 | Price: GBP 4.85 | Value: CHF 2,789.34) Tj
+0 -15 Td
+(ISIN: FR0000120271 | Total SE | Qty: 200 | Price: EUR 58.92 | Value: CHF 12,945.67) Tj
+0 -15 Td
+(ISIN: NL0000235190 | Airbus SE | Qty: 80 | Price: EUR 145.78 | Value: CHF 12,834.56) Tj
+0 -15 Td
+(ISIN: IT0003128367 | ENEL SpA | Qty: 1000 | Price: EUR 6.45 | Value: CHF 7,089.23) Tj
+
+0 -30 Td
+(BOND HOLDINGS - FIXED INCOME PORTFOLIO) Tj
+0 -20 Td
+(ISIN: CH0224397106 | Swiss Confederation 0.5% 2031 | Nominal: CHF 100,000 | Value: CHF 98,456.78) Tj
+0 -15 Td
+(ISIN: DE0001102406 | Germany 0.25% 2029 | Nominal: EUR 50,000 | Value: CHF 52,345.67) Tj
+0 -15 Td
+(ISIN: US912828XG55 | US Treasury 2.75% 2028 | Nominal: USD 75,000 | Value: CHF 69,234.89) Tj
+
+0 -30 Td
+(CASH AND MONEY MARKET) Tj
+0 -20 Td
+(CHF Current Account: CHF 45,678.90) Tj
+0 -15 Td
+(USD Money Market: USD 25,000.00 = CHF 22,567.89) Tj
+0 -15 Td
+(EUR Money Market: EUR 15,000.00 = CHF 16,234.56) Tj
+
+0 -30 Td
+(TRANSACTION HISTORY - LAST 30 DAYS) Tj
+0 -20 Td
+(15.12.2024 | BUY | ISIN: US0378331005 | 50 shares | USD 195.89 | Commission: CHF 25.00) Tj
+0 -15 Td
+(10.12.2024 | SELL | ISIN: DE0007164600 | 25 shares | EUR 132.45 | Commission: CHF 18.50) Tj
+0 -15 Td
+(05.12.2024 | DIVIDEND | ISIN: CH0012032048 | CHF 3.50 per share | Total: CHF 262.50) Tj
+0 -15 Td
+(01.12.2024 | COUPON | ISIN: CH0224397106 | 0.5% annual | Amount: CHF 500.00) Tj
+
+0 -30 Td
+(PERFORMANCE ANALYSIS) Tj
+0 -20 Td
+(Portfolio Value (31.12.2024): CHF 456,789.12) Tj
+0 -15 Td
+(Portfolio Value (30.09.2024): CHF 423,567.89) Tj
+0 -15 Td
+(Quarterly Performance: +7.84% | YTD Performance: +12.45%) Tj
+0 -15 Td
+(Benchmark (SMI): +6.23% | Outperformance: +1.61%) Tj
+
+0 -30 Td
+(RISK METRICS AND ALLOCATION) Tj
+0 -20 Td
+(Value at Risk (95%, 1 day): CHF 8,234.56) Tj
+0 -15 Td
+(Beta vs SMI: 0.87 | Sharpe Ratio: 1.23) Tj
+0 -15 Td
+(Asset Allocation: Equities 65% | Bonds 25% | Cash 10%) Tj
+0 -15 Td
+(Geographic Allocation: Switzerland 35% | Europe 30% | USA 25% | Others 10%) Tj
+ET
+endstream
+endobj
+
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+7 0 obj
+<<
+/Length 1200
+>>
+stream
+BT
+/F1 12 Tf
+50 750 Td
+(MESSOS FINANCIAL SERVICES AG - PAGE 2) Tj
+0 -20 Td
+(DETAILED HOLDINGS BREAKDOWN) Tj
+
+0 -40 Td
+(SECTOR ALLOCATION ANALYSIS) Tj
+0 -25 Td
+(Technology: 35.2% | Healthcare: 18.7% | Energy: 12.4% | Financials: 15.8%) Tj
+0 -15 Td
+(Industrials: 8.9% | Consumer Goods: 6.3% | Utilities: 2.7%) Tj
+
+0 -30 Td
+(CURRENCY EXPOSURE) Tj
+0 -20 Td
+(CHF: 45.6% | USD: 28.9% | EUR: 21.3% | GBP: 4.2%) Tj
+
+0 -30 Td
+(ESG RATINGS AND SUSTAINABILITY) Tj
+0 -20 Td
+(Portfolio ESG Score: 8.2/10 | Carbon Footprint: 125 tCO2e/CHF 1M invested) Tj
+0 -15 Td
+(Sustainable Investments: 67% of total portfolio) Tj
+
+0 -30 Td
+(FEES AND CHARGES SUMMARY) Tj
+0 -20 Td
+(Management Fee (Q4 2024): CHF 1,142.37 | Transaction Costs: CHF 156.80) Tj
+0 -15 Td
+(Custody Fees: CHF 89.45 | Total Fees YTD: CHF 4,567.89) Tj
+
+0 -30 Td
+(UPCOMING CORPORATE ACTIONS) Tj
+0 -20 Td
+(15.01.2025 | ISIN: CH0012032048 | Dividend Payment | Est. CHF 3.75 per share) Tj
+0 -15 Td
+(28.01.2025 | ISIN: US0378331005 | Stock Split 4:1 | Adjustment required) Tj
+
+0 -30 Td
+(CONTACT INFORMATION) Tj
+0 -20 Td
+(Relationship Manager: Maria Schmidt | Phone: +41 44 123 45 67) Tj
+0 -15 Td
+(Email: maria.schmidt@messos.ch | Emergency: +41 44 123 45 99) Tj
+0 -15 Td
+(Online Banking: www.messos.ch | Mobile App: MESSOS Mobile) Tj
+
+0 -40 Td
+(IMPORTANT DISCLAIMERS) Tj
+0 -20 Td
+(This document contains confidential information. Past performance) Tj
+0 -15 Td
+(does not guarantee future results. All investments carry risk.) Tj
+0 -15 Td
+(Please consult your advisor before making investment decisions.) Tj
+ET
+endstream
+endobj
+
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000273 00000 n 
+0000000431 00000 n 
+0000002983 00000 n 
+0000003061 00000 n 
+trailer
+<<
+/Size 8
+/Root 1 0 R
+>>
+startxref
+4313
+%%EOF`;
+
+// Write the realistic PDF
+fs.writeFileSync('messos-realistic.pdf', realisticPdfContent);
+console.log('✅ Created messos-realistic.pdf for testing');
+
+console.log('\n📊 REALISTIC PDF CHARACTERISTICS:');
+console.log('=================================');
+console.log(`📄 File Size: ${realisticPdfContent.length} bytes`);
+console.log('📑 Pages: 2 pages');
+console.log('📊 Content Complexity: High');
+console.log('🏦 Financial Institution: MESSOS FINANCIAL SERVICES AG');
+console.log('💼 Document Type: Portfolio Statement');
+
+console.log('\n🔍 CONTENT INCLUDES:');
+console.log('====================');
+console.log('✅ 10+ ISIN numbers from multiple countries');
+console.log('✅ 20+ currency values in CHF, USD, EUR, GBP');
+console.log('✅ Multiple dates and timestamps');
+console.log('✅ Performance percentages and metrics');
+console.log('✅ Complex financial data structures');
+console.log('✅ Multi-page content');
+console.log('✅ Real-world financial terminology');
+
+console.log('\n🧪 THIS SHOULD TEST:');
+console.log('====================');
+console.log('- Large file processing');
+console.log('- Multi-page PDF handling');
+console.log('- Complex text extraction');
+console.log('- Multiple ISIN detection');
+console.log('- Currency parsing across pages');
+console.log('- Performance under realistic load');
+console.log('- Memory usage with larger content');
+
+console.log('\n⚠️ POTENTIAL ISSUES TO WATCH:');
+console.log('==============================');
+console.log('- File size limits (4KB+ file)');
+console.log('- Multi-page processing');
+console.log('- Memory consumption');
+console.log('- Processing timeout');
+console.log('- Complex PDF structure parsing');

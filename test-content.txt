@@ -1,0 +1,4 @@
+Financial Portfolio Statement
+ISIN: CH0012032048
+Value: 1,234,567.89 CHF
+Date: 2024-03-31

@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  smart-ocr:
+    build:
+      context: .
+      dockerfile: Dockerfile.perfect
+    ports:
+      - "10002:10002"
+    environment:
+      - NODE_ENV=production
+      - MISTRAL_API_KEY=${MISTRAL_API_KEY}
+    volumes:
+      - ./smart-ocr-data:/app/smart-ocr-data
+    restart: always

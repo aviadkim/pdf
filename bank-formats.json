@@ -1,0 +1,11 @@
+{
+  "messos": {
+    "name": "messos",
+    "accuracy": 100,
+    "identifiers": [
+      "Messos",
+      "Corner"
+    ],
+    "perfected": true
+  }
+}

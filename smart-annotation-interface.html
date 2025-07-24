@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Financial PDF OCR - Visual Annotation Interface</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #2d3748;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #718096;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .accuracy-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #48bb78, #38a169);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 1.1em;
+            margin: 0 10px;
+        }
+
+        .main-interface {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 30px;
+            height: calc(100vh - 200px);
+        }
+
+        .pdf-viewer {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: auto;
+        }
+
+        .pdf-canvas {
+            position: relative;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            background: #f8fafc;
+            min-height: 800px;
+            background-image: url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><defs><pattern id=\"grid\" width=\"10\" height=\"10\" patternUnits=\"userSpaceOnUse\"><path d=\"M 10 0 L 0 0 0 10\" fill=\"none\" stroke=\"%23e2e8f0\" stroke-width=\"0.5\"/></pattern></defs><rect width=\"100\" height=\"100\" fill=\"url(%23grid)\" /></svg>');
+            cursor: crosshair;
+            user-select: none;
+        }
+
+        .annotation-tools {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            height: fit-content;
+        }
+
+        .tools-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .tools-header h2 {
+            color: #2d3748;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .tool-category {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .tool-category h3 {
+            color: #4a5568;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .tool-category h3::before {
+            content: '🎨';
+            margin-right: 8px;
+        }
+
+        .annotation-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tool-btn {
+            padding: 12px 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tool-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .tool-btn.active {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .tool-btn.table-header {
+            background: linear-gradient(45deg, #3b82f6, #2563eb);
+            color: white;
+        }
+
+        .tool-btn.data-row {
+            background: linear-gradient(45deg, #10b981, #059669);
+            color: white;
+        }
+
+        .tool-btn.connection {
+            background: linear-gradient(45deg, #ef4444, #dc2626);
+            color: white;
+        }
+
+        .tool-btn.highlight {
+            background: linear-gradient(45deg, #f59e0b, #d97706);
+            color: white;
+        }
+
+        .tool-btn.correction {
+            background: linear-gradient(45deg, #8b5cf6, #7c3aed);
+            color: white;
+        }
+
+        .tool-btn.relationship {
+            background: linear-gradient(45deg, #ec4899, #db2777);
+            color: white;
+        }
+
+        .progress-section {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #48bb78, #38a169);
+            transition: width 0.3s ease;
+        }
+
+        .confidence-indicator {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .confidence-score {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .patterns-learned {
+            background: #e6fffa;
+            border: 1px solid #81e6d9;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .patterns-learned h4 {
+            color: #234e52;
+            margin-bottom: 10px;
+        }
+
+        .pattern-item {
+            background: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .pattern-confidence {
+            background: #48bb78;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .action-btn {
+            flex: 1;
+            padding: 12px 16px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: linear-gradient(45deg, #f093fb, #f5576c);
+            color: white;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .annotation-overlay {
+            position: absolute;
+            pointer-events: none;
+            border: 2px solid;
+            border-radius: 4px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(1px);
+        }
+
+        .annotation-overlay.table-header {
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .annotation-overlay.data-row {
+            border-color: #10b981;
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .annotation-overlay.connection {
+            border-color: #ef4444;
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .annotation-overlay.highlight {
+            border-color: #f59e0b;
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        .annotation-overlay.correction {
+            border-color: #8b5cf6;
+            background: rgba(139, 92, 246, 0.1);
+        }
+
+        .annotation-overlay.relationship {
+            border-color: #ec4899;
+            background: rgba(236, 72, 153, 0.1);
+        }
+
+        .connection-line {
+            position: absolute;
+            pointer-events: none;
+            stroke: #ef4444;
+            stroke-width: 3;
+            stroke-dasharray: 5,5;
+            fill: none;
+        }
+
+        .upload-area {
+            border: 2px dashed #cbd5e0;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            background: #f8fafc;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .upload-area:hover {
+            border-color: #667eea;
+            background: #edf2f7;
+        }
+
+        .upload-area.drag-over {
+            border-color: #48bb78;
+            background: #f0fff4;
+        }
+
+        .upload-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+
+        .stat-value {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #2d3748;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #718096;
+            margin-top: 5px;
+        }
+
+        .learning-indicator {
+            background: linear-gradient(45deg, #f093fb, #f5576c);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            pointer-events: none;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .tooltip.show {
+            opacity: 1;
+        }
+
+        .shortcuts {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .shortcuts h4 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+
+        .shortcut-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .shortcut-key {
+            background: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* Responsive design */
+        @media (max-width: 1200px) {
+            .main-interface {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .annotation-tools {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .annotation-buttons {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧠 Smart Financial PDF OCR</h1>
+            <p class="subtitle">Visual Annotation Learning System</p>
+            <div>
+                <span class="accuracy-badge">Current Accuracy: <span id="currentAccuracy">80%</span></span>
+                <span class="accuracy-badge">Target: 99.9%</span>
+            </div>
+        </div>
+
+        <div class="main-interface">
+            <div class="pdf-viewer">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📄</div>
+                    <h3>Upload Financial PDF</h3>
+                    <p>Drag & drop or click to upload</p>
+                    <input type="file" id="fileInput" accept=".pdf" style="display: none;">
+                </div>
+                <div class="pdf-canvas" id="pdfCanvas" style="display: none;">
+                    <!-- PDF pages will be rendered here -->
+                </div>
+                <svg id="connectionLines" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+                    <!-- Connection lines will be drawn here -->
+                </svg>
+            </div>
+
+            <div class="annotation-tools">
+                <div class="tools-header">
+                    <h2>Annotation Tools</h2>
+                    <p>Train the AI with visual annotations</p>
+                </div>
+
+                <div class="learning-indicator" id="learningIndicator" style="display: none;">
+                    🧠 Learning from your annotations...
+                </div>
+
+                <div class="progress-section">
+                    <h4>Learning Progress</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                    </div>
+                    <div class="confidence-indicator">
+                        <span>Confidence Score</span>
+                        <span class="confidence-score" id="confidenceScore">80%</span>
+                    </div>
+                </div>
+
+                <div class="tool-category">
+                    <h3>Visual Annotation Tools</h3>
+                    <div class="annotation-buttons">
+                        <button class="tool-btn table-header" data-tool="table-header">
+                            📋 Headers
+                        </button>
+                        <button class="tool-btn data-row" data-tool="data-row">
+                            📊 Data Rows
+                        </button>
+                        <button class="tool-btn connection" data-tool="connection">
+                            🔗 Connect
+                        </button>
+                        <button class="tool-btn highlight" data-tool="highlight">
+                            ✨ Highlight
+                        </button>
+                        <button class="tool-btn correction" data-tool="correction">
+                            ✏️ Correct
+                        </button>
+                        <button class="tool-btn relationship" data-tool="relationship">
+                            🔄 Relate
+                        </button>
+                    </div>
+                </div>
+
+                <div class="patterns-learned" id="patternsLearned">
+                    <h4>🎯 Patterns Learned</h4>
+                    <div class="pattern-item">
+                        <span>Table Headers</span>
+                        <span class="pattern-confidence">85%</span>
+                    </div>
+                    <div class="pattern-item">
+                        <span>ISIN Format</span>
+                        <span class="pattern-confidence">92%</span>
+                    </div>
+                    <div class="pattern-item">
+                        <span>Value Columns</span>
+                        <span class="pattern-confidence">88%</span>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" id="annotationCount">0</div>
+                        <div class="stat-label">Annotations</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="patternsCount">3</div>
+                        <div class="stat-label">Patterns</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="documentsCount">0</div>
+                        <div class="stat-label">Documents</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="accuracyGain">+0%</div>
+                        <div class="stat-label">Accuracy Gain</div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="action-btn btn-primary" id="learnBtn">
+                        🧠 Learn Patterns
+                    </button>
+                    <button class="action-btn btn-secondary" id="processBtn">
+                        🚀 Process Document
+                    </button>
+                </div>
+
+                <div class="shortcuts">
+                    <h4>⌨️ Keyboard Shortcuts</h4>
+                    <div class="shortcut-item">
+                        <span>Table Headers</span>
+                        <span class="shortcut-key">H</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span>Data Rows</span>
+                        <span class="shortcut-key">D</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span>Connect Fields</span>
+                        <span class="shortcut-key">C</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span>Highlight Important</span>
+                        <span class="shortcut-key">L</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span>Correct Text</span>
+                        <span class="shortcut-key">E</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span>Relate Fields</span>
+                        <span class="shortcut-key">R</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        class SmartAnnotationInterface {
+            constructor() {
+                this.currentTool = null;
+                this.annotations = [];
+                this.isDrawing = false;
+                this.startPoint = null;
+                this.currentAnnotation = null;
+                this.connectionMode = false;
+                this.selectedElements = [];
+                this.currentDocument = null;
+                this.learningProgress = 0;
+                this.confidenceScore = 80;
+                
+                this.init();
+            }
+
+            init() {
+                this.setupEventListeners();
+                this.setupKeyboardShortcuts();
+                this.updateUI();
+            }
+
+            setupEventListeners() {
+                // File upload
+                const uploadArea = document.getElementById('uploadArea');
+                const fileInput = document.getElementById('fileInput');
+                
+                uploadArea.addEventListener('click', () => fileInput.click());
+                uploadArea.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    uploadArea.classList.add('drag-over');
+                });
+                uploadArea.addEventListener('dragleave', () => {
+                    uploadArea.classList.remove('drag-over');
+                });
+                uploadArea.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    uploadArea.classList.remove('drag-over');
+                    const files = e.dataTransfer.files;
+                    if (files.length > 0) {
+                        this.handleFileUpload(files[0]);
+                    }
+                });
+                
+                fileInput.addEventListener('change', (e) => {
+                    if (e.target.files.length > 0) {
+                        this.handleFileUpload(e.target.files[0]);
+                    }
+                });
+
+                // Tool buttons
+                document.querySelectorAll('.tool-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        this.selectTool(e.target.dataset.tool);
+                    });
+                });
+
+                // Action buttons
+                document.getElementById('learnBtn').addEventListener('click', () => {
+                    this.learnFromAnnotations();
+                });
+                
+                document.getElementById('processBtn').addEventListener('click', () => {
+                    this.processDocument();
+                });
+
+                // Canvas events
+                const canvas = document.getElementById('pdfCanvas');
+                canvas.addEventListener('mousedown', (e) => this.startAnnotation(e));
+                canvas.addEventListener('mousemove', (e) => this.updateAnnotation(e));
+                canvas.addEventListener('mouseup', (e) => this.endAnnotation(e));
+                canvas.addEventListener('click', (e) => this.handleCanvasClick(e));
+            }
+
+            setupKeyboardShortcuts() {
+                document.addEventListener('keydown', (e) => {
+                    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+                    
+                    switch(e.key.toLowerCase()) {
+                        case 'h':
+                            this.selectTool('table-header');
+                            break;
+                        case 'd':
+                            this.selectTool('data-row');
+                            break;
+                        case 'c':
+                            this.selectTool('connection');
+                            break;
+                        case 'l':
+                            this.selectTool('highlight');
+                            break;
+                        case 'e':
+                            this.selectTool('correction');
+                            break;
+                        case 'r':
+                            this.selectTool('relationship');
+                            break;
+                        case 'escape':
+                            this.cancelCurrentAction();
+                            break;
+                    }
+                });
+            }
+
+            selectTool(tool) {
+                // Remove active class from all tools
+                document.querySelectorAll('.tool-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Add active class to selected tool
+                document.querySelector(`[data-tool="${tool}"]`).classList.add('active');
+                
+                this.currentTool = tool;
+                this.connectionMode = tool === 'connection';
+                
+                // Update cursor
+                const canvas = document.getElementById('pdfCanvas');
+                canvas.style.cursor = this.connectionMode ? 'crosshair' : 'crosshair';
+                
+                this.showTooltip(`Selected: ${tool.replace('-', ' ').toUpperCase()}`);
+            }
+
+            async handleFileUpload(file) {
+                if (!file.type.includes('pdf')) {
+                    alert('Please upload a PDF file');
+                    return;
+                }
+
+                this.showLoadingIndicator();
+                
+                try {
+                    const formData = new FormData();
+                    formData.append('pdf', file);
+                    
+                    const response = await fetch('/api/smart-ocr-process', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    console.log('📡 Response status:', response.status, response.statusText);
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+
+                    const result = await response.json();
+
+                    console.log('📡 API Response:', result);
+
+                    if (result.success) {
+                        this.currentDocument = result;
+                        // Pass the result object which may contain results.pages
+                        this.displayDocument(result);
+                        this.updateStats(result);
+                        this.hideUploadArea();
+                    } else {
+                        console.error('❌ API Error:', result);
+                        alert('Error processing PDF: ' + (result.error || 'Unknown error'));
+                    }
+                } catch (error) {
+                    console.error('Upload error:', error);
+                    alert('Error uploading file');
+                } finally {
+                    this.hideLoadingIndicator();
+                }
+            }
+
+            displayDocument(documentData) {
+                const canvas = document.getElementById('pdfCanvas');
+                const uploadArea = document.getElementById('uploadArea');
+
+                uploadArea.style.display = 'none';
+                canvas.style.display = 'block';
+
+                // Clear previous annotations
+                this.clearAnnotations();
+
+                // Handle different response formats
+                console.log('📊 Document data received:', documentData);
+
+                // Extract pages from different possible locations
+                let pages = null;
+                if (documentData.pages) {
+                    pages = documentData.pages;
+                } else if (documentData.results && documentData.results.pages) {
+                    pages = documentData.results.pages;
+                } else if (documentData.results && documentData.results.ocrResults) {
+                    // Handle OCR results format
+                    pages = documentData.results.ocrResults;
+                } else if (Array.isArray(documentData)) {
+                    pages = documentData;
+                } else {
+                    console.error('❌ No pages found in document data:', documentData);
+                    alert('Error: No pages found in document data. Check console for details.');
+                    return;
+                }
+
+                if (!Array.isArray(pages)) {
+                    console.error('❌ Pages is not an array:', typeof pages, pages);
+                    alert('Error: Invalid page data format. Check console for details.');
+                    return;
+                }
+
+                console.log(`✅ Found ${pages.length} pages to display`);
+
+                // Display PDF pages
+                pages.forEach((page, index) => {
+                    const pageElement = document.createElement('div');
+                    pageElement.className = 'pdf-page';
+                    pageElement.style.cssText = `
+                        position: relative;
+                        margin-bottom: 20px;
+                        border: 1px solid #e2e8f0;
+                        border-radius: 8px;
+                        overflow: hidden;
+                    `;
+                    
+                    const img = document.createElement('img');
+                    img.src = page.base64;
+                    img.style.cssText = `
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    `;
+                    img.dataset.page = index;
+                    
+                    pageElement.appendChild(img);
+                    canvas.appendChild(pageElement);
+                });
+                
+                // Display suggested annotations if available
+                if (documentData.suggestedAnnotations) {
+                    this.displaySuggestedAnnotations(documentData.suggestedAnnotations);
+                }
+            }
+
+            displaySuggestedAnnotations(suggestions) {
+                const suggestionContainer = document.createElement('div');
+                suggestionContainer.className = 'suggestions';
+                suggestionContainer.style.cssText = `
+                    background: #fff3cd;
+                    border: 1px solid #ffeaa7;
+                    border-radius: 8px;
+                    padding: 15px;
+                    margin-bottom: 20px;
+                `;
+                
+                const title = document.createElement('h4');
+                title.textContent = '💡 AI Suggestions';
+                title.style.cssText = 'margin-bottom: 10px; color: #856404;';
+                
+                suggestionContainer.appendChild(title);
+                
+                suggestions.forEach(suggestion => {
+                    const suggestionItem = document.createElement('div');
+                    suggestionItem.style.cssText = `
+                        background: white;
+                        padding: 10px;
+                        border-radius: 6px;
+                        margin-bottom: 8px;
+                        border-left: 4px solid #ffc107;
+                    `;
+                    
+                    suggestionItem.innerHTML = `
+                        <strong>${suggestion.field}</strong>: ${suggestion.suggestedAction}
+                        <br><small>${suggestion.reason}</small>
+                    `;
+                    
+                    suggestionContainer.appendChild(suggestionItem);
+                });
+                
+                document.getElementById('pdfCanvas').prepend(suggestionContainer);
+            }
+
+            startAnnotation(e) {
+                if (!this.currentTool) return;
+                
+                this.isDrawing = true;
+                this.startPoint = this.getMousePosition(e);
+                
+                if (this.currentTool === 'connection') {
+                    this.handleConnectionStart(e);
+                } else {
+                    this.createAnnotationElement(this.startPoint);
+                }
+            }
+
+            updateAnnotation(e) {
+                if (!this.isDrawing || !this.currentAnnotation) return;
+                
+                const currentPoint = this.getMousePosition(e);
+                this.updateAnnotationElement(currentPoint);
+            }
+
+            endAnnotation(e) {
+                if (!this.isDrawing) return;
+                
+                this.isDrawing = false;
+                
+                if (this.currentAnnotation) {
+                    this.finalizeAnnotation(e);
+                }
+            }
+
+            createAnnotationElement(startPoint) {
+                const annotation = document.createElement('div');
+                annotation.className = `annotation-overlay ${this.currentTool}`;
+                annotation.style.cssText = `
+                    position: absolute;
+                    left: ${startPoint.x}px;
+                    top: ${startPoint.y}px;
+                    width: 0px;
+                    height: 0px;
+                    z-index: 100;
+                `;
+                
+                document.getElementById('pdfCanvas').appendChild(annotation);
+                this.currentAnnotation = annotation;
+            }
+
+            updateAnnotationElement(currentPoint) {
+                if (!this.currentAnnotation) return;
+                
+                const width = Math.abs(currentPoint.x - this.startPoint.x);
+                const height = Math.abs(currentPoint.y - this.startPoint.y);
+                const left = Math.min(this.startPoint.x, currentPoint.x);
+                const top = Math.min(this.startPoint.y, currentPoint.y);
+                
+                this.currentAnnotation.style.left = left + 'px';
+                this.currentAnnotation.style.top = top + 'px';
+                this.currentAnnotation.style.width = width + 'px';
+                this.currentAnnotation.style.height = height + 'px';
+            }
+
+            finalizeAnnotation(e) {
+                if (!this.currentAnnotation) return;
+                
+                const rect = this.currentAnnotation.getBoundingClientRect();
+                
+                if (rect.width < 10 || rect.height < 10) {
+                    this.currentAnnotation.remove();
+                    this.currentAnnotation = null;
+                    return;
+                }
+                
+                const annotationData = {
+                    id: this.generateAnnotationId(),
+                    type: this.currentTool,
+                    coordinates: {
+                        x: parseInt(this.currentAnnotation.style.left),
+                        y: parseInt(this.currentAnnotation.style.top),
+                        width: parseInt(this.currentAnnotation.style.width),
+                        height: parseInt(this.currentAnnotation.style.height)
+                    },
+                    timestamp: new Date().toISOString(),
+                    page: this.getCurrentPage(e)
+                };
+                
+                // Add tool-specific data
+                if (this.currentTool === 'correction') {
+                    annotationData.originalText = this.promptForOriginalText();
+                    annotationData.correctedText = this.promptForCorrectedText();
+                }
+                
+                this.annotations.push(annotationData);
+                this.currentAnnotation.dataset.annotationId = annotationData.id;
+                this.currentAnnotation.title = this.generateTooltipText(annotationData);
+                
+                this.currentAnnotation = null;
+                this.updateAnnotationCount();
+                
+                // Show feedback
+                this.showTooltip('Annotation created!');
+            }
+
+            handleConnectionStart(e) {
+                const target = e.target.closest('.annotation-overlay');
+                if (target) {
+                    this.selectedElements.push(target);
+                    target.style.boxShadow = '0 0 10px rgba(239, 68, 68, 0.5)';
+                    
+                    if (this.selectedElements.length === 2) {
+                        this.createConnection();
+                    }
+                }
+            }
+
+            createConnection() {
+                const [source, target] = this.selectedElements;
+                
+                const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                line.setAttribute('class', 'connection-line');
+                
+                const sourceRect = source.getBoundingClientRect();
+                const targetRect = target.getBoundingClientRect();
+                const canvasRect = document.getElementById('pdfCanvas').getBoundingClientRect();
+                
+                line.setAttribute('x1', sourceRect.left + sourceRect.width/2 - canvasRect.left);
+                line.setAttribute('y1', sourceRect.top + sourceRect.height/2 - canvasRect.top);
+                line.setAttribute('x2', targetRect.left + targetRect.width/2 - canvasRect.left);
+                line.setAttribute('y2', targetRect.top + targetRect.height/2 - canvasRect.top);
+                
+                document.getElementById('connectionLines').appendChild(line);
+                
+                // Create connection annotation
+                const connectionData = {
+                    id: this.generateAnnotationId(),
+                    type: 'connection',
+                    source: source.dataset.annotationId,
+                    target: target.dataset.annotationId,
+                    timestamp: new Date().toISOString()
+                };
+                
+                this.annotations.push(connectionData);
+                
+                // Reset selection
+                this.selectedElements.forEach(el => {
+                    el.style.boxShadow = '';
+                });
+                this.selectedElements = [];
+                
+                this.updateAnnotationCount();
+                this.showTooltip('Connection created!');
+            }
+
+            async learnFromAnnotations() {
+                if (this.annotations.length === 0) {
+                    alert('Please create some annotations first');
+                    return;
+                }
+                
+                this.showLearningIndicator();
+                
+                try {
+                    const response = await fetch('/api/smart-ocr-learn', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            documentId: this.currentDocument.documentId,
+                            annotations: this.annotations
+                        })
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        this.updateLearningProgress(result);
+                        this.showTooltip('Learning completed!');
+                    } else {
+                        alert('Learning failed: ' + result.error);
+                    }
+                } catch (error) {
+                    console.error('Learning error:', error);
+                    alert('Error during learning process');
+                } finally {
+                    this.hideLearningIndicator();
+                }
+            }
+
+            async processDocument() {
+                if (!this.currentDocument) {
+                    alert('Please upload a document first');
+                    return;
+                }
+                
+                this.showLoadingIndicator();
+                
+                try {
+                    const response = await fetch('/api/smart-ocr-enhanced', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            documentId: this.currentDocument.documentId
+                        })
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        this.displayProcessingResults(result);
+                        this.updateAccuracy(result.enhancedAccuracy);
+                    } else {
+                        alert('Processing failed: ' + result.error);
+                    }
+                } catch (error) {
+                    console.error('Processing error:', error);
+                    alert('Error during document processing');
+                } finally {
+                    this.hideLoadingIndicator();
+                }
+            }
+
+            displayProcessingResults(result) {
+                const resultsContainer = document.createElement('div');
+                resultsContainer.className = 'processing-results';
+                resultsContainer.style.cssText = `
+                    background: #f0fff4;
+                    border: 1px solid #9ae6b4;
+                    border-radius: 8px;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                `;
+                
+                resultsContainer.innerHTML = `
+                    <h3 style="color: #276749; margin-bottom: 15px;">🎉 Processing Complete!</h3>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 15px;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.5em; font-weight: bold; color: #276749;">${result.enhancedAccuracy}%</div>
+                            <div style="font-size: 0.9em; color: #68d391;">Accuracy</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.5em; font-weight: bold; color: #276749;">${result.patternsApplied || 0}</div>
+                            <div style="font-size: 0.9em; color: #68d391;">Patterns Applied</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.5em; font-weight: bold; color: #276749;">${result.extractedFields || 0}</div>
+                            <div style="font-size: 0.9em; color: #68d391;">Fields Extracted</div>
+                        </div>
+                    </div>
+                    <div style="background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #48bb78;">
+                        <strong>Extracted Data:</strong>
+                        <pre style="margin-top: 10px; white-space: pre-wrap;">${JSON.stringify(result.extractedData, null, 2)}</pre>
+                    </div>
+                `;
+                
+                document.getElementById('pdfCanvas').prepend(resultsContainer);
+            }
+
+            updateLearningProgress(result) {
+                this.learningProgress = Math.min(100, this.learningProgress + (result.patternsLearned * 5));
+                this.confidenceScore = Math.min(99, this.confidenceScore + result.accuracyImprovement);
+                
+                document.getElementById('progressFill').style.width = this.learningProgress + '%';
+                document.getElementById('confidenceScore').textContent = this.confidenceScore + '%';
+                
+                // Update patterns learned
+                this.updatePatternsDisplay(result);
+            }
+
+            updatePatternsDisplay(result) {
+                const container = document.getElementById('patternsLearned');
+                const existingPatterns = container.querySelectorAll('.pattern-item');
+                
+                // Add new patterns
+                if (result.newPatterns) {
+                    result.newPatterns.forEach(pattern => {
+                        const patternItem = document.createElement('div');
+                        patternItem.className = 'pattern-item';
+                        patternItem.innerHTML = `
+                            <span>${pattern.name}</span>
+                            <span class="pattern-confidence">${pattern.confidence}%</span>
+                        `;
+                        container.appendChild(patternItem);
+                    });
+                }
+                
+                // Update patterns count
+                document.getElementById('patternsCount').textContent = container.querySelectorAll('.pattern-item').length;
+            }
+
+            updateAccuracy(newAccuracy) {
+                const currentAccuracy = parseInt(document.getElementById('currentAccuracy').textContent);
+                const gain = newAccuracy - currentAccuracy;
+                
+                document.getElementById('currentAccuracy').textContent = newAccuracy + '%';
+                document.getElementById('accuracyGain').textContent = '+' + gain + '%';
+                
+                // Animate the progress bar
+                const progressBar = document.getElementById('progressFill');
+                progressBar.style.width = (newAccuracy / 100 * 100) + '%';
+            }
+
+            updateStats(documentData) {
+                document.getElementById('documentsCount').textContent = parseInt(document.getElementById('documentsCount').textContent) + 1;
+            }
+
+            updateAnnotationCount() {
+                document.getElementById('annotationCount').textContent = this.annotations.length;
+            }
+
+            // Utility methods
+            getMousePosition(e) {
+                const rect = document.getElementById('pdfCanvas').getBoundingClientRect();
+                return {
+                    x: e.clientX - rect.left,
+                    y: e.clientY - rect.top
+                };
+            }
+
+            getCurrentPage(e) {
+                const img = e.target.closest('img');
+                return img ? parseInt(img.dataset.page) : 0;
+            }
+
+            generateAnnotationId() {
+                return 'annotation_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+            }
+
+            generateTooltipText(annotation) {
+                return `${annotation.type.replace('-', ' ').toUpperCase()} - ${annotation.coordinates.width}x${annotation.coordinates.height}`;
+            }
+
+            promptForOriginalText() {
+                return prompt('Enter the original text that needs correction:') || '';
+            }
+
+            promptForCorrectedText() {
+                return prompt('Enter the corrected text:') || '';
+            }
+
+            showTooltip(text) {
+                const tooltip = document.getElementById('tooltip');
+                tooltip.textContent = text;
+                tooltip.classList.add('show');
+                setTimeout(() => tooltip.classList.remove('show'), 2000);
+            }
+
+            showLearningIndicator() {
+                document.getElementById('learningIndicator').style.display = 'block';
+            }
+
+            hideLearningIndicator() {
+                document.getElementById('learningIndicator').style.display = 'none';
+            }
+
+            showLoadingIndicator() {
+                // Implementation for loading indicator
+            }
+
+            hideLoadingIndicator() {
+                // Implementation for loading indicator
+            }
+
+            hideUploadArea() {
+                document.getElementById('uploadArea').style.display = 'none';
+            }
+
+            clearAnnotations() {
+                this.annotations = [];
+                document.querySelectorAll('.annotation-overlay').forEach(el => el.remove());
+                document.getElementById('connectionLines').innerHTML = '';
+                document.querySelectorAll('.processing-results').forEach(el => el.remove());
+                document.querySelectorAll('.suggestions').forEach(el => el.remove());
+            }
+
+            cancelCurrentAction() {
+                this.isDrawing = false;
+                if (this.currentAnnotation) {
+                    this.currentAnnotation.remove();
+                    this.currentAnnotation = null;
+                }
+                this.selectedElements.forEach(el => el.style.boxShadow = '');
+                this.selectedElements = [];
+            }
+
+            updateUI() {
+                // Update the UI based on current state
+                this.updateAnnotationCount();
+            }
+        }
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', () => {
+            new SmartAnnotationInterface();
+        });
+    </script>
+</body>
+</html>

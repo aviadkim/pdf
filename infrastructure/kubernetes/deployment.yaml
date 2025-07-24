@@ -1,0 +1,150 @@
+# Kubernetes Deployment for Phase 3 PDF Platform
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phase3-pdf-platform
+  namespace: production
+  labels:
+    app: phase3-pdf
+    version: v1.0.0
+    tier: backend
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 2
+  selector:
+    matchLabels:
+      app: phase3-pdf
+  template:
+    metadata:
+      labels:
+        app: phase3-pdf
+        version: v1.0.0
+    spec:
+      serviceAccountName: phase3-service-account
+      securityContext:
+        fsGroup: 1001
+        runAsNonRoot: true
+        runAsUser: 1001
+      containers:
+      - name: phase3-api
+        image: phase3/pdf-platform:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+          name: http
+        env:
+        - name: NODE_ENV
+          value: "production"
+        - name: PORT
+          value: "3000"
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: phase3-secrets
+              key: database-url
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: phase3-secrets
+              key: jwt-secret
+        - name: REDIS_URL
+          valueFrom:
+            configMapKeyRef:
+              name: phase3-config
+              key: redis-url
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
+        livenessProbe:
+          httpGet:
+            path: /api/health
+            port: 3000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /api/health
+            port: 3000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 3
+        volumeMounts:
+        - name: temp-storage
+          mountPath: /tmp
+        - name: uploads
+          mountPath: /app/uploads
+      volumes:
+      - name: temp-storage
+        emptyDir:
+          sizeLimit: 1Gi
+      - name: uploads
+        persistentVolumeClaim:
+          claimName: phase3-uploads-pvc
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - phase3-pdf
+              topologyKey: kubernetes.io/hostname
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: phase3-pdf-service
+  namespace: production
+  labels:
+    app: phase3-pdf
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 3000
+    protocol: TCP
+    name: http
+  selector:
+    app: phase3-pdf
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: phase3-pdf-ingress
+  namespace: production
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/proxy-body-size: "50m"
+    nginx.ingress.kubernetes.io/rate-limit: "100"
+spec:
+  tls:
+  - hosts:
+    - api.phase3platform.com
+    secretName: phase3-tls
+  rules:
+  - host: api.phase3platform.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: phase3-pdf-service
+            port:
+              number: 80

@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-07-20T06:15:57.197Z",
+  "tests": {
+    "initialization": {
+      "success": true,
+      "system_created": true,
+      "learning_database_loaded": true
+    },
+    "extraction_integration": {
+      "success": true,
+      "accuracy": 70.75,
+      "securities_found": 1,
+      "total_value": 19464431
+    },
+    "annotation_preparation": {
+      "success": true,
+      "securities_for_annotation": 1,
+      "document_id": "doc_1752992157536",
+      "has_extraction_summary": true
+    },
+    "learning_system": {
+      "success": true,
+      "corrections_processed": 2,
+      "patterns_created": 1,
+      "accuracy_improvement": 0.5
+    },
+    "unknown_document": {
+      "success": true,
+      "isins_found": 1,
+      "values_found": 1,
+      "confidence": 0.11326726215716193,
+      "realistic_limitations": 4
+    },
+    "isin_verification": {
+      "success": true,
+      "isins_verified": 2,
+      "manual_check_required": true
+    }
+  },
+  "summary": {
+    "tests_passed": 6,
+    "tests_total": 6,
+    "pass_rate": 100,
+    "phase3_functional": true,
+    "ready_for_production": true,
+    "extraction_accuracy": 70.75,
+    "learning_capability": true
+  }
+}

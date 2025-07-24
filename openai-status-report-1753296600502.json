@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-07-23T18:50:00.501Z",
+  "url": "https://pdf-production-5dis.onrender.com",
+  "openaiStatus": {
+    "detected": false,
+    "visionProcessingFound": false,
+    "configured": false
+  },
+  "accuracyAnalysis": {
+    "current": 0,
+    "target": 99,
+    "gap": 99,
+    "bestEndpoint": ""
+  },
+  "endpointResults": [
+    {
+      "endpoint": "/api/visual-pdf-extract",
+      "error": "request to https://pdf-production-5dis.onrender.com/api/visual-pdf-extract failed, reason: read ECONNRESET",
+      "openaiIndicators": null
+    },
+    {
+      "endpoint": "/api/ultra-99-percent",
+      "error": "request to https://pdf-production-5dis.onrender.com/api/ultra-99-percent failed, reason: read ECONNRESET",
+      "openaiIndicators": null
+    },
+    {
+      "endpoint": "/api/pdf-extract",
+      "error": "request to https://pdf-production-5dis.onrender.com/api/pdf-extract failed, reason: read ECONNRESET",
+      "openaiIndicators": null
+    },
+    {
+      "endpoint": "/api/bulletproof-processor",
+      "error": "request to https://pdf-production-5dis.onrender.com/api/bulletproof-processor failed, reason: read ECONNRESET",
+      "openaiIndicators": null
+    },
+    {
+      "endpoint": "/api/enhanced-accuracy",
+      "error": "request to https://pdf-production-5dis.onrender.com/api/enhanced-accuracy failed, reason: read ECONNRESET",
+      "openaiIndicators": null
+    }
+  ],
+  "recommendation": "OpenAI alone insufficient for 99% target. Consider Claude/Azure."
+}

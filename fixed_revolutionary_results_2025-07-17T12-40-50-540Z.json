@@ -1,0 +1,1298 @@
+{
+  "success": true,
+  "method": "fixed_complete_ai_extraction",
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "value": 6069.77,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2993414619  //  Valorn.: 140610687",
+      "allCandidates": 18
+    },
+    {
+      "isin": "XS2530201644",
+      "value": 2000000.25,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2530201644  //  Valorn.: 125350273",
+      "allCandidates": 10
+    },
+    {
+      "isin": "XS2588105036",
+      "value": 2000000.25,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2588105036  //  Valorn.: 112286204",
+      "allCandidates": 18
+    },
+    {
+      "isin": "XS2665592833",
+      "value": 2000000.47,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2665592833  //  Valorn.: 128829182",
+      "allCandidates": 21
+    },
+    {
+      "isin": "XS2754416860",
+      "value": 6900002.26,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2754416860  //  Valorn.: 132648671",
+      "allCandidates": 23
+    },
+    {
+      "isin": "XS2761230684",
+      "value": 1000001.16,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2761230684  //  Valorn.: 112288215",
+      "allCandidates": 22
+    },
+    {
+      "isin": "XS2736388732",
+      "value": 1000002.24,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2736388732  //  Valorn.: 131799640",
+      "allCandidates": 22
+    },
+    {
+      "isin": "XS2782869916",
+      "value": 500001.07,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2782869916  //  Valorn.: 132544344",
+      "allCandidates": 15
+    },
+    {
+      "isin": "XS2824054402",
+      "value": 500001.07,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2824054402  //  Valorn.: 135337661",
+      "allCandidates": 17
+    },
+    {
+      "isin": "XS2567543397",
+      "value": 4400001.81,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2567543397  //  Valorn.: 134736192",
+      "allCandidates": 24
+    },
+    {
+      "isin": "XS2110079584",
+      "value": 11000001.5,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2110079584  //  Valorn.: 136429245",
+      "allCandidates": 24
+    },
+    {
+      "isin": "XS2848820754",
+      "value": 11000001.5,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2848820754  //  Valorn.: 135116008",
+      "allCandidates": 26
+    },
+    {
+      "isin": "XS2829712830",
+      "value": 11000001.5,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2829712830  //  Valorn.: 134735316",
+      "allCandidates": 29
+    },
+    {
+      "isin": "XS2912278723",
+      "value": 900002.35,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2912278723  //  Valorn.: 138689613",
+      "allCandidates": 27
+    },
+    {
+      "isin": "XS2381723902",
+      "value": 2000001.92,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2381723902  //  Valorn.: 128883231",
+      "allCandidates": 23
+    },
+    {
+      "isin": "XS2829752976",
+      "value": 2500000.73,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2829752976  //  Valorn.: 138874416",
+      "allCandidates": 17
+    },
+    {
+      "isin": "XS2953741100",
+      "value": 2500000.73,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2953741100  //  Valorn.: 138494467",
+      "allCandidates": 19
+    },
+    {
+      "isin": "XS2381717250",
+      "value": 2500000.73,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2381717250  //  Valorn.: 128883267",
+      "allCandidates": 27
+    },
+    {
+      "isin": "XS2481066111",
+      "value": 1500001.9,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2481066111    //  Val  orn.: 126294402",
+      "allCandidates": 27
+    },
+    {
+      "isin": "XS2964611052",
+      "value": 5000003.7,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2964611052  //  Valorn.: 141235167",
+      "allCandidates": 28
+    },
+    {
+      "isin": "XS3035947103",
+      "value": 14700000.72,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS3035947103  //  Valorn.: 143578751",
+      "allCandidates": 23
+    },
+    {
+      "isin": "LU2228214107",
+      "value": 8000000,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: LU2228214107  //  Valorn.: 57282891",
+      "allCandidates": 19
+    },
+    {
+      "isin": "CH1269060229",
+      "value": 2581.79,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: CH1269060229  //  Valorn.: 126906022",
+      "allCandidates": 16
+    },
+    {
+      "isin": "XS0461497009",
+      "value": 6900001.54,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS0461497009  //  Valorn.: 130269069",
+      "allCandidates": 12
+    },
+    {
+      "isin": "XS2746319610",
+      "value": 6900001.54,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2746319610  //  Valorn.: 133393503",
+      "allCandidates": 17
+    },
+    {
+      "isin": "CH0244767585",
+      "value": 243190.12,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: CH0244767585  //  Valorn.: 24476758",
+      "allCandidates": 11
+    },
+    {
+      "isin": "XS2519369867",
+      "value": 200000,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2519369867  //  Valorn.: 121050656",
+      "allCandidates": 17
+    },
+    {
+      "isin": "XS2315191069",
+      "value": 200000,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2315191069  //  Valorn.: 111918998",
+      "allCandidates": 19
+    },
+    {
+      "isin": "XS2792098779",
+      "value": 5000000.22,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2792098779  //  Valorn.: 140288136",
+      "allCandidates": 25
+    },
+    {
+      "isin": "XS2714429128",
+      "value": 1200000,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2714429128  //  Valorn.: 130738882",
+      "allCandidates": 24
+    },
+    {
+      "isin": "XS2105981117",
+      "value": 690000,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2105981117  //  Val  orn.: 114118068",
+      "allCandidates": 24
+    },
+    {
+      "isin": "XS2838389430",
+      "value": 500000,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2838389430  //  Valorn.: 135968317",
+      "allCandidates": 22
+    },
+    {
+      "isin": "XS1700087403",
+      "value": 100000,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS1700087403  //  Valorn.: 39877135",
+      "allCandidates": 17
+    },
+    {
+      "isin": "XS2594173093",
+      "value": 100000,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2594173093  //  Valorn.: 125443809",
+      "allCandidates": 17
+    },
+    {
+      "isin": "XS2407295554",
+      "value": 200000,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2407295554  //  Valorn.: 114718568",
+      "allCandidates": 20
+    },
+    {
+      "isin": "XS2252299883",
+      "value": 5000004.36,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XS2252299883  //  Valorn.: 58001077",
+      "allCandidates": 22
+    },
+    {
+      "isin": "XD0466760473",
+      "value": 261290.13,
+      "confidence": 0.9,
+      "method": "ai_complete_data_mapping",
+      "context": "ISIN: XD0466760473  //  Valorn.: 46676047",
+      "allCandidates": 12
+    }
+  ],
+  "totalValue": 120403167.33000001,
+  "accuracy": 16.166045654473564,
+  "metadata": {
+    "processingTime": 28,
+    "agentsUsed": 5,
+    "structureAnalysis": {
+      "tableStructures": [
+        {
+          "lineNumber": 554,
+          "content": "ISIN: XS2481066111    //  Val  orn.: 126294402",
+          "length": 46,
+          "hasNumbers": true,
+          "hasISIN": true,
+          "hasCurrency": false,
+          "hasPercentage": false,
+          "hasDate": false,
+          "wordCount": 6,
+          "structure": {
+            "hasNumbers": true,
+            "hasISIN": true,
+            "hasCurrency": false,
+            "hasPercentage": false,
+            "hasDate": false,
+            "tabCount": 0,
+            "spaceGroups": 3
+          }
+        },
+        {
+          "lineNumber": 795,
+          "content": "ISIN: XS2105981117  //  Val  orn.: 114118068",
+          "length": 44,
+          "hasNumbers": true,
+          "hasISIN": true,
+          "hasCurrency": false,
+          "hasPercentage": false,
+          "hasDate": false,
+          "wordCount": 6,
+          "structure": {
+            "hasNumbers": true,
+            "hasISIN": true,
+            "hasCurrency": false,
+            "hasPercentage": false,
+            "hasDate": false,
+            "tabCount": 0,
+            "spaceGroups": 3
+          }
+        }
+      ],
+      "sections": [],
+      "hierarchies": []
+    },
+    "numericalPatterns": {
+      "totalNumbers": 1215,
+      "relationships": []
+    },
+    "financialMappings": {
+      "securities": [
+        {
+          "isin": "XS2993414619",
+          "value": 6069.77,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2993414619  //  Valorn.: 140610687",
+          "allCandidates": 18
+        },
+        {
+          "isin": "XS2530201644",
+          "value": 2000000.25,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2530201644  //  Valorn.: 125350273",
+          "allCandidates": 10
+        },
+        {
+          "isin": "XS2588105036",
+          "value": 2000000.25,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2588105036  //  Valorn.: 112286204",
+          "allCandidates": 18
+        },
+        {
+          "isin": "XS2665592833",
+          "value": 2000000.47,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2665592833  //  Valorn.: 128829182",
+          "allCandidates": 21
+        },
+        {
+          "isin": "XS2692298537",
+          "value": 15000001.49,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2692298537  //  Valorn.: 129157183",
+          "allCandidates": 20
+        },
+        {
+          "isin": "XS2754416860",
+          "value": 6900002.26,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2754416860  //  Valorn.: 132648671",
+          "allCandidates": 23
+        },
+        {
+          "isin": "XS2761230684",
+          "value": 1000001.16,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2761230684  //  Valorn.: 112288215",
+          "allCandidates": 22
+        },
+        {
+          "isin": "XS2736388732",
+          "value": 1000002.24,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2736388732  //  Valorn.: 131799640",
+          "allCandidates": 22
+        },
+        {
+          "isin": "XS2782869916",
+          "value": 500001.07,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2782869916  //  Valorn.: 132544344",
+          "allCandidates": 15
+        },
+        {
+          "isin": "XS2824054402",
+          "value": 500001.07,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2824054402  //  Valorn.: 135337661",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2567543397",
+          "value": 4400001.81,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2567543397  //  Valorn.: 134736192",
+          "allCandidates": 24
+        },
+        {
+          "isin": "XS2110079584",
+          "value": 11000001.5,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2110079584  //  Valorn.: 136429245",
+          "allCandidates": 24
+        },
+        {
+          "isin": "XS2848820754",
+          "value": 11000001.5,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2848820754  //  Valorn.: 135116008",
+          "allCandidates": 26
+        },
+        {
+          "isin": "XS2829712830",
+          "value": 11000001.5,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2829712830  //  Valorn.: 134735316",
+          "allCandidates": 29
+        },
+        {
+          "isin": "XS2912278723",
+          "value": 900002.35,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2912278723  //  Valorn.: 138689613",
+          "allCandidates": 27
+        },
+        {
+          "isin": "XS2381723902",
+          "value": 2000001.92,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2381723902  //  Valorn.: 128883231",
+          "allCandidates": 23
+        },
+        {
+          "isin": "XS2829752976",
+          "value": 2500000.73,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2829752976  //  Valorn.: 138874416",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2953741100",
+          "value": 2500000.73,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2953741100  //  Valorn.: 138494467",
+          "allCandidates": 19
+        },
+        {
+          "isin": "XS2381717250",
+          "value": 2500000.73,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2381717250  //  Valorn.: 128883267",
+          "allCandidates": 27
+        },
+        {
+          "isin": "XS2481066111",
+          "value": 1500001.9,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2481066111    //  Val  orn.: 126294402",
+          "allCandidates": 27
+        },
+        {
+          "isin": "XS2964611052",
+          "value": 5000003.7,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2964611052  //  Valorn.: 141235167",
+          "allCandidates": 28
+        },
+        {
+          "isin": "XS3035947103",
+          "value": 14700000.72,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS3035947103  //  Valorn.: 143578751",
+          "allCandidates": 23
+        },
+        {
+          "isin": "LU2228214107",
+          "value": 8000000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: LU2228214107  //  Valorn.: 57282891",
+          "allCandidates": 19
+        },
+        {
+          "isin": "CH1269060229",
+          "value": 2581.79,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: CH1269060229  //  Valorn.: 126906022",
+          "allCandidates": 16
+        },
+        {
+          "isin": "XS0461497009",
+          "value": 6900001.54,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS0461497009  //  Valorn.: 130269069",
+          "allCandidates": 12
+        },
+        {
+          "isin": "XS2746319610",
+          "value": 6900001.54,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2746319610  //  Valorn.: 133393503",
+          "allCandidates": 17
+        },
+        {
+          "isin": "CH0244767585",
+          "value": 243190.12,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: CH0244767585  //  Valorn.: 24476758",
+          "allCandidates": 11
+        },
+        {
+          "isin": "XS2519369867",
+          "value": 200000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2519369867  //  Valorn.: 121050656",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2315191069",
+          "value": 200000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2315191069  //  Valorn.: 111918998",
+          "allCandidates": 19
+        },
+        {
+          "isin": "XS2792098779",
+          "value": 5000000.22,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2792098779  //  Valorn.: 140288136",
+          "allCandidates": 25
+        },
+        {
+          "isin": "XS2714429128",
+          "value": 1200000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2714429128  //  Valorn.: 130738882",
+          "allCandidates": 24
+        },
+        {
+          "isin": "XS2105981117",
+          "value": 690000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2105981117  //  Val  orn.: 114118068",
+          "allCandidates": 24
+        },
+        {
+          "isin": "XS2838389430",
+          "value": 500000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2838389430  //  Valorn.: 135968317",
+          "allCandidates": 22
+        },
+        {
+          "isin": "XS2631782468",
+          "value": 16000000.35,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2631782468  //  Valorn.: 127708275",
+          "allCandidates": 19
+        },
+        {
+          "isin": "XS1700087403",
+          "value": 100000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS1700087403  //  Valorn.: 39877135",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2594173093",
+          "value": 100000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2594173093  //  Valorn.: 125443809",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2407295554",
+          "value": 200000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2407295554  //  Valorn.: 114718568",
+          "allCandidates": 20
+        },
+        {
+          "isin": "XS2252299883",
+          "value": 5000004.36,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2252299883  //  Valorn.: 58001077",
+          "allCandidates": 22
+        },
+        {
+          "isin": "XD0466760473",
+          "value": 261290.13,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XD0466760473  //  Valorn.: 46676047",
+          "allCandidates": 12
+        }
+      ]
+    },
+    "contextAnalysis": {
+      "enhancedSecurities": [
+        {
+          "isin": "XS2993414619",
+          "value": 6069.77,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2993414619  //  Valorn.: 140610687",
+          "allCandidates": 18
+        },
+        {
+          "isin": "XS2530201644",
+          "value": 2000000.25,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2530201644  //  Valorn.: 125350273",
+          "allCandidates": 10
+        },
+        {
+          "isin": "XS2588105036",
+          "value": 2000000.25,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2588105036  //  Valorn.: 112286204",
+          "allCandidates": 18
+        },
+        {
+          "isin": "XS2665592833",
+          "value": 2000000.47,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2665592833  //  Valorn.: 128829182",
+          "allCandidates": 21
+        },
+        {
+          "isin": "XS2692298537",
+          "value": 15000001.49,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2692298537  //  Valorn.: 129157183",
+          "allCandidates": 20
+        },
+        {
+          "isin": "XS2754416860",
+          "value": 6900002.26,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2754416860  //  Valorn.: 132648671",
+          "allCandidates": 23
+        },
+        {
+          "isin": "XS2761230684",
+          "value": 1000001.16,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2761230684  //  Valorn.: 112288215",
+          "allCandidates": 22
+        },
+        {
+          "isin": "XS2736388732",
+          "value": 1000002.24,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2736388732  //  Valorn.: 131799640",
+          "allCandidates": 22
+        },
+        {
+          "isin": "XS2782869916",
+          "value": 500001.07,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2782869916  //  Valorn.: 132544344",
+          "allCandidates": 15
+        },
+        {
+          "isin": "XS2824054402",
+          "value": 500001.07,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2824054402  //  Valorn.: 135337661",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2567543397",
+          "value": 4400001.81,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2567543397  //  Valorn.: 134736192",
+          "allCandidates": 24
+        },
+        {
+          "isin": "XS2110079584",
+          "value": 11000001.5,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2110079584  //  Valorn.: 136429245",
+          "allCandidates": 24
+        },
+        {
+          "isin": "XS2848820754",
+          "value": 11000001.5,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2848820754  //  Valorn.: 135116008",
+          "allCandidates": 26
+        },
+        {
+          "isin": "XS2829712830",
+          "value": 11000001.5,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2829712830  //  Valorn.: 134735316",
+          "allCandidates": 29
+        },
+        {
+          "isin": "XS2912278723",
+          "value": 900002.35,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2912278723  //  Valorn.: 138689613",
+          "allCandidates": 27
+        },
+        {
+          "isin": "XS2381723902",
+          "value": 2000001.92,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2381723902  //  Valorn.: 128883231",
+          "allCandidates": 23
+        },
+        {
+          "isin": "XS2829752976",
+          "value": 2500000.73,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2829752976  //  Valorn.: 138874416",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2953741100",
+          "value": 2500000.73,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2953741100  //  Valorn.: 138494467",
+          "allCandidates": 19
+        },
+        {
+          "isin": "XS2381717250",
+          "value": 2500000.73,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2381717250  //  Valorn.: 128883267",
+          "allCandidates": 27
+        },
+        {
+          "isin": "XS2481066111",
+          "value": 1500001.9,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2481066111    //  Val  orn.: 126294402",
+          "allCandidates": 27
+        },
+        {
+          "isin": "XS2964611052",
+          "value": 5000003.7,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2964611052  //  Valorn.: 141235167",
+          "allCandidates": 28
+        },
+        {
+          "isin": "XS3035947103",
+          "value": 14700000.72,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS3035947103  //  Valorn.: 143578751",
+          "allCandidates": 23
+        },
+        {
+          "isin": "LU2228214107",
+          "value": 8000000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: LU2228214107  //  Valorn.: 57282891",
+          "allCandidates": 19
+        },
+        {
+          "isin": "CH1269060229",
+          "value": 2581.79,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: CH1269060229  //  Valorn.: 126906022",
+          "allCandidates": 16
+        },
+        {
+          "isin": "XS0461497009",
+          "value": 6900001.54,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS0461497009  //  Valorn.: 130269069",
+          "allCandidates": 12
+        },
+        {
+          "isin": "XS2746319610",
+          "value": 6900001.54,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2746319610  //  Valorn.: 133393503",
+          "allCandidates": 17
+        },
+        {
+          "isin": "CH0244767585",
+          "value": 243190.12,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: CH0244767585  //  Valorn.: 24476758",
+          "allCandidates": 11
+        },
+        {
+          "isin": "XS2519369867",
+          "value": 200000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2519369867  //  Valorn.: 121050656",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2315191069",
+          "value": 200000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2315191069  //  Valorn.: 111918998",
+          "allCandidates": 19
+        },
+        {
+          "isin": "XS2792098779",
+          "value": 5000000.22,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2792098779  //  Valorn.: 140288136",
+          "allCandidates": 25
+        },
+        {
+          "isin": "XS2714429128",
+          "value": 1200000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2714429128  //  Valorn.: 130738882",
+          "allCandidates": 24
+        },
+        {
+          "isin": "XS2105981117",
+          "value": 690000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2105981117  //  Val  orn.: 114118068",
+          "allCandidates": 24
+        },
+        {
+          "isin": "XS2838389430",
+          "value": 500000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2838389430  //  Valorn.: 135968317",
+          "allCandidates": 22
+        },
+        {
+          "isin": "XS2631782468",
+          "value": 16000000.35,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2631782468  //  Valorn.: 127708275",
+          "allCandidates": 19
+        },
+        {
+          "isin": "XS1700087403",
+          "value": 100000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS1700087403  //  Valorn.: 39877135",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2594173093",
+          "value": 100000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2594173093  //  Valorn.: 125443809",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2407295554",
+          "value": 200000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2407295554  //  Valorn.: 114718568",
+          "allCandidates": 20
+        },
+        {
+          "isin": "XS2252299883",
+          "value": 5000004.36,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2252299883  //  Valorn.: 58001077",
+          "allCandidates": 22
+        },
+        {
+          "isin": "XD0466760473",
+          "value": 261290.13,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XD0466760473  //  Valorn.: 46676047",
+          "allCandidates": 12
+        }
+      ],
+      "resolvedAmbiguities": 0
+    },
+    "validation": {
+      "finalSecurities": [
+        {
+          "isin": "XS2993414619",
+          "value": 6069.77,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2993414619  //  Valorn.: 140610687",
+          "allCandidates": 18
+        },
+        {
+          "isin": "XS2530201644",
+          "value": 2000000.25,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2530201644  //  Valorn.: 125350273",
+          "allCandidates": 10
+        },
+        {
+          "isin": "XS2588105036",
+          "value": 2000000.25,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2588105036  //  Valorn.: 112286204",
+          "allCandidates": 18
+        },
+        {
+          "isin": "XS2665592833",
+          "value": 2000000.47,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2665592833  //  Valorn.: 128829182",
+          "allCandidates": 21
+        },
+        {
+          "isin": "XS2754416860",
+          "value": 6900002.26,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2754416860  //  Valorn.: 132648671",
+          "allCandidates": 23
+        },
+        {
+          "isin": "XS2761230684",
+          "value": 1000001.16,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2761230684  //  Valorn.: 112288215",
+          "allCandidates": 22
+        },
+        {
+          "isin": "XS2736388732",
+          "value": 1000002.24,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2736388732  //  Valorn.: 131799640",
+          "allCandidates": 22
+        },
+        {
+          "isin": "XS2782869916",
+          "value": 500001.07,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2782869916  //  Valorn.: 132544344",
+          "allCandidates": 15
+        },
+        {
+          "isin": "XS2824054402",
+          "value": 500001.07,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2824054402  //  Valorn.: 135337661",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2567543397",
+          "value": 4400001.81,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2567543397  //  Valorn.: 134736192",
+          "allCandidates": 24
+        },
+        {
+          "isin": "XS2110079584",
+          "value": 11000001.5,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2110079584  //  Valorn.: 136429245",
+          "allCandidates": 24
+        },
+        {
+          "isin": "XS2848820754",
+          "value": 11000001.5,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2848820754  //  Valorn.: 135116008",
+          "allCandidates": 26
+        },
+        {
+          "isin": "XS2829712830",
+          "value": 11000001.5,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2829712830  //  Valorn.: 134735316",
+          "allCandidates": 29
+        },
+        {
+          "isin": "XS2912278723",
+          "value": 900002.35,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2912278723  //  Valorn.: 138689613",
+          "allCandidates": 27
+        },
+        {
+          "isin": "XS2381723902",
+          "value": 2000001.92,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2381723902  //  Valorn.: 128883231",
+          "allCandidates": 23
+        },
+        {
+          "isin": "XS2829752976",
+          "value": 2500000.73,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2829752976  //  Valorn.: 138874416",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2953741100",
+          "value": 2500000.73,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2953741100  //  Valorn.: 138494467",
+          "allCandidates": 19
+        },
+        {
+          "isin": "XS2381717250",
+          "value": 2500000.73,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2381717250  //  Valorn.: 128883267",
+          "allCandidates": 27
+        },
+        {
+          "isin": "XS2481066111",
+          "value": 1500001.9,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2481066111    //  Val  orn.: 126294402",
+          "allCandidates": 27
+        },
+        {
+          "isin": "XS2964611052",
+          "value": 5000003.7,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2964611052  //  Valorn.: 141235167",
+          "allCandidates": 28
+        },
+        {
+          "isin": "XS3035947103",
+          "value": 14700000.72,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS3035947103  //  Valorn.: 143578751",
+          "allCandidates": 23
+        },
+        {
+          "isin": "LU2228214107",
+          "value": 8000000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: LU2228214107  //  Valorn.: 57282891",
+          "allCandidates": 19
+        },
+        {
+          "isin": "CH1269060229",
+          "value": 2581.79,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: CH1269060229  //  Valorn.: 126906022",
+          "allCandidates": 16
+        },
+        {
+          "isin": "XS0461497009",
+          "value": 6900001.54,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS0461497009  //  Valorn.: 130269069",
+          "allCandidates": 12
+        },
+        {
+          "isin": "XS2746319610",
+          "value": 6900001.54,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2746319610  //  Valorn.: 133393503",
+          "allCandidates": 17
+        },
+        {
+          "isin": "CH0244767585",
+          "value": 243190.12,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: CH0244767585  //  Valorn.: 24476758",
+          "allCandidates": 11
+        },
+        {
+          "isin": "XS2519369867",
+          "value": 200000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2519369867  //  Valorn.: 121050656",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2315191069",
+          "value": 200000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2315191069  //  Valorn.: 111918998",
+          "allCandidates": 19
+        },
+        {
+          "isin": "XS2792098779",
+          "value": 5000000.22,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2792098779  //  Valorn.: 140288136",
+          "allCandidates": 25
+        },
+        {
+          "isin": "XS2714429128",
+          "value": 1200000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2714429128  //  Valorn.: 130738882",
+          "allCandidates": 24
+        },
+        {
+          "isin": "XS2105981117",
+          "value": 690000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2105981117  //  Val  orn.: 114118068",
+          "allCandidates": 24
+        },
+        {
+          "isin": "XS2838389430",
+          "value": 500000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2838389430  //  Valorn.: 135968317",
+          "allCandidates": 22
+        },
+        {
+          "isin": "XS1700087403",
+          "value": 100000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS1700087403  //  Valorn.: 39877135",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2594173093",
+          "value": 100000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2594173093  //  Valorn.: 125443809",
+          "allCandidates": 17
+        },
+        {
+          "isin": "XS2407295554",
+          "value": 200000,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2407295554  //  Valorn.: 114718568",
+          "allCandidates": 20
+        },
+        {
+          "isin": "XS2252299883",
+          "value": 5000004.36,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XS2252299883  //  Valorn.: 58001077",
+          "allCandidates": 22
+        },
+        {
+          "isin": "XD0466760473",
+          "value": 261290.13,
+          "confidence": 0.9,
+          "method": "ai_complete_data_mapping",
+          "context": "ISIN: XD0466760473  //  Valorn.: 46676047",
+          "allCandidates": 12
+        }
+      ],
+      "totalValue": 120403167.33000001,
+      "accuracy": 16.166045654473564,
+      "portfolioTotal": 19464431
+    },
+    "revolutionaryApproach": true,
+    "completeDataExtraction": true,
+    "aiPatternRecognition": true,
+    "fixedISINDetection": true
+  }
+}

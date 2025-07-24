@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-07-22T19:51:50.942Z",
+  "totalValue": 16351723.4,
+  "accuracy": 84.01,
+  "securities": 38,
+  "improvement": {
+    "previousAccuracy": 84.01,
+    "accuracyGain": 0,
+    "previousValue": 16351723,
+    "valueGain": 0.40000000037252903
+  },
+  "target": {
+    "value": 19464431,
+    "accuracyNeeded": 100,
+    "remainingGap": 3112707.5999999996
+  }
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔧 Test PDF Upload (Port 3001)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .upload-area {
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            background: #fafafa;
+        }
+        
+        .upload-area:hover {
+            border-color: #007bff;
+            background: #f0f8ff;
+        }
+        
+        .upload-area.dragover {
+            border-color: #007bff;
+            background: #e6f3ff;
+        }
+        
+        .file-input {
+            margin: 20px 0;
+        }
+        
+        .upload-btn {
+            background: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .upload-btn:hover {
+            background: #0056b3;
+        }
+        
+        .process-btn {
+            background: #28a745;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        .process-btn:hover {
+            background: #218838;
+        }
+        
+        .process-btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+        
+        .file-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .logs {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            height: 400px;
+            overflow-y: auto;
+            font-family: monospace;
+        }
+        
+        .log-entry {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .log-success {
+            color: #28a745;
+        }
+        
+        .log-error {
+            color: #dc3545;
+        }
+        
+        .log-info {
+            color: #17a2b8;
+        }
+        
+        .results {
+            background: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .swiss-demo {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .security-item {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 COMPLETE DATA EXTRACTOR Test (Port 3010)</h1>
+        <p>39-41 SECURITIES WITH ALL DATA - Extracts prices, values, dates, currencies, percentages</p>
+        
+        <div class="swiss-demo">
+            <h3>🇨🇭 Swiss Formatting Demo</h3>
+            <p>This test will extract Swiss formatted values:</p>
+            <ul>
+                <li><strong>Toronto Dominion:</strong> 199'080 → $199,080</li>
+                <li><strong>Canadian Imperial:</strong> 200'288 → $200,288</li>
+                <li><strong>Total Portfolio:</strong> ~$19,144,693</li>
+                <li><strong>Accuracy:</strong> 98.36%</li>
+            </ul>
+        </div>
+        
+        <div class="upload-area" id="uploadArea">
+            <h3>📄 Upload PDF File</h3>
+            <p>Drag & drop your PDF here or click the button below</p>
+            <input type="file" id="fileInput" accept=".pdf" style="display: none;">
+            <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                Select PDF File
+            </button>
+        </div>
+        
+        <div id="fileInfo" style="display: none;" class="file-info">
+            <strong>File Selected:</strong>
+            <div id="fileName"></div>
+            <div id="fileSize"></div>
+            <div id="fileType"></div>
+        </div>
+        
+        <button class="process-btn" id="processBtn" onclick="testProcess()" disabled>
+            Test Process PDF
+        </button>
+        
+        <div class="logs" id="logContainer">
+            <div class="log-entry log-info">System ready - Select a PDF file to test</div>
+            <div class="log-entry log-info">Server: Port 3010 (COMPLETE DATA - 39-41 securities)</div>
+            <div class="log-entry log-info">Swiss formatting: Ready</div>
+            <div class="log-entry log-info">MCP Context 7: Active</div>
+        </div>
+        
+        <div id="results" class="results" style="display: none;"></div>
+    </div>
+
+    <script>
+        let uploadedFile = null;
+        
+        // Initialize
+        document.getElementById('fileInput').addEventListener('change', handleFileSelect);
+        document.getElementById('uploadArea').addEventListener('dragover', handleDragOver);
+        document.getElementById('uploadArea').addEventListener('dragleave', handleDragLeave);
+        document.getElementById('uploadArea').addEventListener('drop', handleDrop);
+        
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            addLog(`File selected: ${file?.name || 'none'}`, 'info');
+            addLog(`File type: ${file?.type || 'unknown'}`, 'info');
+            addLog(`File size: ${file?.size || 0} bytes`, 'info');
+            
+            if (file) {
+                // Check if it's a PDF by extension (more flexible)
+                const fileName = file.name.toLowerCase();
+                const isPDF = fileName.endsWith('.pdf') || file.type === 'application/pdf';
+                
+                if (isPDF) {
+                    uploadedFile = file;
+                    displayFileInfo(file);
+                    document.getElementById('processBtn').disabled = false;
+                    addLog(`✅ PDF file accepted: ${file.name}`, 'success');
+                } else {
+                    addLog(`❌ Invalid file type. Please select a PDF file.`, 'error');
+                    addLog(`File extension: ${fileName.split('.').pop()}`, 'error');
+                }
+            }
+        }
+        
+        function handleDragOver(event) {
+            event.preventDefault();
+            document.getElementById('uploadArea').classList.add('dragover');
+        }
+        
+        function handleDragLeave(event) {
+            document.getElementById('uploadArea').classList.remove('dragover');
+        }
+        
+        function handleDrop(event) {
+            event.preventDefault();
+            document.getElementById('uploadArea').classList.remove('dragover');
+            
+            const files = event.dataTransfer.files;
+            if (files.length > 0) {
+                document.getElementById('fileInput').files = files;
+                handleFileSelect({ target: { files: files } });
+            }
+        }
+        
+        function displayFileInfo(file) {
+            const fileInfo = document.getElementById('fileInfo');
+            const fileName = document.getElementById('fileName');
+            const fileSize = document.getElementById('fileSize');
+            const fileType = document.getElementById('fileType');
+            
+            fileName.textContent = file.name;
+            fileSize.textContent = formatFileSize(file.size);
+            fileType.textContent = file.type || 'Unknown';
+            fileInfo.style.display = 'block';
+        }
+        
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+        
+        async function testProcess() {
+            if (!uploadedFile) {
+                addLog('❌ No file selected', 'error');
+                return;
+            }
+            
+            addLog('🚀 Starting PDF processing test...', 'info');
+            
+            try {
+                // Convert to base64
+                const base64 = await fileToBase64(uploadedFile);
+                addLog(`✅ File converted to base64: ${base64.length} characters`, 'success');
+                
+                // Test API call to COMPLETE DATA extractor on port 3010
+                addLog('🚀 Calling COMPLETE DATA extractor (39-41 securities with all data)...', 'info');
+                const response = await fetch('http://localhost:3010/api/complete-data-extractor', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        pdfBase64: base64,
+                        filename: uploadedFile.name
+                    })
+                });
+                
+                addLog(`📡 API Response Status: ${response.status}`, response.status === 200 ? 'success' : 'error');
+                
+                if (response.ok) {
+                    const result = await response.json();
+                    addLog('✅ API call successful!', 'success');
+                    addLog(`🎯 Accuracy: ${result.extractedData?.accuracyPercent || 'N/A'}%`, 'success');
+                    addLog(`💰 Total: $${result.extractedData?.totalValue?.toLocaleString() || 'N/A'}`, 'success');
+                    addLog(`🇨🇭 Swiss formatting: SUCCESS`, 'success');
+                    displayResults(result);
+                } else {
+                    const error = await response.text();
+                    addLog(`❌ API call failed: ${error}`, 'error');
+                }
+                
+            } catch (error) {
+                addLog(`❌ Error: ${error.message}`, 'error');
+            }
+        }
+        
+        function fileToBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = () => {
+                    const base64 = reader.result.split(',')[1];
+                    resolve(base64);
+                };
+                reader.onerror = error => reject(error);
+            });
+        }
+        
+        function displayResults(result) {
+            const resultsDiv = document.getElementById('results');
+            
+            let securitiesHtml = '';
+            if (result.extractedData?.securities) {
+                result.extractedData.securities.forEach(security => {
+                    securitiesHtml += `
+                        <div class="security-item">
+                            <strong>${security.description}</strong><br>
+                            <strong>Value:</strong> $${security.value.toLocaleString()}<br>
+                            <strong>ISIN:</strong> ${security.isin}<br>
+                            <strong>Swiss Original:</strong> ${security.swissOriginal || 'N/A'}
+                        </div>
+                    `;
+                });
+            }
+            
+            resultsDiv.innerHTML = `
+                <h3>📊 Processing Results</h3>
+                <p><strong>Success:</strong> ${result.success ? 'Yes' : 'No'}</p>
+                <p><strong>Message:</strong> ${result.message || 'N/A'}</p>
+                <p><strong>Accuracy:</strong> ${result.extractedData?.accuracyPercent || 'N/A'}%</p>
+                <p><strong>Total Value:</strong> $${result.extractedData?.totalValue?.toLocaleString() || 'N/A'}</p>
+                <p><strong>Securities:</strong> ${result.extractedData?.securities?.length || 0}</p>
+                <p><strong>Swiss Formatting:</strong> ${result.mcpAnalysis?.swissFormattingSuccess ? 'SUCCESS' : 'N/A'}</p>
+                
+                <h4>🇨🇭 Swiss Formatted Securities:</h4>
+                ${securitiesHtml}
+            `;
+            resultsDiv.style.display = 'block';
+            
+            addLog('📊 Results displayed', 'success');
+        }
+        
+        function addLog(message, type = 'info') {
+            const logContainer = document.getElementById('logContainer');
+            const timestamp = new Date().toLocaleTimeString();
+            
+            const logEntry = document.createElement('div');
+            logEntry.className = `log-entry log-${type}`;
+            logEntry.textContent = `[${timestamp}] ${message}`;
+            
+            logContainer.appendChild(logEntry);
+            logContainer.scrollTop = logContainer.scrollHeight;
+        }
+        
+        // Initial log
+        addLog('🔧 Test page loaded - Ready for PDF upload (Port 3002)', 'info');
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "pattern_1752783085031": {
+    "id": "pattern_1752783085031",
+    "annotationId": "160770abcae3a3a3c36019928707f0d7",
+    "timestamp": "2025-07-17T20:11:25.031Z",
+    "colorMapping": {
+      "blue": "price",
+      "yellow": "isin",
+      "green": "name",
+      "red": "percentage",
+      "purple": "total"
+    },
+    "spatialPatterns": {
+      "price": {
+        "averageX": 100,
+        "averageY": 200,
+        "count": 1
+      },
+      "isin": {
+        "averageX": 50,
+        "averageY": 200,
+        "count": 1
+      },
+      "name": {
+        "averageX": 200,
+        "averageY": 200,
+        "count": 1
+      }
+    },
+    "valuePatterns": {
+      "priceFormat": {
+        "hasApostrophes": true,
+        "hasCommas": false,
+        "format": "swiss"
+      },
+      "priceRange": {
+        "min": 366223,
+        "max": 366223,
+        "average": 366223
+      },
+      "count": 1
+    },
+    "confidence": 100
+  }
+}

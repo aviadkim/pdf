@@ -1,0 +1,3291 @@
+{
+  "success": true,
+  "method": "dp_bench_inspired",
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2530201644",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2588105036",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2665592833",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2692298537",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2754416860",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2761230684",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2736388732",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2782869916",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2824054402",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2567543397",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2110079584",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2848820754",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2829712830",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2912278723",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2381723902",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2829752976",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2953741100",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2381717250",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2481066111",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2964611052",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS3035947103",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "LU2228214107",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "CH1269060229",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS0461497009",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2746319610",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "CH0244767585",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2519369867",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2315191069",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2792098779",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2714429128",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2105981117",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2838389430",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2631782468",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS1700087403",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2594173093",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2407295554",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XS2252299883",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    },
+    {
+      "isin": "XD0466760473",
+      "name": "ISIN:",
+      "marketValue": null,
+      "currency": "CHF",
+      "extractionMethod": "dp_bench_inspired"
+    }
+  ],
+  "accuracy": {
+    "tedsScore": 0,
+    "validSecurities": 0,
+    "totalSecurities": 39,
+    "totalValue": 0,
+    "targetTotal": 19464431
+  },
+  "layoutAnalysis": {
+    "tables": [
+      {
+        "indicator": "ISIN:",
+        "count": 39,
+        "positions": [
+          6348,
+          7355,
+          7737,
+          8012,
+          8173,
+          8391,
+          8651,
+          8912,
+          9937,
+          10075,
+          10335,
+          10604,
+          10912,
+          11025,
+          11231,
+          11542,
+          12455,
+          12587,
+          12801,
+          12995,
+          13208,
+          13517,
+          13734,
+          13942,
+          14834,
+          15081,
+          16199,
+          17273,
+          17412,
+          17672,
+          17978,
+          18234,
+          18393,
+          18747,
+          19720,
+          19865,
+          20224,
+          20508,
+          21661
+        ]
+      },
+      {
+        "indicator": "Valorn.:",
+        "count": 37,
+        "positions": [
+          6372,
+          7379,
+          7761,
+          8036,
+          8197,
+          8415,
+          8675,
+          8936,
+          9961,
+          10099,
+          10359,
+          10628,
+          10936,
+          11049,
+          11255,
+          11566,
+          12479,
+          12611,
+          12825,
+          13232,
+          13541,
+          13758,
+          13966,
+          14858,
+          15105,
+          16223,
+          17297,
+          17436,
+          17696,
+          18002,
+          18417,
+          18771,
+          19744,
+          19889,
+          20248,
+          20532,
+          21685
+        ]
+      },
+      {
+        "indicator": "Maturity:",
+        "count": 33,
+        "positions": [
+          6415,
+          7418,
+          7800,
+          8075,
+          8236,
+          8454,
+          8710,
+          8975,
+          10000,
+          10971,
+          11088,
+          11290,
+          11601,
+          12518,
+          12646,
+          12860,
+          13058,
+          13267,
+          13580,
+          14007,
+          14897,
+          15144,
+          17345,
+          17477,
+          17737,
+          18043,
+          18301,
+          18458,
+          18812,
+          19784,
+          19930,
+          20289,
+          20582
+        ]
+      },
+      {
+        "indicator": "Coupon:",
+        "count": 10,
+        "positions": [
+          7439,
+          7821,
+          8096,
+          8475,
+          8731,
+          10159,
+          10419,
+          14028,
+          14918,
+          15165
+        ]
+      }
+    ],
+    "paragraphs": [
+      {
+        "index": 0,
+        "content": "euioaeuioa\nValuation\nasof 31.03.2025\nSwift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA\nTel. +4...",
+        "length": 428
+      },
+      {
+        "index": 1,
+        "content": "Index\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI\nP...",
+        "length": 675
+      },
+      {
+        "index": 2,
+        "content": "Summary\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI...",
+        "length": 944
+      },
+      {
+        "index": 3,
+        "content": "Assets and Liabilities Structure\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 36...",
+        "length": 1299
+      },
+      {
+        "index": 4,
+        "content": "Currency allocation\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEO...",
+        "length": 1170
+      },
+      {
+        "index": 5,
+        "content": "Performance Overview/Evolution\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 3662...",
+        "length": 1017
+      },
+      {
+        "index": 6,
+        "content": "Liquidity and liabilities\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\nae...",
+        "length": 1116
+      },
+      {
+        "index": 7,
+        "content": "Bonds\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI\nS...",
+        "length": 2482
+      },
+      {
+        "index": 8,
+        "content": "Bonds\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI\nS...",
+        "length": 2517
+      },
+      {
+        "index": 9,
+        "content": "Bonds\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI\nS...",
+        "length": 2474
+      },
+      {
+        "index": 10,
+        "content": "Bonds\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI\nS...",
+        "length": 1366
+      },
+      {
+        "index": 11,
+        "content": "Equities\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOU...",
+        "length": 974
+      },
+      {
+        "index": 12,
+        "content": "Structured products\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEO...",
+        "length": 2456
+      },
+      {
+        "index": 13,
+        "content": "Structured products\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEO...",
+        "length": 1943
+      },
+      {
+        "index": 14,
+        "content": "Other assets\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeoui...",
+        "length": 998
+      },
+      {
+        "index": 15,
+        "content": "Expected Cash Flows (Overview)\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 3662...",
+        "length": 867
+      },
+      {
+        "index": 16,
+        "content": "Glossary\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOU...",
+        "length": 3430
+      },
+      {
+        "index": 17,
+        "content": "Glossary\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOU...",
+        "length": 1887
+      },
+      {
+        "index": 18,
+        "content": "Notices and other information\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 36622...",
+        "length": 2295
+      }
+    ],
+    "headings": [
+      "ORDINARY USD",
+      "NATWEST GROUP"
+    ],
+    "sections": [
+      {
+        "name": "Other assets",
+        "position": 1495,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured products",
+        "position": 1508,
+        "type": "financial_section"
+      },
+      {
+        "name": "Equities",
+        "position": 1528,
+        "type": "financial_section"
+      },
+      {
+        "name": "Liquidity",
+        "position": 1537,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 1547,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured products",
+        "position": 2793,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 2814,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured products",
+        "position": 2836,
+        "type": "financial_section"
+      },
+      {
+        "name": "Equities",
+        "position": 2857,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured products",
+        "position": 4135,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 4156,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured products",
+        "position": 4184,
+        "type": "financial_section"
+      },
+      {
+        "name": "Equities",
+        "position": 4205,
+        "type": "financial_section"
+      },
+      {
+        "name": "Liquidity",
+        "position": 5547,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 6665,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 7277,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 7308,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 7407,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 7789,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 8064,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 8225,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 8443,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 8699,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 8964,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 9149,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 9761,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 9792,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 9989,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 10127,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 10387,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 10652,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 10960,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 11077,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 11279,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 11590,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 11668,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 12280,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 12311,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 12507,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 12635,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 12849,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 13047,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 13256,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 13569,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 13996,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 14144,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 14756,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 14787,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 14886,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 15133,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 15334,
+        "type": "financial_section"
+      },
+      {
+        "name": "Equities",
+        "position": 15512,
+        "type": "financial_section"
+      },
+      {
+        "name": "Equities",
+        "position": 16127,
+        "type": "financial_section"
+      },
+      {
+        "name": "equities",
+        "position": 16162,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured products",
+        "position": 16488,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured products",
+        "position": 17114,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 17135,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 17334,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 17466,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 17726,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 18032,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 18290,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 18447,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 18801,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured products",
+        "position": 18946,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured products",
+        "position": 19572,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 19593,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 19773,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 19919,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 20278,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured products",
+        "position": 20356,
+        "type": "financial_section"
+      },
+      {
+        "name": "Equities",
+        "position": 20377,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured products",
+        "position": 20550,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured products",
+        "position": 20676,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 20774,
+        "type": "financial_section"
+      },
+      {
+        "name": "Equities",
+        "position": 20829,
+        "type": "financial_section"
+      },
+      {
+        "name": "Other assets",
+        "position": 20891,
+        "type": "financial_section"
+      },
+      {
+        "name": "Liquidity",
+        "position": 23120,
+        "type": "financial_section"
+      },
+      {
+        "name": "Liquidity",
+        "position": 23130,
+        "type": "financial_section"
+      },
+      {
+        "name": "Bonds",
+        "position": 23438,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 23484,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 23500,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 23653,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 23722,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 23770,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 23823,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 23871,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 23963,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 23985,
+        "type": "financial_section"
+      },
+      {
+        "name": "Equities",
+        "position": 24042,
+        "type": "financial_section"
+      },
+      {
+        "name": "equities",
+        "position": 24074,
+        "type": "financial_section"
+      },
+      {
+        "name": "equities",
+        "position": 24187,
+        "type": "financial_section"
+      },
+      {
+        "name": "equities",
+        "position": 24281,
+        "type": "financial_section"
+      },
+      {
+        "name": "equities",
+        "position": 24306,
+        "type": "financial_section"
+      },
+      {
+        "name": "equities",
+        "position": 24467,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 24477,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured Products",
+        "position": 24651,
+        "type": "financial_section"
+      },
+      {
+        "name": "structured products",
+        "position": 24694,
+        "type": "financial_section"
+      },
+      {
+        "name": "structured products",
+        "position": 24882,
+        "type": "financial_section"
+      },
+      {
+        "name": "equities",
+        "position": 24941,
+        "type": "financial_section"
+      },
+      {
+        "name": "Structured Products",
+        "position": 25054,
+        "type": "financial_section"
+      },
+      {
+        "name": "equities",
+        "position": 25263,
+        "type": "financial_section"
+      },
+      {
+        "name": "bonds",
+        "position": 25276,
+        "type": "financial_section"
+      },
+      {
+        "name": "Other assets",
+        "position": 25841,
+        "type": "financial_section"
+      },
+      {
+        "name": "liquidity",
+        "position": 27079,
+        "type": "financial_section"
+      }
+    ]
+  },
+  "tableStructure": {
+    "rows": [
+      {
+        "index": 251,
+        "content": "ISIN: XS2993414619  //  Valorn.: 140610687",
+        "isin": "XS2993414619",
+        "context": "-2.30%\n0.50%\nISIN: XS2993414619  //  Valorn.: 140610687\nMM secs discounted  //  Maturity: 28.03.2035  //  PRC: 5.00\n100.000097.700097'700"
+      },
+      {
+        "index": 292,
+        "content": "ISIN: XS2530201644  //  Valorn.: 125350273",
+        "isin": "XS2530201644",
+        "context": "0.25%\n1.02%\nISIN: XS2530201644  //  Valorn.: 125350273\nOrdinary Bonds  //  Maturity: 23.02.2027\nCoupon: 23.5  //  Quarterly  3.32%  //  Days: 37"
+      },
+      {
+        "index": 310,
+        "content": "ISIN: XS2588105036  //  Valorn.: 112286204",
+        "isin": "XS2588105036",
+        "context": "1'031\nCANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28\nISIN: XS2588105036  //  Valorn.: 112286204\nOrdinary Bonds  //  Maturity: 22.02.2028\nCoupon: 23.2  //  Annual  5.1531%  //  Days: 46"
+      },
+      {
+        "index": 323,
+        "content": "ISIN: XS2665592833  //  Valorn.: 128829182",
+        "isin": "XS2665592833",
+        "context": "32'000\nHARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028\nISIN: XS2665592833  //  Valorn.: 128829182\nOrdinary Bonds  //  Maturity: 18.09.2028\nCoupon: 18.9  //  Annual  4%  //  Days: 192"
+      },
+      {
+        "index": 330,
+        "content": "ISIN: XS2692298537  //  Valorn.: 129157183",
+        "isin": "XS2692298537",
+        "context": "2.26%\n3.79%\nISIN: XS2692298537  //  Valorn.: 129157183\nOrdinary Bonds  //  Maturity: 07.11.2029\nYTM: -1.44  //  PRC: 5.00"
+      },
+      {
+        "index": 340,
+        "content": "ISIN: XS2754416860  //  Valorn.: 132648671",
+        "isin": "XS2754416860",
+        "context": "1.16%\n0.50%\nISIN: XS2754416860  //  Valorn.: 132648671\nOrdinary Bonds  //  Maturity: 17.01.2030\nCoupon: 17.1  //  Annual  5.238%  //  Days: 73"
+      },
+      {
+        "index": 352,
+        "content": "ISIN: XS2761230684  //  Valorn.: 112288215",
+        "isin": "XS2761230684",
+        "context": "2.24%\n0.53%\nISIN: XS2761230684  //  Valorn.: 112288215\nZero Bonds  //  Maturity: 13.02.2030\nCoupon: 13.2  //  Annual  2%  //  Days: 47  //  YTM: 6.89"
+      },
+      {
+        "index": 364,
+        "content": "ISIN: XS2736388732  //  Valorn.: 131799640",
+        "isin": "XS2736388732",
+        "context": "-2.58%\n1.32%\nISIN: XS2736388732  //  Valorn.: 131799640\nOrdinary Bonds  //  Maturity: 20.12.2031\nDays: 265"
+      },
+      {
+        "index": 410,
+        "content": "ISIN: XS2782869916  //  Valorn.: 132544344",
+        "isin": "XS2782869916",
+        "context": "31.03.2025\nCITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-\nISIN: XS2782869916  //  Valorn.: 132544344\nOrdinary Bonds  //  Maturity: 09.05.2034\nPRC: 5.00"
+      },
+      {
+        "index": 417,
+        "content": "ISIN: XS2824054402  //  Valorn.: 135337661",
+        "isin": "XS2824054402",
+        "context": "1.81%\n2.46%\nISIN: XS2824054402  //  Valorn.: 135337661\nOrdinary Bonds  //  Callable: 29.05.2026\nCoupon: 29.5  //  Annual  5.6%  //  Days: 301  //  YTM: 5.04"
+      },
+      {
+        "index": 429,
+        "content": "ISIN: XS2567543397  //  Valorn.: 134736192",
+        "isin": "XS2567543397",
+        "context": "1.26%\n13.21%\nISIN: XS2567543397  //  Valorn.: 134736192\nOrdinary Bonds  //  Callable: 18.06.2026\nCoupon: 18.6  //  Annual  5.61%  //  Days: 282  //  YTM: 5.53"
+      },
+      {
+        "index": 441,
+        "content": "ISIN: XS2110079584  //  Valorn.: 136429245",
+        "isin": "XS2110079584",
+        "context": "1.50%\n5.66%\nISIN: XS2110079584  //  Valorn.: 136429245\nZero Bonds  //  Callable: 09.07.2026\nYTM: 5.88  //  PRC: 5.00"
+      },
+      {
+        "index": 456,
+        "content": "ISIN: XS2848820754  //  Valorn.: 135116008",
+        "isin": "XS2848820754",
+        "context": "31.03.2025\nCITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34\nISIN: XS2848820754  //  Valorn.: 135116008\nZero Bonds  //  Maturity: 01.08.2034\nPRC: 5.00"
+      },
+      {
+        "index": 462,
+        "content": "ISIN: XS2829712830  //  Valorn.: 134735316",
+        "isin": "XS2829712830",
+        "context": "1.16%\n0.47%\nISIN: XS2829712830  //  Valorn.: 134735316\nOrdinary Bonds  //  Maturity: 30.09.2034\nYTM: 5.64  //  PRC: 5.00"
+      },
+      {
+        "index": 472,
+        "content": "ISIN: XS2912278723  //  Valorn.: 138689613",
+        "isin": "XS2912278723",
+        "context": "1.92%\n1.02%\nISIN: XS2912278723  //  Valorn.: 138689613\nZero Bonds  //  Maturity: 17.10.2034\nYTM: 4.82  //  PRC: 5.00"
+      },
+      {
+        "index": 487,
+        "content": "ISIN: XS2381723902  //  Valorn.: 128883231",
+        "isin": "XS2381723902",
+        "context": "31.03.2025\nJPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021-\nISIN: XS2381723902  //  Valorn.: 128883231\nZero Bonds  //  Maturity: 29.10.2034\nPRC: 5.00"
+      },
+      {
+        "index": 527,
+        "content": "ISIN: XS2829752976  //  Valorn.: 138874416",
+        "isin": "XS2829752976",
+        "context": "27.03.2025\nGOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-\nISIN: XS2829752976  //  Valorn.: 138874416\nOrdinary Bonds  //  Maturity: 18.11.2034\nYTM: 5.65  //  PRC: 5.00"
+      },
+      {
+        "index": 533,
+        "content": "ISIN: XS2953741100  //  Valorn.: 138494467",
+        "isin": "XS2953741100",
+        "context": "1.90%\n0.75%\nISIN: XS2953741100  //  Valorn.: 138494467\nZero Bonds  //  Maturity: 11.12.2034\nYTM: 5.28  //  PRC: 5.00"
+      },
+      {
+        "index": 543,
+        "content": "ISIN: XS2381717250  //  Valorn.: 128883267",
+        "isin": "XS2381717250",
+        "context": "3.70%\n2.60%\nISIN: XS2381717250  //  Valorn.: 128883267\nZero Bonds  //  Maturity: 19.12.2034\nPRC: 5.00"
+      },
+      {
+        "index": 553,
+        "content": "ISIN: XS2481066111    //  Val  orn.: 126294402",
+        "isin": "XS2481066111",
+        "context": "-1.10%\n0.25%\nISIN: XS2481066111    //  Val  orn.: 126294402\nZero Bonds  //  Maturity: 03.02.2035\nYTM: 0.10  //  PRC: 5.00"
+      },
+      {
+        "index": 563,
+        "content": "ISIN: XS2964611052  //  Valorn.: 141235167",
+        "isin": "XS2964611052",
+        "context": "0.72%\n7.61%\nISIN: XS2964611052  //  Valorn.: 141235167\nZero Bonds  //  Maturity: 14.02.2035\nYTM: 5.41  //  PRC: 5.00"
+      },
+      {
+        "index": 578,
+        "content": "ISIN: XS3035947103  //  Valorn.: 143578751",
+        "isin": "XS3035947103",
+        "context": "28.03.2025\nWELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36\nISIN: XS3035947103  //  Valorn.: 143578751\nOrdinary Bonds  //  Maturity: 28.03.2036\nPRC: 5.00"
+      },
+      {
+        "index": 589,
+        "content": "ISIN: LU2228214107  //  Valorn.: 57282891",
+        "isin": "LU2228214107",
+        "context": "13.09.2024\nPREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB\nISIN: LU2228214107  //  Valorn.: 57282891\nBond Funds / Certificates\nPRC: 3.00"
+      },
+      {
+        "index": 601,
+        "content": "ISIN: CH1269060229  //  Valorn.: 126906022",
+        "isin": "CH1269060229",
+        "context": "1'043\nBK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28\nISIN: CH1269060229  //  Valorn.: 126906022\nStructured Bonds  //  Maturity: 26.05.2028\nCoupon: 26.5  //  Quarterly  3.25%  //  Days: 33"
+      },
+      {
+        "index": 638,
+        "content": "ISIN: XS0461497009  //  Valorn.: 130269069",
+        "isin": "XS0461497009",
+        "context": "1.54%\n3.65%\nISIN: XS0461497009  //  Valorn.: 130269069\nOrdinary Bonds  //  Maturity: 08.11.2028\nCoupon: 8.11  //  Annual  5.5%  //  Days: 142"
+      },
+      {
+        "index": 650,
+        "content": "ISIN: XS2746319610  //  Valorn.: 133393503",
+        "isin": "XS2746319610",
+        "context": "3.10%\n0.99%\nISIN: XS2746319610  //  Valorn.: 133393503\nOrdinary Bonds  //  Maturity: 01.03.2030\nCoupon: Annual  32.46%  //  Days: 385  //  YTM: 16.79"
+      },
+      {
+        "index": 698,
+        "content": "ISIN: CH0244767585  //  Valorn.: 24476758",
+        "isin": "CH0244767585",
+        "context": "-3.10%\n0.12%\nISIN: CH0244767585  //  Valorn.: 24476758\nOrdinary Stocks  //  PRC: 3.91\n221.564126.870021'496"
+      },
+      {
+        "index": 747,
+        "content": "ISIN: XS2519369867  //  Valorn.: 121050656",
+        "isin": "XS2519369867",
+        "context": "250\nBCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%\nISIN: XS2519369867  //  Valorn.: 121050656\nOther convertible bonds  //  Maturity: 21.06.2027\nDays: 9  //  PRC: 5.00"
+      },
+      {
+        "index": 753,
+        "content": "ISIN: XS2315191069  //  Valorn.: 111918998",
+        "isin": "XS2315191069",
+        "context": "0.22%\n2.58%\nISIN: XS2315191069  //  Valorn.: 111918998\nStructured Bonds  //  Maturity: 08.01.2029\nDays: 82  //  PRC: 5.0 0"
+      },
+      {
+        "index": 765,
+        "content": "ISIN: XS2792098779  //  Valorn.: 140288136",
+        "isin": "XS2792098779",
+        "context": "-1.83%\n5.93%\nISIN: XS2792098779  //  Valorn.: 140288136\nStructured Bonds  //  Maturity: 02.12.2034  //  PRC: 5.00\nPrice to be verified"
+      },
+      {
+        "index": 781,
+        "content": "ISIN: XS2714429128  //  Valorn.: 130738882",
+        "isin": "XS2714429128",
+        "context": "20'343\nEMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN\nISIN: XS2714429128  //  Valorn.: 130738882\nStructured Bonds  //  Maturity: 17.09.2029\nDays: 195  //  PRC: 5.00"
+      },
+      {
+        "index": 794,
+        "content": "ISIN: XS2105981117  //  Val  orn.: 114118068",
+        "isin": "XS2105981117",
+        "context": "757\nGOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT\nISIN: XS2105981117  //  Val  orn.: 114118068\nStructured Bonds  //  Maturity: 20.12.2028\nDays: 10  //  PRC: 4.0 0"
+      },
+      {
+        "index": 801,
+        "content": "ISIN: XS2838389430  //  Valorn.: 135968317",
+        "isin": "XS2838389430",
+        "context": "0.35%\n8.34%\nISIN: XS2838389430  //  Valorn.: 135968317\nStructured Bonds  //  Maturity: 26.04.2033\nDays: 279  //  PRC: 5.00"
+      },
+      {
+        "index": 819,
+        "content": "ISIN: XS2631782468  //  Valorn.: 127708275",
+        "isin": "XS2631782468",
+        "context": "1'416\nLUMINIS REPACK NOTES 23-25.05.29 VRN ON 4,625%\nISIN: XS2631782468  //  Valorn.: 127708275\nStructured Bonds  //  Maturity: 25.05.2029\nDays: 19  //  PRC: 5.0 0"
+      },
+      {
+        "index": 861,
+        "content": "ISIN: XS1700087403  //  Valorn.: 39877135",
+        "isin": "XS1700087403",
+        "context": "31.03.2025\nNATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21\nISIN: XS1700087403  //  Valorn.: 39877135\nStructured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00\nPrice to be verified"
+      },
+      {
+        "index": 867,
+        "content": "ISIN: XS2594173093  //  Valorn.: 125443809",
+        "isin": "XS2594173093",
+        "context": "-1.90%\n0.99%\nISIN: XS2594173093  //  Valorn.: 125443809\nStructured Bonds  //  Maturity: 27.09.2029\nDays: 33  //  PRC: 5.0 0"
+      },
+      {
+        "index": 885,
+        "content": "ISIN: XS2407295554  //  Valorn.: 114718568",
+        "isin": "XS2407295554",
+        "context": "6'514\nNOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON\nISIN: XS2407295554  //  Valorn.: 114718568\nStructured Bonds  //  Maturity: 12.01.2028\nDays: 78  //  PRC: 5.0 0"
+      },
+      {
+        "index": 898,
+        "content": "ISIN: XS2252299883  //  Valorn.: 58001077",
+        "isin": "XS2252299883",
+        "context": "28.03.2025\nNOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ON CS\nISIN: XS2252299883  //  Valorn.: 58001077\nStructured products equity  //  Maturity: 15.05.2026  //  PRC: 5.00\nPrice to be verified"
+      },
+      {
+        "index": 946,
+        "content": "ISIN: XD0466760473  //  Valorn.: 46676047",
+        "isin": "XD0466760473",
+        "context": "31.12.2023\nEXIGENT ENHANCED INCOME FUND LTD SHS A SERIES 2019 1\nISIN: XD0466760473  //  Valorn.: 46676047\nHedge Funds & Private Equity  //  PRC: 5.00\nPrice to be verified"
+      }
+    ],
+    "columns": [
+      {
+        "name": "ISIN",
+        "pattern": {},
+        "values": []
+      },
+      {
+        "name": "Security Name",
+        "pattern": {},
+        "values": []
+      },
+      {
+        "name": "Market Value",
+        "pattern": {},
+        "values": []
+      },
+      {
+        "name": "Currency",
+        "pattern": {},
+        "values": []
+      },
+      {
+        "name": "Maturity",
+        "pattern": {},
+        "values": []
+      },
+      {
+        "name": "Coupon",
+        "pattern": {},
+        "values": []
+      },
+      {
+        "name": "PRC",
+        "pattern": {},
+        "values": []
+      },
+      {
+        "name": "Performance",
+        "pattern": {},
+        "values": []
+      }
+    ],
+    "cells": [
+      {
+        "row": 251,
+        "column": "ISIN",
+        "value": "XS2993414619",
+        "isin": "XS2993414619"
+      },
+      {
+        "row": 251,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2993414619"
+      },
+      {
+        "row": 251,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2993414619"
+      },
+      {
+        "row": 292,
+        "column": "ISIN",
+        "value": "XS2530201644",
+        "isin": "XS2530201644"
+      },
+      {
+        "row": 292,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2530201644"
+      },
+      {
+        "row": 292,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2530201644"
+      },
+      {
+        "row": 310,
+        "column": "ISIN",
+        "value": "XS2588105036",
+        "isin": "XS2588105036"
+      },
+      {
+        "row": 310,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2588105036"
+      },
+      {
+        "row": 310,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2588105036"
+      },
+      {
+        "row": 323,
+        "column": "ISIN",
+        "value": "XS2665592833",
+        "isin": "XS2665592833"
+      },
+      {
+        "row": 323,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2665592833"
+      },
+      {
+        "row": 323,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2665592833"
+      },
+      {
+        "row": 330,
+        "column": "ISIN",
+        "value": "XS2692298537",
+        "isin": "XS2692298537"
+      },
+      {
+        "row": 330,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2692298537"
+      },
+      {
+        "row": 330,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2692298537"
+      },
+      {
+        "row": 340,
+        "column": "ISIN",
+        "value": "XS2754416860",
+        "isin": "XS2754416860"
+      },
+      {
+        "row": 340,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2754416860"
+      },
+      {
+        "row": 340,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2754416860"
+      },
+      {
+        "row": 352,
+        "column": "ISIN",
+        "value": "XS2761230684",
+        "isin": "XS2761230684"
+      },
+      {
+        "row": 352,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2761230684"
+      },
+      {
+        "row": 352,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2761230684"
+      },
+      {
+        "row": 364,
+        "column": "ISIN",
+        "value": "XS2736388732",
+        "isin": "XS2736388732"
+      },
+      {
+        "row": 364,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2736388732"
+      },
+      {
+        "row": 364,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2736388732"
+      },
+      {
+        "row": 410,
+        "column": "ISIN",
+        "value": "XS2782869916",
+        "isin": "XS2782869916"
+      },
+      {
+        "row": 410,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2782869916"
+      },
+      {
+        "row": 410,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2782869916"
+      },
+      {
+        "row": 417,
+        "column": "ISIN",
+        "value": "XS2824054402",
+        "isin": "XS2824054402"
+      },
+      {
+        "row": 417,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2824054402"
+      },
+      {
+        "row": 417,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2824054402"
+      },
+      {
+        "row": 429,
+        "column": "ISIN",
+        "value": "XS2567543397",
+        "isin": "XS2567543397"
+      },
+      {
+        "row": 429,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2567543397"
+      },
+      {
+        "row": 429,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2567543397"
+      },
+      {
+        "row": 441,
+        "column": "ISIN",
+        "value": "XS2110079584",
+        "isin": "XS2110079584"
+      },
+      {
+        "row": 441,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2110079584"
+      },
+      {
+        "row": 441,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2110079584"
+      },
+      {
+        "row": 456,
+        "column": "ISIN",
+        "value": "XS2848820754",
+        "isin": "XS2848820754"
+      },
+      {
+        "row": 456,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2848820754"
+      },
+      {
+        "row": 456,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2848820754"
+      },
+      {
+        "row": 462,
+        "column": "ISIN",
+        "value": "XS2829712830",
+        "isin": "XS2829712830"
+      },
+      {
+        "row": 462,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2829712830"
+      },
+      {
+        "row": 462,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2829712830"
+      },
+      {
+        "row": 472,
+        "column": "ISIN",
+        "value": "XS2912278723",
+        "isin": "XS2912278723"
+      },
+      {
+        "row": 472,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2912278723"
+      },
+      {
+        "row": 472,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2912278723"
+      },
+      {
+        "row": 487,
+        "column": "ISIN",
+        "value": "XS2381723902",
+        "isin": "XS2381723902"
+      },
+      {
+        "row": 487,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2381723902"
+      },
+      {
+        "row": 487,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2381723902"
+      },
+      {
+        "row": 527,
+        "column": "ISIN",
+        "value": "XS2829752976",
+        "isin": "XS2829752976"
+      },
+      {
+        "row": 527,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2829752976"
+      },
+      {
+        "row": 527,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2829752976"
+      },
+      {
+        "row": 533,
+        "column": "ISIN",
+        "value": "XS2953741100",
+        "isin": "XS2953741100"
+      },
+      {
+        "row": 533,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2953741100"
+      },
+      {
+        "row": 533,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2953741100"
+      },
+      {
+        "row": 543,
+        "column": "ISIN",
+        "value": "XS2381717250",
+        "isin": "XS2381717250"
+      },
+      {
+        "row": 543,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2381717250"
+      },
+      {
+        "row": 543,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2381717250"
+      },
+      {
+        "row": 553,
+        "column": "ISIN",
+        "value": "XS2481066111",
+        "isin": "XS2481066111"
+      },
+      {
+        "row": 553,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2481066111"
+      },
+      {
+        "row": 553,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2481066111"
+      },
+      {
+        "row": 563,
+        "column": "ISIN",
+        "value": "XS2964611052",
+        "isin": "XS2964611052"
+      },
+      {
+        "row": 563,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2964611052"
+      },
+      {
+        "row": 563,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2964611052"
+      },
+      {
+        "row": 578,
+        "column": "ISIN",
+        "value": "XS3035947103",
+        "isin": "XS3035947103"
+      },
+      {
+        "row": 578,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS3035947103"
+      },
+      {
+        "row": 578,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS3035947103"
+      },
+      {
+        "row": 589,
+        "column": "ISIN",
+        "value": "LU2228214107",
+        "isin": "LU2228214107"
+      },
+      {
+        "row": 589,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "LU2228214107"
+      },
+      {
+        "row": 589,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "LU2228214107"
+      },
+      {
+        "row": 601,
+        "column": "ISIN",
+        "value": "CH1269060229",
+        "isin": "CH1269060229"
+      },
+      {
+        "row": 601,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "CH1269060229"
+      },
+      {
+        "row": 601,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "CH1269060229"
+      },
+      {
+        "row": 638,
+        "column": "ISIN",
+        "value": "XS0461497009",
+        "isin": "XS0461497009"
+      },
+      {
+        "row": 638,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS0461497009"
+      },
+      {
+        "row": 638,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS0461497009"
+      },
+      {
+        "row": 650,
+        "column": "ISIN",
+        "value": "XS2746319610",
+        "isin": "XS2746319610"
+      },
+      {
+        "row": 650,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2746319610"
+      },
+      {
+        "row": 650,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2746319610"
+      },
+      {
+        "row": 698,
+        "column": "ISIN",
+        "value": "CH0244767585",
+        "isin": "CH0244767585"
+      },
+      {
+        "row": 698,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "CH0244767585"
+      },
+      {
+        "row": 698,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "CH0244767585"
+      },
+      {
+        "row": 747,
+        "column": "ISIN",
+        "value": "XS2519369867",
+        "isin": "XS2519369867"
+      },
+      {
+        "row": 747,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2519369867"
+      },
+      {
+        "row": 747,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2519369867"
+      },
+      {
+        "row": 753,
+        "column": "ISIN",
+        "value": "XS2315191069",
+        "isin": "XS2315191069"
+      },
+      {
+        "row": 753,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2315191069"
+      },
+      {
+        "row": 753,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2315191069"
+      },
+      {
+        "row": 765,
+        "column": "ISIN",
+        "value": "XS2792098779",
+        "isin": "XS2792098779"
+      },
+      {
+        "row": 765,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2792098779"
+      },
+      {
+        "row": 765,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2792098779"
+      },
+      {
+        "row": 781,
+        "column": "ISIN",
+        "value": "XS2714429128",
+        "isin": "XS2714429128"
+      },
+      {
+        "row": 781,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2714429128"
+      },
+      {
+        "row": 781,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2714429128"
+      },
+      {
+        "row": 794,
+        "column": "ISIN",
+        "value": "XS2105981117",
+        "isin": "XS2105981117"
+      },
+      {
+        "row": 794,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2105981117"
+      },
+      {
+        "row": 794,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2105981117"
+      },
+      {
+        "row": 801,
+        "column": "ISIN",
+        "value": "XS2838389430",
+        "isin": "XS2838389430"
+      },
+      {
+        "row": 801,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2838389430"
+      },
+      {
+        "row": 801,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2838389430"
+      },
+      {
+        "row": 819,
+        "column": "ISIN",
+        "value": "XS2631782468",
+        "isin": "XS2631782468"
+      },
+      {
+        "row": 819,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2631782468"
+      },
+      {
+        "row": 819,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2631782468"
+      },
+      {
+        "row": 861,
+        "column": "ISIN",
+        "value": "XS1700087403",
+        "isin": "XS1700087403"
+      },
+      {
+        "row": 861,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS1700087403"
+      },
+      {
+        "row": 861,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS1700087403"
+      },
+      {
+        "row": 867,
+        "column": "ISIN",
+        "value": "XS2594173093",
+        "isin": "XS2594173093"
+      },
+      {
+        "row": 867,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2594173093"
+      },
+      {
+        "row": 867,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2594173093"
+      },
+      {
+        "row": 885,
+        "column": "ISIN",
+        "value": "XS2407295554",
+        "isin": "XS2407295554"
+      },
+      {
+        "row": 885,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2407295554"
+      },
+      {
+        "row": 885,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2407295554"
+      },
+      {
+        "row": 898,
+        "column": "ISIN",
+        "value": "XS2252299883",
+        "isin": "XS2252299883"
+      },
+      {
+        "row": 898,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XS2252299883"
+      },
+      {
+        "row": 898,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XS2252299883"
+      },
+      {
+        "row": 946,
+        "column": "ISIN",
+        "value": "XD0466760473",
+        "isin": "XD0466760473"
+      },
+      {
+        "row": 946,
+        "column": "Security Name",
+        "value": "ISIN:",
+        "isin": "XD0466760473"
+      },
+      {
+        "row": 946,
+        "column": "Currency",
+        "value": "CHF",
+        "isin": "XD0466760473"
+      }
+    ],
+    "headers": [
+      {
+        "name": "ISIN",
+        "positions": [
+          6348,
+          7355,
+          7737,
+          8012,
+          8173,
+          8391,
+          8651,
+          8912,
+          9937,
+          10075,
+          10335,
+          10604,
+          10912,
+          11025,
+          11231,
+          11542,
+          12455,
+          12587,
+          12801,
+          12995,
+          13208,
+          13517,
+          13734,
+          13942,
+          14834,
+          15081,
+          16199,
+          17273,
+          17412,
+          17672,
+          17978,
+          18234,
+          18393,
+          18747,
+          19720,
+          19865,
+          20224,
+          20508,
+          21661
+        ],
+        "count": 39
+      },
+      {
+        "name": "Valorn.",
+        "positions": [
+          6372,
+          7379,
+          7761,
+          8036,
+          8197,
+          8415,
+          8675,
+          8936,
+          9961,
+          10099,
+          10359,
+          10628,
+          10936,
+          11049,
+          11255,
+          11566,
+          12479,
+          12611,
+          12825,
+          13232,
+          13541,
+          13758,
+          13966,
+          14858,
+          15105,
+          16223,
+          17297,
+          17436,
+          17696,
+          18002,
+          18417,
+          18771,
+          19744,
+          19889,
+          20248,
+          20532,
+          21685
+        ],
+        "count": 37
+      },
+      {
+        "name": "Currency",
+        "positions": [
+          359,
+          883,
+          3356,
+          5180,
+          5924,
+          5976,
+          6004,
+          7022,
+          7074,
+          7102,
+          9506,
+          9558,
+          9586,
+          12025,
+          12077,
+          12105,
+          14501,
+          14553,
+          14581,
+          15872,
+          15924,
+          15952,
+          16859,
+          16911,
+          16939,
+          19317,
+          19369,
+          19397,
+          21255,
+          21307,
+          21335,
+          22542
+        ],
+        "count": 32
+      },
+      {
+        "name": "Maturity",
+        "positions": [
+          6415,
+          7418,
+          7800,
+          8075,
+          8236,
+          8454,
+          8710,
+          8975,
+          10000,
+          10971,
+          11088,
+          11290,
+          11601,
+          12518,
+          12646,
+          12860,
+          13058,
+          13267,
+          13580,
+          14007,
+          14897,
+          15144,
+          17345,
+          17477,
+          17737,
+          18043,
+          18301,
+          18458,
+          18812,
+          19784,
+          19930,
+          20289,
+          20582,
+          23408,
+          23523,
+          23675
+        ],
+        "count": 36
+      },
+      {
+        "name": "Coupon",
+        "positions": [
+          7439,
+          7821,
+          8096,
+          8475,
+          8731,
+          10159,
+          10419,
+          14028,
+          14918,
+          15165
+        ],
+        "count": 10
+      },
+      {
+        "name": "PRC",
+        "positions": [
+          6279,
+          6441,
+          7505,
+          7869,
+          8140,
+          8273,
+          8522,
+          8789,
+          9006,
+          10021,
+          10220,
+          10481,
+          10699,
+          10992,
+          11124,
+          11326,
+          11622,
+          12554,
+          12682,
+          12881,
+          13094,
+          13303,
+          13601,
+          13802,
+          14077,
+          14964,
+          15219,
+          16262,
+          17379,
+          17512,
+          17763,
+          18079,
+          18336,
+          18494,
+          18847,
+          19810,
+          19965,
+          20324,
+          20608,
+          21737,
+          26577,
+          26586,
+          27125
+        ],
+        "count": 43
+      },
+      {
+        "name": "Performance",
+        "positions": [
+          904,
+          4528,
+          5108,
+          5217,
+          5364,
+          24804,
+          27209,
+          27221,
+          27366,
+          27585,
+          27808,
+          27840
+        ],
+        "count": 12
+      },
+      {
+        "name": "Countervalue",
+        "positions": [
+          1585,
+          1837,
+          1915,
+          2455,
+          3115,
+          3743,
+          6030,
+          7128,
+          9612,
+          12131,
+          14607,
+          15978,
+          16965,
+          19423,
+          21361
+        ],
+        "count": 15
+      }
+    ],
+    "boundaries": [
+      {
+        "start": 951,
+        "end": 960,
+        "type": "Liquidity"
+      },
+      {
+        "start": 997,
+        "end": 1016,
+        "type": "Structured products"
+      },
+      {
+        "start": 1508,
+        "end": 1527,
+        "type": "Structured products"
+      },
+      {
+        "start": 1537,
+        "end": 1546,
+        "type": "Liquidity"
+      },
+      {
+        "start": 1613,
+        "end": 1622,
+        "type": "Liquidity"
+      },
+      {
+        "start": 1689,
+        "end": 1708,
+        "type": "Structured products"
+      },
+      {
+        "start": 2478,
+        "end": 2487,
+        "type": "Liquidity"
+      },
+      {
+        "start": 2758,
+        "end": 2777,
+        "type": "Structured products"
+      },
+      {
+        "start": 2793,
+        "end": 2812,
+        "type": "Structured products"
+      },
+      {
+        "start": 2836,
+        "end": 2855,
+        "type": "Structured products"
+      },
+      {
+        "start": 3772,
+        "end": 3781,
+        "type": "Liquidity"
+      },
+      {
+        "start": 4094,
+        "end": 4113,
+        "type": "Structured products"
+      },
+      {
+        "start": 4135,
+        "end": 4154,
+        "type": "Structured products"
+      },
+      {
+        "start": 4184,
+        "end": 4203,
+        "type": "Structured products"
+      },
+      {
+        "start": 5547,
+        "end": 5556,
+        "type": "Liquidity"
+      },
+      {
+        "start": 6279,
+        "end": 6283,
+        "type": "PRC:"
+      },
+      {
+        "start": 6348,
+        "end": 6353,
+        "type": "ISIN:"
+      },
+      {
+        "start": 6372,
+        "end": 6380,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 6415,
+        "end": 6424,
+        "type": "Maturity:"
+      },
+      {
+        "start": 6441,
+        "end": 6445,
+        "type": "PRC:"
+      },
+      {
+        "start": 6533,
+        "end": 6542,
+        "type": "Liquidity"
+      },
+      {
+        "start": 7277,
+        "end": 7294,
+        "type": "Bonds, Bond funds"
+      },
+      {
+        "start": 7355,
+        "end": 7360,
+        "type": "ISIN:"
+      },
+      {
+        "start": 7379,
+        "end": 7387,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 7418,
+        "end": 7427,
+        "type": "Maturity:"
+      },
+      {
+        "start": 7439,
+        "end": 7446,
+        "type": "Coupon:"
+      },
+      {
+        "start": 7505,
+        "end": 7509,
+        "type": "PRC:"
+      },
+      {
+        "start": 7737,
+        "end": 7742,
+        "type": "ISIN:"
+      },
+      {
+        "start": 7761,
+        "end": 7769,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 7800,
+        "end": 7809,
+        "type": "Maturity:"
+      },
+      {
+        "start": 7821,
+        "end": 7828,
+        "type": "Coupon:"
+      },
+      {
+        "start": 7869,
+        "end": 7873,
+        "type": "PRC:"
+      },
+      {
+        "start": 8012,
+        "end": 8017,
+        "type": "ISIN:"
+      },
+      {
+        "start": 8036,
+        "end": 8044,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 8075,
+        "end": 8084,
+        "type": "Maturity:"
+      },
+      {
+        "start": 8096,
+        "end": 8103,
+        "type": "Coupon:"
+      },
+      {
+        "start": 8140,
+        "end": 8144,
+        "type": "PRC:"
+      },
+      {
+        "start": 8173,
+        "end": 8178,
+        "type": "ISIN:"
+      },
+      {
+        "start": 8197,
+        "end": 8205,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 8236,
+        "end": 8245,
+        "type": "Maturity:"
+      },
+      {
+        "start": 8273,
+        "end": 8277,
+        "type": "PRC:"
+      },
+      {
+        "start": 8391,
+        "end": 8396,
+        "type": "ISIN:"
+      },
+      {
+        "start": 8415,
+        "end": 8423,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 8454,
+        "end": 8463,
+        "type": "Maturity:"
+      },
+      {
+        "start": 8475,
+        "end": 8482,
+        "type": "Coupon:"
+      },
+      {
+        "start": 8522,
+        "end": 8526,
+        "type": "PRC:"
+      },
+      {
+        "start": 8651,
+        "end": 8656,
+        "type": "ISIN:"
+      },
+      {
+        "start": 8675,
+        "end": 8683,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 8710,
+        "end": 8719,
+        "type": "Maturity:"
+      },
+      {
+        "start": 8731,
+        "end": 8738,
+        "type": "Coupon:"
+      },
+      {
+        "start": 8789,
+        "end": 8793,
+        "type": "PRC:"
+      },
+      {
+        "start": 8912,
+        "end": 8917,
+        "type": "ISIN:"
+      },
+      {
+        "start": 8936,
+        "end": 8944,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 8975,
+        "end": 8984,
+        "type": "Maturity:"
+      },
+      {
+        "start": 9006,
+        "end": 9010,
+        "type": "PRC:"
+      },
+      {
+        "start": 9761,
+        "end": 9778,
+        "type": "Bonds, Bond funds"
+      },
+      {
+        "start": 9937,
+        "end": 9942,
+        "type": "ISIN:"
+      },
+      {
+        "start": 9961,
+        "end": 9969,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 10000,
+        "end": 10009,
+        "type": "Maturity:"
+      },
+      {
+        "start": 10021,
+        "end": 10025,
+        "type": "PRC:"
+      },
+      {
+        "start": 10075,
+        "end": 10080,
+        "type": "ISIN:"
+      },
+      {
+        "start": 10099,
+        "end": 10107,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 10159,
+        "end": 10166,
+        "type": "Coupon:"
+      },
+      {
+        "start": 10220,
+        "end": 10224,
+        "type": "PRC:"
+      },
+      {
+        "start": 10335,
+        "end": 10340,
+        "type": "ISIN:"
+      },
+      {
+        "start": 10359,
+        "end": 10367,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 10419,
+        "end": 10426,
+        "type": "Coupon:"
+      },
+      {
+        "start": 10481,
+        "end": 10485,
+        "type": "PRC:"
+      },
+      {
+        "start": 10604,
+        "end": 10609,
+        "type": "ISIN:"
+      },
+      {
+        "start": 10628,
+        "end": 10636,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 10699,
+        "end": 10703,
+        "type": "PRC:"
+      },
+      {
+        "start": 10912,
+        "end": 10917,
+        "type": "ISIN:"
+      },
+      {
+        "start": 10936,
+        "end": 10944,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 10971,
+        "end": 10980,
+        "type": "Maturity:"
+      },
+      {
+        "start": 10992,
+        "end": 10996,
+        "type": "PRC:"
+      },
+      {
+        "start": 11025,
+        "end": 11030,
+        "type": "ISIN:"
+      },
+      {
+        "start": 11049,
+        "end": 11057,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 11088,
+        "end": 11097,
+        "type": "Maturity:"
+      },
+      {
+        "start": 11124,
+        "end": 11128,
+        "type": "PRC:"
+      },
+      {
+        "start": 11231,
+        "end": 11236,
+        "type": "ISIN:"
+      },
+      {
+        "start": 11255,
+        "end": 11263,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 11290,
+        "end": 11299,
+        "type": "Maturity:"
+      },
+      {
+        "start": 11326,
+        "end": 11330,
+        "type": "PRC:"
+      },
+      {
+        "start": 11542,
+        "end": 11547,
+        "type": "ISIN:"
+      },
+      {
+        "start": 11566,
+        "end": 11574,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 11601,
+        "end": 11610,
+        "type": "Maturity:"
+      },
+      {
+        "start": 11622,
+        "end": 11626,
+        "type": "PRC:"
+      },
+      {
+        "start": 12280,
+        "end": 12297,
+        "type": "Bonds, Bond funds"
+      },
+      {
+        "start": 12455,
+        "end": 12460,
+        "type": "ISIN:"
+      },
+      {
+        "start": 12479,
+        "end": 12487,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 12518,
+        "end": 12527,
+        "type": "Maturity:"
+      },
+      {
+        "start": 12554,
+        "end": 12558,
+        "type": "PRC:"
+      },
+      {
+        "start": 12587,
+        "end": 12592,
+        "type": "ISIN:"
+      },
+      {
+        "start": 12611,
+        "end": 12619,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 12646,
+        "end": 12655,
+        "type": "Maturity:"
+      },
+      {
+        "start": 12682,
+        "end": 12686,
+        "type": "PRC:"
+      },
+      {
+        "start": 12801,
+        "end": 12806,
+        "type": "ISIN:"
+      },
+      {
+        "start": 12825,
+        "end": 12833,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 12860,
+        "end": 12869,
+        "type": "Maturity:"
+      },
+      {
+        "start": 12881,
+        "end": 12885,
+        "type": "PRC:"
+      },
+      {
+        "start": 12995,
+        "end": 13000,
+        "type": "ISIN:"
+      },
+      {
+        "start": 13058,
+        "end": 13067,
+        "type": "Maturity:"
+      },
+      {
+        "start": 13094,
+        "end": 13098,
+        "type": "PRC:"
+      },
+      {
+        "start": 13208,
+        "end": 13213,
+        "type": "ISIN:"
+      },
+      {
+        "start": 13232,
+        "end": 13240,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 13267,
+        "end": 13276,
+        "type": "Maturity:"
+      },
+      {
+        "start": 13303,
+        "end": 13307,
+        "type": "PRC:"
+      },
+      {
+        "start": 13517,
+        "end": 13522,
+        "type": "ISIN:"
+      },
+      {
+        "start": 13541,
+        "end": 13549,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 13580,
+        "end": 13589,
+        "type": "Maturity:"
+      },
+      {
+        "start": 13601,
+        "end": 13605,
+        "type": "PRC:"
+      },
+      {
+        "start": 13734,
+        "end": 13739,
+        "type": "ISIN:"
+      },
+      {
+        "start": 13758,
+        "end": 13766,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 13802,
+        "end": 13806,
+        "type": "PRC:"
+      },
+      {
+        "start": 13942,
+        "end": 13947,
+        "type": "ISIN:"
+      },
+      {
+        "start": 13966,
+        "end": 13974,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 14007,
+        "end": 14016,
+        "type": "Maturity:"
+      },
+      {
+        "start": 14028,
+        "end": 14035,
+        "type": "Coupon:"
+      },
+      {
+        "start": 14077,
+        "end": 14081,
+        "type": "PRC:"
+      },
+      {
+        "start": 14756,
+        "end": 14773,
+        "type": "Bonds, Bond funds"
+      },
+      {
+        "start": 14834,
+        "end": 14839,
+        "type": "ISIN:"
+      },
+      {
+        "start": 14858,
+        "end": 14866,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 14897,
+        "end": 14906,
+        "type": "Maturity:"
+      },
+      {
+        "start": 14918,
+        "end": 14925,
+        "type": "Coupon:"
+      },
+      {
+        "start": 14964,
+        "end": 14968,
+        "type": "PRC:"
+      },
+      {
+        "start": 15081,
+        "end": 15086,
+        "type": "ISIN:"
+      },
+      {
+        "start": 15105,
+        "end": 15113,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 15144,
+        "end": 15153,
+        "type": "Maturity:"
+      },
+      {
+        "start": 15165,
+        "end": 15172,
+        "type": "Coupon:"
+      },
+      {
+        "start": 15219,
+        "end": 15223,
+        "type": "PRC:"
+      },
+      {
+        "start": 16199,
+        "end": 16204,
+        "type": "ISIN:"
+      },
+      {
+        "start": 16223,
+        "end": 16231,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 16262,
+        "end": 16266,
+        "type": "PRC:"
+      },
+      {
+        "start": 16488,
+        "end": 16507,
+        "type": "Structured products"
+      },
+      {
+        "start": 17114,
+        "end": 17133,
+        "type": "Structured products"
+      },
+      {
+        "start": 17273,
+        "end": 17278,
+        "type": "ISIN:"
+      },
+      {
+        "start": 17297,
+        "end": 17305,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 17345,
+        "end": 17354,
+        "type": "Maturity:"
+      },
+      {
+        "start": 17379,
+        "end": 17383,
+        "type": "PRC:"
+      },
+      {
+        "start": 17412,
+        "end": 17417,
+        "type": "ISIN:"
+      },
+      {
+        "start": 17436,
+        "end": 17444,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 17477,
+        "end": 17486,
+        "type": "Maturity:"
+      },
+      {
+        "start": 17512,
+        "end": 17516,
+        "type": "PRC:"
+      },
+      {
+        "start": 17672,
+        "end": 17677,
+        "type": "ISIN:"
+      },
+      {
+        "start": 17696,
+        "end": 17704,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 17737,
+        "end": 17746,
+        "type": "Maturity:"
+      },
+      {
+        "start": 17763,
+        "end": 17767,
+        "type": "PRC:"
+      },
+      {
+        "start": 17978,
+        "end": 17983,
+        "type": "ISIN:"
+      },
+      {
+        "start": 18002,
+        "end": 18010,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 18043,
+        "end": 18052,
+        "type": "Maturity:"
+      },
+      {
+        "start": 18079,
+        "end": 18083,
+        "type": "PRC:"
+      },
+      {
+        "start": 18234,
+        "end": 18239,
+        "type": "ISIN:"
+      },
+      {
+        "start": 18301,
+        "end": 18310,
+        "type": "Maturity:"
+      },
+      {
+        "start": 18336,
+        "end": 18340,
+        "type": "PRC:"
+      },
+      {
+        "start": 18393,
+        "end": 18398,
+        "type": "ISIN:"
+      },
+      {
+        "start": 18417,
+        "end": 18425,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 18458,
+        "end": 18467,
+        "type": "Maturity:"
+      },
+      {
+        "start": 18494,
+        "end": 18498,
+        "type": "PRC:"
+      },
+      {
+        "start": 18747,
+        "end": 18752,
+        "type": "ISIN:"
+      },
+      {
+        "start": 18771,
+        "end": 18779,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 18812,
+        "end": 18821,
+        "type": "Maturity:"
+      },
+      {
+        "start": 18847,
+        "end": 18851,
+        "type": "PRC:"
+      },
+      {
+        "start": 18946,
+        "end": 18965,
+        "type": "Structured products"
+      },
+      {
+        "start": 19572,
+        "end": 19591,
+        "type": "Structured products"
+      },
+      {
+        "start": 19720,
+        "end": 19725,
+        "type": "ISIN:"
+      },
+      {
+        "start": 19744,
+        "end": 19752,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 19784,
+        "end": 19793,
+        "type": "Maturity:"
+      },
+      {
+        "start": 19810,
+        "end": 19814,
+        "type": "PRC:"
+      },
+      {
+        "start": 19865,
+        "end": 19870,
+        "type": "ISIN:"
+      },
+      {
+        "start": 19889,
+        "end": 19897,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 19930,
+        "end": 19939,
+        "type": "Maturity:"
+      },
+      {
+        "start": 19965,
+        "end": 19969,
+        "type": "PRC:"
+      },
+      {
+        "start": 20224,
+        "end": 20229,
+        "type": "ISIN:"
+      },
+      {
+        "start": 20248,
+        "end": 20256,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 20289,
+        "end": 20298,
+        "type": "Maturity:"
+      },
+      {
+        "start": 20324,
+        "end": 20328,
+        "type": "PRC:"
+      },
+      {
+        "start": 20356,
+        "end": 20375,
+        "type": "Structured products"
+      },
+      {
+        "start": 20508,
+        "end": 20513,
+        "type": "ISIN:"
+      },
+      {
+        "start": 20532,
+        "end": 20540,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 20550,
+        "end": 20569,
+        "type": "Structured products"
+      },
+      {
+        "start": 20582,
+        "end": 20591,
+        "type": "Maturity:"
+      },
+      {
+        "start": 20608,
+        "end": 20612,
+        "type": "PRC:"
+      },
+      {
+        "start": 20676,
+        "end": 20695,
+        "type": "Structured products"
+      },
+      {
+        "start": 21661,
+        "end": 21666,
+        "type": "ISIN:"
+      },
+      {
+        "start": 21685,
+        "end": 21693,
+        "type": "Valorn.:"
+      },
+      {
+        "start": 21737,
+        "end": 21741,
+        "type": "PRC:"
+      },
+      {
+        "start": 23120,
+        "end": 23129,
+        "type": "Liquidity"
+      },
+      {
+        "start": 23130,
+        "end": 23139,
+        "type": "Liquidity"
+      },
+      {
+        "start": 23823,
+        "end": 23840,
+        "type": "Bonds, Bond funds"
+      },
+      {
+        "start": 24651,
+        "end": 24670,
+        "type": "Structured products"
+      },
+      {
+        "start": 24694,
+        "end": 24713,
+        "type": "Structured products"
+      },
+      {
+        "start": 24882,
+        "end": 24901,
+        "type": "Structured products"
+      },
+      {
+        "start": 25054,
+        "end": 25073,
+        "type": "Structured products"
+      },
+      {
+        "start": 27079,
+        "end": 27088,
+        "type": "Liquidity"
+      }
+    ]
+  }
+}

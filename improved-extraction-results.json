@@ -1,0 +1,285 @@
+{
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "securityName": "Money market",
+      "value": "097'700",
+      "currency": "USD",
+      "lineNumber": 243
+    },
+    {
+      "isin": "XS2530201644",
+      "securityName": "Bonds, Bond funds, Convertible bonds, Interest options",
+      "value": "199'080",
+      "currency": "USD",
+      "lineNumber": 283
+    },
+    {
+      "isin": "XS2588105036",
+      "securityName": "CANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28",
+      "value": "1'500'000",
+      "currency": "USD",
+      "lineNumber": 301
+    },
+    {
+      "isin": "XS2665592833",
+      "securityName": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028",
+      "value": "690'000",
+      "currency": "USD",
+      "lineNumber": 314
+    },
+    {
+      "isin": "XS2692298537",
+      "securityName": "NAME_NOT_FOUND",
+      "value": "737'748",
+      "currency": "USD",
+      "lineNumber": 321
+    },
+    {
+      "isin": "XS2754416860",
+      "securityName": "GOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P",
+      "value": "098'202",
+      "currency": "USD",
+      "lineNumber": 331
+    },
+    {
+      "isin": "XS2761230684",
+      "securityName": "LUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30",
+      "value": "102'506",
+      "currency": "USD",
+      "lineNumber": 343
+    },
+    {
+      "isin": "XS2736388732",
+      "securityName": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE",
+      "value": "256'958",
+      "currency": "USD",
+      "lineNumber": 355
+    },
+    {
+      "isin": "XS2782869916",
+      "securityName": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-",
+      "value": "440'000",
+      "currency": "USD",
+      "lineNumber": 400
+    },
+    {
+      "isin": "XS2824054402",
+      "securityName": "Price to be verified",
+      "value": "478'158",
+      "currency": "USD",
+      "lineNumber": 407
+    },
+    {
+      "isin": "XS2567543397",
+      "securityName": "BOFA 5.  6% 2024-29.05.34 REGS",
+      "value": "002'570'405",
+      "currency": "USD",
+      "lineNumber": 419
+    },
+    {
+      "isin": "XS2110079584",
+      "securityName": "GS 10Y CALLABLE NOTE 2024-18.06.2034",
+      "value": "001'101'100",
+      "currency": "USD",
+      "lineNumber": 431
+    },
+    {
+      "isin": "XS2848820754",
+      "securityName": "CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34",
+      "value": "100'000",
+      "currency": "USD",
+      "lineNumber": 446
+    },
+    {
+      "isin": "XS2829712830",
+      "securityName": "NAME_NOT_FOUND",
+      "value": "092'320",
+      "currency": "USD",
+      "lineNumber": 452
+    },
+    {
+      "isin": "XS2912278723",
+      "securityName": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+      "value": "199'131",
+      "currency": "USD",
+      "lineNumber": 462
+    },
+    {
+      "isin": "XS2381723902",
+      "securityName": "JPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021-",
+      "value": "VALUE_NOT_FOUND",
+      "currency": "",
+      "lineNumber": 477
+    },
+    {
+      "isin": "XS2829752976",
+      "securityName": "GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-",
+      "value": "150'000",
+      "currency": "USD",
+      "lineNumber": 516
+    },
+    {
+      "isin": "XS2953741100",
+      "securityName": "NAME_NOT_FOUND",
+      "value": "146'625",
+      "currency": "USD",
+      "lineNumber": 522
+    },
+    {
+      "isin": "XS2381717250",
+      "securityName": "BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S",
+      "value": "505'500",
+      "currency": "USD",
+      "lineNumber": 532
+    },
+    {
+      "isin": "XS2481066111",
+      "securityName": "JPMORGAN CHASE 0% NOTES 2024-19.12.2034",
+      "value": "049'500",
+      "currency": "USD",
+      "lineNumber": 542
+    },
+    {
+      "isin": "XS2964611052",
+      "securityName": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035",
+      "value": "001'480'584",
+      "currency": "USD",
+      "lineNumber": 552
+    },
+    {
+      "isin": "XS3035947103",
+      "securityName": "WELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36",
+      "value": "2'581.79",
+      "currency": "USD",
+      "lineNumber": 567
+    },
+    {
+      "isin": "LU2228214107",
+      "securityName": "PREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB",
+      "value": "350'000",
+      "currency": "USD",
+      "lineNumber": 578
+    },
+    {
+      "isin": "CH1269060229",
+      "securityName": "BK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28",
+      "value": "VALUE_NOT_FOUND",
+      "currency": "",
+      "lineNumber": 590
+    },
+    {
+      "isin": "XS0461497009",
+      "securityName": "Bonds, Bond funds, Convertible bonds, Interest options",
+      "value": "711'110",
+      "currency": "USD",
+      "lineNumber": 626
+    },
+    {
+      "isin": "XS2746319610",
+      "securityName": "DEUTSCHE BANK NOTES 23-08.11.28 VRN",
+      "value": "192'100",
+      "currency": "USD",
+      "lineNumber": 638
+    },
+    {
+      "isin": "CH0244767585",
+      "securityName": "Equities, Equity funds, Options on equities/indices",
+      "value": "021'496",
+      "currency": "USD",
+      "lineNumber": 685
+    },
+    {
+      "isin": "XS2519369867",
+      "securityName": "BCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%",
+      "value": "500'000",
+      "currency": "USD",
+      "lineNumber": 733
+    },
+    {
+      "isin": "XS2315191069",
+      "securityName": "NAME_NOT_FOUND",
+      "value": "502'305",
+      "currency": "USD",
+      "lineNumber": 739
+    },
+    {
+      "isin": "XS2792098779",
+      "securityName": "BNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631",
+      "value": "301'154'316",
+      "currency": "USD",
+      "lineNumber": 751
+    },
+    {
+      "isin": "XS2714429128",
+      "securityName": "EMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN",
+      "value": "500'000",
+      "currency": "USD",
+      "lineNumber": 767
+    },
+    {
+      "isin": "XS2105981117",
+      "securityName": "GOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT",
+      "value": "1'600'000",
+      "currency": "USD",
+      "lineNumber": 780
+    },
+    {
+      "isin": "XS2838389430",
+      "securityName": "Price to be verified",
+      "value": "001'623'960",
+      "currency": "USD",
+      "lineNumber": 787
+    },
+    {
+      "isin": "XS2631782468",
+      "securityName": "LUMINIS REPACK NOTES 23-25.05.29 VRN ON 4,625%",
+      "value": "VALUE_NOT_FOUND",
+      "currency": "",
+      "lineNumber": 805
+    },
+    {
+      "isin": "XS1700087403",
+      "securityName": "NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21",
+      "value": "200'000",
+      "currency": "USD",
+      "lineNumber": 846
+    },
+    {
+      "isin": "XS2594173093",
+      "securityName": "Price to be verified",
+      "value": "193'464",
+      "currency": "USD",
+      "lineNumber": 852
+    },
+    {
+      "isin": "XS2407295554",
+      "securityName": "NOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON",
+      "value": "1'000'000",
+      "currency": "USD",
+      "lineNumber": 870
+    },
+    {
+      "isin": "XS2252299883",
+      "securityName": "NOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ON CS",
+      "value": "108'309",
+      "currency": "USD",
+      "lineNumber": 883
+    },
+    {
+      "isin": "XD0466760473",
+      "securityName": "EXIGENT ENHANCED INCOME FUND LTD SHS A SERIES 2019 1",
+      "value": "0.13",
+      "currency": "USD",
+      "lineNumber": 930
+    }
+  ],
+  "statistics": {
+    "totalSecurities": 39,
+    "securitiesWithNames": 35,
+    "securitiesWithValues": 36,
+    "nameAccuracy": 89.7,
+    "valueAccuracy": 92.3,
+    "overallAccuracy": 91
+  }
+}

@@ -1,0 +1,32 @@
+# Perfect Dockerfile for Smart OCR
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Install all dependencies
+RUN apk add --no-cache \
+    chromium \
+    nss \
+    freetype \
+    harfbuzz \
+    ca-certificates \
+    ttf-freefont \
+    python3 \
+    py3-pip
+
+# Copy and install
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+# Environment
+ENV NODE_ENV=production
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
+
+EXPOSE 10002
+
+HEALTHCHECK CMD curl -f http://localhost:10002/api/smart-ocr-test || exit 1
+
+CMD ["node", "fixed-smart-ocr-server.js"]

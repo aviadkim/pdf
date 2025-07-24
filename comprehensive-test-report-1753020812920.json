@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-07-20T14:13:32.865Z",
+  "service": null,
+  "playwright": {
+    "homepage": {
+      "title": "Smart OCR Learning System",
+      "hasSmartOCR": true,
+      "hasSystemCapabilities": false,
+      "hasMistralOCR": false
+    },
+    "apiTests": {
+      "/api/system-capabilities": {
+        "status": 404,
+        "ok": false
+      },
+      "/api/mistral-ocr-extract": {
+        "status": 404,
+        "ok": false
+      },
+      "/api/ultra-accurate-extract": {
+        "status": 404,
+        "ok": false
+      }
+    },
+    "annotation": {
+      "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+      "hasFileInput": true,
+      "hasSubmitButton": false
+    },
+    "consoleErrors": 3,
+    "success": true
+  },
+  "puppeteer": {
+    "error": "Assignment to constant variable."
+  },
+  "analysis": {
+    "serviceResponding": true,
+    "hasWorkingEndpoints": false,
+    "isFullyFunctional": false,
+    "loadPerformance": "Slow",
+    "overallStatus": "Partially Working"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "apiEndpoints": {
+    "passed": 2,
+    "failed": 2,
+    "tests": [
+      {
+        "endpoint": "/api/pdf-extract",
+        "name": "PDF Extract",
+        "status": 404,
+        "success": false
+      },
+      {
+        "endpoint": "/api/smart-ocr",
+        "name": "Smart OCR",
+        "status": 404,
+        "success": false
+      },
+      {
+        "endpoint": "/api/bulletproof-processor",
+        "name": "Bulletproof Processor",
+        "status": 400,
+        "success": true
+      },
+      {
+        "endpoint": "/api/system-capabilities",
+        "name": "System Capabilities",
+        "status": 200,
+        "success": true
+      }
+    ]
+  },
+  "dragAndDrop": {
+    "passed": false,
+    "details": "No drop zone found"
+  },
+  "memoryUsage": {
+    "initial": 1,
+    "after": 3,
+    "leakDetected": true
+  },
+  "versionIndicator": {
+    "found": true
+  },
+  "overallSuccess": false
+}

@@ -1,0 +1,24 @@
+FROM python:3.9-slim
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    git \
+    wget \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install PyTorch CPU version
+RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+# Install detectron2 CPU version
+RUN pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.13/index.html
+
+# Install LayoutLM and dependencies
+RUN pip install transformers datasets pillow
+
+# Copy application
+COPY . /app
+WORKDIR /app
+
+# Run LayoutLM processing
+CMD ["python", "layoutlm_processor.py"]

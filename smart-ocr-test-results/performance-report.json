@@ -1,0 +1,58 @@
+{
+  "timestamp": "2025-07-20T10:30:06.845Z",
+  "overallHealth": {
+    "successRate": "90.00%",
+    "totalTests": 20,
+    "passedTests": 18,
+    "failedTests": 2
+  },
+  "categoryBreakdown": [
+    {
+      "category": "health",
+      "tests": 3,
+      "passed": 3,
+      "failed": 0,
+      "successRate": "100.00"
+    },
+    {
+      "category": "learning",
+      "tests": 3,
+      "passed": 3,
+      "failed": 0,
+      "successRate": "100.00"
+    },
+    {
+      "category": "annotation",
+      "tests": 3,
+      "passed": 2,
+      "failed": 1,
+      "successRate": "66.67"
+    },
+    {
+      "category": "api",
+      "tests": 3,
+      "passed": 2,
+      "failed": 1,
+      "successRate": "66.67"
+    },
+    {
+      "category": "performance",
+      "tests": 3,
+      "passed": 3,
+      "failed": 0,
+      "successRate": "100.00"
+    },
+    {
+      "category": "ui",
+      "tests": 5,
+      "passed": 5,
+      "failed": 0,
+      "successRate": "100.00"
+    }
+  ],
+  "recommendations": [
+    "ANNOTATION: Poor performance (66.7%). Needs immediate attention.",
+    "API: Poor performance (66.7%). Needs immediate attention."
+  ],
+  "systemStatus": "GOOD"
+}

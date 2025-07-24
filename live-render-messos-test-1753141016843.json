@@ -1,0 +1,73 @@
+{
+  "timestamp": "2025-07-21T23:36:45.108Z",
+  "renderUrl": "https://pdf-fzzi.onrender.com",
+  "tests": [
+    {
+      "test": "site_access",
+      "passed": true,
+      "details": {
+        "status": 200,
+        "title": "Smart OCR Learning System",
+        "url": "https://pdf-fzzi.onrender.com/",
+        "loadTime": 1753141008784
+      }
+    },
+    {
+      "test": "pdf_exists",
+      "passed": true,
+      "details": {
+        "filename": "2. Messos  - 31.03.2025.pdf",
+        "size": 627670,
+        "sizeMB": "0.60"
+      }
+    },
+    {
+      "test": "endpoint__api_smart_ocr_stats",
+      "passed": true,
+      "details": {
+        "endpoint": "/api/smart-ocr-stats",
+        "status": 200,
+        "isJson": true,
+        "contentLength": 368
+      }
+    },
+    {
+      "test": "endpoint__api_smart_ocr_patterns",
+      "passed": true,
+      "details": {
+        "endpoint": "/api/smart-ocr-patterns",
+        "status": 200,
+        "isJson": true,
+        "contentLength": 10247
+      }
+    },
+    {
+      "test": "endpoint__api_export_json",
+      "passed": false,
+      "details": {
+        "endpoint": "/api/export/json",
+        "status": 404,
+        "isJson": false,
+        "contentLength": 152
+      }
+    },
+    {
+      "test": "messos_upload_processing",
+      "passed": false,
+      "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'button[type=\"submit\"], input[type=\"submit\"], button:contains(\"Process\"), button:contains(\"Upload\")' is not a valid selector."
+    },
+    {
+      "test": "accuracy_verification",
+      "passed": false,
+      "error": "No upload results to verify"
+    }
+  ],
+  "summary": {
+    "totalTests": 7,
+    "passed": 4,
+    "failed": 3,
+    "successRate": 57,
+    "totalTime": 12,
+    "status": "NEEDS_ATTENTION"
+  }
+}

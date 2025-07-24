@@ -1,0 +1,102 @@
+{
+  "summary": {
+    "totalTests": 200,
+    "passed": 255,
+    "failed": 19,
+    "fixed": 0,
+    "successRate": "127.50%",
+    "timestamp": "2025-07-19T21:05:44.054Z"
+  },
+  "errors": [
+    {
+      "test": "API GET /api/test - 0",
+      "error": "/api/test returned 404"
+    },
+    {
+      "test": "API GET /api/test - 1",
+      "error": "/api/test returned 404"
+    },
+    {
+      "test": "API GET /api/test - 2",
+      "error": "/api/test returned 404"
+    },
+    {
+      "test": "API GET /api/test - 3",
+      "error": "/api/test returned 404"
+    },
+    {
+      "test": "API GET /api/test - 4",
+      "error": "/api/test returned 404"
+    },
+    {
+      "test": "API POST /api/pdf-extract - 0",
+      "error": "/api/pdf-extract POST failed"
+    },
+    {
+      "test": "API POST /api/pdf-extract - 1",
+      "error": "/api/pdf-extract POST failed"
+    },
+    {
+      "test": "API POST /api/pdf-extract - 2",
+      "error": "/api/pdf-extract POST failed"
+    },
+    {
+      "test": "API POST /api/pdf-extract - 3",
+      "error": "/api/pdf-extract POST failed"
+    },
+    {
+      "test": "API POST /api/pdf-extract - 4",
+      "error": "/api/pdf-extract POST failed"
+    },
+    {
+      "test": "Docker: Docker Build",
+      "error": "Command failed: docker build -t smart-ocr-test .\nERROR: error during connect: Head \"http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/_ping\": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.\n"
+    },
+    {
+      "test": "Docker: Docker Run",
+      "error": "Command failed: docker run -d -p 10003:10002 --name smart-ocr-test smart-ocr-test\ndocker: error during connect: Head \"http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/_ping\": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.\n\nRun 'docker run --help' for more information\n"
+    },
+    {
+      "test": "Docker: Docker Health",
+      "error": "Command failed: docker exec smart-ocr-test curl localhost:10002/api/smart-ocr-test\nerror during connect: Get \"http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/containers/smart-ocr-test/json\": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.\n"
+    },
+    {
+      "test": "Docker: Docker Logs",
+      "error": "Command failed: docker logs smart-ocr-test\nerror during connect: Get \"http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/containers/smart-ocr-test/json\": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.\n"
+    },
+    {
+      "test": "Docker: Docker Stop",
+      "error": "Command failed: docker stop smart-ocr-test && docker rm smart-ocr-test\nerror during connect: Post \"http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/containers/smart-ocr-test/stop\": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.\n"
+    },
+    {
+      "test": "Accuracy Test",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\pdfs\\2. Messos  - 31.03.2025.pdf'"
+    },
+    {
+      "test": "Annotation Tests",
+      "error": "page.waitForTimeout is not a function"
+    },
+    {
+      "test": "Security: CORS Headers",
+      "error": "Missing security headers"
+    },
+    {
+      "test": "Integration Test",
+      "error": "Timed out after waiting 30000ms"
+    }
+  ],
+  "fixes": [
+    {
+      "issue": "Missing endpoint: /api/test",
+      "fix": "Created endpoint with proper handling",
+      "code": "app.get('/api/test', (req, res) => { res.json({ success: true }); });"
+    }
+  ],
+  "recommendations": [
+    "Implement continuous integration testing",
+    "Add automated fix deployment",
+    "Monitor production accuracy",
+    "Set up error alerting",
+    "Regular performance audits"
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "timestamp": "2025-07-21T23:17:13.434Z",
+  "summary": {
+    "environmentsTested": 3,
+    "allIdentical": true,
+    "differences": 0
+  },
+  "environments": {
+    "local": {
+      "environment": "local",
+      "url": "http://localhost:10002",
+      "timestamp": "2025-07-21T23:17:12.127Z",
+      "tests": {
+        "connectivity": {
+          "passed": true,
+          "status": 200,
+          "details": "Server responding"
+        },
+        "perfectExtraction": {
+          "passed": false,
+          "status": 404,
+          "error": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/perfect-extraction</pre>\n</body>\n</html>\n",
+          "details": "API error: 404"
+        },
+        "accuracySystem": {
+          "passed": false,
+          "status": 404,
+          "details": "Endpoint missing"
+        },
+        "export_json": {
+          "passed": false,
+          "status": 404,
+          "details": "Endpoint missing"
+        },
+        "export_csv": {
+          "passed": false,
+          "status": 404,
+          "details": "Endpoint missing"
+        },
+        "export_perfect-results": {
+          "passed": false,
+          "status": 404,
+          "details": "Endpoint missing"
+        },
+        "environmentVars": {
+          "passed": false,
+          "details": "MISTRAL_API_KEY missing"
+        }
+      },
+      "overall": {
+        "passed": 1,
+        "failed": 6
+      }
+    },
+    "render": {
+      "environment": "render",
+      "url": "https://pdf-fzzi.onrender.com",
+      "timestamp": "2025-07-21T23:17:12.332Z",
+      "tests": {
+        "connectivity": {
+          "passed": true,
+          "status": 200,
+          "details": "Server responding"
+        },
+        "perfectExtraction": {
+          "passed": false,
+          "status": 404,
+          "error": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/perfect-extraction</pre>\n</body>\n</html>\n",
+          "details": "API error: 404"
+        },
+        "accuracySystem": {
+          "passed": false,
+          "status": 404,
+          "details": "Endpoint missing"
+        },
+        "export_json": {
+          "passed": false,
+          "status": 404,
+          "details": "Endpoint missing"
+        },
+        "export_csv": {
+          "passed": false,
+          "status": 404,
+          "details": "Endpoint missing"
+        },
+        "export_perfect-results": {
+          "passed": false,
+          "status": 404,
+          "details": "Endpoint missing"
+        }
+      },
+      "overall": {
+        "passed": 1,
+        "failed": 5
+      }
+    },
+    "docker": {
+      "environment": "docker",
+      "url": "http://localhost:10003",
+      "timestamp": "2025-07-21T23:17:13.213Z",
+      "tests": {
+        "connectivity": {
+          "passed": true,
+          "status": 200,
+          "details": "Server responding"
+        },
+        "perfectExtraction": {
+          "passed": false,
+          "status": 404,
+          "error": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/perfect-extraction</pre>\n</body>\n</html>\n",
+          "details": "API error: 404"
+        },
+        "accuracySystem": {
+          "passed": false,
+          "status": 404,
+          "details": "Endpoint missing"
+        },
+        "export_json": {
+          "passed": false,
+          "status": 404,
+          "details": "Endpoint missing"
+        },
+        "export_csv": {
+          "passed": false,
+          "status": 404,
+          "details": "Endpoint missing"
+        },
+        "export_perfect-results": {
+          "passed": false,
+          "status": 404,
+          "details": "Endpoint missing"
+        },
+        "environmentVars": {
+          "passed": false,
+          "details": "MISTRAL_API_KEY missing"
+        }
+      },
+      "overall": {
+        "passed": 1,
+        "failed": 6
+      }
+    }
+  },
+  "comparison": {
+    "identical": true,
+    "differences": [],
+    "summary": {}
+  },
+  "recommendations": [
+    "Fix Render deployment issues",
+    "Perfect extraction not working on Render - check API configuration",
+    "Fix local development environment issues"
+  ],
+  "deploymentReadiness": {
+    "ready": false,
+    "score": 0,
+    "criticalIssues": [],
+    "minorIssues": [
+      "local extraction not working",
+      "render extraction not working",
+      "docker extraction not working"
+    ]
+  }
+}

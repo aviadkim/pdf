@@ -1,0 +1,435 @@
+{
+  "success": true,
+  "results": {
+    "success": true,
+    "documentId": "0e0509bb-43f0-45fb-b626-d9782b8d9b1e",
+    "pages": [
+      {
+        "page": 1,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 2,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 3,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 4,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 5,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 6,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 7,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 8,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 9,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 10,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 11,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 12,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 13,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 14,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 15,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 16,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 17,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 18,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 19,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      }
+    ],
+    "pageCount": 19,
+    "ocrResults": [
+      {
+        "page": 1,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 2,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 3,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 4,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 5,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 6,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 7,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 8,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 9,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 10,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 11,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 12,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 13,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 14,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 15,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 16,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 17,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 18,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      },
+      {
+        "page": 19,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF OCR failed: Invalid character in header content [\"Authorization\"]",
+        "securities": []
+      }
+    ],
+    "accuracy": 18,
+    "patternsUsed": 19,
+    "suggestedAnnotations": [],
+    "processingMethod": "standard",
+    "timestamp": "2025-07-21T20:51:09.241Z"
+  }
+}

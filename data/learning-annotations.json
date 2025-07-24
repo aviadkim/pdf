@@ -1,0 +1,85 @@
+{
+  "patterns": [
+    {
+      "key": "value_correction_CH0012005267",
+      "type": "value_correction",
+      "isin": "CH0012005267",
+      "originalValue": 850000,
+      "correctedValue": 900000,
+      "documentSignature": "securities_25_total_20M",
+      "description": "Value correction for CH0012005267: 850000 → 900000",
+      "confidence": 1,
+      "timestamp": "2025-07-23T09:24:11.637Z"
+    },
+    {
+      "key": "missing_security_CH9999999999",
+      "type": "missing_security",
+      "isin": "CH9999999999",
+      "name": "Test Security",
+      "marketValue": 500000,
+      "documentSignature": "securities_25_total_20M",
+      "description": "Missing security identified: CH9999999999 - Test Security",
+      "confidence": 1,
+      "timestamp": "2025-07-23T09:24:11.640Z"
+    },
+    {
+      "key": "accuracy_feedback_test_doc_123",
+      "type": "accuracy_feedback",
+      "accuracy": 95,
+      "documentSignature": "securities_25_total_20M",
+      "description": "Overall accuracy: 95%",
+      "confidence": 0.8,
+      "timestamp": "2025-07-23T09:24:11.640Z"
+    }
+  ],
+  "usageStats": {
+    "baseExtractions": 6,
+    "aiEnhancements": 2,
+    "totalCost": 0.00120075,
+    "accuracyHistory": [
+      {
+        "documentId": "test_doc_e2e",
+        "accuracy": 95,
+        "method": "base",
+        "cost": 0,
+        "timestamp": "2025-07-23T09:24:11.687Z"
+      },
+      {
+        "documentId": "bench_0",
+        "accuracy": 95,
+        "method": "base",
+        "cost": 0,
+        "timestamp": "2025-07-23T09:24:11.690Z"
+      },
+      {
+        "documentId": "bench_1",
+        "accuracy": 95,
+        "method": "base",
+        "cost": 0,
+        "timestamp": "2025-07-23T09:24:11.691Z"
+      },
+      {
+        "documentId": "bench_2",
+        "accuracy": 95,
+        "method": "base",
+        "cost": 0,
+        "timestamp": "2025-07-23T09:24:11.692Z"
+      },
+      {
+        "documentId": "empty_test",
+        "accuracy": 88,
+        "method": "hybrid-ai",
+        "cost": 0.0006,
+        "timestamp": "2025-07-23T09:24:11.694Z"
+      },
+      {
+        "documentId": "malformed_test",
+        "accuracy": 88,
+        "method": "hybrid-ai",
+        "cost": 0.0006007499999999999,
+        "timestamp": "2025-07-23T09:24:11.695Z"
+      }
+    ]
+  },
+  "lastUpdated": "2025-07-23T09:24:11.695Z"
+}

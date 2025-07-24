@@ -1,0 +1,10 @@
+{
+  "workingModel": "mistral-large-latest",
+  "response": "Extracting specific information from a PDF financial document typically involves identifying and isolating relevant patterns and structures in the text. Here’s a step-by-step guide on how to extract ISIN codes, market values in CHF, and security names from a typical portfolio statement:\n\n### 1. Extracting ISIN Codes\nISIN codes follow a specific format: two letters (representing the country code) followed by 10 alphanumeric characters. This makes them relatively easy to identify using pattern matching.\n\n**Pattern to Look For:**\n- `[A-Z]{2}[A-Z0-9]{10}`\n\n**Steps:**\n1. **Text Extraction:** Convert the PDF to text using a PDF parser or OCR (Optical Character Recognition) if the PDF is scanned.\n2. **Regex Matching:** Use a regular expression to find all occurrences of the ISIN code pattern in the extracted text.\n\n**Example Regex:**\n```regex\n\\b[A-Z]{2}[A-Z0-9]{10}\\b\n```\n\n### 2. Extracting Market Values in CHF\nMarket values in CHF are typically represented as numbers followed by the currency symbol \"CHF\" or might appear as numerical values in a specific column.\n\n**Pattern to Look For:**\n- Numbers followed by \"CHF\" or located in a specific column labeled as \"Market Value.\"\n\n**Steps:**\n1. **Text Extraction:** Convert the PDF to text.\n2. **Identify Patterns:** Look for numerical values followed by \"CHF\" or within a specific context (e.g., a table column).\n\n**Example Regex:**\n```regex\n\\b\\d{1,3}(,\\d{3})*(\\.\\d{2})?\\s*CHF\\b\n```\n\n### 3. Extracting Security Names\nSecurity names are usually text descriptions that appear in the same row or context as the ISIN codes and market values.\n\n**Pattern to Look For:**\n- Text strings that are not purely numerical and are associated with ISIN codes and market values.\n\n**Steps:**\n1. **Text Extraction:** Convert the",
+  "timestamp": "2025-07-21T22:28:05.917Z",
+  "usage": {
+    "prompt_tokens": 97,
+    "total_tokens": 597,
+    "completion_tokens": 500
+  }
+}

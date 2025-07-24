@@ -1,0 +1,32 @@
+[
+  {
+    "approach": "Ultimate Precision (DP-Bench)",
+    "success": true,
+    "securities": 40,
+    "totalValue": 13713293,
+    "accuracy": "N/A",
+    "method": "unknown",
+    "processingTime": 196,
+    "features": []
+  },
+  {
+    "approach": "Multi-Agent (Hugging Face AI)",
+    "success": false,
+    "error": "Request failed with status code 404",
+    "securities": 0,
+    "totalValue": 0,
+    "accuracy": "Error",
+    "processingTime": 0,
+    "features": []
+  },
+  {
+    "approach": "Universal (Any Financial PDF)",
+    "success": false,
+    "error": "Request failed with status code 404",
+    "securities": 0,
+    "totalValue": 0,
+    "accuracy": "Error",
+    "processingTime": 0,
+    "features": []
+  }
+]

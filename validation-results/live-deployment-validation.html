@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Deployment Validation Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f7fa; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 15px; margin-bottom: 30px; }
+        .section { background: white; margin: 20px 0; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .success { color: #28a745; font-weight: bold; }
+        .error { color: #dc3545; font-weight: bold; }
+        .warning { color: #ffc107; font-weight: bold; }
+        .endpoint { background: #f8f9fa; margin: 10px 0; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; }
+        .endpoint.error { border-left-color: #dc3545; }
+        .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+        .metric { background: #e7f3ff; padding: 15px; border-radius: 8px; text-align: center; }
+        .screenshot { max-width: 300px; margin: 10px; border: 2px solid #ddd; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 Live Deployment Validation Report</h1>
+        <p><strong>URL:</strong> https://pdf-fzzi.onrender.com</p>
+        <p><strong>Timestamp:</strong> 2025-07-21T13:27:55.135Z</p>
+        <p><strong>Status:</strong> <span class="warning">NEEDS-ATTENTION</span></p>
+    </div>
+
+    <div class="section">
+        <h2>📊 Summary Metrics</h2>
+        <div class="metrics">
+            <div class="metric">
+                <h3>Endpoints</h3>
+                <p><strong>5/5</strong></p>
+                <p>100% Success</p>
+            </div>
+            <div class="metric">
+                <h3>Performance</h3>
+                <p><strong>N/Ams</strong></p>
+                <p>Homepage Load</p>
+            </div>
+            <div class="metric">
+                <h3>Functionality</h3>
+                <p><strong>2</strong></p>
+                <p>Tests Passed</p>
+            </div>
+            <div class="metric">
+                <h3>Screenshots</h3>
+                <p><strong>1</strong></p>
+                <p>Captured</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🌐 Endpoint Validation</h2>
+        
+            <div class="endpoint ">
+                <h4>✅ Homepage</h4>
+                <p><strong>Path:</strong> /</p>
+                <p><strong>Status:</strong> 200</p>
+                <p><strong>Content Preview:</strong> 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="</p>
+            </div>
+        
+            <div class="endpoint ">
+                <h4>✅ Health Check</h4>
+                <p><strong>Path:</strong> /api/smart-ocr-test</p>
+                <p><strong>Status:</strong> 200</p>
+                <p><strong>Content Preview:</strong> {"status":"healthy","service":"Smart OCR Learning </p>
+            </div>
+        
+            <div class="endpoint ">
+                <h4>✅ Annotation Interface</h4>
+                <p><strong>Path:</strong> /smart-annotation</p>
+                <p><strong>Status:</strong> 200</p>
+                <p><strong>Content Preview:</strong> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta </p>
+            </div>
+        
+            <div class="endpoint ">
+                <h4>✅ System Stats</h4>
+                <p><strong>Path:</strong> /api/smart-ocr-stats</p>
+                <p><strong>Status:</strong> 200</p>
+                <p><strong>Content Preview:</strong> {"success":true,"stats":{"currentAccuracy":80,"pat</p>
+            </div>
+        
+            <div class="endpoint ">
+                <h4>✅ Learned Patterns</h4>
+                <p><strong>Path:</strong> /api/smart-ocr-patterns</p>
+                <p><strong>Status:</strong> 200</p>
+                <p><strong>Content Preview:</strong> {"success":true,"patterns":{"tablePatterns":[{"id"</p>
+            </div>
+        
+    </div>
+
+    <div class="section">
+        <h2>⚡ Performance Metrics</h2>
+        <p>No performance data available</p>
+    </div>
+
+    <div class="section">
+        <h2>📸 Screenshots</h2>
+        <img src="validation-results/screenshots/workflow-test.png" alt="Validation Screenshot" class="screenshot">
+    </div>
+
+    
+    <div class="section">
+        <h2>❌ Errors</h2>
+        <p class="error"><strong>performance:</strong> page.metrics is not a function</p>
+    </div>
+    
+</body>
+</html>
+        

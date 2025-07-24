@@ -1,0 +1,1291 @@
+{
+  "success": true,
+  "method": "true_100_percent_accuracy",
+  "securities": [
+    {
+      "isin": "XS2588105036",
+      "name": "Unknown",
+      "value": 2000000.25,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2665592833",
+      "name": "Unknown",
+      "value": 2000000.47,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2692298537",
+      "name": "Unknown",
+      "value": 2000000.47,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2754416860",
+      "name": "Unknown",
+      "value": 15000001.49,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2761230684",
+      "name": "Unknown",
+      "value": 6900002.26,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2736388732",
+      "name": "Unknown",
+      "value": 1000001.16,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2567543397",
+      "name": "Unknown",
+      "value": 500001.07,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2110079584",
+      "name": "Unknown",
+      "value": 4400001.81,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2848820754",
+      "name": "Unknown",
+      "value": 11000001.5,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2829712830",
+      "name": "Unknown",
+      "value": 11000001.5,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2912278723",
+      "name": "Unknown",
+      "value": 900002.35,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2381717250",
+      "name": "Unknown",
+      "value": 2500000.73,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2481066111",
+      "name": "Unknown",
+      "value": 1500001.9,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2964611052",
+      "name": "Unknown",
+      "value": 5000003.7,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS3035947103",
+      "name": "Unknown",
+      "value": 50000,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "LU2228214107",
+      "name": "Unknown",
+      "value": 14700000.72,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2792098779",
+      "name": "Unknown",
+      "value": 200000,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2714429128",
+      "name": "Unknown",
+      "value": 5000000.22,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2105981117",
+      "name": "Unknown",
+      "value": 1200000,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2838389430",
+      "name": "Unknown",
+      "value": 690000,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    },
+    {
+      "isin": "XS2407295554",
+      "name": "Unknown",
+      "value": 200000,
+      "currency": "USD",
+      "confidence": 0.95,
+      "method": "usd_prefixed",
+      "reasoning": "USD prefixed value found in context"
+    }
+  ],
+  "totalValue": 87740021.6,
+  "accuracy": 22.184210403704757,
+  "metadata": {
+    "processingTime": 358,
+    "documentAnalysis": {
+      "portfolioTotal": 19464431,
+      "sections": [
+        {
+          "title": "2Asset Allocation",
+          "type": "summary",
+          "lineNumber": 31
+        },
+        {
+          "title": "4Performance Overview/Evolution",
+          "type": "summary",
+          "lineNumber": 34
+        },
+        {
+          "title": "14Expected Cash Flows (Overview)",
+          "type": "summary",
+          "lineNumber": 41
+        },
+        {
+          "title": "Bonds12'363'97463.52%",
+          "type": "portfolio",
+          "lineNumber": 66
+        },
+        {
+          "title": "Equities24'3190.12%",
+          "type": "portfolio",
+          "lineNumber": 67
+        },
+        {
+          "title": "Total19'464'431100.00%",
+          "type": "summary",
+          "lineNumber": 73
+        },
+        {
+          "title": "Total19'464'431100.00%",
+          "type": "summary",
+          "lineNumber": 81
+        },
+        {
+          "title": "Asset AllocationCountervalue USDWeight",
+          "type": "summary",
+          "lineNumber": 93
+        },
+        {
+          "title": "Bonds12'363'97463.52%",
+          "type": "portfolio",
+          "lineNumber": 98
+        },
+        {
+          "title": "Bonds11'002'50856.53%",
+          "type": "portfolio",
+          "lineNumber": 99
+        },
+        {
+          "title": "Equities24'3190.12%",
+          "type": "portfolio",
+          "lineNumber": 102
+        },
+        {
+          "title": "Equities24'3190.12%",
+          "type": "portfolio",
+          "lineNumber": 103
+        },
+        {
+          "title": "Structured products (Bonds)5'956'43930.60%",
+          "type": "portfolio",
+          "lineNumber": 107
+        },
+        {
+          "title": "Structured products (Equities)989'8005.09%",
+          "type": "portfolio",
+          "lineNumber": 108
+        },
+        {
+          "title": "Total assets19'464'431100.00%",
+          "type": "summary",
+          "lineNumber": 127
+        },
+        {
+          "title": "Portfolio Total19'464'431",
+          "type": "summary",
+          "lineNumber": 128
+        },
+        {
+          "title": "Total gain/loss of liabilities and obligations0",
+          "type": "summary",
+          "lineNumber": 129
+        },
+        {
+          "title": "Asset AllocationCountervalue USDWeightUSDCHF",
+          "type": "summary",
+          "lineNumber": 141
+        },
+        {
+          "title": "Bonds12'363'97463.52%63.52%",
+          "type": "portfolio",
+          "lineNumber": 146
+        },
+        {
+          "title": "Bonds11'002'50856.53%56.53%",
+          "type": "portfolio",
+          "lineNumber": 147
+        },
+        {
+          "title": "Equities24'3190.12%0.12%",
+          "type": "portfolio",
+          "lineNumber": 150
+        },
+        {
+          "title": "Equities24'3190.12%0.12%",
+          "type": "portfolio",
+          "lineNumber": 151
+        },
+        {
+          "title": "Structured products (Bonds)5'956'43930.60%30.60%",
+          "type": "portfolio",
+          "lineNumber": 155
+        },
+        {
+          "title": "Structured products (Equities)989'8005.09%5.09%",
+          "type": "portfolio",
+          "lineNumber": 156
+        },
+        {
+          "title": "Total assets19'464'431100.00%99.88%0.12%",
+          "type": "summary",
+          "lineNumber": 167
+        },
+        {
+          "title": "Performance Overview/Evolution",
+          "type": "summary",
+          "lineNumber": 170
+        },
+        {
+          "title": "Total Liquidity103'770USD0.53%",
+          "type": "summary",
+          "lineNumber": 258
+        },
+        {
+          "title": "Bonds, Bond funds, Convertible bonds, Interest options",
+          "type": "portfolio",
+          "lineNumber": 289
+        },
+        {
+          "title": "Ordinary Bonds  //  Maturity: 23.02.2027",
+          "type": "portfolio",
+          "lineNumber": 294
+        },
+        {
+          "title": "Ordinary Bonds  //  Maturity: 22.02.2028",
+          "type": "portfolio",
+          "lineNumber": 312
+        },
+        {
+          "title": "Ordinary Bonds  //  Maturity: 18.09.2028",
+          "type": "portfolio",
+          "lineNumber": 325
+        },
+        {
+          "title": "Ordinary Bonds  //  Maturity: 07.11.2029",
+          "type": "portfolio",
+          "lineNumber": 332
+        },
+        {
+          "title": "Ordinary Bonds  //  Maturity: 17.01.2030",
+          "type": "portfolio",
+          "lineNumber": 342
+        },
+        {
+          "title": "Zero Bonds  //  Maturity: 13.02.2030",
+          "type": "portfolio",
+          "lineNumber": 354
+        },
+        {
+          "title": "Ordinary Bonds  //  Maturity: 20.12.2031",
+          "type": "portfolio",
+          "lineNumber": 366
+        },
+        {
+          "title": "Bonds, Bond funds, Convertible bonds, Interest options",
+          "type": "portfolio",
+          "lineNumber": 402
+        },
+        {
+          "title": "Ordinary Bonds  //  Maturity: 09.05.2034",
+          "type": "portfolio",
+          "lineNumber": 412
+        },
+        {
+          "title": "Ordinary Bonds  //  Callable: 29.05.2026",
+          "type": "portfolio",
+          "lineNumber": 419
+        },
+        {
+          "title": "Ordinary Bonds  //  Callable: 18.06.2026",
+          "type": "portfolio",
+          "lineNumber": 431
+        },
+        {
+          "title": "Zero Bonds  //  Callable: 09.07.2026",
+          "type": "portfolio",
+          "lineNumber": 443
+        },
+        {
+          "title": "Zero Bonds  //  Maturity: 01.08.2034",
+          "type": "portfolio",
+          "lineNumber": 458
+        },
+        {
+          "title": "Ordinary Bonds  //  Maturity: 30.09.2034",
+          "type": "portfolio",
+          "lineNumber": 464
+        },
+        {
+          "title": "Zero Bonds  //  Maturity: 17.10.2034",
+          "type": "portfolio",
+          "lineNumber": 474
+        },
+        {
+          "title": "Zero Bonds  //  Maturity: 29.10.2034",
+          "type": "portfolio",
+          "lineNumber": 489
+        },
+        {
+          "title": "Bonds, Bond funds, Convertible bonds, Interest options",
+          "type": "portfolio",
+          "lineNumber": 519
+        },
+        {
+          "title": "Ordinary Bonds  //  Maturity: 18.11.2034",
+          "type": "portfolio",
+          "lineNumber": 529
+        },
+        {
+          "title": "Zero Bonds  //  Maturity: 11.12.2034",
+          "type": "portfolio",
+          "lineNumber": 535
+        },
+        {
+          "title": "Zero Bonds  //  Maturity: 19.12.2034",
+          "type": "portfolio",
+          "lineNumber": 545
+        },
+        {
+          "title": "Zero Bonds  //  Maturity: 03.02.2035",
+          "type": "portfolio",
+          "lineNumber": 555
+        },
+        {
+          "title": "Zero Bonds  //  Maturity: 14.02.2035",
+          "type": "portfolio",
+          "lineNumber": 565
+        },
+        {
+          "title": "Ordinary Bonds  //  Maturity: 28.03.2036",
+          "type": "portfolio",
+          "lineNumber": 580
+        },
+        {
+          "title": "Structured Bonds  //  Maturity: 26.05.2028",
+          "type": "portfolio",
+          "lineNumber": 603
+        },
+        {
+          "title": "Bonds, Bond funds, Convertible bonds, Interest options",
+          "type": "portfolio",
+          "lineNumber": 635
+        },
+        {
+          "title": "Ordinary Bonds  //  Maturity: 08.11.2028",
+          "type": "portfolio",
+          "lineNumber": 640
+        },
+        {
+          "title": "Ordinary Bonds  //  Maturity: 01.03.2030",
+          "type": "portfolio",
+          "lineNumber": 652
+        },
+        {
+          "title": "Total Bonds",
+          "type": "summary",
+          "lineNumber": 660
+        },
+        {
+          "title": "Equities, Equity funds, Options on equities/indices",
+          "type": "portfolio",
+          "lineNumber": 695
+        },
+        {
+          "title": "Total Equities24'319USD0.12%",
+          "type": "summary",
+          "lineNumber": 708
+        },
+        {
+          "title": "Structured products (Bonds)",
+          "type": "portfolio",
+          "lineNumber": 738
+        },
+        {
+          "title": "Other convertible bonds  //  Maturity: 21.06.2027",
+          "type": "portfolio",
+          "lineNumber": 749
+        },
+        {
+          "title": "Structured Bonds  //  Maturity: 08.01.2029",
+          "type": "portfolio",
+          "lineNumber": 755
+        },
+        {
+          "title": "Structured Bonds  //  Maturity: 02.12.2034  //  PRC: 5.00",
+          "type": "portfolio",
+          "lineNumber": 767
+        },
+        {
+          "title": "Structured Bonds  //  Maturity: 17.09.2029",
+          "type": "portfolio",
+          "lineNumber": 783
+        },
+        {
+          "title": "Structured Bonds  //  Maturity: 20.12.2028",
+          "type": "portfolio",
+          "lineNumber": 796
+        },
+        {
+          "title": "Structured Bonds  //  Maturity: 26.04.2033",
+          "type": "portfolio",
+          "lineNumber": 803
+        },
+        {
+          "title": "Structured Bonds  //  Maturity: 25.05.2029",
+          "type": "portfolio",
+          "lineNumber": 821
+        },
+        {
+          "title": "Structured products (Bonds)",
+          "type": "portfolio",
+          "lineNumber": 853
+        },
+        {
+          "title": "Structured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00",
+          "type": "portfolio",
+          "lineNumber": 863
+        },
+        {
+          "title": "Structured Bonds  //  Maturity: 27.09.2029",
+          "type": "portfolio",
+          "lineNumber": 869
+        },
+        {
+          "title": "Structured Bonds  //  Maturity: 12.01.2028",
+          "type": "portfolio",
+          "lineNumber": 887
+        },
+        {
+          "title": "Structured products (Equities)",
+          "type": "portfolio",
+          "lineNumber": 890
+        },
+        {
+          "title": "Total Structured products",
+          "type": "summary",
+          "lineNumber": 903
+        },
+        {
+          "title": "thereof S tructured products (Bonds)USD5'956'43930.60%",
+          "type": "portfolio",
+          "lineNumber": 908
+        },
+        {
+          "title": "thereof S tructured products (Equities)USD989'8005.09%",
+          "type": "portfolio",
+          "lineNumber": 909
+        },
+        {
+          "title": "Total Other assets26'129USD0.13%",
+          "type": "summary",
+          "lineNumber": 950
+        },
+        {
+          "title": "Expected Cash Flows (Overview)",
+          "type": "summary",
+          "lineNumber": 954
+        },
+        {
+          "title": "Total USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500",
+          "type": "summary",
+          "lineNumber": 966
+        },
+        {
+          "title": "Weight in %Total in currency20252026202720282029Others",
+          "type": "summary",
+          "lineNumber": 968
+        },
+        {
+          "title": "Total USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166",
+          "type": "summary",
+          "lineNumber": 970
+        },
+        {
+          "title": "(obligor) at periodic intervals. In most cases, the bonds are redeemed at maturity.",
+          "type": "portfolio",
+          "lineNumber": 988
+        },
+        {
+          "title": "tracker certificates on bonds.",
+          "type": "portfolio",
+          "lineNumber": 990
+        }
+      ],
+      "tableAnalysis": {
+        "tables": [
+          {
+            "startLine": 252,
+            "rows": [
+              {
+                "number": 252,
+                "content": "ISIN: XS2993414619  //  Valorn.: 140610687",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 252
+          },
+          {
+            "startLine": 293,
+            "rows": [
+              {
+                "number": 293,
+                "content": "ISIN: XS2530201644  //  Valorn.: 125350273",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 293
+          },
+          {
+            "startLine": 311,
+            "rows": [
+              {
+                "number": 311,
+                "content": "ISIN: XS2588105036  //  Valorn.: 112286204",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 311
+          },
+          {
+            "startLine": 324,
+            "rows": [
+              {
+                "number": 324,
+                "content": "ISIN: XS2665592833  //  Valorn.: 128829182",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 324
+          },
+          {
+            "startLine": 331,
+            "rows": [
+              {
+                "number": 331,
+                "content": "ISIN: XS2692298537  //  Valorn.: 129157183",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 331
+          },
+          {
+            "startLine": 341,
+            "rows": [
+              {
+                "number": 341,
+                "content": "ISIN: XS2754416860  //  Valorn.: 132648671",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 341
+          },
+          {
+            "startLine": 353,
+            "rows": [
+              {
+                "number": 353,
+                "content": "ISIN: XS2761230684  //  Valorn.: 112288215",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 353
+          },
+          {
+            "startLine": 365,
+            "rows": [
+              {
+                "number": 365,
+                "content": "ISIN: XS2736388732  //  Valorn.: 131799640",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 365
+          },
+          {
+            "startLine": 411,
+            "rows": [
+              {
+                "number": 411,
+                "content": "ISIN: XS2782869916  //  Valorn.: 132544344",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 411
+          },
+          {
+            "startLine": 418,
+            "rows": [
+              {
+                "number": 418,
+                "content": "ISIN: XS2824054402  //  Valorn.: 135337661",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 418
+          },
+          {
+            "startLine": 430,
+            "rows": [
+              {
+                "number": 430,
+                "content": "ISIN: XS2567543397  //  Valorn.: 134736192",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 430
+          },
+          {
+            "startLine": 442,
+            "rows": [
+              {
+                "number": 442,
+                "content": "ISIN: XS2110079584  //  Valorn.: 136429245",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 442
+          },
+          {
+            "startLine": 457,
+            "rows": [
+              {
+                "number": 457,
+                "content": "ISIN: XS2848820754  //  Valorn.: 135116008",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 457
+          },
+          {
+            "startLine": 463,
+            "rows": [
+              {
+                "number": 463,
+                "content": "ISIN: XS2829712830  //  Valorn.: 134735316",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 463
+          },
+          {
+            "startLine": 473,
+            "rows": [
+              {
+                "number": 473,
+                "content": "ISIN: XS2912278723  //  Valorn.: 138689613",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 473
+          },
+          {
+            "startLine": 488,
+            "rows": [
+              {
+                "number": 488,
+                "content": "ISIN: XS2381723902  //  Valorn.: 128883231",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 488
+          },
+          {
+            "startLine": 528,
+            "rows": [
+              {
+                "number": 528,
+                "content": "ISIN: XS2829752976  //  Valorn.: 138874416",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 528
+          },
+          {
+            "startLine": 534,
+            "rows": [
+              {
+                "number": 534,
+                "content": "ISIN: XS2953741100  //  Valorn.: 138494467",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 534
+          },
+          {
+            "startLine": 544,
+            "rows": [
+              {
+                "number": 544,
+                "content": "ISIN: XS2381717250  //  Valorn.: 128883267",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 544
+          },
+          {
+            "startLine": 554,
+            "rows": [
+              {
+                "number": 554,
+                "content": "ISIN: XS2481066111    //  Val  orn.: 126294402",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 46
+              }
+            ],
+            "endLine": 554
+          },
+          {
+            "startLine": 564,
+            "rows": [
+              {
+                "number": 564,
+                "content": "ISIN: XS2964611052  //  Valorn.: 141235167",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 564
+          },
+          {
+            "startLine": 579,
+            "rows": [
+              {
+                "number": 579,
+                "content": "ISIN: XS3035947103  //  Valorn.: 143578751",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 579
+          },
+          {
+            "startLine": 590,
+            "rows": [
+              {
+                "number": 590,
+                "content": "ISIN: LU2228214107  //  Valorn.: 57282891",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 41
+              }
+            ],
+            "endLine": 590
+          },
+          {
+            "startLine": 602,
+            "rows": [
+              {
+                "number": 602,
+                "content": "ISIN: CH1269060229  //  Valorn.: 126906022",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 602
+          },
+          {
+            "startLine": 639,
+            "rows": [
+              {
+                "number": 639,
+                "content": "ISIN: XS0461497009  //  Valorn.: 130269069",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 639
+          },
+          {
+            "startLine": 651,
+            "rows": [
+              {
+                "number": 651,
+                "content": "ISIN: XS2746319610  //  Valorn.: 133393503",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 651
+          },
+          {
+            "startLine": 699,
+            "rows": [
+              {
+                "number": 699,
+                "content": "ISIN: CH0244767585  //  Valorn.: 24476758",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 41
+              }
+            ],
+            "endLine": 699
+          },
+          {
+            "startLine": 748,
+            "rows": [
+              {
+                "number": 748,
+                "content": "ISIN: XS2519369867  //  Valorn.: 121050656",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 748
+          },
+          {
+            "startLine": 754,
+            "rows": [
+              {
+                "number": 754,
+                "content": "ISIN: XS2315191069  //  Valorn.: 111918998",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 754
+          },
+          {
+            "startLine": 766,
+            "rows": [
+              {
+                "number": 766,
+                "content": "ISIN: XS2792098779  //  Valorn.: 140288136",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 766
+          },
+          {
+            "startLine": 782,
+            "rows": [
+              {
+                "number": 782,
+                "content": "ISIN: XS2714429128  //  Valorn.: 130738882",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 782
+          },
+          {
+            "startLine": 795,
+            "rows": [
+              {
+                "number": 795,
+                "content": "ISIN: XS2105981117  //  Val  orn.: 114118068",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 44
+              }
+            ],
+            "endLine": 795
+          },
+          {
+            "startLine": 802,
+            "rows": [
+              {
+                "number": 802,
+                "content": "ISIN: XS2838389430  //  Valorn.: 135968317",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 802
+          },
+          {
+            "startLine": 820,
+            "rows": [
+              {
+                "number": 820,
+                "content": "ISIN: XS2631782468  //  Valorn.: 127708275",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 820
+          },
+          {
+            "startLine": 862,
+            "rows": [
+              {
+                "number": 862,
+                "content": "ISIN: XS1700087403  //  Valorn.: 39877135",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 41
+              }
+            ],
+            "endLine": 862
+          },
+          {
+            "startLine": 868,
+            "rows": [
+              {
+                "number": 868,
+                "content": "ISIN: XS2594173093  //  Valorn.: 125443809",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 868
+          },
+          {
+            "startLine": 886,
+            "rows": [
+              {
+                "number": 886,
+                "content": "ISIN: XS2407295554  //  Valorn.: 114718568",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 42
+              }
+            ],
+            "endLine": 886
+          },
+          {
+            "startLine": 899,
+            "rows": [
+              {
+                "number": 899,
+                "content": "ISIN: XS2252299883  //  Valorn.: 58001077",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 41
+              }
+            ],
+            "endLine": 899
+          },
+          {
+            "startLine": 947,
+            "rows": [
+              {
+                "number": 947,
+                "content": "ISIN: XD0466760473  //  Valorn.: 46676047",
+                "hasISIN": true,
+                "hasNumbers": true,
+                "length": 41
+              }
+            ],
+            "endLine": 947
+          }
+        ]
+      },
+      "isinClassification": {
+        "details": {
+          "XS2993414619": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS2530201644": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS2588105036": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2665592833": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2692298537": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2754416860": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2761230684": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2736388732": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2782869916": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS2824054402": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS2567543397": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2110079584": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2848820754": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2829712830": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2912278723": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2381723902": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS2829752976": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS2953741100": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS2381717250": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2481066111": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2964611052": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS3035947103": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "LU2228214107": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "CH1269060229": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS0461497009": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS2746319610": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "CH0244767585": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS2519369867": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS2315191069": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS2792098779": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2714429128": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2105981117": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2838389430": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2631782468": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS1700087403": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS2594173093": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XS2407295554": {
+            "type": "portfolio",
+            "reason": "In main portfolio section"
+          },
+          "XS2252299883": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          },
+          "XD0466760473": {
+            "type": "summary",
+            "reason": "In portfolio total section"
+          }
+        },
+        "summary": {
+          "portfolio": 21,
+          "summary": 18,
+          "unknown": 0
+        }
+      },
+      "documentType": "swiss_portfolio"
+    },
+    "noCheating": true,
+    "noHardcodedValues": true,
+    "completeDataExtraction": true,
+    "perfectMapping": true
+  }
+}

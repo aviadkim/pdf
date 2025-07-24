@@ -1,0 +1,179 @@
+{
+  "correctionHistory": [
+    [
+      "2b041996-0ad7-4695-baab-808c85556021",
+      {
+        "id": "2b041996-0ad7-4695-baab-808c85556021",
+        "type": "correction",
+        "coordinates": {
+          "x": 200,
+          "y": 60,
+          "width": 120,
+          "height": 30
+        },
+        "content": "Original: 36622, Corrected: 366223",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:11:17.386Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "5047b291-1ee3-4e32-a01d-f4d056f6d4c3",
+      {
+        "id": "5047b291-1ee3-4e32-a01d-f4d056f6d4c3",
+        "type": "highlight",
+        "coordinates": {
+          "x": 10,
+          "y": 400,
+          "width": 200,
+          "height": 40
+        },
+        "content": "Total Portfolio",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:11:17.387Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "44fc86e0-1f0f-4164-b983-98a9b1fce458",
+      {
+        "id": "44fc86e0-1f0f-4164-b983-98a9b1fce458",
+        "original": "36622",
+        "corrected": "366223",
+        "field": "marketValue",
+        "confidence": 0.95,
+        "impact": 0.15,
+        "timestamp": "2025-07-18T12:11:17.387Z"
+      }
+    ],
+    [
+      "1587e742-6f88-4fb3-86e4-ccc4be913933",
+      {
+        "id": "1587e742-6f88-4fb3-86e4-ccc4be913933",
+        "original": "Apple",
+        "corrected": "Apple Inc",
+        "field": "securityName",
+        "confidence": 0.95,
+        "impact": 0.15,
+        "timestamp": "2025-07-18T12:11:17.387Z"
+      }
+    ],
+    [
+      "3f66cbf2-cdfd-4020-8a93-7232132e419b",
+      {
+        "id": "3f66cbf2-cdfd-4020-8a93-7232132e419b",
+        "type": "correction",
+        "coordinates": {
+          "x": 320,
+          "y": 60,
+          "width": 150,
+          "height": 30
+        },
+        "content": "Original: Credit Suisse, Corrected: Credit Suisse Group AG",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:11:30.851Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "bb45b511-f0cd-4552-8036-d0c4e3388bda",
+      {
+        "id": "bb45b511-f0cd-4552-8036-d0c4e3388bda",
+        "type": "highlight",
+        "coordinates": {
+          "x": 10,
+          "y": 440,
+          "width": 300,
+          "height": 40
+        },
+        "content": "Portfolio Total: 19464431",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:11:30.851Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "4105955d-a7d9-451a-9d3a-8cc3a6792567",
+      {
+        "id": "4105955d-a7d9-451a-9d3a-8cc3a6792567",
+        "original": "Credit Suisse",
+        "corrected": "Credit Suisse Group AG",
+        "field": "securityName",
+        "confidence": 0.95,
+        "impact": 0.15,
+        "timestamp": "2025-07-18T12:11:30.851Z"
+      }
+    ],
+    [
+      "8827b48c-b6bd-414e-93c5-4b1d939d0d99",
+      {
+        "id": "8827b48c-b6bd-414e-93c5-4b1d939d0d99",
+        "original": "1946443",
+        "corrected": "19464431",
+        "field": "portfolioTotal",
+        "confidence": 0.95,
+        "impact": 0.15,
+        "timestamp": "2025-07-18T12:11:30.851Z"
+      }
+    ],
+    [
+      "bc5fc614-8c73-45a4-88be-a71ada8fdb13",
+      {
+        "id": "bc5fc614-8c73-45a4-88be-a71ada8fdb13",
+        "type": "highlight",
+        "coordinates": {
+          "x": 350,
+          "y": 200,
+          "width": 120,
+          "height": 25
+        },
+        "content": "Market Value",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:51:09.653Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "1fa477d8-5350-4e75-a4f8-e34cc1b7421a",
+      {
+        "id": "1fa477d8-5350-4e75-a4f8-e34cc1b7421a",
+        "type": "correction",
+        "coordinates": {
+          "x": 350,
+          "y": 250,
+          "width": 100,
+          "height": 25
+        },
+        "content": "366,223 CHF",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:51:09.653Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "baa25575-5b9d-4094-8c8a-9fcec91abe09",
+      {
+        "id": "baa25575-5b9d-4094-8c8a-9fcec91abe09",
+        "type": "highlight",
+        "coordinates": {
+          "x": 350,
+          "y": 200,
+          "width": 120,
+          "height": 25
+        },
+        "content": "Market Value Highlight",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T13:38:38.593Z",
+        "usageCount": 0
+      }
+    ]
+  ],
+  "timestamp": "2025-07-18T13:38:38.596Z"
+}

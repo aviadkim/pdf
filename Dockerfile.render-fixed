@@ -1,0 +1,41 @@
+# Dockerfile for Render deployment with PDF processing dependencies
+FROM node:18-slim
+
+# Install system dependencies for PDF processing
+RUN apt-get update && apt-get install -y \
+    graphicsmagick \
+    imagemagick \
+    ghostscript \
+    poppler-utils \
+    libpng-dev \
+    libjpeg-dev \
+    libgif-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install Node.js dependencies
+RUN npm ci --only=production
+
+# Copy application code
+COPY . .
+
+# Create temp directories
+RUN mkdir -p /tmp/uploads /tmp/ocr_images
+
+# Set permissions
+RUN chmod -R 755 /tmp
+
+# Expose port
+EXPOSE 10002
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD curl -f http://localhost:10002/ || exit 1
+
+# Start the application
+CMD ["node", "final-comprehensive-system.js"]

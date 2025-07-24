@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-07-18T14:17:00.316Z",
+  "tested": 6,
+  "working": 0,
+  "smartOCRFound": 0,
+  "needsSetup": 1,
+  "services": [
+    {
+      "url": "https://pdf-fzzi.onrender.com",
+      "status": "needs-env-var",
+      "title": "No title",
+      "working": false
+    },
+    {
+      "url": "https://pdf.onrender.com",
+      "status": "error",
+      "error": 404,
+      "working": false
+    },
+    {
+      "url": "https://smart-ocr.onrender.com",
+      "status": "connection-error",
+      "error": "network timeout at: https://smart-ocr.onrender.com/",
+      "working": false
+    },
+    {
+      "url": "https://claude-pdf.onrender.com",
+      "status": "error",
+      "error": 404,
+      "working": false
+    },
+    {
+      "url": "https://financial-pdf.onrender.com",
+      "status": "error",
+      "error": 404,
+      "working": false
+    },
+    {
+      "url": "https://smart-ocr-learning.onrender.com",
+      "status": "error",
+      "error": 404,
+      "working": false
+    }
+  ],
+  "recommendations": [
+    "🔧 Set environment variable MISTRAL_API_KEY in Render dashboard",
+    "🌐 Service URL: https://pdf-fzzi.onrender.com",
+    "🔑 API Key: <MISTRAL_API_KEY>",
+    "⏳ Wait 2-3 minutes after saving for redeploy"
+  ]
+}

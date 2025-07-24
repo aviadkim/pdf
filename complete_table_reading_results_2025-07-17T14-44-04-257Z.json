@@ -1,0 +1,278 @@
+{
+  "success": true,
+  "securities": [
+    {
+      "isin": "XS2588105036",
+      "value": 1031,
+      "reasoning": "Largest non-quantity number: Large number without specific context",
+      "startLine": 306,
+      "endLine": 321,
+      "valueLine": 309,
+      "allNumbers": 25
+    },
+    {
+      "isin": "XS2665592833",
+      "value": 32000,
+      "reasoning": "Market value candidate: Large number (32,000) at line end ",
+      "startLine": 319,
+      "endLine": 330,
+      "valueLine": 322,
+      "allNumbers": 22
+    },
+    {
+      "isin": "XS2692298537",
+      "value": 1000106,
+      "reasoning": "Market value candidate: Large number (1,000,106)  ",
+      "startLine": 326,
+      "endLine": 340,
+      "valueLine": 334,
+      "allNumbers": 25
+    },
+    {
+      "isin": "XS2754416860",
+      "value": 1062,
+      "reasoning": "Largest non-quantity number: Large number without specific context",
+      "startLine": 336,
+      "endLine": 351,
+      "valueLine": 348,
+      "allNumbers": 29
+    },
+    {
+      "isin": "XS2761230684",
+      "value": 2000102,
+      "reasoning": "Market value candidate: Large number (2,000,102)  ",
+      "startLine": 348,
+      "endLine": 363,
+      "valueLine": 357,
+      "allNumbers": 30
+    },
+    {
+      "isin": "XS2736388732",
+      "value": 8833,
+      "reasoning": "Largest non-quantity number: Large number without specific context",
+      "startLine": 360,
+      "endLine": 375,
+      "valueLine": 372,
+      "allNumbers": 26
+    },
+    {
+      "isin": "XS2824054402",
+      "value": 2000103,
+      "reasoning": "Market value candidate: Large number (2,000,103)  ",
+      "startLine": 413,
+      "endLine": 428,
+      "valueLine": 422,
+      "allNumbers": 26
+    },
+    {
+      "isin": "XS2567543397",
+      "value": 1000100.52002,
+      "reasoning": "Market value candidate: Large number (1,000,100.52)  ",
+      "startLine": 425,
+      "endLine": 440,
+      "valueLine": 434,
+      "allNumbers": 29
+    },
+    {
+      "isin": "XS2110079584",
+      "value": 1000100.10001,
+      "reasoning": "Market value candidate: Large number (1,000,100.1)  ",
+      "startLine": 437,
+      "endLine": 452,
+      "valueLine": 445,
+      "allNumbers": 25
+    },
+    {
+      "isin": "XS2848820754",
+      "value": 2000100.06009,
+      "reasoning": "Market value candidate: Large number (2,000,100.06) at line end ",
+      "startLine": 452,
+      "endLine": 462,
+      "valueLine": 453,
+      "allNumbers": 17
+    },
+    {
+      "isin": "XS2912278723",
+      "value": 37954,
+      "reasoning": "Market value candidate: Large number (37,954) at line end ",
+      "startLine": 468,
+      "endLine": 483,
+      "valueLine": 483,
+      "allNumbers": 26
+    },
+    {
+      "isin": "XS2381723902",
+      "value": 366223,
+      "reasoning": "Market value candidate: Large number (366,223) at line end ",
+      "startLine": 483,
+      "endLine": 498,
+      "valueLine": 496,
+      "allNumbers": 24
+    },
+    {
+      "isin": "XS2381717250",
+      "value": 2000101,
+      "reasoning": "Market value candidate: Large number (2,000,101)  ",
+      "startLine": 539,
+      "endLine": 553,
+      "valueLine": 547,
+      "allNumbers": 26
+    },
+    {
+      "isin": "XS2481066111",
+      "value": 49500,
+      "reasoning": "Market value candidate: Large number (49,500) at line end ",
+      "startLine": 549,
+      "endLine": 563,
+      "valueLine": 557,
+      "allNumbers": 26
+    },
+    {
+      "isin": "XS2964611052",
+      "value": 480584,
+      "reasoning": "Market value candidate: Large number (480,584) at line end ",
+      "startLine": 559,
+      "endLine": 574,
+      "valueLine": 567,
+      "allNumbers": 27
+    },
+    {
+      "isin": "XS3035947103",
+      "value": 800000,
+      "reasoning": "Market value candidate: Large number (800,000) at line end ",
+      "startLine": 574,
+      "endLine": 589,
+      "valueLine": 575,
+      "allNumbers": 22
+    },
+    {
+      "isin": "LU2228214107",
+      "value": 1043,
+      "reasoning": "Largest non-quantity number: Large number without specific context",
+      "startLine": 585,
+      "endLine": 600,
+      "valueLine": 600,
+      "allNumbers": 16
+    },
+    {
+      "isin": "CH1269060229",
+      "value": 366223,
+      "reasoning": "Market value candidate: Large number (366,223) at line end ",
+      "startLine": 597,
+      "endLine": 612,
+      "valueLine": 612,
+      "allNumbers": 27
+    },
+    {
+      "isin": "XS0461497009",
+      "value": 1000100,
+      "reasoning": "Market value candidate: Large number (1,000,100)  ",
+      "startLine": 634,
+      "endLine": 649,
+      "valueLine": 643,
+      "allNumbers": 22
+    },
+    {
+      "isin": "XS2746319610",
+      "value": 2000102,
+      "reasoning": "Market value candidate: Large number (2,000,102)  ",
+      "startLine": 646,
+      "endLine": 661,
+      "valueLine": 655,
+      "allNumbers": 25
+    },
+    {
+      "isin": "CH0244767585",
+      "value": 1313,
+      "reasoning": "Largest non-quantity number: Large number without specific context",
+      "startLine": 694,
+      "endLine": 709,
+      "valueLine": 702,
+      "allNumbers": 15
+    },
+    {
+      "isin": "XS2315191069",
+      "value": 502305,
+      "reasoning": "Market value candidate: Large number (502,305) at line end ",
+      "startLine": 749,
+      "endLine": 764,
+      "valueLine": 758,
+      "allNumbers": 25
+    },
+    {
+      "isin": "XS2792098779",
+      "value": 29631,
+      "reasoning": "Market value candidate: Large number (29,631)  ",
+      "startLine": 761,
+      "endLine": 776,
+      "valueLine": 762,
+      "allNumbers": 20
+    },
+    {
+      "isin": "XS2714429128",
+      "value": 20343,
+      "reasoning": "Market value candidate: Large number (20,343) at line end ",
+      "startLine": 777,
+      "endLine": 792,
+      "valueLine": 780,
+      "allNumbers": 25
+    },
+    {
+      "isin": "XS2838389430",
+      "value": 70680,
+      "reasoning": "Market value candidate: Large number (70,680) at line end ",
+      "startLine": 797,
+      "endLine": 812,
+      "valueLine": 809,
+      "allNumbers": 23
+    },
+    {
+      "isin": "XS2631782468",
+      "value": 366223,
+      "reasoning": "Market value candidate: Large number (366,223) at line end ",
+      "startLine": 815,
+      "endLine": 830,
+      "valueLine": 830,
+      "allNumbers": 23
+    },
+    {
+      "isin": "XS2594173093",
+      "value": 1044,
+      "reasoning": "Largest non-quantity number: Large number without specific context",
+      "startLine": 863,
+      "endLine": 878,
+      "valueLine": 875,
+      "allNumbers": 23
+    },
+    {
+      "isin": "XS2407295554",
+      "value": 5243100,
+      "reasoning": "Market value candidate: Large number (5,243,100)  ",
+      "startLine": 881,
+      "endLine": 896,
+      "valueLine": 881,
+      "allNumbers": 22
+    },
+    {
+      "isin": "XS2252299883",
+      "value": 6946,
+      "reasoning": "Largest non-quantity number: Large number without specific context",
+      "startLine": 894,
+      "endLine": 909,
+      "valueLine": 905,
+      "allNumbers": 19
+    },
+    {
+      "isin": "XD0466760473",
+      "value": 3748128.039526,
+      "reasoning": "Market value candidate: Large number (3,748,128.04) at line end ",
+      "startLine": 942,
+      "endLine": 957,
+      "valueLine": 943,
+      "allNumbers": 19
+    }
+  ],
+  "totalValue": 26135080.719646,
+  "accuracy": 74.4762612704249,
+  "method": "complete_table_reading"
+}

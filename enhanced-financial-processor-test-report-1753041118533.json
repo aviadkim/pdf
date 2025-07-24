@@ -1,0 +1,160 @@
+{
+  "summary": {
+    "totalTests": 6,
+    "passed": 5,
+    "failed": 1,
+    "successRate": 83,
+    "totalTime": 1075
+  },
+  "tests": [
+    {
+      "name": "Messos PDF Processing",
+      "passed": false,
+      "timestamp": "2025-07-20T19:51:58.121Z",
+      "details": {
+        "processingTime": 660,
+        "validation": {
+          "scores": {
+            "documentType": 0,
+            "securitiesCount": 50,
+            "securityNames": 0,
+            "securityValues": 0,
+            "portfolioData": 0
+          },
+          "issues": [
+            "Document type not correctly identified as messos-corner-banca",
+            "Only 0 securities found, expected ~40",
+            "Only 0/0 securities have names extracted",
+            "Only 0/0 securities have values extracted",
+            "Portfolio data extraction incomplete"
+          ],
+          "recommendations": [
+            "Consider using annotation tools to improve extraction accuracy",
+            "Mark security names in the document for better name extraction",
+            "Annotate security values to improve value extraction patterns"
+          ],
+          "overallScore": 10
+        }
+      }
+    },
+    {
+      "name": "Document Type Detection",
+      "passed": true,
+      "timestamp": "2025-07-20T19:51:58.143Z",
+      "details": {
+        "passed": 3,
+        "total": 3,
+        "successRate": 100
+      }
+    },
+    {
+      "name": "Learning System Integration",
+      "passed": true,
+      "timestamp": "2025-07-20T19:51:58.147Z",
+      "details": {
+        "annotationsStored": 0,
+        "patternsAvailable": 0,
+        "averageConfidence": 0
+      }
+    },
+    {
+      "name": "Annotation Processing",
+      "passed": true,
+      "timestamp": "2025-07-20T19:51:58.222Z",
+      "details": {
+        "success": true,
+        "annotationId": "ann_1753041118190_wkdm7mlk7",
+        "improvements": 0,
+        "message": "Annotation processed successfully. The system will use this feedback to improve future extractions."
+      }
+    },
+    {
+      "name": "Validation System",
+      "passed": true,
+      "timestamp": "2025-07-20T19:51:58.245Z",
+      "details": {
+        "success": true,
+        "validationProcessed": true,
+        "corrections": 1,
+        "learningResult": {
+          "success": true,
+          "annotationId": "ann_1753041118226_b3mtbug30",
+          "improvements": 0,
+          "message": "Annotation processed successfully. The system will use this feedback to improve future extractions."
+        }
+      }
+    },
+    {
+      "name": "Performance Benchmarks",
+      "passed": true,
+      "timestamp": "2025-07-20T19:51:58.532Z",
+      "details": {
+        "tests": [
+          {
+            "test": "Messos PDF Processing Speed",
+            "time": 280,
+            "success": false,
+            "benchmark": true
+          },
+          {
+            "test": "Memory Usage",
+            "heapUsed": 15,
+            "heapTotal": 31,
+            "benchmark": true
+          }
+        ]
+      }
+    }
+  ],
+  "messos": {
+    "success": false,
+    "processingTime": 660,
+    "validation": {
+      "scores": {
+        "documentType": 0,
+        "securitiesCount": 50,
+        "securityNames": 0,
+        "securityValues": 0,
+        "portfolioData": 0
+      },
+      "issues": [
+        "Document type not correctly identified as messos-corner-banca",
+        "Only 0 securities found, expected ~40",
+        "Only 0/0 securities have names extracted",
+        "Only 0/0 securities have values extracted",
+        "Portfolio data extraction incomplete"
+      ],
+      "recommendations": [
+        "Consider using annotation tools to improve extraction accuracy",
+        "Mark security names in the document for better name extraction",
+        "Annotate security values to improve value extraction patterns"
+      ],
+      "overallScore": 10
+    },
+    "result": {
+      "success": false,
+      "error": "String.prototype.matchAll called with a non-global RegExp argument",
+      "processingTime": 660,
+      "fileInfo": {
+        "path": "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\2. Messos  - 31.03.2025.pdf"
+      },
+      "timestamp": "2025-07-20T19:51:58.120Z"
+    }
+  },
+  "performance": [
+    {
+      "test": "Messos PDF Processing Speed",
+      "time": 280,
+      "success": false,
+      "benchmark": true
+    },
+    {
+      "test": "Memory Usage",
+      "heapUsed": 15,
+      "heapTotal": 31,
+      "benchmark": true
+    }
+  ],
+  "timestamp": "2025-07-20T19:51:58.533Z",
+  "version": "1.0.0"
+}

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Financial PDF Processing System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; text-align: center; }
+        .form-group { margin: 20px 0; }
+        input[type="file"] { margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 5px; width: 100%; }
+        button { background: #007bff; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; margin: 5px; }
+        button:hover { background: #0056b3; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏦 Financial PDF Processing System</h1>
+        <p>🎯 Universal system for portfolio statements, bank reports, and financial documents</p>
+        <p>📍 <strong>STATUS:</strong> Direct PDF parsing bypass enabled (v2.1)</p>
+        
+        <h2>🔧 Standard Processing (Text-based extraction)</h2>
+        <form action="/api/bulletproof-processor" method="post" enctype="multipart/form-data">
+            <input type="file" name="pdf" accept=".pdf" required>
+            <button type="submit">Process PDF (Standard)</button>
+        </form>
+        
+        <h2>🧠 Smart OCR Learning System</h2>
+        <p>Train the system with visual annotations to achieve 99.9% accuracy</p>
+        <a href="/smart-annotation" target="_blank">
+            <button type="button">Open Smart Annotation Interface</button>
+        </a>
+        
+        <h2>🎯 Interactive Annotation System</h2>
+        <p>Mark important data with colors and teach the system to recognize patterns</p>
+        <a href="/annotation" target="_blank">
+            <button type="button">Open Interactive Annotation</button>
+        </a>
+    </div>
+</body>
+</html>
+    

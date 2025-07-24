@@ -1,0 +1,160 @@
+{
+  "test_results": {
+    "metadata": {
+      "filename": "2. Messos  - 31.03.2025.pdf",
+      "total_processing_time": 5.025894,
+      "processor_version": "V5_AGGRESSIVE_100_ACCURACY",
+      "total_pages": 19,
+      "processed_at": "2025-07-14T19:48:46.801047",
+      "template_used": "corner_bank_portfolio_v1",
+      "extraction_mode": "AGGRESSIVE_BYPASS_ALL_LIMITATIONS"
+    },
+    "securities": [
+      {
+        "isin": "XS2993414619",
+        "name": "discounted NOTES",
+        "quantity": 97700.0,
+        "price": 97.7,
+        "market_value": null,
+        "percentage": 97.7,
+        "extraction_method": "forced_coordinate",
+        "template_used": "corner_bank_portfolio_v1",
+        "confidence_score": 0.75,
+        "validation_status": "incomplete_data"
+      },
+      {
+        "isin": "XS2530201644",
+        "name": null,
+        "quantity": 199080.0,
+        "price": 100.2,
+        "market_value": 256958.0,
+        "percentage": 99.25,
+        "extraction_method": "forced_coordinate",
+        "template_used": "corner_bank_portfolio_v1",
+        "confidence_score": 0.75,
+        "validation_status": "acceptable"
+      },
+      {
+        "isin": "XS2588105036",
+        "name": "Bonds",
+        "quantity": 1031.0,
+        "price": 31.03,
+        "market_value": null,
+        "percentage": 73.0,
+        "extraction_method": "forced_coordinate",
+        "template_used": "corner_bank_portfolio_v1",
+        "confidence_score": 0.75,
+        "validation_status": "incomplete_data"
+      },
+      {
+        "isin": "XS2665592833",
+        "name": "XS2692298537 Bonds",
+        "quantity": 32000.0,
+        "price": 106.92,
+        "market_value": 737748.0,
+        "percentage": 31.03,
+        "extraction_method": "forced_coordinate",
+        "template_used": "corner_bank_portfolio_v1",
+        "confidence_score": 1.0,
+        "validation_status": "validation_failed"
+      },
+      {
+        "isin": "XS2692298537",
+        "name": "Bonds Bonds",
+        "quantity": 32000.0,
+        "price": 106.92,
+        "market_value": 737748.0,
+        "percentage": 31.03,
+        "extraction_method": "forced_coordinate",
+        "template_used": "corner_bank_portfolio_v1",
+        "confidence_score": 1.0,
+        "validation_status": "validation_failed"
+      },
+      {
+        "isin": "XS2754416860",
+        "name": "Bonds",
+        "quantity": 1062.0,
+        "price": 100.2,
+        "market_value": 98202.0,
+        "percentage": 97.14,
+        "extraction_method": "forced_coordinate",
+        "template_used": "corner_bank_portfolio_v1",
+        "confidence_score": 1.0,
+        "validation_status": "validated"
+      },
+      {
+        "isin": "XS2761230684",
+        "name": null,
+        "quantity": 102506.0,
+        "price": 102.2448,
+        "market_value": 200288.0,
+        "percentage": 99.6285,
+        "extraction_method": "forced_coordinate",
+        "template_used": "corner_bank_portfolio_v1",
+        "confidence_score": 0.75,
+        "validation_status": "validation_failed"
+      },
+      {
+        "isin": "XS2736388732",
+        "name": "Bonds bonds,",
+        "quantity": 8833.0,
+        "price": 100.2,
+        "market_value": 256958.0,
+        "percentage": 99.25,
+        "extraction_method": "forced_coordinate",
+        "template_used": "corner_bank_portfolio_v1",
+        "confidence_score": 1.0,
+        "validation_status": "validation_failed"
+      },
+      {
+        "isin": "XS2782869916",
+        "name": "Bonds",
+        "quantity": 199131.0,
+        "price": 100.2,
+        "market_value": null,
+        "percentage": 99.5654,
+        "extraction_method": "forced_coordinate",
+        "template_used": "corner_bank_portfolio_v1",
+        "confidence_score": 0.75,
+        "validation_status": "incomplete_data"
+      }
+    ],
+    "portfolio_summary": {
+      "total_value": 2287902.0,
+      "total_securities": 9,
+      "currencies": [
+        "CHF",
+        "USD"
+      ],
+      "extraction_method": "aggressive",
+      "validation_summary": {
+        "validated": 1,
+        "acceptable": 1,
+        "emergency": 0,
+        "failed": 4
+      }
+    },
+    "extraction_stats": {
+      "total_spatial_items": 7475,
+      "securities_extracted": 9,
+      "validated_securities": 1,
+      "acceptable_securities": 1,
+      "failed_securities": 4,
+      "template_confidence": 1.0,
+      "aggressive_mode": true,
+      "bypassed_limitations": true,
+      "forced_extraction": false,
+      "average_confidence": 0.8611111111111112
+    }
+  },
+  "accuracy_analysis": {
+    "system_success_rate": 22.22222222222222,
+    "test_case_accuracy": 68.63947131397512,
+    "perfect_matches": 0,
+    "analyzed_count": 2,
+    "total_accuracy": 1.3727894262795024
+  },
+  "assessment": "MINIMAL SUCCESS - SOME EXTRACTION",
+  "success": false,
+  "test_timestamp": "20250714_194846"
+}

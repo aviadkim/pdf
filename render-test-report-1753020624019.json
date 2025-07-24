@@ -1,0 +1,71 @@
+{
+  "timestamp": "2025-07-20T14:10:24.014Z",
+  "service": "https://pdf-fzzi.onrender.com",
+  "results": {
+    "playwright": {
+      "homepage": {
+        "title": "Smart OCR Learning System",
+        "hasSmartOCR": true
+      },
+      "annotation": {
+        "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+        "hasAnnotationForm": true
+      },
+      "success": true
+    },
+    "puppeteer": {
+      "loadTime": 1472,
+      "consoleErrors": 1,
+      "apiAccessible": false,
+      "success": true
+    },
+    "renderLogs": {
+      "error": "Request failed with status code 404"
+    },
+    "endpoints": {
+      "Homepage": {
+        "status": 200,
+        "expected": 200,
+        "success": true,
+        "responseTime": "N/A"
+      },
+      "System Capabilities": {
+        "status": 404,
+        "expected": 200,
+        "success": false,
+        "error": "Request failed with status code 404"
+      },
+      "Mistral OCR (GET)": {
+        "status": 404,
+        "expected": 405,
+        "success": false,
+        "error": "Request failed with status code 404"
+      },
+      "Mistral OCR (POST)": {
+        "status": 404,
+        "expected": 400,
+        "success": false,
+        "error": "Request failed with status code 404"
+      },
+      "Ultra Accurate": {
+        "status": 404,
+        "expected": 405,
+        "success": false,
+        "error": "Request failed with status code 404"
+      },
+      "Phase2 Enhanced": {
+        "status": 404,
+        "expected": 405,
+        "success": false,
+        "error": "Request failed with status code 404"
+      },
+      "Smart Annotation": {
+        "status": 200,
+        "expected": 200,
+        "success": true,
+        "responseTime": "N/A"
+      }
+    },
+    "summary": {}
+  }
+}

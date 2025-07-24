@@ -1,0 +1,918 @@
+{
+  "metadata": {
+    "filename": "Messos - 31.03.2025.pdf",
+    "extractionTime": "2025-07-14T08:15:17.725Z",
+    "methods": [
+      "pdfParse"
+    ],
+    "pdfSize": 627670,
+    "totalElements": 8148,
+    "statistics": {
+      "totalWords": 4935,
+      "totalNumbers": 1332,
+      "totalSymbols": 2683,
+      "totalISINs": 39,
+      "totalAmounts": 1842,
+      "totalCurrencies": 15,
+      "totalDates": 150,
+      "ocrElements": 0,
+      "pythonElements": 0,
+      "methodsUsed": 1
+    }
+  },
+  "uniqueISINs": [
+    "XS2993414619",
+    "XS2530201644",
+    "XS2588105036",
+    "XS2665592833",
+    "XS2692298537",
+    "XS2754416860",
+    "XS2761230684",
+    "XS2736388732",
+    "XS2782869916",
+    "XS2824054402",
+    "XS2567543397",
+    "XS2110079584",
+    "XS2848820754",
+    "XS2829712830",
+    "XS2912278723",
+    "XS2381723902",
+    "XS2829752976",
+    "XS2953741100",
+    "XS2381717250",
+    "XS2481066111",
+    "XS2964611052",
+    "XS3035947103",
+    "LU2228214107",
+    "CH1269060229",
+    "XS0461497009",
+    "XS2746319610",
+    "CH0244767585",
+    "XS2519369867",
+    "XS2315191069",
+    "XS2792098779",
+    "XS2714429128",
+    "XS2105981117",
+    "XS2838389430",
+    "XS2631782468",
+    "XS1700087403",
+    "XS2594173093",
+    "XS2407295554",
+    "XS2252299883",
+    "XD0466760473"
+  ],
+  "largeAmounts": [
+    {
+      "amount": "41442181029",
+      "position": 123,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 647,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 1294,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 2265,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 3553,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 4736,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 5750,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 6848,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 9332,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 11851,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 14327,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 15698,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 16685,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 19143,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 21081,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 22099,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 22946,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 26378,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "41442181029",
+      "position": 28288,
+      "parsed": 41442181029,
+      "context": "A\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch /",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "143578751",
+      "position": 13550,
+      "parsed": 143578751,
+      "context": "N: XS3035947103  //  Valorn.: 143578751\nOrdinary Bonds  //  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "141235167",
+      "position": 13241,
+      "parsed": 141235167,
+      "context": "N: XS2964611052  //  Valorn.: 141235167\nZero Bonds  //  Matu",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "140610687",
+      "position": 6381,
+      "parsed": 140610687,
+      "context": "N: XS2993414619  //  Valorn.: 140610687\nMM secs discounted  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "140288136",
+      "position": 17705,
+      "parsed": 140288136,
+      "context": "N: XS2792098779  //  Valorn.: 140288136\nStructured Bonds  //",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "138874416",
+      "position": 12488,
+      "parsed": 138874416,
+      "context": "N: XS2829752976  //  Valorn.: 138874416\nOrdinary Bonds  //  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "138689613",
+      "position": 11264,
+      "parsed": 138689613,
+      "context": "N: XS2912278723  //  Valorn.: 138689613\nZero Bonds  //  Matu",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "138494467",
+      "position": 12620,
+      "parsed": 138494467,
+      "context": "N: XS2953741100  //  Valorn.: 138494467\nZero Bonds  //  Matu",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "136429245",
+      "position": 10637,
+      "parsed": 136429245,
+      "context": "N: XS2110079584  //  Valorn.: 136429245\nZero Bonds  //  Call",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "135968317",
+      "position": 18426,
+      "parsed": 135968317,
+      "context": "N: XS2838389430  //  Valorn.: 135968317\nStructured Bonds  //",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "135337661",
+      "position": 10108,
+      "parsed": 135337661,
+      "context": "N: XS2824054402  //  Valorn.: 135337661\nOrdinary Bonds  //  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "135116008",
+      "position": 10945,
+      "parsed": 135116008,
+      "context": "N: XS2848820754  //  Valorn.: 135116008\nZero Bonds  //  Matu",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "134736192",
+      "position": 10368,
+      "parsed": 134736192,
+      "context": "N: XS2567543397  //  Valorn.: 134736192\nOrdinary Bonds  //  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "134735316",
+      "position": 11058,
+      "parsed": 134735316,
+      "context": "N: XS2829712830  //  Valorn.: 134735316\nOrdinary Bonds  //  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "133393503",
+      "position": 15114,
+      "parsed": 133393503,
+      "context": "N: XS2746319610  //  Valorn.: 133393503\nOrdinary Bonds  //  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "132648671",
+      "position": 8424,
+      "parsed": 132648671,
+      "context": "N: XS2754416860  //  Valorn.: 132648671\nOrdinary Bonds  //  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "132544344",
+      "position": 9970,
+      "parsed": 132544344,
+      "context": "N: XS2782869916  //  Valorn.: 132544344\nOrdinary Bonds  //  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "131799640",
+      "position": 8945,
+      "parsed": 131799640,
+      "context": "N: XS2736388732  //  Valorn.: 131799640\nOrdinary Bonds  //  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "130738882",
+      "position": 18011,
+      "parsed": 130738882,
+      "context": "N: XS2714429128  //  Valorn.: 130738882\nStructured Bonds  //",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "130269069",
+      "position": 14867,
+      "parsed": 130269069,
+      "context": "N: XS0461497009  //  Valorn.: 130269069\nOrdinary Bonds  //  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "129157183",
+      "position": 8206,
+      "parsed": 129157183,
+      "context": "N: XS2692298537  //  Valorn.: 129157183\nOrdinary Bonds  //  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "128883267",
+      "position": 12834,
+      "parsed": 128883267,
+      "context": "N: XS2381717250  //  Valorn.: 128883267\nZero Bonds  //  Matu",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "128883231",
+      "position": 11575,
+      "parsed": 128883231,
+      "context": "N: XS2381723902  //  Valorn.: 128883231\nZero Bonds  //  Matu",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "128829182",
+      "position": 8045,
+      "parsed": 128829182,
+      "context": "N: XS2665592833  //  Valorn.: 128829182\nOrdinary Bonds  //  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "127708275",
+      "position": 18780,
+      "parsed": 127708275,
+      "context": "N: XS2631782468  //  Valorn.: 127708275\nStructured Bonds  //",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "126906022",
+      "position": 13975,
+      "parsed": 126906022,
+      "context": "N: CH1269060229  //  Valorn.: 126906022\nStructured Bonds  //",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "126294402",
+      "position": 13032,
+      "parsed": 126294402,
+      "context": "S2481066111    //  Val  orn.: 126294402\nZero Bonds  //  Matu",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "125443809",
+      "position": 19898,
+      "parsed": 125443809,
+      "context": "N: XS2594173093  //  Valorn.: 125443809\nStructured Bonds  //",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "125350273",
+      "position": 7388,
+      "parsed": 125350273,
+      "context": "N: XS2530201644  //  Valorn.: 125350273\nOrdinary Bonds  //  ",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "121050656",
+      "position": 17306,
+      "parsed": 121050656,
+      "context": "N: XS2519369867  //  Valorn.: 121050656\nOther convertible bo",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "114718568",
+      "position": 20257,
+      "parsed": 114718568,
+      "context": "N: XS2407295554  //  Valorn.: 114718568\nStructured Bonds  //",
+      "pattern": "\\b(\\d{4,})\\b"
+    },
+    {
+      "amount": "114118068",
+      "position": 18269,
+      "parsed": 114118068,
+      "context": " XS2105981117  //  Val  orn.: 114118068\nStructured Bonds  //",
+      "pattern": "\\b(\\d{4,})\\b"
+    }
+  ],
+  "sampleLines": [
+    {
+      "lineNumber": 3,
+      "text": "euioaeuioa",
+      "length": 10
+    },
+    {
+      "lineNumber": 4,
+      "text": "Valuation",
+      "length": 9
+    },
+    {
+      "lineNumber": 5,
+      "text": "asof 31.03.2025",
+      "length": 15
+    },
+    {
+      "lineNumber": 6,
+      "text": "Swift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA",
+      "length": 55
+    },
+    {
+      "lineNumber": 7,
+      "text": "Tel. +41 44 21810 20// Fax +41442181029// info@corner.ch // corner.ch",
+      "length": 69
+    },
+    {
+      "lineNumber": 8,
+      "text": "Cornèr Banca SA",
+      "length": 15
+    },
+    {
+      "lineNumber": 9,
+      "text": "// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland",
+      "length": 115
+    },
+    {
+      "lineNumber": 10,
+      "text": "MESSOS ENTERPRISES LTD.",
+      "length": 23
+    },
+    {
+      "lineNumber": 11,
+      "text": "366223",
+      "length": 6
+    },
+    {
+      "lineNumber": 12,
+      "text": "Client Number //",
+      "length": 16
+    },
+    {
+      "lineNumber": 13,
+      "text": "USD",
+      "length": 3
+    },
+    {
+      "lineNumber": 14,
+      "text": "Valuation currency //",
+      "length": 21
+    },
+    {
+      "lineNumber": 15,
+      "text": "Undefined",
+      "length": 9
+    },
+    {
+      "lineNumber": 16,
+      "text": "Investment profile //",
+      "length": 21
+    },
+    {
+      "lineNumber": 17,
+      "text": "Medium-high",
+      "length": 11
+    },
+    {
+      "lineNumber": 18,
+      "text": "Risk Profile //",
+      "length": 15
+    },
+    {
+      "lineNumber": 20,
+      "text": "Index",
+      "length": 5
+    },
+    {
+      "lineNumber": 21,
+      "text": "MESSOS ENTERPRISES LTD.",
+      "length": 23
+    },
+    {
+      "lineNumber": 22,
+      "text": "Valuation as of 31.03.2025",
+      "length": 26
+    },
+    {
+      "lineNumber": 23,
+      "text": "Client Number 366223",
+      "length": 20
+    },
+    {
+      "lineNumber": 24,
+      "text": "aeouiAEOUIaeouiAEOUI",
+      "length": 20
+    },
+    {
+      "lineNumber": 25,
+      "text": "Print date 01.04.2025 // Page I",
+      "length": 31
+    },
+    {
+      "lineNumber": 26,
+      "text": "Swift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA",
+      "length": 55
+    },
+    {
+      "lineNumber": 27,
+      "text": "Tel. +41 44 21810 20// Fax +41442181029// info@corner.ch // corner.ch",
+      "length": 69
+    },
+    {
+      "lineNumber": 28,
+      "text": "Cornèr Banca SA",
+      "length": 15
+    },
+    {
+      "lineNumber": 29,
+      "text": "// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland",
+      "length": 115
+    },
+    {
+      "lineNumber": 30,
+      "text": "1Summary",
+      "length": 8
+    },
+    {
+      "lineNumber": 31,
+      "text": "2Asset Allocation",
+      "length": 17
+    },
+    {
+      "lineNumber": 32,
+      "text": "2Assets and Liabilities Structure",
+      "length": 33
+    },
+    {
+      "lineNumber": 33,
+      "text": "3Currency allocation",
+      "length": 20
+    },
+    {
+      "lineNumber": 34,
+      "text": "4Performance Overview/Evolution",
+      "length": 31
+    },
+    {
+      "lineNumber": 35,
+      "text": "5Asset Listing",
+      "length": 14
+    },
+    {
+      "lineNumber": 36,
+      "text": "5Liquidity and liabilities",
+      "length": 26
+    },
+    {
+      "lineNumber": 37,
+      "text": "6Bonds",
+      "length": 6
+    },
+    {
+      "lineNumber": 38,
+      "text": "10Equities",
+      "length": 10
+    },
+    {
+      "lineNumber": 39,
+      "text": "11Structured products",
+      "length": 21
+    },
+    {
+      "lineNumber": 40,
+      "text": "13Other assets",
+      "length": 14
+    },
+    {
+      "lineNumber": 41,
+      "text": "14Expected Cash Flows (Overview)",
+      "length": 32
+    },
+    {
+      "lineNumber": 42,
+      "text": "15Glossary",
+      "length": 10
+    },
+    {
+      "lineNumber": 43,
+      "text": "17Notices and other information",
+      "length": 31
+    },
+    {
+      "lineNumber": 45,
+      "text": "Summary",
+      "length": 7
+    },
+    {
+      "lineNumber": 46,
+      "text": "MESSOS ENTERPRISES LTD.",
+      "length": 23
+    },
+    {
+      "lineNumber": 47,
+      "text": "Valuation as of 31.03.2025",
+      "length": 26
+    },
+    {
+      "lineNumber": 48,
+      "text": "Client Number 366223",
+      "length": 20
+    },
+    {
+      "lineNumber": 49,
+      "text": "aeouiAEOUIaeouiAEOUI",
+      "length": 20
+    },
+    {
+      "lineNumber": 50,
+      "text": "Swift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA",
+      "length": 55
+    },
+    {
+      "lineNumber": 51,
+      "text": "Tel. +41 44 21810 20// Fax +41442181029// info@corner.ch // corner.ch",
+      "length": 69
+    },
+    {
+      "lineNumber": 52,
+      "text": "Cornèr Banca SA",
+      "length": 15
+    },
+    {
+      "lineNumber": 53,
+      "text": "// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland",
+      "length": 115
+    },
+    {
+      "lineNumber": 54,
+      "text": "Note // Blocked guarantees",
+      "length": 26
+    },
+    {
+      "lineNumber": 55,
+      "text": "Other assets",
+      "length": 12
+    },
+    {
+      "lineNumber": 56,
+      "text": "Structured products",
+      "length": 19
+    },
+    {
+      "lineNumber": 57,
+      "text": "Equities",
+      "length": 8
+    },
+    {
+      "lineNumber": 58,
+      "text": "Liquidity",
+      "length": 9
+    },
+    {
+      "lineNumber": 59,
+      "text": "Bonds",
+      "length": 5
+    },
+    {
+      "lineNumber": 60,
+      "text": "Assets",
+      "length": 6
+    },
+    {
+      "lineNumber": 61,
+      "text": "CHF",
+      "length": 3
+    },
+    {
+      "lineNumber": 62,
+      "text": "USD",
+      "length": 3
+    },
+    {
+      "lineNumber": 63,
+      "text": "Currencies",
+      "length": 10
+    },
+    {
+      "lineNumber": 64,
+      "text": "AssetsCountervalue USDWeight in %",
+      "length": 33
+    },
+    {
+      "lineNumber": 65,
+      "text": "Liquidity103'7700.53%",
+      "length": 21
+    },
+    {
+      "lineNumber": 66,
+      "text": "Bonds12'363'97463.52%",
+      "length": 21
+    },
+    {
+      "lineNumber": 67,
+      "text": "Equities24'3190.12%",
+      "length": 19
+    },
+    {
+      "lineNumber": 68,
+      "text": "Mixed funds",
+      "length": 11
+    },
+    {
+      "lineNumber": 69,
+      "text": "Structured products6'946'23935.69%",
+      "length": 34
+    },
+    {
+      "lineNumber": 70,
+      "text": "Precious metals",
+      "length": 15
+    },
+    {
+      "lineNumber": 71,
+      "text": "Real Estate",
+      "length": 11
+    },
+    {
+      "lineNumber": 72,
+      "text": "Other assets26'1290.13%",
+      "length": 23
+    },
+    {
+      "lineNumber": 73,
+      "text": "Total19'464'431100.00%",
+      "length": 22
+    },
+    {
+      "lineNumber": 74,
+      "text": "Thereof accrued interest345'057",
+      "length": 31
+    },
+    {
+      "lineNumber": 75,
+      "text": "IncomeCountervalue USD",
+      "length": 22
+    },
+    {
+      "lineNumber": 76,
+      "text": "Collected84'967",
+      "length": 15
+    },
+    {
+      "lineNumber": 77,
+      "text": "Accruals345'057",
+      "length": 15
+    },
+    {
+      "lineNumber": 78,
+      "text": "CurrenciesValueExchange RatesCountervalue USDWeight in %",
+      "length": 56
+    },
+    {
+      "lineNumber": 79,
+      "text": "USD19'440'11299.88%",
+      "length": 19
+    },
+    {
+      "lineNumber": 80,
+      "text": "CHF21'4961.13130.883924'3190.12%",
+      "length": 32
+    },
+    {
+      "lineNumber": 81,
+      "text": "Total19'464'431100.00%",
+      "length": 22
+    },
+    {
+      "lineNumber": 82,
+      "text": "Print date 01.04.2025 // Page 1/17",
+      "length": 34
+    },
+    {
+      "lineNumber": 84,
+      "text": "Assets and Liabilities Structure",
+      "length": 32
+    },
+    {
+      "lineNumber": 85,
+      "text": "MESSOS ENTERPRISES LTD.",
+      "length": 23
+    },
+    {
+      "lineNumber": 86,
+      "text": "Valuation as of 31.03.2025",
+      "length": 26
+    },
+    {
+      "lineNumber": 87,
+      "text": "Client Number 366223",
+      "length": 20
+    },
+    {
+      "lineNumber": 88,
+      "text": "aeouiAEOUIaeouiAEOUI",
+      "length": 20
+    },
+    {
+      "lineNumber": 89,
+      "text": "Swift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA",
+      "length": 55
+    },
+    {
+      "lineNumber": 90,
+      "text": "Tel. +41 44 21810 20// Fax +41442181029// info@corner.ch // corner.ch",
+      "length": 69
+    },
+    {
+      "lineNumber": 91,
+      "text": "Cornèr Banca SA",
+      "length": 15
+    },
+    {
+      "lineNumber": 92,
+      "text": "// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland",
+      "length": 115
+    },
+    {
+      "lineNumber": 93,
+      "text": "Asset AllocationCountervalue USDWeight",
+      "length": 38
+    },
+    {
+      "lineNumber": 94,
+      "text": "Liquidity103'7700.53%",
+      "length": 21
+    },
+    {
+      "lineNumber": 95,
+      "text": "Cash accounts6'0700.03%",
+      "length": 23
+    },
+    {
+      "lineNumber": 96,
+      "text": "Money Market97'7000.50%",
+      "length": 23
+    },
+    {
+      "lineNumber": 97,
+      "text": "Fixed deposits and fiduciaries",
+      "length": 30
+    },
+    {
+      "lineNumber": 98,
+      "text": "Bonds12'363'97463.52%",
+      "length": 21
+    },
+    {
+      "lineNumber": 99,
+      "text": "Bonds11'002'50856.53%",
+      "length": 21
+    },
+    {
+      "lineNumber": 100,
+      "text": "Bond funds / certificat  es1'  361'4666.99%",
+      "length": 43
+    },
+    {
+      "lineNumber": 101,
+      "text": "Convertibles",
+      "length": 12
+    },
+    {
+      "lineNumber": 102,
+      "text": "Equities24'3190.12%",
+      "length": 19
+    },
+    {
+      "lineNumber": 103,
+      "text": "Equities24'3190.12%",
+      "length": 19
+    },
+    {
+      "lineNumber": 104,
+      "text": "Equity funds/certificates",
+      "length": 25
+    },
+    {
+      "lineNumber": 105,
+      "text": "Mixed funds",
+      "length": 11
+    }
+  ]
+}

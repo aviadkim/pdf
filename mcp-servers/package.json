@@ -1,0 +1,48 @@
+{
+  "name": "claude-mcp-servers",
+  "version": "1.0.0",
+  "description": "Comprehensive collection of 15 MCP servers for Claude Code - Docker, Deployment, Testing, Security, File Operations, Code Analysis, Task Management, and Database tools",
+  "type": "module",
+  "scripts": {
+    "install-all": "npm install",
+    "test": "echo \"Testing all MCP servers...\" && npm run test:all",
+    "test:all": "npm run test:docker && npm run test:render && npm run test:playwright && npm run test:github && npm run test:semgrep && npm run test:filesystem && npm run test:filescope && npm run test:repomix && npm run test:tasks && npm run test:fileops && npm run test:quality && npm run test:process && npm run test:puppeteer && npm run test:database",
+    "test:docker": "node docker-mcp-server.js --test",
+    "test:render": "node deployment-mcp-server.js --test", 
+    "test:playwright": "node playwright-mcp-server.js --test",
+    "test:github": "node github-mcp-server.js --test",
+    "test:semgrep": "node semgrep-mcp-server.js --test",
+    "test:filesystem": "node filesystem-mcp-server.js --test",
+    "test:filescope": "node filescope-mcp-server.js --test",
+    "test:repomix": "node repomix-mcp-server.js --test",
+    "test:tasks": "node task-management-mcp-server.js --test",
+    "test:fileops": "node advanced-file-ops-mcp-server.js --test",
+    "test:quality": "node code-quality-mcp-server.js --test",
+    "test:process": "node process-management-mcp-server.js --test",
+    "test:puppeteer": "node puppeteer-mcp-server.js --test",
+    "test:database": "node database-mcp-server.js --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dockerode": "^4.0.2",
+    "playwright": "^1.40.0",
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0",
+    "tar": "^7.0.0",
+    "archiver": "^7.0.0",
+    "chokidar": "^3.5.3",
+    "mime-types": "^2.1.35",
+    "fast-glob": "^3.3.2",
+    "puppeteer": "^21.0.0",
+    "sqlite3": "^5.1.0",
+    "mysql2": "^3.6.0",
+    "pg": "^8.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["mcp", "claude", "docker", "playwright", "render", "vercel", "filescope", "repomix", "task-management", "file-operations", "code-quality", "process-management", "codebase-analysis", "development-tools", "puppeteer", "database", "sql", "web-scraping", "pdf-generation"]
+}

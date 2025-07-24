@@ -1,0 +1,435 @@
+{
+  "success": true,
+  "results": {
+    "success": true,
+    "documentId": "7c99da02-0cda-4a7c-bcf3-d9a7afb57ea8",
+    "pages": [
+      {
+        "page": 1,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 2,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 3,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 4,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 5,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 6,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 7,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 8,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 9,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 10,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 11,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 12,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 13,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 14,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 15,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 16,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 17,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 18,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      },
+      {
+        "page": 19,
+        "text": "",
+        "method": "pdf-image-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      }
+    ],
+    "pageCount": 19,
+    "ocrResults": [
+      {
+        "page": 1,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[0]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_1.1.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 2,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[1]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_2.2.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 3,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[2]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_3.3.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 4,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[3]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_4.4.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 5,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[4]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_5.5.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 6,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[5]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_6.6.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 7,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[6]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_7.7.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 8,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[7]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_8.8.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 9,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[8]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_9.9.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 10,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[9]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_10.10.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 11,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[10]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_11.11.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 12,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[11]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_12.12.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 13,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[12]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_13.13.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 14,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[13]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_14.14.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 15,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[14]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_15.15.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 16,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[15]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_16.16.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 17,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[16]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_17.17.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 18,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[17]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_18.18.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      },
+      {
+        "page": 19,
+        "text": "",
+        "confidence": 0.1,
+        "method": "scanned-pdf-vision-ocr-failed",
+        "patterns": {
+          "isins": [],
+          "currencies": [],
+          "dates": [],
+          "percentages": [],
+          "accounts": []
+        },
+        "error": "Scanned PDF Vision OCR failed: Could not execute GraphicsMagick/ImageMagick: gm \"convert\" \"-density\" \"300x300\" \"-quality\" \"75\" \"-[18]\" \"-units\" \"PixelsPerInch\" \"-resize\" \"1200x1600!\" \"-compress\" \"jpeg\" \"/app/temp_mistral_ocr/page_19.19.png\" this most likely means the gm/convert binaries can't be found",
+        "securities": []
+      }
+    ],
+    "accuracy": 18,
+    "patternsUsed": 19,
+    "suggestedAnnotations": [],
+    "processingMethod": "standard",
+    "timestamp": "2025-07-21T20:55:15.499Z"
+  }
+}

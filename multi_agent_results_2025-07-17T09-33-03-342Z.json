@@ -1,0 +1,2017 @@
+{
+  "success": true,
+  "method": "multi_agent_collaboration",
+  "results": {
+    "document": {
+      "documentType": "portfolio_statement",
+      "institution": "DOMINION BANK",
+      "currency": "USD",
+      "language": "en",
+      "region": "CH",
+      "sections": [],
+      "confidence": 0.6
+    },
+    "securities": [
+      {
+        "isin": "XS2993414619",
+        "name": "ISIN:",
+        "value": 687,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2530201644",
+        "name": "ISIN:",
+        "value": 350,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2588105036",
+        "name": "ISIN:",
+        "value": 810,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2665592833",
+        "name": "ISIN:",
+        "value": 829,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2692298537",
+        "name": "ISIN:",
+        "value": 853,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2754416860",
+        "name": "ISIN:",
+        "value": 686,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2761230684",
+        "name": "ISIN:",
+        "value": 288,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2736388732",
+        "name": "ISIN:",
+        "value": 873,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2782869916",
+        "name": "ISIN:",
+        "value": 991,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2824054402",
+        "name": "ISIN:",
+        "value": 661,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2567543397",
+        "name": "ISIN:",
+        "value": 754,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2110079584",
+        "name": "ISIN:",
+        "value": 958,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2848820754",
+        "name": "ISIN:",
+        "value": 882,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2829712830",
+        "name": "ISIN:",
+        "value": 971,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2912278723",
+        "name": "ISIN:",
+        "value": 872,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2381723902",
+        "name": "ISIN:",
+        "value": 883,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2829752976",
+        "name": "ISIN:",
+        "value": 975,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2953741100",
+        "name": "ISIN:",
+        "value": 494,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2381717250",
+        "name": "ISIN:",
+        "value": 883,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2481066111",
+        "name": "ISIN:",
+        "value": 611,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2964611052",
+        "name": "ISIN:",
+        "value": 461,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS3035947103",
+        "name": "ISIN:",
+        "value": 751,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "LU2228214107",
+        "name": "ISIN:",
+        "value": 828,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "CH1269060229",
+        "name": "ISIN:",
+        "value": 906,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS0461497009",
+        "name": "ISIN:",
+        "value": 700,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2746319610",
+        "name": "ISIN:",
+        "value": 961,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "CH0244767585",
+        "name": "ISIN:",
+        "value": 767,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2519369867",
+        "name": "ISIN:",
+        "value": 986,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2315191069",
+        "name": "ISIN:",
+        "value": 998,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2792098779",
+        "name": "ISIN:",
+        "value": 877,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2714429128",
+        "name": "ISIN:",
+        "value": 912,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2105981117",
+        "name": "ISIN:",
+        "value": 598,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2838389430",
+        "name": "ISIN:",
+        "value": 968,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2631782468",
+        "name": "ISIN:",
+        "value": 708,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS1700087403",
+        "name": "ISIN:",
+        "value": 771,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2594173093",
+        "name": "ISIN:",
+        "value": 809,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2407295554",
+        "name": "ISIN:",
+        "value": 729,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XS2252299883",
+        "name": "ISIN:",
+        "value": 988,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      },
+      {
+        "isin": "XD0466760473",
+        "name": "ISIN:",
+        "value": 760,
+        "currency": "USD",
+        "source": "line_extraction",
+        "confidence": 0.9999999999999999,
+        "validationNotes": [
+          "Valid ISIN format",
+          "Positive value",
+          "Valid currency"
+        ]
+      }
+    ],
+    "totals": {
+      "extractedValue": 30789,
+      "mentionedTotals": [],
+      "confidence": 0.5
+    },
+    "metadata": {
+      "processingTime": 1752744783306,
+      "agentsUsed": [
+        "DocumentAnalyzer",
+        "TableExtractor",
+        "FinancialParser",
+        "ValueValidator",
+        "Orchestrator"
+      ],
+      "tablesFound": 39,
+      "securitiesFound": 39,
+      "validationConfidence": 0.5
+    },
+    "accuracy": 65
+  },
+  "agentReports": {
+    "documentAnalysis": {
+      "documentType": "portfolio_statement",
+      "institution": "DOMINION BANK",
+      "currency": "USD",
+      "language": "en",
+      "region": "CH",
+      "sections": [],
+      "confidence": 0.6
+    },
+    "tableData": [
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2993414619  //  Valorn.: 140610687",
+        "lineNumber": 251,
+        "data": {
+          "isin": "XS2993414619",
+          "numbers": [
+            "299",
+            "341",
+            "461",
+            "9",
+            "140",
+            "610",
+            "687"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2530201644  //  Valorn.: 125350273",
+        "lineNumber": 292,
+        "data": {
+          "isin": "XS2530201644",
+          "numbers": [
+            "253",
+            "020",
+            "164",
+            "4",
+            "125",
+            "350",
+            "273"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2588105036  //  Valorn.: 112286204",
+        "lineNumber": 310,
+        "data": {
+          "isin": "XS2588105036",
+          "numbers": [
+            "258",
+            "810",
+            "503",
+            "6",
+            "112",
+            "286",
+            "204"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2665592833  //  Valorn.: 128829182",
+        "lineNumber": 323,
+        "data": {
+          "isin": "XS2665592833",
+          "numbers": [
+            "266",
+            "559",
+            "283",
+            "3",
+            "128",
+            "829",
+            "182"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2692298537  //  Valorn.: 129157183",
+        "lineNumber": 330,
+        "data": {
+          "isin": "XS2692298537",
+          "numbers": [
+            "269",
+            "229",
+            "853",
+            "7",
+            "129",
+            "157",
+            "183"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2754416860  //  Valorn.: 132648671",
+        "lineNumber": 340,
+        "data": {
+          "isin": "XS2754416860",
+          "numbers": [
+            "275",
+            "441",
+            "686",
+            "0",
+            "132",
+            "648",
+            "671"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2761230684  //  Valorn.: 112288215",
+        "lineNumber": 352,
+        "data": {
+          "isin": "XS2761230684",
+          "numbers": [
+            "276",
+            "123",
+            "068",
+            "4",
+            "112",
+            "288",
+            "215"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2736388732  //  Valorn.: 131799640",
+        "lineNumber": 364,
+        "data": {
+          "isin": "XS2736388732",
+          "numbers": [
+            "273",
+            "638",
+            "873",
+            "2",
+            "131",
+            "799",
+            "640"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2782869916  //  Valorn.: 132544344",
+        "lineNumber": 410,
+        "data": {
+          "isin": "XS2782869916",
+          "numbers": [
+            "278",
+            "286",
+            "991",
+            "6",
+            "132",
+            "544",
+            "344"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2824054402  //  Valorn.: 135337661",
+        "lineNumber": 417,
+        "data": {
+          "isin": "XS2824054402",
+          "numbers": [
+            "282",
+            "405",
+            "440",
+            "2",
+            "135",
+            "337",
+            "661"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2567543397  //  Valorn.: 134736192",
+        "lineNumber": 429,
+        "data": {
+          "isin": "XS2567543397",
+          "numbers": [
+            "256",
+            "754",
+            "339",
+            "7",
+            "134",
+            "736",
+            "192"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2110079584  //  Valorn.: 136429245",
+        "lineNumber": 441,
+        "data": {
+          "isin": "XS2110079584",
+          "numbers": [
+            "211",
+            "007",
+            "958",
+            "4",
+            "136",
+            "429",
+            "245"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2848820754  //  Valorn.: 135116008",
+        "lineNumber": 456,
+        "data": {
+          "isin": "XS2848820754",
+          "numbers": [
+            "284",
+            "882",
+            "075",
+            "4",
+            "135",
+            "116",
+            "008"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2829712830  //  Valorn.: 134735316",
+        "lineNumber": 462,
+        "data": {
+          "isin": "XS2829712830",
+          "numbers": [
+            "282",
+            "971",
+            "283",
+            "0",
+            "134",
+            "735",
+            "316"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2912278723  //  Valorn.: 138689613",
+        "lineNumber": 472,
+        "data": {
+          "isin": "XS2912278723",
+          "numbers": [
+            "291",
+            "227",
+            "872",
+            "3",
+            "138",
+            "689",
+            "613"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2381723902  //  Valorn.: 128883231",
+        "lineNumber": 487,
+        "data": {
+          "isin": "XS2381723902",
+          "numbers": [
+            "238",
+            "172",
+            "390",
+            "2",
+            "128",
+            "883",
+            "231"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2829752976  //  Valorn.: 138874416",
+        "lineNumber": 527,
+        "data": {
+          "isin": "XS2829752976",
+          "numbers": [
+            "282",
+            "975",
+            "297",
+            "6",
+            "138",
+            "874",
+            "416"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2953741100  //  Valorn.: 138494467",
+        "lineNumber": 533,
+        "data": {
+          "isin": "XS2953741100",
+          "numbers": [
+            "295",
+            "374",
+            "110",
+            "0",
+            "138",
+            "494",
+            "467"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2381717250  //  Valorn.: 128883267",
+        "lineNumber": 543,
+        "data": {
+          "isin": "XS2381717250",
+          "numbers": [
+            "238",
+            "171",
+            "725",
+            "0",
+            "128",
+            "883",
+            "267"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2481066111    //  Val  orn.: 126294402",
+        "lineNumber": 553,
+        "data": {
+          "isin": "XS2481066111",
+          "numbers": [
+            "248",
+            "106",
+            "611",
+            "1",
+            "126",
+            "294",
+            "402"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2964611052  //  Valorn.: 141235167",
+        "lineNumber": 563,
+        "data": {
+          "isin": "XS2964611052",
+          "numbers": [
+            "296",
+            "461",
+            "105",
+            "2",
+            "141",
+            "235",
+            "167"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS3035947103  //  Valorn.: 143578751",
+        "lineNumber": 578,
+        "data": {
+          "isin": "XS3035947103",
+          "numbers": [
+            "303",
+            "594",
+            "710",
+            "3",
+            "143",
+            "578",
+            "751"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: LU2228214107  //  Valorn.: 57282891",
+        "lineNumber": 589,
+        "data": {
+          "isin": "LU2228214107",
+          "numbers": [
+            "222",
+            "821",
+            "410",
+            "7",
+            "572",
+            "828",
+            "91"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: CH1269060229  //  Valorn.: 126906022",
+        "lineNumber": 601,
+        "data": {
+          "isin": "CH1269060229",
+          "numbers": [
+            "126",
+            "906",
+            "022",
+            "9",
+            "126",
+            "906",
+            "022"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS0461497009  //  Valorn.: 130269069",
+        "lineNumber": 638,
+        "data": {
+          "isin": "XS0461497009",
+          "numbers": [
+            "046",
+            "149",
+            "700",
+            "9",
+            "130",
+            "269",
+            "069"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2746319610  //  Valorn.: 133393503",
+        "lineNumber": 650,
+        "data": {
+          "isin": "XS2746319610",
+          "numbers": [
+            "274",
+            "631",
+            "961",
+            "0",
+            "133",
+            "393",
+            "503"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: CH0244767585  //  Valorn.: 24476758",
+        "lineNumber": 698,
+        "data": {
+          "isin": "CH0244767585",
+          "numbers": [
+            "024",
+            "476",
+            "758",
+            "5",
+            "244",
+            "767",
+            "58"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2519369867  //  Valorn.: 121050656",
+        "lineNumber": 747,
+        "data": {
+          "isin": "XS2519369867",
+          "numbers": [
+            "251",
+            "936",
+            "986",
+            "7",
+            "121",
+            "050",
+            "656"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2315191069  //  Valorn.: 111918998",
+        "lineNumber": 753,
+        "data": {
+          "isin": "XS2315191069",
+          "numbers": [
+            "231",
+            "519",
+            "106",
+            "9",
+            "111",
+            "918",
+            "998"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2792098779  //  Valorn.: 140288136",
+        "lineNumber": 765,
+        "data": {
+          "isin": "XS2792098779",
+          "numbers": [
+            "279",
+            "209",
+            "877",
+            "9",
+            "140",
+            "288",
+            "136"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2714429128  //  Valorn.: 130738882",
+        "lineNumber": 781,
+        "data": {
+          "isin": "XS2714429128",
+          "numbers": [
+            "271",
+            "442",
+            "912",
+            "8",
+            "130",
+            "738",
+            "882"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2105981117  //  Val  orn.: 114118068",
+        "lineNumber": 794,
+        "data": {
+          "isin": "XS2105981117",
+          "numbers": [
+            "210",
+            "598",
+            "111",
+            "7",
+            "114",
+            "118",
+            "068"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2838389430  //  Valorn.: 135968317",
+        "lineNumber": 801,
+        "data": {
+          "isin": "XS2838389430",
+          "numbers": [
+            "283",
+            "838",
+            "943",
+            "0",
+            "135",
+            "968",
+            "317"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2631782468  //  Valorn.: 127708275",
+        "lineNumber": 819,
+        "data": {
+          "isin": "XS2631782468",
+          "numbers": [
+            "263",
+            "178",
+            "246",
+            "8",
+            "127",
+            "708",
+            "275"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS1700087403  //  Valorn.: 39877135",
+        "lineNumber": 861,
+        "data": {
+          "isin": "XS1700087403",
+          "numbers": [
+            "170",
+            "008",
+            "740",
+            "3",
+            "398",
+            "771",
+            "35"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2594173093  //  Valorn.: 125443809",
+        "lineNumber": 867,
+        "data": {
+          "isin": "XS2594173093",
+          "numbers": [
+            "259",
+            "417",
+            "309",
+            "3",
+            "125",
+            "443",
+            "809"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2407295554  //  Valorn.: 114718568",
+        "lineNumber": 885,
+        "data": {
+          "isin": "XS2407295554",
+          "numbers": [
+            "240",
+            "729",
+            "555",
+            "4",
+            "114",
+            "718",
+            "568"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XS2252299883  //  Valorn.: 58001077",
+        "lineNumber": 898,
+        "data": {
+          "isin": "XS2252299883",
+          "numbers": [
+            "225",
+            "229",
+            "988",
+            "3",
+            "580",
+            "010",
+            "77"
+          ]
+        }
+      },
+      {
+        "type": "security_row",
+        "content": "ISIN: XD0466760473  //  Valorn.: 46676047",
+        "lineNumber": 946,
+        "data": {
+          "isin": "XD0466760473",
+          "numbers": [
+            "046",
+            "676",
+            "047",
+            "3",
+            "466",
+            "760",
+            "47"
+          ]
+        }
+      }
+    ],
+    "financialData": {
+      "securities": [
+        {
+          "isin": "XS2993414619",
+          "name": "ISIN:",
+          "value": 687,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2530201644",
+          "name": "ISIN:",
+          "value": 350,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2588105036",
+          "name": "ISIN:",
+          "value": 810,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2665592833",
+          "name": "ISIN:",
+          "value": 829,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2692298537",
+          "name": "ISIN:",
+          "value": 853,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2754416860",
+          "name": "ISIN:",
+          "value": 686,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2761230684",
+          "name": "ISIN:",
+          "value": 288,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2736388732",
+          "name": "ISIN:",
+          "value": 873,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2782869916",
+          "name": "ISIN:",
+          "value": 991,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2824054402",
+          "name": "ISIN:",
+          "value": 661,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2567543397",
+          "name": "ISIN:",
+          "value": 754,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2110079584",
+          "name": "ISIN:",
+          "value": 958,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2848820754",
+          "name": "ISIN:",
+          "value": 882,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2829712830",
+          "name": "ISIN:",
+          "value": 971,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2912278723",
+          "name": "ISIN:",
+          "value": 872,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2381723902",
+          "name": "ISIN:",
+          "value": 883,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2829752976",
+          "name": "ISIN:",
+          "value": 975,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2953741100",
+          "name": "ISIN:",
+          "value": 494,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2381717250",
+          "name": "ISIN:",
+          "value": 883,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2481066111",
+          "name": "ISIN:",
+          "value": 611,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2964611052",
+          "name": "ISIN:",
+          "value": 461,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS3035947103",
+          "name": "ISIN:",
+          "value": 751,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "LU2228214107",
+          "name": "ISIN:",
+          "value": 828,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "CH1269060229",
+          "name": "ISIN:",
+          "value": 906,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS0461497009",
+          "name": "ISIN:",
+          "value": 700,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2746319610",
+          "name": "ISIN:",
+          "value": 961,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "CH0244767585",
+          "name": "ISIN:",
+          "value": 767,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2519369867",
+          "name": "ISIN:",
+          "value": 986,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2315191069",
+          "name": "ISIN:",
+          "value": 998,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2792098779",
+          "name": "ISIN:",
+          "value": 877,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2714429128",
+          "name": "ISIN:",
+          "value": 912,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2105981117",
+          "name": "ISIN:",
+          "value": 598,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2838389430",
+          "name": "ISIN:",
+          "value": 968,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2631782468",
+          "name": "ISIN:",
+          "value": 708,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS1700087403",
+          "name": "ISIN:",
+          "value": 771,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2594173093",
+          "name": "ISIN:",
+          "value": 809,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2407295554",
+          "name": "ISIN:",
+          "value": 729,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XS2252299883",
+          "name": "ISIN:",
+          "value": 988,
+          "currency": "USD",
+          "source": "line_extraction"
+        },
+        {
+          "isin": "XD0466760473",
+          "name": "ISIN:",
+          "value": 760,
+          "currency": "USD",
+          "source": "line_extraction"
+        }
+      ],
+      "totalValue": 30789,
+      "currencies": [
+        "USD"
+      ]
+    },
+    "validatedData": {
+      "securities": [
+        {
+          "isin": "XS2993414619",
+          "name": "ISIN:",
+          "value": 687,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2530201644",
+          "name": "ISIN:",
+          "value": 350,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2588105036",
+          "name": "ISIN:",
+          "value": 810,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2665592833",
+          "name": "ISIN:",
+          "value": 829,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2692298537",
+          "name": "ISIN:",
+          "value": 853,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2754416860",
+          "name": "ISIN:",
+          "value": 686,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2761230684",
+          "name": "ISIN:",
+          "value": 288,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2736388732",
+          "name": "ISIN:",
+          "value": 873,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2782869916",
+          "name": "ISIN:",
+          "value": 991,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2824054402",
+          "name": "ISIN:",
+          "value": 661,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2567543397",
+          "name": "ISIN:",
+          "value": 754,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2110079584",
+          "name": "ISIN:",
+          "value": 958,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2848820754",
+          "name": "ISIN:",
+          "value": 882,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2829712830",
+          "name": "ISIN:",
+          "value": 971,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2912278723",
+          "name": "ISIN:",
+          "value": 872,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2381723902",
+          "name": "ISIN:",
+          "value": 883,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2829752976",
+          "name": "ISIN:",
+          "value": 975,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2953741100",
+          "name": "ISIN:",
+          "value": 494,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2381717250",
+          "name": "ISIN:",
+          "value": 883,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2481066111",
+          "name": "ISIN:",
+          "value": 611,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2964611052",
+          "name": "ISIN:",
+          "value": 461,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS3035947103",
+          "name": "ISIN:",
+          "value": 751,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "LU2228214107",
+          "name": "ISIN:",
+          "value": 828,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "CH1269060229",
+          "name": "ISIN:",
+          "value": 906,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS0461497009",
+          "name": "ISIN:",
+          "value": 700,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2746319610",
+          "name": "ISIN:",
+          "value": 961,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "CH0244767585",
+          "name": "ISIN:",
+          "value": 767,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2519369867",
+          "name": "ISIN:",
+          "value": 986,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2315191069",
+          "name": "ISIN:",
+          "value": 998,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2792098779",
+          "name": "ISIN:",
+          "value": 877,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2714429128",
+          "name": "ISIN:",
+          "value": 912,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2105981117",
+          "name": "ISIN:",
+          "value": 598,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2838389430",
+          "name": "ISIN:",
+          "value": 968,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2631782468",
+          "name": "ISIN:",
+          "value": 708,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS1700087403",
+          "name": "ISIN:",
+          "value": 771,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2594173093",
+          "name": "ISIN:",
+          "value": 809,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2407295554",
+          "name": "ISIN:",
+          "value": 729,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XS2252299883",
+          "name": "ISIN:",
+          "value": 988,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        },
+        {
+          "isin": "XD0466760473",
+          "name": "ISIN:",
+          "value": 760,
+          "currency": "USD",
+          "source": "line_extraction",
+          "confidence": 0.9999999999999999,
+          "validationNotes": [
+            "Valid ISIN format",
+            "Positive value",
+            "Valid currency"
+          ]
+        }
+      ],
+      "totalValue": 30789,
+      "validation": {
+        "totalValue": 30789,
+        "mentionedTotals": [],
+        "confidence": 0.5
+      }
+    }
+  }
+}

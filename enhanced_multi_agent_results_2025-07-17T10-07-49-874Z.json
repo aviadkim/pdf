@@ -1,0 +1,964 @@
+{
+  "success": true,
+  "method": "enhanced_multi_agent_100_accuracy",
+  "results": {
+    "securities": [
+      {
+        "isin": "1000100",
+        "value": 52002,
+        "name": "YTM: 5.53 PRC: 5.00 100.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "1000106",
+        "value": 7.11,
+        "name": "YTM: -1.44 PRC: 5.00 100.",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "1000505",
+        "value": 19.12,
+        "name": "Maturity: 19.12.2034 PRC: 5.00 100.2000101.",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "2000100",
+        "value": 2.35,
+        "name": "USD90'000 2.35% 0.46% GLOBAL 100.",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "2000101",
+        "value": 19.12,
+        "name": "Maturity: 19.12.2034 PRC: 5.00 100.",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "2000102",
+        "value": 47,
+        "name": "YTM: 6.89 PRC: 5.00 100.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "2000103",
+        "value": 301,
+        "name": "YTM: 5.04 PRC: 5.00 100.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "2100193",
+        "value": 99.06,
+        "name": "PRC: 5.0 Price verified 99.059296.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "2448102",
+        "value": 47,
+        "name": "YTM: 6.89 PRC: 5.00 100.2000102.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "2500256",
+        "value": 2031,
+        "name": "20.12.2031 Days: PRC: 5.00 100.200099.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "4900488",
+        "value": 0.28,
+        "name": "USD500'000 0.28% 2.51% RABOBANK 98.018197.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "5243100",
+        "value": 4.36,
+        "name": "4.36% 2.62% NATWEST GROUP 100.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "5654199",
+        "value": 5654199,
+        "name": "YTM: 4.82 PRC: 5.00 100.200099.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "6000342",
+        "value": 3,
+        "name": "USD350'000 1.14% 1.76% VRN 100.623797.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "6285200",
+        "value": 1.03,
+        "name": "USD200'000 0.47% 1.03% VRN 100.200099.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "7200510",
+        "value": 4.36,
+        "name": "4.36% 2.62% NATWEST GROUP 100.5243100.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "7400484",
+        "value": 0.21,
+        "name": "verified USD500'000 -0.21% 2.49% 100.524396.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "7500146",
+        "value": 11.12,
+        "name": "YTM: 5.28 PRC: 5.00 99.198097.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "7800115",
+        "value": 0.59,
+        "name": "5.00 USD2'581.79 0.00% 0.59% 81.530444.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "9200737",
+        "value": 7.11,
+        "name": "YTM: -1.44 PRC: 5.00 100.1000106.",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "9900478",
+        "value": 301,
+        "name": "YTM: 5.04 PRC: 5.00 100.2000103.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "111918998",
+        "value": 2.58,
+        "name": "0.22% 2.58% ISIN: XS2315191069 Valorn.:",
+        "source": "universal",
+        "confidence": 1,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "112286204",
+        "value": 22.08,
+        "name": "NOTES 23-22.08.28 ISIN: XS2588105036 Valorn.:",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "112288215",
+        "value": 2.24,
+        "name": "2.24% 0.53% ISIN: XS2761230684 Valorn.:",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "114118068",
+        "value": 114118068,
+        "name": "NAT ISIN: XS2105981117 Val orn.:",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "125350273",
+        "value": 1.02,
+        "name": "0.25% 1.02% ISIN: XS2530201644 Valorn.:",
+        "source": "universal",
+        "confidence": 1,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "125443809",
+        "value": 125443809,
+        "name": "-1.90% 0.99% ISIN: XS2594173093 Valorn.:",
+        "source": "universal",
+        "confidence": 1,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "126294402",
+        "value": 0.25,
+        "name": "0.25% ISIN: XS2481066111 Val orn.:",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "126906022",
+        "value": 126906022,
+        "name": "BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28 ISIN",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "127708275",
+        "value": 4625,
+        "name": "VRN 4,625% ISIN: XS2631782468 Valorn.:",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "128829182",
+        "value": 2023,
+        "name": "NOTES 2023-18.09.2028 ISIN: XS2665592833 Valorn.:",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "128883267",
+        "value": 3.7,
+        "name": "3.70% 2.60% ISIN: XS2381717250 Valorn.:",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "129157183",
+        "value": 2.26,
+        "name": "2.26% 3.79% ISIN: XS2692298537 Valorn.:",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "130738882",
+        "value": 2029,
+        "name": "REG-S VRN ISIN: XS2714429128 Valorn.:",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "131799640",
+        "value": 1.32,
+        "name": "-2.58% 1.32% ISIN: XS2736388732 Valorn.:",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "132648671",
+        "value": 1.16,
+        "name": "1.16% 0.50% ISIN: XS2754416860 Valorn.:",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "134735316",
+        "value": 1.16,
+        "name": "1.16% 0.47% ISIN: XS2829712830 Valorn.:",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "134736192",
+        "value": 1.26,
+        "name": "1.26% 13.21% ISIN: XS2567543397 Valorn.:",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "135116008",
+        "value": 1.08,
+        "name": "NOTES 2024-01.08.34 ISIN: XS2848820754 Valorn.:",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "135337661",
+        "value": 1.81,
+        "name": "1.81% 2.46% ISIN: XS2824054402 Valorn.:",
+        "source": "universal",
+        "confidence": 1,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "135968317",
+        "value": 0.35,
+        "name": "0.35% 8.34% ISIN: XS2838389430 Valorn.:",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "136429245",
+        "value": 1.5,
+        "name": "1.50% 5.66% ISIN: XS2110079584 Valorn.:",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "138494467",
+        "value": 138494467,
+        "name": "1.90% 0.75% ISIN: XS2953741100 Valorn.:",
+        "source": "universal",
+        "confidence": 1,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "138689613",
+        "value": 1.92,
+        "name": "1.92% 1.02% ISIN: XS2912278723 Valorn.:",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "140288136",
+        "value": 5.93,
+        "name": "-1.83% 5.93% ISIN: XS2792098779 Valorn.:",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "141235167",
+        "value": 0.72,
+        "name": "0.72% 7.61% ISIN: XS2964611052 Valorn.:",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "143578751",
+        "value": 36,
+        "name": "NOTES 2025-28.03.36 ISIN: XS3035947103 Valorn.:",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "XS2993414619",
+        "value": 687,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.9999999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 1,
+        "optimized": true
+      },
+      {
+        "isin": "XS2530201644",
+        "value": 350,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.9999999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 1,
+        "optimized": true
+      },
+      {
+        "isin": "XS2588105036",
+        "value": 485.56,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.8499999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2665592833",
+        "value": 1320.65,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.8499999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2692298537",
+        "value": 580.82,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.8499999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2754416860",
+        "value": 404.01,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.8499999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2761230684",
+        "value": 1002.82,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.8499999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2736388732",
+        "value": 460.7,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.95,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2782869916",
+        "value": 991,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.9999999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 1,
+        "optimized": true
+      },
+      {
+        "isin": "XS2824054402",
+        "value": 331.4,
+        "name": "verified USD440'000 1.81% 2.46% ISIN:",
+        "source": "reconciled",
+        "confidence": 1,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2567543397",
+        "value": 610,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.95,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2110079584",
+        "value": 1401.06,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.8499999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2848820754",
+        "value": 519.27,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.8499999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2829712830",
+        "value": 571.65,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.8499999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2912278723",
+        "value": 459.86,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.95,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2381723902",
+        "value": 478.52,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.95,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2829752976",
+        "value": 975,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.9999999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 1,
+        "optimized": true
+      },
+      {
+        "isin": "XS2953741100",
+        "value": 247.95,
+        "name": "5.00 USD150'000 1.90% 0.75% ISIN:",
+        "source": "reconciled",
+        "confidence": 1,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2381717250",
+        "value": 520.94,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.8499999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2481066111",
+        "value": 359.51,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.8499999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2964611052",
+        "value": 464.71,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.8499999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS3035947103",
+        "value": 456.59,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.8499999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "LU2228214107",
+        "value": 27134436.79,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.95,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "CH1269060229",
+        "value": 489.18,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.95,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS0461497009",
+        "value": 700,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.9999999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 1,
+        "optimized": true
+      },
+      {
+        "isin": "XS2746319610",
+        "value": 961,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.9999999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 1,
+        "optimized": true
+      },
+      {
+        "isin": "CH0244767585",
+        "value": 767,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.9999999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 1,
+        "optimized": true
+      },
+      {
+        "isin": "XS2519369867",
+        "value": 986,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.9999999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 1,
+        "optimized": true
+      },
+      {
+        "isin": "XS2315191069",
+        "value": 501.5,
+        "name": "5.00 USD500'000 0.22% 2.58% ISIN:",
+        "source": "reconciled",
+        "confidence": 1,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2792098779",
+        "value": 760.47,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.95,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2714429128",
+        "value": 490.89,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.95,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2105981117",
+        "value": 324.27,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.95,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2838389430",
+        "value": 793.68,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.95,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2631782468",
+        "value": 384.5,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.95,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS1700087403",
+        "value": 771,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.9999999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 1,
+        "optimized": true
+      },
+      {
+        "isin": "XS2594173093",
+        "value": 405.45,
+        "name": "verified USD200'000 -1.90% 0.99% ISIN:",
+        "source": "reconciled",
+        "confidence": 1,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 2,
+        "optimized": true
+      },
+      {
+        "isin": "XS2407295554",
+        "value": 729,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.9999999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 1,
+        "optimized": true
+      },
+      {
+        "isin": "XS2252299883",
+        "value": 988,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.9999999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 1,
+        "optimized": true
+      },
+      {
+        "isin": "XD0466760473",
+        "value": 760,
+        "name": "ISIN:",
+        "source": "reconciled",
+        "confidence": 0.9999999999999999,
+        "reconciliationMethod": "weighted_average",
+        "sourceCount": 1,
+        "optimized": true
+      },
+      {
+        "isin": "TORONTO",
+        "value": 100.2,
+        "name": "PRC: 2.00 100.200099.1991199'080 -1.00% 28.03.2025",
+        "source": "universal",
+        "confidence": 1,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "GOLDMAN",
+        "value": 100.1,
+        "name": "PRC: 5.00 100.1000106.9200737'748 6.81% 31.03.2025",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "LUMINIS",
+        "value": 100.2,
+        "name": "5.00 100.200097.140098'202 -3.05% 31.03.2025 1'062",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "0000100",
+        "value": 14.02,
+        "name": "YTM: 5.41 PRC: 5.00 100.",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "0000800",
+        "value": 4.11,
+        "name": "USD800'000 0.00% 4.11% REG 100.0000100.",
+        "source": "universal",
+        "confidence": 0.7,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "PREMIUM",
+        "value": 7800115,
+        "name": "0.00% 0.59% 81.530444.7800115'613 -45.08% 13.09.20",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "FINANCE",
+        "value": 2024,
+        "name": "13.09.2024 PREMIUM ALT.S.A. SICAV-SIF COMMERCIAL",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "0000502",
+        "value": 100.52,
+        "name": "PRC: 5.0 Price verified 100.524199.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "PARIBAS",
+        "value": 305,
+        "name": "100.524199.0000502'305 -1.52% 31.03.2025 7'305 BNP",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "0900704",
+        "value": 1.94,
+        "name": "USD690'000 -1.94% 3.62% WELLS 100.446299.",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "EMERALD",
+        "value": 100.45,
+        "name": "WELLS 100.446299.0900704'064 -1.35% 27.03.2025 20'",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "CAPITAL",
+        "value": 2100193,
+        "name": "99.059296.2100193'464 -2.88% 31.03.2025 1'044 NOVU",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "NATWEST",
+        "value": 2023,
+        "name": "NOTES 2023-27.09.2029 USD500'000 4.36% 2.62%",
+        "source": "universal",
+        "confidence": 0.9,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      },
+      {
+        "isin": "129USD0",
+        "value": 5,
+        "name": "Price verified Total Other assets26'",
+        "source": "universal",
+        "confidence": 1,
+        "reconciliationMethod": "single_source",
+        "optimized": true
+      }
+    ],
+    "totalValue": 547744352.45,
+    "accuracy": 3.5535612394610276,
+    "metadata": {
+      "processingPhases": 8,
+      "agentsUsed": 9,
+      "enginesUsed": 3,
+      "enhancedProcessing": true
+    }
+  },
+  "metadata": {
+    "processingTime": 2986,
+    "enginesUsed": 3,
+    "enhancedAgentsUsed": 9,
+    "totalAgents": 12,
+    "targetAccuracy": 100,
+    "achievedAccuracy": 3.5535612394610276,
+    "processingPhases": 8
+  }
+}
