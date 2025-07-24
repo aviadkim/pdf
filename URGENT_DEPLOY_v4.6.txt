@@ -1,0 +1,29 @@
+URGENT DEPLOYMENT REQUEST - v4.6-smart-isin-extraction
+========================================================
+
+Timestamp: 2025-07-24T15:52:00.000Z
+Version: v4.6-smart-isin-extraction
+Priority: CRITICAL
+
+ISSUE RESOLVED:
+- v4.5 was too aggressive: blocked ALL lines with ISINs from value extraction
+- Result: 0 securities extracted, 0% accuracy
+- v4.6 fix: Remove ISINs from lines but KEEP extracting values from same lines
+
+TECHNICAL CHANGE:
+```javascript
+// OLD (v4.5): Skip entire line if it has ISIN
+if (!/[A-Z]{2}[A-Z0-9]{10}/.test(line)) { extract values }
+
+// NEW (v4.6): Remove ISIN from line, then extract values
+const lineWithoutISIN = line.replace(/[A-Z]{2}[A-Z0-9]{10}/g, '');
+// Then extract values from cleaned line
+```
+
+EXPECTED RESULT:
+- Extract ~35 securities (not 0)
+- Achieve ~92% accuracy (not 0%)
+- Avoid parsing ISINs as monetary values
+- Maintain stable deployment (no SIGTERM)
+
+DEPLOY v4.6 NOW!
