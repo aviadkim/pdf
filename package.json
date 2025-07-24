@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node express-server.js",
     "build": "npm install",
-    "build:render": "apt-get update && apt-get install -y poppler-utils ghostscript imagemagick && npm install",
+    "build:render": "./install-imagemagick.sh && npm install",
     "start": "node express-server.js",
     "start:render": "node express-server.js",
     "mcp": "node mcp-server.js",

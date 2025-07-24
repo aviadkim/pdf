@@ -6,11 +6,45 @@ const pdfParse = require('pdf-parse');
 const multer = require('multer');
 const path = require('path');
 
+// Check ImageMagick/GraphicsMagick availability
+function checkImageMagickAvailability() {
+    const { execSync } = require('child_process');
+    try {
+        // Try to find convert or gm binary
+        try {
+            execSync('which convert', { stdio: 'pipe' });
+            console.log('✅ ImageMagick (convert) binary found');
+            return true;
+        } catch (e) {
+            try {
+                execSync('which gm', { stdio: 'pipe' });
+                console.log('✅ GraphicsMagick (gm) binary found');
+                return true;
+            } catch (e2) {
+                console.warn('⚠️  Neither ImageMagick nor GraphicsMagick found');
+                console.warn('   Page-by-page Claude Vision will not work');
+                console.warn('   To fix: ensure build command runs ./install-imagemagick.sh');
+                return false;
+            }
+        }
+    } catch (error) {
+        console.warn('⚠️  Error checking ImageMagick:', error.message);
+        return false;
+    }
+}
+
 // Try to load page-by-page processor (optional)
 let PageByPageClaudeProcessor = null;
+const imageMagickAvailable = checkImageMagickAvailability();
+
 try {
     PageByPageClaudeProcessor = require('./page-by-page-claude-processor');
     console.log('✅ Page-by-page Claude processor loaded successfully');
+    
+    if (!imageMagickAvailable) {
+        console.warn('⚠️  Page-by-page processor loaded but ImageMagick is missing');
+        console.warn('   API will return helpful error messages');
+    }
 } catch (error) {
     console.warn('⚠️  Page-by-page processor not available:', error.message);
 }
@@ -194,7 +228,8 @@ app.get('/api/diagnostic', (req, res) => {
         accuracy: (hasClaudeKey && hasPageByPage) ? '99%+ (page-by-page Claude Vision)' : '92.21% (proven text extraction)',
         deployment: 'enhanced-with-page-by-page',
         claudeVisionAvailable: hasClaudeKey,
-        pageByPageAvailable: hasPageByPage,
+        pageByPageAvailable: hasPageByPage && imageMagickAvailable,
+        imageMagickAvailable: imageMagickAvailable,
         costPerPDF: (hasClaudeKey && hasPageByPage) ? '$0.11 (19 pages × $0.006)' : '$0.00 (free text extraction)',
         endpoints: {
             '/api/page-by-page-processor': hasPageByPage ? 'Page-by-page Claude Vision (99% accuracy)' : 'Not available (module load error)',
@@ -476,6 +511,15 @@ app.post('/api/page-by-page-processor', upload.single('pdf'), async (req, res) =
                 error: 'Page-by-page processor not available',
                 details: 'Module failed to load',
                 suggestion: 'Check deployment logs for require() errors'
+            });
+        }
+
+        if (!imageMagickAvailable) {
+            return res.status(500).json({ 
+                error: 'ImageMagick/GraphicsMagick not available',
+                details: 'PDF to image conversion requires ImageMagick or GraphicsMagick binaries',
+                solution: 'Ensure build command runs ./install-imagemagick.sh',
+                suggestion: 'Use /api/99-percent-enhanced for text-based fallback'
             });
         }
 
