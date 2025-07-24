@@ -122,16 +122,16 @@ function extractSecuritiesPrecise(text) {
         // Extract name (look for text patterns before ISIN)
         const beforeISIN = text.substring(Math.max(0, isinInfo.start - 200), isinInfo.start);
         const namePatterns = [
-            /([A-Z][A-Za-z\\s&.-]{5,50})\\s*$/,  // Company names
-            /([A-Z][^\\d]{10,80})\\s*$/,         // Longer names
-            /(\\b[A-Z][A-Za-z\\s]{3,30})\\s*$/   // Short names
+            /([A-Z][A-Za-z\s&.-]{5,50})\s*$/,  // Company names
+            /([A-Z][^\d]{10,80})\s*$/,         // Longer names
+            /(\b[A-Z][A-Za-z\s]{3,30})\s*$/   // Short names
         ];
         
         let name = `Security ${isin}`;
         for (const pattern of namePatterns) {
             const nameMatch = beforeISIN.match(pattern);
             if (nameMatch) {
-                name = nameMatch[1].trim().replace(/[^\\w\\s&.-]/g, '').trim();
+                name = nameMatch[1].trim().replace(/[^\w\s&.-]/g, '').trim();
                 if (name.length > 5) break;
             }
         }
