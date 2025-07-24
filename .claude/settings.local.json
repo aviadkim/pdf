@@ -130,7 +130,8 @@
       "mcp__deployment__test_deployment",
       "mcp__github__git_commit_push",
       "mcp__playwright__playwright_test",
-      "mcp__puppeteer__scrape_webpage"
+      "mcp__puppeteer__scrape_webpage",
+      "mcp__deployment__render_status"
     ],
     "deny": []
   }

@@ -64,6 +64,17 @@ try {
     claudeVisionProcessor = null;
 }
 
+// Hybrid Extraction Processor (Code + Vision = 99% Target)
+let hybridProcessor;
+try {
+    const { HybridExtractionProcessor } = require('./hybrid-extraction-processor.js');
+    hybridProcessor = new HybridExtractionProcessor();
+    console.log('🚀 Hybrid Extraction Processor initialized (Code + Vision)');
+} catch (error) {
+    console.log('⚠️ Hybrid Processor failed to initialize:', error.message);
+    hybridProcessor = null;
+}
+
 // ENHANCED BULLETPROOF PROCESSOR - TRUE 99% ACCURACY
 const { EnhancedBulletproofProcessor } = require('./enhanced-bulletproof-processor.js');
 const enhancedBulletproof = new EnhancedBulletproofProcessor();
@@ -2052,6 +2063,48 @@ app.post('/api/claude-vision-extract', upload.single('pdf'), (req, res) => {
     return claudeVisionProcessor.createExpressHandler()(req, res);
 });
 
+// Hybrid Extraction Processor (ULTIMATE 99% ACCURACY - Code + Vision)
+app.post('/api/hybrid-extract', upload.single('pdf'), (req, res) => {
+    if (!hybridProcessor) {
+        return res.status(503).json({
+            success: false,
+            error: 'Hybrid Processor not initialized',
+            timestamp: new Date().toISOString(),
+            endpoint: '/api/hybrid-extract'
+        });
+    }
+    return hybridProcessor.createExpressHandler()(req, res);
+});
+
+// Hybrid connection test endpoint
+app.get('/api/hybrid-test', async (req, res) => {
+    try {
+        if (!hybridProcessor) {
+            return res.status(503).json({
+                success: false,
+                error: 'Hybrid Processor not initialized',
+                timestamp: new Date().toISOString(),
+                endpoint: '/api/hybrid-test'
+            });
+        }
+        
+        const testResult = await hybridProcessor.testConnection();
+        res.json({
+            ...testResult,
+            timestamp: new Date().toISOString(),
+            endpoint: '/api/hybrid-test'
+        });
+    } catch (error) {
+        console.error('Hybrid test endpoint error:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message,
+            timestamp: new Date().toISOString(),
+            endpoint: '/api/hybrid-test'
+        });
+    }
+});
+
 // Multi-Agent Extraction System (Text + Vision + Validation + Human-in-Loop)
 app.post('/api/multi-agent-extract', upload.single('pdf'), multiAgentSystem.createExpressHandler());
 
@@ -2966,6 +3019,7 @@ async function initializeUltraAccurateSystem() {
         console.log(`🎯 Ultra Accurate 99% System: /api/ultra-99-percent`);
         console.log(`👁️ Visual PDF Processor (99% Accurate): /api/visual-pdf-extract`);
         console.log(`🤖 Claude Vision API (TRUE 99%): /api/claude-vision-extract`);
+        console.log(`🚀 Hybrid Processor (ULTIMATE 99%): /api/hybrid-extract`);
         console.log(`📊 Ultra-Accurate Extraction enabled (target: 90%+)`);
         console.log(`🎯 Phase 2 Enhanced Accuracy enabled (70-80%)`);
         console.log(`🔮 Mistral OCR: ${process.env.MISTRAL_API_KEY ? 'Enabled' : 'Disabled'}`);
