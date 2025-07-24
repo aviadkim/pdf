@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "results": [
+    {
+      "endpoint": "99% Enhanced (Smart Fallback)",
+      "success": false,
+      "error": "Enhanced 99% processing failed",
+      "status": 500
+    },
+    {
+      "endpoint": "Page-by-Page Claude Vision",
+      "success": false,
+      "error": "Page-by-page processing failed",
+      "status": 500
+    },
+    {
+      "endpoint": "Bulletproof (Text Only)",
+      "success": true,
+      "accuracy": 0,
+      "method": "enhanced-precision-v4.4",
+      "cost": "0.00",
+      "securities": 0,
+      "totalValue": 0
+    }
+  ]
+}

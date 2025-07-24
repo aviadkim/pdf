@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "securities": [],
+  "totalValue": 0,
+  "portfolioTotal": 19464431,
+  "accuracy": "0.00",
+  "currency": "CHF",
+  "metadata": {
+    "method": "enhanced-precision-v4.4",
+    "extractionQuality": "stable-deployment",
+    "processingTime": 1753384080554,
+    "securitiesFound": 0,
+    "timestamp": "2025-07-24T19:08:00.554Z"
+  }
+}

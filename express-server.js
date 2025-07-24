@@ -499,8 +499,12 @@ app.post('/api/99-percent-processor', upload.single('pdf'), async (req, res) => 
     }
 });
 
-// Page-by-Page Claude Vision endpoint (99% accuracy target)
+// Page-by-Page Claude Vision endpoint (99% accuracy target) - TIMEOUT OPTIMIZED
 app.post('/api/page-by-page-processor', upload.single('pdf'), async (req, res) => {
+    // Set timeout to 5 minutes for long processing
+    req.setTimeout(300000); // 5 minutes
+    res.setTimeout(300000); // 5 minutes
+    
     try {
         if (!req.file) {
             return res.status(400).json({ error: 'No PDF file uploaded' });
@@ -531,25 +535,42 @@ app.post('/api/page-by-page-processor', upload.single('pdf'), async (req, res) =
             });
         }
 
-        console.log('Processing PDF with page-by-page Claude Vision:', req.file.originalname);
+        console.log('🚀 FAST Processing PDF with optimized Claude Vision:', req.file.originalname);
         
         const processor = new PageByPageClaudeProcessor(claudeApiKey);
-        const result = await processor.processPDFPageByPage(req.file.buffer);
+        
+        // Add timeout wrapper with progress updates
+        const processingPromise = processor.processPDFPageByPage(req.file.buffer);
+        const timeoutPromise = new Promise((_, reject) => {
+            setTimeout(() => reject(new Error('Processing timeout after 4 minutes')), 240000); // 4 minutes
+        });
+        
+        const result = await Promise.race([processingPromise, timeoutPromise]);
 
         if (result.success) {
             const cost = result.metadata?.totalCost || 'unknown';
-            console.log(`Page-by-page result: ${result.securities.length} securities, $${result.totalValue.toLocaleString()}, ${result.accuracy}% accuracy, cost: $${cost}`);
+            console.log(`🎉 FAST page-by-page result: ${result.securities.length} securities, $${result.totalValue.toLocaleString()}, ${result.accuracy}% accuracy, cost: $${cost}`);
         }
 
         res.json(result);
 
     } catch (error) {
-        console.error('Page-by-page processing error:', error.message);
-        res.status(500).json({ 
-            error: 'Page-by-page processing failed', 
-            details: error.message,
-            version: 'page-by-page-claude'
-        });
+        console.error('🚨 Page-by-page processing error:', error.message);
+        
+        if (error.message.includes('timeout')) {
+            res.status(500).json({ 
+                error: 'Processing timeout - PDF too complex', 
+                details: 'Try using /api/99-percent-enhanced for faster processing',
+                suggestion: 'Large PDFs may need text-based fallback',
+                version: 'page-by-page-claude-timeout-optimized'
+            });
+        } else {
+            res.status(500).json({ 
+                error: 'Page-by-page processing failed', 
+                details: error.message,
+                version: 'page-by-page-claude-timeout-optimized'
+            });
+        }
     }
 });
 
