@@ -1,5 +1,5 @@
-// STABLE DEPLOYMENT VERSION - Claude Direct Vision for 99% accuracy
-// Version: v5.0-claude-direct-vision
+// ENHANCED BULLETPROOF PROCESSOR - 100% Coverage + Claude Quality
+// Version: v5.1-enhanced-bulletproof-live
 const express = require('express');
 const cors = require('cors');
 const pdfParse = require('pdf-parse');
