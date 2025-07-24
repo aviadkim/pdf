@@ -116,7 +116,7 @@ function extractSecuritiesPrecise(text) {
         const contextEnd = Math.min(text.length, isinInfo.end + 500);
         const context = text.substring(contextStart, contextEnd);
         
-        console.log(`\\n🎯 Processing ISIN: ${isin}`);
+        console.log(`\n🎯 Processing ISIN: ${isin}`);
         console.log(`📋 Context: ${context.substring(0, 200)}...`);
         
         // Extract name (look for text patterns before ISIN)
@@ -206,7 +206,7 @@ function extractSecuritiesPrecise(text) {
         console.log(`✅ Added: ${isin} - ${name} - CHF ${finalValue.toLocaleString()}`);
     }
     
-    console.log(`\\n🎯 EXTRACTION COMPLETE: ${securities.length} securities extracted`);
+    console.log(`\n🎯 EXTRACTION COMPLETE: ${securities.length} securities extracted`);
     return securities;
 }
 
