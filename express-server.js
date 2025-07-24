@@ -75,6 +75,17 @@ try {
     hybridProcessor = null;
 }
 
+// Fixed Hybrid Extraction Processor (TECHNICAL ISSUES RESOLVED)
+let hybridProcessorFixed;
+try {
+    const { HybridExtractionFixed } = require('./hybrid-extraction-fixed.js');
+    hybridProcessorFixed = new HybridExtractionFixed();
+    console.log('🔧 Fixed Hybrid Extraction Processor initialized');
+} catch (error) {
+    console.log('⚠️ Fixed Hybrid Processor failed to initialize:', error.message);
+    hybridProcessorFixed = null;
+}
+
 // ENHANCED BULLETPROOF PROCESSOR - TRUE 99% ACCURACY
 const { EnhancedBulletproofProcessor } = require('./enhanced-bulletproof-processor.js');
 const enhancedBulletproof = new EnhancedBulletproofProcessor();
@@ -93,11 +104,19 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Configure multer for file uploads
+// Configure multer for file uploads (FIXED - using memory storage)
 const upload = multer({ 
-    dest: 'uploads/',
+    storage: multer.memoryStorage(), // Fix for deployment issues
     limits: {
         fileSize: 100 * 1024 * 1024 // 100MB limit
+    },
+    fileFilter: (req, file, cb) => {
+        // Only accept PDF files
+        if (file.mimetype === 'application/pdf') {
+            cb(null, true);
+        } else {
+            cb(new Error('Only PDF files are allowed'), false);
+        }
     }
 });
 
@@ -2105,6 +2124,48 @@ app.get('/api/hybrid-test', async (req, res) => {
     }
 });
 
+// Fixed Hybrid Extraction Processor (ALL TECHNICAL ISSUES RESOLVED)
+app.post('/api/hybrid-extract-fixed', upload.single('pdf'), (req, res) => {
+    if (!hybridProcessorFixed) {
+        return res.status(503).json({
+            success: false,
+            error: 'Fixed Hybrid Processor not initialized',
+            timestamp: new Date().toISOString(),
+            endpoint: '/api/hybrid-extract-fixed'
+        });
+    }
+    return hybridProcessorFixed.createExpressHandler()(req, res);
+});
+
+// Fixed hybrid connection test endpoint  
+app.get('/api/hybrid-test-fixed', async (req, res) => {
+    try {
+        if (!hybridProcessorFixed) {
+            return res.status(503).json({
+                success: false,
+                error: 'Fixed Hybrid Processor not initialized',
+                timestamp: new Date().toISOString(),
+                endpoint: '/api/hybrid-test-fixed'
+            });
+        }
+        
+        const testResult = await hybridProcessorFixed.testConnection();
+        res.json({
+            ...testResult,
+            timestamp: new Date().toISOString(),
+            endpoint: '/api/hybrid-test-fixed'
+        });
+    } catch (error) {
+        console.error('Fixed hybrid test endpoint error:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message,
+            timestamp: new Date().toISOString(),
+            endpoint: '/api/hybrid-test-fixed'
+        });
+    }
+});
+
 // Multi-Agent Extraction System (Text + Vision + Validation + Human-in-Loop)
 app.post('/api/multi-agent-extract', upload.single('pdf'), multiAgentSystem.createExpressHandler());
 
@@ -3020,6 +3081,7 @@ async function initializeUltraAccurateSystem() {
         console.log(`👁️ Visual PDF Processor (99% Accurate): /api/visual-pdf-extract`);
         console.log(`🤖 Claude Vision API (TRUE 99%): /api/claude-vision-extract`);
         console.log(`🚀 Hybrid Processor (ULTIMATE 99%): /api/hybrid-extract`);
+        console.log(`🔧 Fixed Hybrid Processor (TECHNICAL ISSUES RESOLVED): /api/hybrid-extract-fixed`);
         console.log(`📊 Ultra-Accurate Extraction enabled (target: 90%+)`);
         console.log(`🎯 Phase 2 Enhanced Accuracy enabled (70-80%)`);
         console.log(`🔮 Mistral OCR: ${process.env.MISTRAL_API_KEY ? 'Enabled' : 'Disabled'}`);
