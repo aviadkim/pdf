@@ -18,7 +18,9 @@ RUN apk add --no-cache \
     pangomm-dev \
     libjpeg-turbo-dev \
     freetype-dev \
-    poppler-utils
+    poppler-utils \
+    graphicsmagick \
+    ghostscript
 
 # Copy package files
 COPY package*.json ./

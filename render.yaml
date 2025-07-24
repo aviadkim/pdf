@@ -4,8 +4,8 @@
       "type": "web",
       "name": "pdf-fzzi",
       "env": "node",
-      "buildCommand": "npm install",
-      "startCommand": "node express-server.js",
+      "buildCommand": "npm run build:render",
+      "startCommand": "npm run start:render",
       "envVars": [
         {
           "key": "NODE_ENV",
