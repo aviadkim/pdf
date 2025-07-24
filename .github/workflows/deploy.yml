@@ -28,22 +28,16 @@ jobs:
     - name: Build validation
       run: echo "✅ Build successful - ready for deployment"
   
-  deploy:
+  notify:
     needs: test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     
     steps:
-    - name: Trigger Render Deployment
+    - name: Build Success Notification
       run: |
-        curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}" \
-        -H "Content-Type: application/json" \
-        -d '{"ref": "${{ github.ref }}"}'
-    
-    - name: Wait for deployment
-      run: sleep 60
-    
-    - name: Test deployment
-      run: |
-        curl -f https://pdf-fzzi.onrender.com/ || exit 1
-        echo "✅ Deployment successful!"
+        echo "✅ Build completed successfully!"
+        echo "📋 Next steps:"
+        echo "1. Go to Render Dashboard"
+        echo "2. Manually deploy latest commit"
+        echo "3. Test Claude Vision API endpoints"
