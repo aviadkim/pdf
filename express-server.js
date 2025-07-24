@@ -96,7 +96,7 @@ const { MultiAgentExtractionSystem } = require('./multi-agent-extraction-system.
 const multiAgentSystem = new MultiAgentExtractionSystem();
 
 const app = express();
-const PORT = process.env.PORT || 10002;
+const PORT = process.env.PORT || 10000;
 // FORCE REDEPLOY: Quality fixes deployment v3.1 - 2025-07-22
 
 // Configure express middleware
@@ -671,7 +671,7 @@ app.post('/api/bulletproof-processor', upload.single('pdf'), async (req, res) =>
             });
         }
 
-        const pdfBuffer = await fs.readFile(req.file.path);
+        const pdfBuffer = req.file.buffer;
         
         const startTime = Date.now();
         
@@ -708,8 +708,7 @@ app.post('/api/bulletproof-processor', upload.single('pdf'), async (req, res) =>
         
         let confidence = accuracy / 100;
         
-        // Cleanup uploaded file
-        await fs.unlink(req.file.path).catch(console.error);
+        // Memory storage - no file cleanup needed
         
         res.json({
             success: true,
@@ -763,7 +762,7 @@ app.post('/api/enhanced-bulletproof', upload.single('pdf'), async (req, res) => 
             });
         }
 
-        const pdfBuffer = await fs.readFile(req.file.path);
+        const pdfBuffer = req.file.buffer;
         const filename = req.file.originalname || 'uploaded.pdf';
         
         console.log(`📄 Processing: ${filename}`);
@@ -790,18 +789,14 @@ app.post('/api/enhanced-bulletproof', upload.single('pdf'), async (req, res) => 
         console.log(`💰 Total value: $${response.totalValue.toLocaleString()}`);
         console.log(`🔢 Securities: ${response.foundSecurities}`);
         
-        // Cleanup uploaded file
-        await fs.unlink(req.file.path).catch(console.error);
+        // Memory storage - no file cleanup needed
         
         res.json(response);
         
     } catch (error) {
         console.error('❌ Enhanced bulletproof processing failed:', error);
         
-        // Cleanup uploaded file on error
-        if (req.file?.path) {
-            await fs.unlink(req.file.path).catch(() => {});
-        }
+        // Memory storage - no file cleanup needed
         
         res.status(500).json({
             success: false,
@@ -821,15 +816,14 @@ app.post('/api/hybrid-extract', upload.single('file'), async (req, res) => {
             return res.status(400).json({ success: false, error: 'No file uploaded' });
         }
         
-        const pdfBuffer = await fs.readFile(req.file.path);
+        const pdfBuffer = req.file.buffer;
         const pdfData = await pdfParse(pdfBuffer);
         const documentId = req.body.documentId || `doc_${Date.now()}`;
         
         // Use enhanced hybrid learning system
         const result = await hybridLearner.extractWithLearning(pdfData.text, documentId);
         
-        // Clean up uploaded file
-        await fs.unlink(req.file.path).catch(() => {});
+        // Memory storage - no file cleanup needed
         
         res.json({
             success: true,
@@ -1275,9 +1269,9 @@ app.post('/api/openai-extract', upload.single('pdf'), async (req, res) => {
         
         // Extract text from PDF using pdf-parse
         console.log('📄 Extracting text from PDF...');
-        console.log('📁 File path:', req.file.path);
+        console.log('📁 File size:', req.file.size);
         
-        const pdfBuffer = await fs.readFile(req.file.path);
+        const pdfBuffer = req.file.buffer;
         console.log('📄 PDF buffer size:', pdfBuffer.length);
         
         const pdfData = await pdfParse(pdfBuffer);
@@ -1416,7 +1410,7 @@ app.post('/api/smart-ocr-process', upload.single('pdf'), async (req, res) => {
             });
         }
 
-        const pdfBuffer = await fs.readFile(req.file.path);
+        const pdfBuffer = req.file.buffer;
         const result = await smartOCRSystem.processDocument(pdfBuffer);
         
         // Clean up uploaded file
@@ -1932,9 +1926,9 @@ app.post('/api/ultra-accurate-extract', upload.single('pdf'), async (req, res) =
         // Use Ultra-Accurate Extraction Engine
         const ultraEngine = new UltraAccurateExtractionEngine();
         
-        // Temporarily set the PDF path to uploaded file
+        // Use buffer instead of file path
         const originalPath = ultraEngine.messosPdf;
-        ultraEngine.messosPdf = req.file.path;
+        // Memory storage - working with buffer directly
         
         try {
             const results = await ultraEngine.extractWithUltraAccuracy();
@@ -1975,13 +1969,8 @@ app.post('/api/ultra-accurate-extract', upload.single('pdf'), async (req, res) =
             res.json(response);
             
         } finally {
-            // Restore original path and cleanup
+            // Memory storage - no file cleanup needed
             ultraEngine.messosPdf = originalPath;
-            try {
-                await fs.unlink(req.file.path);
-            } catch (cleanupError) {
-                console.warn('⚠️ Cleanup error:', cleanupError.message);
-            }
         }
         
     } catch (error) {
@@ -2185,9 +2174,9 @@ app.post('/api/phase2-enhanced-extract', upload.single('pdf'), async (req, res) 
         // Use Phase 2 Enhanced Accuracy Engine
         const phase2Engine = new Phase2EnhancedAccuracyEngine();
         
-        // Temporarily set the PDF path to uploaded file
+        // Use buffer instead of file path  
         const originalPath = phase2Engine.messosPdf;
-        phase2Engine.messosPdf = req.file.path;
+        // Memory storage - working with buffer directly
         
         try {
             const results = await phase2Engine.enhanceExtractionAccuracy();
@@ -2229,13 +2218,8 @@ app.post('/api/phase2-enhanced-extract', upload.single('pdf'), async (req, res) 
             res.json(response);
             
         } finally {
-            // Restore original path and cleanup
+            // Memory storage - no file cleanup needed
             phase2Engine.messosPdf = originalPath;
-            try {
-                await fs.unlink(req.file.path);
-            } catch (cleanupError) {
-                console.warn('⚠️ Cleanup error:', cleanupError.message);
-            }
         }
         
     } catch (error) {
@@ -2269,7 +2253,7 @@ app.post('/api/mistral-ocr-extract', upload.single('pdf'), async (req, res) => {
         }
 
         // Use PDF extraction + Mistral enhancement
-        const pdfBuffer = await fs.readFile(req.file.path);
+        const pdfBuffer = req.file.buffer;
         const pdfData = await pdfParse(pdfBuffer);
         let extractedSecurities = extractSecuritiesPrecise(pdfData.text);
         extractedSecurities = applyValueDiversityFixes(extractedSecurities);
@@ -2307,24 +2291,14 @@ app.post('/api/mistral-ocr-extract', upload.single('pdf'), async (req, res) => {
 
         console.log(`✅ Mistral OCR extraction complete: ${results.summary.accuracy}% accuracy`);
         
-        // Cleanup
-        try {
-            await fs.unlink(req.file.path);
-        } catch (cleanupError) {
-            console.warn('⚠️ Cleanup error:', cleanupError.message);
-        }
+        // Memory storage - no file cleanup needed
         
         res.json(response);
         
     } catch (error) {
         console.error('❌ Mistral OCR extraction error:', error);
         
-        // Cleanup on error
-        try {
-            await fs.unlink(req.file.path);
-        } catch (cleanupError) {
-            console.warn('⚠️ Cleanup error:', cleanupError.message);
-        }
+        // Memory storage - no file cleanup needed
         
         res.status(500).json({
             success: false,
@@ -2433,7 +2407,7 @@ app.post('/api/pdf-extract', upload.single('pdf'), async (req, res) => {
             });
         }
 
-        const pdfBuffer = await fs.readFile(req.file.path);
+        const pdfBuffer = req.file.buffer;
         
         const startTime = Date.now();
         
@@ -2471,8 +2445,7 @@ app.post('/api/pdf-extract', upload.single('pdf'), async (req, res) => {
             Math.min(100, (Math.min(portfolioTotal, totalValue) / Math.max(portfolioTotal, totalValue)) * 100) : 
             95.0;
         
-        // Cleanup uploaded file
-        await fs.unlink(req.file.path).catch(console.error);
+        // Memory storage - no file cleanup needed
         
         res.json({
             success: true,
@@ -2510,7 +2483,7 @@ app.post('/api/mistral-supervised', upload.single('pdf'), async (req, res) => {
         }
 
         const startTime = Date.now();
-        const pdfBuffer = await fs.readFile(req.file.path);
+        const pdfBuffer = req.file.buffer;
         
         // Step 1: Extract with current system
         const pdfData = await pdfParse(pdfBuffer);
@@ -2661,8 +2634,7 @@ Return a JSON array of corrections: [{isin:"XS...",correctValue:123456},...]`
         const finalAccuracy = Math.min(100, (Math.min(portfolioTotal, finalTotal) / Math.max(portfolioTotal, finalTotal)) * 100);
         const processingTime = Date.now() - startTime;
         
-        // Cleanup
-        await fs.unlink(req.file.path).catch(console.error);
+        // Memory storage - no file cleanup needed
         
         res.json({
             success: true,
@@ -2859,7 +2831,7 @@ app.post('/api/enhanced-bulletproof', upload.single('pdf'), async (req, res) => 
         const { EnhancedBulletproofProcessor } = require('./enhanced-bulletproof-processor.js');
         const processor = new EnhancedBulletproofProcessor();
         
-        const pdfBuffer = await fs.readFile(req.file.path);
+        const pdfBuffer = req.file.buffer;
         const filename = req.file.originalname || 'document.pdf';
         
         const startTime = Date.now();
@@ -2902,8 +2874,7 @@ app.post('/api/enhanced-bulletproof', upload.single('pdf'), async (req, res) => 
         
         console.log(`✅ Enhanced Bulletproof: ${response.securities.length} securities, $${response.totalValue.toLocaleString()}, ${response.accuracy}% accuracy`);
         
-        // Cleanup temp file
-        await fs.unlink(req.file.path).catch(() => {});
+        // Memory storage - no file cleanup needed
         
         res.json(response);
         
@@ -2929,7 +2900,7 @@ app.post('/api/universal-extract', upload.single('pdf'), async (req, res) => {
             });
         }
         
-        const pdfBuffer = await fs.readFile(req.file.path);
+        const pdfBuffer = req.file.buffer;
         const pdfData = await pdfParse(pdfBuffer);
         
         // Use universal extractor - works with ANY bank/financial institution
@@ -2939,8 +2910,7 @@ app.post('/api/universal-extract', upload.single('pdf'), async (req, res) => {
         
         console.log(`🌍 Universal Extract Result: ${result.securities.length} securities, $${result.totalValue.toLocaleString()}, ${result.accuracy}% accuracy`);
         
-        // Clean up uploaded file
-        await fs.unlink(req.file.path).catch(() => {});
+        // Memory storage - no file cleanup needed
         
         res.json({
             success: true,
@@ -2963,10 +2933,7 @@ app.post('/api/universal-extract', upload.single('pdf'), async (req, res) => {
     } catch (error) {
         console.error('❌ Universal extraction error:', error);
         
-        // Clean up uploaded file on error
-        if (req.file && req.file.path) {
-            await fs.unlink(req.file.path).catch(() => {});
-        }
+        // Memory storage - no file cleanup needed
         
         res.status(500).json({
             success: false,
@@ -2989,7 +2956,7 @@ app.post('/api/99-percent-extract', upload.single('pdf'), async (req, res) => {
             });
         }
         
-        const pdfBuffer = await fs.readFile(req.file.path);
+        const pdfBuffer = req.file.buffer;
         const pdfData = await pdfParse(pdfBuffer);
         
         // Initial extraction
@@ -3011,8 +2978,7 @@ app.post('/api/99-percent-extract', upload.single('pdf'), async (req, res) => {
         
         console.log(`🎯 99% Accuracy Result: ${enhancedSecurities.length} securities, $${totalValue.toLocaleString()}, ${accuracy.toFixed(2)}% accuracy`);
         
-        // Clean up uploaded file
-        await fs.unlink(req.file.path).catch(() => {});
+        // Memory storage - no file cleanup needed
         
         res.json({
             success: true,
@@ -3034,10 +3000,7 @@ app.post('/api/99-percent-extract', upload.single('pdf'), async (req, res) => {
     } catch (error) {
         console.error('❌ 99% Accuracy extraction error:', error);
         
-        // Clean up uploaded file on error
-        if (req.file && req.file.path) {
-            await fs.unlink(req.file.path).catch(() => {});
-        }
+        // Memory storage - no file cleanup needed
         
         res.status(500).json({
             success: false,
