@@ -51,39 +51,53 @@ class PageByPageClaudeProcessor {
             const imageBuffer = fs.readFileSync(imagePath);
             const base64Image = imageBuffer.toString('base64');
 
-            const prompt = `Analyze this financial document page and extract ONLY securities with market values.
+            const prompt = `MAXIMUM ACCURACY FINANCIAL DOCUMENT ANALYSIS
 
-EXTRACT ONLY:
-- Securities with ISIN codes (format: 2 letters + 10 alphanumeric)
-- Their market values in Swiss franc format (with apostrophes: 1'234'567)
-- Security names/descriptions
+You are analyzing page ${pageNumber} of a Swiss financial portfolio document. Your goal is 99%+ accuracy.
 
-IGNORE:
-- Portfolio totals and summaries
-- Performance metrics
-- Currency amounts without ISINs
-- Valor numbers (typically 6-9 digits)
-- Account numbers and dates
+EXTRACT WITH MAXIMUM PRECISION:
+- Securities with ISIN codes (format: exactly 2 letters + 10 alphanumeric characters)
+- Market values in Swiss format (numbers with apostrophes: 1'234'567.89 or periods: 1.234.567,89)
+- Complete security names and descriptions
+- Look for table structures with columns: ISIN, Security Name, Market Value
 
-RESPOND IN JSON:
+MAXIMUM ACCURACY RULES:
+1. ONLY extract if you see a clear ISIN code (12 characters, starting with 2 letters)
+2. ONLY extract if there's a clear monetary value in the same row
+3. Convert ALL Swiss number formats to standard numbers (remove apostrophes/periods)
+4. Include partial matches if confident (confidence >= 0.8)
+5. Look carefully at table headers to understand column structure
+6. Check for continued tables from previous pages
+
+IGNORE COMPLETELY:
+- Portfolio totals, subtotals, summary rows
+- Performance percentages and ratios  
+- Valor numbers (6-9 digits without letters)
+- Account numbers, dates, reference numbers
+- Currency codes without associated amounts
+
+RESPOND IN PRECISE JSON:
 {
   "securities": [
     {
       "isin": "CH1234567890",
-      "name": "Security Name",
+      "name": "Complete Security Name Here", 
       "value": 1234567,
       "currency": "CHF",
-      "confidence": 0.95
+      "confidence": 0.95,
+      "tableRow": "full text of the table row for verification"
     }
   ],
   "pageInfo": {
     "pageNumber": ${pageNumber},
     "securitiesFound": 0,
-    "hasTable": true
+    "hasTable": true,
+    "tableStructure": "description of table layout",
+    "notes": "any important observations"
   }
 }
 
-Be extremely precise - only extract clear ISIN+value pairs from table rows.`;
+TAKE YOUR TIME - accuracy is more important than speed. Examine every potential table row carefully.`;
 
             const response = await fetch(this.baseURL, {
                 method: 'POST',

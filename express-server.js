@@ -535,21 +535,21 @@ app.post('/api/page-by-page-processor', upload.single('pdf'), async (req, res) =
             });
         }
 
-        console.log('🚀 FAST Processing PDF with optimized Claude Vision:', req.file.originalname);
+        console.log('🎯 MAXIMUM ACCURACY Processing PDF with Claude Vision (taking time for precision):', req.file.originalname);
         
         const processor = new PageByPageClaudeProcessor(claudeApiKey);
         
-        // Add timeout wrapper with progress updates
+        // Add timeout wrapper - 15 minutes for maximum accuracy
         const processingPromise = processor.processPDFPageByPage(req.file.buffer);
         const timeoutPromise = new Promise((_, reject) => {
-            setTimeout(() => reject(new Error('Processing timeout after 4 minutes')), 240000); // 4 minutes
+            setTimeout(() => reject(new Error('Processing timeout after 15 minutes')), 900000); // 15 minutes for accuracy
         });
         
         const result = await Promise.race([processingPromise, timeoutPromise]);
 
         if (result.success) {
             const cost = result.metadata?.totalCost || 'unknown';
-            console.log(`🎉 FAST page-by-page result: ${result.securities.length} securities, $${result.totalValue.toLocaleString()}, ${result.accuracy}% accuracy, cost: $${cost}`);
+            console.log(`🎯 MAXIMUM ACCURACY result: ${result.securities.length} securities, $${result.totalValue.toLocaleString()}, ${result.accuracy}% accuracy, cost: $${cost}`);
         }
 
         res.json(result);
@@ -559,16 +559,16 @@ app.post('/api/page-by-page-processor', upload.single('pdf'), async (req, res) =
         
         if (error.message.includes('timeout')) {
             res.status(500).json({ 
-                error: 'Processing timeout - PDF too complex', 
-                details: 'Try using /api/99-percent-enhanced for faster processing',
-                suggestion: 'Large PDFs may need text-based fallback',
-                version: 'page-by-page-claude-timeout-optimized'
+                error: 'Processing timeout after 15 minutes - PDF extremely complex', 
+                details: 'Maximum accuracy mode took longer than expected',
+                suggestion: 'Try /api/99-percent-enhanced for faster fallback',
+                version: 'page-by-page-claude-maximum-accuracy'
             });
         } else {
             res.status(500).json({ 
                 error: 'Page-by-page processing failed', 
                 details: error.message,
-                version: 'page-by-page-claude-timeout-optimized'
+                version: 'page-by-page-claude-maximum-accuracy'
             });
         }
     }
