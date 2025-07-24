@@ -54,8 +54,15 @@ const visualPDFProcessor = new VisualPDFProcessor();
 const { EnhancedVisionAPIProcessor } = require('./enhanced-vision-api-processor.js');
 
 // Claude Vision API Processor (True 99% Accuracy)
-const { ClaudeVisionProcessor } = require('./claude-vision-processor.js');
-const claudeVisionProcessor = new ClaudeVisionProcessor();
+let claudeVisionProcessor;
+try {
+    const { ClaudeVisionProcessor } = require('./claude-vision-processor.js');
+    claudeVisionProcessor = new ClaudeVisionProcessor();
+    console.log('✅ Claude Vision Processor initialized');
+} catch (error) {
+    console.log('⚠️ Claude Vision Processor failed to initialize:', error.message);
+    claudeVisionProcessor = null;
+}
 
 // ENHANCED BULLETPROOF PROCESSOR - TRUE 99% ACCURACY
 const { EnhancedBulletproofProcessor } = require('./enhanced-bulletproof-processor.js');
@@ -1308,18 +1315,30 @@ app.get('/api/openai-test', async (req, res) => {
 // Claude Vision API connection test endpoint
 app.get('/api/claude-test', async (req, res) => {
     try {
+        if (!claudeVisionProcessor) {
+            return res.status(503).json({
+                success: false,
+                error: 'Claude Vision Processor not initialized',
+                timestamp: new Date().toISOString(),
+                endpoint: '/api/claude-test'
+            });
+        }
+        
         const testResult = await claudeVisionProcessor.testConnection();
+        const costEstimate = claudeVisionProcessor.calculateCosts({});
         res.json({
             ...testResult,
             timestamp: new Date().toISOString(),
             endpoint: '/api/claude-test',
-            costEstimate: claudeVisionProcessor.calculateCosts({})
+            costEstimate: costEstimate
         });
     } catch (error) {
+        console.error('Claude test endpoint error:', error);
         res.status(500).json({
             success: false,
             error: error.message,
-            timestamp: new Date().toISOString()
+            timestamp: new Date().toISOString(),
+            endpoint: '/api/claude-test'
         });
     }
 });
@@ -2021,7 +2040,17 @@ app.post('/api/visual-pdf-extract', upload.single('pdf'), visualPDFProcessor.cre
 app.post('/api/enhanced-vision-extract', upload.single('pdf'), enhancedVisionProcessor.createExpressHandler());
 
 // Claude Vision API Processor (TRUE 99% ACCURACY)
-app.post('/api/claude-vision-extract', upload.single('pdf'), claudeVisionProcessor.createExpressHandler());
+app.post('/api/claude-vision-extract', upload.single('pdf'), (req, res) => {
+    if (!claudeVisionProcessor) {
+        return res.status(503).json({
+            success: false,
+            error: 'Claude Vision Processor not initialized',
+            timestamp: new Date().toISOString(),
+            endpoint: '/api/claude-vision-extract'
+        });
+    }
+    return claudeVisionProcessor.createExpressHandler()(req, res);
+});
 
 // Multi-Agent Extraction System (Text + Vision + Validation + Human-in-Loop)
 app.post('/api/multi-agent-extract', upload.single('pdf'), multiAgentSystem.createExpressHandler());
