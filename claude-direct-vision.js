@@ -36,30 +36,39 @@ class ClaudeDirectVision {
         // Convert PDF to base64
         const base64PDF = pdfBuffer.toString('base64');
         
-        const prompt = `Analyze this financial portfolio PDF and extract ALL securities with complete details.
+        const prompt = `CRITICAL: This is a 19-page financial portfolio PDF containing exactly 40 securities. You must extract ALL 40 securities from ALL pages.
 
-For EACH security, extract:
-1. ISIN (security identifier)
-2. Security name/description 
-3. Quantity/Nominal amount (e.g., USD 200'000)
-4. Price (usually a percentage like 99.54%)
-5. Market value in CHF or USD
-6. Currency
+REQUIREMENTS:
+1. Process EVERY page (1-19) completely
+2. Extract ALL 40 securities (ISINs) - do not skip any
+3. Look for securities in tables that span multiple pages
+4. Check continuation pages for additional securities
 
-Expected portfolio contains about 40 securities with total value around CHF 19.4 million.
+For EACH of the 40 securities, extract:
+1. ISIN (12-character identifier like XS2993414619, CH1908490000)
+2. Complete security name/description 
+3. Quantity/Nominal amount (with apostrophes: 1'000'000)
+4. Price percentage (like 99.54%)
+5. Market value in original currency
+6. Currency (USD/CHF)
 
-Pay special attention to:
-- Swiss number format with apostrophes (1'234'567)
-- Table structures spanning multiple pages
-- Different security types (bonds, equities, structured products)
-- Currency conversions between USD and CHF
+EXPECTED RESULT: 40 securities total
+- Multiple pages contain securities tables
+- Swiss number format: 1'234'567
+- Mix of USD and CHF securities
+- Total portfolio value: ~19.4M CHF
 
-Return results as JSON array with this exact structure:
+SEARCH THOROUGHLY:
+- Page 1-3: Initial securities
+- Pages 4-15: Main portfolio holdings (most securities here)
+- Pages 16-19: Additional securities and summaries
+
+Return complete JSON with ALL 40 securities:
 {
   "securities": [
     {
       "isin": "CH1908490000",
-      "name": "Security name here",
+      "name": "Complete security name",
       "quantity": 100000,
       "price": 99.54,
       "value": 99540,
@@ -70,9 +79,12 @@ Return results as JSON array with this exact structure:
     "totalSecurities": 40,
     "totalValue": 19464431,
     "currency": "CHF",
-    "accuracy": 99.5
+    "pagesProcessed": 19,
+    "completeness": "100%"
   }
-}`;
+}
+
+CRITICAL: If you find fewer than 35 securities, you are missing pages or sections. Review the entire document again.`;
 
         try {
             console.log('🚀 Sending to Claude Vision API...');
