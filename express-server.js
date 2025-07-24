@@ -1413,8 +1413,7 @@ app.post('/api/smart-ocr-process', upload.single('pdf'), async (req, res) => {
         const pdfBuffer = req.file.buffer;
         const result = await smartOCRSystem.processDocument(pdfBuffer);
         
-        // Clean up uploaded file
-        await fs.unlink(req.file.path).catch(console.error);
+        // Memory storage - no file cleanup needed
         
         res.json({
             success: true,
