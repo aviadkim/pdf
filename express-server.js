@@ -43,85 +43,88 @@ function parseSwissNumber(str) {
     return number;
 }
 
-// Extract securities with precise extraction (92.21% accuracy method)
+// Extract securities with precise extraction (92.21% accuracy method) - FIXED
 function extractSecuritiesPrecise(text) {
     const securities = [];
     const lines = text.split('\n');
     
-    // Find portfolio section (avoid summary sections)
-    let inPortfolioSection = false;
-    const portfolioKeywords = ['Holdings', 'Portfolio', 'Securities', 'Positions'];
+    console.log(`Processing ${lines.length} lines for securities extraction`);
     
+    // More liberal approach - look for ISINs anywhere, but be smart about context
     for (let i = 0; i < lines.length; i++) {
         const line = lines[i].trim();
+        if (!line) continue;
         
-        // Detect portfolio section start
-        if (portfolioKeywords.some(keyword => line.includes(keyword))) {
-            inPortfolioSection = true;
+        // Skip obvious summary/header lines
+        if (line.includes('Summary') || line.includes('Performance') || 
+            line.includes('Risk') || line.includes('Glossary') ||
+            line.length < 20) {
             continue;
         }
         
-        // Detect section end
-        if (line.includes('Total') && line.includes('Portfolio')) {
-            inPortfolioSection = false;
-            continue;
-        }
-        
-        if (inPortfolioSection) {
-            // Enhanced ISIN detection with context
-            const isinMatch = line.match(/([A-Z]{2}[A-Z0-9]{10})/);
-            if (isinMatch) {
-                const isin = isinMatch[1];
-                
-                // Extract security name (text before ISIN or after)
-                let name = '';
-                const beforeIsin = line.substring(0, line.indexOf(isin)).trim();
-                if (beforeIsin.length > 3) {
-                    name = beforeIsin.replace(/^\d+\s*/, '').trim();
-                }
-                
-                // Enhanced value extraction with Swiss format support - SMART ISIN AVOIDANCE
-                const valueCandidates = [];
-                
-                // Remove ISIN from line for value extraction (but keep the line)
-                const lineWithoutISIN = line.replace(/[A-Z]{2}[A-Z0-9]{10}/g, '');
-                
-                const valuePatterns = [
-                    /(\d{1,3}(?:'?\d{3})*\.?\d{0,2})\s*(?:CHF|USD|EUR)/gi,
-                    /(?:CHF|USD|EUR)\s*(\d{1,3}(?:'?\d{3})*\.?\d{0,2})/gi,
-                    /(\d{1,3}(?:'?\d{3})*\.\d{2})/g
-                ];
-                
-                // Extract values from line with ISIN removed
-                for (const pattern of valuePatterns) {
-                    let match;
-                    while ((match = pattern.exec(lineWithoutISIN)) !== null) {
-                        const candidate = parseSwissNumber(match[1]);
-                        // More reasonable range for individual securities
-                        if (candidate > 1000 && candidate < 15000000) {
-                            valueCandidates.push(candidate);
-                        }
+        // Look for ISIN patterns directly (more liberal approach)
+        const isinMatch = line.match(/([A-Z]{2}[A-Z0-9]{10})/);
+        if (isinMatch) {
+            const isin = isinMatch[1];
+            
+            console.log(`Found ISIN: ${isin} in line: ${line.substring(0, 100)}...`);
+            
+            // Extract security name (text before ISIN or after)
+            let name = '';
+            const beforeIsin = line.substring(0, line.indexOf(isin)).trim();
+            if (beforeIsin.length > 3) {
+                name = beforeIsin.replace(/^\d+\s*/, '').trim();
+            }
+            
+            // Enhanced value extraction with Swiss format support - SMART ISIN AVOIDANCE
+            const valueCandidates = [];
+            
+            // Remove ISIN from line for value extraction (but keep the line)
+            const lineWithoutISIN = line.replace(/[A-Z]{2}[A-Z0-9]{10}/g, '');
+            
+            const valuePatterns = [
+                // Swiss format with currency context
+                /(\d{1,3}(?:'?\d{3})*\.?\d{0,2})\s*(?:CHF|USD|EUR)/gi,
+                /(?:CHF|USD|EUR)\s*(\d{1,3}(?:'?\d{3})*\.?\d{0,2})/gi,
+                // Decimal amounts
+                /(\d{1,3}(?:'?\d{3})*\.\d{2})/g,
+                // Large numbers in Swiss format
+                /(\d{1,3}'?\d{3}'?\d{3})/g
+            ];
+            
+            // Extract values from line with ISIN removed
+            for (const pattern of valuePatterns) {
+                let match;
+                while ((match = pattern.exec(lineWithoutISIN)) !== null) {
+                    const candidate = parseSwissNumber(match[1]);
+                    // More reasonable range for individual securities
+                    if (candidate > 10000 && candidate < 15000000) {
+                        valueCandidates.push(candidate);
+                        console.log(`   Found value candidate: $${candidate.toLocaleString()}`);
                     }
                 }
+            }
+            
+            // Use median value instead of max (prevents overextraction)
+            let value = 0;
+            if (valueCandidates.length > 0) {
+                valueCandidates.sort((a, b) => a - b);
+                const mid = Math.floor(valueCandidates.length / 2);
+                value = valueCandidates.length % 2 !== 0 
+                    ? valueCandidates[mid] 
+                    : (valueCandidates[mid - 1] + valueCandidates[mid]) / 2;
                 
-                // Use median value instead of max (prevents overextraction)
-                let value = 0;
-                if (valueCandidates.length > 0) {
-                    valueCandidates.sort((a, b) => a - b);
-                    const mid = Math.floor(valueCandidates.length / 2);
-                    value = valueCandidates.length % 2 !== 0 
-                        ? valueCandidates[mid] 
-                        : (valueCandidates[mid - 1] + valueCandidates[mid]) / 2;
-                }
-                
-                if (value > 0) {
-                    securities.push({
-                        isin: isin,
-                        name: name || `Security ${isin}`,
-                        value: value,
-                        currency: 'CHF'
-                    });
-                }
+                console.log(`   Selected value: $${value.toLocaleString()}`);
+            }
+            
+            if (value > 0) {
+                securities.push({
+                    isin: isin,
+                    name: name || `Security ${isin}`,
+                    value: value,
+                    currency: 'CHF'
+                });
+                console.log(`✅ Added security: ${isin} - $${value.toLocaleString()}`);
             }
         }
     }
@@ -418,7 +421,8 @@ app.post('/api/page-by-page-processor', upload.single('pdf'), async (req, res) =
         const result = await processor.processPDFPageByPage(req.file.buffer);
 
         if (result.success) {
-            console.log(`Page-by-page result: ${result.securities.length} securities, $${result.totalValue.toLocaleString()}, ${result.accuracy}% accuracy, cost: $${result.metadata.totalCost}`);
+            const cost = result.metadata?.totalCost || 'unknown';
+            console.log(`Page-by-page result: ${result.securities.length} securities, $${result.totalValue.toLocaleString()}, ${result.accuracy}% accuracy, cost: $${cost}`);
         }
 
         res.json(result);
