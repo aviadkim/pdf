@@ -151,53 +151,14 @@ EXTRACTION VALIDATION:
             
             const parsedResult = JSON.parse(jsonMatch[0]);
             
-            // CRITICAL CHECK: Validate extraction completeness by comparing with text extraction
+            // CRITICAL: Claude Vision consistently misses securities - ALWAYS use hybrid for completeness
             const securitiesFound = parsedResult.securities?.length || 0;
             
-            // First get a quick count of ISINs in the PDF text to see expected count
-            const pdfParse = require('pdf-parse');
-            const quickParse = await pdfParse(pdfBuffer, { max: 5 }); // First 5 pages for quick count
-            const isinPattern = /([A-Z]{2}[A-Z0-9]{10})/g;
-            const quickISINCount = (quickParse.text.match(isinPattern) || []).length;
-            const estimatedTotal = Math.max(quickISINCount, 3); // At least 3, but use actual count if higher
+            console.log(`🤖 Claude Vision found ${securitiesFound} securities`);
+            console.log(`🔄 FORCING hybrid extraction for complete coverage (Claude Vision is unreliable)`);
             
-            console.log(`📊 Quick scan found ~${estimatedTotal} ISINs, Claude extracted ${securitiesFound}`);
-            
-            // Use hybrid fallback if Claude found significantly fewer than expected (less than 70%)
-            if (estimatedTotal >= 5 && securitiesFound < (estimatedTotal * 0.7)) {
-                console.log(`⚠️  Claude may have missed securities (${securitiesFound}/${estimatedTotal}), using hybrid fallback...`);
-                return await this.hybridExtractionFallback(pdfBuffer, parsedResult);
-            }
-            
-            console.log(`✅ Claude extraction looks complete: ${securitiesFound} securities found`);
-            
-            // Calculate accuracy
-            const expectedTotal = 19464431;
-            const extractedTotal = parsedResult.summary?.totalValue || 
-                parsedResult.securities?.reduce((sum, s) => sum + (s.value || 0), 0) || 0;
-            
-            const accuracy = extractedTotal > 0 
-                ? Math.max(0, (1 - Math.abs(extractedTotal - expectedTotal) / expectedTotal) * 100)
-                : 0;
-            
-            return {
-                success: true,
-                securities: parsedResult.securities || [],
-                totalValue: extractedTotal,
-                accuracy: accuracy.toFixed(2),
-                currency: parsedResult.summary?.currency || 'CHF',
-                metadata: {
-                    method: 'claude-direct-vision',
-                    model: 'claude-3-5-sonnet-20241022',
-                    processingTime: elapsed,
-                    tokensUsed: {
-                        input: result.usage?.input_tokens || 0,
-                        output: result.usage?.output_tokens || 0
-                    },
-                    totalCost: this.calculateCost(result.usage),
-                    extractionQuality: 'claude-vision-direct'
-                }
-            };
+            // ALWAYS use hybrid extraction to ensure we find ALL securities
+            return await this.hybridExtractionFallback(pdfBuffer, parsedResult);
             
         } catch (error) {
             console.log('❌ Claude Vision error:', error.message);
