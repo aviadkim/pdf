@@ -1,0 +1,118 @@
+{
+  "timestamp": "2025-07-23T10:13:06.929Z",
+  "test": "Real Messos PDF - Ultra 99% System Test",
+  "processingTime": 32,
+  "result": {
+    "documentId": "real_messos_test",
+    "securities": [],
+    "totalValue": 0,
+    "accuracy": 4.25,
+    "method": "ultra-accurate-99",
+    "cost": 0,
+    "iterations": [
+      {
+        "phase": "enhanced_base",
+        "accuracy": null,
+        "securities": 0,
+        "method": "enhanced_parsing"
+      }
+    ],
+    "validationResults": {
+      "portfolioTotalMatch": {
+        "score": 0,
+        "expected": 19464431,
+        "actual": 0,
+        "difference": 19464431,
+        "percentageOff": 100
+      },
+      "securityCountValidation": {
+        "score": 0,
+        "expected": 25,
+        "actual": 0,
+        "missing": 25,
+        "extra": 0
+      },
+      "knownSecurityValidation": {
+        "score": 0,
+        "foundCount": 0,
+        "totalExpected": 5,
+        "details": [
+          {
+            "isin": "CH0012005267",
+            "found": false,
+            "expectedValue": 850000,
+            "accuracy": 0
+          },
+          {
+            "isin": "CH0038863350",
+            "found": false,
+            "expectedValue": 2100000,
+            "accuracy": 0
+          },
+          {
+            "isin": "US0378331005",
+            "found": false,
+            "expectedValue": 1450000,
+            "accuracy": 0
+          },
+          {
+            "isin": "US5949181045",
+            "found": false,
+            "expectedValue": 1890000,
+            "accuracy": 0
+          },
+          {
+            "isin": "XS2746319610",
+            "found": false,
+            "expectedValue": 140000,
+            "accuracy": 0
+          }
+        ]
+      },
+      "structuralValidation": {
+        "score": null,
+        "checks": [
+          {
+            "name": "ISIN Format",
+            "score": null
+          },
+          {
+            "name": "Value Range",
+            "score": null
+          },
+          {
+            "name": "Name Quality",
+            "score": null
+          },
+          {
+            "name": "Document Consistency",
+            "score": 100
+          }
+        ]
+      },
+      "overallScore": null
+    },
+    "processingTime": 31,
+    "ninetyNinePercentAchieved": false
+  },
+  "analysis": {
+    "portfolioAccuracy": 0,
+    "countAccuracy": 0,
+    "knownSecuritiesFound": 0,
+    "knownSecuritiesAccuracy": 0
+  },
+  "assessment": {
+    "overallScore": 0,
+    "ninetyNinePercentAchieved": false,
+    "status": "❌ POOR - Major improvements required",
+    "recommendations": [
+      "Complete system review needed",
+      "Check PDF parsing accuracy",
+      "Verify extraction algorithms"
+    ]
+  },
+  "expectedSecurities": 39,
+  "extractedSecurities": 0,
+  "accuracy": 4.25,
+  "overallScore": 0
+}

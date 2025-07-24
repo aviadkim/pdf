@@ -1,0 +1,34 @@
+{
+  "success": true,
+  "results": {
+    "success": true,
+    "documentId": "104ea41f-7aff-4cdc-8ab5-3f3e4188fe5b",
+    "pages": [
+      {
+        "page": 1,
+        "text": "",
+        "method": "minimal-fallback",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuLi4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICAgICAg"
+      }
+    ],
+    "pageCount": 1,
+    "ocrResults": [
+      {
+        "success": true,
+        "method": "text-extraction-fallback",
+        "accuracy": 60,
+        "securities": [],
+        "text": "",
+        "text_length": 0,
+        "message": "Used text extraction fallback",
+        "page": 1
+      }
+    ],
+    "accuracy": 80,
+    "patternsUsed": 19,
+    "suggestedAnnotations": [],
+    "processingMethod": "text-extraction-fallback",
+    "timestamp": "2025-07-21T20:43:09.488Z"
+  }
+}

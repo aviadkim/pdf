@@ -1,0 +1,108 @@
+{
+  "mcp": {
+    "servers": {
+      "docker": {
+        "command": "node",
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/docker-mcp-server.js"],
+        "description": "Docker container management - build, run, deploy containers",
+        "capabilities": ["container_management", "image_operations", "docker_compose"]
+      },
+      "deployment": {
+        "command": "node", 
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/deployment-mcp-server.js"],
+        "description": "Deploy to Render, Vercel with health monitoring",
+        "capabilities": ["deployment", "health_checks", "dockerfile_generation"]
+      },
+      "playwright": {
+        "command": "node",
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/playwright-mcp-server.js"],
+        "description": "Browser automation, testing, and performance analysis",
+        "capabilities": ["browser_automation", "testing", "performance_analysis", "accessibility"]
+      },
+      "github": {
+        "command": "node",
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/github-mcp-server.js"],
+        "description": "GitHub repository management and automation",
+        "capabilities": ["repository_management", "pr_automation", "issue_tracking", "releases"]
+      },
+      "semgrep": {
+        "command": "node", 
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/semgrep-mcp-server.js"],
+        "description": "Security vulnerability scanning and code analysis",
+        "capabilities": ["security_scanning", "vulnerability_detection", "code_quality", "ci_integration"]
+      },
+      "filesystem": {
+        "command": "node",
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/filesystem-mcp-server.js"],
+        "description": "Advanced file operations and system utilities",
+        "capabilities": ["bulk_operations", "file_search", "disk_analysis", "backup_tools"]
+      },
+      "filescope": {
+        "command": "node",
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/filescope-mcp-server.js"],
+        "description": "Intelligent file analysis and codebase exploration",
+        "capabilities": ["file_analysis", "codebase_exploration", "dependency_tracking"]
+      },
+      "repomix": {
+        "command": "node",
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/repomix-mcp-server.js"],
+        "description": "Repository packaging and analysis tools",
+        "capabilities": ["repo_packaging", "code_analysis", "documentation_generation"]
+      },
+      "task-management": {
+        "command": "node",
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/task-management-mcp-server.js"],
+        "description": "Task tracking and project management",
+        "capabilities": ["task_tracking", "project_management", "workflow_automation"]
+      },
+      "advanced-file-ops": {
+        "command": "node",
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/advanced-file-ops-mcp-server.js"],
+        "description": "Advanced file operations and transformations",
+        "capabilities": ["file_transformations", "batch_processing", "format_conversion"]
+      },
+      "code-quality": {
+        "command": "node",
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/code-quality-mcp-server.js"],
+        "description": "Code quality analysis and improvement suggestions",
+        "capabilities": ["code_analysis", "quality_metrics", "refactoring_suggestions"]
+      },
+      "process-management": {
+        "command": "node",
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/process-management-mcp-server.js"],
+        "description": "System process monitoring and management",
+        "capabilities": ["process_monitoring", "system_management", "resource_tracking"]
+      },
+      "puppeteer": {
+        "command": "node",
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/puppeteer-mcp-server.js"],
+        "description": "Web scraping and browser automation with Puppeteer",
+        "capabilities": ["web_scraping", "browser_automation", "pdf_generation", "screenshot_capture"]
+      },
+      "database": {
+        "command": "node",
+        "args": ["C:/Users/aviad/Desktop/pdf-main/mcp-servers/database-mcp-server.js"],
+        "description": "Database operations for SQLite, MySQL, PostgreSQL",
+        "capabilities": ["database_operations", "sql_queries", "schema_management", "data_migration"]
+      },
+      "brave-search": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+        "env": {
+          "BRAVE_API_KEY": "BSAUjeMGEqKikb9PZ20bcUbc9_2g6Ii"
+        },
+        "description": "Web search via Brave Search API",
+        "capabilities": ["web_search", "real_time_information"]
+      }
+    }
+  },
+  "features": {
+    "auto_discovery": true,
+    "concurrent_servers": 15,
+    "timeout": 30000
+  },
+  "logging": {
+    "level": "info",
+    "file": "mcp-servers.log"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-07-23T18:55:45.161Z",
+  "testResults": [
+    {
+      "url": "https://pdf-production-5dis.onrender.com",
+      "connection": {
+        "connectionTest": true,
+        "result": {
+          "success": false,
+          "error": "OpenAI client not initialized",
+          "timestamp": "2025-07-23T18:54:59.385Z",
+          "endpoint": "/api/openai-test"
+        }
+      },
+      "extraction": {
+        "configured": false,
+        "error": "API key not set",
+        "baseUrl": "https://pdf-production-5dis.onrender.com"
+      }
+    },
+    {
+      "url": "https://pdf-fzzi.onrender.com",
+      "connection": {
+        "connectionTest": true,
+        "result": {
+          "success": true,
+          "status": "ok",
+          "model": "gpt-4o-mini",
+          "message": "OpenAI connection successful",
+          "timestamp": "2025-07-23T18:55:03.572Z",
+          "endpoint": "/api/openai-test"
+        }
+      },
+      "extraction": {
+        "configured": true,
+        "working": true,
+        "accuracy": 57.61,
+        "responseTime": 39515,
+        "analysis": {
+          "hasOpenAIMetadata": true,
+          "hasGPTModel": true,
+          "hasConfidenceScores": false,
+          "processingMethod": "unknown",
+          "apiVersion": "v5.0-openai-gpt4"
+        },
+        "baseUrl": "https://pdf-fzzi.onrender.com",
+        "total": 11212760,
+        "securitiesCount": 21
+      }
+    }
+  ],
+  "summary": {
+    "servicesWithOpenAI": 1,
+    "successfulExtractions": 1,
+    "recommendation": "OpenAI working but current text-only approach is better"
+  }
+}

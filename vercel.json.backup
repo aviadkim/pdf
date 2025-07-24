@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/extract",
+      "dest": "/api/extract.js"
+    },
+    {
+      "src": "/api/public-extract",
+      "dest": "/api/public-extract.js"
+    },
+    {
+      "src": "/api/test",
+      "dest": "/api/test.js"
+    },
+    {
+      "src": "/api/mcp-enhanced-processor",
+      "dest": "/api/mcp-enhanced-processor.js"
+    },
+    {
+      "src": "/api/mcp/(.*)",
+      "dest": "/api/mcp/pdf-processor.js"
+    },
+    {
+      "src": "/api/real-pdf-extractor",
+      "dest": "/api/real-pdf-extractor.js"
+    },
+    {
+      "src": "/live-demo",
+      "dest": "/public/live-demo.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ],
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 60,
+      "memory": 1024
+    }
+  }
+}

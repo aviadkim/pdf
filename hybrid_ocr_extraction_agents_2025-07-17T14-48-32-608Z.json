@@ -1,0 +1,43 @@
+{
+  "success": true,
+  "securities": [
+    {
+      "isin": "XS2567543397",
+      "value": 107665,
+      "confidence": 0.6399000000000001,
+      "method": "higher_confidence_validated",
+      "reasoning": "Medium confidence, acceptable value range",
+      "dataSource": "text_extraction",
+      "aiApproval": true
+    },
+    {
+      "isin": "XS2746319610",
+      "value": 48600,
+      "confidence": 0.6399000000000001,
+      "method": "higher_confidence_validated",
+      "reasoning": "Medium confidence, acceptable value range",
+      "dataSource": "text_extraction",
+      "aiApproval": true
+    },
+    {
+      "isin": "XS2838389430",
+      "value": 70680,
+      "confidence": 0.6399000000000001,
+      "method": "higher_confidence_validated",
+      "reasoning": "Medium confidence, acceptable value range",
+      "dataSource": "text_extraction",
+      "aiApproval": true
+    }
+  ],
+  "totalValue": 226945,
+  "accuracy": 1.1659472604156782,
+  "method": "hybrid_ocr_extraction_agents",
+  "metadata": {
+    "processingTime": 375,
+    "textDataQuality": 0.41,
+    "ocrDataQuality": 0.8,
+    "crossReferenceScore": 0.235948717948718,
+    "validationScore": 0.711,
+    "aiDecisionConfidence": 0.6399000000000001
+  }
+}

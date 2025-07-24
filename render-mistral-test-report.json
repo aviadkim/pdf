@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-07-20T04:51:30.495Z",
+  "url": "https://pdf-fzzi.onrender.com",
+  "testResults": {
+    "mistralOCR": true,
+    "pdfProcessing": false,
+    "dataExtraction": false,
+    "annotationSystem": true,
+    "learningCapability": false,
+    "accuracyImprovement": false,
+    "errors": [
+      {
+        "test": "PDF Processing",
+        "error": "Timed out after waiting 30000ms"
+      },
+      {
+        "test": "Human Annotation",
+        "error": "page.waitForTimeout is not a function"
+      }
+    ]
+  },
+  "successRate": "33.3%",
+  "recommendations": [
+    "Check PDF upload endpoint configuration",
+    "Test learning endpoint with proper data format"
+  ]
+}

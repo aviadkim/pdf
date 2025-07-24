@@ -1,0 +1,421 @@
+{
+  "success": true,
+  "method": "targeted_improvement",
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "name": "6'070 ORDINARY Money market USD100'000.00 -2.30% 0.50% ISIN:",
+      "value": 6069.77,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 4
+    },
+    {
+      "isin": "XS2530201644",
+      "name": "Convertible bonds, Interest options USD200'000 0.25% 1.02% ISIN:",
+      "value": 2000000.25,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 2
+    },
+    {
+      "isin": "XS2588105036",
+      "name": "1'031 CANADIAN IMPERIAL BANK COMMERCE NOTES 23-22.08.28 ISIN:",
+      "value": 2000000.25,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "XS2665592833",
+      "name": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028 ISIN:",
+      "value": 2000000.47,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "XS2692298537",
+      "name": "Annual Days: PRC: 5.00 USD690'000 2.26% 3.79% ISIN:",
+      "value": 6900002.26,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "XS2754416860",
+      "name": "SACHS NOTES 23-07.11.29 SERIES USD100'000 1.16% 0.50% ISIN:",
+      "value": 6900002.26,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 4
+    },
+    {
+      "isin": "XS2761230684",
+      "name": "MIN/5.5 MAX) NOTES 2024-17.01.30 USD100'000 2.24% 0.53% ISIN:",
+      "value": 1000001.16,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "XS2736388732",
+      "name": "NOTES 2024-13.02.2030 VARIABLE RATE USD250'000 -2.58% 1.32% ISIN:",
+      "value": 1000002.24,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 2
+    },
+    {
+      "isin": "XS2782869916",
+      "name": "GLBL 5.65 CALL FIXED RATE NOTES 2024- ISIN:",
+      "value": 500001.07,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 2
+    },
+    {
+      "isin": "XS2824054402",
+      "name": "PRC: 5.00 Price verified USD440'000 1.81% 2.46% ISIN:",
+      "value": 500001.07,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 2
+    },
+    {
+      "isin": "XS2567543397",
+      "name": "20'602 BOFA 2024-29.05.34 REGS USD2'450'000 1.26% 13.21% ISIN:",
+      "value": 4400001.81,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "XS2110079584",
+      "name": "10Y CALLABLE NOTE 2024-18.06.2034 USD1'100'000 1.50% 5.66% ISIN:",
+      "value": 11000001.5,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "XS2848820754",
+      "name": "31.03.2025 CITIGROUP GLBL MEDIUM TERM NOTES 2024-01.08.34 ISIN:",
+      "value": 11000001.5,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 4
+    },
+    {
+      "isin": "XS2829712830",
+      "name": "Maturity: 01.08.2034 PRC: 5.00 USD100'000 1.16% 0.47% ISIN:",
+      "value": 11000001.5,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 5
+    },
+    {
+      "isin": "XS2912278723",
+      "name": "GOLDMAN SACHS EMTN 2024-30.09.2024 USD200'000 1.92% 1.02% ISIN:",
+      "value": 900002.35,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 4
+    },
+    {
+      "isin": "XS2381723902",
+      "name": "31.03.2025 JPMORGAN CHASE NOTES 2024-29.10.34 SERIES 2021- ISIN:",
+      "value": 2000001.92,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 2
+    },
+    {
+      "isin": "XS2829752976",
+      "name": "GOLDMAN SACHS EURO MEDIUM TERM NOTES 2024- ISIN:",
+      "value": 2500000.73,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "XS2953741100",
+      "name": "YTM: 5.65 PRC: 5.00 USD150'000 1.90% 0.75% ISIN:",
+      "value": 2500000.73,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 4
+    },
+    {
+      "isin": "XS2381717250",
+      "name": "AMERICA NOTES 2024-11.12.34 REG USD500'000 3.70% 2.60% ISIN:",
+      "value": 2500000.73,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 5
+    },
+    {
+      "isin": "XS2481066111",
+      "name": "JPMORGAN CHASE NOTES 2024-19.12.2034 USD50'000 -1.10% 0.25% ISIN:",
+      "value": 1500001.9,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 5
+    },
+    {
+      "isin": "XS2964611052",
+      "name": "GOLDMAN SACHS NOTES 2025-03.02.2035 USD1'470'000 0.72% 7.61% ISIN:",
+      "value": 5000003.7,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 5
+    },
+    {
+      "isin": "XS3035947103",
+      "name": "WELLS FARGO EURO MEDIUM TERM NOTES 2025-28.03.36 ISIN:",
+      "value": 14700000.72,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 4
+    },
+    {
+      "isin": "LU2228214107",
+      "name": "13.09.2024 PREMIUM ALT.S.A. SICAV-SIF COMMERCIAL FINANCE OPP.XB ISIN:",
+      "value": 8000000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "CH1269060229",
+      "name": "31.03.2025 1'043 JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28 ISIN:",
+      "value": 2581.79,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 2
+    },
+    {
+      "isin": "XS0461497009",
+      "name": "Convertible bonds, Interest options USD690'000 1.54% 3.65% ISIN:",
+      "value": 6900001.54,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 2
+    },
+    {
+      "isin": "XS2746319610",
+      "name": "BANK NOTES 23-08.11.28 VRN USD140'000 3.10% 0.99% ISIN:",
+      "value": 6900001.54,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "CH0244767585",
+      "name": "Equity funds, Options equities/indices CHF800 -3.10% 0.12% ISIN:",
+      "value": 243190.12,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 1
+    },
+    {
+      "isin": "XS2519369867",
+      "name": "28.02.2025 BCO SAFRA CAYMAN STRUCT.NOTE 2022-21.06.27 3,4% ISIN:",
+      "value": 200000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "XS2315191069",
+      "name": "21.06.2027 Days: PRC: 5.00 USD500'000 0.22% 2.58% ISIN:",
+      "value": 200000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 4
+    },
+    {
+      "isin": "XS2792098779",
+      "name": "ISS STRUCT.NOTE 21-08.01.29 DBDK USD1'200'000 -1.83% 5.93% ISIN:",
+      "value": 5000000.22,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 4
+    },
+    {
+      "isin": "XS2714429128",
+      "name": "EMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN ISIN:",
+      "value": 1200000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "XS2105981117",
+      "name": "31.03.2025 GOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN NAT ISIN:",
+      "value": 690000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "XS2838389430",
+      "name": "PRC: 4.0 Price verified USD1'600'000 0.35% 8.34% ISIN:",
+      "value": 500000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 2
+    },
+    {
+      "isin": "XS2631782468",
+      "name": "1'416 LUMINIS REPACK NOTES 23-25.05.29 VRN 4,625% ISIN:",
+      "value": 5000000.28,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 1
+    },
+    {
+      "isin": "XS1700087403",
+      "name": "8.40% 31.03.2025 NATIXIS STRUC.NOTES 19-20.6.26 VRN 4,75%METLIFE ISIN:",
+      "value": 100000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "XS2594173093",
+      "name": "PRC: 5.00 Price verified USD200'000 -1.90% 0.99% ISIN:",
+      "value": 100000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "XS2407295554",
+      "name": "31.03.2025 6'514 NOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ISIN:",
+      "value": 200000,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 3
+    },
+    {
+      "isin": "XS2252299883",
+      "name": "-1.38% 28.03.2025 NOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ISIN:",
+      "value": 5000004.36,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 4
+    },
+    {
+      "isin": "XD0466760473",
+      "name": "EXIGENT ENHANCED INCOME FUND LTD SHS SERIES ISIN:",
+      "value": 261290.13,
+      "currency": "USD",
+      "confidence": 0.9,
+      "extractionMethod": "currency_prefixed",
+      "fallbackUsed": false,
+      "originalCandidates": 1
+    }
+  ],
+  "totalValue": 132303169.87000003,
+  "accuracy": 14.71199142025515,
+  "metadata": {
+    "processingTime": 343,
+    "docStructure": {
+      "format": "swiss",
+      "primaryCurrency": "USD",
+      "portfolioTotal": 19464431,
+      "hasSwissFormat": true,
+      "currencyDistribution": {
+        "USD": 14,
+        "CHF": 1
+      },
+      "missingValueAnalysis": {
+        "totalCurrencyValues": 43,
+        "totalFoundValue": 141599436.80999997,
+        "missingAmount": -122135005.80999997,
+        "missingPercentage": -627.4779150235626
+      }
+    },
+    "targetedImprovement": true,
+    "conservativeEnhancement": true,
+    "buildsOn86Point79": true,
+    "noHardcodedValues": true
+  }
+}

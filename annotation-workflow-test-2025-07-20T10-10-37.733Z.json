@@ -1,0 +1,119 @@
+{
+  "timestamp": "2025-07-20T10:10:28.641Z",
+  "baseUrl": "https://pdf-fzzi.onrender.com",
+  "tests": [
+    {
+      "name": "System Status",
+      "status": "passed",
+      "data": {
+        "success": true,
+        "stats": {
+          "currentAccuracy": 80,
+          "patternCount": 16,
+          "documentCount": 0,
+          "annotationCount": 22,
+          "accuracyGain": 0,
+          "confidenceScore": 80,
+          "learningRate": 0.1,
+          "mistralEnabled": true,
+          "targetAccuracy": 99.9
+        }
+      }
+    },
+    {
+      "name": "Get Patterns",
+      "status": "failed",
+      "error": "patterns.slice is not a function"
+    },
+    {
+      "name": "Annotation UI",
+      "status": "passed",
+      "data": {
+        "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+        "hasAnnotationForm": false,
+        "url": "https://pdf-fzzi.onrender.com/smart-annotation"
+      }
+    },
+    {
+      "name": "Learning API - Format 1: Direct annotation",
+      "status": "failed",
+      "data": {
+        "status": 400,
+        "data": {
+          "success": false,
+          "error": "No corrections or patterns provided"
+        }
+      }
+    },
+    {
+      "name": "Learning API - Format 2: Wrapped in annotations array",
+      "status": "failed",
+      "data": {
+        "status": 400,
+        "data": {
+          "success": false,
+          "error": "No corrections or patterns provided"
+        }
+      }
+    },
+    {
+      "name": "Learning API - Format 3: With metadata",
+      "status": "failed",
+      "data": {
+        "status": 400,
+        "data": {
+          "success": false,
+          "error": "No corrections or patterns provided"
+        }
+      }
+    },
+    {
+      "name": "Learning API - Format 4: Batch format",
+      "status": "failed",
+      "data": {
+        "status": 400,
+        "data": {
+          "success": false,
+          "error": "No corrections or patterns provided"
+        }
+      }
+    },
+    {
+      "name": "Accuracy Improvement Workflow",
+      "status": "passed",
+      "data": {
+        "initial": {
+          "success": true,
+          "stats": {
+            "currentAccuracy": 80,
+            "patternCount": 16,
+            "documentCount": 0,
+            "annotationCount": 22,
+            "accuracyGain": 0,
+            "confidenceScore": 80,
+            "learningRate": 0.1,
+            "mistralEnabled": true,
+            "targetAccuracy": 99.9
+          }
+        },
+        "final": {
+          "success": true,
+          "stats": {
+            "currentAccuracy": 80,
+            "patternCount": 16,
+            "documentCount": 0,
+            "annotationCount": 22,
+            "accuracyGain": 0,
+            "confidenceScore": 80,
+            "learningRate": 0.1,
+            "mistralEnabled": true,
+            "targetAccuracy": 99.9
+          }
+        },
+        "accuracyChange": null,
+        "annotationsAdded": null,
+        "patternsGenerated": null
+      }
+    }
+  ]
+}

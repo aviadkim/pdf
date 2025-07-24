@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-07-20T08:49:21.010Z",
+  "renderUrl": "https://pdf-fzzi.onrender.com",
+  "totalEndpoints": 13,
+  "results": {
+    "working": [],
+    "failing": [
+      {
+        "endpoint": "/api/pdf-extract",
+        "responseTime": 693,
+        "status": 500,
+        "error": "Missing GraphicsMagick"
+      },
+      {
+        "endpoint": "/api/bulletproof-processor",
+        "responseTime": 158,
+        "status": 500,
+        "error": "Missing GraphicsMagick"
+      },
+      {
+        "endpoint": "/api/smart-ocr-process",
+        "responseTime": 262,
+        "status": 500,
+        "error": "Missing GraphicsMagick"
+      }
+    ],
+    "notFound": [
+      "/api/extract",
+      "/api/extract-simple",
+      "/api/extract-basic",
+      "/api/text-extract",
+      "/api/enhanced-extraction",
+      "/api/messos-extract",
+      "/api/precision-financial-processor",
+      "/api/universal-processor",
+      "/api/claude-vision-processor",
+      "/api/mcp-enhanced-processor"
+    ]
+  }
+}

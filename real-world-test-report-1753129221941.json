@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-07-21T20:20:21.822Z",
+  "tests": [
+    {
+      "name": "Real MESSOS Document Processing",
+      "status": "failed",
+      "startTime": 1753129221839,
+      "details": {
+        "fileSize": 627670,
+        "fileName": "2. Messos  - 31.03.2025.pdf",
+        "error": "Mistral API key is required. Set MISTRAL_API_KEY environment variable."
+      },
+      "endTime": 1753129221927,
+      "duration": 88
+    }
+  ],
+  "summary": {
+    "totalTests": 1,
+    "passed": 0,
+    "failed": 1,
+    "issues": [
+      "MESSOS test failed: Mistral API key is required. Set MISTRAL_API_KEY environment variable."
+    ]
+  }
+}

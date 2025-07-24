@@ -1,0 +1,97 @@
+{
+  "testDate": "2025-07-22T06:38:39.414Z",
+  "realTestData": {
+    "fileSize": "0.60 MB",
+    "pages": 19,
+    "extractedText": null,
+    "securitiesFound": 38,
+    "accuracy": 54.82,
+    "processingTimeMs": 386,
+    "textLength": 30376,
+    "estimatedTokens": 7594
+  },
+  "modelComparison": [
+    {
+      "model": "mistral-small-latest",
+      "inputTokens": 7594,
+      "outputTokens": 2000,
+      "inputCost": 0.007594,
+      "outputCost": 0.006,
+      "costPerDoc": 0.013594,
+      "expectedAccuracy": 68,
+      "estimatedTime": 0.5,
+      "valueProposition": "BUDGET - Low cost but insufficient for financial accuracy"
+    },
+    {
+      "model": "mistral-large-latest",
+      "inputTokens": 7594,
+      "outputTokens": 2000,
+      "inputCost": 0.030376,
+      "outputCost": 0.024,
+      "costPerDoc": 0.054376,
+      "expectedAccuracy": 100,
+      "estimatedTime": 1.2,
+      "valueProposition": "PREMIUM - Best accuracy, worth the cost for financial data"
+    },
+    {
+      "model": "mistral-medium",
+      "inputTokens": 7594,
+      "outputTokens": 2000,
+      "inputCost": 0.018985000000000002,
+      "outputCost": 0.015,
+      "costPerDoc": 0.033985,
+      "expectedAccuracy": 75,
+      "estimatedTime": 0.8,
+      "valueProposition": "BALANCED - Good accuracy/cost ratio for general use"
+    }
+  ],
+  "volumePricing": [
+    {
+      "volume": 100,
+      "monthlyCost": 5.4376,
+      "recommendedPrice": 0.163128
+    },
+    {
+      "volume": 500,
+      "monthlyCost": 27.188,
+      "recommendedPrice": 0.163128
+    },
+    {
+      "volume": 1000,
+      "monthlyCost": 54.376,
+      "recommendedPrice": 0.163128
+    },
+    {
+      "volume": 5000,
+      "monthlyCost": 271.88,
+      "recommendedPrice": 0.163128
+    },
+    {
+      "volume": 10000,
+      "monthlyCost": 543.76,
+      "recommendedPrice": 0.163128
+    }
+  ],
+  "scalabilityAssessment": {
+    "currentAccuracy": 54.82,
+    "productionReady": false,
+    "reasonsNotReady": [
+      "Accuracy too low (54.82% vs required 95%+)",
+      "Limited document format support",
+      "Basic error handling",
+      "No confidence scoring"
+    ],
+    "requiredImprovements": [
+      "Enhance table recognition algorithms",
+      "Add multi-currency support",
+      "Implement document type detection",
+      "Add human-in-the-loop validation"
+    ],
+    "timeToProduction": "2-4 weeks",
+    "scalingBottlenecks": [
+      "API rate limits",
+      "Processing accuracy",
+      "Error handling robustness"
+    ]
+  }
+}

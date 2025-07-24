@@ -1,0 +1,40 @@
+[
+  {
+    "approach": "Ultimate Precision (DP-Bench)",
+    "success": true,
+    "securities": 39,
+    "totalValue": 43826491,
+    "accuracy": "0.00",
+    "method": "ultimate_precision",
+    "processingTime": 444,
+    "features": [
+      "Legitimate Extraction"
+    ]
+  },
+  {
+    "approach": "Multi-Agent (Hugging Face AI)",
+    "success": true,
+    "securities": 39,
+    "totalValue": 30789,
+    "accuracy": "65.00",
+    "method": "multi_agent_huggingface",
+    "processingTime": 4367,
+    "features": [
+      "Hugging Face AI",
+      "5 AI Agents"
+    ]
+  },
+  {
+    "approach": "Universal (Any Financial PDF)",
+    "success": true,
+    "securities": 88,
+    "totalValue": 577876943.5600008,
+    "accuracy": "N/A",
+    "method": "universal_extraction",
+    "processingTime": 326,
+    "features": [
+      "Universal Patterns",
+      "No Hardcoded Values"
+    ]
+  }
+]

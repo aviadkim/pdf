@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "method": "final_optimized_system",
+  "securities": [
+    {
+      "isin": "XS2838389430",
+      "name": "4.0 Price verified USD1'600'000 0.35% 8.34%",
+      "value": 4625,
+      "currency": "USD",
+      "confidence": 0.4,
+      "inSummary": false,
+      "extractionMethod": "proximity_based",
+      "context": "/  Valorn.: 130738882\nStructured Bonds  //  Maturity: 17.09.2029\nDays: 195  //  PRC: 5.00\nPrice to be verified\nUSD500'000\n-0.21%\n2.49%\n34\n100.524396.7..."
+    },
+    {
+      "isin": "XS2631782468",
+      "name": "LUMINIS REPACK NOTES 23-25.05.29 VRN 4,625%",
+      "value": 4625,
+      "currency": "USD",
+      "confidence": 0.7999999999999999,
+      "inSummary": false,
+      "extractionMethod": "proximity_based",
+      "context": "to be verified\nUSD1'600'000\n0.35%\n8.34%\nISIN: XS2838389430  //  Valorn.: 135968317\nStructured Bonds  //  Maturity: 26.04.2033\nDays: 279  //  PRC: 5.00..."
+    }
+  ],
+  "totalValue": 9250,
+  "accuracy": 0,
+  "metadata": {
+    "processingTime": 369,
+    "documentAnalysis": {
+      "format": "international",
+      "primaryCurrency": "USD",
+      "portfolioTotal": null,
+      "sections": [],
+      "swissNumberCount": 949,
+      "internationalNumberCount": 989,
+      "totalCurrencyMentions": 15
+    },
+    "noHardcodedValues": true,
+    "legitimateExtraction": true,
+    "balancedApproach": true,
+    "algorithmic": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "filename": "2. Messos  - 31.03.2025.pdf",
+    "total_processing_time": 2.191971,
+    "processor_version": "Phase3_Full_Extraction",
+    "extraction_mode": "COMPLETE_ALL_SECURITIES"
+  },
+  "securities": [],
+  "portfolio_summary": {
+    "total_securities": 0,
+    "total_value": 0,
+    "validated_securities": 0,
+    "currencies": []
+  },
+  "extraction_stats": {
+    "securities_extracted": 0,
+    "validated_securities": 0,
+    "pages_processed": 0,
+    "average_confidence": 0
+  },
+  "full_extraction_timestamp": "20250714_230749"
+}

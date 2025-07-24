@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "method": "hybrid_direct_search_plus_current_extraction",
+  "total_isins_found": 40,
+  "securities_with_values": 0,
+  "securities": [],
+  "analysis": {
+    "securities_count": 0,
+    "total_value": 0,
+    "target_total": 19464431,
+    "accuracy": 0,
+    "gap": 19464431,
+    "current_baseline": 92.21,
+    "improvement": -92.21
+  },
+  "improvement_summary": {
+    "accuracy_improvement": -92.21,
+    "securities_improvement": "DECREASED",
+    "financial_impact": "SAME_OR_WORSE",
+    "overall_assessment": "PERFORMANCE_REGRESSION"
+  }
+}

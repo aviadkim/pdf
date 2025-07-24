@@ -1,0 +1,6367 @@
+{
+  "timestamp": "2025-07-20T19:38:55.198Z",
+  "testSuite": "Massive Playwright & Puppeteer Test Suite",
+  "baseUrl": "https://pdf-fzzi.onrender.com",
+  "totalTests": 500,
+  "results": {
+    "playwright": {
+      "chromium": [
+        {
+          "category": "Homepage Tests",
+          "testNumber": 1,
+          "result": {
+            "success": true,
+            "loadTime": 2997,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:20.198Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 2,
+          "result": {
+            "success": true,
+            "loadTime": 600,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:21.538Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 3,
+          "result": {
+            "success": true,
+            "loadTime": 745,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:23.028Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "loadTime": 601,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:24.313Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 5,
+          "result": {
+            "success": true,
+            "loadTime": 585,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:25.659Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 6,
+          "result": {
+            "success": true,
+            "loadTime": 592,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:27.435Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 7,
+          "result": {
+            "success": true,
+            "loadTime": 600,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:28.855Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 8,
+          "result": {
+            "success": true,
+            "loadTime": 603,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:30.194Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 9,
+          "result": {
+            "success": true,
+            "loadTime": 593,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:31.493Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 10,
+          "result": {
+            "success": true,
+            "loadTime": 595,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:32.852Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 11,
+          "result": {
+            "success": true,
+            "loadTime": 604,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:34.238Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 12,
+          "result": {
+            "success": true,
+            "loadTime": 607,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:35.614Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 13,
+          "result": {
+            "success": true,
+            "loadTime": 600,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:37.011Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 14,
+          "result": {
+            "success": true,
+            "loadTime": 613,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:38.297Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 15,
+          "result": {
+            "success": true,
+            "loadTime": 606,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:39.643Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 16,
+          "result": {
+            "success": true,
+            "loadTime": 609,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:41.125Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 17,
+          "result": {
+            "success": true,
+            "loadTime": 630,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:42.426Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 18,
+          "result": {
+            "success": true,
+            "loadTime": 608,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:43.760Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 19,
+          "result": {
+            "success": true,
+            "loadTime": 600,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:45.063Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 20,
+          "result": {
+            "success": true,
+            "loadTime": 622,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:46.439Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 21,
+          "result": {
+            "success": true,
+            "loadTime": 592,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:47.911Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 22,
+          "result": {
+            "success": true,
+            "loadTime": 602,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:49.224Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 23,
+          "result": {
+            "success": true,
+            "loadTime": 644,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:50.656Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 24,
+          "result": {
+            "success": true,
+            "loadTime": 602,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:52.281Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 25,
+          "result": {
+            "success": true,
+            "loadTime": 613,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:09:53.627Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 1,
+          "result": {
+            "success": true,
+            "loadTime": 703,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:09:55.378Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 2,
+          "result": {
+            "success": true,
+            "loadTime": 624,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:09:56.864Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 3,
+          "result": {
+            "success": true,
+            "loadTime": 601,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:09:58.217Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "loadTime": 610,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:09:59.532Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 5,
+          "result": {
+            "success": true,
+            "loadTime": 591,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:00.844Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 6,
+          "result": {
+            "success": true,
+            "loadTime": 598,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:02.388Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 7,
+          "result": {
+            "success": true,
+            "loadTime": 615,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:03.707Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 8,
+          "result": {
+            "success": true,
+            "loadTime": 614,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:05.087Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 9,
+          "result": {
+            "success": true,
+            "loadTime": 598,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:06.486Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 10,
+          "result": {
+            "success": true,
+            "loadTime": 598,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:07.844Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 11,
+          "result": {
+            "success": true,
+            "loadTime": 601,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:09.430Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 12,
+          "result": {
+            "success": true,
+            "loadTime": 609,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:10.767Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 13,
+          "result": {
+            "success": true,
+            "loadTime": 593,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:12.132Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 14,
+          "result": {
+            "success": true,
+            "loadTime": 595,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:13.394Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 15,
+          "result": {
+            "success": true,
+            "loadTime": 613,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:14.670Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 16,
+          "result": {
+            "success": true,
+            "loadTime": 604,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:16.269Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 17,
+          "result": {
+            "success": true,
+            "loadTime": 589,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:17.505Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 18,
+          "result": {
+            "success": true,
+            "loadTime": 611,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:18.823Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 19,
+          "result": {
+            "success": true,
+            "loadTime": 600,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:20.187Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 20,
+          "result": {
+            "success": true,
+            "loadTime": 607,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:21.468Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 21,
+          "result": {
+            "success": true,
+            "loadTime": 623,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:23.031Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 22,
+          "result": {
+            "success": true,
+            "loadTime": 610,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:24.383Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 23,
+          "result": {
+            "success": true,
+            "loadTime": 609,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:25.728Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 24,
+          "result": {
+            "success": true,
+            "loadTime": 612,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:27.049Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 25,
+          "result": {
+            "success": true,
+            "loadTime": 600,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:10:28.399Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 1,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:29.145Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 2,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:29.931Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 3,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:30.724Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:31.544Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 5,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:32.401Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 6,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:33.170Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 7,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:33.945Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 8,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:34.717Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 9,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:35.557Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 10,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:36.443Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 11,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:37.188Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 12,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:37.973Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 13,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:38.772Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 14,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:39.574Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 15,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:40.348Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 16,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:41.158Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 17,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:41.957Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 18,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:42.738Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 19,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:43.529Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 20,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:10:44.264Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 1,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:11:15.587Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 2,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:11:47.151Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 3,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:12:18.412Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 4,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:12:49.914Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 5,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:13:21.332Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 6,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:13:52.750Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 7,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:14:24.079Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 8,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:14:55.577Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 9,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:15:26.919Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 10,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:15:58.381Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 11,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:16:29.955Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 12,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:17:01.210Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 13,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:17:32.581Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 14,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:18:03.984Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 15,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:18:35.359Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 1,
+          "result": {
+            "success": true,
+            "viewport": "desktop",
+            "dimensions": "1920x1080",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:18:36.775Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 2,
+          "result": {
+            "success": true,
+            "viewport": "tablet",
+            "dimensions": "768x1024",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:18:38.178Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 3,
+          "result": {
+            "success": true,
+            "viewport": "mobile",
+            "dimensions": "375x667",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:18:39.423Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "viewport": "desktop",
+            "dimensions": "1920x1080",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:18:40.652Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 5,
+          "result": {
+            "success": true,
+            "viewport": "tablet",
+            "dimensions": "768x1024",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:18:41.927Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 6,
+          "result": {
+            "success": true,
+            "viewport": "mobile",
+            "dimensions": "375x667",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:18:43.187Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 7,
+          "result": {
+            "success": true,
+            "viewport": "desktop",
+            "dimensions": "1920x1080",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:18:44.465Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 8,
+          "result": {
+            "success": true,
+            "viewport": "tablet",
+            "dimensions": "768x1024",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:18:45.706Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 9,
+          "result": {
+            "success": true,
+            "viewport": "mobile",
+            "dimensions": "375x667",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:18:47.034Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 10,
+          "result": {
+            "success": true,
+            "viewport": "desktop",
+            "dimensions": "1920x1080",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:18:48.305Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 1,
+          "result": {
+            "success": true,
+            "loadTime": 596,
+            "metrics": {
+              "domContentLoaded": 0,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:18:49.547Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 2,
+          "result": {
+            "success": true,
+            "loadTime": 596,
+            "metrics": {
+              "domContentLoaded": 0.10000002384185791,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:18:50.775Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 3,
+          "result": {
+            "success": true,
+            "loadTime": 595,
+            "metrics": {
+              "domContentLoaded": 0,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:18:52.119Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "loadTime": 605,
+            "metrics": {
+              "domContentLoaded": 0,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:18:53.360Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 5,
+          "result": {
+            "success": true,
+            "loadTime": 611,
+            "metrics": {
+              "domContentLoaded": 0.10000002384185791,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:18:54.594Z"
+        }
+      ],
+      "firefox": [
+        {
+          "category": "Homepage Tests",
+          "testNumber": 1,
+          "result": {
+            "success": true,
+            "loadTime": 881,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:18:59.196Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 2,
+          "result": {
+            "success": true,
+            "loadTime": 663,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:00.257Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 3,
+          "result": {
+            "success": true,
+            "loadTime": 656,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:01.346Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "loadTime": 705,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:02.524Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 5,
+          "result": {
+            "success": true,
+            "loadTime": 761,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:03.656Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 6,
+          "result": {
+            "success": true,
+            "loadTime": 610,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:04.658Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 7,
+          "result": {
+            "success": true,
+            "loadTime": 622,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:05.655Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 8,
+          "result": {
+            "success": true,
+            "loadTime": 698,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:06.958Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 9,
+          "result": {
+            "success": true,
+            "loadTime": 634,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:07.988Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 10,
+          "result": {
+            "success": true,
+            "loadTime": 614,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:08.925Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 11,
+          "result": {
+            "success": true,
+            "loadTime": 624,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:09.907Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 12,
+          "result": {
+            "success": true,
+            "loadTime": 612,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:10.830Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 13,
+          "result": {
+            "success": true,
+            "loadTime": 599,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:11.787Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 14,
+          "result": {
+            "success": true,
+            "loadTime": 617,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:12.735Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 15,
+          "result": {
+            "success": true,
+            "loadTime": 632,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:13.643Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 16,
+          "result": {
+            "success": true,
+            "loadTime": 629,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:14.600Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 17,
+          "result": {
+            "success": true,
+            "loadTime": 634,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:15.508Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 18,
+          "result": {
+            "success": true,
+            "loadTime": 616,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:16.396Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 19,
+          "result": {
+            "success": true,
+            "loadTime": 608,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:17.278Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 20,
+          "result": {
+            "success": true,
+            "loadTime": 620,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:18.241Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 21,
+          "result": {
+            "success": true,
+            "loadTime": 630,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:19.267Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 22,
+          "result": {
+            "success": true,
+            "loadTime": 627,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:20.204Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 23,
+          "result": {
+            "success": true,
+            "loadTime": 626,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:21.149Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 24,
+          "result": {
+            "success": true,
+            "loadTime": 607,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:22.031Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 25,
+          "result": {
+            "success": true,
+            "loadTime": 624,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:19:22.955Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 1,
+          "result": {
+            "success": true,
+            "loadTime": 610,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:23.999Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 2,
+          "result": {
+            "success": true,
+            "loadTime": 624,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:24.958Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 3,
+          "result": {
+            "success": true,
+            "loadTime": 644,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:25.894Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "loadTime": 622,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:26.895Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 5,
+          "result": {
+            "success": true,
+            "loadTime": 641,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:27.819Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 6,
+          "result": {
+            "success": true,
+            "loadTime": 650,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:28.858Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 7,
+          "result": {
+            "success": true,
+            "loadTime": 613,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:29.800Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 8,
+          "result": {
+            "success": true,
+            "loadTime": 597,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:30.682Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 9,
+          "result": {
+            "success": true,
+            "loadTime": 612,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:31.576Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 10,
+          "result": {
+            "success": true,
+            "loadTime": 619,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:32.473Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 11,
+          "result": {
+            "success": true,
+            "loadTime": 637,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:33.489Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 12,
+          "result": {
+            "success": true,
+            "loadTime": 631,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:34.435Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 13,
+          "result": {
+            "success": true,
+            "loadTime": 652,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:35.381Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 14,
+          "result": {
+            "success": true,
+            "loadTime": 607,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:36.291Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 15,
+          "result": {
+            "success": true,
+            "loadTime": 613,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:37.188Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 16,
+          "result": {
+            "success": true,
+            "loadTime": 602,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:38.180Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 17,
+          "result": {
+            "success": true,
+            "loadTime": 616,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:39.104Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 18,
+          "result": {
+            "success": true,
+            "loadTime": 610,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:40.026Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 19,
+          "result": {
+            "success": true,
+            "loadTime": 620,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:40.928Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 20,
+          "result": {
+            "success": true,
+            "loadTime": 616,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:41.824Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 21,
+          "result": {
+            "success": true,
+            "loadTime": 640,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:42.841Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 22,
+          "result": {
+            "success": true,
+            "loadTime": 632,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:43.774Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 23,
+          "result": {
+            "success": true,
+            "loadTime": 605,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:44.665Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 24,
+          "result": {
+            "success": true,
+            "loadTime": 619,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:45.595Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 25,
+          "result": {
+            "success": true,
+            "loadTime": 611,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:19:46.514Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 1,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:46.914Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 2,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:47.270Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 3,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:47.645Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:48.020Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 5,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:48.468Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 6,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:48.911Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 7,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:49.257Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 8,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:49.635Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 9,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:49.989Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 10,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:50.388Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 11,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:50.774Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 12,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:51.282Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 13,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:51.643Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 14,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:52.008Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 15,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:52.383Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 16,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:52.796Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 17,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:53.207Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 18,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:53.634Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 19,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:54.128Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 20,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:19:54.507Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 1,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:20:25.463Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 2,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:20:56.496Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 3,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:21:27.424Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 4,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:21:58.466Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 5,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:22:29.530Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 6,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:23:00.648Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 7,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:23:32.134Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 8,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:24:03.182Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 9,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:24:34.106Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 10,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:25:05.131Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 11,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:25:36.188Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 12,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:26:07.478Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 13,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:26:38.463Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 14,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:27:09.535Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 15,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:27:40.607Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 1,
+          "result": {
+            "success": true,
+            "viewport": "desktop",
+            "dimensions": "1920x1080",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:27:41.653Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 2,
+          "result": {
+            "success": true,
+            "viewport": "tablet",
+            "dimensions": "768x1024",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:27:42.596Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 3,
+          "result": {
+            "success": true,
+            "viewport": "mobile",
+            "dimensions": "375x667",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:27:43.548Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "viewport": "desktop",
+            "dimensions": "1920x1080",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:27:44.599Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 5,
+          "result": {
+            "success": true,
+            "viewport": "tablet",
+            "dimensions": "768x1024",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:27:45.540Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 6,
+          "result": {
+            "success": true,
+            "viewport": "mobile",
+            "dimensions": "375x667",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:27:46.474Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 7,
+          "result": {
+            "success": true,
+            "viewport": "desktop",
+            "dimensions": "1920x1080",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:27:47.553Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 8,
+          "result": {
+            "success": true,
+            "viewport": "tablet",
+            "dimensions": "768x1024",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:27:48.481Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 9,
+          "result": {
+            "success": true,
+            "viewport": "mobile",
+            "dimensions": "375x667",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:27:49.412Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 10,
+          "result": {
+            "success": true,
+            "viewport": "desktop",
+            "dimensions": "1920x1080",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:27:50.354Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 1,
+          "result": {
+            "success": true,
+            "loadTime": 611,
+            "metrics": {
+              "domContentLoaded": 2,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:27:51.237Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 2,
+          "result": {
+            "success": true,
+            "loadTime": 621,
+            "metrics": {
+              "domContentLoaded": 4,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:27:52.140Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 3,
+          "result": {
+            "success": true,
+            "loadTime": 628,
+            "metrics": {
+              "domContentLoaded": 3,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:27:53.017Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "loadTime": 685,
+            "metrics": {
+              "domContentLoaded": 5,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:27:53.949Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 5,
+          "result": {
+            "success": true,
+            "loadTime": 626,
+            "metrics": {
+              "domContentLoaded": 3,
+              "loadComplete": 1
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:27:54.837Z"
+        }
+      ],
+      "webkit": [
+        {
+          "category": "Homepage Tests",
+          "testNumber": 1,
+          "result": {
+            "success": true,
+            "loadTime": 903,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:27:57.952Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 2,
+          "result": {
+            "success": true,
+            "loadTime": 621,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:27:58.903Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 3,
+          "result": {
+            "success": true,
+            "loadTime": 621,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:27:59.890Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "loadTime": 621,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:00.821Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 5,
+          "result": {
+            "success": true,
+            "loadTime": 623,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:01.750Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 6,
+          "result": {
+            "success": true,
+            "loadTime": 627,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:02.794Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 7,
+          "result": {
+            "success": true,
+            "loadTime": 641,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:03.761Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 8,
+          "result": {
+            "success": true,
+            "loadTime": 623,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:04.722Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 9,
+          "result": {
+            "success": true,
+            "loadTime": 623,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:05.691Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 10,
+          "result": {
+            "success": true,
+            "loadTime": 620,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:06.689Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 11,
+          "result": {
+            "success": true,
+            "loadTime": 613,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:07.718Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 12,
+          "result": {
+            "success": true,
+            "loadTime": 618,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:08.680Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 13,
+          "result": {
+            "success": true,
+            "loadTime": 622,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:09.641Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 14,
+          "result": {
+            "success": true,
+            "loadTime": 626,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:10.587Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 15,
+          "result": {
+            "success": true,
+            "loadTime": 614,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:11.528Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 16,
+          "result": {
+            "success": true,
+            "loadTime": 621,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:12.540Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 17,
+          "result": {
+            "success": true,
+            "loadTime": 619,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:13.476Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 18,
+          "result": {
+            "success": true,
+            "loadTime": 626,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:14.441Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 19,
+          "result": {
+            "success": true,
+            "loadTime": 616,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:15.383Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 20,
+          "result": {
+            "success": true,
+            "loadTime": 628,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:16.341Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 21,
+          "result": {
+            "success": true,
+            "loadTime": 619,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:17.415Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 22,
+          "result": {
+            "success": true,
+            "loadTime": 624,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:18.366Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 23,
+          "result": {
+            "success": true,
+            "loadTime": 615,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:19.313Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 24,
+          "result": {
+            "success": true,
+            "loadTime": 637,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:20.294Z"
+        },
+        {
+          "category": "Homepage Tests",
+          "testNumber": 25,
+          "result": {
+            "success": true,
+            "loadTime": 626,
+            "title": "Smart OCR Learning System",
+            "hasSmartOCR": true,
+            "testType": "homepage-load"
+          },
+          "timestamp": "2025-07-20T19:28:21.235Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 1,
+          "result": {
+            "success": true,
+            "loadTime": 699,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:22.509Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 2,
+          "result": {
+            "success": true,
+            "loadTime": 629,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:23.498Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 3,
+          "result": {
+            "success": true,
+            "loadTime": 637,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:24.485Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "loadTime": 628,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:25.447Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 5,
+          "result": {
+            "success": true,
+            "loadTime": 706,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:26.511Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 6,
+          "result": {
+            "success": true,
+            "loadTime": 635,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:27.787Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 7,
+          "result": {
+            "success": true,
+            "loadTime": 640,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:28.780Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 8,
+          "result": {
+            "success": true,
+            "loadTime": 623,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:29.752Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 9,
+          "result": {
+            "success": true,
+            "loadTime": 649,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:30.768Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 10,
+          "result": {
+            "success": true,
+            "loadTime": 636,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:31.728Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 11,
+          "result": {
+            "success": true,
+            "loadTime": 630,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:32.910Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 12,
+          "result": {
+            "success": true,
+            "loadTime": 662,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:33.894Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 13,
+          "result": {
+            "success": true,
+            "loadTime": 638,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:34.869Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 14,
+          "result": {
+            "success": true,
+            "loadTime": 641,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:35.869Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 15,
+          "result": {
+            "success": true,
+            "loadTime": 642,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:36.842Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 16,
+          "result": {
+            "success": true,
+            "loadTime": 654,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:37.986Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 17,
+          "result": {
+            "success": true,
+            "loadTime": 631,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:38.951Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 18,
+          "result": {
+            "success": true,
+            "loadTime": 675,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:39.947Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 19,
+          "result": {
+            "success": true,
+            "loadTime": 637,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:40.912Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 20,
+          "result": {
+            "success": true,
+            "loadTime": 664,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:41.968Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 21,
+          "result": {
+            "success": true,
+            "loadTime": 635,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:43.218Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 22,
+          "result": {
+            "success": true,
+            "loadTime": 630,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:44.260Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 23,
+          "result": {
+            "success": true,
+            "loadTime": 645,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:45.209Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 24,
+          "result": {
+            "success": true,
+            "loadTime": 619,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:46.157Z"
+        },
+        {
+          "category": "Annotation Interface Tests",
+          "testNumber": 25,
+          "result": {
+            "success": true,
+            "loadTime": 653,
+            "title": "Smart Financial PDF OCR - Visual Annotation Interface",
+            "fileInputs": 1,
+            "buttons": 8,
+            "testType": "annotation-interface"
+          },
+          "timestamp": "2025-07-20T19:28:47.144Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 1,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:47.611Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 2,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:48.020Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 3,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:48.428Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:48.892Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 5,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:49.266Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 6,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:49.660Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 7,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:50.069Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 8,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:50.468Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 9,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:50.883Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 10,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:51.345Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 11,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:51.772Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 12,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:52.227Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 13,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:52.606Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 14,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:53.031Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 15,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:53.488Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 16,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:53.929Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 17,
+          "result": {
+            "success": false,
+            "endpoint": "/api/system-capabilities",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:54.439Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 18,
+          "result": {
+            "success": false,
+            "endpoint": "/api/mistral-ocr-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:54.844Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 19,
+          "result": {
+            "success": false,
+            "endpoint": "/api/ultra-accurate-extract",
+            "hasError": true,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:55.226Z"
+        },
+        {
+          "category": "API Endpoint Tests",
+          "testNumber": 20,
+          "result": {
+            "success": true,
+            "endpoint": "/api/smart-ocr-stats",
+            "hasError": false,
+            "testType": "api-endpoint"
+          },
+          "timestamp": "2025-07-20T19:28:55.625Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 1,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:29:26.598Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 2,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:29:57.642Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 3,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:30:28.621Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 4,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:30:59.628Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 5,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:31:30.855Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 6,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:32:01.834Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 7,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:32:32.854Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 8,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:33:03.843Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 9,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:33:35.022Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 10,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:34:05.989Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 11,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:34:36.996Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 12,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:35:08.340Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 13,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:35:39.338Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 14,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:36:10.318Z"
+        },
+        {
+          "category": "Form Interaction Tests",
+          "testNumber": 15,
+          "result": {
+            "success": false,
+            "hasFileInput": true,
+            "interactionSuccess": false,
+            "testType": "form-interaction"
+          },
+          "timestamp": "2025-07-20T19:36:41.293Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 1,
+          "result": {
+            "success": true,
+            "viewport": "desktop",
+            "dimensions": "1920x1080",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:36:42.293Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 2,
+          "result": {
+            "success": true,
+            "viewport": "tablet",
+            "dimensions": "768x1024",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:36:43.387Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 3,
+          "result": {
+            "success": true,
+            "viewport": "mobile",
+            "dimensions": "375x667",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:36:44.375Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "viewport": "desktop",
+            "dimensions": "1920x1080",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:36:45.339Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 5,
+          "result": {
+            "success": true,
+            "viewport": "tablet",
+            "dimensions": "768x1024",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:36:46.315Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 6,
+          "result": {
+            "success": true,
+            "viewport": "mobile",
+            "dimensions": "375x667",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:36:47.268Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 7,
+          "result": {
+            "success": true,
+            "viewport": "desktop",
+            "dimensions": "1920x1080",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:36:48.234Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 8,
+          "result": {
+            "success": true,
+            "viewport": "tablet",
+            "dimensions": "768x1024",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:36:49.175Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 9,
+          "result": {
+            "success": true,
+            "viewport": "mobile",
+            "dimensions": "375x667",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:36:50.129Z"
+        },
+        {
+          "category": "Responsive Design Tests",
+          "testNumber": 10,
+          "result": {
+            "success": true,
+            "viewport": "desktop",
+            "dimensions": "1920x1080",
+            "testType": "responsive-design"
+          },
+          "timestamp": "2025-07-20T19:36:51.102Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 1,
+          "result": {
+            "success": true,
+            "loadTime": 630,
+            "metrics": {
+              "domContentLoaded": 0,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:36:52.077Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 2,
+          "result": {
+            "success": true,
+            "loadTime": 631,
+            "metrics": {
+              "domContentLoaded": 0,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:36:53.046Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 3,
+          "result": {
+            "success": true,
+            "loadTime": 627,
+            "metrics": {
+              "domContentLoaded": 0,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:36:53.989Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 4,
+          "result": {
+            "success": true,
+            "loadTime": 620,
+            "metrics": {
+              "domContentLoaded": 0,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:36:54.952Z"
+        },
+        {
+          "category": "Performance Tests",
+          "testNumber": 5,
+          "result": {
+            "success": true,
+            "loadTime": 620,
+            "metrics": {
+              "domContentLoaded": 0,
+              "loadComplete": 0
+            },
+            "testType": "performance"
+          },
+          "timestamp": "2025-07-20T19:36:55.896Z"
+        }
+      ]
+    },
+    "puppeteer": [
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 1,
+        "result": {
+          "success": true,
+          "loadTime": 1526,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:36:59.210Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 2,
+        "result": {
+          "success": true,
+          "loadTime": 945,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:00.231Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 3,
+        "result": {
+          "success": true,
+          "loadTime": 984,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:01.301Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 4,
+        "result": {
+          "success": true,
+          "loadTime": 716,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:02.093Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 5,
+        "result": {
+          "success": true,
+          "loadTime": 984,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:03.151Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 6,
+        "result": {
+          "success": true,
+          "loadTime": 982,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:04.207Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 7,
+        "result": {
+          "success": true,
+          "loadTime": 979,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:05.258Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 8,
+        "result": {
+          "success": true,
+          "loadTime": 978,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:06.319Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 9,
+        "result": {
+          "success": true,
+          "loadTime": 978,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:07.384Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 10,
+        "result": {
+          "success": true,
+          "loadTime": 991,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:08.449Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 11,
+        "result": {
+          "success": true,
+          "loadTime": 971,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:09.499Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 12,
+        "result": {
+          "success": true,
+          "loadTime": 981,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:10.554Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 13,
+        "result": {
+          "success": true,
+          "loadTime": 983,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:11.611Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 14,
+        "result": {
+          "success": true,
+          "loadTime": 974,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:12.665Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 15,
+        "result": {
+          "success": true,
+          "loadTime": 978,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:13.718Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 16,
+        "result": {
+          "success": true,
+          "loadTime": 981,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:14.774Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 17,
+        "result": {
+          "success": true,
+          "loadTime": 980,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:15.829Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 18,
+        "result": {
+          "success": true,
+          "loadTime": 975,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:16.877Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 19,
+        "result": {
+          "success": true,
+          "loadTime": 974,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:17.923Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 20,
+        "result": {
+          "success": true,
+          "loadTime": 988,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:18.986Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 21,
+        "result": {
+          "success": true,
+          "loadTime": 979,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:20.038Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 22,
+        "result": {
+          "success": true,
+          "loadTime": 974,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:21.089Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 23,
+        "result": {
+          "success": true,
+          "loadTime": 980,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:22.142Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 24,
+        "result": {
+          "success": true,
+          "loadTime": 973,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:23.194Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 25,
+        "result": {
+          "success": true,
+          "loadTime": 989,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:24.269Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 26,
+        "result": {
+          "success": true,
+          "loadTime": 979,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:25.327Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 27,
+        "result": {
+          "success": true,
+          "loadTime": 977,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:26.381Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 28,
+        "result": {
+          "success": true,
+          "loadTime": 983,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:27.438Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 29,
+        "result": {
+          "success": true,
+          "loadTime": 974,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:28.499Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 30,
+        "result": {
+          "success": true,
+          "loadTime": 980,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:29.566Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 31,
+        "result": {
+          "success": true,
+          "loadTime": 983,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:30.688Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 32,
+        "result": {
+          "success": true,
+          "loadTime": 970,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:31.758Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 33,
+        "result": {
+          "success": true,
+          "loadTime": 975,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:32.821Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 34,
+        "result": {
+          "success": true,
+          "loadTime": 978,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:33.897Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 35,
+        "result": {
+          "success": true,
+          "loadTime": 997,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:35.031Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 36,
+        "result": {
+          "success": true,
+          "loadTime": 988,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:36.140Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 37,
+        "result": {
+          "success": true,
+          "loadTime": 981,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:37.211Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 38,
+        "result": {
+          "success": true,
+          "loadTime": 925,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:38.312Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 39,
+        "result": {
+          "success": true,
+          "loadTime": 971,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:39.373Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 40,
+        "result": {
+          "success": true,
+          "loadTime": 970,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:40.443Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 41,
+        "result": {
+          "success": true,
+          "loadTime": 973,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:41.523Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 42,
+        "result": {
+          "success": true,
+          "loadTime": 967,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:42.587Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 43,
+        "result": {
+          "success": true,
+          "loadTime": 980,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:43.658Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 44,
+        "result": {
+          "success": true,
+          "loadTime": 967,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:44.725Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 45,
+        "result": {
+          "success": true,
+          "loadTime": 976,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:45.795Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 46,
+        "result": {
+          "success": true,
+          "loadTime": 985,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:46.853Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 47,
+        "result": {
+          "success": true,
+          "loadTime": 960,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:47.913Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 48,
+        "result": {
+          "success": true,
+          "loadTime": 975,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:48.977Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 49,
+        "result": {
+          "success": true,
+          "loadTime": 986,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:50.051Z"
+      },
+      {
+        "category": "Performance Benchmarks",
+        "testNumber": 50,
+        "result": {
+          "success": true,
+          "loadTime": 1031,
+          "jsHeapUsedSize": 0.94,
+          "jsHeapTotalSize": 1.63,
+          "testType": "performance-benchmark"
+        },
+        "timestamp": "2025-07-20T19:37:51.312Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 1,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:37:56.332Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 2,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:37:56.659Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 3,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:37:56.953Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 4,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:37:57.302Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 5,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:37:57.611Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 6,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:37:57.894Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 7,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:37:58.166Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 8,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:37:58.447Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 9,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:37:58.734Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 10,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:37:59.004Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 11,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:37:59.306Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 12,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:37:59.644Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 13,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:37:59.934Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 14,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:00.217Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 15,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:00.529Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 16,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:00.846Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 17,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:01.122Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 18,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:01.402Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 19,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:01.685Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 20,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:01.954Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 21,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:02.244Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 22,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:02.504Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 23,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:02.786Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 24,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:03.068Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 25,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:03.357Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 26,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:03.632Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 27,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:03.904Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 28,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:04.198Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 29,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:04.477Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 30,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:04.849Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 31,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:05.134Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 32,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:05.443Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 33,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:05.727Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 34,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:06.069Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 35,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:06.340Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 36,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:06.626Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 37,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:06.952Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 38,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:07.321Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 39,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:07.671Z"
+      },
+      {
+        "category": "Interaction Tests",
+        "testNumber": 40,
+        "result": {
+          "success": true,
+          "interactionScore": 2,
+          "fileInputFound": true,
+          "buttonsFound": 8,
+          "testType": "interaction"
+        },
+        "timestamp": "2025-07-20T19:38:07.940Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 1,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:08.160Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 2,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:08.378Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 3,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:08.594Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 4,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:08.806Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 5,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:09.045Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 6,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:09.240Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 7,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:09.437Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 8,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:09.663Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 9,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:09.886Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 10,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:10.097Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 11,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:10.312Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 12,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:10.547Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 13,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:10.785Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 14,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:10.999Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 15,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:11.223Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 16,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:11.470Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 17,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:11.682Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 18,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:11.915Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 19,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:12.110Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 20,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:12.342Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 21,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:12.572Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 22,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:12.783Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 23,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:12.983Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 24,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:13.209Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 25,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:13.425Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 26,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:13.625Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 27,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:13.844Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 28,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:14.053Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 29,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:14.265Z"
+      },
+      {
+        "category": "Memory Usage Tests",
+        "testNumber": 30,
+        "result": {
+          "success": true,
+          "memoryIncrease": 0.29,
+          "initialMemory": 0.94,
+          "finalMemory": 1.24,
+          "testType": "memory-usage"
+        },
+        "timestamp": "2025-07-20T19:38:14.480Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 1,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:15.530Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 2,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:16.589Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 3,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:17.640Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 4,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:18.694Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 5,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:19.749Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 6,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:20.827Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 7,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:21.909Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 8,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:22.954Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 9,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:23.999Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 10,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:25.056Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 11,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:26.111Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 12,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:27.216Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 13,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:28.304Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 14,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:29.357Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 15,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:30.413Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 16,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:31.468Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 17,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:32.512Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 18,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:33.566Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 19,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:34.622Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 20,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:35.667Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 21,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:36.723Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 22,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:37.772Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 23,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:38.829Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 24,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:39.883Z"
+      },
+      {
+        "category": "Network Analysis",
+        "testNumber": 25,
+        "result": {
+          "success": true,
+          "totalRequests": 1,
+          "successfulRequests": 1,
+          "failedRequests": 0,
+          "testType": "network-analysis"
+        },
+        "timestamp": "2025-07-20T19:38:40.938Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 1,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:41.173Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 2,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:41.376Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 3,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:41.602Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 4,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:41.819Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 5,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:42.042Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 6,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:42.249Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 7,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:42.463Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 8,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:42.657Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 9,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:42.846Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 10,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:43.076Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 11,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:43.276Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 12,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:43.475Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 13,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:43.656Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 14,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:43.856Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 15,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:44.046Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 16,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:44.260Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 17,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:44.479Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 18,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:44.681Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 19,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:44.873Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 20,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:45.104Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 21,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:45.326Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 22,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:45.531Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 23,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:45.736Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 24,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:45.936Z"
+      },
+      {
+        "category": "JavaScript Execution",
+        "testNumber": 25,
+        "result": {
+          "success": true,
+          "jsExecutionWorking": true,
+          "calculationCorrect": true,
+          "testType": "javascript-execution"
+        },
+        "timestamp": "2025-07-20T19:38:46.136Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 1,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:46.463Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 2,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:46.715Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 3,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:46.991Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 4,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:47.357Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 5,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:47.619Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 6,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:47.886Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 7,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:48.159Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 8,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:48.424Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 9,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:48.680Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 10,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:48.954Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 11,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:49.211Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 12,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:49.468Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 13,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:49.716Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 14,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:49.979Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 15,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:50.231Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 16,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:50.490Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 17,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:50.759Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 18,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:51.078Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 19,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:51.435Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 20,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:51.724Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 21,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:51.982Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 22,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:52.245Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 23,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:52.487Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 24,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:52.742Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 25,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:53.005Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 26,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:53.255Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 27,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:53.523Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 28,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:53.781Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 29,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:54.041Z"
+      },
+      {
+        "category": "PDF Processing Simulation",
+        "testNumber": 30,
+        "result": {
+          "success": true,
+          "hasUploadCapability": true,
+          "formSubmissionReady": false,
+          "readyForPDFProcessing": false,
+          "testType": "pdf-processing-simulation"
+        },
+        "timestamp": "2025-07-20T19:38:54.315Z"
+      }
+    ],
+    "pdfProcessing": [
+      {
+        "success": true,
+        "method": "pdf-parse-safe",
+        "textLength": 30376,
+        "processingTime": 398,
+        "securitiesFound": 40,
+        "extractedData": {
+          "securities": [
+            {
+              "isin": "CH1908490000",
+              "potentialValue": "31.03"
+            },
+            {
+              "isin": "XS2993414619",
+              "potentialValue": "105.96"
+            },
+            {
+              "isin": "XS2530201644",
+              "potentialValue": "2.40"
+            },
+            {
+              "isin": "XS2588105036",
+              "potentialValue": "31.03"
+            },
+            {
+              "isin": "XS2665592833",
+              "potentialValue": "01.04"
+            },
+            {
+              "isin": "XS2692298537",
+              "potentialValue": "105.96"
+            },
+            {
+              "isin": "XS2754416860",
+              "potentialValue": "2.40"
+            },
+            {
+              "isin": "XS2761230684",
+              "potentialValue": "31.03"
+            },
+            {
+              "isin": "XS2736388732",
+              "potentialValue": "105.96"
+            },
+            {
+              "isin": "XS2782869916",
+              "potentialValue": "2.40"
+            },
+            {
+              "isin": "XS2824054402",
+              "potentialValue": "7700.53"
+            },
+            {
+              "isin": "XS2567543397",
+              "potentialValue": "97463.52"
+            },
+            {
+              "isin": "XS2110079584",
+              "potentialValue": "3190.12"
+            },
+            {
+              "isin": "XS2848820754",
+              "potentialValue": "23935.69"
+            },
+            {
+              "isin": "XS2829712830",
+              "potentialValue": "1290.13"
+            },
+            {
+              "isin": "XS2912278723",
+              "potentialValue": "431100.00"
+            },
+            {
+              "isin": "XS2381723902",
+              "potentialValue": "11299.88"
+            },
+            {
+              "isin": "XS2829752976",
+              "potentialValue": "4961.13"
+            },
+            {
+              "isin": "XS2953741100",
+              "potentialValue": "130.88"
+            },
+            {
+              "isin": "XS2381717250",
+              "potentialValue": "3190.12"
+            },
+            {
+              "isin": "XS2481066111",
+              "potentialValue": "431100.00"
+            },
+            {
+              "isin": "XS2964611052",
+              "potentialValue": "01.04"
+            },
+            {
+              "isin": "XS3035947103",
+              "potentialValue": "31.03"
+            },
+            {
+              "isin": "LU2228214107",
+              "potentialValue": "105.96"
+            },
+            {
+              "isin": "CH1269060229",
+              "potentialValue": "2.40"
+            },
+            {
+              "isin": "XS0461497009",
+              "potentialValue": "7700.53"
+            },
+            {
+              "isin": "XS2746319610",
+              "potentialValue": "0700.03"
+            },
+            {
+              "isin": "CH0244767585",
+              "potentialValue": "7000.50"
+            },
+            {
+              "isin": "XS2519369867",
+              "potentialValue": "97463.52"
+            },
+            {
+              "isin": "XS2315191069",
+              "potentialValue": "50856.53"
+            },
+            {
+              "isin": "XS2792098779",
+              "potentialValue": "4666.99"
+            },
+            {
+              "isin": "XS2714429128",
+              "potentialValue": "3190.12"
+            },
+            {
+              "isin": "XS2105981117",
+              "potentialValue": "3190.12"
+            },
+            {
+              "isin": "XS2838389430",
+              "potentialValue": "23935.69"
+            },
+            {
+              "isin": "XS2631782468",
+              "potentialValue": "43930.60"
+            },
+            {
+              "isin": "XS1700087403",
+              "potentialValue": "8005.09"
+            },
+            {
+              "isin": "XS2594173093",
+              "potentialValue": "1290.13"
+            },
+            {
+              "isin": "XS2407295554",
+              "potentialValue": "1290.13"
+            },
+            {
+              "isin": "XS2252299883",
+              "potentialValue": "431100.00"
+            },
+            {
+              "isin": "XD0466760473",
+              "potentialValue": "01.04"
+            }
+          ],
+          "totalValue": null,
+          "date": "31.03.2025",
+          "currency": "USD"
+        },
+        "resultsFile": "messos-processing-results-1753040335190.json"
+      }
+    ],
+    "performance": [],
+    "screenshots": [
+      {
+        "test": "homepage-test-0",
+        "browser": "chromium",
+        "filename": "massive-test-chromium-homepage-test-0-1753038560104.png",
+        "timestamp": "2025-07-20T19:09:20.104Z"
+      },
+      {
+        "test": "homepage-test-5",
+        "browser": "chromium",
+        "filename": "massive-test-chromium-homepage-test-5-1753038566955.png",
+        "timestamp": "2025-07-20T19:09:26.955Z"
+      },
+      {
+        "test": "homepage-test-10",
+        "browser": "chromium",
+        "filename": "massive-test-chromium-homepage-test-10-1753038574156.png",
+        "timestamp": "2025-07-20T19:09:34.156Z"
+      },
+      {
+        "test": "homepage-test-15",
+        "browser": "chromium",
+        "filename": "massive-test-chromium-homepage-test-15-1753038581038.png",
+        "timestamp": "2025-07-20T19:09:41.038Z"
+      },
+      {
+        "test": "homepage-test-20",
+        "browser": "chromium",
+        "filename": "massive-test-chromium-homepage-test-20-1753038587766.png",
+        "timestamp": "2025-07-20T19:09:47.766Z"
+      },
+      {
+        "test": "annotation-test-0",
+        "browser": "chromium",
+        "filename": "massive-test-chromium-annotation-test-0-1753038595142.png",
+        "timestamp": "2025-07-20T19:09:55.142Z"
+      },
+      {
+        "test": "annotation-test-5",
+        "browser": "chromium",
+        "filename": "massive-test-chromium-annotation-test-5-1753038602177.png",
+        "timestamp": "2025-07-20T19:10:02.177Z"
+      },
+      {
+        "test": "annotation-test-10",
+        "browser": "chromium",
+        "filename": "massive-test-chromium-annotation-test-10-1753038609195.png",
+        "timestamp": "2025-07-20T19:10:09.195Z"
+      },
+      {
+        "test": "annotation-test-15",
+        "browser": "chromium",
+        "filename": "massive-test-chromium-annotation-test-15-1753038615971.png",
+        "timestamp": "2025-07-20T19:10:15.971Z"
+      },
+      {
+        "test": "annotation-test-20",
+        "browser": "chromium",
+        "filename": "massive-test-chromium-annotation-test-20-1753038622825.png",
+        "timestamp": "2025-07-20T19:10:22.825Z"
+      },
+      {
+        "test": "homepage-test-0",
+        "browser": "firefox",
+        "filename": "massive-test-firefox-homepage-test-0-1753039139115.png",
+        "timestamp": "2025-07-20T19:18:59.115Z"
+      },
+      {
+        "test": "homepage-test-5",
+        "browser": "firefox",
+        "filename": "massive-test-firefox-homepage-test-5-1753039144617.png",
+        "timestamp": "2025-07-20T19:19:04.617Z"
+      },
+      {
+        "test": "homepage-test-10",
+        "browser": "firefox",
+        "filename": "massive-test-firefox-homepage-test-10-1753039149869.png",
+        "timestamp": "2025-07-20T19:19:09.869Z"
+      },
+      {
+        "test": "homepage-test-15",
+        "browser": "firefox",
+        "filename": "massive-test-firefox-homepage-test-15-1753039154560.png",
+        "timestamp": "2025-07-20T19:19:14.560Z"
+      },
+      {
+        "test": "homepage-test-20",
+        "browser": "firefox",
+        "filename": "massive-test-firefox-homepage-test-20-1753039159232.png",
+        "timestamp": "2025-07-20T19:19:19.232Z"
+      },
+      {
+        "test": "annotation-test-0",
+        "browser": "firefox",
+        "filename": "massive-test-firefox-annotation-test-0-1753039163880.png",
+        "timestamp": "2025-07-20T19:19:23.880Z"
+      },
+      {
+        "test": "annotation-test-5",
+        "browser": "firefox",
+        "filename": "massive-test-firefox-annotation-test-5-1753039168783.png",
+        "timestamp": "2025-07-20T19:19:28.783Z"
+      },
+      {
+        "test": "annotation-test-10",
+        "browser": "firefox",
+        "filename": "massive-test-firefox-annotation-test-10-1753039173401.png",
+        "timestamp": "2025-07-20T19:19:33.401Z"
+      },
+      {
+        "test": "annotation-test-15",
+        "browser": "firefox",
+        "filename": "massive-test-firefox-annotation-test-15-1753039178088.png",
+        "timestamp": "2025-07-20T19:19:38.088Z"
+      },
+      {
+        "test": "annotation-test-20",
+        "browser": "firefox",
+        "filename": "massive-test-firefox-annotation-test-20-1753039182755.png",
+        "timestamp": "2025-07-20T19:19:42.755Z"
+      },
+      {
+        "test": "homepage-test-0",
+        "browser": "webkit",
+        "filename": "massive-test-webkit-homepage-test-0-1753039677847.png",
+        "timestamp": "2025-07-20T19:27:57.847Z"
+      },
+      {
+        "test": "homepage-test-5",
+        "browser": "webkit",
+        "filename": "massive-test-webkit-homepage-test-5-1753039682704.png",
+        "timestamp": "2025-07-20T19:28:02.704Z"
+      },
+      {
+        "test": "homepage-test-10",
+        "browser": "webkit",
+        "filename": "massive-test-webkit-homepage-test-10-1753039687633.png",
+        "timestamp": "2025-07-20T19:28:07.633Z"
+      },
+      {
+        "test": "homepage-test-15",
+        "browser": "webkit",
+        "filename": "massive-test-webkit-homepage-test-15-1753039692458.png",
+        "timestamp": "2025-07-20T19:28:12.458Z"
+      },
+      {
+        "test": "homepage-test-20",
+        "browser": "webkit",
+        "filename": "massive-test-webkit-homepage-test-20-1753039697338.png",
+        "timestamp": "2025-07-20T19:28:17.338Z"
+      },
+      {
+        "test": "annotation-test-0",
+        "browser": "webkit",
+        "filename": "massive-test-webkit-annotation-test-0-1753039702281.png",
+        "timestamp": "2025-07-20T19:28:22.281Z"
+      },
+      {
+        "test": "annotation-test-5",
+        "browser": "webkit",
+        "filename": "massive-test-webkit-annotation-test-5-1753039707601.png",
+        "timestamp": "2025-07-20T19:28:27.601Z"
+      },
+      {
+        "test": "annotation-test-10",
+        "browser": "webkit",
+        "filename": "massive-test-webkit-annotation-test-10-1753039712723.png",
+        "timestamp": "2025-07-20T19:28:32.723Z"
+      },
+      {
+        "test": "annotation-test-15",
+        "browser": "webkit",
+        "filename": "massive-test-webkit-annotation-test-15-1753039717799.png",
+        "timestamp": "2025-07-20T19:28:37.799Z"
+      },
+      {
+        "test": "annotation-test-20",
+        "browser": "webkit",
+        "filename": "massive-test-webkit-annotation-test-20-1753039722999.png",
+        "timestamp": "2025-07-20T19:28:42.999Z"
+      }
+    ],
+    "summary": {}
+  },
+  "statistics": {
+    "playwright": {
+      "chromium": {
+        "passed": 70,
+        "total": 100,
+        "percentage": 70
+      },
+      "firefox": {
+        "passed": 70,
+        "total": 100,
+        "percentage": 70
+      },
+      "webkit": {
+        "passed": 70,
+        "total": 100,
+        "percentage": 70
+      }
+    },
+    "puppeteer": {
+      "passed": 200,
+      "total": 200,
+      "percentage": 100
+    },
+    "overall": {
+      "passed": 410,
+      "total": 500,
+      "percentage": 82
+    }
+  },
+  "performance": {
+    "averageLoadTime": 721,
+    "bestLoadTime": 585,
+    "worstLoadTime": 2997,
+    "averageMemoryUsage": 0.94
+  },
+  "screenshots": {
+    "total": 30,
+    "byBrowser": {
+      "chromium": 10,
+      "firefox": 10,
+      "webkit": 10
+    }
+  }
+}

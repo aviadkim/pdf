@@ -1,0 +1,257 @@
+{
+  "tablePatterns": [
+    [
+      "0fb2e1db-bf70-49df-86b3-4d045be16f56",
+      {
+        "id": "0fb2e1db-bf70-49df-86b3-4d045be16f56",
+        "type": "table-header",
+        "coordinates": {
+          "x": 10,
+          "y": 20,
+          "width": 100,
+          "height": 30
+        },
+        "content": "ISIN",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:10:54.999Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "7265d9e6-e537-4d34-9cbe-d5e798b2ffb9",
+      {
+        "id": "7265d9e6-e537-4d34-9cbe-d5e798b2ffb9",
+        "type": "data-row",
+        "coordinates": {
+          "x": 10,
+          "y": 60,
+          "width": 100,
+          "height": 30
+        },
+        "content": "XS2993414619",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:10:54.999Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "21ae18dc-c9ac-4f85-af36-b04020aee3c0",
+      {
+        "id": "21ae18dc-c9ac-4f85-af36-b04020aee3c0",
+        "type": "table-header",
+        "coordinates": {
+          "x": 200,
+          "y": 20,
+          "width": 120,
+          "height": 30
+        },
+        "content": "Market Value",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:11:17.386Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "ec00f493-d2fa-4ff7-92b8-8533e8005669",
+      {
+        "id": "ec00f493-d2fa-4ff7-92b8-8533e8005669",
+        "type": "data-row",
+        "coordinates": {
+          "x": 200,
+          "y": 60,
+          "width": 120,
+          "height": 30
+        },
+        "content": "366223",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:11:17.386Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "ded9068d-f258-4a72-98a1-f8cb4e476481",
+      {
+        "id": "ded9068d-f258-4a72-98a1-f8cb4e476481",
+        "type": "table-header",
+        "coordinates": {
+          "x": 320,
+          "y": 20,
+          "width": 150,
+          "height": 30
+        },
+        "content": "Security Name",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:11:30.851Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "89ba5632-bfa4-4f4c-980f-fb5f64f5fe30",
+      {
+        "id": "89ba5632-bfa4-4f4c-980f-fb5f64f5fe30",
+        "type": "data-row",
+        "coordinates": {
+          "x": 320,
+          "y": 60,
+          "width": 150,
+          "height": 30
+        },
+        "content": "Credit Suisse Group AG",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:11:30.851Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "c277f905-c9dc-47d8-b829-7365dd2c1bc8",
+      {
+        "id": "c277f905-c9dc-47d8-b829-7365dd2c1bc8",
+        "type": "table-header",
+        "coordinates": {
+          "x": 100,
+          "y": 200,
+          "width": 150,
+          "height": 30
+        },
+        "content": "ISIN",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:48:51.451Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "5523951f-b11f-497c-948e-6b61d5858a23",
+      {
+        "id": "5523951f-b11f-497c-948e-6b61d5858a23",
+        "type": "data-row",
+        "coordinates": {
+          "x": 100,
+          "y": 250,
+          "width": 200,
+          "height": 25
+        },
+        "content": "XS2993414619",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:49:05.409Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "aeb7b5a4-adca-4e42-8b91-8c6ff634239c",
+      {
+        "id": "aeb7b5a4-adca-4e42-8b91-8c6ff634239c",
+        "type": "table-header",
+        "coordinates": {
+          "x": 200,
+          "y": 200,
+          "width": 140,
+          "height": 25
+        },
+        "content": "Security Name",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:51:45.918Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "04262ce1-2ca9-4ea0-9e12-0014b06521a6",
+      {
+        "id": "04262ce1-2ca9-4ea0-9e12-0014b06521a6",
+        "type": "data-row",
+        "coordinates": {
+          "x": 200,
+          "y": 250,
+          "width": 140,
+          "height": 25
+        },
+        "content": "Credit Suisse Group AG",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:51:45.918Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "8af4bc0d-9a2f-471c-ae50-e5c6aa33700e",
+      {
+        "id": "8af4bc0d-9a2f-471c-ae50-e5c6aa33700e",
+        "type": "table-header",
+        "coordinates": {
+          "x": 480,
+          "y": 200,
+          "width": 80,
+          "height": 25
+        },
+        "content": "Percentage",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:51:45.918Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "5015767d-9c2a-4619-b7f5-ef39c8822969",
+      {
+        "id": "5015767d-9c2a-4619-b7f5-ef39c8822969",
+        "type": "data-row",
+        "coordinates": {
+          "x": 480,
+          "y": 250,
+          "width": 80,
+          "height": 25
+        },
+        "content": "1.88%",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T12:51:45.918Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "8a10d66b-8cc2-4beb-a88d-05dfcd130efd",
+      {
+        "id": "8a10d66b-8cc2-4beb-a88d-05dfcd130efd",
+        "type": "table-header",
+        "coordinates": {
+          "x": 100,
+          "y": 200,
+          "width": 150,
+          "height": 30
+        },
+        "content": "ISIN Header Test",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T13:38:38.271Z",
+        "usageCount": 0
+      }
+    ],
+    [
+      "93514f0c-6b61-4257-ae65-a6e4ff7936a2",
+      {
+        "id": "93514f0c-6b61-4257-ae65-a6e4ff7936a2",
+        "type": "data-row",
+        "coordinates": {
+          "x": 100,
+          "y": 250,
+          "width": 200,
+          "height": 25
+        },
+        "content": "XS2993414619",
+        "confidence": 0.9,
+        "confidenceBoost": 0.1,
+        "timestamp": "2025-07-18T13:38:38.291Z",
+        "usageCount": 0
+      }
+    ]
+  ],
+  "timestamp": "2025-07-18T13:38:38.593Z"
+}

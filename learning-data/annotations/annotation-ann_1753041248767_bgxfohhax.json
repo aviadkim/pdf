@@ -1,0 +1,12 @@
+{
+  "id": "ann_1753041248767_bgxfohhax",
+  "timestamp": "2025-07-20T19:54:08.767Z",
+  "documentType": "messos-corner-banca",
+  "originalText": "ISIN: XS2530201644 TORONTO DOMINION BANK",
+  "correctedData": {
+    "securityName": "TORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN"
+  },
+  "annotationType": "security_name_correction",
+  "confidence": 1,
+  "userFeedback": "Corrected security name extraction"
+}

@@ -1,0 +1,88 @@
+{
+  "timestamp": "2025-07-20T10:13:27.769Z",
+  "baseUrl": "https://pdf-fzzi.onrender.com",
+  "workflow": [
+    {
+      "step": "baseline",
+      "status": "success",
+      "data": {
+        "currentAccuracy": 80.5,
+        "patternCount": 16,
+        "documentCount": 0,
+        "annotationCount": 22,
+        "accuracyGain": 0.5,
+        "confidenceScore": 80,
+        "learningRate": 0.1,
+        "mistralEnabled": true,
+        "targetAccuracy": 99.9
+      }
+    },
+    {
+      "step": "pdf_processing",
+      "status": "synthetic",
+      "data": {
+        "note": "Used synthetic data for testing"
+      }
+    },
+    {
+      "step": "strategic_annotations",
+      "status": "success",
+      "data": {
+        "success": true,
+        "result": {
+          "patternsCreated": 2,
+          "patternsImproved": 0,
+          "accuracyImprovement": 1
+        }
+      }
+    },
+    {
+      "step": "domain_patterns",
+      "status": "success",
+      "data": {
+        "success": true,
+        "result": {
+          "patternsCreated": 1,
+          "patternsImproved": 0,
+          "accuracyImprovement": 0.5
+        }
+      }
+    },
+    {
+      "step": "final_measurement",
+      "status": "success",
+      "data": {
+        "currentAccuracy": 82,
+        "patternCount": 16,
+        "documentCount": 0,
+        "annotationCount": 22,
+        "accuracyGain": 2,
+        "confidenceScore": 80,
+        "learningRate": 0.1,
+        "mistralEnabled": true,
+        "targetAccuracy": 99.9
+      }
+    }
+  ],
+  "accuracy": {
+    "initial": 80.5,
+    "afterPDF": 80.5,
+    "afterAnnotations": null,
+    "final": 82
+  },
+  "summary": {
+    "finalStats": {
+      "currentAccuracy": 82,
+      "patternCount": 16,
+      "documentCount": 0,
+      "annotationCount": 22,
+      "accuracyGain": 2,
+      "confidenceScore": 80,
+      "learningRate": 0.1,
+      "mistralEnabled": true,
+      "targetAccuracy": 99.9
+    },
+    "totalImprovement": 1.5,
+    "improvementPercentage": 1.8633540372670807
+  }
+}

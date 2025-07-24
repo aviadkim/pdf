@@ -1,0 +1,190 @@
+{
+  "timestamp": "2025-07-23T18:52:49.880Z",
+  "testResults": [
+    {
+      "url": "https://pdf-production-5dis.onrender.com",
+      "endpoint": "/api/bulletproof-processor",
+      "working": true,
+      "responseTime": 2309,
+      "accuracy": 86.4,
+      "total": 16816359.9,
+      "securitiesCount": 38,
+      "openaiAnalysis": {
+        "openai_mentioned": false,
+        "vision_processing": false,
+        "pdf2pic_conversion": true,
+        "confidence_scores": true,
+        "bounding_boxes": false,
+        "processing_method_specified": false,
+        "debug_info_present": false,
+        "image_files_mentioned": false,
+        "ai_model_response": false
+      },
+      "metadata": {
+        "processingTime": "2025-07-23T18:52:29.144Z",
+        "mcpEnabled": true,
+        "extractionMethod": "enhanced-precision-v2",
+        "securitiesFound": 38,
+        "targetTotal": 19464431,
+        "legitimateExtraction": true
+      },
+      "hasError": false
+    },
+    {
+      "url": "https://pdf-production-5dis.onrender.com",
+      "endpoint": "/api/visual-pdf-extract",
+      "working": true,
+      "responseTime": 759,
+      "accuracy": 99.97,
+      "total": 19458361,
+      "securitiesCount": 39,
+      "openaiAnalysis": {
+        "openai_mentioned": false,
+        "vision_processing": false,
+        "pdf2pic_conversion": false,
+        "confidence_scores": true,
+        "bounding_boxes": false,
+        "processing_method_specified": false,
+        "debug_info_present": false,
+        "image_files_mentioned": false,
+        "ai_model_response": false
+      },
+      "metadata": {},
+      "hasError": false
+    },
+    {
+      "url": "https://pdf-production-5dis.onrender.com",
+      "endpoint": "/api/pdf-extract",
+      "working": true,
+      "responseTime": 1139,
+      "accuracy": 86.4,
+      "total": 16816359.9,
+      "securitiesCount": 38,
+      "openaiAnalysis": {
+        "openai_mentioned": false,
+        "vision_processing": false,
+        "pdf2pic_conversion": true,
+        "confidence_scores": true,
+        "bounding_boxes": false,
+        "processing_method_specified": false,
+        "debug_info_present": false,
+        "image_files_mentioned": false,
+        "ai_model_response": false
+      },
+      "metadata": {
+        "extractionMethod": "enhanced-precision-v3-improved",
+        "qualityScore": 91.39533259410459,
+        "confidence": 0.8639533259410459,
+        "improvements": [
+          "enhanced_names",
+          "value_diversity",
+          "additional_details"
+        ],
+        "serverFile": "express-server.js",
+        "deploymentVersion": "v3.1-quality-fixes"
+      },
+      "hasError": false
+    },
+    {
+      "url": "https://pdf-fzzi.onrender.com",
+      "endpoint": "/api/bulletproof-processor",
+      "working": true,
+      "responseTime": 1138,
+      "accuracy": 86.4,
+      "total": 16816359.9,
+      "securitiesCount": 38,
+      "openaiAnalysis": {
+        "openai_mentioned": false,
+        "vision_processing": false,
+        "pdf2pic_conversion": true,
+        "confidence_scores": true,
+        "bounding_boxes": false,
+        "processing_method_specified": false,
+        "debug_info_present": false,
+        "image_files_mentioned": false,
+        "ai_model_response": false
+      },
+      "metadata": {
+        "processingTime": "2025-07-23T18:52:41.168Z",
+        "mcpEnabled": true,
+        "extractionMethod": "enhanced-precision-v2",
+        "securitiesFound": 38,
+        "targetTotal": 19464431,
+        "legitimateExtraction": true
+      },
+      "hasError": false
+    },
+    {
+      "url": "https://pdf-fzzi.onrender.com",
+      "endpoint": "/api/visual-pdf-extract",
+      "working": true,
+      "responseTime": 168,
+      "accuracy": 99.97,
+      "total": 19458361,
+      "securitiesCount": 39,
+      "openaiAnalysis": {
+        "openai_mentioned": false,
+        "vision_processing": false,
+        "pdf2pic_conversion": false,
+        "confidence_scores": true,
+        "bounding_boxes": false,
+        "processing_method_specified": false,
+        "debug_info_present": false,
+        "image_files_mentioned": false,
+        "ai_model_response": false
+      },
+      "metadata": {},
+      "hasError": false
+    },
+    {
+      "url": "https://pdf-fzzi.onrender.com",
+      "endpoint": "/api/pdf-extract",
+      "working": true,
+      "responseTime": 299,
+      "accuracy": 86.4,
+      "total": 16816359.9,
+      "securitiesCount": 38,
+      "openaiAnalysis": {
+        "openai_mentioned": false,
+        "vision_processing": false,
+        "pdf2pic_conversion": true,
+        "confidence_scores": true,
+        "bounding_boxes": false,
+        "processing_method_specified": false,
+        "debug_info_present": false,
+        "image_files_mentioned": false,
+        "ai_model_response": false
+      },
+      "metadata": {
+        "extractionMethod": "enhanced-precision-v3-improved",
+        "qualityScore": 91.39533259410459,
+        "confidence": 0.8639533259410459,
+        "improvements": [
+          "enhanced_names",
+          "value_diversity",
+          "additional_details"
+        ],
+        "serverFile": "express-server.js",
+        "deploymentVersion": "v3.1-quality-fixes"
+      },
+      "hasError": false
+    }
+  ],
+  "openaiStatus": {
+    "detected": false,
+    "configured": false,
+    "workingEndpoints": 6
+  },
+  "accuracyAnalysis": {
+    "current": 99.97,
+    "target": 99,
+    "gap": -0.9699999999999989,
+    "bestEndpoint": "https://pdf-production-5dis.onrender.com/api/visual-pdf-extract"
+  },
+  "recommendations": {
+    "openaiWorking": false,
+    "needsConfiguration": true,
+    "canReach99WithOpenAI": false,
+    "suggestedApproach": "Current accuracy is good, consider cost vs benefit"
+  }
+}

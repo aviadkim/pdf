@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-07-20T13:42:57.472Z",
+  "deploymentUrl": "https://pdf-fzzi.onrender.com",
+  "summary": {
+    "passed": 2,
+    "failed": 2,
+    "total": 4
+  },
+  "tests": [
+    {
+      "name": "Server Health Check",
+      "status": "passed",
+      "duration": 227
+    },
+    {
+      "name": "Mistral OCR Endpoint",
+      "status": "failed",
+      "duration": 104,
+      "error": "Mistral OCR endpoint not found"
+    },
+    {
+      "name": "Environment Configuration",
+      "status": "failed",
+      "duration": 215,
+      "error": "Stats endpoint returned 404"
+    },
+    {
+      "name": "API Key Configuration Info",
+      "status": "passed",
+      "duration": 1
+    }
+  ]
+}

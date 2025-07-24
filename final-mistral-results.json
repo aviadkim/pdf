@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-07-23T05:47:26.838Z",
+  "baseline": {
+    "success": true,
+    "accuracy": 84.01,
+    "totalValue": 16351723.4,
+    "securities": 38,
+    "responseTime": 1300,
+    "corrections": 0,
+    "method": "enhanced-precision-v2"
+  },
+  "mistral": {
+    "success": false,
+    "error": "header_error"
+  },
+  "target": {
+    "value": 19464431,
+    "accuracy": 100
+  },
+  "success": false
+}

@@ -1,0 +1,43 @@
+{
+  "corrections": [
+    {
+      "timestamp": "2025-07-20T06:15:57.537Z",
+      "document_id": "test-doc-123",
+      "isin": "CH1908490000",
+      "original_value": 100000,
+      "corrected_value": 150000,
+      "field": "market_value",
+      "confidence": 0.9
+    },
+    {
+      "timestamp": "2025-07-20T06:15:57.537Z",
+      "document_id": "test-doc-123",
+      "isin": "XS2993414619",
+      "original_value": "Truncated Name...",
+      "corrected_value": "Full Security Name Example",
+      "field": "name",
+      "confidence": 0.8
+    }
+  ],
+  "patterns": [
+    {
+      "id": "pattern_1752992157537_nru1t9t82",
+      "type": "value_extraction",
+      "trigger": "human_correction",
+      "correction_rule": {
+        "from": 100000,
+        "to": 150000,
+        "confidence": 0.9
+      },
+      "created": "2025-07-20T06:15:57.537Z"
+    }
+  ],
+  "accuracy_history": [
+    {
+      "timestamp": "2025-07-20T06:15:57.537Z",
+      "document_id": "test-doc-123",
+      "corrections_count": 2,
+      "estimated_improvement": 0.5
+    }
+  ]
+}

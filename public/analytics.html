@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - Phase 3 PDF Platform</title>
+    <style>
+        :root {
+            --primary-color: #667eea;
+            --primary-dark: #764ba2;
+            --secondary-color: #f093fb;
+            --background: #f8fafc;
+            --surface: #ffffff;
+            --text-primary: #1a202c;
+            --text-secondary: #4a5568;
+            --text-muted: #718096;
+            --border: #e2e8f0;
+            --success: #48bb78;
+            --warning: #ed8936;
+            --error: #f56565;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        /* Main Content */
+        .main {
+            padding: 2rem 0;
+            min-height: calc(100vh - 80px);
+        }
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .page-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .date-range {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .date-range select,
+        .date-range input {
+            padding: 0.5rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.875rem;
+        }
+
+        /* Analytics Grid */
+        .analytics-grid {
+            display: grid;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Overview Cards */
+        .overview-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .overview-card {
+            background: var(--surface);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overview-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card-icon {
+            font-size: 1.5rem;
+            opacity: 0.7;
+        }
+
+        .card-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .card-change {
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .change-positive {
+            color: var(--success);
+        }
+
+        .change-negative {
+            color: var(--error);
+        }
+
+        .change-neutral {
+            color: var(--text-muted);
+        }
+
+        /* Chart Container */
+        .chart-container {
+            background: var(--surface);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .chart-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .chart-controls {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .chart-control {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+
+        .chart-control.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .chart-placeholder {
+            height: 300px;
+            background: var(--background);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            border: 2px dashed var(--border);
+        }
+
+        /* Data Tables */
+        .data-table {
+            background: var(--surface);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .table-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .table-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .table-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .table-action {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .table-action:hover {
+            background: var(--background);
+        }
+
+        .analytics-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .analytics-table th,
+        .analytics-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .analytics-table th {
+            background: var(--background);
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .analytics-table tbody tr:hover {
+            background: var(--background);
+        }
+
+        /* Progress Bars */
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--background);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        /* Metric Badges */
+        .metric-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-excellent {
+            background: rgba(72, 187, 120, 0.1);
+            color: var(--success);
+        }
+
+        .badge-good {
+            background: rgba(102, 126, 234, 0.1);
+            color: var(--primary-color);
+        }
+
+        .badge-average {
+            background: rgba(237, 137, 54, 0.1);
+            color: var(--warning);
+        }
+
+        .badge-poor {
+            background: rgba(245, 101, 101, 0.1);
+            color: var(--error);
+        }
+
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+        }
+
+        .spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid var(--border);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .overview-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .page-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .chart-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .analytics-table {
+                font-size: 0.875rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="dashboard.html" class="logo">📄 Phase 3 PDF Platform</a>
+                <nav class="nav-links">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="history.html" class="nav-link">History</a>
+                    <a href="templates.html" class="nav-link">Templates</a>
+                    <a href="analytics.html" class="nav-link active">Analytics</a>
+                    <a href="#" class="nav-link" onclick="logout()">Logout</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Analytics & Reports</h1>
+                <div class="date-range">
+                    <select id="timeRange" onchange="updateTimeRange()">
+                        <option value="7">Last 7 days</option>
+                        <option value="30" selected>Last 30 days</option>
+                        <option value="90">Last 3 months</option>
+                        <option value="365">Last year</option>
+                        <option value="custom">Custom range</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="analytics-grid">
+                <!-- Overview Cards -->
+                <div class="overview-cards">
+                    <div class="overview-card">
+                        <div class="card-header">
+                            <div class="card-title">Total Documents</div>
+                            <div class="card-icon">📄</div>
+                        </div>
+                        <div class="card-value" id="totalDocuments">-</div>
+                        <div class="card-change change-positive" id="documentsChange">
+                            <span>↗</span> +12% from last period
+                        </div>
+                    </div>
+
+                    <div class="overview-card">
+                        <div class="card-header">
+                            <div class="card-title">Average Accuracy</div>
+                            <div class="card-icon">🎯</div>
+                        </div>
+                        <div class="card-value" id="averageAccuracy">-</div>
+                        <div class="card-change change-positive" id="accuracyChange">
+                            <span>↗</span> +0.3% from last period
+                        </div>
+                    </div>
+
+                    <div class="overview-card">
+                        <div class="card-header">
+                            <div class="card-title">Total Portfolio Value</div>
+                            <div class="card-icon">💰</div>
+                        </div>
+                        <div class="card-value" id="totalValue">-</div>
+                        <div class="card-change change-positive" id="valueChange">
+                            <span>↗</span> +8.7% from last period
+                        </div>
+                    </div>
+
+                    <div class="overview-card">
+                        <div class="card-header">
+                            <div class="card-title">Processing Time</div>
+                            <div class="card-icon">⏱️</div>
+                        </div>
+                        <div class="card-value" id="avgProcessingTime">-</div>
+                        <div class="card-change change-negative" id="timeChange">
+                            <span>↘</span> -2.1s faster
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Processing Trends Chart -->
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3 class="chart-title">Processing Trends</h3>
+                        <div class="chart-controls">
+                            <button class="chart-control active" onclick="switchChart('volume')">Volume</button>
+                            <button class="chart-control" onclick="switchChart('accuracy')">Accuracy</button>
+                            <button class="chart-control" onclick="switchChart('time')">Processing Time</button>
+                        </div>
+                    </div>
+                    <div class="chart-placeholder" id="mainChart">
+                        📊 Interactive chart would be displayed here<br>
+                        <small>Shows document processing trends over time</small>
+                    </div>
+                </div>
+
+                <!-- Performance Metrics -->
+                <div class="data-table">
+                    <div class="table-header">
+                        <h3 class="table-title">Performance Metrics</h3>
+                        <div class="table-actions">
+                            <button class="table-action" onclick="exportMetrics()">📊 Export</button>
+                            <button class="table-action" onclick="refreshMetrics()">🔄 Refresh</button>
+                        </div>
+                    </div>
+                    <table class="analytics-table">
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Current</th>
+                                <th>Target</th>
+                                <th>Performance</th>
+                                <th>Trend</th>
+                            </tr>
+                        </thead>
+                        <tbody id="metricsTable">
+                            <tr>
+                                <td>Extraction Accuracy</td>
+                                <td>99.5%</td>
+                                <td>99.0%</td>
+                                <td>
+                                    <span class="metric-badge badge-excellent">Excellent</span>
+                                    <div class="progress-bar" style="margin-top: 0.5rem;">
+                                        <div class="progress-fill" style="width: 99.5%;"></div>
+                                    </div>
+                                </td>
+                                <td><span style="color: var(--success);">↗ +0.3%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Processing Speed</td>
+                                <td>8.3s avg</td>
+                                <td>10.0s</td>
+                                <td>
+                                    <span class="metric-badge badge-excellent">Excellent</span>
+                                    <div class="progress-bar" style="margin-top: 0.5rem;">
+                                        <div class="progress-fill" style="width: 83%;"></div>
+                                    </div>
+                                </td>
+                                <td><span style="color: var(--success);">↗ +15%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Success Rate</td>
+                                <td>98.7%</td>
+                                <td>95.0%</td>
+                                <td>
+                                    <span class="metric-badge badge-excellent">Excellent</span>
+                                    <div class="progress-bar" style="margin-top: 0.5rem;">
+                                        <div class="progress-fill" style="width: 98.7%;"></div>
+                                    </div>
+                                </td>
+                                <td><span style="color: var(--success);">↗ +1.2%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Error Rate</td>
+                                <td>1.3%</td>
+                                <td>5.0%</td>
+                                <td>
+                                    <span class="metric-badge badge-excellent">Excellent</span>
+                                    <div class="progress-bar" style="margin-top: 0.5rem;">
+                                        <div class="progress-fill" style="width: 26%;"></div>
+                                    </div>
+                                </td>
+                                <td><span style="color: var(--success);">↘ -0.7%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Top Documents -->
+                <div class="data-table">
+                    <div class="table-header">
+                        <h3 class="table-title">Top Performing Documents</h3>
+                        <div class="table-actions">
+                            <a href="history.html" class="table-action">👁️ View All</a>
+                        </div>
+                    </div>
+                    <table class="analytics-table">
+                        <thead>
+                            <tr>
+                                <th>Document</th>
+                                <th>Accuracy</th>
+                                <th>Securities</th>
+                                <th>Portfolio Value</th>
+                                <th>Processing Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="topDocuments">
+                            <tr>
+                                <td>
+                                    <div>messos_portfolio_2024.pdf</div>
+                                    <small style="color: var(--text-muted);">Swiss Portfolio</small>
+                                </td>
+                                <td><span class="metric-badge badge-excellent">99.8%</span></td>
+                                <td>42</td>
+                                <td>$4.4B</td>
+                                <td>7.2s</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>credit_suisse_report.pdf</div>
+                                    <small style="color: var(--text-muted);">Bank Statement</small>
+                                </td>
+                                <td><span class="metric-badge badge-excellent">99.6%</span></td>
+                                <td>38</td>
+                                <td>$3.2B</td>
+                                <td>8.1s</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>ubs_holdings.pdf</div>
+                                    <small style="color: var(--text-muted);">Securities List</small>
+                                </td>
+                                <td><span class="metric-badge badge-excellent">99.4%</span></td>
+                                <td>45</td>
+                                <td>$2.8B</td>
+                                <td>9.3s</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Template Usage -->
+                <div class="data-table">
+                    <div class="table-header">
+                        <h3 class="table-title">Template Usage Analytics</h3>
+                        <div class="table-actions">
+                            <a href="templates.html" class="table-action">⚙️ Manage</a>
+                        </div>
+                    </div>
+                    <table class="analytics-table">
+                        <thead>
+                            <tr>
+                                <th>Template</th>
+                                <th>Usage Count</th>
+                                <th>Avg Accuracy</th>
+                                <th>Success Rate</th>
+                                <th>Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="templateUsage">
+                            <tr>
+                                <td>
+                                    <div>Swiss Portfolio Standard</div>
+                                    <small style="color: var(--text-muted);">Built-in template</small>
+                                </td>
+                                <td>247</td>
+                                <td>99.5%</td>
+                                <td>98.8%</td>
+                                <td><span class="metric-badge badge-excellent">Excellent</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>Messos Bank Format</div>
+                                    <small style="color: var(--text-muted);">Built-in template</small>
+                                </td>
+                                <td>156</td>
+                                <td>98.7%</td>
+                                <td>97.4%</td>
+                                <td><span class="metric-badge badge-excellent">Excellent</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>Generic Securities List</div>
+                                    <small style="color: var(--text-muted);">Built-in template</small>
+                                </td>
+                                <td>89</td>
+                                <td>94.2%</td>
+                                <td>92.1%</td>
+                                <td><span class="metric-badge badge-good">Good</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let analyticsData = {};
+        let currentTimeRange = 30;
+
+        // Load analytics on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadAnalytics();
+        });
+
+        async function loadAnalytics() {
+            try {
+                // Simulate loading analytics data
+                // In a real implementation, this would fetch from the API
+                await new Promise(resolve => setTimeout(resolve, 1000));
+
+                analyticsData = {
+                    overview: {
+                        totalDocuments: 1247,
+                        averageAccuracy: 99.2,
+                        totalPortfolioValue: 28400000000,
+                        averageProcessingTime: 8.3
+                    },
+                    trends: {
+                        volume: generateTrendData(30, 'volume'),
+                        accuracy: generateTrendData(30, 'accuracy'),
+                        time: generateTrendData(30, 'time')
+                    },
+                    topDocuments: [
+                        {
+                            name: 'messos_portfolio_2024.pdf',
+                            type: 'Swiss Portfolio',
+                            accuracy: 99.8,
+                            securities: 42,
+                            value: 4400000000,
+                            time: 7.2
+                        },
+                        {
+                            name: 'credit_suisse_report.pdf',
+                            type: 'Bank Statement',
+                            accuracy: 99.6,
+                            securities: 38,
+                            value: 3200000000,
+                            time: 8.1
+                        },
+                        {
+                            name: 'ubs_holdings.pdf',
+                            type: 'Securities List',
+                            accuracy: 99.4,
+                            securities: 45,
+                            value: 2800000000,
+                            time: 9.3
+                        }
+                    ]
+                };
+
+                updateOverviewCards();
+                updateCharts();
+                updateTables();
+
+            } catch (error) {
+                console.error('Failed to load analytics:', error);
+                showError('Failed to load analytics data');
+            }
+        }
+
+        function updateOverviewCards() {
+            const { overview } = analyticsData;
+
+            document.getElementById('totalDocuments').textContent = overview.totalDocuments.toLocaleString();
+            document.getElementById('averageAccuracy').textContent = `${overview.averageAccuracy.toFixed(1)}%`;
+            document.getElementById('totalValue').textContent = formatCurrency(overview.totalPortfolioValue);
+            document.getElementById('avgProcessingTime').textContent = `${overview.averageProcessingTime.toFixed(1)}s`;
+        }
+
+        function updateCharts() {
+            // In a real implementation, this would update actual charts
+            const chartElement = document.getElementById('mainChart');
+            chartElement.innerHTML = `
+                📊 ${getCurrentChartType()} Trends Chart<br>
+                <small>Interactive visualization showing ${getCurrentChartType().toLowerCase()} over the last ${currentTimeRange} days</small>
+            `;
+        }
+
+        function updateTables() {
+            // Update top documents table
+            const topDocsTable = document.getElementById('topDocuments');
+            topDocsTable.innerHTML = analyticsData.topDocuments.map(doc => `
+                <tr>
+                    <td>
+                        <div>${doc.name}</div>
+                        <small style="color: var(--text-muted);">${doc.type}</small>
+                    </td>
+                    <td><span class="metric-badge badge-excellent">${doc.accuracy.toFixed(1)}%</span></td>
+                    <td>${doc.securities}</td>
+                    <td>${formatCurrency(doc.value)}</td>
+                    <td>${doc.time.toFixed(1)}s</td>
+                </tr>
+            `).join('');
+        }
+
+        function getCurrentChartType() {
+            const activeControl = document.querySelector('.chart-control.active');
+            const type = activeControl.textContent.toLowerCase();
+            return type.charAt(0).toUpperCase() + type.slice(1);
+        }
+
+        function switchChart(type) {
+            // Update active control
+            document.querySelectorAll('.chart-control').forEach(control => {
+                control.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update chart
+            updateCharts();
+        }
+
+        function updateTimeRange() {
+            const select = document.getElementById('timeRange');
+            currentTimeRange = parseInt(select.value);
+            
+            if (currentTimeRange) {
+                loadAnalytics();
+            } else {
+                // Handle custom range
+                // In a real implementation, show date pickers
+                alert('Custom date range selection would be implemented here');
+            }
+        }
+
+        function generateTrendData(days, type) {
+            const data = [];
+            for (let i = 0; i < days; i++) {
+                const date = new Date();
+                date.setDate(date.getDate() - i);
+                
+                let value;
+                switch (type) {
+                    case 'volume':
+                        value = Math.floor(Math.random() * 50) + 20;
+                        break;
+                    case 'accuracy':
+                        value = 95 + Math.random() * 5;
+                        break;
+                    case 'time':
+                        value = 6 + Math.random() * 6;
+                        break;
+                    default:
+                        value = Math.random() * 100;
+                }
+                
+                data.push({ date, value });
+            }
+            return data.reverse();
+        }
+
+        function exportMetrics() {
+            // In a real implementation, this would generate and download a report
+            const csvData = generateCSVReport();
+            downloadCSV(csvData, 'analytics-report.csv');
+            showSuccess('Analytics report exported successfully');
+        }
+
+        function generateCSVReport() {
+            const headers = ['Metric', 'Current Value', 'Target', 'Performance', 'Trend'];
+            const rows = [
+                ['Extraction Accuracy', '99.5%', '99.0%', 'Excellent', '+0.3%'],
+                ['Processing Speed', '8.3s avg', '10.0s', 'Excellent', '+15%'],
+                ['Success Rate', '98.7%', '95.0%', 'Excellent', '+1.2%'],
+                ['Error Rate', '1.3%', '5.0%', 'Excellent', '-0.7%']
+            ];
+
+            return [headers, ...rows].map(row => row.join(',')).join('\n');
+        }
+
+        function downloadCSV(csvData, filename) {
+            const blob = new Blob([csvData], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        function refreshMetrics() {
+            showSuccess('Metrics refreshed');
+            loadAnalytics();
+        }
+
+        // Utility functions
+        function formatCurrency(value) {
+            if (value >= 1000000000) {
+                return `$${(value / 1000000000).toFixed(1)}B`;
+            } else if (value >= 1000000) {
+                return `$${(value / 1000000).toFixed(1)}M`;
+            } else if (value >= 1000) {
+                return `$${(value / 1000).toFixed(1)}K`;
+            } else {
+                return `$${value.toFixed(0)}`;
+            }
+        }
+
+        function showError(message) {
+            const toast = document.createElement('div');
+            toast.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: var(--error);
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 8px;
+                box-shadow: var(--shadow-lg);
+                z-index: 1000;
+            `;
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 5000);
+        }
+
+        function showSuccess(message) {
+            const toast = document.createElement('div');
+            toast.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: var(--success);
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 8px;
+                box-shadow: var(--shadow-lg);
+                z-index: 1000;
+            `;
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 3000);
+        }
+
+        function logout() {
+            localStorage.removeItem('authToken');
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>

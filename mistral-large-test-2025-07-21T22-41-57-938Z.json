@@ -1,0 +1,221 @@
+{
+  "success": true,
+  "model": "mistral-large-latest",
+  "results": {
+    "securities": [
+      {
+        "isin": "XS2567543397",
+        "name": "GS 10Y CALLABLE NOTE 2024-18.06.2034",
+        "value": 2570405
+      },
+      {
+        "isin": "XS2105981117",
+        "name": "GOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT",
+        "value": 1623960
+      },
+      {
+        "isin": "XS2838389430",
+        "name": "LUMINIS 5.7% STR NOTE 2024-26.04.33 WFC 24W",
+        "value": 1623960
+      },
+      {
+        "isin": "XS2665592833",
+        "name": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028",
+        "value": 1507550
+      },
+      {
+        "isin": "XS2964611052",
+        "name": "DEUTSCHE BANK 0 % NOTES 2025-14.02.35",
+        "value": 1480584
+      },
+      {
+        "isin": "XS2530201644",
+        "name": "TORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN",
+        "value": 1199080
+      },
+      {
+        "isin": "XS2792098779",
+        "name": "CITIGROUP",
+        "value": 1154316
+      },
+      {
+        "isin": "XS2110079584",
+        "name": "CITIGROUP 0% MTN 2024-09.07.34 REGS",
+        "value": 1101100
+      },
+      {
+        "isin": "XS2252299883",
+        "name": "NOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ON CS",
+        "value": 989800
+      },
+      {
+        "isin": "XS3035947103",
+        "name": "WELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36",
+        "value": 800000
+      },
+      {
+        "isin": "XS2692298537",
+        "name": "GOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P",
+        "value": 737748
+      },
+      {
+        "isin": "XS0461497009",
+        "name": "DEUTSCHE BANK NOTES 23-08.11.28 VRN",
+        "value": 711110
+      },
+      {
+        "isin": "XS2407295554",
+        "name": "NOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON",
+        "value": 510114
+      },
+      {
+        "isin": "XS2381717250",
+        "name": "JPMORGAN CHASE 0% NOTES 2024-19.12.2034",
+        "value": 505500
+      },
+      {
+        "isin": "XS2315191069",
+        "name": "BNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631",
+        "value": 502305
+      },
+      {
+        "isin": "XS2631782468",
+        "name": "LUMINIS REPACK NOTES 23-25.05.29 VRN ON 4,625%",
+        "value": 488866
+      },
+      {
+        "isin": "XS2714429128",
+        "name": "EMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN",
+        "value": 484457
+      },
+      {
+        "isin": "XS2824054402",
+        "name": "BOFA 5.  6% 2024-29.05.34 REGS",
+        "value": 478158
+      },
+      {
+        "isin": "LU2228214107",
+        "name": "PREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB",
+        "value": 342643
+      },
+      {
+        "isin": "XS2736388732",
+        "name": "BANK OF AMERICA NOTES 2023-20.12.31 VARIABLE RATE",
+        "value": 256958
+      },
+      {
+        "isin": "XS2829752976",
+        "name": "GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-",
+        "value": 242075
+      },
+      {
+        "isin": "XS2588105036",
+        "name": "CANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28",
+        "value": 200288
+      },
+      {
+        "isin": "XS2912278723",
+        "name": "BANK OF AMERICA 0% NOTES 2024-17.10.2034",
+        "value": 199131
+      },
+      {
+        "isin": "XS1700087403",
+        "name": "NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21",
+        "value": 198672
+      },
+      {
+        "isin": "XS2519369867",
+        "name": "BCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%",
+        "value": 196221
+      },
+      {
+        "isin": "XS2594173093",
+        "name": "NOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029",
+        "value": 193464
+      },
+      {
+        "isin": "XS2746319610",
+        "name": "SOCIETE GENERALE 32.46 % NOTES 2024-01.03.30 REG S",
+        "value": 192100
+      },
+      {
+        "isin": "XS2953741100",
+        "name": "BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S",
+        "value": 146625
+      },
+      {
+        "isin": "XS2761230684",
+        "name": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE",
+        "value": 102506
+      },
+      {
+        "isin": "XS2754416860",
+        "name": "LUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30",
+        "value": 98202
+      },
+      {
+        "isin": "XS2993414619",
+        "name": "RBC LONDON 0% NOTES 2025-28.03.2035",
+        "value": 97700
+      },
+      {
+        "isin": "XS2381723902",
+        "name": "JPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021-",
+        "value": 96057
+      },
+      {
+        "isin": "XS2829712830",
+        "name": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+        "value": 92320
+      },
+      {
+        "isin": "XS2848820754",
+        "name": "CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34",
+        "value": 90054
+      },
+      {
+        "isin": "XS2481066111",
+        "name": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035",
+        "value": 49500
+      },
+      {
+        "isin": "XS2782869916",
+        "name": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-",
+        "value": 48667
+      },
+      {
+        "isin": "XD0466760473",
+        "name": "EXIGENT ENHANCED INCOME FUND LTD SHS A SERIES 2019 1",
+        "value": 26129
+      },
+      {
+        "isin": "CH0244767585",
+        "name": "UBS GROUP INC NAMEN-AKT.",
+        "value": 21496
+      },
+      {
+        "isin": "CH1269060229",
+        "name": "BK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28",
+        "value": 0
+      }
+    ],
+    "totalValue": 19464431,
+    "confidence": 0.98,
+    "extractionMethod": "mistral-large-complete"
+  },
+  "performance": {
+    "accuracy": 100,
+    "completeness": 100,
+    "processingTime": 55608,
+    "cost": 0.15216,
+    "tokensUsed": 19020
+  },
+  "quality": {
+    "level": "excellent",
+    "improvement": "+31.8% better",
+    "issues": [],
+    "recommendation": "Ready for production"
+  },
+  "rawResponse": "```json\n{\n  \"securities\": [\n    {\"isin\": \"XS2993414619\", \"name\": \"RBC LONDON 0% NOTES 2025-28.03.2035\", \"value\": 97700},\n    {\"isin\": \"XS2530201644\", \"name\": \"TORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN\", \"value\": 1199080},\n    {\"isin\": \"XS2588105036\", \"name\": \"CANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28\", \"value\": 200288},\n    {\"isin\": \"XS2665592833\", \"name\": \"HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028\", \"value\": 1507550},\n    {\"isin\": \"XS2692298537\", \"name\": \"GOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P\", \"value\": 737748},\n    {\"isin\": \"XS2754416860\", \"name\": \"LUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30\", \"value\": 98202},\n    {\"isin\": \"XS2761230684\", \"name\": \"CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE\", \"value\": 102506},\n    {\"isin\": \"XS2736388732\", \"name\": \"BANK OF AMERICA NOTES 2023-20.12.31 VARIABLE RATE\", \"value\": 256958},\n    {\"isin\": \"XS2782869916\", \"name\": \"CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-\", \"value\": 48667},\n    {\"isin\": \"XS2824054402\", \"name\": \"BOFA 5.  6% 2024-29.05.34 REGS\", \"value\": 478158},\n    {\"isin\": \"XS2567543397\", \"name\": \"GS 10Y CALLABLE NOTE 2024-18.06.2034\", \"value\": 2570405},\n    {\"isin\": \"XS2110079584\", \"name\": \"CITIGROUP 0% MTN 2024-09.07.34 REGS\", \"value\": 1101100},\n    {\"isin\": \"XS2848820754\", \"name\": \"CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34\", \"value\": 90054},\n    {\"isin\": \"XS2829712830\", \"name\": \"GOLDMAN SACHS EMTN 2024-30.09.2024\", \"value\": 92320},\n    {\"isin\": \"XS2912278723\", \"name\": \"BANK OF AMERICA 0% NOTES 2024-17.10.2034\", \"value\": 199131},\n    {\"isin\": \"XS2381723902\", \"name\": \"JPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021-\", \"value\": 96057},\n    {\"isin\": \"XS2829752976\", \"name\": \"GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-\", \"value\": 242075},\n    {\"isin\": \"XS2953741100\", \"name\": \"BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S\", \"value\": 146625},\n    {\"isin\": \"XS2381717250\", \"name\": \"JPMORGAN CHASE 0% NOTES 2024-19.12.2034\", \"value\": 505500},\n    {\"isin\": \"XS2481066111\", \"name\": \"GOLDMAN SACHS 0% NOTES 2025-03.02.2035\", \"value\": 49500},\n    {\"isin\": \"XS2964611052\", \"name\": \"DEUTSCHE BANK 0 % NOTES 2025-14.02.35\", \"value\": 1480584},\n    {\"isin\": \"XS3035947103\", \"name\": \"WELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36\", \"value\": 800000},\n    {\"isin\": \"LU2228214107\", \"name\": \"PREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB\", \"value\": 342643},\n    {\"isin\": \"CH1269060229\", \"name\": \"BK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28\", \"value\": 0},\n    {\"isin\": \"XS0461497009\", \"name\": \"DEUTSCHE BANK NOTES 23-08.11.28 VRN\", \"value\": 711110},\n    {\"isin\": \"XS2746319610\", \"name\": \"SOCIETE GENERALE 32.46 % NOTES 2024-01.03.30 REG S\", \"value\": 192100},\n    {\"isin\": \"CH0244767585\", \"name\": \"UBS GROUP INC NAMEN-AKT.\", \"value\": 21496},\n    {\"isin\": \"XS2519369867\", \"name\": \"BCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%\", \"value\": 196221},\n    {\"isin\": \"XS2315191069\", \"name\": \"BNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631\", \"value\": 502305},\n    {\"isin\": \"XS2792098779\", \"name\": \"CITIGROUP\", \"value\": 1154316},\n    {\"isin\": \"XS2714429128\", \"name\": \"EMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN\", \"value\": 484457},\n    {\"isin\": \"XS2105981117\", \"name\": \"GOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT\", \"value\": 1623960},\n    {\"isin\": \"XS2838389430\", \"name\": \"LUMINIS 5.7% STR NOTE 2024-26.04.33 WFC 24W\", \"value\": 1623960},\n    {\"isin\": \"XS2631782468\", \"name\": \"LUMINIS REPACK NOTES 23-25.05.29 VRN ON 4,625%\", \"value\": 488866},\n    {\"isin\": \"XS1700087403\", \"name\": \"NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21\", \"value\": 198672},\n    {\"isin\": \"XS2594173093\", \"name\": \"NOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029\", \"value\": 193464},\n    {\"isin\": \"XS2407295554\", \"name\": \"NOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON\", \"value\": 510114},\n    {\"isin\": \"XS2252299883\", \"name\": \"NOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ON CS\", \"value\": 989800},\n    {\"isin\": \"XD0466760473\", \"name\": \"EXIGENT ENHANCED INCOME FUND LTD SHS A SERIES 2019 1\", \"value\": 26129}\n  ],\n  \"totalValue\": 19464431,\n  \"currency\": \"CHF\",\n  \"confidence\": 0.98,\n  \"securitiesCount\": 39,\n  \"extractionMethod\": \"mistral-large-complete\",\n  \"validation\": {\n    \"allISINsFound\": true,\n    \"totalMatches\": true,\n    \"noPlaceholderData\": true\n  }\n}\n```",
+  "timestamp": "2025-07-21T22:41:57.940Z"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-07-15T05:06:16.538Z",
+  "results": [
+    {
+      "endpoint": "Dashboard",
+      "path": "/dashboard.html",
+      "status": 200,
+      "success": true,
+      "contentType": "text/html; charset=utf-8",
+      "size": 43546
+    },
+    {
+      "endpoint": "Document History",
+      "path": "/history.html",
+      "status": 200,
+      "success": true,
+      "contentType": "text/html; charset=utf-8",
+      "size": 30026
+    },
+    {
+      "endpoint": "Template Management",
+      "path": "/templates.html",
+      "status": 200,
+      "success": true,
+      "contentType": "text/html; charset=utf-8",
+      "size": 29805
+    },
+    {
+      "endpoint": "Analytics Dashboard",
+      "path": "/analytics.html",
+      "status": 200,
+      "success": true,
+      "contentType": "text/html; charset=utf-8",
+      "size": 33615
+    },
+    {
+      "endpoint": "API Health Check",
+      "path": "/api/health",
+      "status": 200,
+      "success": true,
+      "contentType": "application/json; charset=utf-8",
+      "size": 110
+    },
+    {
+      "endpoint": "Extraction API",
+      "path": "/api/extract-comprehensive",
+      "status": 404,
+      "success": false,
+      "contentType": "text/html; charset=utf-8",
+      "size": 164
+    },
+    {
+      "endpoint": "History API",
+      "path": "/api/history",
+      "status": 404,
+      "success": false,
+      "contentType": "text/html; charset=utf-8",
+      "size": 150
+    },
+    {
+      "endpoint": "Templates API",
+      "path": "/api/templates",
+      "status": 404,
+      "success": false,
+      "contentType": "text/html; charset=utf-8",
+      "size": 152
+    }
+  ],
+  "features": {
+    "Enterprise Dashboard": true,
+    "Document History": true,
+    "Template Management": true,
+    "Analytics Dashboard": true,
+    "API Integration": true,
+    "PDF Processing": false
+  },
+  "summary": {
+    "totalEndpoints": 8,
+    "successful": 5,
+    "successRate": "62.5%"
+  }
+}

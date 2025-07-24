@@ -1,0 +1,30 @@
+{
+  "timeline": {
+    "week1": "Fix current extraction patterns",
+    "week2": "Add table structure recognition",
+    "week3": "Implement validation and confidence scoring",
+    "week4": "Build quality control workflows",
+    "week5to8": "Human-in-loop system and learning"
+  },
+  "technicalTasks": [
+    "Improve regex patterns for names and values",
+    "Add PDF preprocessing pipeline",
+    "Implement column detection algorithms",
+    "Build confidence scoring system",
+    "Create human annotation workflow",
+    "Add learning system for corrections"
+  ],
+  "expectedOutcomes": {
+    "accuracy": "90% automated, 99% with human review",
+    "processingTime": "0.6s + human time for 5% of docs",
+    "cost": "$0.50/document average",
+    "scalability": "Can handle 10,000+ documents/month"
+  },
+  "successMetrics": [
+    "Names extracted correctly: >95%",
+    "Values extracted correctly: >95%",
+    "ISINs identified correctly: >98%",
+    "Total portfolio value within 2% of actual",
+    "Human review required for <10% of documents"
+  ]
+}

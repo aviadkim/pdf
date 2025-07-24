@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏦 FinanceAI Pro - PaddleOCR Integration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            padding: 30px;
+        }
+
+        .processor-selector {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .processor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .processor-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .processor-card:hover {
+            border-color: #007bff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,123,255,0.1);
+        }
+
+        .processor-card.selected {
+            border-color: #007bff;
+            background: #f0f8ff;
+        }
+
+        .processor-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .processor-description {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .processor-features {
+            list-style: none;
+        }
+
+        .processor-features li {
+            color: #28a745;
+            margin-bottom: 5px;
+        }
+
+        .processor-features li:before {
+            content: "✓ ";
+            font-weight: bold;
+        }
+
+        .upload-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .upload-area {
+            border: 3px dashed #007bff;
+            border-radius: 10px;
+            padding: 40px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .upload-area:hover {
+            background: #f0f8ff;
+            border-color: #0056b3;
+        }
+
+        .upload-area.dragover {
+            background: #e3f2fd;
+            border-color: #1976d2;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .upload-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .upload-button:hover {
+            background: #0056b3;
+        }
+
+        .upload-button:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+            display: none;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .results-section {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .results-header {
+            background: #28a745;
+            color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .results-content {
+            border: 1px solid #e9ecef;
+            border-top: none;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .results-tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .tab-button {
+            background: none;
+            border: none;
+            padding: 15px 25px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab-button.active {
+            background: white;
+            border-bottom-color: #007bff;
+            color: #007bff;
+        }
+
+        .tab-content {
+            padding: 30px;
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .summary-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .summary-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+
+        .summary-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .securities-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .securities-table th,
+        .securities-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .securities-table th {
+            background: #f8f9fa;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .securities-table tr:hover {
+            background: #f5f5f5;
+        }
+
+        .confidence-meter {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .confidence-bar {
+            flex: 1;
+            height: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            border-radius: 5px;
+            transition: width 0.3s ease;
+        }
+
+        .confidence-high { background: #28a745; }
+        .confidence-medium { background: #ffc107; }
+        .confidence-low { background: #dc3545; }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #f5c6cb;
+        }
+
+        .installation-guide {
+            background: #fff3cd;
+            color: #856404;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #ffeaa7;
+        }
+
+        .installation-guide h4 {
+            margin-bottom: 15px;
+            color: #6c5700;
+        }
+
+        .installation-guide code {
+            background: #f8f9fa;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .processing-animation {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #007bff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .paddle-features {
+            background: #e8f5e8;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .paddle-features h4 {
+            color: #155724;
+            margin-bottom: 15px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+
+        .feature-title {
+            font-weight: bold;
+            color: #155724;
+            margin-bottom: 5px;
+        }
+
+        .feature-description {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                🏦 FinanceAI Pro
+                <span style="font-size: 0.6em;">+ PaddleOCR 3.0</span>
+            </h1>
+            <div class="subtitle">Advanced Financial PDF Processing with AI-Powered Table Recognition</div>
+        </div>
+
+        <div class="main-content">
+            <!-- Processor Selection -->
+            <div class="processor-selector">
+                <h2>📊 Select Processing Engine</h2>
+                <div class="processor-grid">
+                    <div class="processor-card" data-processor="paddle-financial-processor">
+                        <div class="processor-title">
+                            🏦 PaddleOCR Financial
+                            <span style="background: #28a745; color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7em;">NEW</span>
+                        </div>
+                        <div class="processor-description">
+                            Advanced OCR with PP-StructureV3 for complete financial document analysis
+                        </div>
+                        <ul class="processor-features">
+                            <li>Table structure recognition</li>
+                            <li>Multi-page processing</li>
+                            <li>Financial entity extraction</li>
+                            <li>Institution identification</li>
+                            <li>High accuracy OCR</li>
+                        </ul>
+                    </div>
+
+                    <div class="processor-card" data-processor="superclaude-yolo-ultimate">
+                        <div class="processor-title">
+                            💀 SuperClaude YOLO
+                        </div>
+                        <div class="processor-description">
+                            Dangerous optimizations with multi-engine parallel extraction
+                        </div>
+                        <ul class="processor-features">
+                            <li>8 parallel engines</li>
+                            <li>Iterative perfection</li>
+                            <li>Ground truth validation</li>
+                            <li>99.9% accuracy target</li>
+                        </ul>
+                    </div>
+
+                    <div class="processor-card" data-processor="two-stage-processor">
+                        <div class="processor-title">
+                            🎯 Two-Stage AI
+                        </div>
+                        <div class="processor-description">
+                            Raw data extraction followed by intelligent table construction
+                        </div>
+                        <ul class="processor-features">
+                            <li>Raw data extraction</li>
+                            <li>AI table builder</li>
+                            <li>Dynamic relationships</li>
+                            <li>Swiss format support</li>
+                        </ul>
+                    </div>
+
+                    <div class="processor-card" data-processor="bulletproof-processor">
+                        <div class="processor-title">
+                            🎯 Bulletproof
+                        </div>
+                        <div class="processor-description">
+                            Multi-method validation with iterative refinement
+                        </div>
+                        <ul class="processor-features">
+                            <li>Multi-method extraction</li>
+                            <li>ISIN validation</li>
+                            <li>Swiss number parsing</li>
+                            <li>Iterative refinement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PaddleOCR Features Highlight -->
+            <div class="paddle-features">
+                <h4>🚀 PaddleOCR 3.0 Advanced Features</h4>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-title">PP-StructureV3</div>
+                        <div class="feature-description">Latest document structure analysis with reading order recovery</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Table Recognition</div>
+                        <div class="feature-description">Advanced table detection and HTML conversion for structured data</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Multi-Language OCR</div>
+                        <div class="feature-description">High-accuracy text recognition with angle correction</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Financial Entities</div>
+                        <div class="feature-description">Specialized extraction for ISINs, prices, quantities, and values</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upload Section -->
+            <div class="upload-section">
+                <h2>📄 Upload Financial PDF</h2>
+                <div class="upload-area" id="uploadArea">
+                    <div style="font-size: 3em; margin-bottom: 15px;">📁</div>
+                    <div style="font-size: 1.2em; margin-bottom: 10px;">Drop your PDF here or click to browse</div>
+                    <div style="color: #666;">Supports portfolio statements, trade confirmations, account summaries</div>
+                </div>
+                <input type="file" id="fileInput" class="file-input" accept=".pdf">
+                <button id="processBtn" class="upload-button" disabled>
+                    🚀 Process with Selected Engine
+                </button>
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+
+            <!-- Processing Animation -->
+            <div class="processing-animation" id="processingAnimation">
+                <div class="spinner"></div>
+                <div id="processingStatus">Processing your financial document...</div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section" id="resultsSection">
+                <div class="results-header">
+                    <h2 id="resultsTitle">✅ Extraction Complete</h2>
+                    <div id="resultsSubtitle"></div>
+                </div>
+                <div class="results-content">
+                    <div class="results-tabs">
+                        <button class="tab-button active" data-tab="summary">📊 Summary</button>
+                        <button class="tab-button" data-tab="securities">📈 Securities</button>
+                        <button class="tab-button" data-tab="analysis">🔍 Analysis</button>
+                        <button class="tab-button" data-tab="raw">📝 Raw Data</button>
+                    </div>
+
+                    <!-- Summary Tab -->
+                    <div class="tab-content active" id="summary-tab">
+                        <div class="summary-grid" id="summaryGrid">
+                            <!-- Summary cards will be populated here -->
+                        </div>
+                        <div class="confidence-meter">
+                            <span>Processing Confidence:</span>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" id="confidenceFill"></div>
+                            </div>
+                            <span id="confidenceValue">0%</span>
+                        </div>
+                    </div>
+
+                    <!-- Securities Tab -->
+                    <div class="tab-content" id="securities-tab">
+                        <table class="securities-table" id="securitiesTable">
+                            <thead>
+                                <tr>
+                                    <th>ISIN</th>
+                                    <th>Security Name</th>
+                                    <th>Symbol</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Market Value</th>
+                                    <th>Currency</th>
+                                </tr>
+                            </thead>
+                            <tbody id="securitiesBody">
+                                <!-- Securities will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Analysis Tab -->
+                    <div class="tab-content" id="analysis-tab">
+                        <div id="analysisContent">
+                            <!-- Analysis details will be populated here -->
+                        </div>
+                    </div>
+
+                    <!-- Raw Data Tab -->
+                    <div class="tab-content" id="raw-tab">
+                        <div id="rawContent">
+                            <!-- Raw data will be populated here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let selectedProcessor = 'paddle-financial-processor';
+        let currentFile = null;
+        let currentResults = null;
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            setupEventListeners();
+            selectProcessor('paddle-financial-processor');
+        });
+
+        function setupEventListeners() {
+            // Processor selection
+            document.querySelectorAll('.processor-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const processor = card.dataset.processor;
+                    selectProcessor(processor);
+                });
+            });
+
+            // File upload
+            const fileInput = document.getElementById('fileInput');
+            const uploadArea = document.getElementById('uploadArea');
+            const processBtn = document.getElementById('processBtn');
+
+            uploadArea.addEventListener('click', () => fileInput.click());
+            uploadArea.addEventListener('dragover', handleDragOver);
+            uploadArea.addEventListener('drop', handleDrop);
+            fileInput.addEventListener('change', handleFileSelect);
+            processBtn.addEventListener('click', processFile);
+
+            // Tab switching
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.dataset.tab;
+                    switchTab(tabId);
+                });
+            });
+        }
+
+        function selectProcessor(processor) {
+            selectedProcessor = processor;
+            
+            // Update UI
+            document.querySelectorAll('.processor-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            document.querySelector(`[data-processor="${processor}"]`).classList.add('selected');
+            
+            // Update button text
+            const processBtn = document.getElementById('processBtn');
+            const processorNames = {
+                'paddle-financial-processor': 'PaddleOCR Financial',
+                'superclaude-yolo-ultimate': 'SuperClaude YOLO',
+                'two-stage-processor': 'Two-Stage AI',
+                'bulletproof-processor': 'Bulletproof'
+            };
+            
+            if (currentFile) {
+                processBtn.textContent = `🚀 Process with ${processorNames[processor]}`;
+            }
+        }
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            e.currentTarget.classList.add('dragover');
+        }
+
+        function handleDrop(e) {
+            e.preventDefault();
+            e.currentTarget.classList.remove('dragover');
+            
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleFile(files[0]);
+            }
+        }
+
+        function handleFileSelect(e) {
+            const file = e.target.files[0];
+            if (file) {
+                handleFile(file);
+            }
+        }
+
+        function handleFile(file) {
+            if (file.type !== 'application/pdf') {
+                alert('Please select a PDF file');
+                return;
+            }
+
+            currentFile = file;
+            document.getElementById('processBtn').disabled = false;
+            
+            // Update upload area
+            const uploadArea = document.getElementById('uploadArea');
+            uploadArea.innerHTML = `
+                <div style="font-size: 2em; margin-bottom: 10px;">📄</div>
+                <div style="font-size: 1.1em; margin-bottom: 5px;">${file.name}</div>
+                <div style="color: #666;">${(file.size / 1024 / 1024).toFixed(2)} MB</div>
+            `;
+        }
+
+        async function processFile() {
+            if (!currentFile) return;
+
+            // Show processing animation
+            document.getElementById('processingAnimation').style.display = 'block';
+            document.getElementById('resultsSection').style.display = 'none';
+            document.getElementById('processBtn').disabled = true;
+
+            try {
+                // Convert file to base64
+                const base64 = await fileToBase64(currentFile);
+                
+                // Update status
+                document.getElementById('processingStatus').textContent = 
+                    `Processing with ${selectedProcessor}...`;
+
+                // Make API call
+                const response = await fetch(`http://localhost:3001/api/${selectedProcessor}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        pdfBase64: base64,
+                        filename: currentFile.name
+                    })
+                });
+
+                const result = await response.json();
+                currentResults = result;
+
+                // Hide processing animation
+                document.getElementById('processingAnimation').style.display = 'none';
+                
+                if (result.success) {
+                    displayResults(result);
+                } else {
+                    displayError(result);
+                }
+
+            } catch (error) {
+                document.getElementById('processingAnimation').style.display = 'none';
+                displayError({
+                    error: 'Processing failed',
+                    details: error.message
+                });
+            }
+
+            document.getElementById('processBtn').disabled = false;
+        }
+
+        function fileToBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = () => {
+                    const base64 = reader.result.split(',')[1];
+                    resolve(base64);
+                };
+                reader.onerror = error => reject(error);
+            });
+        }
+
+        function displayResults(result) {
+            const resultsSection = document.getElementById('resultsSection');
+            resultsSection.style.display = 'block';
+
+            // Update header
+            document.getElementById('resultsTitle').textContent = 
+                result.success ? '✅ Extraction Complete' : '❌ Extraction Failed';
+            document.getElementById('resultsSubtitle').textContent = result.message;
+
+            // Populate summary
+            populateSummary(result);
+            
+            // Populate securities
+            populateSecurities(result);
+            
+            // Populate analysis
+            populateAnalysis(result);
+            
+            // Populate raw data
+            populateRawData(result);
+        }
+
+        function displayError(result) {
+            const resultsSection = document.getElementById('resultsSection');
+            resultsSection.style.display = 'block';
+
+            document.getElementById('resultsTitle').textContent = '❌ Processing Failed';
+            document.getElementById('resultsSubtitle').textContent = result.message || result.error;
+
+            // Show error details and installation guide for PaddleOCR
+            const summaryTab = document.getElementById('summary-tab');
+            summaryTab.innerHTML = `
+                <div class="error-message">
+                    <h4>❌ Error Details</h4>
+                    <p><strong>Error:</strong> ${result.error}</p>
+                    ${result.details ? `<p><strong>Details:</strong> ${Array.isArray(result.details) ? result.details.join(', ') : result.details}</p>` : ''}
+                </div>
+                
+                ${result.analysis?.paddleOCR?.error?.includes('PaddleOCR not available') ? `
+                <div class="installation-guide">
+                    <h4>📦 PaddleOCR Installation Guide</h4>
+                    <p>To use the PaddleOCR Financial processor, install the required dependencies:</p>
+                    <br>
+                    <p><strong>Option 1: Direct Installation</strong></p>
+                    <code>pip install paddlepaddle paddleocr pdf2image opencv-python pandas pillow</code>
+                    <br><br>
+                    <p><strong>Option 2: Virtual Environment (Recommended)</strong></p>
+                    <code>python3 -m venv paddle_env</code><br>
+                    <code>source paddle_env/bin/activate</code><br>
+                    <code>pip install -r requirements_paddle.txt</code>
+                    <br><br>
+                    <p><strong>For Windows users:</strong> You may also need to install poppler-utils for pdf2image.</p>
+                </div>
+                ` : ''}
+            `;
+        }
+
+        function populateSummary(result) {
+            const summaryGrid = document.getElementById('summaryGrid');
+            const data = result.data || {};
+            
+            summaryGrid.innerHTML = `
+                <div class="summary-card">
+                    <div class="summary-value">${data.securitiesCount || data.holdings?.length || 0}</div>
+                    <div class="summary-label">Securities Found</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-value">$${(data.totalValue || 0).toLocaleString()}</div>
+                    <div class="summary-label">Total Value</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-value">${data.institution || 'Unknown'}</div>
+                    <div class="summary-label">Institution</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-value">${data.documentType || 'Unknown'}</div>
+                    <div class="summary-label">Document Type</div>
+                </div>
+            `;
+
+            // Update confidence meter
+            const confidence = (data.confidence || 0) * 100;
+            const confidenceFill = document.getElementById('confidenceFill');
+            const confidenceValue = document.getElementById('confidenceValue');
+            
+            confidenceFill.style.width = `${confidence}%`;
+            confidenceValue.textContent = `${confidence.toFixed(1)}%`;
+            
+            if (confidence >= 80) {
+                confidenceFill.className = 'confidence-fill confidence-high';
+            } else if (confidence >= 60) {
+                confidenceFill.className = 'confidence-fill confidence-medium';
+            } else {
+                confidenceFill.className = 'confidence-fill confidence-low';
+            }
+        }
+
+        function populateSecurities(result) {
+            const securitiesBody = document.getElementById('securitiesBody');
+            const securities = result.data?.holdings || [];
+            
+            if (securities.length === 0) {
+                securitiesBody.innerHTML = `
+                    <tr>
+                        <td colspan="7" style="text-align: center; color: #666; padding: 40px;">
+                            No securities found in the document
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+            
+            securitiesBody.innerHTML = securities.map(security => `
+                <tr>
+                    <td>${security.isin || '-'}</td>
+                    <td>${security.securityName || security.name || '-'}</td>
+                    <td>${security.symbol || '-'}</td>
+                    <td>${security.quantity ? security.quantity.toLocaleString() : '-'}</td>
+                    <td>${security.price ? `$${security.price.toFixed(2)}` : '-'}</td>
+                    <td>${security.totalValue || security.market_value ? `$${(security.totalValue || security.market_value).toLocaleString()}` : '-'}</td>
+                    <td>${security.currency || '-'}</td>
+                </tr>
+            `).join('');
+        }
+
+        function populateAnalysis(result) {
+            const analysisContent = document.getElementById('analysisContent');
+            const analysis = result.analysis || {};
+            
+            let content = '<h3>🔍 Processing Analysis</h3>';
+            
+            // PaddleOCR specific analysis
+            if (analysis.paddleOCR) {
+                content += `
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                        <h4>🏦 PaddleOCR Analysis</h4>
+                        <p><strong>Version:</strong> ${analysis.paddleOCR.version || 'N/A'}</p>
+                        <p><strong>Structure Parser:</strong> ${analysis.paddleOCR.structure_parser || 'N/A'}</p>
+                        <p><strong>Processing Time:</strong> ${analysis.paddleOCR.processing_time || 'N/A'}s</p>
+                        <p><strong>Tables Found:</strong> ${analysis.paddleOCR.tables_found || 0}</p>
+                        <p><strong>Accounts Found:</strong> ${analysis.paddleOCR.accounts_found || 0}</p>
+                    </div>
+                `;
+            }
+            
+            // Extraction methods
+            if (analysis.extraction_methods) {
+                content += `
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                        <h4>🔧 Extraction Methods</h4>
+                        <ul>
+                            ${analysis.extraction_methods.map(method => `<li>${method}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+            
+            content += `
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                    <h4>⏱️ Performance</h4>
+                    <p><strong>Total Processing Time:</strong> ${analysis.processingTime || 'N/A'}</p>
+                    <p><strong>Processor:</strong> ${result.processor || 'Unknown'}</p>
+                </div>
+            `;
+            
+            analysisContent.innerHTML = content;
+        }
+
+        function populateRawData(result) {
+            const rawContent = document.getElementById('rawContent');
+            
+            let content = '<h3>📝 Raw Data</h3>';
+            
+            if (result.raw_data?.full_text) {
+                content += `
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                        <h4>📄 Extracted Text</h4>
+                        <pre style="white-space: pre-wrap; font-size: 0.9em; max-height: 300px; overflow-y: auto;">${result.raw_data.full_text}</pre>
+                    </div>
+                `;
+            }
+            
+            if (result.raw_data?.tables && result.raw_data.tables.length > 0) {
+                content += `
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                        <h4>📋 Tables (${result.raw_data.tables.length})</h4>
+                        ${result.raw_data.tables.map((table, index) => `
+                            <div style="margin: 10px 0; padding: 10px; background: white; border-radius: 5px;">
+                                <strong>Table ${index + 1}:</strong> ${table.rows || 0} rows, ${table.columns || 0} columns
+                                ${table.data ? `<pre style="font-size: 0.8em; margin-top: 10px;">${JSON.stringify(table.data, null, 2)}</pre>` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+            
+            if (result.raw_data?.errors && result.raw_data.errors.length > 0) {
+                content += `
+                    <div style="background: #fff3cd; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                        <h4>⚠️ Processing Warnings</h4>
+                        <ul>
+                            ${result.raw_data.errors.map(error => `<li>${error}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+            
+            rawContent.innerHTML = content;
+        }
+
+        function switchTab(tabId) {
+            // Update tab buttons
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            document.querySelector(`[data-tab="${tabId}"]`).classList.add('active');
+            
+            // Update tab content
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(`${tabId}-tab`).classList.add('active');
+        }
+    </script>
+</body>
+</html>

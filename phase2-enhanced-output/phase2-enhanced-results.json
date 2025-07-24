@@ -1,0 +1,56 @@
+{
+  "timestamp": "2025-07-20T06:15:57.533Z",
+  "document": "Messos Enterprises Ltd - Portfolio Valuation 31.03.2025",
+  "extraction_method": "Phase 2 Enhanced Accuracy Engine",
+  "phase": "Phase 2: Accuracy Improvement",
+  "portfolio_summary": {
+    "totalValue": 19464431,
+    "breakdown": {
+      "Bonds": 12363974,
+      "Structured products": 6946239,
+      "Equities": 24319,
+      "Liquidity": 103770
+    },
+    "currency": "USD"
+  },
+  "enhanced_extraction": {
+    "securities_found": 1,
+    "total_extracted_value": 19464431,
+    "individual_securities": [
+      {
+        "isin": "XS2993414619",
+        "valor": "140610687",
+        "name": "Unknown Security",
+        "quantity": 0,
+        "marketValue": 19464431,
+        "assetType": "Bond",
+        "currency": "USD",
+        "extractionMethod": "Phase2-Enhanced-Scaled",
+        "confidence": 0.4
+      }
+    ],
+    "average_confidence": 0.4,
+    "high_confidence_securities": 0
+  },
+  "enhanced_accuracy": {
+    "portfolio_total_usd": 19464431,
+    "extracted_total_usd": 19464431,
+    "value_difference": 0,
+    "value_accuracy": 100,
+    "count_accuracy": 2.5,
+    "overall_accuracy": 70.75,
+    "confidence_score": 0.4,
+    "improvement_from_phase1": 21.67
+  },
+  "quality_metrics": {
+    "avg_confidence": 0.4,
+    "high_confidence_count": 0,
+    "asset_type_distribution": {
+      "Bond": 1
+    },
+    "extraction_method_distribution": {
+      "Phase2-Enhanced-Scaled": 1
+    }
+  },
+  "status": "GOOD"
+}

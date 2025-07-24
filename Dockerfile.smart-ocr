@@ -1,0 +1,59 @@
+# Multi-Agent PDF Extraction System - Docker Configuration
+# Optimized for Render deployment with Vision API and multi-agent capabilities
+
+FROM node:18-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies for PDF processing and image conversion
+RUN apk add --no-cache \
+    python3 \
+    py3-pip \
+    build-base \
+    cairo-dev \
+    pango-dev \
+    giflib-dev \
+    libpng-dev \
+    libjpeg-turbo-dev \
+    freetype-dev \
+    fontconfig \
+    ttf-dejavu \
+    ghostscript \
+    poppler-utils \
+    imagemagick \
+    graphicsmagick \
+    curl
+
+# Copy package files
+COPY package*.json ./
+
+# Install Node.js dependencies
+RUN npm install
+
+# Copy application files
+COPY . .
+
+# Create necessary directories for multi-agent system
+RUN mkdir -p /app/smart-ocr-data \
+    /app/temp_smart_ocr \
+    /app/temp_annotations \
+    /app/test-results \
+    /app/temp-multi-agent-images \
+    /app/temp-vision-images
+
+# Set environment variables
+ENV NODE_ENV=production
+ENV PORT=10002
+ENV OPENAI_API_KEY=""
+ENV ANTHROPIC_API_KEY=""
+
+# Expose port
+EXPOSE 10002
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD curl -f http://localhost:10002/api/smart-ocr-test || exit 1
+
+# Start the application
+CMD ["node", "express-server.js"]

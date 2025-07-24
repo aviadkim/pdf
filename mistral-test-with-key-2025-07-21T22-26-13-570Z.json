@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "method": "mistral_ocr_latest",
+  "securities": [],
+  "summary": {
+    "totalSecurities": 0,
+    "totalValue": 0,
+    "expectedTotal": 31.03,
+    "accuracy": 0,
+    "averageConfidence": null
+  },
+  "metadata": {
+    "extractionMethod": "mistral_ocr_table_extraction",
+    "model": "mistral-ocr-latest",
+    "processingTime": 1753136773570,
+    "markdownOutput": "# Financial Portfolio Statement\n\n## Portfolio Holdings as of 31.03.2025\n\n| ISIN | Security Name | Market Value (CHF) | Percentage |\n|------|---------------|-------------------|------------|\n| XS2993414619 | Credit Suisse Group AG | 366'223 | 1.88% |\n| XS2530201644 | UBS Group AG | 200'099 | 1.03% |\n| XS2588105036 | Nestlé SA | 1'500'000 | 7.71% |\n| XS2665592833 | Novartis AG | 1'000'106 | 5.14% |\n| XS2692298537 | Roche Holding AG | 200'097 | 1.03% |\n| XS2754416860 | ABB Ltd | 200'097 | 1.03% |\n| XS2761230684 | Zurich Insurance Group AG | 2'000'102 | 10.28% |\n| XS2736388732 | Swiss Re AG | 200'099 | 1.03% |\n| XS2782869916 | Sika AG | 20'602 | 0.11% |\n| XS2824054402 | Lonza Group AG | 450'000 | 2.31% |\n| XS2567543397 | Glencore PLC | 1'000'100 | 5.14% |\n| XS2110079584 | LafargeHolcim Ltd | 1'000'100 | 5.14% |\n| XS2848820754 | Adecco Group AG | 999'692 | 5.14% |\n| XS2829712830 | Geberit AG | 200'099 | 1.03% |\n| XS2912278723 | Givaudan SA | 200'099 | 1.03% |\n| XS2381723902 | Holcim Ltd | 366'223 | 1.88% |\n| XS2829752976 | Kuehne + Nagel International AG | 198'097 | 1.02% |\n| XS2953741100 | Logitech International SA | 2'000'101 | 10.28% |\n| XS2381717250 | Sonova Holding AG | 100'099 | 0.51% |\n| XS2481066111 | Straumann Holding AG | 100'099 | 0.51% |\n| XS2964611052 | Swisscom AG | 49'500 | 0.25% |\n| XS3035947103 | Temenos AG | 623'797 | 3.20% |\n| LU2228214107 | Partners Group Holding AG | 623'797 | 3.20% |\n| CH1269060229 | Schindler Holding AG | 21'810 | 0.11% |\n| XS0461497009 | SGS SA | 1'000'100 | 5.14% |\n| XS2746319610 | SIG Group AG | 140'000 | 0.72% |\n| CH0244767585 | Swatch Group AG | 366'223 | 1.88% |\n| XS2519369867 | Tecan Group AG | 524'199 | 2.69% |\n| XS2315191069 | VAT Group AG | 524'199 | 2.69% |\n| XS2792098779 | Vifor Pharma AG | 20'343 | 0.10% |\n| XS2714429128 | Ypsomed Holding AG | 524'396 | 2.69% |\n| XS2105981117 | Zur Rose Group AG | 70'680 | 0.36% |\n| XS2838389430 | Bachem Holding AG | 100'097 | 0.51% |\n| XS2631782468 | Belimo Holding AG | 21'810 | 0.11% |\n| XS1700087403 | Burckhardt Compression Holding AG | 5'243'100 | 26.93% |\n| XS2594173093 | Clariant AG | 59'296 | 0.30% |\n| XS2407295554 | Dufry AG | 300'000 | 1.54% |\n| XS2252299883 | EFG International AG | 43'930.6 | 0.23% |\n| XD0466760473 | Flughafen Zurich AG | 21'810 | 0.11% |\n\n## Portfolio Summary\n\n**Total Portfolio Value:** 19'464'431 CHF  \n**Total Securities:** 39  \n**Base Currency:** CHF  \n**Valuation Date:** 31.03.2025  \n\n### Asset Allocation\n\n- **Equity Securities:** 95.2%\n- **Fixed Income:** 4.8%\n\n### Top Holdings by Value\n\n1. Burckhardt Compression Holding AG (26.93%)\n2. Zurich Insurance Group AG (10.28%)\n3. Logitech International SA (10.28%)\n4. Nestlé SA (7.71%)\n5. Novartis AG (5.14%)",
+    "tablesFound": 0,
+    "portfolioMetadata": {
+      "totalPortfolioValue": 31.03,
+      "totalSecurities": 31
+    },
+    "legitimate": true,
+    "hardcoded": false
+  }
+}

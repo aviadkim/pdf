@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ann_1753041118190_wkdm7mlk7",
+    "timestamp": "2025-07-20T19:51:58.190Z",
+    "documentType": "messos-corner-banca",
+    "annotationType": "security_name_correction",
+    "confidence": 1
+  },
+  {
+    "id": "ann_1753041118226_b3mtbug30",
+    "timestamp": "2025-07-20T19:51:58.226Z",
+    "documentType": "messos-corner-banca",
+    "annotationType": "validation",
+    "confidence": 0.9
+  },
+  {
+    "id": "ann_1753041248767_bgxfohhax",
+    "timestamp": "2025-07-20T19:54:08.767Z",
+    "documentType": "messos-corner-banca",
+    "annotationType": "security_name_correction",
+    "confidence": 1
+  },
+  {
+    "id": "ann_1753041248780_59jax63sq",
+    "timestamp": "2025-07-20T19:54:08.780Z",
+    "documentType": "messos-corner-banca",
+    "annotationType": "validation",
+    "confidence": 0.9
+  },
+  {
+    "id": "ann_1753042349644_ezfohb5wv",
+    "timestamp": "2025-07-20T20:12:29.644Z",
+    "documentType": "messos-corner-banca",
+    "annotationType": "security_name_correction",
+    "confidence": 1
+  },
+  {
+    "id": "ann_1753042349675_d6e61xwlu",
+    "timestamp": "2025-07-20T20:12:29.675Z",
+    "documentType": "messos-corner-banca",
+    "annotationType": "validation",
+    "confidence": 0.9
+  }
+]

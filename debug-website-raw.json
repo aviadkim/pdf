@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "message": "Successfully extracted 0 holdings with enhanced multiline parsing",
+  "data": {
+    "portfolioInfo": {
+      "clientName": "\nMESSOS ENTERPRISES LTD.",
+      "accountNumber": "366223",
+      "reportDate": "31.03.2025",
+      "totalValue": 0,
+      "currency": "USD"
+    },
+    "holdings": [],
+    "assetAllocation": [],
+    "performance": {
+      "ytdPerformance": null,
+      "ytdPercentage": null,
+      "totalReturn": null
+    },
+    "summary": {
+      "totalHoldings": 0,
+      "sectionsFound": [],
+      "extractionMethod": "enhanced_multiline_parsing",
+      "accuracy": "improved_multiline_structure",
+      "totalValue": 0,
+      "validISINs": 0
+    }
+  },
+  "metadata": {
+    "processingTime": "5950ms",
+    "extractionMethod": "enhanced_multiline_parsing",
+    "holdingsFound": 0,
+    "totalValue": 0,
+    "filename": "2. Messos  - 31.03.2025.pdf",
+    "version": "MULTILINE-MESSOS-PROCESSOR-V1.0"
+  },
+  "csvData": "# MESSOS ENTERPRISES LTD - ENHANCED MULTILINE EXTRACTION\n# Generated: 2025-07-12T21:19:34.420Z\n# Total Holdings: 0\n# Total Value: 0 USD\n# Extraction Method: Enhanced Multiline Parser\n\nPosition,Security Name,ISIN,Valorn,Currency,Nominal Quantity,Acquisition Price,Current Price,Market Value,Performance YTD,Performance Total,Portfolio Weight,Security Type,Maturity Date,Coupon,PRC,Accruals,Section",
+  "downloadReady": true
+}

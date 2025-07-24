@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "isins_found": [],
+  "securities": [],
+  "analysis": {
+    "securities_count": 0,
+    "total_value": 0,
+    "target_total": 19464431,
+    "accuracy": 0,
+    "current_accuracy": 92.21,
+    "improvement": -92.21
+  },
+  "method": "enhanced_isin_detection"
+}

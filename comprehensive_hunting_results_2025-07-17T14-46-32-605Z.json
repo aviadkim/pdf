@@ -1,0 +1,6595 @@
+{
+  "success": true,
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "value": 6070,
+      "isinLine": 252,
+      "valueLine": 259,
+      "distance": 7,
+      "context": "thereof Cash accountsUSD6'0700.03%"
+    },
+    {
+      "isin": "XS2692298537",
+      "value": 100000,
+      "isinLine": 331,
+      "valueLine": 338,
+      "distance": 7,
+      "context": "USD100'000"
+    },
+    {
+      "isin": "XS2754416860",
+      "value": 1062,
+      "isinLine": 341,
+      "valueLine": 348,
+      "distance": 7,
+      "context": "1'062"
+    },
+    {
+      "isin": "XS2736388732",
+      "value": 8833,
+      "isinLine": 365,
+      "valueLine": 372,
+      "distance": 7,
+      "context": "8'833"
+    },
+    {
+      "isin": "XS2824054402",
+      "value": 20602,
+      "isinLine": 418,
+      "valueLine": 425,
+      "distance": 7,
+      "context": "20'602"
+    },
+    {
+      "isin": "XS2567543397",
+      "value": 107665,
+      "isinLine": 430,
+      "valueLine": 437,
+      "distance": 7,
+      "context": "107'665"
+    },
+    {
+      "isin": "XS2110079584",
+      "value": 90000,
+      "isinLine": 442,
+      "valueLine": 449,
+      "distance": 7,
+      "context": "USD90'000"
+    },
+    {
+      "isin": "XS2848820754",
+      "value": 2034,
+      "isinLine": 457,
+      "valueLine": 464,
+      "distance": 7,
+      "context": "Ordinary Bonds  //  Maturity: 30.09.2034"
+    },
+    {
+      "isin": "XS2829712830",
+      "value": 200000,
+      "isinLine": 463,
+      "valueLine": 470,
+      "distance": 7,
+      "context": "USD200'000"
+    },
+    {
+      "isin": "XS2912278723",
+      "value": 100000,
+      "isinLine": 473,
+      "valueLine": 480,
+      "distance": 7,
+      "context": "USD100'000"
+    },
+    {
+      "isin": "XS2381723902",
+      "value": 2025,
+      "isinLine": 488,
+      "valueLine": 495,
+      "distance": 7,
+      "context": "Valuation as of 31.03.2025"
+    },
+    {
+      "isin": "XS2829752976",
+      "value": 2034,
+      "isinLine": 528,
+      "valueLine": 535,
+      "distance": 7,
+      "context": "Zero Bonds  //  Maturity: 11.12.2034"
+    },
+    {
+      "isin": "XS2953741100",
+      "value": 500000,
+      "isinLine": 534,
+      "valueLine": 541,
+      "distance": 7,
+      "context": "USD500'000"
+    },
+    {
+      "isin": "XS2381717250",
+      "value": 50000,
+      "isinLine": 544,
+      "valueLine": 551,
+      "distance": 7,
+      "context": "USD50'000"
+    },
+    {
+      "isin": "XS2481066111",
+      "value": 1470000,
+      "isinLine": 554,
+      "valueLine": 561,
+      "distance": 7,
+      "context": "USD1'470'000"
+    },
+    {
+      "isin": "XS2964611052",
+      "value": 800000,
+      "isinLine": 564,
+      "valueLine": 571,
+      "distance": 7,
+      "context": "USD800'000"
+    },
+    {
+      "isin": "XS3035947103",
+      "value": 7800115,
+      "isinLine": 579,
+      "valueLine": 586,
+      "distance": 7,
+      "context": "81.530444.7800115'613"
+    },
+    {
+      "isin": "LU2228214107",
+      "value": 6000342,
+      "isinLine": 590,
+      "valueLine": 597,
+      "distance": 7,
+      "context": "100.623797.6000342'643"
+    },
+    {
+      "isin": "XS0461497009",
+      "value": 14969,
+      "isinLine": 639,
+      "valueLine": 646,
+      "distance": 7,
+      "context": "14'969"
+    },
+    {
+      "isin": "XS2746319610",
+      "value": 48600,
+      "isinLine": 651,
+      "valueLine": 658,
+      "distance": 7,
+      "context": "48'600"
+    },
+    {
+      "isin": "XS2519369867",
+      "value": 2029,
+      "isinLine": 748,
+      "valueLine": 755,
+      "distance": 7,
+      "context": "Structured Bonds  //  Maturity: 08.01.2029"
+    },
+    {
+      "isin": "XS2315191069",
+      "value": 7305,
+      "isinLine": 754,
+      "valueLine": 761,
+      "distance": 7,
+      "context": "7'305"
+    },
+    {
+      "isin": "XS2792098779",
+      "value": 690000,
+      "isinLine": 766,
+      "valueLine": 773,
+      "distance": 7,
+      "context": "USD690'000"
+    },
+    {
+      "isin": "XS2838389430",
+      "value": 70680,
+      "isinLine": 802,
+      "valueLine": 809,
+      "distance": 7,
+      "context": "70'680"
+    },
+    {
+      "isin": "XS1700087403",
+      "value": 2029,
+      "isinLine": 862,
+      "valueLine": 869,
+      "distance": 7,
+      "context": "Structured Bonds  //  Maturity: 27.09.2029"
+    },
+    {
+      "isin": "XS2594173093",
+      "value": 1044,
+      "isinLine": 868,
+      "valueLine": 875,
+      "distance": 7,
+      "context": "1'044"
+    },
+    {
+      "isin": "XS2252299883",
+      "value": 108309,
+      "isinLine": 899,
+      "valueLine": 906,
+      "distance": 7,
+      "context": "USD108'309"
+    }
+  ],
+  "totalValue": 18205747,
+  "accuracy": 93.5334148735198,
+  "method": "comprehensive_value_hunting",
+  "bestPattern": {
+    "distance": 7,
+    "position": "after ISIN",
+    "securities": [
+      {
+        "isin": "XS2993414619",
+        "value": 6070,
+        "line": 259
+      },
+      {
+        "isin": "XS2692298537",
+        "value": 100000,
+        "line": 338
+      },
+      {
+        "isin": "XS2754416860",
+        "value": 1062,
+        "line": 348
+      },
+      {
+        "isin": "XS2754416860",
+        "value": 1062,
+        "line": 348
+      },
+      {
+        "isin": "XS2736388732",
+        "value": 8833,
+        "line": 372
+      },
+      {
+        "isin": "XS2736388732",
+        "value": 8833,
+        "line": 372
+      },
+      {
+        "isin": "XS2824054402",
+        "value": 20602,
+        "line": 425
+      },
+      {
+        "isin": "XS2824054402",
+        "value": 20602,
+        "line": 425
+      },
+      {
+        "isin": "XS2567543397",
+        "value": 107665,
+        "line": 437
+      },
+      {
+        "isin": "XS2567543397",
+        "value": 107665,
+        "line": 437
+      },
+      {
+        "isin": "XS2110079584",
+        "value": 90000,
+        "line": 449
+      },
+      {
+        "isin": "XS2848820754",
+        "value": 2034,
+        "line": 464
+      },
+      {
+        "isin": "XS2829712830",
+        "value": 200000,
+        "line": 470
+      },
+      {
+        "isin": "XS2912278723",
+        "value": 100000,
+        "line": 480
+      },
+      {
+        "isin": "XS2381723902",
+        "value": 2025,
+        "line": 495
+      },
+      {
+        "isin": "XS2829752976",
+        "value": 2034,
+        "line": 535
+      },
+      {
+        "isin": "XS2953741100",
+        "value": 500000,
+        "line": 541
+      },
+      {
+        "isin": "XS2381717250",
+        "value": 50000,
+        "line": 551
+      },
+      {
+        "isin": "XS2481066111",
+        "value": 470000,
+        "line": 561
+      },
+      {
+        "isin": "XS2481066111",
+        "value": 1470000,
+        "line": 561
+      },
+      {
+        "isin": "XS2964611052",
+        "value": 800000,
+        "line": 571
+      },
+      {
+        "isin": "XS3035947103",
+        "value": 530444,
+        "line": 586
+      },
+      {
+        "isin": "XS3035947103",
+        "value": 7800115,
+        "line": 586
+      },
+      {
+        "isin": "XS3035947103",
+        "value": 15613,
+        "line": 586
+      },
+      {
+        "isin": "LU2228214107",
+        "value": 623797,
+        "line": 597
+      },
+      {
+        "isin": "LU2228214107",
+        "value": 6000342,
+        "line": 597
+      },
+      {
+        "isin": "LU2228214107",
+        "value": 42643,
+        "line": 597
+      },
+      {
+        "isin": "XS0461497009",
+        "value": 14969,
+        "line": 646
+      },
+      {
+        "isin": "XS0461497009",
+        "value": 14969,
+        "line": 646
+      },
+      {
+        "isin": "XS2746319610",
+        "value": 48600,
+        "line": 658
+      },
+      {
+        "isin": "XS2746319610",
+        "value": 48600,
+        "line": 658
+      },
+      {
+        "isin": "XS2519369867",
+        "value": 2029,
+        "line": 755
+      },
+      {
+        "isin": "XS2315191069",
+        "value": 7305,
+        "line": 761
+      },
+      {
+        "isin": "XS2315191069",
+        "value": 7305,
+        "line": 761
+      },
+      {
+        "isin": "XS2792098779",
+        "value": 690000,
+        "line": 773
+      },
+      {
+        "isin": "XS2838389430",
+        "value": 70680,
+        "line": 809
+      },
+      {
+        "isin": "XS2838389430",
+        "value": 70680,
+        "line": 809
+      },
+      {
+        "isin": "XS1700087403",
+        "value": 2029,
+        "line": 869
+      },
+      {
+        "isin": "XS2594173093",
+        "value": 1044,
+        "line": 875
+      },
+      {
+        "isin": "XS2594173093",
+        "value": 1044,
+        "line": 875
+      },
+      {
+        "isin": "XS2252299883",
+        "value": 108309,
+        "line": 906
+      }
+    ],
+    "totalValue": 20169004,
+    "accuracy": 96.50665446841103,
+    "valueRange": {
+      "min": 1044,
+      "max": 7800115
+    }
+  },
+  "valueMapping": {
+    "XS2993414619": {
+      "isin": "XS2993414619",
+      "isinLine": 252,
+      "nearbyValues": [
+        {
+          "raw": "2035",
+          "value": 2035,
+          "lineIndex": 252,
+          "lineNumber": 253,
+          "content": "MM secs discounted  //  Maturity: 28.03.2035  //  PRC: 5.00",
+          "position": 40,
+          "context": "//  Maturity: 28.03.2035  //  PRC: 5.00",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "700097",
+          "value": 700097,
+          "lineIndex": 253,
+          "lineNumber": 254,
+          "content": "100.000097.700097'700",
+          "position": 11,
+          "context": "100.000097.700097'700",
+          "distance": 2,
+          "absDistance": 2
+        },
+        {
+          "raw": "7'700",
+          "value": 7700,
+          "lineIndex": 253,
+          "lineNumber": 254,
+          "content": "100.000097.700097'700",
+          "position": 16,
+          "context": "100.000097.700097'700",
+          "distance": 2,
+          "absDistance": 2
+        },
+        {
+          "raw": "100'000.00",
+          "value": 100000,
+          "lineIndex": 248,
+          "lineNumber": 249,
+          "content": "USD100'000.00",
+          "position": 0,
+          "context": "USD100'000.00",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 255,
+          "lineNumber": 256,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 256,
+          "lineNumber": 257,
+          "content": "RBC LONDON 0% NOTES 2025-28.03.2035",
+          "position": 20,
+          "context": "RBC LONDON 0% NOTES 2025-28.03.2035",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2035",
+          "value": 2035,
+          "lineIndex": 256,
+          "lineNumber": 257,
+          "content": "RBC LONDON 0% NOTES 2025-28.03.2035",
+          "position": 31,
+          "context": "0% NOTES 2025-28.03.2035",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "6'070",
+          "value": 6070,
+          "lineIndex": 245,
+          "lineNumber": 246,
+          "content": "6'070",
+          "position": 0,
+          "context": "6'070",
+          "distance": -6,
+          "absDistance": 6
+        },
+        {
+          "raw": "6'070",
+          "value": 6070,
+          "lineIndex": 245,
+          "lineNumber": 246,
+          "content": "6'070",
+          "position": 0,
+          "context": "6'070",
+          "distance": -6,
+          "absDistance": 6
+        },
+        {
+          "raw": "103'770",
+          "value": 103770,
+          "lineIndex": 257,
+          "lineNumber": 258,
+          "content": "Total Liquidity103'770USD0.53%",
+          "position": 15,
+          "context": "Total Liquidity103'770USD0.53%",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "6'070",
+          "value": 6070,
+          "lineIndex": 258,
+          "lineNumber": 259,
+          "content": "thereof Cash accountsUSD6'0700.03%",
+          "position": 21,
+          "context": "hereof Cash accountsUSD6'0700.03%",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "7000.50",
+          "value": 7000.5,
+          "lineIndex": 259,
+          "lineNumber": 260,
+          "content": "thereof Money m arketUSD97'7000.50%",
+          "position": 27,
+          "context": " Money m arketUSD97'7000.50%",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "97'700",
+          "value": 97700,
+          "lineIndex": 259,
+          "lineNumber": 260,
+          "content": "thereof Money m arketUSD97'7000.50%",
+          "position": 21,
+          "context": "hereof Money m arketUSD97'7000.50%",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "366223",
+          "value": 366223,
+          "lineIndex": 242,
+          "lineNumber": 243,
+          "content": "Cash Accounts  //  366223-CC-0002",
+          "position": 19,
+          "context": "Cash Accounts  //  366223-CC-0002",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 260,
+          "lineNumber": 261,
+          "content": "Print date 01.04.2025 // Page 5/17",
+          "position": 17,
+          "context": "Print date 01.04.2025 // Page 5/17",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "6'069.77",
+          "value": 6069.77,
+          "lineIndex": 241,
+          "lineNumber": 242,
+          "content": "USD6'069.770.03%",
+          "position": 0,
+          "context": "USD6'069.770.03%",
+          "distance": -10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2530201644": {
+      "isin": "XS2530201644",
+      "isinLine": 293,
+      "nearbyValues": [
+        {
+          "raw": "2027",
+          "value": 2027,
+          "lineIndex": 293,
+          "lineNumber": 294,
+          "content": "Ordinary Bonds  //  Maturity: 23.02.2027",
+          "position": 36,
+          "context": "//  Maturity: 23.02.2027",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "200'000",
+          "value": 200000,
+          "lineIndex": 289,
+          "lineNumber": 290,
+          "content": "USD200'000",
+          "position": 0,
+          "context": "USD200'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "200099",
+          "value": 200099,
+          "lineIndex": 296,
+          "lineNumber": 297,
+          "content": "100.200099.1991199'080",
+          "position": 4,
+          "context": "100.200099.1991199'080",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "1991199",
+          "value": 1991199,
+          "lineIndex": 296,
+          "lineNumber": 297,
+          "content": "100.200099.1991199'080",
+          "position": 11,
+          "context": "100.200099.1991199'080",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "99'080",
+          "value": 99080,
+          "lineIndex": 296,
+          "lineNumber": 297,
+          "content": "100.200099.1991199'080",
+          "position": 16,
+          "context": "100.200099.1991199'080",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 298,
+          "lineNumber": 299,
+          "content": "28.03.2025",
+          "position": 6,
+          "context": "28.03.2025",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "200'000",
+          "value": 200000,
+          "lineIndex": 301,
+          "lineNumber": 302,
+          "content": "USD200'000",
+          "position": 0,
+          "context": "USD200'000",
+          "distance": 9,
+          "absDistance": 9
+        }
+      ]
+    },
+    "XS2588105036": {
+      "isin": "XS2588105036",
+      "isinLine": 311,
+      "nearbyValues": [
+        {
+          "raw": "2028",
+          "value": 2028,
+          "lineIndex": 311,
+          "lineNumber": 312,
+          "content": "Ordinary Bonds  //  Maturity: 22.02.2028",
+          "position": 36,
+          "context": "//  Maturity: 22.02.2028",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "1'031",
+          "value": 1031,
+          "lineIndex": 308,
+          "lineNumber": 309,
+          "content": "1'031",
+          "position": 0,
+          "context": "1'031",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "1'031",
+          "value": 1031,
+          "lineIndex": 308,
+          "lineNumber": 309,
+          "content": "1'031",
+          "position": 0,
+          "context": "1'031",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "1531",
+          "value": 1531,
+          "lineIndex": 312,
+          "lineNumber": 313,
+          "content": "Coupon: 23.2  //  Annual  5.1531%  //  Days: 46",
+          "position": 28,
+          "context": "23.2  //  Annual  5.1531%  //  Days: 46",
+          "distance": 2,
+          "absDistance": 2
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 307,
+          "lineNumber": 308,
+          "content": "28.03.2025",
+          "position": 6,
+          "context": "28.03.2025",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "500'000",
+          "value": 500000,
+          "lineIndex": 314,
+          "lineNumber": 315,
+          "content": "USD1'500'000",
+          "position": 5,
+          "context": "USD1'500'000",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "1'500'000",
+          "value": 1500000,
+          "lineIndex": 314,
+          "lineNumber": 315,
+          "content": "USD1'500'000",
+          "position": 0,
+          "context": "USD1'500'000",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "200099",
+          "value": 200099,
+          "lineIndex": 305,
+          "lineNumber": 306,
+          "content": "100.200099.6285200'288",
+          "position": 4,
+          "context": "100.200099.6285200'288",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "6285200",
+          "value": 6285200,
+          "lineIndex": 305,
+          "lineNumber": 306,
+          "content": "100.200099.6285200'288",
+          "position": 11,
+          "context": "100.200099.6285200'288",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "507'550",
+          "value": 507550,
+          "lineIndex": 318,
+          "lineNumber": 319,
+          "content": "99.099098.37001'507'550",
+          "position": 16,
+          "context": "99.099098.37001'507'550",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "099098",
+          "value": 99098,
+          "lineIndex": 318,
+          "lineNumber": 319,
+          "content": "99.099098.37001'507'550",
+          "position": 3,
+          "context": "99.099098.37001'507'550",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "37001",
+          "value": 37001,
+          "lineIndex": 318,
+          "lineNumber": 319,
+          "content": "99.099098.37001'507'550",
+          "position": 10,
+          "context": "99.099098.37001'507'550",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "001'507'550",
+          "value": 1507550,
+          "lineIndex": 318,
+          "lineNumber": 319,
+          "content": "99.099098.37001'507'550",
+          "position": 12,
+          "context": "99.099098.37001'507'550",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "200'000",
+          "value": 200000,
+          "lineIndex": 301,
+          "lineNumber": 302,
+          "content": "USD200'000",
+          "position": 0,
+          "context": "USD200'000",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 320,
+          "lineNumber": 321,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2665592833": {
+      "isin": "XS2665592833",
+      "isinLine": 324,
+      "nearbyValues": [
+        {
+          "raw": "2023",
+          "value": 2023,
+          "lineIndex": 322,
+          "lineNumber": 323,
+          "content": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028",
+          "position": 36,
+          "context": "MIN/5,5% MAX) NOTES 2023-18.09.2028",
+          "distance": -1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2028",
+          "value": 2028,
+          "lineIndex": 322,
+          "lineNumber": 323,
+          "content": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028",
+          "position": 47,
+          "context": "X) NOTES 2023-18.09.2028",
+          "distance": -1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2028",
+          "value": 2028,
+          "lineIndex": 324,
+          "lineNumber": 325,
+          "content": "Ordinary Bonds  //  Maturity: 18.09.2028",
+          "position": 36,
+          "context": "//  Maturity: 18.09.2028",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "32'000",
+          "value": 32000,
+          "lineIndex": 321,
+          "lineNumber": 322,
+          "content": "32'000",
+          "position": 0,
+          "context": "32'000",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "32'000",
+          "value": 32000,
+          "lineIndex": 321,
+          "lineNumber": 322,
+          "content": "32'000",
+          "position": 0,
+          "context": "32'000",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 320,
+          "lineNumber": 321,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "690'000",
+          "value": 690000,
+          "lineIndex": 327,
+          "lineNumber": 328,
+          "content": "USD690'000",
+          "position": 0,
+          "context": "USD690'000",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "507'550",
+          "value": 507550,
+          "lineIndex": 318,
+          "lineNumber": 319,
+          "content": "99.099098.37001'507'550",
+          "position": 16,
+          "context": "99.099098.37001'507'550",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "099098",
+          "value": 99098,
+          "lineIndex": 318,
+          "lineNumber": 319,
+          "content": "99.099098.37001'507'550",
+          "position": 3,
+          "context": "99.099098.37001'507'550",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "37001",
+          "value": 37001,
+          "lineIndex": 318,
+          "lineNumber": 319,
+          "content": "99.099098.37001'507'550",
+          "position": 10,
+          "context": "99.099098.37001'507'550",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "001'507'550",
+          "value": 1507550,
+          "lineIndex": 318,
+          "lineNumber": 319,
+          "content": "99.099098.37001'507'550",
+          "position": 12,
+          "context": "99.099098.37001'507'550",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2029",
+          "value": 2029,
+          "lineIndex": 331,
+          "lineNumber": 332,
+          "content": "Ordinary Bonds  //  Maturity: 07.11.2029",
+          "position": 36,
+          "context": "//  Maturity: 07.11.2029",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "500'000",
+          "value": 500000,
+          "lineIndex": 314,
+          "lineNumber": 315,
+          "content": "USD1'500'000",
+          "position": 5,
+          "context": "USD1'500'000",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "1'500'000",
+          "value": 1500000,
+          "lineIndex": 314,
+          "lineNumber": 315,
+          "content": "USD1'500'000",
+          "position": 0,
+          "context": "USD1'500'000",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "1000106",
+          "value": 1000106,
+          "lineIndex": 333,
+          "lineNumber": 334,
+          "content": "100.1000106.9200737'748",
+          "position": 4,
+          "context": "100.1000106.9200737'748",
+          "distance": 10,
+          "absDistance": 10
+        },
+        {
+          "raw": "9200737",
+          "value": 9200737,
+          "lineIndex": 333,
+          "lineNumber": 334,
+          "content": "100.1000106.9200737'748",
+          "position": 12,
+          "context": "100.1000106.9200737'748",
+          "distance": 10,
+          "absDistance": 10
+        },
+        {
+          "raw": "37'748",
+          "value": 37748,
+          "lineIndex": 333,
+          "lineNumber": 334,
+          "content": "100.1000106.9200737'748",
+          "position": 17,
+          "context": "100.1000106.9200737'748",
+          "distance": 10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2692298537": {
+      "isin": "XS2692298537",
+      "isinLine": 331,
+      "nearbyValues": [
+        {
+          "raw": "2029",
+          "value": 2029,
+          "lineIndex": 331,
+          "lineNumber": 332,
+          "content": "Ordinary Bonds  //  Maturity: 07.11.2029",
+          "position": 36,
+          "context": "//  Maturity: 07.11.2029",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "690'000",
+          "value": 690000,
+          "lineIndex": 327,
+          "lineNumber": 328,
+          "content": "USD690'000",
+          "position": 0,
+          "context": "USD690'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "1000106",
+          "value": 1000106,
+          "lineIndex": 333,
+          "lineNumber": 334,
+          "content": "100.1000106.9200737'748",
+          "position": 4,
+          "context": "100.1000106.9200737'748",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "9200737",
+          "value": 9200737,
+          "lineIndex": 333,
+          "lineNumber": 334,
+          "content": "100.1000106.9200737'748",
+          "position": 12,
+          "context": "100.1000106.9200737'748",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "37'748",
+          "value": 37748,
+          "lineIndex": 333,
+          "lineNumber": 334,
+          "content": "100.1000106.9200737'748",
+          "position": 17,
+          "context": "100.1000106.9200737'748",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 335,
+          "lineNumber": 336,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2028",
+          "value": 2028,
+          "lineIndex": 324,
+          "lineNumber": 325,
+          "content": "Ordinary Bonds  //  Maturity: 18.09.2028",
+          "position": 36,
+          "context": "//  Maturity: 18.09.2028",
+          "distance": -6,
+          "absDistance": 6
+        },
+        {
+          "raw": "100'000",
+          "value": 100000,
+          "lineIndex": 337,
+          "lineNumber": 338,
+          "content": "USD100'000",
+          "position": 0,
+          "context": "USD100'000",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2023",
+          "value": 2023,
+          "lineIndex": 322,
+          "lineNumber": 323,
+          "content": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028",
+          "position": 36,
+          "context": "MIN/5,5% MAX) NOTES 2023-18.09.2028",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2028",
+          "value": 2028,
+          "lineIndex": 322,
+          "lineNumber": 323,
+          "content": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028",
+          "position": 47,
+          "context": "X) NOTES 2023-18.09.2028",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "32'000",
+          "value": 32000,
+          "lineIndex": 321,
+          "lineNumber": 322,
+          "content": "32'000",
+          "position": 0,
+          "context": "32'000",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "32'000",
+          "value": 32000,
+          "lineIndex": 321,
+          "lineNumber": 322,
+          "content": "32'000",
+          "position": 0,
+          "context": "32'000",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 320,
+          "lineNumber": 321,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2754416860": {
+      "isin": "XS2754416860",
+      "isinLine": 341,
+      "nearbyValues": [
+        {
+          "raw": "2030",
+          "value": 2030,
+          "lineIndex": 341,
+          "lineNumber": 342,
+          "content": "Ordinary Bonds  //  Maturity: 17.01.2030",
+          "position": 36,
+          "context": "//  Maturity: 17.01.2030",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "100'000",
+          "value": 100000,
+          "lineIndex": 337,
+          "lineNumber": 338,
+          "content": "USD100'000",
+          "position": 0,
+          "context": "USD100'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "200097",
+          "value": 200097,
+          "lineIndex": 344,
+          "lineNumber": 345,
+          "content": "100.200097.140098'202",
+          "position": 4,
+          "context": "100.200097.140098'202",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "140098",
+          "value": 140098,
+          "lineIndex": 344,
+          "lineNumber": 345,
+          "content": "100.200097.140098'202",
+          "position": 11,
+          "context": "100.200097.140098'202",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "8'202",
+          "value": 8202,
+          "lineIndex": 344,
+          "lineNumber": 345,
+          "content": "100.200097.140098'202",
+          "position": 16,
+          "context": "100.200097.140098'202",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 335,
+          "lineNumber": 336,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 346,
+          "lineNumber": 347,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "1000106",
+          "value": 1000106,
+          "lineIndex": 333,
+          "lineNumber": 334,
+          "content": "100.1000106.9200737'748",
+          "position": 4,
+          "context": "100.1000106.9200737'748",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "9200737",
+          "value": 9200737,
+          "lineIndex": 333,
+          "lineNumber": 334,
+          "content": "100.1000106.9200737'748",
+          "position": 12,
+          "context": "100.1000106.9200737'748",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "37'748",
+          "value": 37748,
+          "lineIndex": 333,
+          "lineNumber": 334,
+          "content": "100.1000106.9200737'748",
+          "position": 17,
+          "context": "100.1000106.9200737'748",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "1'062",
+          "value": 1062,
+          "lineIndex": 347,
+          "lineNumber": 348,
+          "content": "1'062",
+          "position": 0,
+          "context": "1'062",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "1'062",
+          "value": 1062,
+          "lineIndex": 347,
+          "lineNumber": 348,
+          "content": "1'062",
+          "position": 0,
+          "context": "1'062",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 348,
+          "lineNumber": 349,
+          "content": "LUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30",
+          "position": 36,
+          "context": "IN/5.5 % MAX) NOTES 2024-17.01.30",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2029",
+          "value": 2029,
+          "lineIndex": 331,
+          "lineNumber": 332,
+          "content": "Ordinary Bonds  //  Maturity: 07.11.2029",
+          "position": 36,
+          "context": "//  Maturity: 07.11.2029",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "100'000",
+          "value": 100000,
+          "lineIndex": 349,
+          "lineNumber": 350,
+          "content": "USD100'000",
+          "position": 0,
+          "context": "USD100'000",
+          "distance": 9,
+          "absDistance": 9
+        }
+      ]
+    },
+    "XS2761230684": {
+      "isin": "XS2761230684",
+      "isinLine": 353,
+      "nearbyValues": [
+        {
+          "raw": "2030",
+          "value": 2030,
+          "lineIndex": 353,
+          "lineNumber": 354,
+          "content": "Zero Bonds  //  Maturity: 13.02.2030",
+          "position": 32,
+          "context": "//  Maturity: 13.02.2030",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "100'000",
+          "value": 100000,
+          "lineIndex": 349,
+          "lineNumber": 350,
+          "content": "USD100'000",
+          "position": 0,
+          "context": "USD100'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 348,
+          "lineNumber": 349,
+          "content": "LUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30",
+          "position": 36,
+          "context": "IN/5.5 % MAX) NOTES 2024-17.01.30",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2000102",
+          "value": 2000102,
+          "lineIndex": 356,
+          "lineNumber": 357,
+          "content": "100.2000102.2448102'506",
+          "position": 4,
+          "context": "100.2000102.2448102'506",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2448102",
+          "value": 2448102,
+          "lineIndex": 356,
+          "lineNumber": 357,
+          "content": "100.2000102.2448102'506",
+          "position": 12,
+          "context": "100.2000102.2448102'506",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "02'506",
+          "value": 2506,
+          "lineIndex": 356,
+          "lineNumber": 357,
+          "content": "100.2000102.2448102'506",
+          "position": 17,
+          "context": "100.2000102.2448102'506",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "1'062",
+          "value": 1062,
+          "lineIndex": 347,
+          "lineNumber": 348,
+          "content": "1'062",
+          "position": 0,
+          "context": "1'062",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "1'062",
+          "value": 1062,
+          "lineIndex": 347,
+          "lineNumber": 348,
+          "content": "1'062",
+          "position": 0,
+          "context": "1'062",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 346,
+          "lineNumber": 347,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 358,
+          "lineNumber": 359,
+          "content": "28.03.2025",
+          "position": 6,
+          "context": "28.03.2025",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "200097",
+          "value": 200097,
+          "lineIndex": 344,
+          "lineNumber": 345,
+          "content": "100.200097.140098'202",
+          "position": 4,
+          "context": "100.200097.140098'202",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "140098",
+          "value": 140098,
+          "lineIndex": 344,
+          "lineNumber": 345,
+          "content": "100.200097.140098'202",
+          "position": 11,
+          "context": "100.200097.140098'202",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "8'202",
+          "value": 8202,
+          "lineIndex": 344,
+          "lineNumber": 345,
+          "content": "100.200097.140098'202",
+          "position": 16,
+          "context": "100.200097.140098'202",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 360,
+          "lineNumber": 361,
+          "content": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE",
+          "position": 14,
+          "context": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2030",
+          "value": 2030,
+          "lineIndex": 360,
+          "lineNumber": 361,
+          "content": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE",
+          "position": 25,
+          "context": "0% NOTES 2024-13.02.2030 VARIABLE RATE",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "250'000",
+          "value": 250000,
+          "lineIndex": 361,
+          "lineNumber": 362,
+          "content": "USD250'000",
+          "position": 0,
+          "context": "USD250'000",
+          "distance": 9,
+          "absDistance": 9
+        }
+      ]
+    },
+    "XS2736388732": {
+      "isin": "XS2736388732",
+      "isinLine": 365,
+      "nearbyValues": [
+        {
+          "raw": "2031",
+          "value": 2031,
+          "lineIndex": 365,
+          "lineNumber": 366,
+          "content": "Ordinary Bonds  //  Maturity: 20.12.2031",
+          "position": 36,
+          "context": "//  Maturity: 20.12.2031",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "250'000",
+          "value": 250000,
+          "lineIndex": 361,
+          "lineNumber": 362,
+          "content": "USD250'000",
+          "position": 0,
+          "context": "USD250'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 360,
+          "lineNumber": 361,
+          "content": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE",
+          "position": 14,
+          "context": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2030",
+          "value": 2030,
+          "lineIndex": 360,
+          "lineNumber": 361,
+          "content": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE",
+          "position": 25,
+          "context": "0% NOTES 2024-13.02.2030 VARIABLE RATE",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "200099",
+          "value": 200099,
+          "lineIndex": 368,
+          "lineNumber": 369,
+          "content": "100.200099.2500256'958",
+          "position": 4,
+          "context": "100.200099.2500256'958",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2500256",
+          "value": 2500256,
+          "lineIndex": 368,
+          "lineNumber": 369,
+          "content": "100.200099.2500256'958",
+          "position": 11,
+          "context": "100.200099.2500256'958",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "56'958",
+          "value": 56958,
+          "lineIndex": 368,
+          "lineNumber": 369,
+          "content": "100.200099.2500256'958",
+          "position": 16,
+          "context": "100.200099.2500256'958",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 358,
+          "lineNumber": 359,
+          "content": "28.03.2025",
+          "position": 6,
+          "context": "28.03.2025",
+          "distance": -6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 370,
+          "lineNumber": 371,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "8'833",
+          "value": 8833,
+          "lineIndex": 371,
+          "lineNumber": 372,
+          "content": "8'833",
+          "position": 0,
+          "context": "8'833",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "8'833",
+          "value": 8833,
+          "lineIndex": 371,
+          "lineNumber": 372,
+          "content": "8'833",
+          "position": 0,
+          "context": "8'833",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2000102",
+          "value": 2000102,
+          "lineIndex": 356,
+          "lineNumber": 357,
+          "content": "100.2000102.2448102'506",
+          "position": 4,
+          "context": "100.2000102.2448102'506",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2448102",
+          "value": 2448102,
+          "lineIndex": 356,
+          "lineNumber": 357,
+          "content": "100.2000102.2448102'506",
+          "position": 12,
+          "context": "100.2000102.2448102'506",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "02'506",
+          "value": 2506,
+          "lineIndex": 356,
+          "lineNumber": 357,
+          "content": "100.2000102.2448102'506",
+          "position": 17,
+          "context": "100.2000102.2448102'506",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2023",
+          "value": 2023,
+          "lineIndex": 372,
+          "lineNumber": 373,
+          "content": "BANK OF AMERICA NOTES 2023-20.12.31 VARIABLE RATE",
+          "position": 22,
+          "context": "NK OF AMERICA NOTES 2023-20.12.31 VARIABLE R",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 373,
+          "lineNumber": 374,
+          "content": "Print date 01.04.2025 // Page 6/17",
+          "position": 17,
+          "context": "Print date 01.04.2025 // Page 6/17",
+          "distance": 9,
+          "absDistance": 9
+        }
+      ]
+    },
+    "XS2782869916": {
+      "isin": "XS2782869916",
+      "isinLine": 411,
+      "nearbyValues": [
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 409,
+          "lineNumber": 410,
+          "content": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-",
+          "position": 44,
+          "context": "LL FIXED RATE NOTES 2024-",
+          "distance": -1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 411,
+          "lineNumber": 412,
+          "content": "Ordinary Bonds  //  Maturity: 09.05.2034",
+          "position": 36,
+          "context": "//  Maturity: 09.05.2034",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 408,
+          "lineNumber": 409,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "200097",
+          "value": 200097,
+          "lineIndex": 406,
+          "lineNumber": 407,
+          "content": "100.200097.334048'667",
+          "position": 4,
+          "context": "100.200097.334048'667",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "334048",
+          "value": 334048,
+          "lineIndex": 406,
+          "lineNumber": 407,
+          "content": "100.200097.334048'667",
+          "position": 11,
+          "context": "100.200097.334048'667",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "8'667",
+          "value": 8667,
+          "lineIndex": 406,
+          "lineNumber": 407,
+          "content": "100.200097.334048'667",
+          "position": 16,
+          "context": "100.200097.334048'667",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "440'000",
+          "value": 440000,
+          "lineIndex": 414,
+          "lineNumber": 415,
+          "content": "USD440'000",
+          "position": 0,
+          "context": "USD440'000",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "50'000",
+          "value": 50000,
+          "lineIndex": 402,
+          "lineNumber": 403,
+          "content": "USD50'000",
+          "position": 0,
+          "context": "USD50'000",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2026",
+          "value": 2026,
+          "lineIndex": 418,
+          "lineNumber": 419,
+          "content": "Ordinary Bonds  //  Callable: 29.05.2026",
+          "position": 36,
+          "context": "//  Callable: 29.05.2026",
+          "distance": 8,
+          "absDistance": 8
+        }
+      ]
+    },
+    "XS2824054402": {
+      "isin": "XS2824054402",
+      "isinLine": 418,
+      "nearbyValues": [
+        {
+          "raw": "2026",
+          "value": 2026,
+          "lineIndex": 418,
+          "lineNumber": 419,
+          "content": "Ordinary Bonds  //  Callable: 29.05.2026",
+          "position": 36,
+          "context": "//  Callable: 29.05.2026",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "440'000",
+          "value": 440000,
+          "lineIndex": 414,
+          "lineNumber": 415,
+          "content": "USD440'000",
+          "position": 0,
+          "context": "USD440'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2000103",
+          "value": 2000103,
+          "lineIndex": 421,
+          "lineNumber": 422,
+          "content": "100.2000103.9900478'158",
+          "position": 4,
+          "context": "100.2000103.9900478'158",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "9900478",
+          "value": 9900478,
+          "lineIndex": 421,
+          "lineNumber": 422,
+          "content": "100.2000103.9900478'158",
+          "position": 12,
+          "context": "100.2000103.9900478'158",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "78'158",
+          "value": 78158,
+          "lineIndex": 421,
+          "lineNumber": 422,
+          "content": "100.2000103.9900478'158",
+          "position": 17,
+          "context": "100.2000103.9900478'158",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 411,
+          "lineNumber": 412,
+          "content": "Ordinary Bonds  //  Maturity: 09.05.2034",
+          "position": 36,
+          "context": "//  Maturity: 09.05.2034",
+          "distance": -6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 423,
+          "lineNumber": 424,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "20'602",
+          "value": 20602,
+          "lineIndex": 424,
+          "lineNumber": 425,
+          "content": "20'602",
+          "position": 0,
+          "context": "20'602",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "20'602",
+          "value": 20602,
+          "lineIndex": 424,
+          "lineNumber": 425,
+          "content": "20'602",
+          "position": 0,
+          "context": "20'602",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 409,
+          "lineNumber": 410,
+          "content": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-",
+          "position": 44,
+          "context": "LL FIXED RATE NOTES 2024-",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 425,
+          "lineNumber": 426,
+          "content": "BOFA 5.  6% 2024-29.05.34 REGS",
+          "position": 12,
+          "context": "BOFA 5.  6% 2024-29.05.34 REGS",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 408,
+          "lineNumber": 409,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "450'000",
+          "value": 450000,
+          "lineIndex": 426,
+          "lineNumber": 427,
+          "content": "USD2'450'000",
+          "position": 5,
+          "context": "USD2'450'000",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2'450'000",
+          "value": 2450000,
+          "lineIndex": 426,
+          "lineNumber": 427,
+          "content": "USD2'450'000",
+          "position": 0,
+          "context": "USD2'450'000",
+          "distance": 9,
+          "absDistance": 9
+        }
+      ]
+    },
+    "XS2567543397": {
+      "isin": "XS2567543397",
+      "isinLine": 430,
+      "nearbyValues": [
+        {
+          "raw": "2026",
+          "value": 2026,
+          "lineIndex": 430,
+          "lineNumber": 431,
+          "content": "Ordinary Bonds  //  Callable: 18.06.2026",
+          "position": 36,
+          "context": "//  Callable: 18.06.2026",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "450'000",
+          "value": 450000,
+          "lineIndex": 426,
+          "lineNumber": 427,
+          "content": "USD2'450'000",
+          "position": 5,
+          "context": "USD2'450'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2'450'000",
+          "value": 2450000,
+          "lineIndex": 426,
+          "lineNumber": 427,
+          "content": "USD2'450'000",
+          "position": 0,
+          "context": "USD2'450'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 425,
+          "lineNumber": 426,
+          "content": "BOFA 5.  6% 2024-29.05.34 REGS",
+          "position": 12,
+          "context": "BOFA 5.  6% 2024-29.05.34 REGS",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "570'405",
+          "value": 570405,
+          "lineIndex": 433,
+          "lineNumber": 434,
+          "content": "100.1000100.52002'570'405",
+          "position": 18,
+          "context": "100.1000100.52002'570'405",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "1000100",
+          "value": 1000100,
+          "lineIndex": 433,
+          "lineNumber": 434,
+          "content": "100.1000100.52002'570'405",
+          "position": 4,
+          "context": "100.1000100.52002'570'405",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "52002",
+          "value": 52002,
+          "lineIndex": 433,
+          "lineNumber": 434,
+          "content": "100.1000100.52002'570'405",
+          "position": 12,
+          "context": "100.1000100.52002'570'405",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "002'570'405",
+          "value": 2570405,
+          "lineIndex": 433,
+          "lineNumber": 434,
+          "content": "100.1000100.52002'570'405",
+          "position": 14,
+          "context": "100.1000100.52002'570'405",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "20'602",
+          "value": 20602,
+          "lineIndex": 424,
+          "lineNumber": 425,
+          "content": "20'602",
+          "position": 0,
+          "context": "20'602",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "20'602",
+          "value": 20602,
+          "lineIndex": 424,
+          "lineNumber": 425,
+          "content": "20'602",
+          "position": 0,
+          "context": "20'602",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 423,
+          "lineNumber": 424,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 435,
+          "lineNumber": 436,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "107'665",
+          "value": 107665,
+          "lineIndex": 436,
+          "lineNumber": 437,
+          "content": "107'665",
+          "position": 0,
+          "context": "107'665",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "107'665",
+          "value": 107665,
+          "lineIndex": 436,
+          "lineNumber": 437,
+          "content": "107'665",
+          "position": 0,
+          "context": "107'665",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2000103",
+          "value": 2000103,
+          "lineIndex": 421,
+          "lineNumber": 422,
+          "content": "100.2000103.9900478'158",
+          "position": 4,
+          "context": "100.2000103.9900478'158",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "9900478",
+          "value": 9900478,
+          "lineIndex": 421,
+          "lineNumber": 422,
+          "content": "100.2000103.9900478'158",
+          "position": 12,
+          "context": "100.2000103.9900478'158",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "78'158",
+          "value": 78158,
+          "lineIndex": 421,
+          "lineNumber": 422,
+          "content": "100.2000103.9900478'158",
+          "position": 17,
+          "context": "100.2000103.9900478'158",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 437,
+          "lineNumber": 438,
+          "content": "GS 10Y CALLABLE NOTE 2024-18.06.2034",
+          "position": 21,
+          "context": "S 10Y CALLABLE NOTE 2024-18.06.2034",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 437,
+          "lineNumber": 438,
+          "content": "GS 10Y CALLABLE NOTE 2024-18.06.2034",
+          "position": 32,
+          "context": "BLE NOTE 2024-18.06.2034",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "100'000",
+          "value": 100000,
+          "lineIndex": 438,
+          "lineNumber": 439,
+          "content": "USD1'100'000",
+          "position": 5,
+          "context": "USD1'100'000",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "1'100'000",
+          "value": 1100000,
+          "lineIndex": 438,
+          "lineNumber": 439,
+          "content": "USD1'100'000",
+          "position": 0,
+          "context": "USD1'100'000",
+          "distance": 9,
+          "absDistance": 9
+        }
+      ]
+    },
+    "XS2110079584": {
+      "isin": "XS2110079584",
+      "isinLine": 442,
+      "nearbyValues": [
+        {
+          "raw": "2026",
+          "value": 2026,
+          "lineIndex": 442,
+          "lineNumber": 443,
+          "content": "Zero Bonds  //  Callable: 09.07.2026",
+          "position": 32,
+          "context": "//  Callable: 09.07.2026",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "100'000",
+          "value": 100000,
+          "lineIndex": 438,
+          "lineNumber": 439,
+          "content": "USD1'100'000",
+          "position": 5,
+          "context": "USD1'100'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "1'100'000",
+          "value": 1100000,
+          "lineIndex": 438,
+          "lineNumber": 439,
+          "content": "USD1'100'000",
+          "position": 0,
+          "context": "USD1'100'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "101'100",
+          "value": 101100,
+          "lineIndex": 444,
+          "lineNumber": 445,
+          "content": "100.1000100.10001'101'100",
+          "position": 18,
+          "context": "100.1000100.10001'101'100",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "1000100",
+          "value": 1000100,
+          "lineIndex": 444,
+          "lineNumber": 445,
+          "content": "100.1000100.10001'101'100",
+          "position": 4,
+          "context": "100.1000100.10001'101'100",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "10001",
+          "value": 10001,
+          "lineIndex": 444,
+          "lineNumber": 445,
+          "content": "100.1000100.10001'101'100",
+          "position": 12,
+          "context": "100.1000100.10001'101'100",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "001'101'100",
+          "value": 1101100,
+          "lineIndex": 444,
+          "lineNumber": 445,
+          "content": "100.1000100.10001'101'100",
+          "position": 14,
+          "context": "100.1000100.10001'101'100",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 437,
+          "lineNumber": 438,
+          "content": "GS 10Y CALLABLE NOTE 2024-18.06.2034",
+          "position": 21,
+          "context": "S 10Y CALLABLE NOTE 2024-18.06.2034",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 437,
+          "lineNumber": 438,
+          "content": "GS 10Y CALLABLE NOTE 2024-18.06.2034",
+          "position": 32,
+          "context": "BLE NOTE 2024-18.06.2034",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "107'665",
+          "value": 107665,
+          "lineIndex": 436,
+          "lineNumber": 437,
+          "content": "107'665",
+          "position": 0,
+          "context": "107'665",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "107'665",
+          "value": 107665,
+          "lineIndex": 436,
+          "lineNumber": 437,
+          "content": "107'665",
+          "position": 0,
+          "context": "107'665",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 446,
+          "lineNumber": 447,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 435,
+          "lineNumber": 436,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 447,
+          "lineNumber": 448,
+          "content": "CITIGROUP 0% MTN 2024-09.07.34 REGS",
+          "position": 17,
+          "context": "CITIGROUP 0% MTN 2024-09.07.34 REGS",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "90'000",
+          "value": 90000,
+          "lineIndex": 448,
+          "lineNumber": 449,
+          "content": "USD90'000",
+          "position": 0,
+          "context": "USD90'000",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "570'405",
+          "value": 570405,
+          "lineIndex": 433,
+          "lineNumber": 434,
+          "content": "100.1000100.52002'570'405",
+          "position": 18,
+          "context": "100.1000100.52002'570'405",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "1000100",
+          "value": 1000100,
+          "lineIndex": 433,
+          "lineNumber": 434,
+          "content": "100.1000100.52002'570'405",
+          "position": 4,
+          "context": "100.1000100.52002'570'405",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "52002",
+          "value": 52002,
+          "lineIndex": 433,
+          "lineNumber": 434,
+          "content": "100.1000100.52002'570'405",
+          "position": 12,
+          "context": "100.1000100.52002'570'405",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "002'570'405",
+          "value": 2570405,
+          "lineIndex": 433,
+          "lineNumber": 434,
+          "content": "100.1000100.52002'570'405",
+          "position": 14,
+          "context": "100.1000100.52002'570'405",
+          "distance": -8,
+          "absDistance": 8
+        }
+      ]
+    },
+    "XS2848820754": {
+      "isin": "XS2848820754",
+      "isinLine": 457,
+      "nearbyValues": [
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 455,
+          "lineNumber": 456,
+          "content": "CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34",
+          "position": 37,
+          "context": "% MEDIUM TERM NOTES 2024-01.08.34",
+          "distance": -1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 457,
+          "lineNumber": 458,
+          "content": "Zero Bonds  //  Maturity: 01.08.2034",
+          "position": 32,
+          "context": "//  Maturity: 01.08.2034",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 454,
+          "lineNumber": 455,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "100'000",
+          "value": 100000,
+          "lineIndex": 459,
+          "lineNumber": 460,
+          "content": "USD100'000",
+          "position": 0,
+          "context": "USD100'000",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2000100",
+          "value": 2000100,
+          "lineIndex": 452,
+          "lineNumber": 453,
+          "content": "100.2000100.060090'054",
+          "position": 4,
+          "context": "100.2000100.060090'054",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "060090",
+          "value": 60090,
+          "lineIndex": 452,
+          "lineNumber": 453,
+          "content": "100.2000100.060090'054",
+          "position": 12,
+          "context": "100.2000100.060090'054",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 463,
+          "lineNumber": 464,
+          "content": "Ordinary Bonds  //  Maturity: 30.09.2034",
+          "position": 36,
+          "context": "//  Maturity: 30.09.2034",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "90'000",
+          "value": 90000,
+          "lineIndex": 448,
+          "lineNumber": 449,
+          "content": "USD90'000",
+          "position": 0,
+          "context": "USD90'000",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 447,
+          "lineNumber": 448,
+          "content": "CITIGROUP 0% MTN 2024-09.07.34 REGS",
+          "position": 17,
+          "context": "CITIGROUP 0% MTN 2024-09.07.34 REGS",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "999692",
+          "value": 999692,
+          "lineIndex": 465,
+          "lineNumber": 466,
+          "content": "99.999692.320092'320",
+          "position": 3,
+          "context": "99.999692.320092'320",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "320092",
+          "value": 320092,
+          "lineIndex": 465,
+          "lineNumber": 466,
+          "content": "99.999692.320092'320",
+          "position": 10,
+          "context": "99.999692.320092'320",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2'320",
+          "value": 2320,
+          "lineIndex": 465,
+          "lineNumber": 466,
+          "content": "99.999692.320092'320",
+          "position": 15,
+          "context": "99.999692.320092'320",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 446,
+          "lineNumber": 447,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2829712830": {
+      "isin": "XS2829712830",
+      "isinLine": 463,
+      "nearbyValues": [
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 463,
+          "lineNumber": 464,
+          "content": "Ordinary Bonds  //  Maturity: 30.09.2034",
+          "position": 36,
+          "context": "//  Maturity: 30.09.2034",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "100'000",
+          "value": 100000,
+          "lineIndex": 459,
+          "lineNumber": 460,
+          "content": "USD100'000",
+          "position": 0,
+          "context": "USD100'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "999692",
+          "value": 999692,
+          "lineIndex": 465,
+          "lineNumber": 466,
+          "content": "99.999692.320092'320",
+          "position": 3,
+          "context": "99.999692.320092'320",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "320092",
+          "value": 320092,
+          "lineIndex": 465,
+          "lineNumber": 466,
+          "content": "99.999692.320092'320",
+          "position": 10,
+          "context": "99.999692.320092'320",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2'320",
+          "value": 2320,
+          "lineIndex": 465,
+          "lineNumber": 466,
+          "content": "99.999692.320092'320",
+          "position": 15,
+          "context": "99.999692.320092'320",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 457,
+          "lineNumber": 458,
+          "content": "Zero Bonds  //  Maturity: 01.08.2034",
+          "position": 32,
+          "context": "//  Maturity: 01.08.2034",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 467,
+          "lineNumber": 468,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 468,
+          "lineNumber": 469,
+          "content": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+          "position": 19,
+          "context": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 468,
+          "lineNumber": 469,
+          "content": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+          "position": 30,
+          "context": "CHS EMTN 2024-30.09.2024",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 455,
+          "lineNumber": 456,
+          "content": "CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34",
+          "position": 37,
+          "context": "% MEDIUM TERM NOTES 2024-01.08.34",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "200'000",
+          "value": 200000,
+          "lineIndex": 469,
+          "lineNumber": 470,
+          "content": "USD200'000",
+          "position": 0,
+          "context": "USD200'000",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 454,
+          "lineNumber": 455,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2000100",
+          "value": 2000100,
+          "lineIndex": 452,
+          "lineNumber": 453,
+          "content": "100.2000100.060090'054",
+          "position": 4,
+          "context": "100.2000100.060090'054",
+          "distance": -10,
+          "absDistance": 10
+        },
+        {
+          "raw": "060090",
+          "value": 60090,
+          "lineIndex": 452,
+          "lineNumber": 453,
+          "content": "100.2000100.060090'054",
+          "position": 12,
+          "context": "100.2000100.060090'054",
+          "distance": -10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2912278723": {
+      "isin": "XS2912278723",
+      "isinLine": 473,
+      "nearbyValues": [
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 473,
+          "lineNumber": 474,
+          "content": "Zero Bonds  //  Maturity: 17.10.2034",
+          "position": 32,
+          "context": "//  Maturity: 17.10.2034",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "200'000",
+          "value": 200000,
+          "lineIndex": 469,
+          "lineNumber": 470,
+          "content": "USD200'000",
+          "position": 0,
+          "context": "USD200'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "200099",
+          "value": 200099,
+          "lineIndex": 475,
+          "lineNumber": 476,
+          "content": "100.200099.5654199'131",
+          "position": 4,
+          "context": "100.200099.5654199'131",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "5654199",
+          "value": 5654199,
+          "lineIndex": 475,
+          "lineNumber": 476,
+          "content": "100.200099.5654199'131",
+          "position": 11,
+          "context": "100.200099.5654199'131",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "99'131",
+          "value": 99131,
+          "lineIndex": 475,
+          "lineNumber": 476,
+          "content": "100.200099.5654199'131",
+          "position": 16,
+          "context": "100.200099.5654199'131",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 468,
+          "lineNumber": 469,
+          "content": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+          "position": 19,
+          "context": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 468,
+          "lineNumber": 469,
+          "content": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+          "position": 30,
+          "context": "CHS EMTN 2024-30.09.2024",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 467,
+          "lineNumber": 468,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 477,
+          "lineNumber": 478,
+          "content": "28.03.2025",
+          "position": 6,
+          "context": "28.03.2025",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 478,
+          "lineNumber": 479,
+          "content": "BANK OF AMERICA 0% NOTES 2024-17.10.2034",
+          "position": 25,
+          "context": "OF AMERICA 0% NOTES 2024-17.10.2034",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 478,
+          "lineNumber": 479,
+          "content": "BANK OF AMERICA 0% NOTES 2024-17.10.2034",
+          "position": 36,
+          "context": "0% NOTES 2024-17.10.2034",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "999692",
+          "value": 999692,
+          "lineIndex": 465,
+          "lineNumber": 466,
+          "content": "99.999692.320092'320",
+          "position": 3,
+          "context": "99.999692.320092'320",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "320092",
+          "value": 320092,
+          "lineIndex": 465,
+          "lineNumber": 466,
+          "content": "99.999692.320092'320",
+          "position": 10,
+          "context": "99.999692.320092'320",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2'320",
+          "value": 2320,
+          "lineIndex": 465,
+          "lineNumber": 466,
+          "content": "99.999692.320092'320",
+          "position": 15,
+          "context": "99.999692.320092'320",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "100'000",
+          "value": 100000,
+          "lineIndex": 479,
+          "lineNumber": 480,
+          "content": "USD100'000",
+          "position": 0,
+          "context": "USD100'000",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 463,
+          "lineNumber": 464,
+          "content": "Ordinary Bonds  //  Maturity: 30.09.2034",
+          "position": 36,
+          "context": "//  Maturity: 30.09.2034",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "37954",
+          "value": 37954,
+          "lineIndex": 482,
+          "lineNumber": 483,
+          "content": "37954",
+          "position": 0,
+          "context": "37954",
+          "distance": 10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2381723902": {
+      "isin": "XS2381723902",
+      "isinLine": 488,
+      "nearbyValues": [
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 486,
+          "lineNumber": 487,
+          "content": "JPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021-",
+          "position": 28,
+          "context": " CHASE  0   % NOTES 2024-29.10.34 SERIES 202",
+          "distance": -1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2021",
+          "value": 2021,
+          "lineIndex": 486,
+          "lineNumber": 487,
+          "content": "JPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021-",
+          "position": 49,
+          "context": "024-29.10.34 SERIES 2021-",
+          "distance": -1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 488,
+          "lineNumber": 489,
+          "content": "Zero Bonds  //  Maturity: 29.10.2034",
+          "position": 32,
+          "context": "//  Maturity: 29.10.2034",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 485,
+          "lineNumber": 486,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 490,
+          "lineNumber": 491,
+          "content": "Print date 01.04.2025 // Page 7/17",
+          "position": 17,
+          "context": "Print date 01.04.2025 // Page 7/17",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "200096",
+          "value": 200096,
+          "lineIndex": 483,
+          "lineNumber": 484,
+          "content": "100.200096.056996'057",
+          "position": 4,
+          "context": "100.200096.056996'057",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "056996",
+          "value": 56996,
+          "lineIndex": 483,
+          "lineNumber": 484,
+          "content": "100.200096.056996'057",
+          "position": 11,
+          "context": "100.200096.056996'057",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "6'057",
+          "value": 6057,
+          "lineIndex": 483,
+          "lineNumber": 484,
+          "content": "100.200096.056996'057",
+          "position": 16,
+          "context": "100.200096.056996'057",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "37954",
+          "value": 37954,
+          "lineIndex": 482,
+          "lineNumber": 483,
+          "content": "37954",
+          "position": 0,
+          "context": "37954",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 494,
+          "lineNumber": 495,
+          "content": "Valuation as of 31.03.2025",
+          "position": 22,
+          "context": "luation as of 31.03.2025",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "100'000",
+          "value": 100000,
+          "lineIndex": 479,
+          "lineNumber": 480,
+          "content": "USD100'000",
+          "position": 0,
+          "context": "USD100'000",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "366223",
+          "value": 366223,
+          "lineIndex": 495,
+          "lineNumber": 496,
+          "content": "Client Number 366223",
+          "position": 14,
+          "context": "Client Number 366223",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 478,
+          "lineNumber": 479,
+          "content": "BANK OF AMERICA 0% NOTES 2024-17.10.2034",
+          "position": 25,
+          "context": "OF AMERICA 0% NOTES 2024-17.10.2034",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 478,
+          "lineNumber": 479,
+          "content": "BANK OF AMERICA 0% NOTES 2024-17.10.2034",
+          "position": 36,
+          "context": "0% NOTES 2024-17.10.2034",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 477,
+          "lineNumber": 478,
+          "content": "28.03.2025",
+          "position": 6,
+          "context": "28.03.2025",
+          "distance": -10,
+          "absDistance": 10
+        },
+        {
+          "raw": "8490",
+          "value": 8490,
+          "lineIndex": 497,
+          "lineNumber": 498,
+          "content": "Swift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA",
+          "position": 29,
+          "context": "UCH2280A// Clearing 8490 // CHE-105.962.409I",
+          "distance": 10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2829752976": {
+      "isin": "XS2829752976",
+      "isinLine": 528,
+      "nearbyValues": [
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 526,
+          "lineNumber": 527,
+          "content": "GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-",
+          "position": 40,
+          "context": "O MEDIUM TERM NOTES 2024-",
+          "distance": -1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 528,
+          "lineNumber": 529,
+          "content": "Ordinary Bonds  //  Maturity: 18.11.2034",
+          "position": 36,
+          "context": "//  Maturity: 18.11.2034",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 525,
+          "lineNumber": 526,
+          "content": "27.03.2025",
+          "position": 6,
+          "context": "27.03.2025",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "150'000",
+          "value": 150000,
+          "lineIndex": 530,
+          "lineNumber": 531,
+          "content": "USD150'000",
+          "position": 0,
+          "context": "USD150'000",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "679096",
+          "value": 679096,
+          "lineIndex": 523,
+          "lineNumber": 524,
+          "content": "99.679096.8300242'075",
+          "position": 3,
+          "context": "99.679096.8300242'075",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "8300242",
+          "value": 8300242,
+          "lineIndex": 523,
+          "lineNumber": 524,
+          "content": "99.679096.8300242'075",
+          "position": 10,
+          "context": "99.679096.8300242'075",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "42'075",
+          "value": 42075,
+          "lineIndex": 523,
+          "lineNumber": 524,
+          "content": "99.679096.8300242'075",
+          "position": 15,
+          "context": "99.679096.8300242'075",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 522,
+          "lineNumber": 523,
+          "content": "18.11.2034",
+          "position": 6,
+          "context": "18.11.2034",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 534,
+          "lineNumber": 535,
+          "content": "Zero Bonds  //  Maturity: 11.12.2034",
+          "position": 32,
+          "context": "//  Maturity: 11.12.2034",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "250'000",
+          "value": 250000,
+          "lineIndex": 519,
+          "lineNumber": 520,
+          "content": "USD250'000",
+          "position": 0,
+          "context": "USD250'000",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "198097",
+          "value": 198097,
+          "lineIndex": 536,
+          "lineNumber": 537,
+          "content": "99.198097.7500146'625",
+          "position": 3,
+          "context": "99.198097.7500146'625",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "7500146",
+          "value": 7500146,
+          "lineIndex": 536,
+          "lineNumber": 537,
+          "content": "99.198097.7500146'625",
+          "position": 10,
+          "context": "99.198097.7500146'625",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "46'625",
+          "value": 46625,
+          "lineIndex": 536,
+          "lineNumber": 537,
+          "content": "99.198097.7500146'625",
+          "position": 15,
+          "context": "99.198097.7500146'625",
+          "distance": 9,
+          "absDistance": 9
+        }
+      ]
+    },
+    "XS2953741100": {
+      "isin": "XS2953741100",
+      "isinLine": 534,
+      "nearbyValues": [
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 534,
+          "lineNumber": 535,
+          "content": "Zero Bonds  //  Maturity: 11.12.2034",
+          "position": 32,
+          "context": "//  Maturity: 11.12.2034",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "150'000",
+          "value": 150000,
+          "lineIndex": 530,
+          "lineNumber": 531,
+          "content": "USD150'000",
+          "position": 0,
+          "context": "USD150'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "198097",
+          "value": 198097,
+          "lineIndex": 536,
+          "lineNumber": 537,
+          "content": "99.198097.7500146'625",
+          "position": 3,
+          "context": "99.198097.7500146'625",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "7500146",
+          "value": 7500146,
+          "lineIndex": 536,
+          "lineNumber": 537,
+          "content": "99.198097.7500146'625",
+          "position": 10,
+          "context": "99.198097.7500146'625",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "46'625",
+          "value": 46625,
+          "lineIndex": 536,
+          "lineNumber": 537,
+          "content": "99.198097.7500146'625",
+          "position": 15,
+          "context": "99.198097.7500146'625",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 528,
+          "lineNumber": 529,
+          "content": "Ordinary Bonds  //  Maturity: 18.11.2034",
+          "position": 36,
+          "context": "//  Maturity: 18.11.2034",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 538,
+          "lineNumber": 539,
+          "content": "27.03.2025",
+          "position": 6,
+          "context": "27.03.2025",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 539,
+          "lineNumber": 540,
+          "content": "BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S",
+          "position": 26,
+          "context": "F AMERICA 0 % NOTES 2024-11.12.34 REG S",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 526,
+          "lineNumber": 527,
+          "content": "GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-",
+          "position": 40,
+          "context": "O MEDIUM TERM NOTES 2024-",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "500'000",
+          "value": 500000,
+          "lineIndex": 540,
+          "lineNumber": 541,
+          "content": "USD500'000",
+          "position": 0,
+          "context": "USD500'000",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 525,
+          "lineNumber": 526,
+          "content": "27.03.2025",
+          "position": 6,
+          "context": "27.03.2025",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "679096",
+          "value": 679096,
+          "lineIndex": 523,
+          "lineNumber": 524,
+          "content": "99.679096.8300242'075",
+          "position": 3,
+          "context": "99.679096.8300242'075",
+          "distance": -10,
+          "absDistance": 10
+        },
+        {
+          "raw": "8300242",
+          "value": 8300242,
+          "lineIndex": 523,
+          "lineNumber": 524,
+          "content": "99.679096.8300242'075",
+          "position": 10,
+          "context": "99.679096.8300242'075",
+          "distance": -10,
+          "absDistance": 10
+        },
+        {
+          "raw": "42'075",
+          "value": 42075,
+          "lineIndex": 523,
+          "lineNumber": 524,
+          "content": "99.679096.8300242'075",
+          "position": 15,
+          "context": "99.679096.8300242'075",
+          "distance": -10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2381717250": {
+      "isin": "XS2381717250",
+      "isinLine": 544,
+      "nearbyValues": [
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 544,
+          "lineNumber": 545,
+          "content": "Zero Bonds  //  Maturity: 19.12.2034",
+          "position": 32,
+          "context": "//  Maturity: 19.12.2034",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "500'000",
+          "value": 500000,
+          "lineIndex": 540,
+          "lineNumber": 541,
+          "content": "USD500'000",
+          "position": 0,
+          "context": "USD500'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2000101",
+          "value": 2000101,
+          "lineIndex": 546,
+          "lineNumber": 547,
+          "content": "100.2000101.1000505'500",
+          "position": 4,
+          "context": "100.2000101.1000505'500",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "1000505",
+          "value": 1000505,
+          "lineIndex": 546,
+          "lineNumber": 547,
+          "content": "100.2000101.1000505'500",
+          "position": 12,
+          "context": "100.2000101.1000505'500",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "05'500",
+          "value": 5500,
+          "lineIndex": 546,
+          "lineNumber": 547,
+          "content": "100.2000101.1000505'500",
+          "position": 17,
+          "context": "100.2000101.1000505'500",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 539,
+          "lineNumber": 540,
+          "content": "BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S",
+          "position": 26,
+          "context": "F AMERICA 0 % NOTES 2024-11.12.34 REG S",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 538,
+          "lineNumber": 539,
+          "content": "27.03.2025",
+          "position": 6,
+          "context": "27.03.2025",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 548,
+          "lineNumber": 549,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 549,
+          "lineNumber": 550,
+          "content": "JPMORGAN CHASE 0% NOTES 2024-19.12.2034",
+          "position": 24,
+          "context": "RGAN CHASE 0% NOTES 2024-19.12.2034",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 549,
+          "lineNumber": 550,
+          "content": "JPMORGAN CHASE 0% NOTES 2024-19.12.2034",
+          "position": 35,
+          "context": "0% NOTES 2024-19.12.2034",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "198097",
+          "value": 198097,
+          "lineIndex": 536,
+          "lineNumber": 537,
+          "content": "99.198097.7500146'625",
+          "position": 3,
+          "context": "99.198097.7500146'625",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "7500146",
+          "value": 7500146,
+          "lineIndex": 536,
+          "lineNumber": 537,
+          "content": "99.198097.7500146'625",
+          "position": 10,
+          "context": "99.198097.7500146'625",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "46'625",
+          "value": 46625,
+          "lineIndex": 536,
+          "lineNumber": 537,
+          "content": "99.198097.7500146'625",
+          "position": 15,
+          "context": "99.198097.7500146'625",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "50'000",
+          "value": 50000,
+          "lineIndex": 550,
+          "lineNumber": 551,
+          "content": "USD50'000",
+          "position": 0,
+          "context": "USD50'000",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 534,
+          "lineNumber": 535,
+          "content": "Zero Bonds  //  Maturity: 11.12.2034",
+          "position": 32,
+          "context": "//  Maturity: 11.12.2034",
+          "distance": -9,
+          "absDistance": 9
+        }
+      ]
+    },
+    "XS2481066111": {
+      "isin": "XS2481066111",
+      "isinLine": 554,
+      "nearbyValues": [
+        {
+          "raw": "2035",
+          "value": 2035,
+          "lineIndex": 554,
+          "lineNumber": 555,
+          "content": "Zero Bonds  //  Maturity: 03.02.2035",
+          "position": 32,
+          "context": "//  Maturity: 03.02.2035",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "50'000",
+          "value": 50000,
+          "lineIndex": 550,
+          "lineNumber": 551,
+          "content": "USD50'000",
+          "position": 0,
+          "context": "USD50'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "100099",
+          "value": 100099,
+          "lineIndex": 556,
+          "lineNumber": 557,
+          "content": "100.100099.000049'500",
+          "position": 4,
+          "context": "100.100099.000049'500",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "9'500",
+          "value": 9500,
+          "lineIndex": 556,
+          "lineNumber": 557,
+          "content": "100.100099.000049'500",
+          "position": 16,
+          "context": "100.100099.000049'500",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 549,
+          "lineNumber": 550,
+          "content": "JPMORGAN CHASE 0% NOTES 2024-19.12.2034",
+          "position": 24,
+          "context": "RGAN CHASE 0% NOTES 2024-19.12.2034",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 549,
+          "lineNumber": 550,
+          "content": "JPMORGAN CHASE 0% NOTES 2024-19.12.2034",
+          "position": 35,
+          "context": "0% NOTES 2024-19.12.2034",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 548,
+          "lineNumber": 549,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 558,
+          "lineNumber": 559,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 559,
+          "lineNumber": 560,
+          "content": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035",
+          "position": 23,
+          "context": "DMAN SACHS 0% NOTES 2025-03.02.2035",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2035",
+          "value": 2035,
+          "lineIndex": 559,
+          "lineNumber": 560,
+          "content": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035",
+          "position": 34,
+          "context": "0% NOTES 2025-03.02.2035",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2000101",
+          "value": 2000101,
+          "lineIndex": 546,
+          "lineNumber": 547,
+          "content": "100.2000101.1000505'500",
+          "position": 4,
+          "context": "100.2000101.1000505'500",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "1000505",
+          "value": 1000505,
+          "lineIndex": 546,
+          "lineNumber": 547,
+          "content": "100.2000101.1000505'500",
+          "position": 12,
+          "context": "100.2000101.1000505'500",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "05'500",
+          "value": 5500,
+          "lineIndex": 546,
+          "lineNumber": 547,
+          "content": "100.2000101.1000505'500",
+          "position": 17,
+          "context": "100.2000101.1000505'500",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "470'000",
+          "value": 470000,
+          "lineIndex": 560,
+          "lineNumber": 561,
+          "content": "USD1'470'000",
+          "position": 5,
+          "context": "USD1'470'000",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "1'470'000",
+          "value": 1470000,
+          "lineIndex": 560,
+          "lineNumber": 561,
+          "content": "USD1'470'000",
+          "position": 0,
+          "context": "USD1'470'000",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 544,
+          "lineNumber": 545,
+          "content": "Zero Bonds  //  Maturity: 19.12.2034",
+          "position": 32,
+          "context": "//  Maturity: 19.12.2034",
+          "distance": -9,
+          "absDistance": 9
+        }
+      ]
+    },
+    "XS2964611052": {
+      "isin": "XS2964611052",
+      "isinLine": 564,
+      "nearbyValues": [
+        {
+          "raw": "2035",
+          "value": 2035,
+          "lineIndex": 564,
+          "lineNumber": 565,
+          "content": "Zero Bonds  //  Maturity: 14.02.2035",
+          "position": 32,
+          "context": "//  Maturity: 14.02.2035",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "470'000",
+          "value": 470000,
+          "lineIndex": 560,
+          "lineNumber": 561,
+          "content": "USD1'470'000",
+          "position": 5,
+          "context": "USD1'470'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "1'470'000",
+          "value": 1470000,
+          "lineIndex": 560,
+          "lineNumber": 561,
+          "content": "USD1'470'000",
+          "position": 0,
+          "context": "USD1'470'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "480'584",
+          "value": 480584,
+          "lineIndex": 566,
+          "lineNumber": 567,
+          "content": "100.0000100.72001'480'584",
+          "position": 18,
+          "context": "100.0000100.72001'480'584",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "72001",
+          "value": 72001,
+          "lineIndex": 566,
+          "lineNumber": 567,
+          "content": "100.0000100.72001'480'584",
+          "position": 12,
+          "context": "100.0000100.72001'480'584",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "001'480'584",
+          "value": 1480584,
+          "lineIndex": 566,
+          "lineNumber": 567,
+          "content": "100.0000100.72001'480'584",
+          "position": 14,
+          "context": "100.0000100.72001'480'584",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 559,
+          "lineNumber": 560,
+          "content": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035",
+          "position": 23,
+          "context": "DMAN SACHS 0% NOTES 2025-03.02.2035",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2035",
+          "value": 2035,
+          "lineIndex": 559,
+          "lineNumber": 560,
+          "content": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035",
+          "position": 34,
+          "context": "0% NOTES 2025-03.02.2035",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 558,
+          "lineNumber": 559,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 568,
+          "lineNumber": 569,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 569,
+          "lineNumber": 570,
+          "content": "DEUTSCHE BANK 0 % NOTES 2025-14.02.35",
+          "position": 24,
+          "context": "SCHE BANK 0 % NOTES 2025-14.02.35",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "100099",
+          "value": 100099,
+          "lineIndex": 556,
+          "lineNumber": 557,
+          "content": "100.100099.000049'500",
+          "position": 4,
+          "context": "100.100099.000049'500",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "9'500",
+          "value": 9500,
+          "lineIndex": 556,
+          "lineNumber": 557,
+          "content": "100.100099.000049'500",
+          "position": 16,
+          "context": "100.100099.000049'500",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "800'000",
+          "value": 800000,
+          "lineIndex": 570,
+          "lineNumber": 571,
+          "content": "USD800'000",
+          "position": 0,
+          "context": "USD800'000",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2035",
+          "value": 2035,
+          "lineIndex": 554,
+          "lineNumber": 555,
+          "content": "Zero Bonds  //  Maturity: 03.02.2035",
+          "position": 32,
+          "context": "//  Maturity: 03.02.2035",
+          "distance": -9,
+          "absDistance": 9
+        }
+      ]
+    },
+    "XS3035947103": {
+      "isin": "XS3035947103",
+      "isinLine": 579,
+      "nearbyValues": [
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 577,
+          "lineNumber": 578,
+          "content": "WELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36",
+          "position": 39,
+          "context": "O MEDIUM TERM NOTES 2025-28.03.36",
+          "distance": -1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2036",
+          "value": 2036,
+          "lineIndex": 579,
+          "lineNumber": 580,
+          "content": "Ordinary Bonds  //  Maturity: 28.03.2036",
+          "position": 36,
+          "context": "//  Maturity: 28.03.2036",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 576,
+          "lineNumber": 577,
+          "content": "28.03.2025",
+          "position": 6,
+          "context": "28.03.2025",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "2'581.79",
+          "value": 2581.79,
+          "lineIndex": 581,
+          "lineNumber": 582,
+          "content": "USD2'581.79",
+          "position": 0,
+          "context": "USD2'581.79",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "530444",
+          "value": 530444,
+          "lineIndex": 585,
+          "lineNumber": 586,
+          "content": "81.530444.7800115'613",
+          "position": 3,
+          "context": "81.530444.7800115'613",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "7800115",
+          "value": 7800115,
+          "lineIndex": 585,
+          "lineNumber": 586,
+          "content": "81.530444.7800115'613",
+          "position": 10,
+          "context": "81.530444.7800115'613",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "15'613",
+          "value": 15613,
+          "lineIndex": 585,
+          "lineNumber": 586,
+          "content": "81.530444.7800115'613",
+          "position": 15,
+          "context": "81.530444.7800115'613",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "800'000",
+          "value": 800000,
+          "lineIndex": 570,
+          "lineNumber": 571,
+          "content": "USD800'000",
+          "position": 0,
+          "context": "USD800'000",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 569,
+          "lineNumber": 570,
+          "content": "DEUTSCHE BANK 0 % NOTES 2025-14.02.35",
+          "position": 24,
+          "context": "SCHE BANK 0 % NOTES 2025-14.02.35",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 587,
+          "lineNumber": 588,
+          "content": "13.09.2024",
+          "position": 6,
+          "context": "13.09.2024",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 568,
+          "lineNumber": 569,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "LU2228214107": {
+      "isin": "LU2228214107",
+      "isinLine": 590,
+      "nearbyValues": [
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 587,
+          "lineNumber": 588,
+          "content": "13.09.2024",
+          "position": 6,
+          "context": "13.09.2024",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "350'000",
+          "value": 350000,
+          "lineIndex": 592,
+          "lineNumber": 593,
+          "content": "USD350'000",
+          "position": 0,
+          "context": "USD350'000",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "530444",
+          "value": 530444,
+          "lineIndex": 585,
+          "lineNumber": 586,
+          "content": "81.530444.7800115'613",
+          "position": 3,
+          "context": "81.530444.7800115'613",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "7800115",
+          "value": 7800115,
+          "lineIndex": 585,
+          "lineNumber": 586,
+          "content": "81.530444.7800115'613",
+          "position": 10,
+          "context": "81.530444.7800115'613",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "15'613",
+          "value": 15613,
+          "lineIndex": 585,
+          "lineNumber": 586,
+          "content": "81.530444.7800115'613",
+          "position": 15,
+          "context": "81.530444.7800115'613",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "623797",
+          "value": 623797,
+          "lineIndex": 596,
+          "lineNumber": 597,
+          "content": "100.623797.6000342'643",
+          "position": 4,
+          "context": "100.623797.6000342'643",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "6000342",
+          "value": 6000342,
+          "lineIndex": 596,
+          "lineNumber": 597,
+          "content": "100.623797.6000342'643",
+          "position": 11,
+          "context": "100.623797.6000342'643",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "42'643",
+          "value": 42643,
+          "lineIndex": 596,
+          "lineNumber": 597,
+          "content": "100.623797.6000342'643",
+          "position": 16,
+          "context": "100.623797.6000342'643",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2'581.79",
+          "value": 2581.79,
+          "lineIndex": 581,
+          "lineNumber": 582,
+          "content": "USD2'581.79",
+          "position": 0,
+          "context": "USD2'581.79",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 598,
+          "lineNumber": 599,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2036",
+          "value": 2036,
+          "lineIndex": 579,
+          "lineNumber": 580,
+          "content": "Ordinary Bonds  //  Maturity: 28.03.2036",
+          "position": 36,
+          "context": "//  Maturity: 28.03.2036",
+          "distance": -10,
+          "absDistance": 10
+        },
+        {
+          "raw": "1'043",
+          "value": 1043,
+          "lineIndex": 599,
+          "lineNumber": 600,
+          "content": "1'043",
+          "position": 0,
+          "context": "1'043",
+          "distance": 10,
+          "absDistance": 10
+        },
+        {
+          "raw": "1'043",
+          "value": 1043,
+          "lineIndex": 599,
+          "lineNumber": 600,
+          "content": "1'043",
+          "position": 0,
+          "context": "1'043",
+          "distance": 10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "CH1269060229": {
+      "isin": "CH1269060229",
+      "isinLine": 602,
+      "nearbyValues": [
+        {
+          "raw": "2028",
+          "value": 2028,
+          "lineIndex": 602,
+          "lineNumber": 603,
+          "content": "Structured Bonds  //  Maturity: 26.05.2028",
+          "position": 38,
+          "context": "//  Maturity: 26.05.2028",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "1'043",
+          "value": 1043,
+          "lineIndex": 599,
+          "lineNumber": 600,
+          "content": "1'043",
+          "position": 0,
+          "context": "1'043",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "1'043",
+          "value": 1043,
+          "lineIndex": 599,
+          "lineNumber": 600,
+          "content": "1'043",
+          "position": 0,
+          "context": "1'043",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 598,
+          "lineNumber": 599,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "623797",
+          "value": 623797,
+          "lineIndex": 596,
+          "lineNumber": 597,
+          "content": "100.623797.6000342'643",
+          "position": 4,
+          "context": "100.623797.6000342'643",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "6000342",
+          "value": 6000342,
+          "lineIndex": 596,
+          "lineNumber": 597,
+          "content": "100.623797.6000342'643",
+          "position": 11,
+          "context": "100.623797.6000342'643",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "42'643",
+          "value": 42643,
+          "lineIndex": 596,
+          "lineNumber": 597,
+          "content": "100.623797.6000342'643",
+          "position": 16,
+          "context": "100.623797.6000342'643",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 606,
+          "lineNumber": 607,
+          "content": "Print date 01.04.2025 // Page 8/17",
+          "position": 17,
+          "context": "Print date 01.04.2025 // Page 8/17",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "350'000",
+          "value": 350000,
+          "lineIndex": 592,
+          "lineNumber": 593,
+          "content": "USD350'000",
+          "position": 0,
+          "context": "USD350'000",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 610,
+          "lineNumber": 611,
+          "content": "Valuation as of 31.03.2025",
+          "position": 22,
+          "context": "luation as of 31.03.2025",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "366223",
+          "value": 366223,
+          "lineIndex": 611,
+          "lineNumber": 612,
+          "content": "Client Number 366223",
+          "position": 14,
+          "context": "Client Number 366223",
+          "distance": 10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS0461497009": {
+      "isin": "XS0461497009",
+      "isinLine": 639,
+      "nearbyValues": [
+        {
+          "raw": "2028",
+          "value": 2028,
+          "lineIndex": 639,
+          "lineNumber": 640,
+          "content": "Ordinary Bonds  //  Maturity: 08.11.2028",
+          "position": 36,
+          "context": "//  Maturity: 08.11.2028",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "690'000",
+          "value": 690000,
+          "lineIndex": 635,
+          "lineNumber": 636,
+          "content": "USD690'000",
+          "position": 0,
+          "context": "USD690'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "1000100",
+          "value": 1000100,
+          "lineIndex": 642,
+          "lineNumber": 643,
+          "content": "100.1000100.8900711'110",
+          "position": 4,
+          "context": "100.1000100.8900711'110",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "8900711",
+          "value": 8900711,
+          "lineIndex": 642,
+          "lineNumber": 643,
+          "content": "100.1000100.8900711'110",
+          "position": 12,
+          "context": "100.1000100.8900711'110",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "11'110",
+          "value": 11110,
+          "lineIndex": 642,
+          "lineNumber": 643,
+          "content": "100.1000100.8900711'110",
+          "position": 17,
+          "context": "100.1000100.8900711'110",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 644,
+          "lineNumber": 645,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "14'969",
+          "value": 14969,
+          "lineIndex": 645,
+          "lineNumber": 646,
+          "content": "14'969",
+          "position": 0,
+          "context": "14'969",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "14'969",
+          "value": 14969,
+          "lineIndex": 645,
+          "lineNumber": 646,
+          "content": "14'969",
+          "position": 0,
+          "context": "14'969",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "140'000",
+          "value": 140000,
+          "lineIndex": 647,
+          "lineNumber": 648,
+          "content": "USD140'000",
+          "position": 0,
+          "context": "USD140'000",
+          "distance": 9,
+          "absDistance": 9
+        }
+      ]
+    },
+    "XS2746319610": {
+      "isin": "XS2746319610",
+      "isinLine": 651,
+      "nearbyValues": [
+        {
+          "raw": "2030",
+          "value": 2030,
+          "lineIndex": 651,
+          "lineNumber": 652,
+          "content": "Ordinary Bonds  //  Maturity: 01.03.2030",
+          "position": 36,
+          "context": "//  Maturity: 01.03.2030",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "140'000",
+          "value": 140000,
+          "lineIndex": 647,
+          "lineNumber": 648,
+          "content": "USD140'000",
+          "position": 0,
+          "context": "USD140'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "2000102",
+          "value": 2000102,
+          "lineIndex": 654,
+          "lineNumber": 655,
+          "content": "100.2000102.5000192'100",
+          "position": 4,
+          "context": "100.2000102.5000192'100",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "5000192",
+          "value": 5000192,
+          "lineIndex": 654,
+          "lineNumber": 655,
+          "content": "100.2000102.5000192'100",
+          "position": 12,
+          "context": "100.2000102.5000192'100",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "92'100",
+          "value": 92100,
+          "lineIndex": 654,
+          "lineNumber": 655,
+          "content": "100.2000102.5000192'100",
+          "position": 17,
+          "context": "100.2000102.5000192'100",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "14'969",
+          "value": 14969,
+          "lineIndex": 645,
+          "lineNumber": 646,
+          "content": "14'969",
+          "position": 0,
+          "context": "14'969",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "14'969",
+          "value": 14969,
+          "lineIndex": 645,
+          "lineNumber": 646,
+          "content": "14'969",
+          "position": 0,
+          "context": "14'969",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 644,
+          "lineNumber": 645,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 656,
+          "lineNumber": 657,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "48'600",
+          "value": 48600,
+          "lineIndex": 657,
+          "lineNumber": 658,
+          "content": "48'600",
+          "position": 0,
+          "context": "48'600",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "48'600",
+          "value": 48600,
+          "lineIndex": 657,
+          "lineNumber": 658,
+          "content": "48'600",
+          "position": 0,
+          "context": "48'600",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "1000100",
+          "value": 1000100,
+          "lineIndex": 642,
+          "lineNumber": 643,
+          "content": "100.1000100.8900711'110",
+          "position": 4,
+          "context": "100.1000100.8900711'110",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "8900711",
+          "value": 8900711,
+          "lineIndex": 642,
+          "lineNumber": 643,
+          "content": "100.1000100.8900711'110",
+          "position": 12,
+          "context": "100.1000100.8900711'110",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "11'110",
+          "value": 11110,
+          "lineIndex": 642,
+          "lineNumber": 643,
+          "content": "100.1000100.8900711'110",
+          "position": 17,
+          "context": "100.1000100.8900711'110",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 658,
+          "lineNumber": 659,
+          "content": "SOCIETE GENERALE 32.46 % NOTES 2024-01.03.30 REG S",
+          "position": 31,
+          "context": "ERALE 32.46 % NOTES 2024-01.03.30 REG S",
+          "distance": 8,
+          "absDistance": 8
+        }
+      ]
+    },
+    "CH0244767585": {
+      "isin": "CH0244767585",
+      "isinLine": 699,
+      "nearbyValues": [
+        {
+          "raw": "24476758",
+          "value": 24476758,
+          "lineIndex": 698,
+          "lineNumber": 699,
+          "content": "ISIN: CH0244767585  //  Valorn.: 24476758",
+          "position": 33,
+          "context": "67585  //  Valorn.: 24476758",
+          "distance": 0,
+          "absDistance": 0
+        },
+        {
+          "raw": "564126",
+          "value": 564126,
+          "lineIndex": 700,
+          "lineNumber": 701,
+          "content": "221.564126.870021'496",
+          "position": 4,
+          "context": "221.564126.870021'496",
+          "distance": 2,
+          "absDistance": 2
+        },
+        {
+          "raw": "870021",
+          "value": 870021,
+          "lineIndex": 700,
+          "lineNumber": 701,
+          "content": "221.564126.870021'496",
+          "position": 11,
+          "context": "221.564126.870021'496",
+          "distance": 2,
+          "absDistance": 2
+        },
+        {
+          "raw": "1'496",
+          "value": 1496,
+          "lineIndex": 700,
+          "lineNumber": 701,
+          "content": "221.564126.870021'496",
+          "position": 16,
+          "context": "221.564126.870021'496",
+          "distance": 2,
+          "absDistance": 2
+        },
+        {
+          "raw": "13401",
+          "value": 13401,
+          "lineIndex": 701,
+          "lineNumber": 702,
+          "content": "1.13401.1313",
+          "position": 2,
+          "context": "1.13401.1313",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "1313",
+          "value": 1313,
+          "lineIndex": 701,
+          "lineNumber": 702,
+          "content": "1.13401.1313",
+          "position": 8,
+          "context": "1.13401.1313",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "202524",
+          "value": 202524,
+          "lineIndex": 704,
+          "lineNumber": 705,
+          "content": "31.03.202524'319",
+          "position": 6,
+          "context": "31.03.202524'319",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "524'319",
+          "value": 524319,
+          "lineIndex": 704,
+          "lineNumber": 705,
+          "content": "31.03.202524'319",
+          "position": 9,
+          "context": "31.03.202524'319",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "24'319",
+          "value": 24319,
+          "lineIndex": 707,
+          "lineNumber": 708,
+          "content": "Total Equities24'319USD0.12%",
+          "position": 14,
+          "context": "Total Equities24'319USD0.12%",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "3190.12",
+          "value": 3190.12,
+          "lineIndex": 708,
+          "lineNumber": 709,
+          "content": "thereof E quities (without options)USD24'3190.12%",
+          "position": 41,
+          "context": "thout options)USD24'3190.12%",
+          "distance": 10,
+          "absDistance": 10
+        },
+        {
+          "raw": "24'319",
+          "value": 24319,
+          "lineIndex": 708,
+          "lineNumber": 709,
+          "content": "thereof E quities (without options)USD24'3190.12%",
+          "position": 35,
+          "context": "es (without options)USD24'3190.12%",
+          "distance": 10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2519369867": {
+      "isin": "XS2519369867",
+      "isinLine": 748,
+      "nearbyValues": [
+        {
+          "raw": "2022",
+          "value": 2022,
+          "lineIndex": 746,
+          "lineNumber": 747,
+          "content": "BCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%",
+          "position": 32,
+          "context": "YMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%",
+          "distance": -1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2027",
+          "value": 2027,
+          "lineIndex": 748,
+          "lineNumber": 749,
+          "content": "Other convertible bonds  //  Maturity: 21.06.2027",
+          "position": 45,
+          "context": "//  Maturity: 21.06.2027",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 744,
+          "lineNumber": 745,
+          "content": "28.02.2025",
+          "position": 6,
+          "context": "28.02.2025",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "500'000",
+          "value": 500000,
+          "lineIndex": 750,
+          "lineNumber": 751,
+          "content": "USD500'000",
+          "position": 0,
+          "context": "USD500'000",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "728897",
+          "value": 728897,
+          "lineIndex": 742,
+          "lineNumber": 743,
+          "content": "100.728897.9853196'221",
+          "position": 4,
+          "context": "100.728897.9853196'221",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "9853196",
+          "value": 9853196,
+          "lineIndex": 742,
+          "lineNumber": 743,
+          "content": "100.728897.9853196'221",
+          "position": 11,
+          "context": "100.728897.9853196'221",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "96'221",
+          "value": 96221,
+          "lineIndex": 742,
+          "lineNumber": 743,
+          "content": "100.728897.9853196'221",
+          "position": 16,
+          "context": "100.728897.9853196'221",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2029",
+          "value": 2029,
+          "lineIndex": 754,
+          "lineNumber": 755,
+          "content": "Structured Bonds  //  Maturity: 08.01.2029",
+          "position": 38,
+          "context": "//  Maturity: 08.01.2029",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "200'000",
+          "value": 200000,
+          "lineIndex": 738,
+          "lineNumber": 739,
+          "content": "USD200'000",
+          "position": 0,
+          "context": "USD200'000",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "524199",
+          "value": 524199,
+          "lineIndex": 757,
+          "lineNumber": 758,
+          "content": "100.524199.0000502'305",
+          "position": 4,
+          "context": "100.524199.0000502'305",
+          "distance": 10,
+          "absDistance": 10
+        },
+        {
+          "raw": "02'305",
+          "value": 2305,
+          "lineIndex": 757,
+          "lineNumber": 758,
+          "content": "100.524199.0000502'305",
+          "position": 16,
+          "context": "100.524199.0000502'305",
+          "distance": 10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2315191069": {
+      "isin": "XS2315191069",
+      "isinLine": 754,
+      "nearbyValues": [
+        {
+          "raw": "2029",
+          "value": 2029,
+          "lineIndex": 754,
+          "lineNumber": 755,
+          "content": "Structured Bonds  //  Maturity: 08.01.2029",
+          "position": 38,
+          "context": "//  Maturity: 08.01.2029",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "500'000",
+          "value": 500000,
+          "lineIndex": 750,
+          "lineNumber": 751,
+          "content": "USD500'000",
+          "position": 0,
+          "context": "USD500'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "524199",
+          "value": 524199,
+          "lineIndex": 757,
+          "lineNumber": 758,
+          "content": "100.524199.0000502'305",
+          "position": 4,
+          "context": "100.524199.0000502'305",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "02'305",
+          "value": 2305,
+          "lineIndex": 757,
+          "lineNumber": 758,
+          "content": "100.524199.0000502'305",
+          "position": 16,
+          "context": "100.524199.0000502'305",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2027",
+          "value": 2027,
+          "lineIndex": 748,
+          "lineNumber": 749,
+          "content": "Other convertible bonds  //  Maturity: 21.06.2027",
+          "position": 45,
+          "context": "//  Maturity: 21.06.2027",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 759,
+          "lineNumber": 760,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2022",
+          "value": 2022,
+          "lineIndex": 746,
+          "lineNumber": 747,
+          "content": "BCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%",
+          "position": 32,
+          "context": "YMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%",
+          "distance": -7,
+          "absDistance": 7
+        },
+        {
+          "raw": "7'305",
+          "value": 7305,
+          "lineIndex": 760,
+          "lineNumber": 761,
+          "content": "7'305",
+          "position": 0,
+          "context": "7'305",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "7'305",
+          "value": 7305,
+          "lineIndex": 760,
+          "lineNumber": 761,
+          "content": "7'305",
+          "position": 0,
+          "context": "7'305",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "29 631",
+          "value": 29631,
+          "lineIndex": 761,
+          "lineNumber": 762,
+          "content": "BNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631",
+          "position": 47,
+          "context": " 21-08.01.29 ON DBDK 29 631",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 744,
+          "lineNumber": 745,
+          "content": "28.02.2025",
+          "position": 6,
+          "context": "28.02.2025",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "200'000",
+          "value": 200000,
+          "lineIndex": 762,
+          "lineNumber": 763,
+          "content": "USD1'200'000",
+          "position": 5,
+          "context": "USD1'200'000",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "1'200'000",
+          "value": 1200000,
+          "lineIndex": 762,
+          "lineNumber": 763,
+          "content": "USD1'200'000",
+          "position": 0,
+          "context": "USD1'200'000",
+          "distance": 9,
+          "absDistance": 9
+        }
+      ]
+    },
+    "XS2792098779": {
+      "isin": "XS2792098779",
+      "isinLine": 766,
+      "nearbyValues": [
+        {
+          "raw": "2034",
+          "value": 2034,
+          "lineIndex": 766,
+          "lineNumber": 767,
+          "content": "Structured Bonds  //  Maturity: 02.12.2034  //  PRC: 5.00",
+          "position": 38,
+          "context": "//  Maturity: 02.12.2034  //  PRC: 5.00",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "200'000",
+          "value": 200000,
+          "lineIndex": 762,
+          "lineNumber": 763,
+          "content": "USD1'200'000",
+          "position": 5,
+          "context": "USD1'200'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "1'200'000",
+          "value": 1200000,
+          "lineIndex": 762,
+          "lineNumber": 763,
+          "content": "USD1'200'000",
+          "position": 0,
+          "context": "USD1'200'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "154'316",
+          "value": 154316,
+          "lineIndex": 768,
+          "lineNumber": 769,
+          "content": "100.000096.19301'154'316",
+          "position": 17,
+          "context": "100.000096.19301'154'316",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "19301",
+          "value": 19301,
+          "lineIndex": 768,
+          "lineNumber": 769,
+          "content": "100.000096.19301'154'316",
+          "position": 11,
+          "context": "100.000096.19301'154'316",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "29 631",
+          "value": 29631,
+          "lineIndex": 761,
+          "lineNumber": 762,
+          "content": "BNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631",
+          "position": 47,
+          "context": " 21-08.01.29 ON DBDK 29 631",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "7'305",
+          "value": 7305,
+          "lineIndex": 760,
+          "lineNumber": 761,
+          "content": "7'305",
+          "position": 0,
+          "context": "7'305",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "7'305",
+          "value": 7305,
+          "lineIndex": 760,
+          "lineNumber": 761,
+          "content": "7'305",
+          "position": 0,
+          "context": "7'305",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 770,
+          "lineNumber": 771,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 759,
+          "lineNumber": 760,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -6,
+          "absDistance": 6
+        },
+        {
+          "raw": "690'000",
+          "value": 690000,
+          "lineIndex": 772,
+          "lineNumber": 773,
+          "content": "USD690'000",
+          "position": 0,
+          "context": "USD690'000",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "524199",
+          "value": 524199,
+          "lineIndex": 757,
+          "lineNumber": 758,
+          "content": "100.524199.0000502'305",
+          "position": 4,
+          "context": "100.524199.0000502'305",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "02'305",
+          "value": 2305,
+          "lineIndex": 757,
+          "lineNumber": 758,
+          "content": "100.524199.0000502'305",
+          "position": 16,
+          "context": "100.524199.0000502'305",
+          "distance": -8,
+          "absDistance": 8
+        }
+      ]
+    },
+    "XS2714429128": {
+      "isin": "XS2714429128",
+      "isinLine": 782,
+      "nearbyValues": [
+        {
+          "raw": "2023",
+          "value": 2023,
+          "lineIndex": 780,
+          "lineNumber": 781,
+          "content": "EMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN",
+          "position": 32,
+          "context": "NOTES 23-17.09.29 S.2023-05 REG-S VRN",
+          "distance": -1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2029",
+          "value": 2029,
+          "lineIndex": 782,
+          "lineNumber": 783,
+          "content": "Structured Bonds  //  Maturity: 17.09.2029",
+          "position": 38,
+          "context": "//  Maturity: 17.09.2029",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "20'343",
+          "value": 20343,
+          "lineIndex": 779,
+          "lineNumber": 780,
+          "content": "20'343",
+          "position": 0,
+          "context": "20'343",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "20'343",
+          "value": 20343,
+          "lineIndex": 779,
+          "lineNumber": 780,
+          "content": "20'343",
+          "position": 0,
+          "context": "20'343",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 778,
+          "lineNumber": 779,
+          "content": "27.03.2025",
+          "position": 6,
+          "context": "27.03.2025",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "500'000",
+          "value": 500000,
+          "lineIndex": 785,
+          "lineNumber": 786,
+          "content": "USD500'000",
+          "position": 0,
+          "context": "USD500'000",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "446299",
+          "value": 446299,
+          "lineIndex": 776,
+          "lineNumber": 777,
+          "content": "100.446299.0900704'064",
+          "position": 4,
+          "context": "100.446299.0900704'064",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "0900704",
+          "value": 900704,
+          "lineIndex": 776,
+          "lineNumber": 777,
+          "content": "100.446299.0900704'064",
+          "position": 11,
+          "context": "100.446299.0900704'064",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "04'064",
+          "value": 4064,
+          "lineIndex": 776,
+          "lineNumber": 777,
+          "content": "100.446299.0900704'064",
+          "position": 16,
+          "context": "100.446299.0900704'064",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "524396",
+          "value": 524396,
+          "lineIndex": 789,
+          "lineNumber": 790,
+          "content": "100.524396.7400484'457",
+          "position": 4,
+          "context": "100.524396.7400484'457",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "7400484",
+          "value": 7400484,
+          "lineIndex": 789,
+          "lineNumber": 790,
+          "content": "100.524396.7400484'457",
+          "position": 11,
+          "context": "100.524396.7400484'457",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "84'457",
+          "value": 84457,
+          "lineIndex": 789,
+          "lineNumber": 790,
+          "content": "100.524396.7400484'457",
+          "position": 16,
+          "context": "100.524396.7400484'457",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "690'000",
+          "value": 690000,
+          "lineIndex": 772,
+          "lineNumber": 773,
+          "content": "USD690'000",
+          "position": 0,
+          "context": "USD690'000",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 791,
+          "lineNumber": 792,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2105981117": {
+      "isin": "XS2105981117",
+      "isinLine": 795,
+      "nearbyValues": [
+        {
+          "raw": "2028",
+          "value": 2028,
+          "lineIndex": 795,
+          "lineNumber": 796,
+          "content": "Structured Bonds  //  Maturity: 20.12.2028",
+          "position": 38,
+          "context": "//  Maturity: 20.12.2028",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 791,
+          "lineNumber": 792,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "600'000",
+          "value": 600000,
+          "lineIndex": 798,
+          "lineNumber": 799,
+          "content": "USD1'600'000",
+          "position": 5,
+          "context": "USD1'600'000",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "1'600'000",
+          "value": 1600000,
+          "lineIndex": 798,
+          "lineNumber": 799,
+          "content": "USD1'600'000",
+          "position": 0,
+          "context": "USD1'600'000",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "524396",
+          "value": 524396,
+          "lineIndex": 789,
+          "lineNumber": 790,
+          "content": "100.524396.7400484'457",
+          "position": 4,
+          "context": "100.524396.7400484'457",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "7400484",
+          "value": 7400484,
+          "lineIndex": 789,
+          "lineNumber": 790,
+          "content": "100.524396.7400484'457",
+          "position": 11,
+          "context": "100.524396.7400484'457",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "84'457",
+          "value": 84457,
+          "lineIndex": 789,
+          "lineNumber": 790,
+          "content": "100.524396.7400484'457",
+          "position": 16,
+          "context": "100.524396.7400484'457",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2033",
+          "value": 2033,
+          "lineIndex": 802,
+          "lineNumber": 803,
+          "content": "Structured Bonds  //  Maturity: 26.04.2033",
+          "position": 38,
+          "context": "//  Maturity: 26.04.2033",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "500'000",
+          "value": 500000,
+          "lineIndex": 785,
+          "lineNumber": 786,
+          "content": "USD500'000",
+          "position": 0,
+          "context": "USD500'000",
+          "distance": -9,
+          "absDistance": 9
+        }
+      ]
+    },
+    "XS2838389430": {
+      "isin": "XS2838389430",
+      "isinLine": 802,
+      "nearbyValues": [
+        {
+          "raw": "2033",
+          "value": 2033,
+          "lineIndex": 802,
+          "lineNumber": 803,
+          "content": "Structured Bonds  //  Maturity: 26.04.2033",
+          "position": 38,
+          "context": "//  Maturity: 26.04.2033",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "600'000",
+          "value": 600000,
+          "lineIndex": 798,
+          "lineNumber": 799,
+          "content": "USD1'600'000",
+          "position": 5,
+          "context": "USD1'600'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "1'600'000",
+          "value": 1600000,
+          "lineIndex": 798,
+          "lineNumber": 799,
+          "content": "USD1'600'000",
+          "position": 0,
+          "context": "USD1'600'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "623'960",
+          "value": 623960,
+          "lineIndex": 805,
+          "lineNumber": 806,
+          "content": "100.100097.08001'623'960",
+          "position": 17,
+          "context": "100.100097.08001'623'960",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "100097",
+          "value": 100097,
+          "lineIndex": 805,
+          "lineNumber": 806,
+          "content": "100.100097.08001'623'960",
+          "position": 4,
+          "context": "100.100097.08001'623'960",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "08001",
+          "value": 8001,
+          "lineIndex": 805,
+          "lineNumber": 806,
+          "content": "100.100097.08001'623'960",
+          "position": 11,
+          "context": "100.100097.08001'623'960",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "001'623'960",
+          "value": 1623960,
+          "lineIndex": 805,
+          "lineNumber": 806,
+          "content": "100.100097.08001'623'960",
+          "position": 13,
+          "context": "100.100097.08001'623'960",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2028",
+          "value": 2028,
+          "lineIndex": 795,
+          "lineNumber": 796,
+          "content": "Structured Bonds  //  Maturity: 20.12.2028",
+          "position": 38,
+          "context": "//  Maturity: 20.12.2028",
+          "distance": -6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 807,
+          "lineNumber": 808,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "70'680",
+          "value": 70680,
+          "lineIndex": 808,
+          "lineNumber": 809,
+          "content": "70'680",
+          "position": 0,
+          "context": "70'680",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "70'680",
+          "value": 70680,
+          "lineIndex": 808,
+          "lineNumber": 809,
+          "content": "70'680",
+          "position": 0,
+          "context": "70'680",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 809,
+          "lineNumber": 810,
+          "content": "LUMINIS 5.7% STR NOTE 2024-26.04.33 WFC 24W",
+          "position": 22,
+          "context": "MINIS 5.7% STR NOTE 2024-26.04.33 WFC 24W",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "500'000",
+          "value": 500000,
+          "lineIndex": 810,
+          "lineNumber": 811,
+          "content": "USD500'000",
+          "position": 0,
+          "context": "USD500'000",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 791,
+          "lineNumber": 792,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2631782468": {
+      "isin": "XS2631782468",
+      "isinLine": 820,
+      "nearbyValues": [
+        {
+          "raw": "2029",
+          "value": 2029,
+          "lineIndex": 820,
+          "lineNumber": 821,
+          "content": "Structured Bonds  //  Maturity: 25.05.2029",
+          "position": 38,
+          "context": "//  Maturity: 25.05.2029",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "1'416",
+          "value": 1416,
+          "lineIndex": 817,
+          "lineNumber": 818,
+          "content": "1'416",
+          "position": 0,
+          "context": "1'416",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "1'416",
+          "value": 1416,
+          "lineIndex": 817,
+          "lineNumber": 818,
+          "content": "1'416",
+          "position": 0,
+          "context": "1'416",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 816,
+          "lineNumber": 817,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "018197",
+          "value": 18197,
+          "lineIndex": 814,
+          "lineNumber": 815,
+          "content": "98.018197.4900488'866",
+          "position": 3,
+          "context": "98.018197.4900488'866",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "4900488",
+          "value": 4900488,
+          "lineIndex": 814,
+          "lineNumber": 815,
+          "content": "98.018197.4900488'866",
+          "position": 10,
+          "context": "98.018197.4900488'866",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "88'866",
+          "value": 88866,
+          "lineIndex": 814,
+          "lineNumber": 815,
+          "content": "98.018197.4900488'866",
+          "position": 15,
+          "context": "98.018197.4900488'866",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 824,
+          "lineNumber": 825,
+          "content": "Print date 01.04.2025 // Page 11/17",
+          "position": 17,
+          "context": "Print date 01.04.2025 // Page 11/17",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "500'000",
+          "value": 500000,
+          "lineIndex": 810,
+          "lineNumber": 811,
+          "content": "USD500'000",
+          "position": 0,
+          "context": "USD500'000",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 828,
+          "lineNumber": 829,
+          "content": "Valuation as of 31.03.2025",
+          "position": 22,
+          "context": "luation as of 31.03.2025",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2024",
+          "value": 2024,
+          "lineIndex": 809,
+          "lineNumber": 810,
+          "content": "LUMINIS 5.7% STR NOTE 2024-26.04.33 WFC 24W",
+          "position": 22,
+          "context": "MINIS 5.7% STR NOTE 2024-26.04.33 WFC 24W",
+          "distance": -10,
+          "absDistance": 10
+        },
+        {
+          "raw": "366223",
+          "value": 366223,
+          "lineIndex": 829,
+          "lineNumber": 830,
+          "content": "Client Number 366223",
+          "position": 14,
+          "context": "Client Number 366223",
+          "distance": 10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS1700087403": {
+      "isin": "XS1700087403",
+      "isinLine": 862,
+      "nearbyValues": [
+        {
+          "raw": "39877135",
+          "value": 39877135,
+          "lineIndex": 861,
+          "lineNumber": 862,
+          "content": "ISIN: XS1700087403  //  Valorn.: 39877135",
+          "position": 33,
+          "context": "87403  //  Valorn.: 39877135",
+          "distance": 0,
+          "absDistance": 0
+        },
+        {
+          "raw": "2026",
+          "value": 2026,
+          "lineIndex": 862,
+          "lineNumber": 863,
+          "content": "Structured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00",
+          "position": 38,
+          "context": "//  Maturity: 20.06.2026  //  PRC: 5.00",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 859,
+          "lineNumber": 860,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "200'000",
+          "value": 200000,
+          "lineIndex": 864,
+          "lineNumber": 865,
+          "content": "USD200'000",
+          "position": 0,
+          "context": "USD200'000",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "021798",
+          "value": 21798,
+          "lineIndex": 857,
+          "lineNumber": 858,
+          "content": "91.021798.671998'672",
+          "position": 3,
+          "context": "91.021798.671998'672",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "671998",
+          "value": 671998,
+          "lineIndex": 857,
+          "lineNumber": 858,
+          "content": "91.021798.671998'672",
+          "position": 10,
+          "context": "91.021798.671998'672",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "8'672",
+          "value": 8672,
+          "lineIndex": 857,
+          "lineNumber": 858,
+          "content": "91.021798.671998'672",
+          "position": 15,
+          "context": "91.021798.671998'672",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2029",
+          "value": 2029,
+          "lineIndex": 868,
+          "lineNumber": 869,
+          "content": "Structured Bonds  //  Maturity: 27.09.2029",
+          "position": 38,
+          "context": "//  Maturity: 27.09.2029",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "100'000",
+          "value": 100000,
+          "lineIndex": 853,
+          "lineNumber": 854,
+          "content": "USD100'000",
+          "position": 0,
+          "context": "USD100'000",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "059296",
+          "value": 59296,
+          "lineIndex": 871,
+          "lineNumber": 872,
+          "content": "99.059296.2100193'464",
+          "position": 3,
+          "context": "99.059296.2100193'464",
+          "distance": 10,
+          "absDistance": 10
+        },
+        {
+          "raw": "2100193",
+          "value": 2100193,
+          "lineIndex": 871,
+          "lineNumber": 872,
+          "content": "99.059296.2100193'464",
+          "position": 10,
+          "context": "99.059296.2100193'464",
+          "distance": 10,
+          "absDistance": 10
+        },
+        {
+          "raw": "93'464",
+          "value": 93464,
+          "lineIndex": 871,
+          "lineNumber": 872,
+          "content": "99.059296.2100193'464",
+          "position": 15,
+          "context": "99.059296.2100193'464",
+          "distance": 10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2594173093": {
+      "isin": "XS2594173093",
+      "isinLine": 868,
+      "nearbyValues": [
+        {
+          "raw": "2029",
+          "value": 2029,
+          "lineIndex": 868,
+          "lineNumber": 869,
+          "content": "Structured Bonds  //  Maturity: 27.09.2029",
+          "position": 38,
+          "context": "//  Maturity: 27.09.2029",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "200'000",
+          "value": 200000,
+          "lineIndex": 864,
+          "lineNumber": 865,
+          "content": "USD200'000",
+          "position": 0,
+          "context": "USD200'000",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "059296",
+          "value": 59296,
+          "lineIndex": 871,
+          "lineNumber": 872,
+          "content": "99.059296.2100193'464",
+          "position": 3,
+          "context": "99.059296.2100193'464",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2100193",
+          "value": 2100193,
+          "lineIndex": 871,
+          "lineNumber": 872,
+          "content": "99.059296.2100193'464",
+          "position": 10,
+          "context": "99.059296.2100193'464",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "93'464",
+          "value": 93464,
+          "lineIndex": 871,
+          "lineNumber": 872,
+          "content": "99.059296.2100193'464",
+          "position": 15,
+          "context": "99.059296.2100193'464",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2026",
+          "value": 2026,
+          "lineIndex": 862,
+          "lineNumber": 863,
+          "content": "Structured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00",
+          "position": 38,
+          "context": "//  Maturity: 20.06.2026  //  PRC: 5.00",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "39877135",
+          "value": 39877135,
+          "lineIndex": 861,
+          "lineNumber": 862,
+          "content": "ISIN: XS1700087403  //  Valorn.: 39877135",
+          "position": 33,
+          "context": "87403  //  Valorn.: 39877135",
+          "distance": -6,
+          "absDistance": 6
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 873,
+          "lineNumber": 874,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "1'044",
+          "value": 1044,
+          "lineIndex": 874,
+          "lineNumber": 875,
+          "content": "1'044",
+          "position": 0,
+          "context": "1'044",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "1'044",
+          "value": 1044,
+          "lineIndex": 874,
+          "lineNumber": 875,
+          "content": "1'044",
+          "position": 0,
+          "context": "1'044",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 859,
+          "lineNumber": 860,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2023",
+          "value": 2023,
+          "lineIndex": 875,
+          "lineNumber": 876,
+          "content": "NOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029",
+          "position": 34,
+          "context": "CREDIT LINKED NOTES 2023-27.09.2029",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "2029",
+          "value": 2029,
+          "lineIndex": 875,
+          "lineNumber": 876,
+          "content": "NOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029",
+          "position": 45,
+          "context": "ED NOTES 2023-27.09.2029",
+          "distance": 8,
+          "absDistance": 8
+        },
+        {
+          "raw": "500'000",
+          "value": 500000,
+          "lineIndex": 876,
+          "lineNumber": 877,
+          "content": "USD500'000",
+          "position": 0,
+          "context": "USD500'000",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "021798",
+          "value": 21798,
+          "lineIndex": 857,
+          "lineNumber": 858,
+          "content": "91.021798.671998'672",
+          "position": 3,
+          "context": "91.021798.671998'672",
+          "distance": -10,
+          "absDistance": 10
+        },
+        {
+          "raw": "671998",
+          "value": 671998,
+          "lineIndex": 857,
+          "lineNumber": 858,
+          "content": "91.021798.671998'672",
+          "position": 10,
+          "context": "91.021798.671998'672",
+          "distance": -10,
+          "absDistance": 10
+        },
+        {
+          "raw": "8'672",
+          "value": 8672,
+          "lineIndex": 857,
+          "lineNumber": 858,
+          "content": "91.021798.671998'672",
+          "position": 15,
+          "context": "91.021798.671998'672",
+          "distance": -10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2407295554": {
+      "isin": "XS2407295554",
+      "isinLine": 886,
+      "nearbyValues": [
+        {
+          "raw": "2021",
+          "value": 2021,
+          "lineIndex": 884,
+          "lineNumber": 885,
+          "content": "NOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON",
+          "position": 26,
+          "context": "CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON",
+          "distance": -1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2028",
+          "value": 2028,
+          "lineIndex": 886,
+          "lineNumber": 887,
+          "content": "Structured Bonds  //  Maturity: 12.01.2028",
+          "position": 38,
+          "context": "//  Maturity: 12.01.2028",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "6'514",
+          "value": 6514,
+          "lineIndex": 883,
+          "lineNumber": 884,
+          "content": "6'514",
+          "position": 0,
+          "context": "6'514",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "6'514",
+          "value": 6514,
+          "lineIndex": 883,
+          "lineNumber": 884,
+          "content": "6'514",
+          "position": 0,
+          "context": "6'514",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 882,
+          "lineNumber": 883,
+          "content": "31.03.2025",
+          "position": 6,
+          "context": "31.03.2025",
+          "distance": -3,
+          "absDistance": 3
+        },
+        {
+          "raw": "5243100",
+          "value": 5243100,
+          "lineIndex": 880,
+          "lineNumber": 881,
+          "content": "100.5243100.7200510'114",
+          "position": 4,
+          "context": "100.5243100.7200510'114",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "7200510",
+          "value": 7200510,
+          "lineIndex": 880,
+          "lineNumber": 881,
+          "content": "100.5243100.7200510'114",
+          "position": 12,
+          "context": "100.5243100.7200510'114",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "10'114",
+          "value": 10114,
+          "lineIndex": 880,
+          "lineNumber": 881,
+          "content": "100.5243100.7200510'114",
+          "position": 17,
+          "context": "100.5243100.7200510'114",
+          "distance": -5,
+          "absDistance": 5
+        },
+        {
+          "raw": "1'000'000",
+          "value": 1000000,
+          "lineIndex": 890,
+          "lineNumber": 891,
+          "content": "USD1'000'000",
+          "position": 0,
+          "context": "USD1'000'000",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "500'000",
+          "value": 500000,
+          "lineIndex": 876,
+          "lineNumber": 877,
+          "content": "USD500'000",
+          "position": 0,
+          "context": "USD500'000",
+          "distance": -9,
+          "absDistance": 9
+        },
+        {
+          "raw": "366498",
+          "value": 366498,
+          "lineIndex": 894,
+          "lineNumber": 895,
+          "content": "100.366498.9800989'800",
+          "position": 4,
+          "context": "100.366498.9800989'800",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "9800989",
+          "value": 9800989,
+          "lineIndex": 894,
+          "lineNumber": 895,
+          "content": "100.366498.9800989'800",
+          "position": 11,
+          "context": "100.366498.9800989'800",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "89'800",
+          "value": 89800,
+          "lineIndex": 894,
+          "lineNumber": 895,
+          "content": "100.366498.9800989'800",
+          "position": 16,
+          "context": "100.366498.9800989'800",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "2023",
+          "value": 2023,
+          "lineIndex": 875,
+          "lineNumber": 876,
+          "content": "NOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029",
+          "position": 34,
+          "context": "CREDIT LINKED NOTES 2023-27.09.2029",
+          "distance": -10,
+          "absDistance": 10
+        },
+        {
+          "raw": "2029",
+          "value": 2029,
+          "lineIndex": 875,
+          "lineNumber": 876,
+          "content": "NOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029",
+          "position": 45,
+          "context": "ED NOTES 2023-27.09.2029",
+          "distance": -10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XS2252299883": {
+      "isin": "XS2252299883",
+      "isinLine": 899,
+      "nearbyValues": [
+        {
+          "raw": "2026",
+          "value": 2026,
+          "lineIndex": 899,
+          "lineNumber": 900,
+          "content": "Structured products equity  //  Maturity: 15.05.2026  //  PRC: 5.00",
+          "position": 48,
+          "context": "//  Maturity: 15.05.2026  //  PRC: 5.00",
+          "distance": 1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 896,
+          "lineNumber": 897,
+          "content": "28.03.2025",
+          "position": 6,
+          "context": "28.03.2025",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "366498",
+          "value": 366498,
+          "lineIndex": 894,
+          "lineNumber": 895,
+          "content": "100.366498.9800989'800",
+          "position": 4,
+          "context": "100.366498.9800989'800",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "9800989",
+          "value": 9800989,
+          "lineIndex": 894,
+          "lineNumber": 895,
+          "content": "100.366498.9800989'800",
+          "position": 11,
+          "context": "100.366498.9800989'800",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "89'800",
+          "value": 89800,
+          "lineIndex": 894,
+          "lineNumber": 895,
+          "content": "100.366498.9800989'800",
+          "position": 16,
+          "context": "100.366498.9800989'800",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "6'946",
+          "value": 6946,
+          "lineIndex": 904,
+          "lineNumber": 905,
+          "content": "6'946'239USD",
+          "position": 0,
+          "context": "6'946'239USD",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "6'946'239",
+          "value": 6946239,
+          "lineIndex": 904,
+          "lineNumber": 905,
+          "content": "6'946'239USD",
+          "position": 0,
+          "context": "6'946'239USD",
+          "distance": 6,
+          "absDistance": 6
+        },
+        {
+          "raw": "108'309",
+          "value": 108309,
+          "lineIndex": 905,
+          "lineNumber": 906,
+          "content": "USD108'309",
+          "position": 0,
+          "context": "USD108'309",
+          "distance": 7,
+          "absDistance": 7
+        },
+        {
+          "raw": "1'000'000",
+          "value": 1000000,
+          "lineIndex": 890,
+          "lineNumber": 891,
+          "content": "USD1'000'000",
+          "position": 0,
+          "context": "USD1'000'000",
+          "distance": -8,
+          "absDistance": 8
+        },
+        {
+          "raw": "43930.60",
+          "value": 43930.6,
+          "lineIndex": 907,
+          "lineNumber": 908,
+          "content": "thereof S tructured products (Bonds)USD5'956'43930.60%",
+          "position": 45,
+          "context": "cts (Bonds)USD5'956'43930.60%",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "5'956'439",
+          "value": 5956439,
+          "lineIndex": 907,
+          "lineNumber": 908,
+          "content": "thereof S tructured products (Bonds)USD5'956'43930.60%",
+          "position": 36,
+          "context": "red products (Bonds)USD5'956'43930.60%",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "8005.09",
+          "value": 8005.09,
+          "lineIndex": 908,
+          "lineNumber": 909,
+          "content": "thereof S tructured products (Equities)USD989'8005.09%",
+          "position": 46,
+          "context": "ts (Equities)USD989'8005.09%",
+          "distance": 10,
+          "absDistance": 10
+        },
+        {
+          "raw": "989'800",
+          "value": 989800,
+          "lineIndex": 908,
+          "lineNumber": 909,
+          "content": "thereof S tructured products (Equities)USD989'8005.09%",
+          "position": 39,
+          "context": " products (Equities)USD989'8005.09%",
+          "distance": 10,
+          "absDistance": 10
+        }
+      ]
+    },
+    "XD0466760473": {
+      "isin": "XD0466760473",
+      "isinLine": 947,
+      "nearbyValues": [
+        {
+          "raw": "46676047",
+          "value": 46676047,
+          "lineIndex": 946,
+          "lineNumber": 947,
+          "content": "ISIN: XD0466760473  //  Valorn.: 46676047",
+          "position": 33,
+          "context": "60473  //  Valorn.: 46676047",
+          "distance": 0,
+          "absDistance": 0
+        },
+        {
+          "raw": "2019",
+          "value": 2019,
+          "lineIndex": 945,
+          "lineNumber": 946,
+          "content": "EXIGENT ENHANCED INCOME FUND LTD SHS A SERIES 2019 1",
+          "position": 46,
+          "context": "ND LTD SHS A SERIES 2019 1",
+          "distance": -1,
+          "absDistance": 1
+        },
+        {
+          "raw": "2023",
+          "value": 2023,
+          "lineIndex": 944,
+          "lineNumber": 945,
+          "content": "31.12.2023",
+          "position": 6,
+          "context": "31.12.2023",
+          "distance": -2,
+          "absDistance": 2
+        },
+        {
+          "raw": "26'129",
+          "value": 26129,
+          "lineIndex": 949,
+          "lineNumber": 950,
+          "content": "Total Other assets26'129USD0.13%",
+          "position": 18,
+          "context": "Total Other assets26'129USD0.13%",
+          "distance": 3,
+          "absDistance": 3
+        },
+        {
+          "raw": "1'008",
+          "value": 1008,
+          "lineIndex": 942,
+          "lineNumber": 943,
+          "content": "1'008.3748128.039526'129",
+          "position": 0,
+          "context": "1'008.3748128.039526'129",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "3748128",
+          "value": 3748128,
+          "lineIndex": 942,
+          "lineNumber": 943,
+          "content": "1'008.3748128.039526'129",
+          "position": 6,
+          "context": "1'008.3748128.039526'129",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "039526",
+          "value": 39526,
+          "lineIndex": 942,
+          "lineNumber": 943,
+          "content": "1'008.3748128.039526'129",
+          "position": 14,
+          "context": "1'008.3748128.039526'129",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "1'008.37",
+          "value": 1008.37,
+          "lineIndex": 942,
+          "lineNumber": 943,
+          "content": "1'008.3748128.039526'129",
+          "position": 0,
+          "context": "1'008.3748128.039526'129",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "6'129",
+          "value": 6129,
+          "lineIndex": 942,
+          "lineNumber": 943,
+          "content": "1'008.3748128.039526'129",
+          "position": 19,
+          "context": "1'008.3748128.039526'129",
+          "distance": -4,
+          "absDistance": 4
+        },
+        {
+          "raw": "1290.13",
+          "value": 1290.13,
+          "lineIndex": 950,
+          "lineNumber": 951,
+          "content": "thereof Hedge funds &  P rivate EquityUSD26'1290.13%",
+          "position": 44,
+          "context": " rivate EquityUSD26'1290.13%",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "26'129",
+          "value": 26129,
+          "lineIndex": 950,
+          "lineNumber": 951,
+          "content": "thereof Hedge funds &  P rivate EquityUSD26'1290.13%",
+          "position": 38,
+          "context": "s &  P rivate EquityUSD26'1290.13%",
+          "distance": 4,
+          "absDistance": 4
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 951,
+          "lineNumber": 952,
+          "content": "Print date 01.04.2025 // Page 13/17",
+          "position": 17,
+          "context": "Print date 01.04.2025 // Page 13/17",
+          "distance": 5,
+          "absDistance": 5
+        },
+        {
+          "raw": "2025",
+          "value": 2025,
+          "lineIndex": 955,
+          "lineNumber": 956,
+          "content": "Valuation as of 31.03.2025",
+          "position": 22,
+          "context": "luation as of 31.03.2025",
+          "distance": 9,
+          "absDistance": 9
+        },
+        {
+          "raw": "366223",
+          "value": 366223,
+          "lineIndex": 956,
+          "lineNumber": 957,
+          "content": "Client Number 366223",
+          "position": 14,
+          "context": "Client Number 366223",
+          "distance": 10,
+          "absDistance": 10
+        }
+      ]
+    }
+  }
+}

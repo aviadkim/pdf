@@ -1,0 +1,57 @@
+{
+  "filename": "2. Messos  - 31.03.2025.pdf",
+  "startTime": "2025-07-22T07:30:52.423Z",
+  "strategies": [
+    {
+      "strategy": "fast-extraction",
+      "processingTime": 589,
+      "securities": [],
+      "totalValue": 0,
+      "confidence": 0,
+      "cost": 0.05,
+      "notes": "Fast baseline extraction"
+    },
+    {
+      "strategy": "slow-mistral-large",
+      "processingTime": 105563,
+      "error": "No JSON array found in Mistral response",
+      "securities": [],
+      "confidence": 0,
+      "cost": 0.2
+    },
+    {
+      "strategy": "multi-pass-analysis",
+      "processingTime": 189,
+      "securities": [],
+      "totalValue": 0,
+      "confidence": 0,
+      "cost": 0.02,
+      "passes": {
+        "isins": 0,
+        "names": 15,
+        "values": 0
+      },
+      "notes": "Multi-pass extraction combining specialized parsers"
+    }
+  ],
+  "finalResult": {
+    "securities": [],
+    "totalValue": 0,
+    "confidence": 0,
+    "fusionMethod": "no-valid-strategies",
+    "overallConfidence": 0,
+    "qualityMetrics": {
+      "securitiesFound": 0,
+      "nameQuality": 0,
+      "valueQuality": 0,
+      "isinQuality": 0
+    }
+  },
+  "requiresHumanReview": true,
+  "processingTime": 106345,
+  "costBreakdown": {
+    "automated": 0.27,
+    "humanTime": 2,
+    "totalCost": 2.27
+  }
+}

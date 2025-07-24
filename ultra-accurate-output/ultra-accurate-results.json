@@ -1,0 +1,1032 @@
+{
+  "timestamp": "2025-07-20T06:22:07.777Z",
+  "document": "Messos Enterprises Ltd - Portfolio Valuation 31.03.2025",
+  "extraction_method": "Ultra-Accurate Extraction Engine v1.0",
+  "portfolio_summary": {
+    "totalValue": 19464431,
+    "extractedValue": 27604773,
+    "currency": "CHF",
+    "breakdown": {}
+  },
+  "ultra_accurate_extraction": {
+    "securities_found": 40,
+    "total_extracted_value": 27604773,
+    "individual_securities": [
+      {
+        "isin": "XS2530201644",
+        "name": "ISIN:",
+        "marketValue": 200000,
+        "currency": "USD",
+        "confidence": 0.7200000000000001,
+        "method": "ultra_accurate_context",
+        "rawValue": "200'000",
+        "matchStrategy": "context",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_currency",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nBonds, Bond funds, Convertible bonds, Interest options\nUSD200'000\n0.25%\n1.02%\nISIN: XS2530201644  //  Valorn.: 125350273\nOrdinary Bonds  //  Maturity: 23.02.2027\nCoupon: 23.5  //  Quarterly  3.32%  //  Days: 37\nMoody's: A2  //  PRC: 2.00\n100.200099.1991199'080\n-1.00%\n28.03.2025\n682\nTORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN\nUSD200'000\n0.47%\n1.03%\nVRN\n100.200099.6285200'288\n-0.57%\n28.03.2025\n1'031\nCANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28\nISIN: XS2588105036  //  Valorn.: 112286204\nOrdinary Bonds  //  Maturity: 22.02.2028\nCoupon: 23.2  //  Annual  5.1531%  //  D",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2588105036",
+        "name": "ISIN:",
+        "marketValue": 1500000,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "1'500'000",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "riptionPerf YTD\nNominal/\nQuantity\nBonds, Bond funds, Convertible bonds, Interest options\nUSD200'000\n0.25%\n1.02%\nISIN: XS2530201644  //  Valorn.: 125350273\nOrdinary Bonds  //  Maturity: 23.02.2027\nCoupon: 23.5  //  Quarterly  3.32%  //  Days: 37\nMoody's: A2  //  PRC: 2.00\n100.200099.1991199'080\n-1.00%\n28.03.2025\n682\nTORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN\nUSD200'000\n0.47%\n1.03%\nVRN\n100.200099.6285200'288\n-0.57%\n28.03.2025\n1'031\nCANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28\nISIN: XS2588105036  //  Valorn.: 112286204\nOrdinary Bonds  //  Maturity: 22.02.2028\nCoupon: 23.2  //  Annual  5.1531%  //  Days: 46\nPRC: 5.00\nUSD1'500'000\n1.49%\n7.75%\nSE.195\n99.099098.37001'507'550\n-0.74%\n31.03.2025\n32'000\nHARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028\nISIN: XS2665592833  //  Valorn.: 128829182\nOrdinary Bonds  //  Maturity: 18.09.2028\nCoupon: 18.9  //  Annual  4%  //  Days: 192\nPRC: 5.00\nUSD690'000\n2.26%\n3.79%\nISIN: XS2692298537  //  Valorn.: 129157183\nOrdinary Bonds  //  Maturit",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2665592833",
+        "name": "ISIN:",
+        "marketValue": 690000,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "690'000",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": ".200099.1991199'080\n-1.00%\n28.03.2025\n682\nTORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN\nUSD200'000\n0.47%\n1.03%\nVRN\n100.200099.6285200'288\n-0.57%\n28.03.2025\n1'031\nCANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28\nISIN: XS2588105036  //  Valorn.: 112286204\nOrdinary Bonds  //  Maturity: 22.02.2028\nCoupon: 23.2  //  Annual  5.1531%  //  Days: 46\nPRC: 5.00\nUSD1'500'000\n1.49%\n7.75%\nSE.195\n99.099098.37001'507'550\n-0.74%\n31.03.2025\n32'000\nHARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028\nISIN: XS2665592833  //  Valorn.: 128829182\nOrdinary Bonds  //  Maturity: 18.09.2028\nCoupon: 18.9  //  Annual  4%  //  Days: 192\nPRC: 5.00\nUSD690'000\n2.26%\n3.79%\nISIN: XS2692298537  //  Valorn.: 129157183\nOrdinary Bonds  //  Maturity: 07.11.2029\nYTM: -1.44  //  PRC: 5.00\n100.1000106.9200737'748\n6.81%\n31.03.2025\nGOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P\nUSD100'000\n1.16%\n0.50%\nISIN: XS2754416860  //  Valorn.: 132648671\nOrdinary Bonds  //  Maturity: 17.01.2030\nCoupon: 17.1  //  Annual  5.238%  //  Days:",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2692298537",
+        "name": "ISIN:",
+        "marketValue": 737748,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "737'748",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "'031\nCANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28\nISIN: XS2588105036  //  Valorn.: 112286204\nOrdinary Bonds  //  Maturity: 22.02.2028\nCoupon: 23.2  //  Annual  5.1531%  //  Days: 46\nPRC: 5.00\nUSD1'500'000\n1.49%\n7.75%\nSE.195\n99.099098.37001'507'550\n-0.74%\n31.03.2025\n32'000\nHARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028\nISIN: XS2665592833  //  Valorn.: 128829182\nOrdinary Bonds  //  Maturity: 18.09.2028\nCoupon: 18.9  //  Annual  4%  //  Days: 192\nPRC: 5.00\nUSD690'000\n2.26%\n3.79%\nISIN: XS2692298537  //  Valorn.: 129157183\nOrdinary Bonds  //  Maturity: 07.11.2029\nYTM: -1.44  //  PRC: 5.00\n100.1000106.9200737'748\n6.81%\n31.03.2025\nGOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P\nUSD100'000\n1.16%\n0.50%\nISIN: XS2754416860  //  Valorn.: 132648671\nOrdinary Bonds  //  Maturity: 17.01.2030\nCoupon: 17.1  //  Annual  5.238%  //  Days: 73\nPRC: 5.00\n100.200097.140098'202\n-3.05%\n31.03.2025\n1'062\nLUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30\nUSD100'000\n2.24%\n0.53%\nISIN: XS2761230684  //  Valo",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2782869916",
+        "name": "ISIN:",
+        "marketValue": 440000,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "440'000",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nBonds, Bond funds, Convertible bonds, Interest options\nUSD50'000\n1.07%\n0.25%\n09.05.34\n100.200097.334048'667\n-2.86%\n31.03.2025\nCITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-\nISIN: XS2782869916  //  Valorn.: 132544344\nOrdinary Bonds  //  Maturity: 09.05.2034\nPRC: 5.00\nPrice to be verified\nUSD440'000\n1.81%\n2.46%\nISIN: XS2824054402  //  Valorn.: 135337661\nOrdinary Bonds  //  Callable: 29.05.2026\nCoupon: 29.5  //  Annual  5.6%  //  Days: 301  //  YTM: 5.04\nPRC: 5.00\n100.2000103.9900478'158\n3.78%\n31.03.2025\n20'602\nBOFA 5.  6% 2024-29.05.34 REGS\nUSD2'450'000\n1.26%\n13.21%\nISIN: XS2567543397  //  Valorn.: 134736192\nOrdinary Bonds  //  Callable: 18.06.2026\nCoupon: 18.6  //  Annual",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2824054402",
+        "name": "ISIN:",
+        "marketValue": 20602,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "20'602",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "rice currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nBonds, Bond funds, Convertible bonds, Interest options\nUSD50'000\n1.07%\n0.25%\n09.05.34\n100.200097.334048'667\n-2.86%\n31.03.2025\nCITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-\nISIN: XS2782869916  //  Valorn.: 132544344\nOrdinary Bonds  //  Maturity: 09.05.2034\nPRC: 5.00\nPrice to be verified\nUSD440'000\n1.81%\n2.46%\nISIN: XS2824054402  //  Valorn.: 135337661\nOrdinary Bonds  //  Callable: 29.05.2026\nCoupon: 29.5  //  Annual  5.6%  //  Days: 301  //  YTM: 5.04\nPRC: 5.00\n100.2000103.9900478'158\n3.78%\n31.03.2025\n20'602\nBOFA 5.  6% 2024-29.05.34 REGS\nUSD2'450'000\n1.26%\n13.21%\nISIN: XS2567543397  //  Valorn.: 134736192\nOrdinary Bonds  //  Callable: 18.06.2026\nCoupon: 18.6  //  Annual  5.61%  //  Days: 282  //  YTM: 5.53\nPRC: 5.00\n100.1000100.52002'570'405\n0.42%\n31.03.2025\n107'665\nGS 10Y CALLABLE NOTE 2024-18.06.2034\nUS",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2567543397",
+        "name": "ISIN:",
+        "marketValue": 107665,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "107'665",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "05.34\n100.200097.334048'667\n-2.86%\n31.03.2025\nCITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-\nISIN: XS2782869916  //  Valorn.: 132544344\nOrdinary Bonds  //  Maturity: 09.05.2034\nPRC: 5.00\nPrice to be verified\nUSD440'000\n1.81%\n2.46%\nISIN: XS2824054402  //  Valorn.: 135337661\nOrdinary Bonds  //  Callable: 29.05.2026\nCoupon: 29.5  //  Annual  5.6%  //  Days: 301  //  YTM: 5.04\nPRC: 5.00\n100.2000103.9900478'158\n3.78%\n31.03.2025\n20'602\nBOFA 5.  6% 2024-29.05.34 REGS\nUSD2'450'000\n1.26%\n13.21%\nISIN: XS2567543397  //  Valorn.: 134736192\nOrdinary Bonds  //  Callable: 18.06.2026\nCoupon: 18.6  //  Annual  5.61%  //  Days: 282  //  YTM: 5.53\nPRC: 5.00\n100.1000100.52002'570'405\n0.42%\n31.03.2025\n107'665\nGS 10Y CALLABLE NOTE 2024-18.06.2034\nUSD1'100'000\n1.50%\n5.66%\nISIN: XS2110079584  //  Valorn.: 136429245\nZero Bonds  //  Callable: 09.07.2026\nYTM: 5.88  //  PRC: 5.00\n100.1000100.10001'101'100\n0.00%\n31.03.2025\nCITIGROUP 0% MTN 2024-09.07.34 REGS\nUSD90'000\n2.35%\n0.46%\nGLOBAL RE\n100.2000100.060090'05",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2110079584",
+        "name": "ISIN:",
+        "marketValue": 100000,
+        "currency": "CHF",
+        "confidence": 0.7200000000000001,
+        "method": "ultra_accurate_context",
+        "rawValue": "100'000",
+        "matchStrategy": "context",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "enhanced-preprocessing_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "5337661\nOrdinary Bonds  //  Callable: 29.05.2026\nCoupon: 29.5  //  Annual  5.6%  //  Days: 301  //  YTM: 5.04\nPRC: 5.00\n100.2000103.9900478'158\n3.78%\n31.03.2025\n20'602\nBOFA 5.  6% 2024-29.05.34 REGS\nUSD2'450'000\n1.26%\n13.21%\nISIN: XS2567543397  //  Valorn.: 134736192\nOrdinary Bonds  //  Callable: 18.06.2026\nCoupon: 18.6  //  Annual  5.61%  //  Days: 282  //  YTM: 5.53\nPRC: 5.00\n100.1000100.52002'570'405\n0.42%\n31.03.2025\n107'665\nGS 10Y CALLABLE NOTE 2024-18.06.2034\nUSD1'100'000\n1.50%\n5.66%\nISIN: XS2110079584  //  Valorn.: 136429245\nZero Bonds  //  Callable: 09.07.2026\nYTM: 5.88  //  PRC: 5.00\n100.1000100.10001'101'100\n0.00%\n31.03.2025\nCITIGROUP 0% MTN 2024-09.07.34 REGS\nUSD90'000\n2.35%\n0.46%\nGLOBAL RE\n100.2000100.060090'054\n-0.14%\n31.03.2025\nCITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34\nISIN: XS2848820754  //  Valorn.: 135116008\nZero Bonds  //  Maturity: 01.08.2034\nPRC: 5.00\nUSD100'000\n1.16%\n0.47%\nISIN: XS2829712830  //  Valorn.: 134735316\nOrdinary Bonds  //  Maturity: 30.09.2034\nY",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2829712830",
+        "name": "ISIN:",
+        "marketValue": 200000,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "200'000",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "25\n107'665\nGS 10Y CALLABLE NOTE 2024-18.06.2034\nUSD1'100'000\n1.50%\n5.66%\nISIN: XS2110079584  //  Valorn.: 136429245\nZero Bonds  //  Callable: 09.07.2026\nYTM: 5.88  //  PRC: 5.00\n100.1000100.10001'101'100\n0.00%\n31.03.2025\nCITIGROUP 0% MTN 2024-09.07.34 REGS\nUSD90'000\n2.35%\n0.46%\nGLOBAL RE\n100.2000100.060090'054\n-0.14%\n31.03.2025\nCITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34\nISIN: XS2848820754  //  Valorn.: 135116008\nZero Bonds  //  Maturity: 01.08.2034\nPRC: 5.00\nUSD100'000\n1.16%\n0.47%\nISIN: XS2829712830  //  Valorn.: 134735316\nOrdinary Bonds  //  Maturity: 30.09.2034\nYTM: 5.64  //  PRC: 5.00\n99.999692.320092'320\n-7.68%\n31.03.2025\nGOLDMAN SACHS EMTN 2024-30.09.2024\nUSD200'000\n1.92%\n1.02%\nISIN: XS2912278723  //  Valorn.: 138689613\nZero Bonds  //  Maturity: 17.10.2034\nYTM: 4.82  //  PRC: 5.00\n100.200099.5654199'131\n-0.63%\n28.03.2025\nBANK OF AMERICA 0% NOTES 2024-17.10.2034\nUSD100'000\n1.09%\n0.49%\n37954\n100.200096.056996'057\n-4.13%\n31.03.2025\nJPMORGAN CHASE  0   % NOTES 2024-29.10.34 SE",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2912278723",
+        "name": "ISIN:",
+        "marketValue": 996057,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "996'057",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "00%\n31.03.2025\nCITIGROUP 0% MTN 2024-09.07.34 REGS\nUSD90'000\n2.35%\n0.46%\nGLOBAL RE\n100.2000100.060090'054\n-0.14%\n31.03.2025\nCITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34\nISIN: XS2848820754  //  Valorn.: 135116008\nZero Bonds  //  Maturity: 01.08.2034\nPRC: 5.00\nUSD100'000\n1.16%\n0.47%\nISIN: XS2829712830  //  Valorn.: 134735316\nOrdinary Bonds  //  Maturity: 30.09.2034\nYTM: 5.64  //  PRC: 5.00\n99.999692.320092'320\n-7.68%\n31.03.2025\nGOLDMAN SACHS EMTN 2024-30.09.2024\nUSD200'000\n1.92%\n1.02%\nISIN: XS2912278723  //  Valorn.: 138689613\nZero Bonds  //  Maturity: 17.10.2034\nYTM: 4.82  //  PRC: 5.00\n100.200099.5654199'131\n-0.63%\n28.03.2025\nBANK OF AMERICA 0% NOTES 2024-17.10.2034\nUSD100'000\n1.09%\n0.49%\n37954\n100.200096.056996'057\n-4.13%\n31.03.2025\nJPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021-\nISIN: XS2381723902  //  Valorn.: 128883231\nZero Bonds  //  Maturity: 29.10.2034\nPRC: 5.00\nPrint date 01.04.2025 // Page 7/17\n\nBonds\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Numbe",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2381723902",
+        "name": "ISIN:",
+        "marketValue": 44218,
+        "currency": "CHF",
+        "confidence": 0.63,
+        "method": "ultra_accurate_position",
+        "rawValue": "44 218",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_space",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "Valorn.: 134735316\nOrdinary Bonds  //  Maturity: 30.09.2034\nYTM: 5.64  //  PRC: 5.00\n99.999692.320092'320\n-7.68%\n31.03.2025\nGOLDMAN SACHS EMTN 2024-30.09.2024\nUSD200'000\n1.92%\n1.02%\nISIN: XS2912278723  //  Valorn.: 138689613\nZero Bonds  //  Maturity: 17.10.2034\nYTM: 4.82  //  PRC: 5.00\n100.200099.5654199'131\n-0.63%\n28.03.2025\nBANK OF AMERICA 0% NOTES 2024-17.10.2034\nUSD100'000\n1.09%\n0.49%\n37954\n100.200096.056996'057\n-4.13%\n31.03.2025\nJPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021-\nISIN: XS2381723902  //  Valorn.: 128883231\nZero Bonds  //  Maturity: 29.10.2034\nPRC: 5.00\nPrint date 01.04.2025 // Page 7/17\n\nBonds\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI\nSwift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2829752976",
+        "name": "ISIN:",
+        "marketValue": 146625,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "146'625",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nBonds, Bond funds, Convertible bonds, Interest options\nUSD250'000\n0.73%\n1.24%\n18.11.2034\n99.679096.8300242'075\n-2.86%\n27.03.2025\nGOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-\nISIN: XS2829752976  //  Valorn.: 138874416\nOrdinary Bonds  //  Maturity: 18.11.2034\nYTM: 5.65  //  PRC: 5.00\nUSD150'000\n1.90%\n0.75%\nISIN: XS2953741100  //  Valorn.: 138494467\nZero Bonds  //  Maturity: 11.12.2034\nYTM: 5.28  //  PRC: 5.00\n99.198097.7500146'625\n-1.46%\n27.03.2025\nBANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S\nUSD500'000\n3.70%\n2.60%\nISIN: XS2381717250  //  Valorn.: 128883267\nZero Bonds  //  Maturity: 19.12.2034\nPRC: 5.00\n100.2000101.1000505'500\n0.90%\n31.03.2025\nJPMORGAN CHASE 0% NOTES 2024-",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2964611052",
+        "name": "ISIN:",
+        "marketValue": 470000,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "470'000",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "enhanced-preprocessing_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "-1.46%\n27.03.2025\nBANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S\nUSD500'000\n3.70%\n2.60%\nISIN: XS2381717250  //  Valorn.: 128883267\nZero Bonds  //  Maturity: 19.12.2034\nPRC: 5.00\n100.2000101.1000505'500\n0.90%\n31.03.2025\nJPMORGAN CHASE 0% NOTES 2024-19.12.2034\nUSD50'000\n-1.10%\n0.25%\nISIN: XS2481066111    //  Val  orn.: 126294402\nZero Bonds  //  Maturity: 03.02.2035\nYTM: 0.10  //  PRC: 5.00\n100.100099.000049'500\n-1.10%\n31.03.2025\nGOLDMAN SACHS 0% NOTES 2025-03.02.2035\nUSD1'470'000\n0.72%\n7.61%\nISIN: XS2964611052  //  Valorn.: 141235167\nZero Bonds  //  Maturity: 14.02.2035\nYTM: 5.41  //  PRC: 5.00\n100.0000100.72001'480'584\n0.72%\n31.03.2025\nDEUTSCHE BANK 0 % NOTES 2025-14.02.35\nUSD800'000\n0.00%\n4.11%\nREG S\n100.0000100.0000800'000\n0.00%\n28.03.2025\nWELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36\nISIN: XS3035947103  //  Valorn.: 143578751\nOrdinary Bonds  //  Maturity: 28.03.2036\nPRC: 5.00\nUSD2'581.79\n0.00%\n0.59%\nSP\n81.530444.7800115'613\n-45.08%\n13.09.2024\nPREMIUM ALT.S.A. SICAV-SIF - COMMER",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "CH1269060229",
+        "name": "ISIN:",
+        "marketValue": 44218,
+        "currency": "CHF",
+        "confidence": 0.63,
+        "method": "ultra_accurate_position",
+        "rawValue": "44 218",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_space",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": ".00%\n28.03.2025\nWELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36\nISIN: XS3035947103  //  Valorn.: 143578751\nOrdinary Bonds  //  Maturity: 28.03.2036\nPRC: 5.00\nUSD2'581.79\n0.00%\n0.59%\nSP\n81.530444.7800115'613\n-45.08%\n13.09.2024\nPREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB\nISIN: LU2228214107  //  Valorn.: 57282891\nBond Funds / Certificates\nPRC: 3.00\nUSD350'000\n1.14%\n1.76%\nVRN\n100.623797.6000342'643\n-3.00%\n31.03.2025\n1'043\nBK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28\nISIN: CH1269060229  //  Valorn.: 126906022\nStructured Bonds  //  Maturity: 26.05.2028\nCoupon: 26.5  //  Quarterly  3.25%  //  Days: 33\nPRC: 3.00\nPrice to be verified\nPrint date 01.04.2025 // Page 8/17\n\nBonds\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI\nSwift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Switzerlan",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2746319610",
+        "name": "ISIN:",
+        "marketValue": 1361466,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "1'361'466",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "cy\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nBonds, Bond funds, Convertible bonds, Interest options\nUSD690'000\n1.54%\n3.65%\nISIN: XS0461497009  //  Valorn.: 130269069\nOrdinary Bonds  //  Maturity: 08.11.2028\nCoupon: 8.11  //  Annual  5.5%  //  Days: 142\nPRC: 5.00\n100.1000100.8900711'110\n0.79%\n31.03.2025\n14'969\nDEUTSCHE BANK NOTES 23-08.11.28 VRN\nUSD140'000\n3.10%\n0.99%\nISIN: XS2746319610  //  Valorn.: 133393503\nOrdinary Bonds  //  Maturity: 01.03.2030\nCoupon: Annual  32.46%  //  Days: 385  //  YTM: 16.79\nPRC: 5.00\n100.2000102.5000192'100\n2.30%\n31.03.2025\n48'600\nSOCIETE GENERALE 32.46 % NOTES 2024-01.03.30 REG S\nTotal Bonds\nAccrued interest\n12'363'974USD\nUSD236'748\n63.52%\nthereof B ondsUSD11'002'50856.53%\nthereof B ond funds /  c ertficatesUSD1'361'4666.99%\nPrint date 01.04.2025 // Page 9/17\n\nEquities\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 3",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "CH0244767585",
+        "name": "ISIN:",
+        "marketValue": 21496,
+        "currency": "CHF",
+        "confidence": 0.63,
+        "method": "ultra_accurate_line",
+        "rawValue": "21'496",
+        "matchStrategy": "line",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "1029// info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nEquities, Equity funds, Options on equities/indices\nCHF800\n-3.10%\n0.12%\nISIN: CH0244767585  //  Valorn.: 24476758\nOrdinary Stocks  //  PRC: 3.91\n221.564126.870021'496\n1.13401.1313\n-87.90%\n-0.24%\n31.03.202524'319\nUBS GROUP INC NAMEN-AKT.\n-87.87%\nTotal Equities24'319USD0.12%\nthereof E quities (without options)USD24'3190.12%\nPrint date 01.04.2025 // Page 10/17\n\nStructured products\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI\nSwift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA\nTel. +41 44 21810 20// Fax +41442181029// info@c",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2519369867",
+        "name": "ISIN:",
+        "marketValue": 1200000,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "1'200'000",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nStructured products (Bonds)\nUSD200'000\n-2.01%\n1.01%\nCITD    26\n100.728897.9853196'221\n-2.72%\n28.02.2025\n250\nBCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%\nISIN: XS2519369867  //  Valorn.: 121050656\nOther convertible bonds  //  Maturity: 21.06.2027\nDays: 9  //  PRC: 5.00\nUSD500'000\n0.22%\n2.58%\nISIN: XS2315191069  //  Valorn.: 111918998\nStructured Bonds  //  Maturity: 08.01.2029\nDays: 82  //  PRC: 5.0 0\nPrice to be verified\n100.524199.0000502'305\n-1.52%\n31.03.2025\n7'305\nBNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631\nUSD1'200'000\n-1.83%\n5.93%\nISIN: XS2792098779  //  Valorn.: 140288136\nStructured Bonds  //  Maturity: 02.12.2034  //  PRC: 5.00\nPrice",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2315191069",
+        "name": "ISIN:",
+        "marketValue": 690000,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "690'000",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "y\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nStructured products (Bonds)\nUSD200'000\n-2.01%\n1.01%\nCITD    26\n100.728897.9853196'221\n-2.72%\n28.02.2025\n250\nBCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%\nISIN: XS2519369867  //  Valorn.: 121050656\nOther convertible bonds  //  Maturity: 21.06.2027\nDays: 9  //  PRC: 5.00\nUSD500'000\n0.22%\n2.58%\nISIN: XS2315191069  //  Valorn.: 111918998\nStructured Bonds  //  Maturity: 08.01.2029\nDays: 82  //  PRC: 5.0 0\nPrice to be verified\n100.524199.0000502'305\n-1.52%\n31.03.2025\n7'305\nBNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631\nUSD1'200'000\n-1.83%\n5.93%\nISIN: XS2792098779  //  Valorn.: 140288136\nStructured Bonds  //  Maturity: 02.12.2034  //  PRC: 5.00\nPrice to be verified\n100.000096.19301'154'316\n-3.81%\n31.03.2025\nCITIGROUP\nUSD690'000\n-1.94%\n3.62%\nWELLS F.\n100.446299.0900704'064\n-1.35%\n27.03.20",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2792098779",
+        "name": "ISIN:",
+        "marketValue": 200000,
+        "currency": "CHF",
+        "confidence": 0.7200000000000001,
+        "method": "ultra_accurate_context",
+        "rawValue": "200'000",
+        "matchStrategy": "context",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "enhanced-preprocessing_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "00.728897.9853196'221\n-2.72%\n28.02.2025\n250\nBCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%\nISIN: XS2519369867  //  Valorn.: 121050656\nOther convertible bonds  //  Maturity: 21.06.2027\nDays: 9  //  PRC: 5.00\nUSD500'000\n0.22%\n2.58%\nISIN: XS2315191069  //  Valorn.: 111918998\nStructured Bonds  //  Maturity: 08.01.2029\nDays: 82  //  PRC: 5.0 0\nPrice to be verified\n100.524199.0000502'305\n-1.52%\n31.03.2025\n7'305\nBNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631\nUSD1'200'000\n-1.83%\n5.93%\nISIN: XS2792098779  //  Valorn.: 140288136\nStructured Bonds  //  Maturity: 02.12.2034  //  PRC: 5.00\nPrice to be verified\n100.000096.19301'154'316\n-3.81%\n31.03.2025\nCITIGROUP\nUSD690'000\n-1.94%\n3.62%\nWELLS F.\n100.446299.0900704'064\n-1.35%\n27.03.2025\n20'343\nEMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN\nISIN: XS2714429128  //  Valorn.: 130738882\nStructured Bonds  //  Maturity: 17.09.2029\nDays: 195  //  PRC: 5.00\nPrice to be verified\nUSD500'000\n-0.21%\n2.49%\n34\n100.524396.7400484'457\n-3.76%\n31.03.2025",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2105981117",
+        "name": "ISIN:",
+        "marketValue": 488866,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "488'866",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "urity: 02.12.2034  //  PRC: 5.00\nPrice to be verified\n100.000096.19301'154'316\n-3.81%\n31.03.2025\nCITIGROUP\nUSD690'000\n-1.94%\n3.62%\nWELLS F.\n100.446299.0900704'064\n-1.35%\n27.03.2025\n20'343\nEMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN\nISIN: XS2714429128  //  Valorn.: 130738882\nStructured Bonds  //  Maturity: 17.09.2029\nDays: 195  //  PRC: 5.00\nPrice to be verified\nUSD500'000\n-0.21%\n2.49%\n34\n100.524396.7400484'457\n-3.76%\n31.03.2025\n757\nGOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT\nISIN: XS2105981117  //  Val  orn.: 114118068\nStructured Bonds  //  Maturity: 20.12.2028\nDays: 10  //  PRC: 4.0 0\nPrice to be verified\nUSD1'600'000\n0.35%\n8.34%\nISIN: XS2838389430  //  Valorn.: 135968317\nStructured Bonds  //  Maturity: 26.04.2033\nDays: 279  //  PRC: 5.00\nPrice to be verified\n100.100097.08001'623'960\n-3.02%\n31.03.2025\n70'680\nLUMINIS 5.7% STR NOTE 2024-26.04.33 WFC 24W\nUSD500'000\n0.28%\n2.51%\nRABOBANK 29\n98.018197.4900488'866\n-0.54%\n31.03.2025\n1'416\nLUMINIS REPACK NOTES 23-25.05.29 VRN ON",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2838389430",
+        "name": "ISIN:",
+        "marketValue": 600000,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "600'000",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "enhanced-preprocessing_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "064\n-1.35%\n27.03.2025\n20'343\nEMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN\nISIN: XS2714429128  //  Valorn.: 130738882\nStructured Bonds  //  Maturity: 17.09.2029\nDays: 195  //  PRC: 5.00\nPrice to be verified\nUSD500'000\n-0.21%\n2.49%\n34\n100.524396.7400484'457\n-3.76%\n31.03.2025\n757\nGOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT\nISIN: XS2105981117  //  Val  orn.: 114118068\nStructured Bonds  //  Maturity: 20.12.2028\nDays: 10  //  PRC: 4.0 0\nPrice to be verified\nUSD1'600'000\n0.35%\n8.34%\nISIN: XS2838389430  //  Valorn.: 135968317\nStructured Bonds  //  Maturity: 26.04.2033\nDays: 279  //  PRC: 5.00\nPrice to be verified\n100.100097.08001'623'960\n-3.02%\n31.03.2025\n70'680\nLUMINIS 5.7% STR NOTE 2024-26.04.33 WFC 24W\nUSD500'000\n0.28%\n2.51%\nRABOBANK 29\n98.018197.4900488'866\n-0.54%\n31.03.2025\n1'416\nLUMINIS REPACK NOTES 23-25.05.29 VRN ON 4,625%\nISIN: XS2631782468  //  Valorn.: 127708275\nStructured Bonds  //  Maturity: 25.05.2029\nDays: 19  //  PRC: 5.0 0\nPrice to be verified\nUnderlying:FED RES B",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2594173093",
+        "name": "ISIN:",
+        "marketValue": 1000000,
+        "currency": "CHF",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "1'000'000",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_swiss_apostrophe",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "rrency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nStructured products (Bonds)\nUSD100'000\n-0.07%\n0.51%\nSRN\n91.021798.671998'672\n8.40%\n31.03.2025\nNATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21\nISIN: XS1700087403  //  Valorn.: 39877135\nStructured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00\nPrice to be verified\nUSD200'000\n-1.90%\n0.99%\nISIN: XS2594173093  //  Valorn.: 125443809\nStructured Bonds  //  Maturity: 27.09.2029\nDays: 33  //  PRC: 5.0 0\nPrice to be verified\n99.059296.2100193'464\n-2.88%\n31.03.2025\n1'044\nNOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029\nUSD500'000\n4.36%\n2.62%\nNATWEST GROUP\n100.5243100.7200510'114\n0.19%\n31.03.2025\n6'514\nNOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON\nISIN: XS2407295554  //  Valorn.: 114718568\nStructured Bonds  //  Maturity: 12.01.2028\nDays: 78  //  PRC: 5.0 0\nPrice to be verified\nStructured prod",
+          "valueNearby": false,
+          "confidence": 0.5
+        }
+      },
+      {
+        "isin": "XS2407295554",
+        "name": "ISIN:",
+        "marketValue": 5956439,
+        "currency": "USD",
+        "confidence": 0.81,
+        "method": "ultra_accurate_position",
+        "rawValue": "5'956'439",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_currency",
+        "validationScore": 1,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "00087403  //  Valorn.: 39877135\nStructured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00\nPrice to be verified\nUSD200'000\n-1.90%\n0.99%\nISIN: XS2594173093  //  Valorn.: 125443809\nStructured Bonds  //  Maturity: 27.09.2029\nDays: 33  //  PRC: 5.0 0\nPrice to be verified\n99.059296.2100193'464\n-2.88%\n31.03.2025\n1'044\nNOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029\nUSD500'000\n4.36%\n2.62%\nNATWEST GROUP\n100.5243100.7200510'114\n0.19%\n31.03.2025\n6'514\nNOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON\nISIN: XS2407295554  //  Valorn.: 114718568\nStructured Bonds  //  Maturity: 12.01.2028\nDays: 78  //  PRC: 5.0 0\nPrice to be verified\nStructured products (Equities)\nUSD1'000'000\n0.60%\n5.09%\nGROUP\n100.366498.9800989'800\n-1.38%\n28.03.2025\nNOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ON CS\nISIN: XS2252299883  //  Valorn.: 58001077\nStructured products equity  //  Maturity: 15.05.2026  //  PRC: 5.00\nPrice to be verified\nUnderlying:INTERBK LIBOR 3 MTH\nTotal Structured products\nAccrued interest\n6'946'239USD\nUSD1",
+          "valueNearby": false,
+          "confidence": 0.5
+        }
+      },
+      {
+        "isin": "XS2993414619",
+        "name": "ISIN:",
+        "marketValue": 97700,
+        "currency": "USD",
+        "confidence": 0.63,
+        "method": "ultra_accurate_line",
+        "rawValue": "97'700",
+        "matchStrategy": "line",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_currency",
+        "validationScore": 0.98,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nCash accounts credit\nUSD6'069.770.03%\nCash Accounts  //  366223-CC-0002\nIBAN: CH1908490000366223002\nPRC: 1.00\n6'070\nORDINARY USD\nMoney market\nUSD100'000.00\n-2.30%\n0.50%\nISIN: XS2993414619  //  Valorn.: 140610687\nMM secs discounted  //  Maturity: 28.03.2035  //  PRC: 5.00\n100.000097.700097'700\n-2.30%\n31.03.2025\nRBC LONDON 0% NOTES 2025-28.03.2035\nTotal Liquidity103'770USD0.53%\nthereof Cash accountsUSD6'0700.03%\nthereof Money m arketUSD97'7000.50%\nPrint date 01.04.2025 // Page 5/17\n\nBonds\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI\nSwift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA\nTel. +41 44 21810 20// Fax +414421",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2848820754",
+        "name": "ISIN:",
+        "marketValue": 2034,
+        "currency": "USD",
+        "confidence": 0.63,
+        "method": "ultra_accurate_line",
+        "rawValue": "2034",
+        "matchStrategy": "line",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_currency",
+        "validationScore": 0.88,
+        "validationNotes": [
+          "valid_isin_format",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "Coupon: 18.6  //  Annual  5.61%  //  Days: 282  //  YTM: 5.53\nPRC: 5.00\n100.1000100.52002'570'405\n0.42%\n31.03.2025\n107'665\nGS 10Y CALLABLE NOTE 2024-18.06.2034\nUSD1'100'000\n1.50%\n5.66%\nISIN: XS2110079584  //  Valorn.: 136429245\nZero Bonds  //  Callable: 09.07.2026\nYTM: 5.88  //  PRC: 5.00\n100.1000100.10001'101'100\n0.00%\n31.03.2025\nCITIGROUP 0% MTN 2024-09.07.34 REGS\nUSD90'000\n2.35%\n0.46%\nGLOBAL RE\n100.2000100.060090'054\n-0.14%\n31.03.2025\nCITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34\nISIN: XS2848820754  //  Valorn.: 135116008\nZero Bonds  //  Maturity: 01.08.2034\nPRC: 5.00\nUSD100'000\n1.16%\n0.47%\nISIN: XS2829712830  //  Valorn.: 134735316\nOrdinary Bonds  //  Maturity: 30.09.2034\nYTM: 5.64  //  PRC: 5.00\n99.999692.320092'320\n-7.68%\n31.03.2025\nGOLDMAN SACHS EMTN 2024-30.09.2024\nUSD200'000\n1.92%\n1.02%\nISIN: XS2912278723  //  Valorn.: 138689613\nZero Bonds  //  Maturity: 17.10.2034\nYTM: 4.82  //  PRC: 5.00\n100.200099.5654199'131\n-0.63%\n28.03.2025\nBANK OF AMERICA 0% NOTES 2024-17.10.2034",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2953741100",
+        "name": "ISIN:",
+        "marketValue": 2034,
+        "currency": "USD",
+        "confidence": 0.63,
+        "method": "ultra_accurate_line",
+        "rawValue": "2034",
+        "matchStrategy": "line",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_currency",
+        "validationScore": 0.88,
+        "validationNotes": [
+          "valid_isin_format",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "on in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nBonds, Bond funds, Convertible bonds, Interest options\nUSD250'000\n0.73%\n1.24%\n18.11.2034\n99.679096.8300242'075\n-2.86%\n27.03.2025\nGOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-\nISIN: XS2829752976  //  Valorn.: 138874416\nOrdinary Bonds  //  Maturity: 18.11.2034\nYTM: 5.65  //  PRC: 5.00\nUSD150'000\n1.90%\n0.75%\nISIN: XS2953741100  //  Valorn.: 138494467\nZero Bonds  //  Maturity: 11.12.2034\nYTM: 5.28  //  PRC: 5.00\n99.198097.7500146'625\n-1.46%\n27.03.2025\nBANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S\nUSD500'000\n3.70%\n2.60%\nISIN: XS2381717250  //  Valorn.: 128883267\nZero Bonds  //  Maturity: 19.12.2034\nPRC: 5.00\n100.2000101.1000505'500\n0.90%\n31.03.2025\nJPMORGAN CHASE 0% NOTES 2024-19.12.2034\nUSD50'000\n-1.10%\n0.25%\nISIN: XS2481066111    //  Val  orn.: 126294402\nZero Bonds  //  Maturity: 03.02.2035\nYTM: 0.10  //",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2381717250",
+        "name": "ISIN:",
+        "marketValue": 2034,
+        "currency": "USD",
+        "confidence": 0.63,
+        "method": "ultra_accurate_line",
+        "rawValue": "2034",
+        "matchStrategy": "line",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_currency",
+        "validationScore": 0.88,
+        "validationNotes": [
+          "valid_isin_format",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "ble bonds, Interest options\nUSD250'000\n0.73%\n1.24%\n18.11.2034\n99.679096.8300242'075\n-2.86%\n27.03.2025\nGOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-\nISIN: XS2829752976  //  Valorn.: 138874416\nOrdinary Bonds  //  Maturity: 18.11.2034\nYTM: 5.65  //  PRC: 5.00\nUSD150'000\n1.90%\n0.75%\nISIN: XS2953741100  //  Valorn.: 138494467\nZero Bonds  //  Maturity: 11.12.2034\nYTM: 5.28  //  PRC: 5.00\n99.198097.7500146'625\n-1.46%\n27.03.2025\nBANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S\nUSD500'000\n3.70%\n2.60%\nISIN: XS2381717250  //  Valorn.: 128883267\nZero Bonds  //  Maturity: 19.12.2034\nPRC: 5.00\n100.2000101.1000505'500\n0.90%\n31.03.2025\nJPMORGAN CHASE 0% NOTES 2024-19.12.2034\nUSD50'000\n-1.10%\n0.25%\nISIN: XS2481066111    //  Val  orn.: 126294402\nZero Bonds  //  Maturity: 03.02.2035\nYTM: 0.10  //  PRC: 5.00\n100.100099.000049'500\n-1.10%\n31.03.2025\nGOLDMAN SACHS 0% NOTES 2025-03.02.2035\nUSD1'470'000\n0.72%\n7.61%\nISIN: XS2964611052  //  Valorn.: 141235167\nZero Bonds  //  Maturity: 14.02.2035\nYTM: 5.41  //  PRC:",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2481066111",
+        "name": "ISIN:",
+        "marketValue": 2035,
+        "currency": "USD",
+        "confidence": 0.63,
+        "method": "ultra_accurate_line",
+        "rawValue": "2035",
+        "matchStrategy": "line",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_currency",
+        "validationScore": 0.88,
+        "validationNotes": [
+          "valid_isin_format",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "inary Bonds  //  Maturity: 18.11.2034\nYTM: 5.65  //  PRC: 5.00\nUSD150'000\n1.90%\n0.75%\nISIN: XS2953741100  //  Valorn.: 138494467\nZero Bonds  //  Maturity: 11.12.2034\nYTM: 5.28  //  PRC: 5.00\n99.198097.7500146'625\n-1.46%\n27.03.2025\nBANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S\nUSD500'000\n3.70%\n2.60%\nISIN: XS2381717250  //  Valorn.: 128883267\nZero Bonds  //  Maturity: 19.12.2034\nPRC: 5.00\n100.2000101.1000505'500\n0.90%\n31.03.2025\nJPMORGAN CHASE 0% NOTES 2024-19.12.2034\nUSD50'000\n-1.10%\n0.25%\nISIN: XS2481066111    //  Val  orn.: 126294402\nZero Bonds  //  Maturity: 03.02.2035\nYTM: 0.10  //  PRC: 5.00\n100.100099.000049'500\n-1.10%\n31.03.2025\nGOLDMAN SACHS 0% NOTES 2025-03.02.2035\nUSD1'470'000\n0.72%\n7.61%\nISIN: XS2964611052  //  Valorn.: 141235167\nZero Bonds  //  Maturity: 14.02.2035\nYTM: 5.41  //  PRC: 5.00\n100.0000100.72001'480'584\n0.72%\n31.03.2025\nDEUTSCHE BANK 0 % NOTES 2025-14.02.35\nUSD800'000\n0.00%\n4.11%\nREG S\n100.0000100.0000800'000\n0.00%\n28.03.2025\nWELLS FARGO 0 % EURO MEDIUM TERM NOTE",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "LU2228214107",
+        "name": "ISIN:",
+        "marketValue": 2024,
+        "currency": "USD",
+        "confidence": 0.63,
+        "method": "ultra_accurate_line",
+        "rawValue": "2024",
+        "matchStrategy": "line",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_currency",
+        "validationScore": 0.88,
+        "validationNotes": [
+          "valid_isin_format",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "141235167\nZero Bonds  //  Maturity: 14.02.2035\nYTM: 5.41  //  PRC: 5.00\n100.0000100.72001'480'584\n0.72%\n31.03.2025\nDEUTSCHE BANK 0 % NOTES 2025-14.02.35\nUSD800'000\n0.00%\n4.11%\nREG S\n100.0000100.0000800'000\n0.00%\n28.03.2025\nWELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36\nISIN: XS3035947103  //  Valorn.: 143578751\nOrdinary Bonds  //  Maturity: 28.03.2036\nPRC: 5.00\nUSD2'581.79\n0.00%\n0.59%\nSP\n81.530444.7800115'613\n-45.08%\n13.09.2024\nPREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB\nISIN: LU2228214107  //  Valorn.: 57282891\nBond Funds / Certificates\nPRC: 3.00\nUSD350'000\n1.14%\n1.76%\nVRN\n100.623797.6000342'643\n-3.00%\n31.03.2025\n1'043\nBK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28\nISIN: CH1269060229  //  Valorn.: 126906022\nStructured Bonds  //  Maturity: 26.05.2028\nCoupon: 26.5  //  Quarterly  3.25%  //  Days: 33\nPRC: 3.00\nPrice to be verified\nPrint date 01.04.2025 // Page 8/17\n\nBonds\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEO",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2714429128",
+        "name": "ISIN:",
+        "marketValue": 2029,
+        "currency": "USD",
+        "confidence": 0.63,
+        "method": "ultra_accurate_line",
+        "rawValue": "2029",
+        "matchStrategy": "line",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_currency",
+        "validationScore": 0.88,
+        "validationNotes": [
+          "valid_isin_format",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "y: 08.01.2029\nDays: 82  //  PRC: 5.0 0\nPrice to be verified\n100.524199.0000502'305\n-1.52%\n31.03.2025\n7'305\nBNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631\nUSD1'200'000\n-1.83%\n5.93%\nISIN: XS2792098779  //  Valorn.: 140288136\nStructured Bonds  //  Maturity: 02.12.2034  //  PRC: 5.00\nPrice to be verified\n100.000096.19301'154'316\n-3.81%\n31.03.2025\nCITIGROUP\nUSD690'000\n-1.94%\n3.62%\nWELLS F.\n100.446299.0900704'064\n-1.35%\n27.03.2025\n20'343\nEMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN\nISIN: XS2714429128  //  Valorn.: 130738882\nStructured Bonds  //  Maturity: 17.09.2029\nDays: 195  //  PRC: 5.00\nPrice to be verified\nUSD500'000\n-0.21%\n2.49%\n34\n100.524396.7400484'457\n-3.76%\n31.03.2025\n757\nGOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT\nISIN: XS2105981117  //  Val  orn.: 114118068\nStructured Bonds  //  Maturity: 20.12.2028\nDays: 10  //  PRC: 4.0 0\nPrice to be verified\nUSD1'600'000\n0.35%\n8.34%\nISIN: XS2838389430  //  Valorn.: 135968317\nStructured Bonds  //  Maturity: 26.04.2033\nDays:",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2631782468",
+        "name": "ISIN:",
+        "marketValue": 2029,
+        "currency": "USD",
+        "confidence": 0.63,
+        "method": "ultra_accurate_line",
+        "rawValue": "2029",
+        "matchStrategy": "line",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_currency",
+        "validationScore": 0.88,
+        "validationNotes": [
+          "valid_isin_format",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "//  Val  orn.: 114118068\nStructured Bonds  //  Maturity: 20.12.2028\nDays: 10  //  PRC: 4.0 0\nPrice to be verified\nUSD1'600'000\n0.35%\n8.34%\nISIN: XS2838389430  //  Valorn.: 135968317\nStructured Bonds  //  Maturity: 26.04.2033\nDays: 279  //  PRC: 5.00\nPrice to be verified\n100.100097.08001'623'960\n-3.02%\n31.03.2025\n70'680\nLUMINIS 5.7% STR NOTE 2024-26.04.33 WFC 24W\nUSD500'000\n0.28%\n2.51%\nRABOBANK 29\n98.018197.4900488'866\n-0.54%\n31.03.2025\n1'416\nLUMINIS REPACK NOTES 23-25.05.29 VRN ON 4,625%\nISIN: XS2631782468  //  Valorn.: 127708275\nStructured Bonds  //  Maturity: 25.05.2029\nDays: 19  //  PRC: 5.0 0\nPrice to be verified\nUnderlying:FED RES BK SOFR US\nPrint date 01.04.2025 // Page 11/17\n\nStructured products\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI\nSwift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS1700087403",
+        "name": "ISIN:",
+        "marketValue": 2026,
+        "currency": "USD",
+        "confidence": 0.63,
+        "method": "ultra_accurate_line",
+        "rawValue": "2026",
+        "matchStrategy": "line",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_currency",
+        "validationScore": 0.88,
+        "validationNotes": [
+          "valid_isin_format",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "stfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nStructured products (Bonds)\nUSD100'000\n-0.07%\n0.51%\nSRN\n91.021798.671998'672\n8.40%\n31.03.2025\nNATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21\nISIN: XS1700087403  //  Valorn.: 39877135\nStructured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00\nPrice to be verified\nUSD200'000\n-1.90%\n0.99%\nISIN: XS2594173093  //  Valorn.: 125443809\nStructured Bonds  //  Maturity: 27.09.2029\nDays: 33  //  PRC: 5.0 0\nPrice to be verified\n99.059296.2100193'464\n-2.88%\n31.03.2025\n1'044\nNOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029\nUSD500'000\n4.36%\n2.62%\nNATWEST GROUP\n100.5243100.7200510'114\n0.19%\n31.03.2025\n6'514\nNOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON\nIS",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2252299883",
+        "name": "ISIN:",
+        "marketValue": 2026,
+        "currency": "USD",
+        "confidence": 0.63,
+        "method": "ultra_accurate_line",
+        "rawValue": "2026",
+        "matchStrategy": "line",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_currency",
+        "validationScore": 0.88,
+        "validationNotes": [
+          "valid_isin_format",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "'464\n-2.88%\n31.03.2025\n1'044\nNOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029\nUSD500'000\n4.36%\n2.62%\nNATWEST GROUP\n100.5243100.7200510'114\n0.19%\n31.03.2025\n6'514\nNOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON\nISIN: XS2407295554  //  Valorn.: 114718568\nStructured Bonds  //  Maturity: 12.01.2028\nDays: 78  //  PRC: 5.0 0\nPrice to be verified\nStructured products (Equities)\nUSD1'000'000\n0.60%\n5.09%\nGROUP\n100.366498.9800989'800\n-1.38%\n28.03.2025\nNOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ON CS\nISIN: XS2252299883  //  Valorn.: 58001077\nStructured products equity  //  Maturity: 15.05.2026  //  PRC: 5.00\nPrice to be verified\nUnderlying:INTERBK LIBOR 3 MTH\nTotal Structured products\nAccrued interest\n6'946'239USD\nUSD108'309\n35.69%\nthereof S tructured products (Bonds)USD5'956'43930.60%\nthereof S tructured products (Equities)USD989'8005.09%\nPrint date 01.04.2025 // Page 12/17\n\nOther assets\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI\nSwift CBLUCH2280A",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "CH1908490000",
+        "name": "IBAN:",
+        "marketValue": 6069,
+        "currency": "USD",
+        "confidence": 0.63,
+        "method": "ultra_accurate_line",
+        "rawValue": "6'069.77",
+        "matchStrategy": "line",
+        "isinSource": "pdf-parse_separated",
+        "valueSource": "pdf-parse_currency",
+        "validationScore": 0.88,
+        "validationNotes": [
+          "valid_isin_format",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "1029// info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nCash accounts credit\nUSD6'069.770.03%\nCash Accounts  //  366223-CC-0002\nIBAN: CH1908490000366223002\nPRC: 1.00\n6'070\nORDINARY USD\nMoney market\nUSD100'000.00\n-2.30%\n0.50%\nISIN: XS2993414619  //  Valorn.: 140610687\nMM secs discounted  //  Maturity: 28.03.2035  //  PRC: 5.00\n100.000097.700097'700\n-2.30%\n31.03.2025\nRBC LONDON 0% NOTES 2025-28.03.2035\nTotal Liquidity103'770USD0.53%\nthereof Cash accountsUSD6'0700.03%\nthereof Money m arketUSD97'7000.50%\nPrint date 01.04.2025 // Page 5/17\n\nBonds\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeou",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2754416860",
+        "name": "ISIN:",
+        "marketValue": 200097,
+        "currency": "CHF",
+        "confidence": 0.45,
+        "method": "ultra_accurate_position",
+        "rawValue": "200097",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_simple",
+        "validationScore": 0.8500000000000001,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "7.75%\nSE.195\n99.099098.37001'507'550\n-0.74%\n31.03.2025\n32'000\nHARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028\nISIN: XS2665592833  //  Valorn.: 128829182\nOrdinary Bonds  //  Maturity: 18.09.2028\nCoupon: 18.9  //  Annual  4%  //  Days: 192\nPRC: 5.00\nUSD690'000\n2.26%\n3.79%\nISIN: XS2692298537  //  Valorn.: 129157183\nOrdinary Bonds  //  Maturity: 07.11.2029\nYTM: -1.44  //  PRC: 5.00\n100.1000106.9200737'748\n6.81%\n31.03.2025\nGOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P\nUSD100'000\n1.16%\n0.50%\nISIN: XS2754416860  //  Valorn.: 132648671\nOrdinary Bonds  //  Maturity: 17.01.2030\nCoupon: 17.1  //  Annual  5.238%  //  Days: 73\nPRC: 5.00\n100.200097.140098'202\n-3.05%\n31.03.2025\n1'062\nLUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30\nUSD100'000\n2.24%\n0.53%\nISIN: XS2761230684  //  Valorn.: 112288215\nZero Bonds  //  Maturity: 13.02.2030\nCoupon: 13.2  //  Annual  2%  //  Days: 47  //  YTM: 6.89\nPRC: 5.00\n100.2000102.2448102'506\n2.04%\n28.03.2025\n261\nCIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE\nUSD250'00",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2761230684",
+        "name": "ISIN:",
+        "marketValue": 2000102,
+        "currency": "CHF",
+        "confidence": 0.45,
+        "method": "ultra_accurate_position",
+        "rawValue": "2000102",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_simple",
+        "validationScore": 0.8500000000000001,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "000\n2.26%\n3.79%\nISIN: XS2692298537  //  Valorn.: 129157183\nOrdinary Bonds  //  Maturity: 07.11.2029\nYTM: -1.44  //  PRC: 5.00\n100.1000106.9200737'748\n6.81%\n31.03.2025\nGOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P\nUSD100'000\n1.16%\n0.50%\nISIN: XS2754416860  //  Valorn.: 132648671\nOrdinary Bonds  //  Maturity: 17.01.2030\nCoupon: 17.1  //  Annual  5.238%  //  Days: 73\nPRC: 5.00\n100.200097.140098'202\n-3.05%\n31.03.2025\n1'062\nLUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30\nUSD100'000\n2.24%\n0.53%\nISIN: XS2761230684  //  Valorn.: 112288215\nZero Bonds  //  Maturity: 13.02.2030\nCoupon: 13.2  //  Annual  2%  //  Days: 47  //  YTM: 6.89\nPRC: 5.00\n100.2000102.2448102'506\n2.04%\n28.03.2025\n261\nCIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE\nUSD250'000\n-2.58%\n1.32%\nISIN: XS2736388732  //  Valorn.: 131799640\nOrdinary Bonds  //  Maturity: 20.12.2031\nDays: 265\nPRC: 5.00\n100.200099.2500256'958\n-0.95%\n31.03.2025\n8'833\nBANK OF AMERICA NOTES 2023-20.12.31 VARIABLE RATE\nPrint date 01.04.2025 // Page 6/17\n\nBonds\nME",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS2736388732",
+        "name": "ISIN:",
+        "marketValue": 50000,
+        "currency": "CHF",
+        "confidence": 0.45,
+        "method": "ultra_accurate_position",
+        "rawValue": "50,000",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "enhanced-preprocessing_standard_comma",
+        "validationScore": 0.8500000000000001,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "orn.: 132648671\nOrdinary Bonds  //  Maturity: 17.01.2030\nCoupon: 17.1  //  Annual  5.238%  //  Days: 73\nPRC: 5.00\n100.200097.140098'202\n-3.05%\n31.03.2025\n1'062\nLUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30\nUSD100'000\n2.24%\n0.53%\nISIN: XS2761230684  //  Valorn.: 112288215\nZero Bonds  //  Maturity: 13.02.2030\nCoupon: 13.2  //  Annual  2%  //  Days: 47  //  YTM: 6.89\nPRC: 5.00\n100.2000102.2448102'506\n2.04%\n28.03.2025\n261\nCIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE\nUSD250'000\n-2.58%\n1.32%\nISIN: XS2736388732  //  Valorn.: 131799640\nOrdinary Bonds  //  Maturity: 20.12.2031\nDays: 265\nPRC: 5.00\n100.200099.2500256'958\n-0.95%\n31.03.2025\n8'833\nBANK OF AMERICA NOTES 2023-20.12.31 VARIABLE RATE\nPrint date 01.04.2025 // Page 6/17\n\nBonds\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI\nSwift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postf",
+          "valueNearby": false,
+          "confidence": 0.5
+        }
+      },
+      {
+        "isin": "XS3035947103",
+        "name": "ISIN:",
+        "marketValue": 6000342,
+        "currency": "CHF",
+        "confidence": 0.45,
+        "method": "ultra_accurate_position",
+        "rawValue": "6000342",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_simple",
+        "validationScore": 0.8500000000000001,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "l  orn.: 126294402\nZero Bonds  //  Maturity: 03.02.2035\nYTM: 0.10  //  PRC: 5.00\n100.100099.000049'500\n-1.10%\n31.03.2025\nGOLDMAN SACHS 0% NOTES 2025-03.02.2035\nUSD1'470'000\n0.72%\n7.61%\nISIN: XS2964611052  //  Valorn.: 141235167\nZero Bonds  //  Maturity: 14.02.2035\nYTM: 5.41  //  PRC: 5.00\n100.0000100.72001'480'584\n0.72%\n31.03.2025\nDEUTSCHE BANK 0 % NOTES 2025-14.02.35\nUSD800'000\n0.00%\n4.11%\nREG S\n100.0000100.0000800'000\n0.00%\n28.03.2025\nWELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36\nISIN: XS3035947103  //  Valorn.: 143578751\nOrdinary Bonds  //  Maturity: 28.03.2036\nPRC: 5.00\nUSD2'581.79\n0.00%\n0.59%\nSP\n81.530444.7800115'613\n-45.08%\n13.09.2024\nPREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB\nISIN: LU2228214107  //  Valorn.: 57282891\nBond Funds / Certificates\nPRC: 3.00\nUSD350'000\n1.14%\n1.76%\nVRN\n100.623797.6000342'643\n-3.00%\n31.03.2025\n1'043\nBK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28\nISIN: CH1269060229  //  Valorn.: 126906022\nStructured Bonds  //  Maturity: 26.05.",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XS0461497009",
+        "name": "ISIN:",
+        "marketValue": 2000102,
+        "currency": "CHF",
+        "confidence": 0.45,
+        "method": "ultra_accurate_position",
+        "rawValue": "2000102",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_simple",
+        "validationScore": 0.8500000000000001,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  istrasse 27 // Postfach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nBonds, Bond funds, Convertible bonds, Interest options\nUSD690'000\n1.54%\n3.65%\nISIN: XS0461497009  //  Valorn.: 130269069\nOrdinary Bonds  //  Maturity: 08.11.2028\nCoupon: 8.11  //  Annual  5.5%  //  Days: 142\nPRC: 5.00\n100.1000100.8900711'110\n0.79%\n31.03.2025\n14'969\nDEUTSCHE BANK NOTES 23-08.11.28 VRN\nUSD140'000\n3.10%\n0.99%\nISIN: XS2746319610  //  Valorn.: 133393503\nOrdinary Bonds  //  Maturity: 01.03.2030\nCoupon: Annual  32.46%  //  Days: 385  //  YTM: 16.79\nPRC: 5.00\n100.2000102.5000192'100\n2.30%\n31.03.2025\n48'600\nSOCIETE GENERALE 32.46 % NOTES 2024-01.03.30 REG S\nTotal Bonds",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      },
+      {
+        "isin": "XD0466760473",
+        "name": "ISIN:",
+        "marketValue": 16690,
+        "currency": "CHF",
+        "confidence": 0.45,
+        "method": "ultra_accurate_position",
+        "rawValue": "16,690",
+        "matchStrategy": "position",
+        "isinSource": "enhanced-preprocessing_standard",
+        "valueSource": "pdf-parse_standard_comma",
+        "validationScore": 0.8500000000000001,
+        "validationNotes": [
+          "valid_isin_format",
+          "reasonable_value_range",
+          "currency_consistent",
+          "context_verified"
+        ],
+        "contextVerification": {
+          "found": true,
+          "context": "ach 16  40 // 8027Zürich_Switzerland // Hauptsitz Via Canova 16,6901 Lugano_Switzerland\nCurrency\nin %\nof assets\nPerf Total\nPerf Market\nPerf Currency\nValuation in price currency\nThereof accruals\nCountervalue USD\nActual Price\nActual Ex. Rate\nPrice Date\nAverage Acquisition price\nAverage Acquisition FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nHedge Funds & Private Equity\nUSD204.071\n0.00%\n0.13%\nR\n1'008.3748128.039526'129\n-87.30%\n31.12.2023\nEXIGENT ENHANCED INCOME FUND LTD SHS A SERIES 2019 1\nISIN: XD0466760473  //  Valorn.: 46676047\nHedge Funds & Private Equity  //  PRC: 5.00\nPrice to be verified\nTotal Other assets26'129USD0.13%\nthereof Hedge funds &  P rivate EquityUSD26'1290.13%\nPrint date 01.04.2025 // Page 13/17\n\nExpected Cash Flows (Overview)\nMESSOS ENTERPRISES LTD.\nValuation as of 31.03.2025\nClient Number 366223\naeouiAEOUIaeouiAEOUI\nSwift CBLUCH2280A// Clearing 8490 // CHE-105.962.409IVA\nTel. +41 44 21810 20// Fax +41442181029// info@corner.ch // corner.ch\nCornèr Banca SA\n// Töd  is",
+          "valueNearby": true,
+          "confidence": 0.9
+        }
+      }
+    ],
+    "average_confidence": 0.9470000000000001,
+    "high_confidence_securities": 40
+  },
+  "ultra_accurate_metrics": {
+    "value_accuracy": 70.51,
+    "count_accuracy": 100,
+    "overall_accuracy": 76.41,
+    "confidence_score": 0.95,
+    "target_achieved": false,
+    "optimization_methods": [
+      "multi_method_text_extraction",
+      "advanced_pattern_recognition",
+      "enhanced_isin_detection",
+      "improved_number_extraction",
+      "multi_strategy_matching",
+      "context_validation",
+      "accuracy_optimization"
+    ]
+  },
+  "technical_details": {
+    "mistral_ocr_enabled": false,
+    "extraction_strategies": [
+      "context",
+      "position",
+      "line"
+    ],
+    "validation_methods": [
+      "format_validation",
+      "value_range_check",
+      "currency_consistency",
+      "context_verification"
+    ],
+    "confidence_distribution": {
+      "high": 40,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "status": "GOOD"
+}

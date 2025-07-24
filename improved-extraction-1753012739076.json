@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "method": "improved-messos-extractor",
+  "securities": [],
+  "total_value": 0,
+  "expected_total": 19464431,
+  "accuracy": 0,
+  "text_length": 30376,
+  "portfolio_lines": 3
+}

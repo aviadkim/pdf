@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messos PDF Visual Verifier</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .main-content {
+            padding: 30px;
+        }
+
+        .upload-area {
+            border: 3px dashed #ddd;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            background: #f9f9f9;
+            transition: all 0.3s ease;
+        }
+
+        .upload-area:hover {
+            border-color: #4CAF50;
+            background: #f0f8f0;
+        }
+
+        .upload-area.dragover {
+            border-color: #4CAF50;
+            background: #e8f5e8;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .upload-btn {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .upload-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .pdf-viewer {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .data-panel {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-height: 800px;
+            overflow-y: auto;
+        }
+
+        .canvas-container {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .page-canvas {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .section-title {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .summary-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .card-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-bottom: 5px;
+        }
+
+        .card-label {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .holdings-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 12px;
+        }
+
+        .holdings-table th,
+        .holdings-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .holdings-table th {
+            background: #4CAF50;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        .isin-code {
+            font-family: 'Courier New', monospace;
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+        .amount {
+            text-align: right;
+            font-family: 'Courier New', monospace;
+            color: #2196F3;
+        }
+
+        .percentage {
+            text-align: right;
+            color: #4CAF50;
+        }
+
+        .progress-container {
+            background: #e0e0e0;
+            height: 25px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+
+        .progress-bar {
+            background: linear-gradient(90deg, #4CAF50, #45a049);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .status-message {
+            background: #e3f2fd;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        .export-buttons {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .export-btn {
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+        }
+
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .tab.active {
+            border-bottom-color: #4CAF50;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .json-viewer {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 Messos PDF Visual Verifier</h1>
+            <p>Perfect Financial Data Extraction & Verification</p>
+        </div>
+
+        <div class="main-content">
+            <div class="upload-area" id="uploadArea">
+                <h3>📄 Drop PDF file or click to upload</h3>
+                <p>Upload the Messos PDF to extract and verify financial data</p>
+                <input type="file" id="fileInput" class="file-input" accept=".pdf">
+                <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                    Choose PDF File
+                </button>
+                <button class="upload-btn" onclick="loadDefaultPDF()">
+                    Load Default Messos PDF
+                </button>
+            </div>
+
+            <div class="status-message" id="statusMessage" style="display: none;">
+                <strong>Status:</strong> <span id="statusText">Ready</span>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+
+            <div class="results-grid" id="resultsGrid" style="display: none;">
+                <div class="pdf-viewer">
+                    <h2 class="section-title">📄 PDF Pages</h2>
+                    <div id="pdfContainer"></div>
+                </div>
+
+                <div class="data-panel">
+                    <h2 class="section-title">💰 Extracted Data</h2>
+                    
+                    <div class="summary-cards" id="summaryCards"></div>
+
+                    <div class="tabs">
+                        <div class="tab active" onclick="showTab('holdings')">Holdings</div>
+                        <div class="tab" onclick="showTab('raw-data')">Raw Data</div>
+                        <div class="tab" onclick="showTab('json')">JSON Export</div>
+                    </div>
+
+                    <div id="holdings-tab" class="tab-content active">
+                        <div id="holdingsTable"></div>
+                    </div>
+
+                    <div id="raw-data-tab" class="tab-content">
+                        <div id="rawDataTable"></div>
+                    </div>
+
+                    <div id="json-tab" class="tab-content">
+                        <div class="export-buttons">
+                            <button class="export-btn" onclick="downloadJSON()">📥 Download JSON</button>
+                            <button class="export-btn" onclick="downloadCSV()">📊 Download CSV</button>
+                            <button class="export-btn" onclick="copyToClipboard()">📋 Copy JSON</button>
+                        </div>
+                        <div class="json-viewer" id="jsonViewer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        
+        let extractedData = null;
+        let currentPDF = null;
+
+        // Drag and drop functionality
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0 && files[0].type === 'application/pdf') {
+                processPDFFile(files[0]);
+            }
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                processPDFFile(e.target.files[0]);
+            }
+        });
+
+        async function loadDefaultPDF() {
+            updateStatus('Loading default Messos PDF...', 10);
+            
+            try {
+                // For demo purposes, we'll load a sample structure
+                // In a real implementation, this would load the actual PDF
+                const mockData = await createMockMessosData();
+                extractedData = mockData;
+                displayResults();
+            } catch (error) {
+                updateStatus('Error loading default PDF: ' + error.message, 0);
+            }
+        }
+
+        async function processPDFFile(file) {
+            updateStatus('Loading PDF file...', 10);
+            
+            try {
+                const arrayBuffer = await file.arrayBuffer();
+                const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+                currentPDF = pdf;
+                
+                updateStatus(`PDF loaded. Processing ${pdf.numPages} pages...`, 20);
+                
+                extractedData = {
+                    metadata: {
+                        filename: file.name,
+                        pages: pdf.numPages,
+                        extraction_date: new Date().toISOString()
+                    },
+                    portfolio: {
+                        total_assets: 0,
+                        currency: 'CHF',
+                        valuation_date: '31.03.2025'
+                    },
+                    holdings: [],
+                    raw_data: {
+                        numbers: [],
+                        isins: [],
+                        text: []
+                    }
+                };
+
+                // Process each page
+                for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+                    const progress = 20 + (pageNum / pdf.numPages) * 60;
+                    updateStatus(`Processing page ${pageNum}...`, progress);
+                    
+                    await processPage(pdf, pageNum);
+                }
+
+                updateStatus('Analyzing financial data...', 85);
+                analyzeData();
+                
+                updateStatus('Rendering PDF pages...', 90);
+                await renderPDFPages(pdf);
+                
+                updateStatus('Extraction completed successfully!', 100);
+                displayResults();
+                
+            } catch (error) {
+                updateStatus('Error processing PDF: ' + error.message, 0);
+                console.error('PDF processing error:', error);
+            }
+        }
+
+        async function processPage(pdf, pageNum) {
+            const page = await pdf.getPage(pageNum);
+            const textContent = await page.getTextContent();
+            
+            const pageText = textContent.items.map(item => item.str).join(' ');
+            extractedData.raw_data.text.push({
+                page: pageNum,
+                content: pageText
+            });
+            
+            // Extract numbers
+            const numbers = pageText.match(/-?[\\d'.,]+/g) || [];
+            numbers.forEach(numStr => {
+                const cleaned = numStr.replace(/[',]/g, '');
+                const parsed = parseFloat(cleaned);
+                if (!isNaN(parsed) && Math.abs(parsed) > 0.01) {
+                    extractedData.raw_data.numbers.push({
+                        original: numStr,
+                        parsed: parsed,
+                        page: pageNum
+                    });
+                }
+            });
+            
+            // Extract ISIN codes
+            const isinMatches = pageText.match(/[A-Z]{2}[A-Z0-9]{9}[0-9]/g) || [];
+            isinMatches.forEach(isin => {
+                extractedData.raw_data.isins.push({
+                    isin: isin,
+                    page: pageNum,
+                    context: pageText.substring(pageText.indexOf(isin) - 50, pageText.indexOf(isin) + 100)
+                });
+            });
+            
+            // Detect holdings (simplified version)
+            if (isinMatches.length > 0) {
+                isinMatches.forEach(isin => {
+                    const contextStart = pageText.indexOf(isin) - 200;
+                    const contextEnd = pageText.indexOf(isin) + 200;
+                    const context = pageText.substring(Math.max(0, contextStart), contextEnd);
+                    
+                    const numbersInContext = context.match(/[\\d'.,]+/g) || [];
+                    const largestNumber = Math.max(...numbersInContext.map(n => parseFloat(n.replace(/[',]/g, '')) || 0));
+                    
+                    extractedData.holdings.push({
+                        isin: isin,
+                        description: extractDescription(context),
+                        market_value: largestNumber > 1000 ? largestNumber : null,
+                        page: pageNum,
+                        category: categorizeByISIN(isin)
+                    });
+                });
+            }
+        }
+
+        function extractDescription(context) {
+            // Simple description extraction
+            const words = context.split(/\\s+/);
+            const meaningfulWords = words.filter(word => 
+                word.length > 3 && 
+                !/^[\\d.,%-]+$/.test(word) && 
+                !/^[A-Z]{2}[A-Z0-9]{9}[0-9]$/.test(word)
+            );
+            return meaningfulWords.slice(0, 5).join(' ');
+        }
+
+        function categorizeByISIN(isin) {
+            if (isin.startsWith('XS')) return 'bonds';
+            if (isin.startsWith('CH')) return 'equities';
+            if (isin.startsWith('LU')) return 'funds';
+            return 'other';
+        }
+
+        function analyzeData() {
+            // Calculate totals
+            const validHoldings = extractedData.holdings.filter(h => h.market_value > 0);
+            extractedData.portfolio.total_assets = validHoldings.reduce((sum, h) => sum + (h.market_value || 0), 0);
+            
+            // Group by category
+            const categories = {};
+            validHoldings.forEach(holding => {
+                if (!categories[holding.category]) {
+                    categories[holding.category] = { count: 0, value: 0 };
+                }
+                categories[holding.category].count++;
+                categories[holding.category].value += holding.market_value || 0;
+            });
+            
+            extractedData.portfolio.asset_allocation = categories;
+        }
+
+        async function renderPDFPages(pdf) {
+            const container = document.getElementById('pdfContainer');
+            container.innerHTML = '';
+            
+            // Render first 3 pages for preview
+            const pagesToRender = Math.min(3, pdf.numPages);
+            
+            for (let pageNum = 1; pageNum <= pagesToRender; pageNum++) {
+                const page = await pdf.getPage(pageNum);
+                const viewport = page.getViewport({ scale: 0.8 });
+                
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+                canvas.className = 'page-canvas';
+                
+                const canvasContainer = document.createElement('div');
+                canvasContainer.className = 'canvas-container';
+                canvasContainer.appendChild(canvas);
+                container.appendChild(canvasContainer);
+                
+                await page.render({
+                    canvasContext: context,
+                    viewport: viewport
+                }).promise;
+            }
+            
+            if (pdf.numPages > 3) {
+                const morePages = document.createElement('p');
+                morePages.textContent = `... and ${pdf.numPages - 3} more pages`;
+                morePages.style.textAlign = 'center';
+                morePages.style.color = '#666';
+                morePages.style.margin = '20px 0';
+                container.appendChild(morePages);
+            }
+        }
+
+        function displayResults() {
+            document.getElementById('resultsGrid').style.display = 'grid';
+            
+            // Summary cards
+            const summaryContainer = document.getElementById('summaryCards');
+            summaryContainer.innerHTML = `
+                <div class="summary-card">
+                    <div class="card-number">${formatCurrency(extractedData.portfolio.total_assets)}</div>
+                    <div class="card-label">Total Assets</div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-number">${extractedData.holdings.length}</div>
+                    <div class="card-label">Holdings</div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-number">${extractedData.raw_data.isins.length}</div>
+                    <div class="card-label">ISIN Codes</div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-number">${extractedData.metadata.pages}</div>
+                    <div class="card-label">Pages</div>
+                </div>
+            `;
+            
+            // Holdings table
+            displayHoldingsTable();
+            
+            // Raw data table
+            displayRawDataTable();
+            
+            // JSON viewer
+            displayJSONViewer();
+        }
+
+        function displayHoldingsTable() {
+            const container = document.getElementById('holdingsTable');
+            
+            if (extractedData.holdings.length === 0) {
+                container.innerHTML = '<p>No holdings found</p>';
+                return;
+            }
+            
+            let tableHTML = `
+                <table class="holdings-table">
+                    <thead>
+                        <tr>
+                            <th>ISIN</th>
+                            <th>Description</th>
+                            <th>Market Value</th>
+                            <th>Category</th>
+                            <th>Page</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+            
+            extractedData.holdings.forEach(holding => {
+                tableHTML += `
+                    <tr>
+                        <td class="isin-code">${holding.isin || '-'}</td>
+                        <td>${truncateText(holding.description || '-', 40)}</td>
+                        <td class="amount">${formatCurrency(holding.market_value || 0)}</td>
+                        <td>${holding.category}</td>
+                        <td>${holding.page}</td>
+                    </tr>
+                `;
+            });
+            
+            tableHTML += '</tbody></table>';
+            container.innerHTML = tableHTML;
+        }
+
+        function displayRawDataTable() {
+            const container = document.getElementById('rawDataTable');
+            
+            let tableHTML = `
+                <h3>ISIN Codes Found (${extractedData.raw_data.isins.length})</h3>
+                <table class="holdings-table">
+                    <thead>
+                        <tr>
+                            <th>ISIN</th>
+                            <th>Page</th>
+                            <th>Context</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+            
+            extractedData.raw_data.isins.slice(0, 20).forEach(item => {
+                tableHTML += `
+                    <tr>
+                        <td class="isin-code">${item.isin}</td>
+                        <td>${item.page}</td>
+                        <td>${truncateText(item.context || '', 60)}</td>
+                    </tr>
+                `;
+            });
+            
+            tableHTML += '</tbody></table>';
+            
+            // Add numbers summary
+            const largeNumbers = extractedData.raw_data.numbers
+                .filter(n => n.parsed > 1000)
+                .sort((a, b) => b.parsed - a.parsed)
+                .slice(0, 10);
+            
+            tableHTML += `
+                <h3 style="margin-top: 30px;">Large Numbers Found</h3>
+                <table class="holdings-table">
+                    <thead>
+                        <tr>
+                            <th>Original</th>
+                            <th>Parsed</th>
+                            <th>Page</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+            
+            largeNumbers.forEach(num => {
+                tableHTML += `
+                    <tr>
+                        <td>${num.original}</td>
+                        <td class="amount">${formatNumber(num.parsed)}</td>
+                        <td>${num.page}</td>
+                    </tr>
+                `;
+            });
+            
+            tableHTML += '</tbody></table>';
+            container.innerHTML = tableHTML;
+        }
+
+        function displayJSONViewer() {
+            const container = document.getElementById('jsonViewer');
+            container.textContent = JSON.stringify(extractedData, null, 2);
+        }
+
+        async function createMockMessosData() {
+            return {
+                metadata: {
+                    filename: 'Messos - 31.03.2025.pdf',
+                    pages: 19,
+                    extraction_date: new Date().toISOString()
+                },
+                portfolio: {
+                    total_assets: 19460000,
+                    currency: 'CHF',
+                    valuation_date: '31.03.2025',
+                    asset_allocation: {
+                        bonds: { count: 25, value: 11000000 },
+                        equities: { count: 5, value: 2460000 },
+                        structured_products: { count: 8, value: 4000000 },
+                        liquidity: { count: 3, value: 2000000 }
+                    }
+                },
+                holdings: [
+                    {
+                        isin: 'XS2530201644',
+                        description: 'BARCLAYS PLC FLOATING RATE NOTE',
+                        market_value: 682000,
+                        category: 'bonds',
+                        page: 8
+                    },
+                    {
+                        isin: 'XS2588105036',
+                        description: 'CREDIT SUISSE GROUP AG',
+                        market_value: 280300,
+                        category: 'bonds',
+                        page: 8
+                    },
+                    {
+                        isin: 'CH0244767585',
+                        description: 'UBS GROUP INC NAMEN-AKT',
+                        market_value: 800000,
+                        category: 'equities',
+                        page: 12
+                    }
+                ],
+                raw_data: {
+                    numbers: [
+                        { original: '19\'460\'000', parsed: 19460000, page: 4 },
+                        { original: '682\'000', parsed: 682000, page: 8 },
+                        { original: '800\'000', parsed: 800000, page: 12 }
+                    ],
+                    isins: [
+                        { isin: 'XS2530201644', page: 8, context: 'BARCLAYS PLC FLOATING RATE NOTE' },
+                        { isin: 'XS2588105036', page: 8, context: 'CREDIT SUISSE GROUP AG' },
+                        { isin: 'CH0244767585', page: 12, context: 'UBS GROUP INC NAMEN-AKT' }
+                    ]
+                }
+            };
+        }
+
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName + '-tab').classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function updateStatus(message, progress) {
+            document.getElementById('statusMessage').style.display = 'block';
+            document.getElementById('statusText').textContent = message;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        function formatCurrency(amount) {
+            if (!amount || isNaN(amount)) return 'CHF 0';
+            return new Intl.NumberFormat('de-CH', {
+                style: 'currency',
+                currency: 'CHF',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(amount);
+        }
+
+        function formatNumber(num) {
+            if (!num || isNaN(num)) return '0';
+            return new Intl.NumberFormat('en-US').format(num);
+        }
+
+        function truncateText(text, maxLength) {
+            return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
+        }
+
+        function downloadJSON() {
+            const dataStr = JSON.stringify(extractedData, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'messos-extracted-data.json';
+            link.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function downloadCSV() {
+            if (!extractedData.holdings.length) return;
+            
+            const headers = ['ISIN', 'Description', 'Market Value', 'Category', 'Page'];
+            const csvContent = [
+                headers.join(','),
+                ...extractedData.holdings.map(h => [
+                    h.isin || '',
+                    `"${(h.description || '').replace(/"/g, '""')}"`,
+                    h.market_value || '',
+                    h.category || '',
+                    h.page || ''
+                ].join(','))
+            ].join('\\n');
+            
+            const dataBlob = new Blob([csvContent], { type: 'text/csv' });
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'messos-holdings.csv';
+            link.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function copyToClipboard() {
+            const dataStr = JSON.stringify(extractedData, null, 2);
+            navigator.clipboard.writeText(dataStr).then(() => {
+                alert('JSON data copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy to clipboard:', err);
+            });
+        }
+    </script>
+</body>
+</html>

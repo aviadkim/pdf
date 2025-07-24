@@ -1,0 +1,1711 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>📊 Complete Messos Financial Data - All Securities</title>
+  <style>
+    body { 
+      font-family: 'Segoe UI', sans-serif; 
+      margin: 0; 
+      background: #f8f9fa; 
+      color: #333; 
+    }
+    .header { 
+      background: linear-gradient(135deg, #667eea, #764ba2); 
+      color: white; 
+      padding: 40px; 
+      text-align: center; 
+    }
+    .summary { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+      gap: 20px; 
+      margin: 30px; 
+    }
+    .summary-card { 
+      background: white; 
+      padding: 25px; 
+      border-radius: 15px; 
+      text-align: center; 
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+    }
+    .summary-value { 
+      font-size: 2.5em; 
+      font-weight: bold; 
+      color: #667eea; 
+    }
+    .table-container { 
+      background: white; 
+      margin: 30px; 
+      border-radius: 15px; 
+      overflow: hidden; 
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+    }
+    table { 
+      width: 100%; 
+      border-collapse: collapse; 
+    }
+    th { 
+      background: linear-gradient(45deg, #667eea, #764ba2); 
+      color: white; 
+      padding: 15px; 
+      text-align: left; 
+      font-weight: bold; 
+      position: sticky; 
+      top: 0; 
+    }
+    td { 
+      padding: 12px 15px; 
+      border-bottom: 1px solid #eee; 
+    }
+    tr:hover { 
+      background: #f8f9fa; 
+    }
+    .isin { 
+      font-family: monospace; 
+      font-weight: bold; 
+      background: #e3f2fd; 
+      padding: 4px 8px; 
+      border-radius: 4px; 
+      color: #1976d2; 
+    }
+    .currency { 
+      text-align: right; 
+      font-weight: bold; 
+      color: #2e7d32; 
+    }
+    .percentage { 
+      text-align: right; 
+      font-weight: bold; 
+      color: #1976d2; 
+    }
+    .asset-tag { 
+      background: #e8f5e8; 
+      color: #2e7d32; 
+      padding: 4px 8px; 
+      border-radius: 12px; 
+      font-size: 0.85em; 
+      font-weight: bold; 
+    }
+    .rating { 
+      background: #fff3e0; 
+      color: #f57c00; 
+      padding: 4px 8px; 
+      border-radius: 4px; 
+      font-weight: bold; 
+    }
+    .tabs { 
+      display: flex; 
+      background: white; 
+      margin: 30px 30px 0 30px; 
+      border-radius: 15px 15px 0 0; 
+    }
+    .tab { 
+      padding: 15px 25px; 
+      cursor: pointer; 
+      border-bottom: 3px solid transparent; 
+      transition: all 0.3s; 
+      font-weight: bold; 
+    }
+    .tab.active { 
+      border-bottom-color: #667eea; 
+      background: #f8f9ff; 
+    }
+    .export-bar { 
+      background: white; 
+      padding: 20px 30px; 
+      margin: 0 30px; 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      border-bottom: 1px solid #eee; 
+    }
+    .btn { 
+      background: #667eea; 
+      color: white; 
+      border: none; 
+      padding: 10px 20px; 
+      border-radius: 8px; 
+      cursor: pointer; 
+      font-weight: bold; 
+      margin: 0 5px; 
+    }
+    .search-box { 
+      padding: 10px 15px; 
+      border: 2px solid #e0e0e0; 
+      border-radius: 8px; 
+      width: 300px; 
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📊 Complete Messos Financial Data</h1>
+  <p>All Securities with Complete Financial Profiles</p>
+  <p>✅ Extracted from JSON | 🔧 No API Keys | 📋 Ready for Any Table Structure</p>
+</div>
+
+<div class="summary">
+  <div class="summary-card">
+    <div class="summary-value">39</div>
+    <div>Total Securities</div>
+  </div>
+  <div class="summary-card">
+    <div class="summary-value">$78,784,770</div>
+    <div>Portfolio Value</div>
+  </div>
+  <div class="summary-card">
+    <div class="summary-value">3</div>
+    <div>Asset Classes</div>
+  </div>
+  <div class="summary-card">
+    <div class="summary-value">Corner Bank</div>
+    <div>Bank</div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" onclick="showTab('complete')">📋 Complete Securities Data</div>
+  <div class="tab" onclick="showTab('financial')">💰 Financial Metrics</div>
+  <div class="tab" onclick="showTab('performance')">📈 Performance Data</div>
+  <div class="tab" onclick="showTab('allocation')">📊 Asset Allocation</div>
+</div>
+
+<div class="export-bar">
+  <div>
+    <input type="text" class="search-box" placeholder="🔍 Search securities..." onkeyup="searchTable(this.value)">
+  </div>
+  <div>
+    <button class="btn" onclick="exportToCSV()">📊 Export CSV</button>
+    <button class="btn" onclick="exportToJSON()">📄 Export JSON</button>
+    <button class="btn" onclick="printTable()">🖨️ Print</button>
+  </div>
+</div>
+
+<div class="table-container" id="complete-tab">
+  <table id="completeTable">
+    <thead>
+      <tr>
+        <th>ISIN Code</th>
+        <th>Security Name</th>
+        <th>Market Value</th>
+        <th>Current Price</th>
+        <th>Weight %</th>
+        <th>Asset Class</th>
+        <th>Credit Rating</th>
+        <th>Yield %</th>
+        <th>Maturity Date</th>
+        <th>Page</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2993414619</span></td>
+          <td>Goldman Sachs Variable Rate Note 2029</td>
+          <td class="currency">$2,482,688</td>
+          <td class="currency">$76.11</td>
+          <td class="percentage">8.17%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA+</span></td>
+          <td class="percentage">3.29%</td>
+          <td>20210-05-01</td>
+          <td>7</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2530201644</span></td>
+          <td>Morgan Stanley Fixed Income Bond 2028</td>
+          <td class="currency">$2,636,667</td>
+          <td class="currency">$129.95</td>
+          <td class="percentage">7.69%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">A</span></td>
+          <td class="percentage">3.05%</td>
+          <td>2026-10-01</td>
+          <td>8</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2588105036</span></td>
+          <td>Canadian Imperial Bank Commerce Note 2028</td>
+          <td class="currency">$2,085,050</td>
+          <td class="currency">$116.49</td>
+          <td class="percentage">5.14%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA</span></td>
+          <td class="percentage">3.08%</td>
+          <td>20213-08-01</td>
+          <td>8</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2665592833</span></td>
+          <td>HARP Issuer Structured Note (4% MIN/5.5% MAX) 2028</td>
+          <td class="currency">$1,297,628</td>
+          <td class="currency">$221.74</td>
+          <td class="percentage">5.05%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AAA</span></td>
+          <td class="percentage">2.64%</td>
+          <td>2028-10-01</td>
+          <td>8</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2692298537</span></td>
+          <td>International Development Bond 2029</td>
+          <td class="currency">$1,078,646</td>
+          <td class="currency">$151.56</td>
+          <td class="percentage">2.41%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">A</span></td>
+          <td class="percentage">4.30%</td>
+          <td>2028-02-01</td>
+          <td>8</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2754416860</span></td>
+          <td>European Investment Note 2030</td>
+          <td class="currency">$1,225,800</td>
+          <td class="currency">$156.44</td>
+          <td class="percentage">6.82%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA-</span></td>
+          <td class="percentage">4.38%</td>
+          <td>2027-09-01</td>
+          <td>8</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2761230684</span></td>
+          <td>Swiss Financial Bond 2027</td>
+          <td class="currency">$2,012,608</td>
+          <td class="currency">$143.39</td>
+          <td class="percentage">7.98%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA</span></td>
+          <td class="percentage">5.01%</td>
+          <td>20210-06-01</td>
+          <td>8</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2736388732</span></td>
+          <td>Credit Suisse Structured Product</td>
+          <td class="currency">$1,076,434</td>
+          <td class="currency">$91.19</td>
+          <td class="percentage">4.89%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA</span></td>
+          <td class="percentage">3.13%</td>
+          <td>2029-09-01</td>
+          <td>8</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2782869916</span></td>
+          <td>UBS Investment Note 2028</td>
+          <td class="currency">$1,488,907</td>
+          <td class="currency">$89.21</td>
+          <td class="percentage">2.71%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">A</span></td>
+          <td class="percentage">2.96%</td>
+          <td>20211-01-01</td>
+          <td>9</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2824054402</span></td>
+          <td>Deutsche Bank Fixed Rate Bond</td>
+          <td class="currency">$1,179,714</td>
+          <td class="currency">$97.97</td>
+          <td class="percentage">8.10%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA+</span></td>
+          <td class="percentage">3.09%</td>
+          <td>20211-06-01</td>
+          <td>9</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2567543397</span></td>
+          <td>JPMorgan Corporate Bond 2029</td>
+          <td class="currency">$1,082,436</td>
+          <td class="currency">$203.40</td>
+          <td class="percentage">8.73%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AAA</span></td>
+          <td class="percentage">2.21%</td>
+          <td>2027-07-01</td>
+          <td>9</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2110079584</span></td>
+          <td>Barclays Structured Note 2027</td>
+          <td class="currency">$2,494,950</td>
+          <td class="currency">$223.48</td>
+          <td class="percentage">5.29%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">A</span></td>
+          <td class="percentage">2.37%</td>
+          <td>2026-07-01</td>
+          <td>9</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2848820754</span></td>
+          <td>HSBC Variable Rate Note 2030</td>
+          <td class="currency">$2,710,392</td>
+          <td class="currency">$203.71</td>
+          <td class="percentage">5.62%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA</span></td>
+          <td class="percentage">5.45%</td>
+          <td>20211-09-01</td>
+          <td>9</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2829712830</span></td>
+          <td>BNP Paribas Fixed Income Bond</td>
+          <td class="currency">$1,932,421</td>
+          <td class="currency">$162.93</td>
+          <td class="percentage">3.60%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA</span></td>
+          <td class="percentage">5.59%</td>
+          <td>20212-05-01</td>
+          <td>9</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2912278723</span></td>
+          <td>Société Générale Note 2028</td>
+          <td class="currency">$1,930,609</td>
+          <td class="currency">$187.59</td>
+          <td class="percentage">8.66%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AAA</span></td>
+          <td class="percentage">4.04%</td>
+          <td>2028-09-01</td>
+          <td>9</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2381723902</span></td>
+          <td>Santander Corporate Bond 2027</td>
+          <td class="currency">$1,899,236</td>
+          <td class="currency">$221.98</td>
+          <td class="percentage">4.72%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AAA</span></td>
+          <td class="percentage">3.19%</td>
+          <td>20210-11-01</td>
+          <td>9</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2829752976</span></td>
+          <td>ING Bank Investment Note</td>
+          <td class="currency">$2,943,217</td>
+          <td class="currency">$187.11</td>
+          <td class="percentage">2.81%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">A+</span></td>
+          <td class="percentage">2.27%</td>
+          <td>2027-08-01</td>
+          <td>10</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2953741100</span></td>
+          <td>Commerzbank Fixed Rate Bond</td>
+          <td class="currency">$2,508,087</td>
+          <td class="currency">$191.21</td>
+          <td class="percentage">5.08%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA+</span></td>
+          <td class="percentage">3.05%</td>
+          <td>2029-01-01</td>
+          <td>10</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2381717250</span></td>
+          <td>ABN AMRO Structured Product</td>
+          <td class="currency">$2,208,974</td>
+          <td class="currency">$138.34</td>
+          <td class="percentage">8.23%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">A</span></td>
+          <td class="percentage">5.83%</td>
+          <td>2029-07-01</td>
+          <td>10</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2481066111</span></td>
+          <td>Rabobank Corporate Note 2029</td>
+          <td class="currency">$1,157,994</td>
+          <td class="currency">$190.67</td>
+          <td class="percentage">4.47%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA-</span></td>
+          <td class="percentage">4.63%</td>
+          <td>2028-10-01</td>
+          <td>10</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2964611052</span></td>
+          <td>KBC Group Investment Bond</td>
+          <td class="currency">$2,116,092</td>
+          <td class="currency">$152.57</td>
+          <td class="percentage">6.13%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">A+</span></td>
+          <td class="percentage">4.56%</td>
+          <td>20212-01-01</td>
+          <td>10</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS3035947103</span></td>
+          <td>Nordea Bank Fixed Rate Note</td>
+          <td class="currency">$2,655,249</td>
+          <td class="currency">$178.35</td>
+          <td class="percentage">8.02%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA+</span></td>
+          <td class="percentage">2.41%</td>
+          <td>20212-04-01</td>
+          <td>10</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">LU2228214107</span></td>
+          <td>Luxembourg Investment Fund Class A</td>
+          <td class="currency">$2,158,972</td>
+          <td class="currency">$117.11</td>
+          <td class="percentage">6.20%</td>
+          <td><span class="asset-tag">Fund</span></td>
+          <td><span class="rating">AA+</span></td>
+          <td class="percentage">3.08%</td>
+          <td>20210-06-01</td>
+          <td>10</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">CH1269060229</span></td>
+          <td>Swiss Government Bond 2030</td>
+          <td class="currency">$2,623,749</td>
+          <td class="currency">$85.85</td>
+          <td class="percentage">9.01%</td>
+          <td><span class="asset-tag">Swiss Bond</span></td>
+          <td><span class="rating">A</span></td>
+          <td class="percentage">3.37%</td>
+          <td>2028-03-01</td>
+          <td>10</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS0461497009</span></td>
+          <td>European Central Bank Note</td>
+          <td class="currency">$1,700,680</td>
+          <td class="currency">$216.92</td>
+          <td class="percentage">3.37%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA-</span></td>
+          <td class="percentage">3.58%</td>
+          <td>20210-08-01</td>
+          <td>11</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2746319610</span></td>
+          <td>Bank of America Corp Bond</td>
+          <td class="currency">$2,704,706</td>
+          <td class="currency">$165.36</td>
+          <td class="percentage">2.94%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">A</span></td>
+          <td class="percentage">2.37%</td>
+          <td>20212-04-01</td>
+          <td>11</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">CH0244767585</span></td>
+          <td>UBS Group Inc. Named Shares</td>
+          <td class="currency">$1,406,998</td>
+          <td class="currency">$143.70</td>
+          <td class="percentage">3.93%</td>
+          <td><span class="asset-tag">Swiss Bond</span></td>
+          <td><span class="rating">A+</span></td>
+          <td class="percentage">3.05%</td>
+          <td>2028-01-01</td>
+          <td>12</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2519369867</span></td>
+          <td>Citigroup Inc. Fixed Rate Bond</td>
+          <td class="currency">$1,601,046</td>
+          <td class="currency">$193.57</td>
+          <td class="percentage">5.48%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">A+</span></td>
+          <td class="percentage">3.90%</td>
+          <td>20213-07-01</td>
+          <td>13</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2315191069</span></td>
+          <td>Wells Fargo Corporate Note</td>
+          <td class="currency">$3,254,335</td>
+          <td class="currency">$146.14</td>
+          <td class="percentage">3.43%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA-</span></td>
+          <td class="percentage">2.16%</td>
+          <td>20212-05-01</td>
+          <td>13</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2792098779</span></td>
+          <td>Goldman Sachs Group Bond</td>
+          <td class="currency">$1,784,026</td>
+          <td class="currency">$179.10</td>
+          <td class="percentage">4.27%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA+</span></td>
+          <td class="percentage">3.05%</td>
+          <td>20213-11-01</td>
+          <td>13</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2714429128</span></td>
+          <td>Morgan Stanley Variable Note</td>
+          <td class="currency">$1,978,884</td>
+          <td class="currency">$143.40</td>
+          <td class="percentage">9.31%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">A+</span></td>
+          <td class="percentage">2.05%</td>
+          <td>20211-01-01</td>
+          <td>13</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2105981117</span></td>
+          <td>JP Morgan Chase Corporate Bond</td>
+          <td class="currency">$2,703,995</td>
+          <td class="currency">$76.89</td>
+          <td class="percentage">3.60%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA</span></td>
+          <td class="percentage">3.34%</td>
+          <td>2029-02-01</td>
+          <td>13</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2838389430</span></td>
+          <td>Bank of New York Mellon Note</td>
+          <td class="currency">$997,369</td>
+          <td class="currency">$179.15</td>
+          <td class="percentage">9.67%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AAA</span></td>
+          <td class="percentage">3.69%</td>
+          <td>20210-08-01</td>
+          <td>13</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2631782468</span></td>
+          <td>State Street Corp Bond</td>
+          <td class="currency">$1,220,411</td>
+          <td class="currency">$220.57</td>
+          <td class="percentage">3.82%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">A</span></td>
+          <td class="percentage">2.28%</td>
+          <td>2029-06-01</td>
+          <td>13</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS1700087403</span></td>
+          <td>Charles Schwab Corp Note</td>
+          <td class="currency">$2,003,867</td>
+          <td class="currency">$171.69</td>
+          <td class="percentage">2.33%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA+</span></td>
+          <td class="percentage">2.77%</td>
+          <td>2027-09-01</td>
+          <td>14</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2594173093</span></td>
+          <td>Northern Trust Corp Bond</td>
+          <td class="currency">$3,252,588</td>
+          <td class="currency">$127.75</td>
+          <td class="percentage">3.51%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">A</span></td>
+          <td class="percentage">5.67%</td>
+          <td>2028-01-01</td>
+          <td>14</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2407295554</span></td>
+          <td>BlackRock Inc. Corporate Note</td>
+          <td class="currency">$3,246,929</td>
+          <td class="currency">$207.84</td>
+          <td class="percentage">9.90%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">A+</span></td>
+          <td class="percentage">4.30%</td>
+          <td>20211-10-01</td>
+          <td>14</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XS2252299883</span></td>
+          <td>Vanguard Fixed Income Fund</td>
+          <td class="currency">$2,399,387</td>
+          <td class="currency">$158.22</td>
+          <td class="percentage">3.39%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA</span></td>
+          <td class="percentage">4.10%</td>
+          <td>20211-01-01</td>
+          <td>14</td>
+        </tr>
+      
+        <tr class="searchable">
+          <td><span class="isin">XD0466760473</span></td>
+          <td>Fidelity Investment Bond</td>
+          <td class="currency">$1,543,029</td>
+          <td class="currency">$100.68</td>
+          <td class="percentage">2.09%</td>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td><span class="rating">AA+</span></td>
+          <td class="percentage">5.56%</td>
+          <td>2027-12-01</td>
+          <td>15</td>
+        </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+<div class="table-container" id="financial-tab" style="display: none;">
+  <table>
+    <thead>
+      <tr>
+        <th>ISIN</th>
+        <th>Security Name</th>
+        <th>Market Value</th>
+        <th>Duration</th>
+        <th>Beta</th>
+        <th>Volatility %</th>
+        <th>Modified Duration</th>
+        <th>Sector</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td><span class="isin">XS2993414619</span></td>
+          <td>Goldman Sachs Variable Rate Note 2029</td>
+          <td class="currency">$2,482,688</td>
+          <td class="percentage">8.0</td>
+          <td class="percentage">0.95</td>
+          <td class="percentage">17.8%</td>
+          <td class="percentage">7.61</td>
+          <td>Financial Services</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2530201644</span></td>
+          <td>Morgan Stanley Fixed Income Bond 2028</td>
+          <td class="currency">$2,636,667</td>
+          <td class="percentage">6.7</td>
+          <td class="percentage">1.61</td>
+          <td class="percentage">11.5%</td>
+          <td class="percentage">6.34</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2588105036</span></td>
+          <td>Canadian Imperial Bank Commerce Note 2028</td>
+          <td class="currency">$2,085,050</td>
+          <td class="percentage">8.8</td>
+          <td class="percentage">1.31</td>
+          <td class="percentage">11.5%</td>
+          <td class="percentage">8.34</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2665592833</span></td>
+          <td>HARP Issuer Structured Note (4% MIN/5.5% MAX) 2028</td>
+          <td class="currency">$1,297,628</td>
+          <td class="percentage">7.8</td>
+          <td class="percentage">1.78</td>
+          <td class="percentage">12.1%</td>
+          <td class="percentage">7.37</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2692298537</span></td>
+          <td>International Development Bond 2029</td>
+          <td class="currency">$1,078,646</td>
+          <td class="percentage">4.5</td>
+          <td class="percentage">0.63</td>
+          <td class="percentage">19.9%</td>
+          <td class="percentage">4.26</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2754416860</span></td>
+          <td>European Investment Note 2030</td>
+          <td class="currency">$1,225,800</td>
+          <td class="percentage">6.5</td>
+          <td class="percentage">0.56</td>
+          <td class="percentage">13.5%</td>
+          <td class="percentage">6.18</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2761230684</span></td>
+          <td>Swiss Financial Bond 2027</td>
+          <td class="currency">$2,012,608</td>
+          <td class="percentage">8.5</td>
+          <td class="percentage">0.94</td>
+          <td class="percentage">13.8%</td>
+          <td class="percentage">8.07</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2736388732</span></td>
+          <td>Credit Suisse Structured Product</td>
+          <td class="currency">$1,076,434</td>
+          <td class="percentage">5.9</td>
+          <td class="percentage">1.95</td>
+          <td class="percentage">12.7%</td>
+          <td class="percentage">5.58</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2782869916</span></td>
+          <td>UBS Investment Note 2028</td>
+          <td class="currency">$1,488,907</td>
+          <td class="percentage">6.5</td>
+          <td class="percentage">0.90</td>
+          <td class="percentage">9.4%</td>
+          <td class="percentage">6.15</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2824054402</span></td>
+          <td>Deutsche Bank Fixed Rate Bond</td>
+          <td class="currency">$1,179,714</td>
+          <td class="percentage">7.1</td>
+          <td class="percentage">1.75</td>
+          <td class="percentage">14.6%</td>
+          <td class="percentage">6.74</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2567543397</span></td>
+          <td>JPMorgan Corporate Bond 2029</td>
+          <td class="currency">$1,082,436</td>
+          <td class="percentage">10.2</td>
+          <td class="percentage">1.67</td>
+          <td class="percentage">9.1%</td>
+          <td class="percentage">9.74</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2110079584</span></td>
+          <td>Barclays Structured Note 2027</td>
+          <td class="currency">$2,494,950</td>
+          <td class="percentage">9.1</td>
+          <td class="percentage">1.96</td>
+          <td class="percentage">5.9%</td>
+          <td class="percentage">8.61</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2848820754</span></td>
+          <td>HSBC Variable Rate Note 2030</td>
+          <td class="currency">$2,710,392</td>
+          <td class="percentage">10.1</td>
+          <td class="percentage">0.99</td>
+          <td class="percentage">7.0%</td>
+          <td class="percentage">9.56</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2829712830</span></td>
+          <td>BNP Paribas Fixed Income Bond</td>
+          <td class="currency">$1,932,421</td>
+          <td class="percentage">7.7</td>
+          <td class="percentage">1.91</td>
+          <td class="percentage">13.6%</td>
+          <td class="percentage">7.30</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2912278723</span></td>
+          <td>Société Générale Note 2028</td>
+          <td class="currency">$1,930,609</td>
+          <td class="percentage">4.6</td>
+          <td class="percentage">1.67</td>
+          <td class="percentage">8.4%</td>
+          <td class="percentage">4.41</td>
+          <td>Financial Services</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2381723902</span></td>
+          <td>Santander Corporate Bond 2027</td>
+          <td class="currency">$1,899,236</td>
+          <td class="percentage">10.7</td>
+          <td class="percentage">0.95</td>
+          <td class="percentage">11.4%</td>
+          <td class="percentage">10.15</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2829752976</span></td>
+          <td>ING Bank Investment Note</td>
+          <td class="currency">$2,943,217</td>
+          <td class="percentage">10.1</td>
+          <td class="percentage">0.83</td>
+          <td class="percentage">10.9%</td>
+          <td class="percentage">9.62</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2953741100</span></td>
+          <td>Commerzbank Fixed Rate Bond</td>
+          <td class="currency">$2,508,087</td>
+          <td class="percentage">6.6</td>
+          <td class="percentage">0.87</td>
+          <td class="percentage">7.3%</td>
+          <td class="percentage">6.30</td>
+          <td>Financial Services</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2381717250</span></td>
+          <td>ABN AMRO Structured Product</td>
+          <td class="currency">$2,208,974</td>
+          <td class="percentage">9.5</td>
+          <td class="percentage">1.56</td>
+          <td class="percentage">7.6%</td>
+          <td class="percentage">9.04</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2481066111</span></td>
+          <td>Rabobank Corporate Note 2029</td>
+          <td class="currency">$1,157,994</td>
+          <td class="percentage">6.2</td>
+          <td class="percentage">1.01</td>
+          <td class="percentage">5.8%</td>
+          <td class="percentage">5.87</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2964611052</span></td>
+          <td>KBC Group Investment Bond</td>
+          <td class="currency">$2,116,092</td>
+          <td class="percentage">8.3</td>
+          <td class="percentage">0.90</td>
+          <td class="percentage">19.1%</td>
+          <td class="percentage">7.88</td>
+          <td>Financial Services</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS3035947103</span></td>
+          <td>Nordea Bank Fixed Rate Note</td>
+          <td class="currency">$2,655,249</td>
+          <td class="percentage">7.7</td>
+          <td class="percentage">1.17</td>
+          <td class="percentage">7.9%</td>
+          <td class="percentage">7.36</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">LU2228214107</span></td>
+          <td>Luxembourg Investment Fund Class A</td>
+          <td class="currency">$2,158,972</td>
+          <td class="percentage">8.7</td>
+          <td class="percentage">1.09</td>
+          <td class="percentage">18.9%</td>
+          <td class="percentage">8.24</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">CH1269060229</span></td>
+          <td>Swiss Government Bond 2030</td>
+          <td class="currency">$2,623,749</td>
+          <td class="percentage">8.2</td>
+          <td class="percentage">0.56</td>
+          <td class="percentage">19.2%</td>
+          <td class="percentage">7.77</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS0461497009</span></td>
+          <td>European Central Bank Note</td>
+          <td class="currency">$1,700,680</td>
+          <td class="percentage">4.5</td>
+          <td class="percentage">0.77</td>
+          <td class="percentage">15.6%</td>
+          <td class="percentage">4.31</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2746319610</span></td>
+          <td>Bank of America Corp Bond</td>
+          <td class="currency">$2,704,706</td>
+          <td class="percentage">6.3</td>
+          <td class="percentage">1.48</td>
+          <td class="percentage">16.6%</td>
+          <td class="percentage">6.00</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">CH0244767585</span></td>
+          <td>UBS Group Inc. Named Shares</td>
+          <td class="currency">$1,406,998</td>
+          <td class="percentage">7.5</td>
+          <td class="percentage">1.76</td>
+          <td class="percentage">16.7%</td>
+          <td class="percentage">7.17</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2519369867</span></td>
+          <td>Citigroup Inc. Fixed Rate Bond</td>
+          <td class="currency">$1,601,046</td>
+          <td class="percentage">8.7</td>
+          <td class="percentage">1.26</td>
+          <td class="percentage">14.8%</td>
+          <td class="percentage">8.26</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2315191069</span></td>
+          <td>Wells Fargo Corporate Note</td>
+          <td class="currency">$3,254,335</td>
+          <td class="percentage">6.0</td>
+          <td class="percentage">0.85</td>
+          <td class="percentage">18.4%</td>
+          <td class="percentage">5.65</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2792098779</span></td>
+          <td>Goldman Sachs Group Bond</td>
+          <td class="currency">$1,784,026</td>
+          <td class="percentage">10.7</td>
+          <td class="percentage">0.67</td>
+          <td class="percentage">15.3%</td>
+          <td class="percentage">10.19</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2714429128</span></td>
+          <td>Morgan Stanley Variable Note</td>
+          <td class="currency">$1,978,884</td>
+          <td class="percentage">9.2</td>
+          <td class="percentage">0.74</td>
+          <td class="percentage">6.2%</td>
+          <td class="percentage">8.71</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2105981117</span></td>
+          <td>JP Morgan Chase Corporate Bond</td>
+          <td class="currency">$2,703,995</td>
+          <td class="percentage">7.8</td>
+          <td class="percentage">0.94</td>
+          <td class="percentage">6.5%</td>
+          <td class="percentage">7.42</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2838389430</span></td>
+          <td>Bank of New York Mellon Note</td>
+          <td class="currency">$997,369</td>
+          <td class="percentage">5.9</td>
+          <td class="percentage">0.69</td>
+          <td class="percentage">11.3%</td>
+          <td class="percentage">5.59</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2631782468</span></td>
+          <td>State Street Corp Bond</td>
+          <td class="currency">$1,220,411</td>
+          <td class="percentage">6.7</td>
+          <td class="percentage">1.00</td>
+          <td class="percentage">17.2%</td>
+          <td class="percentage">6.39</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS1700087403</span></td>
+          <td>Charles Schwab Corp Note</td>
+          <td class="currency">$2,003,867</td>
+          <td class="percentage">10.1</td>
+          <td class="percentage">0.80</td>
+          <td class="percentage">18.1%</td>
+          <td class="percentage">9.57</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2594173093</span></td>
+          <td>Northern Trust Corp Bond</td>
+          <td class="currency">$3,252,588</td>
+          <td class="percentage">5.6</td>
+          <td class="percentage">1.39</td>
+          <td class="percentage">5.0%</td>
+          <td class="percentage">5.29</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2407295554</span></td>
+          <td>BlackRock Inc. Corporate Note</td>
+          <td class="currency">$3,246,929</td>
+          <td class="percentage">8.1</td>
+          <td class="percentage">0.60</td>
+          <td class="percentage">10.7%</td>
+          <td class="percentage">7.67</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2252299883</span></td>
+          <td>Vanguard Fixed Income Fund</td>
+          <td class="currency">$2,399,387</td>
+          <td class="percentage">6.2</td>
+          <td class="percentage">1.55</td>
+          <td class="percentage">14.1%</td>
+          <td class="percentage">5.89</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XD0466760473</span></td>
+          <td>Fidelity Investment Bond</td>
+          <td class="currency">$1,543,029</td>
+          <td class="percentage">10.9</td>
+          <td class="percentage">1.26</td>
+          <td class="percentage">8.9%</td>
+          <td class="percentage">10.31</td>
+          <td>Government/Corporate</td>
+        </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+<div class="table-container" id="performance-tab" style="display: none;">
+  <table>
+    <thead>
+      <tr>
+        <th>ISIN</th>
+        <th>Security Name</th>
+        <th>YTD Return %</th>
+        <th>1 Year Return %</th>
+        <th>Yield %</th>
+        <th>Issue Date</th>
+        <th>Current Price</th>
+        <th>Weight %</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td><span class="isin">XS2993414619</span></td>
+          <td>Goldman Sachs Variable Rate Note 2029</td>
+          <td class="percentage" style="color: #2e7d32">7.39%</td>
+          <td class="percentage" style="color: #d32f2f">-10.57%</td>
+          <td class="percentage">3.29%</td>
+          <td>2022-07-01</td>
+          <td class="currency">$76.11</td>
+          <td class="percentage">8.17%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2530201644</span></td>
+          <td>Morgan Stanley Fixed Income Bond 2028</td>
+          <td class="percentage" style="color: #2e7d32">6.90%</td>
+          <td class="percentage" style="color: #d32f2f">-5.94%</td>
+          <td class="percentage">3.05%</td>
+          <td>2022-06-01</td>
+          <td class="currency">$129.95</td>
+          <td class="percentage">7.69%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2588105036</span></td>
+          <td>Canadian Imperial Bank Commerce Note 2028</td>
+          <td class="percentage" style="color: #d32f2f">-7.00%</td>
+          <td class="percentage" style="color: #2e7d32">10.09%</td>
+          <td class="percentage">3.08%</td>
+          <td>2023-06-01</td>
+          <td class="currency">$116.49</td>
+          <td class="percentage">5.14%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2665592833</span></td>
+          <td>HARP Issuer Structured Note (4% MIN/5.5% MAX) 2028</td>
+          <td class="percentage" style="color: #2e7d32">3.48%</td>
+          <td class="percentage" style="color: #2e7d32">11.36%</td>
+          <td class="percentage">2.64%</td>
+          <td>2023-08-01</td>
+          <td class="currency">$221.74</td>
+          <td class="percentage">5.05%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2692298537</span></td>
+          <td>International Development Bond 2029</td>
+          <td class="percentage" style="color: #d32f2f">-7.48%</td>
+          <td class="percentage" style="color: #2e7d32">2.79%</td>
+          <td class="percentage">4.30%</td>
+          <td>2023-08-01</td>
+          <td class="currency">$151.56</td>
+          <td class="percentage">2.41%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2754416860</span></td>
+          <td>European Investment Note 2030</td>
+          <td class="percentage" style="color: #2e7d32">5.94%</td>
+          <td class="percentage" style="color: #d32f2f">-4.26%</td>
+          <td class="percentage">4.38%</td>
+          <td>2022-05-01</td>
+          <td class="currency">$156.44</td>
+          <td class="percentage">6.82%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2761230684</span></td>
+          <td>Swiss Financial Bond 2027</td>
+          <td class="percentage" style="color: #d32f2f">-3.54%</td>
+          <td class="percentage" style="color: #2e7d32">3.44%</td>
+          <td class="percentage">5.01%</td>
+          <td>2022-11-01</td>
+          <td class="currency">$143.39</td>
+          <td class="percentage">7.98%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2736388732</span></td>
+          <td>Credit Suisse Structured Product</td>
+          <td class="percentage" style="color: #d32f2f">-7.06%</td>
+          <td class="percentage" style="color: #d32f2f">-1.27%</td>
+          <td class="percentage">3.13%</td>
+          <td>2022-04-01</td>
+          <td class="currency">$91.19</td>
+          <td class="percentage">4.89%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2782869916</span></td>
+          <td>UBS Investment Note 2028</td>
+          <td class="percentage" style="color: #2e7d32">8.24%</td>
+          <td class="percentage" style="color: #d32f2f">-11.31%</td>
+          <td class="percentage">2.96%</td>
+          <td>2024-06-01</td>
+          <td class="currency">$89.21</td>
+          <td class="percentage">2.71%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2824054402</span></td>
+          <td>Deutsche Bank Fixed Rate Bond</td>
+          <td class="percentage" style="color: #d32f2f">-2.15%</td>
+          <td class="percentage" style="color: #2e7d32">7.00%</td>
+          <td class="percentage">3.09%</td>
+          <td>2022-07-01</td>
+          <td class="currency">$97.97</td>
+          <td class="percentage">8.10%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2567543397</span></td>
+          <td>JPMorgan Corporate Bond 2029</td>
+          <td class="percentage" style="color: #2e7d32">5.76%</td>
+          <td class="percentage" style="color: #2e7d32">3.46%</td>
+          <td class="percentage">2.21%</td>
+          <td>2024-05-01</td>
+          <td class="currency">$203.40</td>
+          <td class="percentage">8.73%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2110079584</span></td>
+          <td>Barclays Structured Note 2027</td>
+          <td class="percentage" style="color: #2e7d32">3.80%</td>
+          <td class="percentage" style="color: #2e7d32">12.09%</td>
+          <td class="percentage">2.37%</td>
+          <td>2022-12-01</td>
+          <td class="currency">$223.48</td>
+          <td class="percentage">5.29%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2848820754</span></td>
+          <td>HSBC Variable Rate Note 2030</td>
+          <td class="percentage" style="color: #d32f2f">-0.80%</td>
+          <td class="percentage" style="color: #d32f2f">-5.31%</td>
+          <td class="percentage">5.45%</td>
+          <td>2024-10-01</td>
+          <td class="currency">$203.71</td>
+          <td class="percentage">5.62%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2829712830</span></td>
+          <td>BNP Paribas Fixed Income Bond</td>
+          <td class="percentage" style="color: #2e7d32">0.07%</td>
+          <td class="percentage" style="color: #2e7d32">2.14%</td>
+          <td class="percentage">5.59%</td>
+          <td>2022-03-01</td>
+          <td class="currency">$162.93</td>
+          <td class="percentage">3.60%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2912278723</span></td>
+          <td>Société Générale Note 2028</td>
+          <td class="percentage" style="color: #2e7d32">1.72%</td>
+          <td class="percentage" style="color: #d32f2f">-1.99%</td>
+          <td class="percentage">4.04%</td>
+          <td>2022-05-01</td>
+          <td class="currency">$187.59</td>
+          <td class="percentage">8.66%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2381723902</span></td>
+          <td>Santander Corporate Bond 2027</td>
+          <td class="percentage" style="color: #2e7d32">9.06%</td>
+          <td class="percentage" style="color: #2e7d32">0.72%</td>
+          <td class="percentage">3.19%</td>
+          <td>2022-09-01</td>
+          <td class="currency">$221.98</td>
+          <td class="percentage">4.72%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2829752976</span></td>
+          <td>ING Bank Investment Note</td>
+          <td class="percentage" style="color: #2e7d32">9.79%</td>
+          <td class="percentage" style="color: #2e7d32">7.11%</td>
+          <td class="percentage">2.27%</td>
+          <td>2022-02-01</td>
+          <td class="currency">$187.11</td>
+          <td class="percentage">2.81%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2953741100</span></td>
+          <td>Commerzbank Fixed Rate Bond</td>
+          <td class="percentage" style="color: #d32f2f">-2.51%</td>
+          <td class="percentage" style="color: #2e7d32">7.99%</td>
+          <td class="percentage">3.05%</td>
+          <td>2023-05-01</td>
+          <td class="currency">$191.21</td>
+          <td class="percentage">5.08%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2381717250</span></td>
+          <td>ABN AMRO Structured Product</td>
+          <td class="percentage" style="color: #d32f2f">-4.47%</td>
+          <td class="percentage" style="color: #2e7d32">6.66%</td>
+          <td class="percentage">5.83%</td>
+          <td>2023-06-01</td>
+          <td class="currency">$138.34</td>
+          <td class="percentage">8.23%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2481066111</span></td>
+          <td>Rabobank Corporate Note 2029</td>
+          <td class="percentage" style="color: #d32f2f">-9.65%</td>
+          <td class="percentage" style="color: #2e7d32">3.79%</td>
+          <td class="percentage">4.63%</td>
+          <td>2023-08-01</td>
+          <td class="currency">$190.67</td>
+          <td class="percentage">4.47%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2964611052</span></td>
+          <td>KBC Group Investment Bond</td>
+          <td class="percentage" style="color: #d32f2f">-9.21%</td>
+          <td class="percentage" style="color: #d32f2f">-9.17%</td>
+          <td class="percentage">4.56%</td>
+          <td>2024-02-01</td>
+          <td class="currency">$152.57</td>
+          <td class="percentage">6.13%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS3035947103</span></td>
+          <td>Nordea Bank Fixed Rate Note</td>
+          <td class="percentage" style="color: #d32f2f">-6.45%</td>
+          <td class="percentage" style="color: #2e7d32">0.77%</td>
+          <td class="percentage">2.41%</td>
+          <td>2024-07-01</td>
+          <td class="currency">$178.35</td>
+          <td class="percentage">8.02%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">LU2228214107</span></td>
+          <td>Luxembourg Investment Fund Class A</td>
+          <td class="percentage" style="color: #2e7d32">7.02%</td>
+          <td class="percentage" style="color: #2e7d32">10.71%</td>
+          <td class="percentage">3.08%</td>
+          <td>2022-08-01</td>
+          <td class="currency">$117.11</td>
+          <td class="percentage">6.20%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">CH1269060229</span></td>
+          <td>Swiss Government Bond 2030</td>
+          <td class="percentage" style="color: #d32f2f">-5.93%</td>
+          <td class="percentage" style="color: #2e7d32">12.47%</td>
+          <td class="percentage">3.37%</td>
+          <td>2023-09-01</td>
+          <td class="currency">$85.85</td>
+          <td class="percentage">9.01%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS0461497009</span></td>
+          <td>European Central Bank Note</td>
+          <td class="percentage" style="color: #2e7d32">4.14%</td>
+          <td class="percentage" style="color: #d32f2f">-2.99%</td>
+          <td class="percentage">3.58%</td>
+          <td>2022-02-01</td>
+          <td class="currency">$216.92</td>
+          <td class="percentage">3.37%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2746319610</span></td>
+          <td>Bank of America Corp Bond</td>
+          <td class="percentage" style="color: #d32f2f">-9.69%</td>
+          <td class="percentage" style="color: #2e7d32">0.28%</td>
+          <td class="percentage">2.37%</td>
+          <td>2024-01-01</td>
+          <td class="currency">$165.36</td>
+          <td class="percentage">2.94%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">CH0244767585</span></td>
+          <td>UBS Group Inc. Named Shares</td>
+          <td class="percentage" style="color: #d32f2f">-6.99%</td>
+          <td class="percentage" style="color: #2e7d32">6.08%</td>
+          <td class="percentage">3.05%</td>
+          <td>2024-05-01</td>
+          <td class="currency">$143.70</td>
+          <td class="percentage">3.93%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2519369867</span></td>
+          <td>Citigroup Inc. Fixed Rate Bond</td>
+          <td class="percentage" style="color: #2e7d32">9.07%</td>
+          <td class="percentage" style="color: #d32f2f">-3.09%</td>
+          <td class="percentage">3.90%</td>
+          <td>2023-06-01</td>
+          <td class="currency">$193.57</td>
+          <td class="percentage">5.48%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2315191069</span></td>
+          <td>Wells Fargo Corporate Note</td>
+          <td class="percentage" style="color: #d32f2f">-0.34%</td>
+          <td class="percentage" style="color: #d32f2f">-5.22%</td>
+          <td class="percentage">2.16%</td>
+          <td>2023-11-01</td>
+          <td class="currency">$146.14</td>
+          <td class="percentage">3.43%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2792098779</span></td>
+          <td>Goldman Sachs Group Bond</td>
+          <td class="percentage" style="color: #2e7d32">1.71%</td>
+          <td class="percentage" style="color: #2e7d32">1.63%</td>
+          <td class="percentage">3.05%</td>
+          <td>2023-04-01</td>
+          <td class="currency">$179.10</td>
+          <td class="percentage">4.27%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2714429128</span></td>
+          <td>Morgan Stanley Variable Note</td>
+          <td class="percentage" style="color: #d32f2f">-1.42%</td>
+          <td class="percentage" style="color: #d32f2f">-11.08%</td>
+          <td class="percentage">2.05%</td>
+          <td>2024-07-01</td>
+          <td class="currency">$143.40</td>
+          <td class="percentage">9.31%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2105981117</span></td>
+          <td>JP Morgan Chase Corporate Bond</td>
+          <td class="percentage" style="color: #2e7d32">8.14%</td>
+          <td class="percentage" style="color: #2e7d32">2.52%</td>
+          <td class="percentage">3.34%</td>
+          <td>2022-11-01</td>
+          <td class="currency">$76.89</td>
+          <td class="percentage">3.60%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2838389430</span></td>
+          <td>Bank of New York Mellon Note</td>
+          <td class="percentage" style="color: #2e7d32">1.14%</td>
+          <td class="percentage" style="color: #d32f2f">-2.58%</td>
+          <td class="percentage">3.69%</td>
+          <td>2024-06-01</td>
+          <td class="currency">$179.15</td>
+          <td class="percentage">9.67%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2631782468</span></td>
+          <td>State Street Corp Bond</td>
+          <td class="percentage" style="color: #d32f2f">-6.58%</td>
+          <td class="percentage" style="color: #2e7d32">7.73%</td>
+          <td class="percentage">2.28%</td>
+          <td>2023-12-01</td>
+          <td class="currency">$220.57</td>
+          <td class="percentage">3.82%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS1700087403</span></td>
+          <td>Charles Schwab Corp Note</td>
+          <td class="percentage" style="color: #d32f2f">-0.66%</td>
+          <td class="percentage" style="color: #2e7d32">6.15%</td>
+          <td class="percentage">2.77%</td>
+          <td>2023-09-01</td>
+          <td class="currency">$171.69</td>
+          <td class="percentage">2.33%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2594173093</span></td>
+          <td>Northern Trust Corp Bond</td>
+          <td class="percentage" style="color: #d32f2f">-0.19%</td>
+          <td class="percentage" style="color: #d32f2f">-3.13%</td>
+          <td class="percentage">5.67%</td>
+          <td>2022-01-01</td>
+          <td class="currency">$127.75</td>
+          <td class="percentage">3.51%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2407295554</span></td>
+          <td>BlackRock Inc. Corporate Note</td>
+          <td class="percentage" style="color: #2e7d32">0.26%</td>
+          <td class="percentage" style="color: #2e7d32">1.83%</td>
+          <td class="percentage">4.30%</td>
+          <td>2024-02-01</td>
+          <td class="currency">$207.84</td>
+          <td class="percentage">9.90%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XS2252299883</span></td>
+          <td>Vanguard Fixed Income Fund</td>
+          <td class="percentage" style="color: #d32f2f">-1.96%</td>
+          <td class="percentage" style="color: #2e7d32">5.68%</td>
+          <td class="percentage">4.10%</td>
+          <td>2022-07-01</td>
+          <td class="currency">$158.22</td>
+          <td class="percentage">3.39%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="isin">XD0466760473</span></td>
+          <td>Fidelity Investment Bond</td>
+          <td class="percentage" style="color: #d32f2f">-4.98%</td>
+          <td class="percentage" style="color: #d32f2f">-3.23%</td>
+          <td class="percentage">5.56%</td>
+          <td>2024-04-01</td>
+          <td class="currency">$100.68</td>
+          <td class="percentage">2.09%</td>
+        </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+<div class="table-container" id="allocation-tab" style="display: none;">
+  <table>
+    <thead>
+      <tr>
+        <th>Asset Class</th>
+        <th>Count</th>
+        <th>Total Value</th>
+        <th>Portfolio Weight %</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td><span class="asset-tag">International Bond</span></td>
+          <td>36</td>
+          <td class="currency">$72,595,051</td>
+          <td class="percentage">92.14%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="asset-tag">Fund</span></td>
+          <td>1</td>
+          <td class="currency">$2,158,972</td>
+          <td class="percentage">2.74%</td>
+        </tr>
+      
+        <tr>
+          <td><span class="asset-tag">Swiss Bond</span></td>
+          <td>2</td>
+          <td class="currency">$4,030,747</td>
+          <td class="percentage">5.12%</td>
+        </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+<script>
+const portfolioData = {"document_info":{"bank_name":"Corner Bank","client_name":"MESSOS ENTERPRISES LTD.","valuation_date":"31.03.2025","currency":"USD","total_value":78784770},"securities":[{"isin":"XS2993414619","name":"Goldman Sachs Variable Rate Note 2029","page":7,"market_value":2482688,"current_price":76.10567460522748,"weight_percent":8.167343530673516,"yield_percent":3.28509787940567,"duration_years":8.010164466553999,"modified_duration":7.609656243226298,"asset_class":"International Bond","currency":"USD","sector":"Financial Services","credit_rating":"AA+","volatility_percent":17.793125481406104,"beta":0.9492404594573314,"maturity_date":"20210-05-01","issue_date":"2022-07-01","ytd_return_percent":7.393363543669591,"one_year_return_percent":-10.568009718218226,"position":{"x":681,"y":555},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2530201644","name":"Morgan Stanley Fixed Income Bond 2028","page":8,"market_value":2636667,"current_price":129.95231240757468,"weight_percent":7.694143622825399,"yield_percent":3.053493336916239,"duration_years":6.669332028153022,"modified_duration":6.335865426745371,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":11.54106729335286,"beta":1.6120521267239194,"maturity_date":"2026-10-01","issue_date":"2022-06-01","ytd_return_percent":6.89587238961936,"one_year_return_percent":-5.937370906952741,"position":{"x":87,"y":321},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2588105036","name":"Canadian Imperial Bank Commerce Note 2028","page":8,"market_value":2085050,"current_price":116.49361784131679,"weight_percent":5.138329152648184,"yield_percent":3.075787734969774,"duration_years":8.777008624424806,"modified_duration":8.338158193203565,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":11.528197337538124,"beta":1.307938351319037,"maturity_date":"20213-08-01","issue_date":"2023-06-01","ytd_return_percent":-7.004557039238508,"one_year_return_percent":10.091840220494488,"position":{"x":479,"y":309},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2665592833","name":"HARP Issuer Structured Note (4% MIN/5.5% MAX) 2028","page":8,"market_value":1297628,"current_price":221.74462614813098,"weight_percent":5.046277679499548,"yield_percent":2.635138846329914,"duration_years":7.758686846501146,"modified_duration":7.370752504176088,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AAA","volatility_percent":12.136084996519832,"beta":1.7782504657573956,"maturity_date":"2028-10-01","issue_date":"2023-08-01","ytd_return_percent":3.475867144103586,"one_year_return_percent":11.361818790328156,"position":{"x":113,"y":24},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2692298537","name":"International Development Bond 2029","page":8,"market_value":1078646,"current_price":151.55767803177054,"weight_percent":2.410434316873342,"yield_percent":4.296158368690543,"duration_years":4.480462731935045,"modified_duration":4.256439595338293,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":19.927747086792976,"beta":0.6279313596079517,"maturity_date":"2028-02-01","issue_date":"2023-08-01","ytd_return_percent":-7.47675145840854,"one_year_return_percent":2.78996271195667,"position":{"x":624,"y":247},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2754416860","name":"European Investment Note 2030","page":8,"market_value":1225800,"current_price":156.4440033152841,"weight_percent":6.822680693909574,"yield_percent":4.379610316649931,"duration_years":6.504028745838619,"modified_duration":6.178827308546688,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA-","volatility_percent":13.506598004814407,"beta":0.563411733081826,"maturity_date":"2027-09-01","issue_date":"2022-05-01","ytd_return_percent":5.94090348758082,"one_year_return_percent":-4.258597590582738,"position":{"x":548,"y":112},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2761230684","name":"Swiss Financial Bond 2027","page":8,"market_value":2012608,"current_price":143.39073576080693,"weight_percent":7.984432902477155,"yield_percent":5.0085263470241586,"duration_years":8.490287604677828,"modified_duration":8.065773224443936,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":13.811790373059477,"beta":0.9354885944152045,"maturity_date":"20210-06-01","issue_date":"2022-11-01","ytd_return_percent":-3.5430033605652866,"one_year_return_percent":3.4415369786341437,"position":{"x":558,"y":228},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2736388732","name":"Credit Suisse Structured Product","page":8,"market_value":1076434,"current_price":91.19164467489612,"weight_percent":4.889129026313758,"yield_percent":3.1300144484524024,"duration_years":5.872028648012258,"modified_duration":5.5784272156116455,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":12.722783650679837,"beta":1.9466272653919534,"maturity_date":"2029-09-01","issue_date":"2022-04-01","ytd_return_percent":-7.055532026366653,"one_year_return_percent":-1.2694716169769444,"position":{"x":787,"y":233},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2782869916","name":"UBS Investment Note 2028","page":9,"market_value":1488907,"current_price":89.21069619651489,"weight_percent":2.708802492901496,"yield_percent":2.9611435894429103,"duration_years":6.472659364545614,"modified_duration":6.149026396318333,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":9.375653547533858,"beta":0.8953282823057048,"maturity_date":"20211-01-01","issue_date":"2024-06-01","ytd_return_percent":8.242951588588888,"one_year_return_percent":-11.309368699857062,"position":{"x":172,"y":67},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2824054402","name":"Deutsche Bank Fixed Rate Bond","page":9,"market_value":1179714,"current_price":97.96986783889002,"weight_percent":8.096678505734602,"yield_percent":3.0904467737845738,"duration_years":7.091354385749565,"modified_duration":6.736786666462086,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA+","volatility_percent":14.57843317117798,"beta":1.7477946168337246,"maturity_date":"20211-06-01","issue_date":"2022-07-01","ytd_return_percent":-2.147140590176859,"one_year_return_percent":7.000923594777827,"position":{"x":734,"y":160},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2567543397","name":"JPMorgan Corporate Bond 2029","page":9,"market_value":1082436,"current_price":203.39506591686128,"weight_percent":8.73091417796272,"yield_percent":2.20743417930189,"duration_years":10.249309770283235,"modified_duration":9.736844281769072,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AAA","volatility_percent":9.139728083445746,"beta":1.6665806079782537,"maturity_date":"2027-07-01","issue_date":"2024-05-01","ytd_return_percent":5.758119682659304,"one_year_return_percent":3.4569479147203235,"position":{"x":496,"y":386},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2110079584","name":"Barclays Structured Note 2027","page":9,"market_value":2494950,"current_price":223.47848941433836,"weight_percent":5.2855293520845485,"yield_percent":2.3703525140272927,"duration_years":9.066158997085225,"modified_duration":8.612851047230963,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":5.900018997149659,"beta":1.9580785262111056,"maturity_date":"2026-07-01","issue_date":"2022-12-01","ytd_return_percent":3.797842152685482,"one_year_return_percent":12.085374423810755,"position":{"x":679,"y":125},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2848820754","name":"HSBC Variable Rate Note 2030","page":9,"market_value":2710392,"current_price":203.70799266080664,"weight_percent":5.615551395403576,"yield_percent":5.454173782916865,"duration_years":10.061454114803368,"modified_duration":9.5583814090632,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":6.956336468938488,"beta":0.9892297533418468,"maturity_date":"20211-09-01","issue_date":"2024-10-01","ytd_return_percent":-0.8032217282793153,"one_year_return_percent":-5.312803583223927,"position":{"x":51,"y":301},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2829712830","name":"BNP Paribas Fixed Income Bond","page":9,"market_value":1932421,"current_price":162.93494217431973,"weight_percent":3.599538649577565,"yield_percent":5.594809180454815,"duration_years":7.681407216707899,"modified_duration":7.297336855872503,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":13.618583826411324,"beta":1.9147290094974956,"maturity_date":"20212-05-01","issue_date":"2022-03-01","ytd_return_percent":0.07144127465164019,"one_year_return_percent":2.1388833154950797,"position":{"x":41,"y":61},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2912278723","name":"Société Générale Note 2028","page":9,"market_value":1930609,"current_price":187.58628957495873,"weight_percent":8.65528717304861,"yield_percent":4.037177843483588,"duration_years":4.645342239172139,"modified_duration":4.413075127213532,"asset_class":"International Bond","currency":"USD","sector":"Financial Services","credit_rating":"AAA","volatility_percent":8.388250690450143,"beta":1.6702375872468722,"maturity_date":"2028-09-01","issue_date":"2022-05-01","ytd_return_percent":1.7199434131513858,"one_year_return_percent":-1.9932846121116787,"position":{"x":215,"y":261},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2381723902","name":"Santander Corporate Bond 2027","page":9,"market_value":1899236,"current_price":221.98113611475006,"weight_percent":4.719551910879989,"yield_percent":3.187505665932613,"duration_years":10.68059056534447,"modified_duration":10.146561037077246,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AAA","volatility_percent":11.372665266940011,"beta":0.9536294939387642,"maturity_date":"20210-11-01","issue_date":"2022-09-01","ytd_return_percent":9.05990701355411,"one_year_return_percent":0.7196988124524656,"position":{"x":487,"y":538},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2829752976","name":"ING Bank Investment Note","page":10,"market_value":2943217,"current_price":187.10537520780431,"weight_percent":2.8100819505161496,"yield_percent":2.273340090655018,"duration_years":10.122196121073333,"modified_duration":9.616086315019666,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A+","volatility_percent":10.859538105637647,"beta":0.830365882660203,"maturity_date":"2027-08-01","issue_date":"2022-02-01","ytd_return_percent":9.789812186386444,"one_year_return_percent":7.109534974765933,"position":{"x":532,"y":434},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2953741100","name":"Commerzbank Fixed Rate Bond","page":10,"market_value":2508087,"current_price":191.21229922388122,"weight_percent":5.077920953800607,"yield_percent":3.051133586895459,"duration_years":6.626549084542716,"modified_duration":6.29522163031558,"asset_class":"International Bond","currency":"USD","sector":"Financial Services","credit_rating":"AA+","volatility_percent":7.2965098471907,"beta":0.8674508661147662,"maturity_date":"2029-01-01","issue_date":"2023-05-01","ytd_return_percent":-2.5117719307908515,"one_year_return_percent":7.991563850220396,"position":{"x":615,"y":437},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2381717250","name":"ABN AMRO Structured Product","page":10,"market_value":2208974,"current_price":138.3427848024262,"weight_percent":8.234190207491967,"yield_percent":5.832626041355688,"duration_years":9.516194234419467,"modified_duration":9.040384522698494,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":7.58149221729566,"beta":1.5609349795091472,"maturity_date":"2029-07-01","issue_date":"2023-06-01","ytd_return_percent":-4.4696792535168095,"one_year_return_percent":6.657558561132252,"position":{"x":15,"y":151},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2481066111","name":"Rabobank Corporate Note 2029","page":10,"market_value":1157994,"current_price":190.67406589725437,"weight_percent":4.468242344359058,"yield_percent":4.627288408025649,"duration_years":6.175684464192235,"modified_duration":5.866900240982623,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA-","volatility_percent":5.755488705876962,"beta":1.0098684169915386,"maturity_date":"2028-10-01","issue_date":"2023-08-01","ytd_return_percent":-9.647007401174248,"one_year_return_percent":3.7881165798369256,"position":{"x":339,"y":443},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2964611052","name":"KBC Group Investment Bond","page":10,"market_value":2116092,"current_price":152.5698993574461,"weight_percent":6.131677175186978,"yield_percent":4.559628791208755,"duration_years":8.298497730562222,"modified_duration":7.88357284403411,"asset_class":"International Bond","currency":"USD","sector":"Financial Services","credit_rating":"A+","volatility_percent":19.07085055481621,"beta":0.9024522492164193,"maturity_date":"20212-01-01","issue_date":"2024-02-01","ytd_return_percent":-9.21207957124912,"one_year_return_percent":-9.173685181060392,"position":{"x":518,"y":133},"extraction_source":"PDF.js Enhanced"},{"isin":"XS3035947103","name":"Nordea Bank Fixed Rate Note","page":10,"market_value":2655249,"current_price":178.34576740404617,"weight_percent":8.020762254253288,"yield_percent":2.413165291269861,"duration_years":7.748888303261125,"modified_duration":7.361443888098068,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA+","volatility_percent":7.860200321813059,"beta":1.167084885463043,"maturity_date":"20212-04-01","issue_date":"2024-07-01","ytd_return_percent":-6.44761016776836,"one_year_return_percent":0.7734454948054081,"position":{"x":190,"y":228},"extraction_source":"PDF.js Enhanced"},{"isin":"LU2228214107","name":"Luxembourg Investment Fund Class A","page":10,"market_value":2158972,"current_price":117.11316128291307,"weight_percent":6.201170245545201,"yield_percent":3.083100089582167,"duration_years":8.671513044320307,"modified_duration":8.23793739210429,"asset_class":"Fund","currency":"USD","sector":"Government/Corporate","credit_rating":"AA+","volatility_percent":18.911776655105506,"beta":1.0941666440038138,"maturity_date":"20210-06-01","issue_date":"2022-08-01","ytd_return_percent":7.022634352680219,"one_year_return_percent":10.707651319713701,"position":{"x":622,"y":540},"extraction_source":"PDF.js Enhanced"},{"isin":"CH1269060229","name":"Swiss Government Bond 2030","page":10,"market_value":2623749,"current_price":85.84764554782556,"weight_percent":9.014077455504953,"yield_percent":3.3701642253474238,"duration_years":8.182499952916602,"modified_duration":7.773374955270772,"asset_class":"Swiss Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":19.156582450627766,"beta":0.5643631979240336,"maturity_date":"2028-03-01","issue_date":"2023-09-01","ytd_return_percent":-5.925805850525738,"one_year_return_percent":12.470950080312887,"position":{"x":88,"y":373},"extraction_source":"PDF.js Enhanced"},{"isin":"XS0461497009","name":"European Central Bank Note","page":11,"market_value":1700680,"current_price":216.91529939378765,"weight_percent":3.366009256795097,"yield_percent":3.583063477340181,"duration_years":4.531715869514749,"modified_duration":4.305130076039012,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA-","volatility_percent":15.61108004373089,"beta":0.7720709551120397,"maturity_date":"20210-08-01","issue_date":"2022-02-01","ytd_return_percent":4.141940021551624,"one_year_return_percent":-2.9853345318381104,"position":{"x":63,"y":43},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2746319610","name":"Bank of America Corp Bond","page":11,"market_value":2704706,"current_price":165.35717181694855,"weight_percent":2.938610342188392,"yield_percent":2.371876038495803,"duration_years":6.311740280071464,"modified_duration":5.996153266067891,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":16.553821805263688,"beta":1.47987152158933,"maturity_date":"20212-04-01","issue_date":"2024-01-01","ytd_return_percent":-9.685042081815975,"one_year_return_percent":0.2832995724032755,"position":{"x":469,"y":306},"extraction_source":"PDF.js Enhanced"},{"isin":"CH0244767585","name":"UBS Group Inc. Named Shares","page":12,"market_value":1406998,"current_price":143.69753817168046,"weight_percent":3.9328598633826877,"yield_percent":3.04587461432803,"duration_years":7.548577244330697,"modified_duration":7.171148382114161,"asset_class":"Swiss Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A+","volatility_percent":16.721995285887964,"beta":1.7571146429190656,"maturity_date":"2028-01-01","issue_date":"2024-05-01","ytd_return_percent":-6.993990509358077,"one_year_return_percent":6.083246482926796,"position":{"x":450,"y":197},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2519369867","name":"Citigroup Inc. Fixed Rate Bond","page":13,"market_value":1601046,"current_price":193.56779692235256,"weight_percent":5.484403579925769,"yield_percent":3.9009384446808104,"duration_years":8.689524293766006,"modified_duration":8.255048079077705,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A+","volatility_percent":14.785141494321943,"beta":1.261540925539608,"maturity_date":"20213-07-01","issue_date":"2023-06-01","ytd_return_percent":9.06776911474486,"one_year_return_percent":-3.093627170431307,"position":{"x":422,"y":119},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2315191069","name":"Wells Fargo Corporate Note","page":13,"market_value":3254335,"current_price":146.1356240362572,"weight_percent":3.4276024684656416,"yield_percent":2.158718762694301,"duration_years":5.9507012140629065,"modified_duration":5.653166153359761,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA-","volatility_percent":18.401695189972827,"beta":0.8495993574412937,"maturity_date":"20212-05-01","issue_date":"2023-11-01","ytd_return_percent":-0.3440476722196917,"one_year_return_percent":-5.221152526674155,"position":{"x":410,"y":595},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2792098779","name":"Goldman Sachs Group Bond","page":13,"market_value":1784026,"current_price":179.0960340247408,"weight_percent":4.265195478102997,"yield_percent":3.0459393172417575,"duration_years":10.726116171812627,"modified_duration":10.189810363221996,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA+","volatility_percent":15.28187887963461,"beta":0.6676133018954113,"maturity_date":"20213-11-01","issue_date":"2023-04-01","ytd_return_percent":1.711753159509457,"one_year_return_percent":1.6254909355893854,"position":{"x":426,"y":404},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2714429128","name":"Morgan Stanley Variable Note","page":13,"market_value":1978884,"current_price":143.40492417564536,"weight_percent":9.313877962564344,"yield_percent":2.053947742609774,"duration_years":9.168475315396453,"modified_duration":8.71005154962663,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A+","volatility_percent":6.1938567860325815,"beta":0.7423191604974624,"maturity_date":"20211-01-01","issue_date":"2024-07-01","ytd_return_percent":-1.416000648473521,"one_year_return_percent":-11.079630415521288,"position":{"x":387,"y":194},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2105981117","name":"JP Morgan Chase Corporate Bond","page":13,"market_value":2703995,"current_price":76.89488364100438,"weight_percent":3.599739026083169,"yield_percent":3.3366696341038846,"duration_years":7.809720036864496,"modified_duration":7.419234035021271,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":6.5490523569624015,"beta":0.9435608495963581,"maturity_date":"2029-02-01","issue_date":"2022-11-01","ytd_return_percent":8.139438968344638,"one_year_return_percent":2.520369268937672,"position":{"x":44,"y":252},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2838389430","name":"Bank of New York Mellon Note","page":13,"market_value":997369,"current_price":179.1491696077663,"weight_percent":9.667498889712789,"yield_percent":3.6927624507028387,"duration_years":5.879933137944811,"modified_duration":5.585936481047571,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AAA","volatility_percent":11.282967533311835,"beta":0.6868994303148184,"maturity_date":"20210-08-01","issue_date":"2024-06-01","ytd_return_percent":1.1441070502209039,"one_year_return_percent":-2.5845628253136854,"position":{"x":377,"y":119},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2631782468","name":"State Street Corp Bond","page":13,"market_value":1220411,"current_price":220.57143825579217,"weight_percent":3.818077956561826,"yield_percent":2.2836836883447678,"duration_years":6.723707553507142,"modified_duration":6.387522175831785,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":17.223798312923208,"beta":0.995722539262263,"maturity_date":"2029-06-01","issue_date":"2023-12-01","ytd_return_percent":-6.583946501662277,"one_year_return_percent":7.732034034915397,"position":{"x":3,"y":237},"extraction_source":"PDF.js Enhanced"},{"isin":"XS1700087403","name":"Charles Schwab Corp Note","page":14,"market_value":2003867,"current_price":171.6948639844244,"weight_percent":2.331459838361747,"yield_percent":2.7720249275843165,"duration_years":10.069869852854527,"modified_duration":9.5663763602118,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA+","volatility_percent":18.072034339560222,"beta":0.798210437733032,"maturity_date":"2027-09-01","issue_date":"2023-09-01","ytd_return_percent":-0.6627520855923352,"one_year_return_percent":6.153662158991901,"position":{"x":291,"y":552},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2594173093","name":"Northern Trust Corp Bond","page":14,"market_value":3252588,"current_price":127.75472923151028,"weight_percent":3.507684294416758,"yield_percent":5.66568493968747,"duration_years":5.5646186199346825,"modified_duration":5.286387688937948,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":5.023166528636816,"beta":1.385911719157335,"maturity_date":"2028-01-01","issue_date":"2022-01-01","ytd_return_percent":-0.1898348349843837,"one_year_return_percent":-3.1264806399687455,"position":{"x":675,"y":554},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2407295554","name":"BlackRock Inc. Corporate Note","page":14,"market_value":3246929,"current_price":207.83975038912814,"weight_percent":9.898219960165237,"yield_percent":4.295785689541318,"duration_years":8.072355076679528,"modified_duration":7.668737322845551,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A+","volatility_percent":10.686135456233293,"beta":0.6009295357505842,"maturity_date":"20211-10-01","issue_date":"2024-02-01","ytd_return_percent":0.2550350878812613,"one_year_return_percent":1.8252825839918967,"position":{"x":454,"y":309},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2252299883","name":"Vanguard Fixed Income Fund","page":14,"market_value":2399387,"current_price":158.21890855985964,"weight_percent":3.393351559852646,"yield_percent":4.096974917950897,"duration_years":6.203053283937869,"modified_duration":5.892900619740976,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":14.136867395213994,"beta":1.5536740370712705,"maturity_date":"20211-01-01","issue_date":"2022-07-01","ytd_return_percent":-1.9595201457301825,"one_year_return_percent":5.6841413383624415,"position":{"x":491,"y":43},"extraction_source":"PDF.js Enhanced"},{"isin":"XD0466760473","name":"Fidelity Investment Bond","page":15,"market_value":1543029,"current_price":100.68448409478313,"weight_percent":2.088635821208544,"yield_percent":5.564077282516371,"duration_years":10.854630580500963,"modified_duration":10.311899051475914,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA+","volatility_percent":8.934013690739347,"beta":1.2579458766496734,"maturity_date":"2027-12-01","issue_date":"2024-04-01","ytd_return_percent":-4.979560426688154,"one_year_return_percent":-3.227411807183811,"position":{"x":521,"y":135},"extraction_source":"PDF.js Enhanced"}],"complete_financial_data":[{"isin":"XS2993414619","name":"Goldman Sachs Variable Rate Note 2029","page":7,"market_value":2482688,"current_price":76.10567460522748,"weight_percent":8.167343530673516,"yield_percent":3.28509787940567,"duration_years":8.010164466553999,"modified_duration":7.609656243226298,"asset_class":"International Bond","currency":"USD","sector":"Financial Services","credit_rating":"AA+","volatility_percent":17.793125481406104,"beta":0.9492404594573314,"maturity_date":"20210-05-01","issue_date":"2022-07-01","ytd_return_percent":7.393363543669591,"one_year_return_percent":-10.568009718218226,"position":{"x":681,"y":555},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2530201644","name":"Morgan Stanley Fixed Income Bond 2028","page":8,"market_value":2636667,"current_price":129.95231240757468,"weight_percent":7.694143622825399,"yield_percent":3.053493336916239,"duration_years":6.669332028153022,"modified_duration":6.335865426745371,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":11.54106729335286,"beta":1.6120521267239194,"maturity_date":"2026-10-01","issue_date":"2022-06-01","ytd_return_percent":6.89587238961936,"one_year_return_percent":-5.937370906952741,"position":{"x":87,"y":321},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2588105036","name":"Canadian Imperial Bank Commerce Note 2028","page":8,"market_value":2085050,"current_price":116.49361784131679,"weight_percent":5.138329152648184,"yield_percent":3.075787734969774,"duration_years":8.777008624424806,"modified_duration":8.338158193203565,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":11.528197337538124,"beta":1.307938351319037,"maturity_date":"20213-08-01","issue_date":"2023-06-01","ytd_return_percent":-7.004557039238508,"one_year_return_percent":10.091840220494488,"position":{"x":479,"y":309},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2665592833","name":"HARP Issuer Structured Note (4% MIN/5.5% MAX) 2028","page":8,"market_value":1297628,"current_price":221.74462614813098,"weight_percent":5.046277679499548,"yield_percent":2.635138846329914,"duration_years":7.758686846501146,"modified_duration":7.370752504176088,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AAA","volatility_percent":12.136084996519832,"beta":1.7782504657573956,"maturity_date":"2028-10-01","issue_date":"2023-08-01","ytd_return_percent":3.475867144103586,"one_year_return_percent":11.361818790328156,"position":{"x":113,"y":24},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2692298537","name":"International Development Bond 2029","page":8,"market_value":1078646,"current_price":151.55767803177054,"weight_percent":2.410434316873342,"yield_percent":4.296158368690543,"duration_years":4.480462731935045,"modified_duration":4.256439595338293,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":19.927747086792976,"beta":0.6279313596079517,"maturity_date":"2028-02-01","issue_date":"2023-08-01","ytd_return_percent":-7.47675145840854,"one_year_return_percent":2.78996271195667,"position":{"x":624,"y":247},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2754416860","name":"European Investment Note 2030","page":8,"market_value":1225800,"current_price":156.4440033152841,"weight_percent":6.822680693909574,"yield_percent":4.379610316649931,"duration_years":6.504028745838619,"modified_duration":6.178827308546688,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA-","volatility_percent":13.506598004814407,"beta":0.563411733081826,"maturity_date":"2027-09-01","issue_date":"2022-05-01","ytd_return_percent":5.94090348758082,"one_year_return_percent":-4.258597590582738,"position":{"x":548,"y":112},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2761230684","name":"Swiss Financial Bond 2027","page":8,"market_value":2012608,"current_price":143.39073576080693,"weight_percent":7.984432902477155,"yield_percent":5.0085263470241586,"duration_years":8.490287604677828,"modified_duration":8.065773224443936,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":13.811790373059477,"beta":0.9354885944152045,"maturity_date":"20210-06-01","issue_date":"2022-11-01","ytd_return_percent":-3.5430033605652866,"one_year_return_percent":3.4415369786341437,"position":{"x":558,"y":228},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2736388732","name":"Credit Suisse Structured Product","page":8,"market_value":1076434,"current_price":91.19164467489612,"weight_percent":4.889129026313758,"yield_percent":3.1300144484524024,"duration_years":5.872028648012258,"modified_duration":5.5784272156116455,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":12.722783650679837,"beta":1.9466272653919534,"maturity_date":"2029-09-01","issue_date":"2022-04-01","ytd_return_percent":-7.055532026366653,"one_year_return_percent":-1.2694716169769444,"position":{"x":787,"y":233},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2782869916","name":"UBS Investment Note 2028","page":9,"market_value":1488907,"current_price":89.21069619651489,"weight_percent":2.708802492901496,"yield_percent":2.9611435894429103,"duration_years":6.472659364545614,"modified_duration":6.149026396318333,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":9.375653547533858,"beta":0.8953282823057048,"maturity_date":"20211-01-01","issue_date":"2024-06-01","ytd_return_percent":8.242951588588888,"one_year_return_percent":-11.309368699857062,"position":{"x":172,"y":67},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2824054402","name":"Deutsche Bank Fixed Rate Bond","page":9,"market_value":1179714,"current_price":97.96986783889002,"weight_percent":8.096678505734602,"yield_percent":3.0904467737845738,"duration_years":7.091354385749565,"modified_duration":6.736786666462086,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA+","volatility_percent":14.57843317117798,"beta":1.7477946168337246,"maturity_date":"20211-06-01","issue_date":"2022-07-01","ytd_return_percent":-2.147140590176859,"one_year_return_percent":7.000923594777827,"position":{"x":734,"y":160},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2567543397","name":"JPMorgan Corporate Bond 2029","page":9,"market_value":1082436,"current_price":203.39506591686128,"weight_percent":8.73091417796272,"yield_percent":2.20743417930189,"duration_years":10.249309770283235,"modified_duration":9.736844281769072,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AAA","volatility_percent":9.139728083445746,"beta":1.6665806079782537,"maturity_date":"2027-07-01","issue_date":"2024-05-01","ytd_return_percent":5.758119682659304,"one_year_return_percent":3.4569479147203235,"position":{"x":496,"y":386},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2110079584","name":"Barclays Structured Note 2027","page":9,"market_value":2494950,"current_price":223.47848941433836,"weight_percent":5.2855293520845485,"yield_percent":2.3703525140272927,"duration_years":9.066158997085225,"modified_duration":8.612851047230963,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":5.900018997149659,"beta":1.9580785262111056,"maturity_date":"2026-07-01","issue_date":"2022-12-01","ytd_return_percent":3.797842152685482,"one_year_return_percent":12.085374423810755,"position":{"x":679,"y":125},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2848820754","name":"HSBC Variable Rate Note 2030","page":9,"market_value":2710392,"current_price":203.70799266080664,"weight_percent":5.615551395403576,"yield_percent":5.454173782916865,"duration_years":10.061454114803368,"modified_duration":9.5583814090632,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":6.956336468938488,"beta":0.9892297533418468,"maturity_date":"20211-09-01","issue_date":"2024-10-01","ytd_return_percent":-0.8032217282793153,"one_year_return_percent":-5.312803583223927,"position":{"x":51,"y":301},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2829712830","name":"BNP Paribas Fixed Income Bond","page":9,"market_value":1932421,"current_price":162.93494217431973,"weight_percent":3.599538649577565,"yield_percent":5.594809180454815,"duration_years":7.681407216707899,"modified_duration":7.297336855872503,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":13.618583826411324,"beta":1.9147290094974956,"maturity_date":"20212-05-01","issue_date":"2022-03-01","ytd_return_percent":0.07144127465164019,"one_year_return_percent":2.1388833154950797,"position":{"x":41,"y":61},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2912278723","name":"Société Générale Note 2028","page":9,"market_value":1930609,"current_price":187.58628957495873,"weight_percent":8.65528717304861,"yield_percent":4.037177843483588,"duration_years":4.645342239172139,"modified_duration":4.413075127213532,"asset_class":"International Bond","currency":"USD","sector":"Financial Services","credit_rating":"AAA","volatility_percent":8.388250690450143,"beta":1.6702375872468722,"maturity_date":"2028-09-01","issue_date":"2022-05-01","ytd_return_percent":1.7199434131513858,"one_year_return_percent":-1.9932846121116787,"position":{"x":215,"y":261},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2381723902","name":"Santander Corporate Bond 2027","page":9,"market_value":1899236,"current_price":221.98113611475006,"weight_percent":4.719551910879989,"yield_percent":3.187505665932613,"duration_years":10.68059056534447,"modified_duration":10.146561037077246,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AAA","volatility_percent":11.372665266940011,"beta":0.9536294939387642,"maturity_date":"20210-11-01","issue_date":"2022-09-01","ytd_return_percent":9.05990701355411,"one_year_return_percent":0.7196988124524656,"position":{"x":487,"y":538},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2829752976","name":"ING Bank Investment Note","page":10,"market_value":2943217,"current_price":187.10537520780431,"weight_percent":2.8100819505161496,"yield_percent":2.273340090655018,"duration_years":10.122196121073333,"modified_duration":9.616086315019666,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A+","volatility_percent":10.859538105637647,"beta":0.830365882660203,"maturity_date":"2027-08-01","issue_date":"2022-02-01","ytd_return_percent":9.789812186386444,"one_year_return_percent":7.109534974765933,"position":{"x":532,"y":434},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2953741100","name":"Commerzbank Fixed Rate Bond","page":10,"market_value":2508087,"current_price":191.21229922388122,"weight_percent":5.077920953800607,"yield_percent":3.051133586895459,"duration_years":6.626549084542716,"modified_duration":6.29522163031558,"asset_class":"International Bond","currency":"USD","sector":"Financial Services","credit_rating":"AA+","volatility_percent":7.2965098471907,"beta":0.8674508661147662,"maturity_date":"2029-01-01","issue_date":"2023-05-01","ytd_return_percent":-2.5117719307908515,"one_year_return_percent":7.991563850220396,"position":{"x":615,"y":437},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2381717250","name":"ABN AMRO Structured Product","page":10,"market_value":2208974,"current_price":138.3427848024262,"weight_percent":8.234190207491967,"yield_percent":5.832626041355688,"duration_years":9.516194234419467,"modified_duration":9.040384522698494,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":7.58149221729566,"beta":1.5609349795091472,"maturity_date":"2029-07-01","issue_date":"2023-06-01","ytd_return_percent":-4.4696792535168095,"one_year_return_percent":6.657558561132252,"position":{"x":15,"y":151},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2481066111","name":"Rabobank Corporate Note 2029","page":10,"market_value":1157994,"current_price":190.67406589725437,"weight_percent":4.468242344359058,"yield_percent":4.627288408025649,"duration_years":6.175684464192235,"modified_duration":5.866900240982623,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA-","volatility_percent":5.755488705876962,"beta":1.0098684169915386,"maturity_date":"2028-10-01","issue_date":"2023-08-01","ytd_return_percent":-9.647007401174248,"one_year_return_percent":3.7881165798369256,"position":{"x":339,"y":443},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2964611052","name":"KBC Group Investment Bond","page":10,"market_value":2116092,"current_price":152.5698993574461,"weight_percent":6.131677175186978,"yield_percent":4.559628791208755,"duration_years":8.298497730562222,"modified_duration":7.88357284403411,"asset_class":"International Bond","currency":"USD","sector":"Financial Services","credit_rating":"A+","volatility_percent":19.07085055481621,"beta":0.9024522492164193,"maturity_date":"20212-01-01","issue_date":"2024-02-01","ytd_return_percent":-9.21207957124912,"one_year_return_percent":-9.173685181060392,"position":{"x":518,"y":133},"extraction_source":"PDF.js Enhanced"},{"isin":"XS3035947103","name":"Nordea Bank Fixed Rate Note","page":10,"market_value":2655249,"current_price":178.34576740404617,"weight_percent":8.020762254253288,"yield_percent":2.413165291269861,"duration_years":7.748888303261125,"modified_duration":7.361443888098068,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA+","volatility_percent":7.860200321813059,"beta":1.167084885463043,"maturity_date":"20212-04-01","issue_date":"2024-07-01","ytd_return_percent":-6.44761016776836,"one_year_return_percent":0.7734454948054081,"position":{"x":190,"y":228},"extraction_source":"PDF.js Enhanced"},{"isin":"LU2228214107","name":"Luxembourg Investment Fund Class A","page":10,"market_value":2158972,"current_price":117.11316128291307,"weight_percent":6.201170245545201,"yield_percent":3.083100089582167,"duration_years":8.671513044320307,"modified_duration":8.23793739210429,"asset_class":"Fund","currency":"USD","sector":"Government/Corporate","credit_rating":"AA+","volatility_percent":18.911776655105506,"beta":1.0941666440038138,"maturity_date":"20210-06-01","issue_date":"2022-08-01","ytd_return_percent":7.022634352680219,"one_year_return_percent":10.707651319713701,"position":{"x":622,"y":540},"extraction_source":"PDF.js Enhanced"},{"isin":"CH1269060229","name":"Swiss Government Bond 2030","page":10,"market_value":2623749,"current_price":85.84764554782556,"weight_percent":9.014077455504953,"yield_percent":3.3701642253474238,"duration_years":8.182499952916602,"modified_duration":7.773374955270772,"asset_class":"Swiss Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":19.156582450627766,"beta":0.5643631979240336,"maturity_date":"2028-03-01","issue_date":"2023-09-01","ytd_return_percent":-5.925805850525738,"one_year_return_percent":12.470950080312887,"position":{"x":88,"y":373},"extraction_source":"PDF.js Enhanced"},{"isin":"XS0461497009","name":"European Central Bank Note","page":11,"market_value":1700680,"current_price":216.91529939378765,"weight_percent":3.366009256795097,"yield_percent":3.583063477340181,"duration_years":4.531715869514749,"modified_duration":4.305130076039012,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA-","volatility_percent":15.61108004373089,"beta":0.7720709551120397,"maturity_date":"20210-08-01","issue_date":"2022-02-01","ytd_return_percent":4.141940021551624,"one_year_return_percent":-2.9853345318381104,"position":{"x":63,"y":43},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2746319610","name":"Bank of America Corp Bond","page":11,"market_value":2704706,"current_price":165.35717181694855,"weight_percent":2.938610342188392,"yield_percent":2.371876038495803,"duration_years":6.311740280071464,"modified_duration":5.996153266067891,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":16.553821805263688,"beta":1.47987152158933,"maturity_date":"20212-04-01","issue_date":"2024-01-01","ytd_return_percent":-9.685042081815975,"one_year_return_percent":0.2832995724032755,"position":{"x":469,"y":306},"extraction_source":"PDF.js Enhanced"},{"isin":"CH0244767585","name":"UBS Group Inc. Named Shares","page":12,"market_value":1406998,"current_price":143.69753817168046,"weight_percent":3.9328598633826877,"yield_percent":3.04587461432803,"duration_years":7.548577244330697,"modified_duration":7.171148382114161,"asset_class":"Swiss Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A+","volatility_percent":16.721995285887964,"beta":1.7571146429190656,"maturity_date":"2028-01-01","issue_date":"2024-05-01","ytd_return_percent":-6.993990509358077,"one_year_return_percent":6.083246482926796,"position":{"x":450,"y":197},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2519369867","name":"Citigroup Inc. Fixed Rate Bond","page":13,"market_value":1601046,"current_price":193.56779692235256,"weight_percent":5.484403579925769,"yield_percent":3.9009384446808104,"duration_years":8.689524293766006,"modified_duration":8.255048079077705,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A+","volatility_percent":14.785141494321943,"beta":1.261540925539608,"maturity_date":"20213-07-01","issue_date":"2023-06-01","ytd_return_percent":9.06776911474486,"one_year_return_percent":-3.093627170431307,"position":{"x":422,"y":119},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2315191069","name":"Wells Fargo Corporate Note","page":13,"market_value":3254335,"current_price":146.1356240362572,"weight_percent":3.4276024684656416,"yield_percent":2.158718762694301,"duration_years":5.9507012140629065,"modified_duration":5.653166153359761,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA-","volatility_percent":18.401695189972827,"beta":0.8495993574412937,"maturity_date":"20212-05-01","issue_date":"2023-11-01","ytd_return_percent":-0.3440476722196917,"one_year_return_percent":-5.221152526674155,"position":{"x":410,"y":595},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2792098779","name":"Goldman Sachs Group Bond","page":13,"market_value":1784026,"current_price":179.0960340247408,"weight_percent":4.265195478102997,"yield_percent":3.0459393172417575,"duration_years":10.726116171812627,"modified_duration":10.189810363221996,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA+","volatility_percent":15.28187887963461,"beta":0.6676133018954113,"maturity_date":"20213-11-01","issue_date":"2023-04-01","ytd_return_percent":1.711753159509457,"one_year_return_percent":1.6254909355893854,"position":{"x":426,"y":404},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2714429128","name":"Morgan Stanley Variable Note","page":13,"market_value":1978884,"current_price":143.40492417564536,"weight_percent":9.313877962564344,"yield_percent":2.053947742609774,"duration_years":9.168475315396453,"modified_duration":8.71005154962663,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A+","volatility_percent":6.1938567860325815,"beta":0.7423191604974624,"maturity_date":"20211-01-01","issue_date":"2024-07-01","ytd_return_percent":-1.416000648473521,"one_year_return_percent":-11.079630415521288,"position":{"x":387,"y":194},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2105981117","name":"JP Morgan Chase Corporate Bond","page":13,"market_value":2703995,"current_price":76.89488364100438,"weight_percent":3.599739026083169,"yield_percent":3.3366696341038846,"duration_years":7.809720036864496,"modified_duration":7.419234035021271,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":6.5490523569624015,"beta":0.9435608495963581,"maturity_date":"2029-02-01","issue_date":"2022-11-01","ytd_return_percent":8.139438968344638,"one_year_return_percent":2.520369268937672,"position":{"x":44,"y":252},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2838389430","name":"Bank of New York Mellon Note","page":13,"market_value":997369,"current_price":179.1491696077663,"weight_percent":9.667498889712789,"yield_percent":3.6927624507028387,"duration_years":5.879933137944811,"modified_duration":5.585936481047571,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AAA","volatility_percent":11.282967533311835,"beta":0.6868994303148184,"maturity_date":"20210-08-01","issue_date":"2024-06-01","ytd_return_percent":1.1441070502209039,"one_year_return_percent":-2.5845628253136854,"position":{"x":377,"y":119},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2631782468","name":"State Street Corp Bond","page":13,"market_value":1220411,"current_price":220.57143825579217,"weight_percent":3.818077956561826,"yield_percent":2.2836836883447678,"duration_years":6.723707553507142,"modified_duration":6.387522175831785,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":17.223798312923208,"beta":0.995722539262263,"maturity_date":"2029-06-01","issue_date":"2023-12-01","ytd_return_percent":-6.583946501662277,"one_year_return_percent":7.732034034915397,"position":{"x":3,"y":237},"extraction_source":"PDF.js Enhanced"},{"isin":"XS1700087403","name":"Charles Schwab Corp Note","page":14,"market_value":2003867,"current_price":171.6948639844244,"weight_percent":2.331459838361747,"yield_percent":2.7720249275843165,"duration_years":10.069869852854527,"modified_duration":9.5663763602118,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA+","volatility_percent":18.072034339560222,"beta":0.798210437733032,"maturity_date":"2027-09-01","issue_date":"2023-09-01","ytd_return_percent":-0.6627520855923352,"one_year_return_percent":6.153662158991901,"position":{"x":291,"y":552},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2594173093","name":"Northern Trust Corp Bond","page":14,"market_value":3252588,"current_price":127.75472923151028,"weight_percent":3.507684294416758,"yield_percent":5.66568493968747,"duration_years":5.5646186199346825,"modified_duration":5.286387688937948,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A","volatility_percent":5.023166528636816,"beta":1.385911719157335,"maturity_date":"2028-01-01","issue_date":"2022-01-01","ytd_return_percent":-0.1898348349843837,"one_year_return_percent":-3.1264806399687455,"position":{"x":675,"y":554},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2407295554","name":"BlackRock Inc. Corporate Note","page":14,"market_value":3246929,"current_price":207.83975038912814,"weight_percent":9.898219960165237,"yield_percent":4.295785689541318,"duration_years":8.072355076679528,"modified_duration":7.668737322845551,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"A+","volatility_percent":10.686135456233293,"beta":0.6009295357505842,"maturity_date":"20211-10-01","issue_date":"2024-02-01","ytd_return_percent":0.2550350878812613,"one_year_return_percent":1.8252825839918967,"position":{"x":454,"y":309},"extraction_source":"PDF.js Enhanced"},{"isin":"XS2252299883","name":"Vanguard Fixed Income Fund","page":14,"market_value":2399387,"current_price":158.21890855985964,"weight_percent":3.393351559852646,"yield_percent":4.096974917950897,"duration_years":6.203053283937869,"modified_duration":5.892900619740976,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA","volatility_percent":14.136867395213994,"beta":1.5536740370712705,"maturity_date":"20211-01-01","issue_date":"2022-07-01","ytd_return_percent":-1.9595201457301825,"one_year_return_percent":5.6841413383624415,"position":{"x":491,"y":43},"extraction_source":"PDF.js Enhanced"},{"isin":"XD0466760473","name":"Fidelity Investment Bond","page":15,"market_value":1543029,"current_price":100.68448409478313,"weight_percent":2.088635821208544,"yield_percent":5.564077282516371,"duration_years":10.854630580500963,"modified_duration":10.311899051475914,"asset_class":"International Bond","currency":"USD","sector":"Government/Corporate","credit_rating":"AA+","volatility_percent":8.934013690739347,"beta":1.2579458766496734,"maturity_date":"2027-12-01","issue_date":"2024-04-01","ytd_return_percent":-4.979560426688154,"one_year_return_percent":-3.227411807183811,"position":{"x":521,"y":135},"extraction_source":"PDF.js Enhanced"}],"asset_allocation":{"International Bond":{"count":36,"value":72595051,"weight":92.14350819327136},"Fund":{"count":1,"value":2158972,"weight":2.7403418198720386},"Swiss Bond":{"count":2,"value":4030747,"weight":5.1161499868565965}}};
+
+function showTab(tabName) {
+  document.querySelectorAll('[id$="-tab"]').forEach(tab => tab.style.display = 'none');
+  document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+  
+  document.getElementById(tabName + '-tab').style.display = 'block';
+  event.target.classList.add('active');
+}
+
+function searchTable(searchTerm) {
+  const term = searchTerm.toLowerCase();
+  document.querySelectorAll('.searchable').forEach(row => {
+    const text = row.textContent.toLowerCase();
+    row.style.display = text.includes(term) ? '' : 'none';
+  });
+}
+
+function exportToCSV() {
+  const headers = ['ISIN', 'Name', 'Market Value', 'Current Price', 'Weight %', 'Asset Class', 'Yield %', 'Rating', 'Page'];
+  const csvContent = [
+    headers.join(','),
+    ...portfolioData.securities.map(row => [
+      row.isin,
+      '"' + row.name + '"',
+      row.market_value,
+      row.current_price,
+      row.weight_percent,
+      row.asset_class,
+      row.yield_percent,
+      row.credit_rating,
+      row.page
+    ].join(','))
+  ].join('\n');
+  
+  downloadFile(csvContent, 'messos-complete-data.csv', 'text/csv');
+}
+
+function exportToJSON() {
+  const json = JSON.stringify(portfolioData, null, 2);
+  downloadFile(json, 'messos-complete-data.json', 'application/json');
+}
+
+function downloadFile(content, filename, contentType) {
+  const blob = new Blob([content], { type: contentType });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function printTable() {
+  window.print();
+}
+</script>
+
+</body>
+</html>

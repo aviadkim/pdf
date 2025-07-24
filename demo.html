@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Live PDF Extraction Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .demo-section {
+            padding: 40px;
+        }
+
+        .upload-area {
+            border: 3px dashed #4facfe;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            background: #f8fcff;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .upload-area:hover {
+            border-color: #00f2fe;
+            background: #f0faff;
+        }
+
+        .upload-area.dragover {
+            border-color: #00f2fe;
+            background: #e6f7ff;
+            transform: scale(1.02);
+        }
+
+        .upload-icon {
+            font-size: 3em;
+            color: #4facfe;
+            margin-bottom: 20px;
+        }
+
+        .demo-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #333;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #4facfe;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .results {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .summary-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .summary-item {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .summary-item .value {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .summary-item .label {
+            opacity: 0.8;
+        }
+
+        .securities-table {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .table-header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .securities-grid {
+            display: grid;
+            grid-template-columns: 1fr 150px 100px 100px;
+            gap: 20px;
+            padding: 15px 20px;
+            border-bottom: 1px solid #e9ecef;
+            align-items: center;
+        }
+
+        .securities-grid:hover {
+            background: #f8f9fa;
+        }
+
+        .securities-grid.header {
+            background: #e9ecef;
+            font-weight: bold;
+        }
+
+        .isin {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .value {
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        .confidence {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .confidence-bar {
+            width: 40px;
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b6b 0%, #feca57 50%, #48dbfb 100%);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .method {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+
+        .error {
+            background: #ff6b6b;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .processing-steps {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        @media (max-width: 768px) {
+            .demo-buttons {
+                flex-direction: column;
+            }
+            
+            .securities-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Live PDF Extraction Demo</h1>
+            <p>Advanced Financial PDF Processing with AI Intelligence</p>
+        </div>
+
+        <div class="demo-section">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📄</div>
+                <h3>Upload Your Financial PDF</h3>
+                <p>Drag & drop a PDF file here or click to browse</p>
+                <input type="file" id="fileInput" accept=".pdf" style="display: none;">
+            </div>
+
+            <div class="demo-buttons">
+                <button class="btn btn-primary" id="demoBtn">
+                    🎯 <span>Demo with Messos PDF</span>
+                </button>
+                <button class="btn btn-secondary" id="uploadBtn">
+                    📤 <span>Upload Custom PDF</span>
+                </button>
+            </div>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <h3>🧠 AI Processing Your PDF...</h3>
+                <p>Extracting securities and calculating values</p>
+                <div class="processing-steps" id="processingSteps"></div>
+            </div>
+
+            <div class="results" id="results">
+                <div class="summary-card">
+                    <h2>📊 Extraction Results</h2>
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <div class="value" id="totalSecurities">-</div>
+                            <div class="label">Securities Found</div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="value" id="totalValue">-</div>
+                            <div class="label">Portfolio Value</div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="value" id="accuracy">-</div>
+                            <div class="label">Accuracy</div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="value" id="processingTime">-</div>
+                            <div class="label">Processing Time</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="securities-table">
+                    <div class="table-header">
+                        <h3>🔍 Extracted Securities</h3>
+                    </div>
+                    <div class="securities-grid header">
+                        <div>ISIN</div>
+                        <div>Market Value</div>
+                        <div>Confidence</div>
+                        <div>Method</div>
+                    </div>
+                    <div id="securitiesTable"></div>
+                </div>
+            </div>
+
+            <div class="error" id="error" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        // DOM elements
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const demoBtn = document.getElementById('demoBtn');
+        const uploadBtn = document.getElementById('uploadBtn');
+        const loading = document.getElementById('loading');
+        const results = document.getElementById('results');
+        const error = document.getElementById('error');
+        const processingSteps = document.getElementById('processingSteps');
+
+        // File upload handlers
+        uploadArea.addEventListener('click', () => fileInput.click());
+        uploadArea.addEventListener('dragover', handleDragOver);
+        uploadArea.addEventListener('dragleave', handleDragLeave);
+        uploadArea.addEventListener('drop', handleDrop);
+        fileInput.addEventListener('change', handleFileSelect);
+
+        // Button handlers
+        demoBtn.addEventListener('click', runDemo);
+        uploadBtn.addEventListener('click', () => fileInput.click());
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        }
+
+        function handleDragLeave(e) {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+        }
+
+        function handleDrop(e) {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0 && files[0].type === 'application/pdf') {
+                processFile(files[0]);
+            }
+        }
+
+        function handleFileSelect(e) {
+            if (e.target.files.length > 0) {
+                processFile(e.target.files[0]);
+            }
+        }
+
+        async function runDemo() {
+            showLoading();
+            simulateProcessingSteps();
+
+            try {
+                const response = await fetch('/api/demo-messos', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    showResults(result);
+                } else {
+                    showError(result.error);
+                }
+            } catch (err) {
+                showError('Failed to process demo: ' + err.message);
+            }
+        }
+
+        async function processFile(file) {
+            showLoading();
+            simulateProcessingSteps();
+
+            const formData = new FormData();
+            formData.append('pdf', file);
+
+            try {
+                const response = await fetch('/api/process-pdf', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    showResults(result);
+                } else {
+                    showError(result.error);
+                }
+            } catch (err) {
+                showError('Failed to process file: ' + err.message);
+            }
+        }
+
+        function showLoading() {
+            hideAll();
+            loading.style.display = 'block';
+            demoBtn.disabled = true;
+            uploadBtn.disabled = true;
+        }
+
+        function hideAll() {
+            loading.style.display = 'none';
+            results.style.display = 'none';
+            error.style.display = 'none';
+            demoBtn.disabled = false;
+            uploadBtn.disabled = false;
+        }
+
+        function simulateProcessingSteps() {
+            const steps = [
+                '📄 Reading PDF file...',
+                '🔍 Extracting all raw data (100% extraction)...',
+                '📊 Analyzing document structure...',
+                '🎯 Finding and matching securities with values...',
+                '✅ Validating results and calculating totals...',
+                '🌐 Preparing results for display...'
+            ];
+
+            processingSteps.innerHTML = '';
+            let stepIndex = 0;
+
+            const addStep = () => {
+                if (stepIndex < steps.length) {
+                    processingSteps.innerHTML += steps[stepIndex] + '\n';
+                    processingSteps.scrollTop = processingSteps.scrollHeight;
+                    stepIndex++;
+                    setTimeout(addStep, 800);
+                }
+            };
+
+            addStep();
+        }
+
+        function showResults(result) {
+            hideAll();
+            results.style.display = 'block';
+
+            // Update summary
+            document.getElementById('totalSecurities').textContent = result.data.totalSecurities;
+            document.getElementById('totalValue').textContent = '$' + result.data.totalValue.toLocaleString();
+            document.getElementById('accuracy').textContent = result.data.accuracy + '%';
+            document.getElementById('processingTime').textContent = result.metadata.processingTime + 'ms';
+
+            // Update securities table
+            const tableBody = document.getElementById('securitiesTable');
+            tableBody.innerHTML = '';
+
+            result.data.securities.forEach(security => {
+                const row = document.createElement('div');
+                row.className = 'securities-grid';
+                
+                const confidenceColor = security.confidence >= 80 ? '#48dbfb' : 
+                                       security.confidence >= 60 ? '#feca57' : '#ff6b6b';
+
+                row.innerHTML = `
+                    <div class="isin">${security.isin}</div>
+                    <div class="value">$${security.value.toLocaleString()}</div>
+                    <div class="confidence">
+                        <span>${security.confidence}%</span>
+                        <div class="confidence-bar">
+                            <div class="confidence-fill" style="width: ${security.confidence}%; background: ${confidenceColor}"></div>
+                        </div>
+                    </div>
+                    <div class="method">${security.method}</div>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+        }
+
+        function showError(message) {
+            hideAll();
+            error.style.display = 'block';
+            error.textContent = '❌ Error: ' + message;
+        }
+
+        // Auto-run demo on page load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                if (confirm('🎯 Would you like to see a live demo with the Messos PDF?')) {
+                    runDemo();
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

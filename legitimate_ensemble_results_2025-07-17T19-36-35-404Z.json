@@ -1,0 +1,337 @@
+{
+  "success": true,
+  "method": "legitimate_ensemble",
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "value": 6070,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 87px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2530201644",
+      "value": 20602,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 90px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2588105036",
+      "value": 32000,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 114px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2665592833",
+      "value": 20602,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 72px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2692298537",
+      "value": 70680,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 128px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2754416860",
+      "value": 200097,
+      "confidence": 80,
+      "method": "Windows OCR",
+      "reasoning": "Common distance pattern (+4 lines)",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2761230684",
+      "value": 14969,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 99px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2736388732",
+      "value": 48600,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 126px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2782869916",
+      "value": 20602,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 128px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2824054402",
+      "value": 32000,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 106px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2567543397",
+      "value": 107665,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 54px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2110079584",
+      "value": 6070,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 146px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2848820754",
+      "value": 20602,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 85px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2829712830",
+      "value": 32000,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 141px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2912278723",
+      "value": 107665,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 138px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2381723902",
+      "value": 48600,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 111px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2829752976",
+      "value": 14969,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 110px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2953741100",
+      "value": 32000,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 138px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2381717250",
+      "value": 20602,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 92px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2481066111",
+      "value": 20602,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 125px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2964611052",
+      "value": 20602,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 82px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS3035947103",
+      "value": 6070,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 109px",
+      "ensemble": true
+    },
+    {
+      "isin": "LU2228214107",
+      "value": 32000,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 73px",
+      "ensemble": true
+    },
+    {
+      "isin": "CH1269060229",
+      "value": 20602,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 51px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS0461497009",
+      "value": 107665,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 106px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2746319610",
+      "value": 1031,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 141px",
+      "ensemble": true
+    },
+    {
+      "isin": "CH0244767585",
+      "value": 107665,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 94px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2519369867",
+      "value": 32000,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 129px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2315191069",
+      "value": 20602,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 143px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2792098779",
+      "value": 107665,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 114px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2714429128",
+      "value": 70680,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 127px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2105981117",
+      "value": 20602,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 61px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2838389430",
+      "value": 107665,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 60px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2631782468",
+      "value": 20343,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 50px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS1700087403",
+      "value": 32000,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 143px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2594173093",
+      "value": 107665,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 110px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2407295554",
+      "value": 32000,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 62px",
+      "ensemble": true
+    },
+    {
+      "isin": "XS2252299883",
+      "value": 6070,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 109px",
+      "ensemble": true
+    },
+    {
+      "isin": "XD0466760473",
+      "value": 32000,
+      "confidence": 85,
+      "method": "Hugging Face",
+      "reasoning": "Spatial distance: 77px",
+      "ensemble": true
+    }
+  ],
+  "summary": {
+    "totalSecurities": 39,
+    "totalValue": 1761924,
+    "accuracy": 9.052019039241372,
+    "averageConfidence": 84.87179487179488
+  },
+  "metadata": {
+    "methodsUsed": [
+      "Windows OCR",
+      "Hugging Face",
+      "Advanced Text",
+      "Pattern-based"
+    ],
+    "ensemble": true,
+    "legitimate": true,
+    "hardcoded": false,
+    "version": "1.0.0",
+    "timestamp": "2025-07-17T19:36:35.404Z"
+  }
+}

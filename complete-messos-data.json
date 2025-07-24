@@ -1,0 +1,5358 @@
+{
+  "summary": {
+    "totalValue": 29742521,
+    "targetValue": 19464431,
+    "accuracy": "65.44",
+    "securitiesCount": 41,
+    "targetRange": "39-41 securities"
+  },
+  "securities": [
+    {
+      "isin": "SECURITY_41",
+      "name": "Security with value 12'363'974",
+      "value": 12363974,
+      "swissOriginal": "12'363'974",
+      "currency": "USD",
+      "price": 961.1313,
+      "percentage": "97463.52%",
+      "maturity": null,
+      "valueLine": 66,
+      "confidence": 0.7,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2567543397",
+      "name": "GOLDMAN SACHS 10Y CALLABLE NOTE 2024-18.06.2034",
+      "value": 2450000,
+      "swissOriginal": "2'450'000",
+      "currency": "USD",
+      "price": 6.2026,
+      "percentage": "1.26%",
+      "maturity": "18.06.2026",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 430,
+      "valueLine": 427,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2105981117",
+      "name": "GOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT",
+      "value": 1600000,
+      "swissOriginal": "1'600'000",
+      "currency": "USD",
+      "price": 12.2028,
+      "percentage": "0.35%",
+      "maturity": "20.12.2028",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 795,
+      "valueLine": 799,
+      "distance": 4,
+      "confidence": 0.8,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2838389430",
+      "name": "GOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT",
+      "value": 1600000,
+      "swissOriginal": "1'600'000",
+      "currency": "USD",
+      "price": 4.2033,
+      "percentage": "0.35%",
+      "maturity": "26.04.2033",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 802,
+      "valueLine": 799,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2964611052",
+      "name": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035",
+      "value": 1470000,
+      "swissOriginal": "1'470'000",
+      "currency": "USD",
+      "price": 2.2035,
+      "percentage": "0.72%",
+      "maturity": "03.02.2035",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 564,
+      "valueLine": 561,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2792098779",
+      "name": "Security XS2792098779",
+      "value": 1200000,
+      "swissOriginal": "1'200'000",
+      "currency": "USD",
+      "price": 12.2034,
+      "percentage": "1.83%",
+      "maturity": "02.12.2034",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 766,
+      "valueLine": 763,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2110079584",
+      "name": "Security XS2110079584",
+      "value": 1100000,
+      "swissOriginal": "1'100'000",
+      "currency": "USD",
+      "price": 6.2034,
+      "percentage": "1.50%",
+      "maturity": "18.06.2034",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 442,
+      "valueLine": 439,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2381723902",
+      "name": "JPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021-",
+      "value": 996057,
+      "swissOriginal": "996'057",
+      "currency": "USD",
+      "price": 3.2025,
+      "percentage": "4.13%",
+      "maturity": "31.03.2025",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 488,
+      "valueLine": 484,
+      "distance": 4,
+      "confidence": 0.8,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2252299883",
+      "name": "NOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ON CS",
+      "value": 989800,
+      "swissOriginal": "989'800",
+      "currency": "USD",
+      "price": 3.2025,
+      "percentage": "1.38%",
+      "maturity": "28.03.2025",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 899,
+      "valueLine": 895,
+      "distance": 4,
+      "confidence": 0.8,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2692298537",
+      "name": "GOLDMAN SACHS 0% NOTES 23-07.11.29",
+      "value": 690000,
+      "swissOriginal": "690'000",
+      "currency": "USD",
+      "price": 11.2029,
+      "percentage": "2.26%",
+      "maturity": "07.11.2029",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 331,
+      "valueLine": 328,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS0461497009",
+      "name": "DEUTSCHE BANK NOTES 23-08.11.28 VRN",
+      "value": 690000,
+      "swissOriginal": "690'000",
+      "currency": "USD",
+      "price": 11.2028,
+      "percentage": "1.54%",
+      "maturity": "08.11.2028",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 639,
+      "valueLine": 636,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2381717250",
+      "name": "BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S",
+      "value": 500000,
+      "swissOriginal": "500'000",
+      "currency": "USD",
+      "price": 3.2025,
+      "percentage": "3.70%",
+      "maturity": "27.03.2025",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 544,
+      "valueLine": 541,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2519369867",
+      "name": "Security XS2519369867",
+      "value": 500000,
+      "swissOriginal": "500'000",
+      "currency": "USD",
+      "price": 6.2027,
+      "percentage": "0.22%",
+      "maturity": "21.06.2027",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 748,
+      "valueLine": 751,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2315191069",
+      "name": "Security XS2315191069",
+      "value": 500000,
+      "swissOriginal": "500'000",
+      "currency": "USD",
+      "price": 6.2027,
+      "percentage": "0.22%",
+      "maturity": "21.06.2027",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 754,
+      "valueLine": 751,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2824054402",
+      "name": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-",
+      "value": 440000,
+      "swissOriginal": "440'000",
+      "currency": "USD",
+      "price": 5.2026,
+      "percentage": "1.81%",
+      "maturity": "29.05.2026",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 418,
+      "valueLine": 415,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "LU2228214107",
+      "name": "Security LU2228214107",
+      "value": 350000,
+      "swissOriginal": "350'000",
+      "currency": "USD",
+      "price": 9.2024,
+      "percentage": "1.14%",
+      "maturity": "13.09.2024",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 590,
+      "valueLine": 593,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2736388732",
+      "name": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE",
+      "value": 250000,
+      "swissOriginal": "250'000",
+      "currency": "USD",
+      "price": 2.203,
+      "percentage": "2.58%",
+      "maturity": "13.02.2030",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 365,
+      "valueLine": 362,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2530201644",
+      "name": "TORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN",
+      "value": 200000,
+      "swissOriginal": "200'000",
+      "currency": "USD",
+      "price": 2.2027,
+      "percentage": "0.25%",
+      "maturity": "23.02.2027",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 293,
+      "valueLine": 290,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2912278723",
+      "name": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+      "value": 200000,
+      "swissOriginal": "200'000",
+      "currency": "USD",
+      "price": 9.2024,
+      "percentage": "1.92%",
+      "maturity": "30.09.2024",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 473,
+      "valueLine": 470,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS1700087403",
+      "name": "NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21",
+      "value": 200000,
+      "swissOriginal": "200'000",
+      "currency": "USD",
+      "price": 6.2026,
+      "percentage": "1.90%",
+      "maturity": "20.06.2026",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 862,
+      "valueLine": 865,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2594173093",
+      "name": "NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21",
+      "value": 200000,
+      "swissOriginal": "200'000",
+      "currency": "USD",
+      "price": 6.2026,
+      "percentage": "1.90%",
+      "maturity": "20.06.2026",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 868,
+      "valueLine": 865,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2829752976",
+      "name": "GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-",
+      "value": 150000,
+      "swissOriginal": "150'000",
+      "currency": "EUR",
+      "price": 11.2034,
+      "percentage": "1.90%",
+      "maturity": "18.11.2034",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 528,
+      "valueLine": 531,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2953741100",
+      "name": "BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S",
+      "value": 150000,
+      "swissOriginal": "150'000",
+      "currency": "USD",
+      "price": 11.2034,
+      "percentage": "1.90%",
+      "maturity": "18.11.2034",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 534,
+      "valueLine": 531,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2746319610",
+      "name": "DEUTSCHE BANK NOTES 23-08.11.28 VRN",
+      "value": 140000,
+      "swissOriginal": "140'000",
+      "currency": "USD",
+      "price": 3.203,
+      "percentage": "3.10%",
+      "maturity": "01.03.2030",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 651,
+      "valueLine": 648,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "SECURITY_40",
+      "name": "Security with value 103'770",
+      "value": 103770,
+      "swissOriginal": "103'770",
+      "currency": "USD",
+      "price": 961.1313,
+      "percentage": "7700.53%",
+      "maturity": null,
+      "valueLine": 65,
+      "confidence": 0.7,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2754416860",
+      "name": "GOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P",
+      "value": 100000,
+      "swissOriginal": "100'000",
+      "currency": "USD",
+      "price": 3.2025,
+      "percentage": "1.16%",
+      "maturity": "31.03.2025",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 341,
+      "valueLine": 338,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2761230684",
+      "name": "LUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30",
+      "value": 100000,
+      "swissOriginal": "100'000",
+      "currency": "USD",
+      "price": 2.203,
+      "percentage": "2.24%",
+      "maturity": "13.02.2030",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 353,
+      "valueLine": 350,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2848820754",
+      "name": "CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34",
+      "value": 100000,
+      "swissOriginal": "100'000",
+      "currency": "USD",
+      "price": 8.2034,
+      "percentage": "1.16%",
+      "maturity": "01.08.2034",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 457,
+      "valueLine": 460,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2829712830",
+      "name": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+      "value": 100000,
+      "swissOriginal": "100'000",
+      "currency": "USD",
+      "price": 8.2034,
+      "percentage": "1.16%",
+      "maturity": "01.08.2034",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 463,
+      "valueLine": 460,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2993414619",
+      "name": "RBC LONDON 0% NOTES 2025-28.03.2035",
+      "value": 97700,
+      "swissOriginal": "097'700",
+      "currency": "USD",
+      "price": 3.2035,
+      "percentage": "0.50%",
+      "maturity": "28.03.2035",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 252,
+      "valueLine": 254,
+      "distance": 2,
+      "confidence": 0.9,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2481066111",
+      "name": "JPMORGAN CHASE 0% NOTES 2024-19.12.2034",
+      "value": 50000,
+      "swissOriginal": "50'000",
+      "currency": "USD",
+      "price": 12.2034,
+      "percentage": "1.10%",
+      "maturity": "19.12.2034",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 554,
+      "valueLine": 551,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2782869916",
+      "name": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-",
+      "value": 48667,
+      "swissOriginal": "048'667",
+      "currency": "USD",
+      "price": 3.2025,
+      "percentage": "2.86%",
+      "maturity": "31.03.2025",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 411,
+      "valueLine": 407,
+      "distance": 4,
+      "confidence": 0.8,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2665592833",
+      "name": "HARP ISSUER NOTES 2023-18.09.2028",
+      "value": 32000,
+      "swissOriginal": "32'000",
+      "currency": "USD",
+      "price": 9.2028,
+      "percentage": "0.74%",
+      "maturity": "18.09.2028",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 324,
+      "valueLine": 322,
+      "distance": 2,
+      "confidence": 0.9,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XD0466760473",
+      "name": "Security XD0466760473",
+      "value": 26129,
+      "swissOriginal": "26'129",
+      "currency": "USD",
+      "price": 12.2023,
+      "percentage": "0.13%",
+      "maturity": "31.12.2023",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 947,
+      "valueLine": 950,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "CH0244767585",
+      "name": "Security CH0244767585",
+      "value": 21496,
+      "swissOriginal": "021'496",
+      "currency": "CHF",
+      "price": 221.5641,
+      "percentage": "0.12%",
+      "maturity": "31.03.2025",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 699,
+      "valueLine": 701,
+      "distance": 2,
+      "confidence": 0.9,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2714429128",
+      "name": "EMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN",
+      "value": 20343,
+      "swissOriginal": "20'343",
+      "currency": "USD",
+      "price": 3.2025,
+      "percentage": "1.35%",
+      "maturity": "27.03.2025",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 782,
+      "valueLine": 780,
+      "distance": 2,
+      "confidence": 0.9,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2407295554",
+      "name": "NOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029",
+      "value": 6514,
+      "swissOriginal": "6'514",
+      "currency": "USD",
+      "price": 3.2025,
+      "percentage": "0.19%",
+      "maturity": "31.03.2025",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 886,
+      "valueLine": 884,
+      "distance": 2,
+      "confidence": 0.9,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS3035947103",
+      "name": "WELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36",
+      "value": 2581,
+      "swissOriginal": "2'581",
+      "currency": "EUR",
+      "price": 3.2036,
+      "percentage": "0.00%",
+      "maturity": "28.03.2036",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 579,
+      "valueLine": 582,
+      "distance": 3,
+      "confidence": 0.85,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2631782468",
+      "name": "LUMINIS REPACK NOTES 23-25.05.29 VRN ON 4,625%",
+      "value": 1416,
+      "swissOriginal": "1'416",
+      "currency": "USD",
+      "price": 3.2025,
+      "percentage": "0.54%",
+      "maturity": "31.03.2025",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 820,
+      "valueLine": 818,
+      "distance": 2,
+      "confidence": 0.9,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "CH1269060229",
+      "name": "Security CH1269060229",
+      "value": 1043,
+      "swissOriginal": "1'043",
+      "currency": "USD",
+      "price": 3.2025,
+      "percentage": "3.00%",
+      "maturity": "31.03.2025",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 602,
+      "valueLine": 600,
+      "distance": 2,
+      "confidence": 0.9,
+      "allDataExtracted": true
+    },
+    {
+      "isin": "XS2588105036",
+      "name": "CANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28",
+      "value": 1031,
+      "swissOriginal": "1'031",
+      "currency": "USD",
+      "price": 3.2025,
+      "percentage": "0.57%",
+      "maturity": "28.03.2025",
+      "coupon": null,
+      "rating": null,
+      "quantity": null,
+      "isinLine": 311,
+      "valueLine": 309,
+      "distance": 2,
+      "confidence": 0.9,
+      "allDataExtracted": true
+    }
+  ],
+  "allData": {
+    "isins": [
+      {
+        "isin": "XS2993414619",
+        "line": 251,
+        "context": "ISIN: XS2993414619  //  Valorn.: 140610687"
+      },
+      {
+        "isin": "XS2530201644",
+        "line": 292,
+        "context": "ISIN: XS2530201644  //  Valorn.: 125350273"
+      },
+      {
+        "isin": "XS2588105036",
+        "line": 310,
+        "context": "ISIN: XS2588105036  //  Valorn.: 112286204"
+      },
+      {
+        "isin": "XS2665592833",
+        "line": 323,
+        "context": "ISIN: XS2665592833  //  Valorn.: 128829182"
+      },
+      {
+        "isin": "XS2692298537",
+        "line": 330,
+        "context": "ISIN: XS2692298537  //  Valorn.: 129157183"
+      },
+      {
+        "isin": "XS2754416860",
+        "line": 340,
+        "context": "ISIN: XS2754416860  //  Valorn.: 132648671"
+      },
+      {
+        "isin": "XS2761230684",
+        "line": 352,
+        "context": "ISIN: XS2761230684  //  Valorn.: 112288215"
+      },
+      {
+        "isin": "XS2736388732",
+        "line": 364,
+        "context": "ISIN: XS2736388732  //  Valorn.: 131799640"
+      },
+      {
+        "isin": "XS2782869916",
+        "line": 410,
+        "context": "ISIN: XS2782869916  //  Valorn.: 132544344"
+      },
+      {
+        "isin": "XS2824054402",
+        "line": 417,
+        "context": "ISIN: XS2824054402  //  Valorn.: 135337661"
+      },
+      {
+        "isin": "XS2567543397",
+        "line": 429,
+        "context": "ISIN: XS2567543397  //  Valorn.: 134736192"
+      },
+      {
+        "isin": "XS2110079584",
+        "line": 441,
+        "context": "ISIN: XS2110079584  //  Valorn.: 136429245"
+      },
+      {
+        "isin": "XS2848820754",
+        "line": 456,
+        "context": "ISIN: XS2848820754  //  Valorn.: 135116008"
+      },
+      {
+        "isin": "XS2829712830",
+        "line": 462,
+        "context": "ISIN: XS2829712830  //  Valorn.: 134735316"
+      },
+      {
+        "isin": "XS2912278723",
+        "line": 472,
+        "context": "ISIN: XS2912278723  //  Valorn.: 138689613"
+      },
+      {
+        "isin": "XS2381723902",
+        "line": 487,
+        "context": "ISIN: XS2381723902  //  Valorn.: 128883231"
+      },
+      {
+        "isin": "XS2829752976",
+        "line": 527,
+        "context": "ISIN: XS2829752976  //  Valorn.: 138874416"
+      },
+      {
+        "isin": "XS2953741100",
+        "line": 533,
+        "context": "ISIN: XS2953741100  //  Valorn.: 138494467"
+      },
+      {
+        "isin": "XS2381717250",
+        "line": 543,
+        "context": "ISIN: XS2381717250  //  Valorn.: 128883267"
+      },
+      {
+        "isin": "XS2481066111",
+        "line": 553,
+        "context": "ISIN: XS2481066111    //  Val  orn.: 126294402"
+      },
+      {
+        "isin": "XS2964611052",
+        "line": 563,
+        "context": "ISIN: XS2964611052  //  Valorn.: 141235167"
+      },
+      {
+        "isin": "XS3035947103",
+        "line": 578,
+        "context": "ISIN: XS3035947103  //  Valorn.: 143578751"
+      },
+      {
+        "isin": "LU2228214107",
+        "line": 589,
+        "context": "ISIN: LU2228214107  //  Valorn.: 57282891"
+      },
+      {
+        "isin": "CH1269060229",
+        "line": 601,
+        "context": "ISIN: CH1269060229  //  Valorn.: 126906022"
+      },
+      {
+        "isin": "XS0461497009",
+        "line": 638,
+        "context": "ISIN: XS0461497009  //  Valorn.: 130269069"
+      },
+      {
+        "isin": "XS2746319610",
+        "line": 650,
+        "context": "ISIN: XS2746319610  //  Valorn.: 133393503"
+      },
+      {
+        "isin": "CH0244767585",
+        "line": 698,
+        "context": "ISIN: CH0244767585  //  Valorn.: 24476758"
+      },
+      {
+        "isin": "XS2519369867",
+        "line": 747,
+        "context": "ISIN: XS2519369867  //  Valorn.: 121050656"
+      },
+      {
+        "isin": "XS2315191069",
+        "line": 753,
+        "context": "ISIN: XS2315191069  //  Valorn.: 111918998"
+      },
+      {
+        "isin": "XS2792098779",
+        "line": 765,
+        "context": "ISIN: XS2792098779  //  Valorn.: 140288136"
+      },
+      {
+        "isin": "XS2714429128",
+        "line": 781,
+        "context": "ISIN: XS2714429128  //  Valorn.: 130738882"
+      },
+      {
+        "isin": "XS2105981117",
+        "line": 794,
+        "context": "ISIN: XS2105981117  //  Val  orn.: 114118068"
+      },
+      {
+        "isin": "XS2838389430",
+        "line": 801,
+        "context": "ISIN: XS2838389430  //  Valorn.: 135968317"
+      },
+      {
+        "isin": "XS2631782468",
+        "line": 819,
+        "context": "ISIN: XS2631782468  //  Valorn.: 127708275"
+      },
+      {
+        "isin": "XS1700087403",
+        "line": 861,
+        "context": "ISIN: XS1700087403  //  Valorn.: 39877135"
+      },
+      {
+        "isin": "XS2594173093",
+        "line": 867,
+        "context": "ISIN: XS2594173093  //  Valorn.: 125443809"
+      },
+      {
+        "isin": "XS2407295554",
+        "line": 885,
+        "context": "ISIN: XS2407295554  //  Valorn.: 114718568"
+      },
+      {
+        "isin": "XS2252299883",
+        "line": 898,
+        "context": "ISIN: XS2252299883  //  Valorn.: 58001077"
+      },
+      {
+        "isin": "XD0466760473",
+        "line": 946,
+        "context": "ISIN: XD0466760473  //  Valorn.: 46676047"
+      }
+    ],
+    "values": [
+      {
+        "swissOriginal": "103'770",
+        "numericValue": 103770,
+        "line": 64,
+        "context": "Liquidity103'7700.53%"
+      },
+      {
+        "swissOriginal": "12'363'974",
+        "numericValue": 12363974,
+        "line": 65,
+        "context": "Bonds12'363'97463.52%"
+      },
+      {
+        "swissOriginal": "24'319",
+        "numericValue": 24319,
+        "line": 66,
+        "context": "Equities24'3190.12%"
+      },
+      {
+        "swissOriginal": "6'946'239",
+        "numericValue": 6946239,
+        "line": 68,
+        "context": "Structured products6'946'23935.69%"
+      },
+      {
+        "swissOriginal": "26'129",
+        "numericValue": 26129,
+        "line": 71,
+        "context": "Other assets26'1290.13%"
+      },
+      {
+        "swissOriginal": "19'464'431",
+        "numericValue": 19464431,
+        "line": 72,
+        "context": "Total19'464'431100.00%"
+      },
+      {
+        "swissOriginal": "345'057",
+        "numericValue": 345057,
+        "line": 73,
+        "context": "Thereof accrued interest345'057"
+      },
+      {
+        "swissOriginal": "84'967",
+        "numericValue": 84967,
+        "line": 75,
+        "context": "Collected84'967"
+      },
+      {
+        "swissOriginal": "345'057",
+        "numericValue": 345057,
+        "line": 76,
+        "context": "Accruals345'057"
+      },
+      {
+        "swissOriginal": "19'440'112",
+        "numericValue": 19440112,
+        "line": 78,
+        "context": "USD19'440'11299.88%"
+      },
+      {
+        "swissOriginal": "21'496",
+        "numericValue": 21496,
+        "line": 79,
+        "context": "CHF21'4961.13130.883924'3190.12%"
+      },
+      {
+        "swissOriginal": "924'319",
+        "numericValue": 924319,
+        "line": 79,
+        "context": "CHF21'4961.13130.883924'3190.12%"
+      },
+      {
+        "swissOriginal": "19'464'431",
+        "numericValue": 19464431,
+        "line": 80,
+        "context": "Total19'464'431100.00%"
+      },
+      {
+        "swissOriginal": "103'770",
+        "numericValue": 103770,
+        "line": 93,
+        "context": "Liquidity103'7700.53%"
+      },
+      {
+        "swissOriginal": "6'070",
+        "numericValue": 6070,
+        "line": 94,
+        "context": "Cash accounts6'0700.03%"
+      },
+      {
+        "swissOriginal": "97'700",
+        "numericValue": 97700,
+        "line": 95,
+        "context": "Money Market97'7000.50%"
+      },
+      {
+        "swissOriginal": "12'363'974",
+        "numericValue": 12363974,
+        "line": 97,
+        "context": "Bonds12'363'97463.52%"
+      },
+      {
+        "swissOriginal": "11'002'508",
+        "numericValue": 11002508,
+        "line": 98,
+        "context": "Bonds11'002'50856.53%"
+      },
+      {
+        "swissOriginal": "361'466",
+        "numericValue": 361466,
+        "line": 99,
+        "context": "Bond funds / certificat  es1'  361'4666.99%"
+      },
+      {
+        "swissOriginal": "24'319",
+        "numericValue": 24319,
+        "line": 101,
+        "context": "Equities24'3190.12%"
+      },
+      {
+        "swissOriginal": "24'319",
+        "numericValue": 24319,
+        "line": 102,
+        "context": "Equities24'3190.12%"
+      },
+      {
+        "swissOriginal": "6'946'239",
+        "numericValue": 6946239,
+        "line": 105,
+        "context": "Structured products6'946'23935.69%"
+      },
+      {
+        "swissOriginal": "5'956'439",
+        "numericValue": 5956439,
+        "line": 106,
+        "context": "Structured products (Bonds)5'956'43930.60%"
+      },
+      {
+        "swissOriginal": "989'800",
+        "numericValue": 989800,
+        "line": 107,
+        "context": "Structured products (Equities)989'8005.09%"
+      },
+      {
+        "swissOriginal": "26'129",
+        "numericValue": 26129,
+        "line": 113,
+        "context": "Other assets26'1290.13%"
+      },
+      {
+        "swissOriginal": "26'129",
+        "numericValue": 26129,
+        "line": 114,
+        "context": "Hedge Funds & Private Equity26'1290.13%"
+      },
+      {
+        "swissOriginal": "19'464'431",
+        "numericValue": 19464431,
+        "line": 126,
+        "context": "Total assets19'464'431100.00%"
+      },
+      {
+        "swissOriginal": "19'464'431",
+        "numericValue": 19464431,
+        "line": 127,
+        "context": "Portfolio Total19'464'431"
+      },
+      {
+        "swissOriginal": "103'770",
+        "numericValue": 103770,
+        "line": 141,
+        "context": "Liquidity103'7700.53%0.53%"
+      },
+      {
+        "swissOriginal": "6'070",
+        "numericValue": 6070,
+        "line": 142,
+        "context": "Cash accounts6'0700.03%0.03%"
+      },
+      {
+        "swissOriginal": "97'700",
+        "numericValue": 97700,
+        "line": 143,
+        "context": "Money Market97'7000.50%0.50%"
+      },
+      {
+        "swissOriginal": "12'363'974",
+        "numericValue": 12363974,
+        "line": 145,
+        "context": "Bonds12'363'97463.52%63.52%"
+      },
+      {
+        "swissOriginal": "11'002'508",
+        "numericValue": 11002508,
+        "line": 146,
+        "context": "Bonds11'002'50856.53%56.53%"
+      },
+      {
+        "swissOriginal": "361'466",
+        "numericValue": 361466,
+        "line": 147,
+        "context": "Bond funds / certificat  es1'  361'4666.99%6.99%"
+      },
+      {
+        "swissOriginal": "24'319",
+        "numericValue": 24319,
+        "line": 149,
+        "context": "Equities24'3190.12%0.12%"
+      },
+      {
+        "swissOriginal": "24'319",
+        "numericValue": 24319,
+        "line": 150,
+        "context": "Equities24'3190.12%0.12%"
+      },
+      {
+        "swissOriginal": "6'946'239",
+        "numericValue": 6946239,
+        "line": 153,
+        "context": "Structured products6'946'23935.69%35.69%"
+      },
+      {
+        "swissOriginal": "5'956'439",
+        "numericValue": 5956439,
+        "line": 154,
+        "context": "Structured products (Bonds)5'956'43930.60%30.60%"
+      },
+      {
+        "swissOriginal": "989'800",
+        "numericValue": 989800,
+        "line": 155,
+        "context": "Structured products (Equities)989'8005.09%5.09%"
+      },
+      {
+        "swissOriginal": "26'129",
+        "numericValue": 26129,
+        "line": 161,
+        "context": "Other assets26'1290.13%0.13%"
+      },
+      {
+        "swissOriginal": "26'129",
+        "numericValue": 26129,
+        "line": 162,
+        "context": "Hedge Funds & Private Equity26'1290.13%0.13%"
+      },
+      {
+        "swissOriginal": "19'464'431",
+        "numericValue": 19464431,
+        "line": 166,
+        "context": "Total assets19'464'431100.00%99.88%0.12%"
+      },
+      {
+        "swissOriginal": "19'172'732",
+        "numericValue": 19172732,
+        "line": 179,
+        "context": "19'172'732Val  ue as of   31.12.2024"
+      },
+      {
+        "swissOriginal": "19'464'431",
+        "numericValue": 19464431,
+        "line": 180,
+        "context": "19'464'431Value as of 31.03.2025"
+      },
+      {
+        "swissOriginal": "291'700",
+        "numericValue": 291700,
+        "line": 186,
+        "context": "1.52%291'700Performance TWR"
+      },
+      {
+        "swissOriginal": "291'065",
+        "numericValue": 291065,
+        "line": 188,
+        "context": "1.52%291'065In Local Currency"
+      },
+      {
+        "swissOriginal": "84'967",
+        "numericValue": 84967,
+        "line": 189,
+        "context": "0.44%84'967Thereof Earnings"
+      },
+      {
+        "swissOriginal": "6'069",
+        "numericValue": 6069,
+        "line": 241,
+        "context": "USD6'069.770.03%"
+      },
+      {
+        "swissOriginal": "6'070",
+        "numericValue": 6070,
+        "line": 245,
+        "context": "6'070"
+      },
+      {
+        "swissOriginal": "100'000",
+        "numericValue": 100000,
+        "line": 248,
+        "context": "USD100'000.00"
+      },
+      {
+        "swissOriginal": "097'700",
+        "numericValue": 97700,
+        "line": 253,
+        "context": "100.000097.700097'700"
+      },
+      {
+        "swissOriginal": "103'770",
+        "numericValue": 103770,
+        "line": 257,
+        "context": "Total Liquidity103'770USD0.53%"
+      },
+      {
+        "swissOriginal": "6'070",
+        "numericValue": 6070,
+        "line": 258,
+        "context": "thereof Cash accountsUSD6'0700.03%"
+      },
+      {
+        "swissOriginal": "97'700",
+        "numericValue": 97700,
+        "line": 259,
+        "context": "thereof Money m arketUSD97'7000.50%"
+      },
+      {
+        "swissOriginal": "200'000",
+        "numericValue": 200000,
+        "line": 289,
+        "context": "USD200'000"
+      },
+      {
+        "swissOriginal": "199'080",
+        "numericValue": 199080,
+        "line": 296,
+        "context": "100.200099.1991199'080"
+      },
+      {
+        "swissOriginal": "200'000",
+        "numericValue": 200000,
+        "line": 301,
+        "context": "USD200'000"
+      },
+      {
+        "swissOriginal": "200'288",
+        "numericValue": 200288,
+        "line": 305,
+        "context": "100.200099.6285200'288"
+      },
+      {
+        "swissOriginal": "1'031",
+        "numericValue": 1031,
+        "line": 308,
+        "context": "1'031"
+      },
+      {
+        "swissOriginal": "1'500'000",
+        "numericValue": 1500000,
+        "line": 314,
+        "context": "USD1'500'000"
+      },
+      {
+        "swissOriginal": "001'507'550",
+        "numericValue": 1507550,
+        "line": 318,
+        "context": "99.099098.37001'507'550"
+      },
+      {
+        "swissOriginal": "32'000",
+        "numericValue": 32000,
+        "line": 321,
+        "context": "32'000"
+      },
+      {
+        "swissOriginal": "690'000",
+        "numericValue": 690000,
+        "line": 327,
+        "context": "USD690'000"
+      },
+      {
+        "swissOriginal": "737'748",
+        "numericValue": 737748,
+        "line": 333,
+        "context": "100.1000106.9200737'748"
+      },
+      {
+        "swissOriginal": "100'000",
+        "numericValue": 100000,
+        "line": 337,
+        "context": "USD100'000"
+      },
+      {
+        "swissOriginal": "098'202",
+        "numericValue": 98202,
+        "line": 344,
+        "context": "100.200097.140098'202"
+      },
+      {
+        "swissOriginal": "1'062",
+        "numericValue": 1062,
+        "line": 347,
+        "context": "1'062"
+      },
+      {
+        "swissOriginal": "100'000",
+        "numericValue": 100000,
+        "line": 349,
+        "context": "USD100'000"
+      },
+      {
+        "swissOriginal": "102'506",
+        "numericValue": 102506,
+        "line": 356,
+        "context": "100.2000102.2448102'506"
+      },
+      {
+        "swissOriginal": "250'000",
+        "numericValue": 250000,
+        "line": 361,
+        "context": "USD250'000"
+      },
+      {
+        "swissOriginal": "256'958",
+        "numericValue": 256958,
+        "line": 368,
+        "context": "100.200099.2500256'958"
+      },
+      {
+        "swissOriginal": "8'833",
+        "numericValue": 8833,
+        "line": 371,
+        "context": "8'833"
+      },
+      {
+        "swissOriginal": "50'000",
+        "numericValue": 50000,
+        "line": 402,
+        "context": "USD50'000"
+      },
+      {
+        "swissOriginal": "048'667",
+        "numericValue": 48667,
+        "line": 406,
+        "context": "100.200097.334048'667"
+      },
+      {
+        "swissOriginal": "440'000",
+        "numericValue": 440000,
+        "line": 414,
+        "context": "USD440'000"
+      },
+      {
+        "swissOriginal": "478'158",
+        "numericValue": 478158,
+        "line": 421,
+        "context": "100.2000103.9900478'158"
+      },
+      {
+        "swissOriginal": "20'602",
+        "numericValue": 20602,
+        "line": 424,
+        "context": "20'602"
+      },
+      {
+        "swissOriginal": "2'450'000",
+        "numericValue": 2450000,
+        "line": 426,
+        "context": "USD2'450'000"
+      },
+      {
+        "swissOriginal": "002'570'405",
+        "numericValue": 2570405,
+        "line": 433,
+        "context": "100.1000100.52002'570'405"
+      },
+      {
+        "swissOriginal": "107'665",
+        "numericValue": 107665,
+        "line": 436,
+        "context": "107'665"
+      },
+      {
+        "swissOriginal": "1'100'000",
+        "numericValue": 1100000,
+        "line": 438,
+        "context": "USD1'100'000"
+      },
+      {
+        "swissOriginal": "001'101'100",
+        "numericValue": 1101100,
+        "line": 444,
+        "context": "100.1000100.10001'101'100"
+      },
+      {
+        "swissOriginal": "90'000",
+        "numericValue": 90000,
+        "line": 448,
+        "context": "USD90'000"
+      },
+      {
+        "swissOriginal": "090'054",
+        "numericValue": 90054,
+        "line": 452,
+        "context": "100.2000100.060090'054"
+      },
+      {
+        "swissOriginal": "100'000",
+        "numericValue": 100000,
+        "line": 459,
+        "context": "USD100'000"
+      },
+      {
+        "swissOriginal": "092'320",
+        "numericValue": 92320,
+        "line": 465,
+        "context": "99.999692.320092'320"
+      },
+      {
+        "swissOriginal": "200'000",
+        "numericValue": 200000,
+        "line": 469,
+        "context": "USD200'000"
+      },
+      {
+        "swissOriginal": "199'131",
+        "numericValue": 199131,
+        "line": 475,
+        "context": "100.200099.5654199'131"
+      },
+      {
+        "swissOriginal": "100'000",
+        "numericValue": 100000,
+        "line": 479,
+        "context": "USD100'000"
+      },
+      {
+        "swissOriginal": "996'057",
+        "numericValue": 996057,
+        "line": 483,
+        "context": "100.200096.056996'057"
+      },
+      {
+        "swissOriginal": "250'000",
+        "numericValue": 250000,
+        "line": 519,
+        "context": "USD250'000"
+      },
+      {
+        "swissOriginal": "242'075",
+        "numericValue": 242075,
+        "line": 523,
+        "context": "99.679096.8300242'075"
+      },
+      {
+        "swissOriginal": "150'000",
+        "numericValue": 150000,
+        "line": 530,
+        "context": "USD150'000"
+      },
+      {
+        "swissOriginal": "146'625",
+        "numericValue": 146625,
+        "line": 536,
+        "context": "99.198097.7500146'625"
+      },
+      {
+        "swissOriginal": "500'000",
+        "numericValue": 500000,
+        "line": 540,
+        "context": "USD500'000"
+      },
+      {
+        "swissOriginal": "505'500",
+        "numericValue": 505500,
+        "line": 546,
+        "context": "100.2000101.1000505'500"
+      },
+      {
+        "swissOriginal": "50'000",
+        "numericValue": 50000,
+        "line": 550,
+        "context": "USD50'000"
+      },
+      {
+        "swissOriginal": "049'500",
+        "numericValue": 49500,
+        "line": 556,
+        "context": "100.100099.000049'500"
+      },
+      {
+        "swissOriginal": "1'470'000",
+        "numericValue": 1470000,
+        "line": 560,
+        "context": "USD1'470'000"
+      },
+      {
+        "swissOriginal": "001'480'584",
+        "numericValue": 1480584,
+        "line": 566,
+        "context": "100.0000100.72001'480'584"
+      },
+      {
+        "swissOriginal": "800'000",
+        "numericValue": 800000,
+        "line": 570,
+        "context": "USD800'000"
+      },
+      {
+        "swissOriginal": "800'000",
+        "numericValue": 800000,
+        "line": 574,
+        "context": "100.0000100.0000800'000"
+      },
+      {
+        "swissOriginal": "2'581",
+        "numericValue": 2581,
+        "line": 581,
+        "context": "USD2'581.79"
+      },
+      {
+        "swissOriginal": "115'613",
+        "numericValue": 115613,
+        "line": 585,
+        "context": "81.530444.7800115'613"
+      },
+      {
+        "swissOriginal": "350'000",
+        "numericValue": 350000,
+        "line": 592,
+        "context": "USD350'000"
+      },
+      {
+        "swissOriginal": "342'643",
+        "numericValue": 342643,
+        "line": 596,
+        "context": "100.623797.6000342'643"
+      },
+      {
+        "swissOriginal": "1'043",
+        "numericValue": 1043,
+        "line": 599,
+        "context": "1'043"
+      },
+      {
+        "swissOriginal": "690'000",
+        "numericValue": 690000,
+        "line": 635,
+        "context": "USD690'000"
+      },
+      {
+        "swissOriginal": "711'110",
+        "numericValue": 711110,
+        "line": 642,
+        "context": "100.1000100.8900711'110"
+      },
+      {
+        "swissOriginal": "14'969",
+        "numericValue": 14969,
+        "line": 645,
+        "context": "14'969"
+      },
+      {
+        "swissOriginal": "140'000",
+        "numericValue": 140000,
+        "line": 647,
+        "context": "USD140'000"
+      },
+      {
+        "swissOriginal": "192'100",
+        "numericValue": 192100,
+        "line": 654,
+        "context": "100.2000102.5000192'100"
+      },
+      {
+        "swissOriginal": "48'600",
+        "numericValue": 48600,
+        "line": 657,
+        "context": "48'600"
+      },
+      {
+        "swissOriginal": "12'363'974",
+        "numericValue": 12363974,
+        "line": 661,
+        "context": "12'363'974USD"
+      },
+      {
+        "swissOriginal": "236'748",
+        "numericValue": 236748,
+        "line": 662,
+        "context": "USD236'748"
+      },
+      {
+        "swissOriginal": "11'002'508",
+        "numericValue": 11002508,
+        "line": 664,
+        "context": "thereof B ondsUSD11'002'50856.53%"
+      },
+      {
+        "swissOriginal": "1'361'466",
+        "numericValue": 1361466,
+        "line": 665,
+        "context": "thereof B ond funds /  c ertficatesUSD1'361'4666.99%"
+      },
+      {
+        "swissOriginal": "021'496",
+        "numericValue": 21496,
+        "line": 700,
+        "context": "221.564126.870021'496"
+      },
+      {
+        "swissOriginal": "524'319",
+        "numericValue": 524319,
+        "line": 704,
+        "context": "31.03.202524'319"
+      },
+      {
+        "swissOriginal": "24'319",
+        "numericValue": 24319,
+        "line": 707,
+        "context": "Total Equities24'319USD0.12%"
+      },
+      {
+        "swissOriginal": "24'319",
+        "numericValue": 24319,
+        "line": 708,
+        "context": "thereof E quities (without options)USD24'3190.12%"
+      },
+      {
+        "swissOriginal": "200'000",
+        "numericValue": 200000,
+        "line": 738,
+        "context": "USD200'000"
+      },
+      {
+        "swissOriginal": "196'221",
+        "numericValue": 196221,
+        "line": 742,
+        "context": "100.728897.9853196'221"
+      },
+      {
+        "swissOriginal": "500'000",
+        "numericValue": 500000,
+        "line": 750,
+        "context": "USD500'000"
+      },
+      {
+        "swissOriginal": "502'305",
+        "numericValue": 502305,
+        "line": 757,
+        "context": "100.524199.0000502'305"
+      },
+      {
+        "swissOriginal": "7'305",
+        "numericValue": 7305,
+        "line": 760,
+        "context": "7'305"
+      },
+      {
+        "swissOriginal": "1'200'000",
+        "numericValue": 1200000,
+        "line": 762,
+        "context": "USD1'200'000"
+      },
+      {
+        "swissOriginal": "690'000",
+        "numericValue": 690000,
+        "line": 772,
+        "context": "USD690'000"
+      },
+      {
+        "swissOriginal": "704'064",
+        "numericValue": 704064,
+        "line": 776,
+        "context": "100.446299.0900704'064"
+      },
+      {
+        "swissOriginal": "20'343",
+        "numericValue": 20343,
+        "line": 779,
+        "context": "20'343"
+      },
+      {
+        "swissOriginal": "500'000",
+        "numericValue": 500000,
+        "line": 785,
+        "context": "USD500'000"
+      },
+      {
+        "swissOriginal": "484'457",
+        "numericValue": 484457,
+        "line": 789,
+        "context": "100.524396.7400484'457"
+      },
+      {
+        "swissOriginal": "1'600'000",
+        "numericValue": 1600000,
+        "line": 798,
+        "context": "USD1'600'000"
+      },
+      {
+        "swissOriginal": "001'623'960",
+        "numericValue": 1623960,
+        "line": 805,
+        "context": "100.100097.08001'623'960"
+      },
+      {
+        "swissOriginal": "70'680",
+        "numericValue": 70680,
+        "line": 808,
+        "context": "70'680"
+      },
+      {
+        "swissOriginal": "500'000",
+        "numericValue": 500000,
+        "line": 810,
+        "context": "USD500'000"
+      },
+      {
+        "swissOriginal": "488'866",
+        "numericValue": 488866,
+        "line": 814,
+        "context": "98.018197.4900488'866"
+      },
+      {
+        "swissOriginal": "1'416",
+        "numericValue": 1416,
+        "line": 817,
+        "context": "1'416"
+      },
+      {
+        "swissOriginal": "100'000",
+        "numericValue": 100000,
+        "line": 853,
+        "context": "USD100'000"
+      },
+      {
+        "swissOriginal": "998'672",
+        "numericValue": 998672,
+        "line": 857,
+        "context": "91.021798.671998'672"
+      },
+      {
+        "swissOriginal": "200'000",
+        "numericValue": 200000,
+        "line": 864,
+        "context": "USD200'000"
+      },
+      {
+        "swissOriginal": "193'464",
+        "numericValue": 193464,
+        "line": 871,
+        "context": "99.059296.2100193'464"
+      },
+      {
+        "swissOriginal": "1'044",
+        "numericValue": 1044,
+        "line": 874,
+        "context": "1'044"
+      },
+      {
+        "swissOriginal": "500'000",
+        "numericValue": 500000,
+        "line": 876,
+        "context": "USD500'000"
+      },
+      {
+        "swissOriginal": "510'114",
+        "numericValue": 510114,
+        "line": 880,
+        "context": "100.5243100.7200510'114"
+      },
+      {
+        "swissOriginal": "6'514",
+        "numericValue": 6514,
+        "line": 883,
+        "context": "6'514"
+      },
+      {
+        "swissOriginal": "1'000'000",
+        "numericValue": 1000000,
+        "line": 890,
+        "context": "USD1'000'000"
+      },
+      {
+        "swissOriginal": "989'800",
+        "numericValue": 989800,
+        "line": 894,
+        "context": "100.366498.9800989'800"
+      },
+      {
+        "swissOriginal": "6'946'239",
+        "numericValue": 6946239,
+        "line": 904,
+        "context": "6'946'239USD"
+      },
+      {
+        "swissOriginal": "108'309",
+        "numericValue": 108309,
+        "line": 905,
+        "context": "USD108'309"
+      },
+      {
+        "swissOriginal": "5'956'439",
+        "numericValue": 5956439,
+        "line": 907,
+        "context": "thereof S tructured products (Bonds)USD5'956'43930.60%"
+      },
+      {
+        "swissOriginal": "989'800",
+        "numericValue": 989800,
+        "line": 908,
+        "context": "thereof S tructured products (Equities)USD989'8005.09%"
+      },
+      {
+        "swissOriginal": "1'008",
+        "numericValue": 1008,
+        "line": 942,
+        "context": "1'008.3748128.039526'129"
+      },
+      {
+        "swissOriginal": "526'129",
+        "numericValue": 526129,
+        "line": 942,
+        "context": "1'008.3748128.039526'129"
+      },
+      {
+        "swissOriginal": "26'129",
+        "numericValue": 26129,
+        "line": 949,
+        "context": "Total Other assets26'129USD0.13%"
+      },
+      {
+        "swissOriginal": "26'129",
+        "numericValue": 26129,
+        "line": 950,
+        "context": "thereof Hedge funds &  P rivate EquityUSD26'1290.13%"
+      },
+      {
+        "swissOriginal": "6'070",
+        "numericValue": 6070,
+        "line": 964,
+        "context": "USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "92'801",
+        "numericValue": 92801,
+        "line": 964,
+        "context": "USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "31'960",
+        "numericValue": 31960,
+        "line": 964,
+        "context": "USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "146'761",
+        "numericValue": 146761,
+        "line": 964,
+        "context": "USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "100'579",
+        "numericValue": 100579,
+        "line": 964,
+        "context": "USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "37'950",
+        "numericValue": 37950,
+        "line": 964,
+        "context": "USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "2'500",
+        "numericValue": 2500,
+        "line": 964,
+        "context": "USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "5'311",
+        "numericValue": 5311,
+        "line": 964,
+        "context": "USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "12'306",
+        "numericValue": 12306,
+        "line": 964,
+        "context": "USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "2'500",
+        "numericValue": 2500,
+        "line": 964,
+        "context": "USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "6'070",
+        "numericValue": 6070,
+        "line": 965,
+        "context": "Total USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "92'801",
+        "numericValue": 92801,
+        "line": 965,
+        "context": "Total USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "31'960",
+        "numericValue": 31960,
+        "line": 965,
+        "context": "Total USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "146'761",
+        "numericValue": 146761,
+        "line": 965,
+        "context": "Total USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "100'579",
+        "numericValue": 100579,
+        "line": 965,
+        "context": "Total USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "37'950",
+        "numericValue": 37950,
+        "line": 965,
+        "context": "Total USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "2'500",
+        "numericValue": 2500,
+        "line": 965,
+        "context": "Total USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "5'311",
+        "numericValue": 5311,
+        "line": 965,
+        "context": "Total USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "12'306",
+        "numericValue": 12306,
+        "line": 965,
+        "context": "Total USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "2'500",
+        "numericValue": 2500,
+        "line": 965,
+        "context": "Total USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "swissOriginal": "16'878'474",
+        "numericValue": 16878474,
+        "line": 968,
+        "context": "USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "swissOriginal": "412'551",
+        "numericValue": 412551,
+        "line": 968,
+        "context": "USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "swissOriginal": "280'902",
+        "numericValue": 280902,
+        "line": 968,
+        "context": "USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "swissOriginal": "460'285",
+        "numericValue": 460285,
+        "line": 968,
+        "context": "USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "swissOriginal": "2'995'285",
+        "numericValue": 2995285,
+        "line": 968,
+        "context": "USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "swissOriginal": "2'135'285",
+        "numericValue": 2135285,
+        "line": 968,
+        "context": "USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "swissOriginal": "10'594'166",
+        "numericValue": 10594166,
+        "line": 968,
+        "context": "USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "swissOriginal": "16'878'474",
+        "numericValue": 16878474,
+        "line": 969,
+        "context": "Total USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "swissOriginal": "412'551",
+        "numericValue": 412551,
+        "line": 969,
+        "context": "Total USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "swissOriginal": "280'902",
+        "numericValue": 280902,
+        "line": 969,
+        "context": "Total USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "swissOriginal": "460'285",
+        "numericValue": 460285,
+        "line": 969,
+        "context": "Total USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "swissOriginal": "2'995'285",
+        "numericValue": 2995285,
+        "line": 969,
+        "context": "Total USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "swissOriginal": "2'135'285",
+        "numericValue": 2135285,
+        "line": 969,
+        "context": "Total USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "swissOriginal": "10'594'166",
+        "numericValue": 10594166,
+        "line": 969,
+        "context": "Total USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      }
+    ],
+    "prices": [
+      {
+        "price": 3.2025,
+        "line": 4,
+        "context": "asof 31.03.2025"
+      },
+      {
+        "price": 3.2025,
+        "line": 21,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 4.2025,
+        "line": 24,
+        "context": "Print date 01.04.2025 // Page I"
+      },
+      {
+        "price": 3.2025,
+        "line": 46,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 961.1313,
+        "line": 79,
+        "context": "CHF21'4961.13130.883924'3190.12%"
+      },
+      {
+        "price": 4.2025,
+        "line": 81,
+        "context": "Print date 01.04.2025 // Page 1/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 85,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 4.2025,
+        "line": 129,
+        "context": "Print date 01.04.2025 // Page 2/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 133,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 4.2025,
+        "line": 167,
+        "context": "Print date 01.04.2025 // Page 3/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 171,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 1.2025,
+        "line": 178,
+        "context": "in %USDEvaluation Period 01.01.2025 // 31.03.2025"
+      },
+      {
+        "price": 3.2025,
+        "line": 178,
+        "context": "in %USDEvaluation Period 01.01.2025 // 31.03.2025"
+      },
+      {
+        "price": 12.2024,
+        "line": 179,
+        "context": "19'172'732Val  ue as of   31.12.2024"
+      },
+      {
+        "price": 3.2025,
+        "line": 180,
+        "context": "19'464'431Value as of 31.03.2025"
+      },
+      {
+        "price": 4.2025,
+        "line": 212,
+        "context": "Print date 01.04.2025 // Page 4/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 216,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 3.2035,
+        "line": 252,
+        "context": "MM secs discounted  //  Maturity: 28.03.2035  //  PRC: 5.00"
+      },
+      {
+        "price": 100,
+        "line": 253,
+        "context": "100.000097.700097'700"
+      },
+      {
+        "price": 97.7,
+        "line": 253,
+        "context": "100.000097.700097'700"
+      },
+      {
+        "price": 3.2025,
+        "line": 255,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 3.2035,
+        "line": 256,
+        "context": "RBC LONDON 0% NOTES 2025-28.03.2035"
+      },
+      {
+        "price": 4.2025,
+        "line": 260,
+        "context": "Print date 01.04.2025 // Page 5/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 264,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 2.2027,
+        "line": 293,
+        "context": "Ordinary Bonds  //  Maturity: 23.02.2027"
+      },
+      {
+        "price": 100.2,
+        "line": 296,
+        "context": "100.200099.1991199'080"
+      },
+      {
+        "price": 99.1991,
+        "line": 296,
+        "context": "100.200099.1991199'080"
+      },
+      {
+        "price": 3.2025,
+        "line": 298,
+        "context": "28.03.2025"
+      },
+      {
+        "price": 100.2,
+        "line": 305,
+        "context": "100.200099.6285200'288"
+      },
+      {
+        "price": 99.6285,
+        "line": 305,
+        "context": "100.200099.6285200'288"
+      },
+      {
+        "price": 3.2025,
+        "line": 307,
+        "context": "28.03.2025"
+      },
+      {
+        "price": 2.2028,
+        "line": 311,
+        "context": "Ordinary Bonds  //  Maturity: 22.02.2028"
+      },
+      {
+        "price": 99.099,
+        "line": 318,
+        "context": "99.099098.37001'507'550"
+      },
+      {
+        "price": 98.37,
+        "line": 318,
+        "context": "99.099098.37001'507'550"
+      },
+      {
+        "price": 3.2025,
+        "line": 320,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 9.2028,
+        "line": 322,
+        "context": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028"
+      },
+      {
+        "price": 9.2028,
+        "line": 324,
+        "context": "Ordinary Bonds  //  Maturity: 18.09.2028"
+      },
+      {
+        "price": 11.2029,
+        "line": 331,
+        "context": "Ordinary Bonds  //  Maturity: 07.11.2029"
+      },
+      {
+        "price": 100.1,
+        "line": 333,
+        "context": "100.1000106.9200737'748"
+      },
+      {
+        "price": 106.92,
+        "line": 333,
+        "context": "100.1000106.9200737'748"
+      },
+      {
+        "price": 3.2025,
+        "line": 335,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 1.203,
+        "line": 341,
+        "context": "Ordinary Bonds  //  Maturity: 17.01.2030"
+      },
+      {
+        "price": 100.2,
+        "line": 344,
+        "context": "100.200097.140098'202"
+      },
+      {
+        "price": 97.14,
+        "line": 344,
+        "context": "100.200097.140098'202"
+      },
+      {
+        "price": 3.2025,
+        "line": 346,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 2.203,
+        "line": 353,
+        "context": "Zero Bonds  //  Maturity: 13.02.2030"
+      },
+      {
+        "price": 100.2,
+        "line": 356,
+        "context": "100.2000102.2448102'506"
+      },
+      {
+        "price": 102.2448,
+        "line": 356,
+        "context": "100.2000102.2448102'506"
+      },
+      {
+        "price": 3.2025,
+        "line": 358,
+        "context": "28.03.2025"
+      },
+      {
+        "price": 2.203,
+        "line": 360,
+        "context": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE"
+      },
+      {
+        "price": 12.2031,
+        "line": 365,
+        "context": "Ordinary Bonds  //  Maturity: 20.12.2031"
+      },
+      {
+        "price": 100.2,
+        "line": 368,
+        "context": "100.200099.2500256'958"
+      },
+      {
+        "price": 99.25,
+        "line": 368,
+        "context": "100.200099.2500256'958"
+      },
+      {
+        "price": 3.2025,
+        "line": 370,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 4.2025,
+        "line": 373,
+        "context": "Print date 01.04.2025 // Page 6/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 377,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 100.2,
+        "line": 406,
+        "context": "100.200097.334048'667"
+      },
+      {
+        "price": 97.334,
+        "line": 406,
+        "context": "100.200097.334048'667"
+      },
+      {
+        "price": 3.2025,
+        "line": 408,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 5.2034,
+        "line": 411,
+        "context": "Ordinary Bonds  //  Maturity: 09.05.2034"
+      },
+      {
+        "price": 5.2026,
+        "line": 418,
+        "context": "Ordinary Bonds  //  Callable: 29.05.2026"
+      },
+      {
+        "price": 100.2,
+        "line": 421,
+        "context": "100.2000103.9900478'158"
+      },
+      {
+        "price": 103.99,
+        "line": 421,
+        "context": "100.2000103.9900478'158"
+      },
+      {
+        "price": 3.2025,
+        "line": 423,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 6.2026,
+        "line": 430,
+        "context": "Ordinary Bonds  //  Callable: 18.06.2026"
+      },
+      {
+        "price": 100.1,
+        "line": 433,
+        "context": "100.1000100.52002'570'405"
+      },
+      {
+        "price": 100.52,
+        "line": 433,
+        "context": "100.1000100.52002'570'405"
+      },
+      {
+        "price": 3.2025,
+        "line": 435,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 6.2034,
+        "line": 437,
+        "context": "GS 10Y CALLABLE NOTE 2024-18.06.2034"
+      },
+      {
+        "price": 7.2026,
+        "line": 442,
+        "context": "Zero Bonds  //  Callable: 09.07.2026"
+      },
+      {
+        "price": 100.1,
+        "line": 444,
+        "context": "100.1000100.10001'101'100"
+      },
+      {
+        "price": 100.1,
+        "line": 444,
+        "context": "100.1000100.10001'101'100"
+      },
+      {
+        "price": 3.2025,
+        "line": 446,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 100.2,
+        "line": 452,
+        "context": "100.2000100.060090'054"
+      },
+      {
+        "price": 100.06,
+        "line": 452,
+        "context": "100.2000100.060090'054"
+      },
+      {
+        "price": 3.2025,
+        "line": 454,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 8.2034,
+        "line": 457,
+        "context": "Zero Bonds  //  Maturity: 01.08.2034"
+      },
+      {
+        "price": 9.2034,
+        "line": 463,
+        "context": "Ordinary Bonds  //  Maturity: 30.09.2034"
+      },
+      {
+        "price": 99.9996,
+        "line": 465,
+        "context": "99.999692.320092'320"
+      },
+      {
+        "price": 92.32,
+        "line": 465,
+        "context": "99.999692.320092'320"
+      },
+      {
+        "price": 3.2025,
+        "line": 467,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 9.2024,
+        "line": 468,
+        "context": "GOLDMAN SACHS EMTN 2024-30.09.2024"
+      },
+      {
+        "price": 10.2034,
+        "line": 473,
+        "context": "Zero Bonds  //  Maturity: 17.10.2034"
+      },
+      {
+        "price": 100.2,
+        "line": 475,
+        "context": "100.200099.5654199'131"
+      },
+      {
+        "price": 99.5654,
+        "line": 475,
+        "context": "100.200099.5654199'131"
+      },
+      {
+        "price": 3.2025,
+        "line": 477,
+        "context": "28.03.2025"
+      },
+      {
+        "price": 10.2034,
+        "line": 478,
+        "context": "BANK OF AMERICA 0% NOTES 2024-17.10.2034"
+      },
+      {
+        "price": 100.2,
+        "line": 483,
+        "context": "100.200096.056996'057"
+      },
+      {
+        "price": 96.0569,
+        "line": 483,
+        "context": "100.200096.056996'057"
+      },
+      {
+        "price": 3.2025,
+        "line": 485,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 10.2034,
+        "line": 488,
+        "context": "Zero Bonds  //  Maturity: 29.10.2034"
+      },
+      {
+        "price": 4.2025,
+        "line": 490,
+        "context": "Print date 01.04.2025 // Page 7/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 494,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 11.2034,
+        "line": 522,
+        "context": "18.11.2034"
+      },
+      {
+        "price": 99.679,
+        "line": 523,
+        "context": "99.679096.8300242'075"
+      },
+      {
+        "price": 96.83,
+        "line": 523,
+        "context": "99.679096.8300242'075"
+      },
+      {
+        "price": 3.2025,
+        "line": 525,
+        "context": "27.03.2025"
+      },
+      {
+        "price": 11.2034,
+        "line": 528,
+        "context": "Ordinary Bonds  //  Maturity: 18.11.2034"
+      },
+      {
+        "price": 12.2034,
+        "line": 534,
+        "context": "Zero Bonds  //  Maturity: 11.12.2034"
+      },
+      {
+        "price": 99.198,
+        "line": 536,
+        "context": "99.198097.7500146'625"
+      },
+      {
+        "price": 97.75,
+        "line": 536,
+        "context": "99.198097.7500146'625"
+      },
+      {
+        "price": 3.2025,
+        "line": 538,
+        "context": "27.03.2025"
+      },
+      {
+        "price": 12.2034,
+        "line": 544,
+        "context": "Zero Bonds  //  Maturity: 19.12.2034"
+      },
+      {
+        "price": 100.2,
+        "line": 546,
+        "context": "100.2000101.1000505'500"
+      },
+      {
+        "price": 101.1,
+        "line": 546,
+        "context": "100.2000101.1000505'500"
+      },
+      {
+        "price": 3.2025,
+        "line": 548,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 12.2034,
+        "line": 549,
+        "context": "JPMORGAN CHASE 0% NOTES 2024-19.12.2034"
+      },
+      {
+        "price": 2.2035,
+        "line": 554,
+        "context": "Zero Bonds  //  Maturity: 03.02.2035"
+      },
+      {
+        "price": 100.1,
+        "line": 556,
+        "context": "100.100099.000049'500"
+      },
+      {
+        "price": 99,
+        "line": 556,
+        "context": "100.100099.000049'500"
+      },
+      {
+        "price": 3.2025,
+        "line": 558,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 2.2035,
+        "line": 559,
+        "context": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035"
+      },
+      {
+        "price": 2.2035,
+        "line": 564,
+        "context": "Zero Bonds  //  Maturity: 14.02.2035"
+      },
+      {
+        "price": 100,
+        "line": 566,
+        "context": "100.0000100.72001'480'584"
+      },
+      {
+        "price": 100.72,
+        "line": 566,
+        "context": "100.0000100.72001'480'584"
+      },
+      {
+        "price": 3.2025,
+        "line": 568,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 100,
+        "line": 574,
+        "context": "100.0000100.0000800'000"
+      },
+      {
+        "price": 100,
+        "line": 574,
+        "context": "100.0000100.0000800'000"
+      },
+      {
+        "price": 3.2025,
+        "line": 576,
+        "context": "28.03.2025"
+      },
+      {
+        "price": 3.2036,
+        "line": 579,
+        "context": "Ordinary Bonds  //  Maturity: 28.03.2036"
+      },
+      {
+        "price": 81.5304,
+        "line": 585,
+        "context": "81.530444.7800115'613"
+      },
+      {
+        "price": 44.78,
+        "line": 585,
+        "context": "81.530444.7800115'613"
+      },
+      {
+        "price": 9.2024,
+        "line": 587,
+        "context": "13.09.2024"
+      },
+      {
+        "price": 100.6237,
+        "line": 596,
+        "context": "100.623797.6000342'643"
+      },
+      {
+        "price": 97.6,
+        "line": 596,
+        "context": "100.623797.6000342'643"
+      },
+      {
+        "price": 3.2025,
+        "line": 598,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 5.2028,
+        "line": 602,
+        "context": "Structured Bonds  //  Maturity: 26.05.2028"
+      },
+      {
+        "price": 4.2025,
+        "line": 606,
+        "context": "Print date 01.04.2025 // Page 8/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 610,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 11.2028,
+        "line": 639,
+        "context": "Ordinary Bonds  //  Maturity: 08.11.2028"
+      },
+      {
+        "price": 100.1,
+        "line": 642,
+        "context": "100.1000100.8900711'110"
+      },
+      {
+        "price": 100.89,
+        "line": 642,
+        "context": "100.1000100.8900711'110"
+      },
+      {
+        "price": 3.2025,
+        "line": 644,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 3.203,
+        "line": 651,
+        "context": "Ordinary Bonds  //  Maturity: 01.03.2030"
+      },
+      {
+        "price": 100.2,
+        "line": 654,
+        "context": "100.2000102.5000192'100"
+      },
+      {
+        "price": 102.5,
+        "line": 654,
+        "context": "100.2000102.5000192'100"
+      },
+      {
+        "price": 3.2025,
+        "line": 656,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 4.2025,
+        "line": 666,
+        "context": "Print date 01.04.2025 // Page 9/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 670,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 221.5641,
+        "line": 700,
+        "context": "221.564126.870021'496"
+      },
+      {
+        "price": 26.87,
+        "line": 700,
+        "context": "221.564126.870021'496"
+      },
+      {
+        "price": 401.1313,
+        "line": 701,
+        "context": "1.13401.1313"
+      },
+      {
+        "price": 3.2025,
+        "line": 704,
+        "context": "31.03.202524'319"
+      },
+      {
+        "price": 4.2025,
+        "line": 709,
+        "context": "Print date 01.04.2025 // Page 10/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 713,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 100.7288,
+        "line": 742,
+        "context": "100.728897.9853196'221"
+      },
+      {
+        "price": 97.9853,
+        "line": 742,
+        "context": "100.728897.9853196'221"
+      },
+      {
+        "price": 2.2025,
+        "line": 744,
+        "context": "28.02.2025"
+      },
+      {
+        "price": 6.2027,
+        "line": 748,
+        "context": "Other convertible bonds  //  Maturity: 21.06.2027"
+      },
+      {
+        "price": 1.2029,
+        "line": 754,
+        "context": "Structured Bonds  //  Maturity: 08.01.2029"
+      },
+      {
+        "price": 100.5241,
+        "line": 757,
+        "context": "100.524199.0000502'305"
+      },
+      {
+        "price": 99,
+        "line": 757,
+        "context": "100.524199.0000502'305"
+      },
+      {
+        "price": 3.2025,
+        "line": 759,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 12.2034,
+        "line": 766,
+        "context": "Structured Bonds  //  Maturity: 02.12.2034  //  PRC: 5.00"
+      },
+      {
+        "price": 100,
+        "line": 768,
+        "context": "100.000096.19301'154'316"
+      },
+      {
+        "price": 96.193,
+        "line": 768,
+        "context": "100.000096.19301'154'316"
+      },
+      {
+        "price": 3.2025,
+        "line": 770,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 100.4462,
+        "line": 776,
+        "context": "100.446299.0900704'064"
+      },
+      {
+        "price": 99.09,
+        "line": 776,
+        "context": "100.446299.0900704'064"
+      },
+      {
+        "price": 3.2025,
+        "line": 778,
+        "context": "27.03.2025"
+      },
+      {
+        "price": 9.2029,
+        "line": 782,
+        "context": "Structured Bonds  //  Maturity: 17.09.2029"
+      },
+      {
+        "price": 100.5243,
+        "line": 789,
+        "context": "100.524396.7400484'457"
+      },
+      {
+        "price": 96.74,
+        "line": 789,
+        "context": "100.524396.7400484'457"
+      },
+      {
+        "price": 3.2025,
+        "line": 791,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 12.2028,
+        "line": 795,
+        "context": "Structured Bonds  //  Maturity: 20.12.2028"
+      },
+      {
+        "price": 4.2033,
+        "line": 802,
+        "context": "Structured Bonds  //  Maturity: 26.04.2033"
+      },
+      {
+        "price": 100.1,
+        "line": 805,
+        "context": "100.100097.08001'623'960"
+      },
+      {
+        "price": 97.08,
+        "line": 805,
+        "context": "100.100097.08001'623'960"
+      },
+      {
+        "price": 3.2025,
+        "line": 807,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 98.0181,
+        "line": 814,
+        "context": "98.018197.4900488'866"
+      },
+      {
+        "price": 97.49,
+        "line": 814,
+        "context": "98.018197.4900488'866"
+      },
+      {
+        "price": 3.2025,
+        "line": 816,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 5.2029,
+        "line": 820,
+        "context": "Structured Bonds  //  Maturity: 25.05.2029"
+      },
+      {
+        "price": 4.2025,
+        "line": 824,
+        "context": "Print date 01.04.2025 // Page 11/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 828,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 91.0217,
+        "line": 857,
+        "context": "91.021798.671998'672"
+      },
+      {
+        "price": 98.6719,
+        "line": 857,
+        "context": "91.021798.671998'672"
+      },
+      {
+        "price": 3.2025,
+        "line": 859,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 6.2026,
+        "line": 862,
+        "context": "Structured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00"
+      },
+      {
+        "price": 9.2029,
+        "line": 868,
+        "context": "Structured Bonds  //  Maturity: 27.09.2029"
+      },
+      {
+        "price": 99.0592,
+        "line": 871,
+        "context": "99.059296.2100193'464"
+      },
+      {
+        "price": 96.21,
+        "line": 871,
+        "context": "99.059296.2100193'464"
+      },
+      {
+        "price": 3.2025,
+        "line": 873,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 9.2029,
+        "line": 875,
+        "context": "NOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029"
+      },
+      {
+        "price": 100.5243,
+        "line": 880,
+        "context": "100.5243100.7200510'114"
+      },
+      {
+        "price": 100.72,
+        "line": 880,
+        "context": "100.5243100.7200510'114"
+      },
+      {
+        "price": 3.2025,
+        "line": 882,
+        "context": "31.03.2025"
+      },
+      {
+        "price": 1.2028,
+        "line": 886,
+        "context": "Structured Bonds  //  Maturity: 12.01.2028"
+      },
+      {
+        "price": 100.3664,
+        "line": 894,
+        "context": "100.366498.9800989'800"
+      },
+      {
+        "price": 98.98,
+        "line": 894,
+        "context": "100.366498.9800989'800"
+      },
+      {
+        "price": 3.2025,
+        "line": 896,
+        "context": "28.03.2025"
+      },
+      {
+        "price": 5.2026,
+        "line": 899,
+        "context": "Structured products equity  //  Maturity: 15.05.2026  //  PRC: 5.00"
+      },
+      {
+        "price": 4.2025,
+        "line": 909,
+        "context": "Print date 01.04.2025 // Page 12/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 913,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 8.3748,
+        "line": 942,
+        "context": "1'008.3748128.039526'129"
+      },
+      {
+        "price": 128.0395,
+        "line": 942,
+        "context": "1'008.3748128.039526'129"
+      },
+      {
+        "price": 12.2023,
+        "line": 944,
+        "context": "31.12.2023"
+      },
+      {
+        "price": 4.2025,
+        "line": 951,
+        "context": "Print date 01.04.2025 // Page 13/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 955,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 4.2025,
+        "line": 970,
+        "context": "Print date 01.04.2025 // Page 14/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 974,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 4.2025,
+        "line": 1013,
+        "context": "Print date 01.04.2025 // Page 15/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 1017,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 4.2025,
+        "line": 1036,
+        "context": "Print date 01.04.2025 // Page 16/17"
+      },
+      {
+        "price": 3.2025,
+        "line": 1040,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "price": 4.2025,
+        "line": 1062,
+        "context": "Print date 01.04.2025 // Page 17/17"
+      }
+    ],
+    "percentages": [
+      {
+        "percentage": "7700.53%",
+        "line": 64,
+        "context": "Liquidity103'7700.53%"
+      },
+      {
+        "percentage": "97463.52%",
+        "line": 65,
+        "context": "Bonds12'363'97463.52%"
+      },
+      {
+        "percentage": "3190.12%",
+        "line": 66,
+        "context": "Equities24'3190.12%"
+      },
+      {
+        "percentage": "23935.69%",
+        "line": 68,
+        "context": "Structured products6'946'23935.69%"
+      },
+      {
+        "percentage": "1290.13%",
+        "line": 71,
+        "context": "Other assets26'1290.13%"
+      },
+      {
+        "percentage": "431100.00%",
+        "line": 72,
+        "context": "Total19'464'431100.00%"
+      },
+      {
+        "percentage": "11299.88%",
+        "line": 78,
+        "context": "USD19'440'11299.88%"
+      },
+      {
+        "percentage": "3190.12%",
+        "line": 79,
+        "context": "CHF21'4961.13130.883924'3190.12%"
+      },
+      {
+        "percentage": "431100.00%",
+        "line": 80,
+        "context": "Total19'464'431100.00%"
+      },
+      {
+        "percentage": "7700.53%",
+        "line": 93,
+        "context": "Liquidity103'7700.53%"
+      },
+      {
+        "percentage": "0700.03%",
+        "line": 94,
+        "context": "Cash accounts6'0700.03%"
+      },
+      {
+        "percentage": "7000.50%",
+        "line": 95,
+        "context": "Money Market97'7000.50%"
+      },
+      {
+        "percentage": "97463.52%",
+        "line": 97,
+        "context": "Bonds12'363'97463.52%"
+      },
+      {
+        "percentage": "50856.53%",
+        "line": 98,
+        "context": "Bonds11'002'50856.53%"
+      },
+      {
+        "percentage": "4666.99%",
+        "line": 99,
+        "context": "Bond funds / certificat  es1'  361'4666.99%"
+      },
+      {
+        "percentage": "3190.12%",
+        "line": 101,
+        "context": "Equities24'3190.12%"
+      },
+      {
+        "percentage": "3190.12%",
+        "line": 102,
+        "context": "Equities24'3190.12%"
+      },
+      {
+        "percentage": "23935.69%",
+        "line": 105,
+        "context": "Structured products6'946'23935.69%"
+      },
+      {
+        "percentage": "43930.60%",
+        "line": 106,
+        "context": "Structured products (Bonds)5'956'43930.60%"
+      },
+      {
+        "percentage": "8005.09%",
+        "line": 107,
+        "context": "Structured products (Equities)989'8005.09%"
+      },
+      {
+        "percentage": "1290.13%",
+        "line": 113,
+        "context": "Other assets26'1290.13%"
+      },
+      {
+        "percentage": "1290.13%",
+        "line": 114,
+        "context": "Hedge Funds & Private Equity26'1290.13%"
+      },
+      {
+        "percentage": "431100.00%",
+        "line": 126,
+        "context": "Total assets19'464'431100.00%"
+      },
+      {
+        "percentage": "7700.53%",
+        "line": 141,
+        "context": "Liquidity103'7700.53%0.53%"
+      },
+      {
+        "percentage": "0.53%",
+        "line": 141,
+        "context": "Liquidity103'7700.53%0.53%"
+      },
+      {
+        "percentage": "0700.03%",
+        "line": 142,
+        "context": "Cash accounts6'0700.03%0.03%"
+      },
+      {
+        "percentage": "0.03%",
+        "line": 142,
+        "context": "Cash accounts6'0700.03%0.03%"
+      },
+      {
+        "percentage": "7000.50%",
+        "line": 143,
+        "context": "Money Market97'7000.50%0.50%"
+      },
+      {
+        "percentage": "0.50%",
+        "line": 143,
+        "context": "Money Market97'7000.50%0.50%"
+      },
+      {
+        "percentage": "97463.52%",
+        "line": 145,
+        "context": "Bonds12'363'97463.52%63.52%"
+      },
+      {
+        "percentage": "63.52%",
+        "line": 145,
+        "context": "Bonds12'363'97463.52%63.52%"
+      },
+      {
+        "percentage": "50856.53%",
+        "line": 146,
+        "context": "Bonds11'002'50856.53%56.53%"
+      },
+      {
+        "percentage": "56.53%",
+        "line": 146,
+        "context": "Bonds11'002'50856.53%56.53%"
+      },
+      {
+        "percentage": "4666.99%",
+        "line": 147,
+        "context": "Bond funds / certificat  es1'  361'4666.99%6.99%"
+      },
+      {
+        "percentage": "6.99%",
+        "line": 147,
+        "context": "Bond funds / certificat  es1'  361'4666.99%6.99%"
+      },
+      {
+        "percentage": "3190.12%",
+        "line": 149,
+        "context": "Equities24'3190.12%0.12%"
+      },
+      {
+        "percentage": "0.12%",
+        "line": 149,
+        "context": "Equities24'3190.12%0.12%"
+      },
+      {
+        "percentage": "3190.12%",
+        "line": 150,
+        "context": "Equities24'3190.12%0.12%"
+      },
+      {
+        "percentage": "0.12%",
+        "line": 150,
+        "context": "Equities24'3190.12%0.12%"
+      },
+      {
+        "percentage": "23935.69%",
+        "line": 153,
+        "context": "Structured products6'946'23935.69%35.69%"
+      },
+      {
+        "percentage": "35.69%",
+        "line": 153,
+        "context": "Structured products6'946'23935.69%35.69%"
+      },
+      {
+        "percentage": "43930.60%",
+        "line": 154,
+        "context": "Structured products (Bonds)5'956'43930.60%30.60%"
+      },
+      {
+        "percentage": "30.60%",
+        "line": 154,
+        "context": "Structured products (Bonds)5'956'43930.60%30.60%"
+      },
+      {
+        "percentage": "8005.09%",
+        "line": 155,
+        "context": "Structured products (Equities)989'8005.09%5.09%"
+      },
+      {
+        "percentage": "5.09%",
+        "line": 155,
+        "context": "Structured products (Equities)989'8005.09%5.09%"
+      },
+      {
+        "percentage": "1290.13%",
+        "line": 161,
+        "context": "Other assets26'1290.13%0.13%"
+      },
+      {
+        "percentage": "0.13%",
+        "line": 161,
+        "context": "Other assets26'1290.13%0.13%"
+      },
+      {
+        "percentage": "1290.13%",
+        "line": 162,
+        "context": "Hedge Funds & Private Equity26'1290.13%0.13%"
+      },
+      {
+        "percentage": "0.13%",
+        "line": 162,
+        "context": "Hedge Funds & Private Equity26'1290.13%0.13%"
+      },
+      {
+        "percentage": "431100.00%",
+        "line": 166,
+        "context": "Total assets19'464'431100.00%99.88%0.12%"
+      },
+      {
+        "percentage": "99.88%",
+        "line": 166,
+        "context": "Total assets19'464'431100.00%99.88%0.12%"
+      },
+      {
+        "percentage": "0.12%",
+        "line": 166,
+        "context": "Total assets19'464'431100.00%99.88%0.12%"
+      },
+      {
+        "percentage": "1.52%",
+        "line": 186,
+        "context": "1.52%291'700Performance TWR"
+      },
+      {
+        "percentage": "0.00%",
+        "line": 187,
+        "context": "0.00%635Contribution of currencies"
+      },
+      {
+        "percentage": "1.52%",
+        "line": 188,
+        "context": "1.52%291'065In Local Currency"
+      },
+      {
+        "percentage": "0.44%",
+        "line": 189,
+        "context": "0.44%84'967Thereof Earnings"
+      },
+      {
+        "percentage": "0.00%",
+        "line": 191,
+        "context": "0.00%"
+      },
+      {
+        "percentage": "2.00%",
+        "line": 192,
+        "context": "2.00%"
+      },
+      {
+        "percentage": "4.00%",
+        "line": 193,
+        "context": "4.00%"
+      },
+      {
+        "percentage": "6.00%",
+        "line": 194,
+        "context": "6.00%"
+      },
+      {
+        "percentage": "8.00%",
+        "line": 195,
+        "context": "8.00%"
+      },
+      {
+        "percentage": "2.00%",
+        "line": 196,
+        "context": "-2.00%"
+      },
+      {
+        "percentage": "5.56%",
+        "line": 200,
+        "context": "5.56%"
+      },
+      {
+        "percentage": "0.00%",
+        "line": 202,
+        "context": "0.00%"
+      },
+      {
+        "percentage": "2.00%",
+        "line": 203,
+        "context": "2.00%"
+      },
+      {
+        "percentage": "4.00%",
+        "line": 204,
+        "context": "4.00%"
+      },
+      {
+        "percentage": "6.00%",
+        "line": 205,
+        "context": "6.00%"
+      },
+      {
+        "percentage": "8.00%",
+        "line": 206,
+        "context": "8.00%"
+      },
+      {
+        "percentage": "2.00%",
+        "line": 207,
+        "context": "-2.00%"
+      },
+      {
+        "percentage": "1.52%",
+        "line": 211,
+        "context": "1.52%"
+      },
+      {
+        "percentage": "770.03%",
+        "line": 241,
+        "context": "USD6'069.770.03%"
+      },
+      {
+        "percentage": "2.30%",
+        "line": 249,
+        "context": "-2.30%"
+      },
+      {
+        "percentage": "0.50%",
+        "line": 250,
+        "context": "0.50%"
+      },
+      {
+        "percentage": "2.30%",
+        "line": 254,
+        "context": "-2.30%"
+      },
+      {
+        "percentage": "0.53%",
+        "line": 257,
+        "context": "Total Liquidity103'770USD0.53%"
+      },
+      {
+        "percentage": "0700.03%",
+        "line": 258,
+        "context": "thereof Cash accountsUSD6'0700.03%"
+      },
+      {
+        "percentage": "7000.50%",
+        "line": 259,
+        "context": "thereof Money m arketUSD97'7000.50%"
+      },
+      {
+        "percentage": "0.25%",
+        "line": 290,
+        "context": "0.25%"
+      },
+      {
+        "percentage": "1.02%",
+        "line": 291,
+        "context": "1.02%"
+      },
+      {
+        "percentage": "3.32%",
+        "line": 294,
+        "context": "Coupon: 23.5  //  Quarterly  3.32%  //  Days: 37"
+      },
+      {
+        "percentage": "1.00%",
+        "line": 297,
+        "context": "-1.00%"
+      },
+      {
+        "percentage": "0.47%",
+        "line": 302,
+        "context": "0.47%"
+      },
+      {
+        "percentage": "1.03%",
+        "line": 303,
+        "context": "1.03%"
+      },
+      {
+        "percentage": "0.57%",
+        "line": 306,
+        "context": "-0.57%"
+      },
+      {
+        "percentage": "5.1531%",
+        "line": 312,
+        "context": "Coupon: 23.2  //  Annual  5.1531%  //  Days: 46"
+      },
+      {
+        "percentage": "1.49%",
+        "line": 315,
+        "context": "1.49%"
+      },
+      {
+        "percentage": "7.75%",
+        "line": 316,
+        "context": "7.75%"
+      },
+      {
+        "percentage": "0.74%",
+        "line": 319,
+        "context": "-0.74%"
+      },
+      {
+        "percentage": "2.26%",
+        "line": 328,
+        "context": "2.26%"
+      },
+      {
+        "percentage": "3.79%",
+        "line": 329,
+        "context": "3.79%"
+      },
+      {
+        "percentage": "6.81%",
+        "line": 334,
+        "context": "6.81%"
+      },
+      {
+        "percentage": "1.16%",
+        "line": 338,
+        "context": "1.16%"
+      },
+      {
+        "percentage": "0.50%",
+        "line": 339,
+        "context": "0.50%"
+      },
+      {
+        "percentage": "5.238%",
+        "line": 342,
+        "context": "Coupon: 17.1  //  Annual  5.238%  //  Days: 73"
+      },
+      {
+        "percentage": "3.05%",
+        "line": 345,
+        "context": "-3.05%"
+      },
+      {
+        "percentage": "2.24%",
+        "line": 350,
+        "context": "2.24%"
+      },
+      {
+        "percentage": "0.53%",
+        "line": 351,
+        "context": "0.53%"
+      },
+      {
+        "percentage": "2.04%",
+        "line": 357,
+        "context": "2.04%"
+      },
+      {
+        "percentage": "2.58%",
+        "line": 362,
+        "context": "-2.58%"
+      },
+      {
+        "percentage": "1.32%",
+        "line": 363,
+        "context": "1.32%"
+      },
+      {
+        "percentage": "0.95%",
+        "line": 369,
+        "context": "-0.95%"
+      },
+      {
+        "percentage": "1.07%",
+        "line": 403,
+        "context": "1.07%"
+      },
+      {
+        "percentage": "0.25%",
+        "line": 404,
+        "context": "0.25%"
+      },
+      {
+        "percentage": "2.86%",
+        "line": 407,
+        "context": "-2.86%"
+      },
+      {
+        "percentage": "1.81%",
+        "line": 415,
+        "context": "1.81%"
+      },
+      {
+        "percentage": "2.46%",
+        "line": 416,
+        "context": "2.46%"
+      },
+      {
+        "percentage": "5.6%",
+        "line": 419,
+        "context": "Coupon: 29.5  //  Annual  5.6%  //  Days: 301  //  YTM: 5.04"
+      },
+      {
+        "percentage": "3.78%",
+        "line": 422,
+        "context": "3.78%"
+      },
+      {
+        "percentage": "1.26%",
+        "line": 427,
+        "context": "1.26%"
+      },
+      {
+        "percentage": "13.21%",
+        "line": 428,
+        "context": "13.21%"
+      },
+      {
+        "percentage": "5.61%",
+        "line": 431,
+        "context": "Coupon: 18.6  //  Annual  5.61%  //  Days: 282  //  YTM: 5.53"
+      },
+      {
+        "percentage": "0.42%",
+        "line": 434,
+        "context": "0.42%"
+      },
+      {
+        "percentage": "1.50%",
+        "line": 439,
+        "context": "1.50%"
+      },
+      {
+        "percentage": "5.66%",
+        "line": 440,
+        "context": "5.66%"
+      },
+      {
+        "percentage": "0.00%",
+        "line": 445,
+        "context": "0.00%"
+      },
+      {
+        "percentage": "2.35%",
+        "line": 449,
+        "context": "2.35%"
+      },
+      {
+        "percentage": "0.46%",
+        "line": 450,
+        "context": "0.46%"
+      },
+      {
+        "percentage": "0.14%",
+        "line": 453,
+        "context": "-0.14%"
+      },
+      {
+        "percentage": "1.16%",
+        "line": 460,
+        "context": "1.16%"
+      },
+      {
+        "percentage": "0.47%",
+        "line": 461,
+        "context": "0.47%"
+      },
+      {
+        "percentage": "7.68%",
+        "line": 466,
+        "context": "-7.68%"
+      },
+      {
+        "percentage": "1.92%",
+        "line": 470,
+        "context": "1.92%"
+      },
+      {
+        "percentage": "1.02%",
+        "line": 471,
+        "context": "1.02%"
+      },
+      {
+        "percentage": "0.63%",
+        "line": 476,
+        "context": "-0.63%"
+      },
+      {
+        "percentage": "1.09%",
+        "line": 480,
+        "context": "1.09%"
+      },
+      {
+        "percentage": "0.49%",
+        "line": 481,
+        "context": "0.49%"
+      },
+      {
+        "percentage": "4.13%",
+        "line": 484,
+        "context": "-4.13%"
+      },
+      {
+        "percentage": "0.73%",
+        "line": 520,
+        "context": "0.73%"
+      },
+      {
+        "percentage": "1.24%",
+        "line": 521,
+        "context": "1.24%"
+      },
+      {
+        "percentage": "2.86%",
+        "line": 524,
+        "context": "-2.86%"
+      },
+      {
+        "percentage": "1.90%",
+        "line": 531,
+        "context": "1.90%"
+      },
+      {
+        "percentage": "0.75%",
+        "line": 532,
+        "context": "0.75%"
+      },
+      {
+        "percentage": "1.46%",
+        "line": 537,
+        "context": "-1.46%"
+      },
+      {
+        "percentage": "3.70%",
+        "line": 541,
+        "context": "3.70%"
+      },
+      {
+        "percentage": "2.60%",
+        "line": 542,
+        "context": "2.60%"
+      },
+      {
+        "percentage": "0.90%",
+        "line": 547,
+        "context": "0.90%"
+      },
+      {
+        "percentage": "1.10%",
+        "line": 551,
+        "context": "-1.10%"
+      },
+      {
+        "percentage": "0.25%",
+        "line": 552,
+        "context": "0.25%"
+      },
+      {
+        "percentage": "1.10%",
+        "line": 557,
+        "context": "-1.10%"
+      },
+      {
+        "percentage": "0.72%",
+        "line": 561,
+        "context": "0.72%"
+      },
+      {
+        "percentage": "7.61%",
+        "line": 562,
+        "context": "7.61%"
+      },
+      {
+        "percentage": "0.72%",
+        "line": 567,
+        "context": "0.72%"
+      },
+      {
+        "percentage": "0.00%",
+        "line": 571,
+        "context": "0.00%"
+      },
+      {
+        "percentage": "4.11%",
+        "line": 572,
+        "context": "4.11%"
+      },
+      {
+        "percentage": "0.00%",
+        "line": 575,
+        "context": "0.00%"
+      },
+      {
+        "percentage": "0.00%",
+        "line": 582,
+        "context": "0.00%"
+      },
+      {
+        "percentage": "0.59%",
+        "line": 583,
+        "context": "0.59%"
+      },
+      {
+        "percentage": "45.08%",
+        "line": 586,
+        "context": "-45.08%"
+      },
+      {
+        "percentage": "1.14%",
+        "line": 593,
+        "context": "1.14%"
+      },
+      {
+        "percentage": "1.76%",
+        "line": 594,
+        "context": "1.76%"
+      },
+      {
+        "percentage": "3.00%",
+        "line": 597,
+        "context": "-3.00%"
+      },
+      {
+        "percentage": "3.25%",
+        "line": 603,
+        "context": "Coupon: 26.5  //  Quarterly  3.25%  //  Days: 33"
+      },
+      {
+        "percentage": "1.54%",
+        "line": 636,
+        "context": "1.54%"
+      },
+      {
+        "percentage": "3.65%",
+        "line": 637,
+        "context": "3.65%"
+      },
+      {
+        "percentage": "5.5%",
+        "line": 640,
+        "context": "Coupon: 8.11  //  Annual  5.5%  //  Days: 142"
+      },
+      {
+        "percentage": "0.79%",
+        "line": 643,
+        "context": "0.79%"
+      },
+      {
+        "percentage": "3.10%",
+        "line": 648,
+        "context": "3.10%"
+      },
+      {
+        "percentage": "0.99%",
+        "line": 649,
+        "context": "0.99%"
+      },
+      {
+        "percentage": "32.46%",
+        "line": 652,
+        "context": "Coupon: Annual  32.46%  //  Days: 385  //  YTM: 16.79"
+      },
+      {
+        "percentage": "2.30%",
+        "line": 655,
+        "context": "2.30%"
+      },
+      {
+        "percentage": "63.52%",
+        "line": 663,
+        "context": "63.52%"
+      },
+      {
+        "percentage": "50856.53%",
+        "line": 664,
+        "context": "thereof B ondsUSD11'002'50856.53%"
+      },
+      {
+        "percentage": "4666.99%",
+        "line": 665,
+        "context": "thereof B ond funds /  c ertficatesUSD1'361'4666.99%"
+      },
+      {
+        "percentage": "3.10%",
+        "line": 696,
+        "context": "-3.10%"
+      },
+      {
+        "percentage": "0.12%",
+        "line": 697,
+        "context": "0.12%"
+      },
+      {
+        "percentage": "87.90%",
+        "line": 702,
+        "context": "-87.90%"
+      },
+      {
+        "percentage": "0.24%",
+        "line": 703,
+        "context": "-0.24%"
+      },
+      {
+        "percentage": "87.87%",
+        "line": 706,
+        "context": "-87.87%"
+      },
+      {
+        "percentage": "0.12%",
+        "line": 707,
+        "context": "Total Equities24'319USD0.12%"
+      },
+      {
+        "percentage": "3190.12%",
+        "line": 708,
+        "context": "thereof E quities (without options)USD24'3190.12%"
+      },
+      {
+        "percentage": "2.01%",
+        "line": 739,
+        "context": "-2.01%"
+      },
+      {
+        "percentage": "1.01%",
+        "line": 740,
+        "context": "1.01%"
+      },
+      {
+        "percentage": "2.72%",
+        "line": 743,
+        "context": "-2.72%"
+      },
+      {
+        "percentage": "0.22%",
+        "line": 751,
+        "context": "0.22%"
+      },
+      {
+        "percentage": "2.58%",
+        "line": 752,
+        "context": "2.58%"
+      },
+      {
+        "percentage": "1.52%",
+        "line": 758,
+        "context": "-1.52%"
+      },
+      {
+        "percentage": "1.83%",
+        "line": 763,
+        "context": "-1.83%"
+      },
+      {
+        "percentage": "5.93%",
+        "line": 764,
+        "context": "5.93%"
+      },
+      {
+        "percentage": "3.81%",
+        "line": 769,
+        "context": "-3.81%"
+      },
+      {
+        "percentage": "1.94%",
+        "line": 773,
+        "context": "-1.94%"
+      },
+      {
+        "percentage": "3.62%",
+        "line": 774,
+        "context": "3.62%"
+      },
+      {
+        "percentage": "1.35%",
+        "line": 777,
+        "context": "-1.35%"
+      },
+      {
+        "percentage": "0.21%",
+        "line": 786,
+        "context": "-0.21%"
+      },
+      {
+        "percentage": "2.49%",
+        "line": 787,
+        "context": "2.49%"
+      },
+      {
+        "percentage": "3.76%",
+        "line": 790,
+        "context": "-3.76%"
+      },
+      {
+        "percentage": "0.35%",
+        "line": 799,
+        "context": "0.35%"
+      },
+      {
+        "percentage": "8.34%",
+        "line": 800,
+        "context": "8.34%"
+      },
+      {
+        "percentage": "3.02%",
+        "line": 806,
+        "context": "-3.02%"
+      },
+      {
+        "percentage": "5.7%",
+        "line": 809,
+        "context": "LUMINIS 5.7% STR NOTE 2024-26.04.33 WFC 24W"
+      },
+      {
+        "percentage": "0.28%",
+        "line": 811,
+        "context": "0.28%"
+      },
+      {
+        "percentage": "2.51%",
+        "line": 812,
+        "context": "2.51%"
+      },
+      {
+        "percentage": "0.54%",
+        "line": 815,
+        "context": "-0.54%"
+      },
+      {
+        "percentage": "0.07%",
+        "line": 854,
+        "context": "-0.07%"
+      },
+      {
+        "percentage": "0.51%",
+        "line": 855,
+        "context": "0.51%"
+      },
+      {
+        "percentage": "8.40%",
+        "line": 858,
+        "context": "8.40%"
+      },
+      {
+        "percentage": "1.90%",
+        "line": 865,
+        "context": "-1.90%"
+      },
+      {
+        "percentage": "0.99%",
+        "line": 866,
+        "context": "0.99%"
+      },
+      {
+        "percentage": "2.88%",
+        "line": 872,
+        "context": "-2.88%"
+      },
+      {
+        "percentage": "4.36%",
+        "line": 877,
+        "context": "4.36%"
+      },
+      {
+        "percentage": "2.62%",
+        "line": 878,
+        "context": "2.62%"
+      },
+      {
+        "percentage": "0.19%",
+        "line": 881,
+        "context": "0.19%"
+      },
+      {
+        "percentage": "0.60%",
+        "line": 891,
+        "context": "0.60%"
+      },
+      {
+        "percentage": "5.09%",
+        "line": 892,
+        "context": "5.09%"
+      },
+      {
+        "percentage": "1.38%",
+        "line": 895,
+        "context": "-1.38%"
+      },
+      {
+        "percentage": "35.69%",
+        "line": 906,
+        "context": "35.69%"
+      },
+      {
+        "percentage": "43930.60%",
+        "line": 907,
+        "context": "thereof S tructured products (Bonds)USD5'956'43930.60%"
+      },
+      {
+        "percentage": "8005.09%",
+        "line": 908,
+        "context": "thereof S tructured products (Equities)USD989'8005.09%"
+      },
+      {
+        "percentage": "0.00%",
+        "line": 939,
+        "context": "0.00%"
+      },
+      {
+        "percentage": "0.13%",
+        "line": 940,
+        "context": "0.13%"
+      },
+      {
+        "percentage": "87.30%",
+        "line": 943,
+        "context": "-87.30%"
+      },
+      {
+        "percentage": "0.13%",
+        "line": 949,
+        "context": "Total Other assets26'129USD0.13%"
+      },
+      {
+        "percentage": "1290.13%",
+        "line": 950,
+        "context": "thereof Hedge funds &  P rivate EquityUSD26'1290.13%"
+      },
+      {
+        "percentage": "100.00%",
+        "line": 968,
+        "context": "USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "percentage": "100.00%",
+        "line": 969,
+        "context": "Total USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      }
+    ],
+    "dates": [
+      {
+        "date": "31.03.2025",
+        "line": 4,
+        "context": "asof 31.03.2025"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 21,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 24,
+        "context": "Print date 01.04.2025 // Page I"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 46,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 81,
+        "context": "Print date 01.04.2025 // Page 1/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 85,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 129,
+        "context": "Print date 01.04.2025 // Page 2/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 133,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 167,
+        "context": "Print date 01.04.2025 // Page 3/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 171,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "01.01.2025",
+        "line": 178,
+        "context": "in %USDEvaluation Period 01.01.2025 // 31.03.2025"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 178,
+        "context": "in %USDEvaluation Period 01.01.2025 // 31.03.2025"
+      },
+      {
+        "date": "31.12.2024",
+        "line": 179,
+        "context": "19'172'732Val  ue as of   31.12.2024"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 180,
+        "context": "19'464'431Value as of 31.03.2025"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 212,
+        "context": "Print date 01.04.2025 // Page 4/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 216,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "28.03.2035",
+        "line": 252,
+        "context": "MM secs discounted  //  Maturity: 28.03.2035  //  PRC: 5.00"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 255,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "28.03.2035",
+        "line": 256,
+        "context": "RBC LONDON 0% NOTES 2025-28.03.2035"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 260,
+        "context": "Print date 01.04.2025 // Page 5/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 264,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "23.02.2027",
+        "line": 293,
+        "context": "Ordinary Bonds  //  Maturity: 23.02.2027"
+      },
+      {
+        "date": "28.03.2025",
+        "line": 298,
+        "context": "28.03.2025"
+      },
+      {
+        "date": "28.03.2025",
+        "line": 307,
+        "context": "28.03.2025"
+      },
+      {
+        "date": "22.02.2028",
+        "line": 311,
+        "context": "Ordinary Bonds  //  Maturity: 22.02.2028"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 320,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "18.09.2028",
+        "line": 322,
+        "context": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028"
+      },
+      {
+        "date": "18.09.2028",
+        "line": 324,
+        "context": "Ordinary Bonds  //  Maturity: 18.09.2028"
+      },
+      {
+        "date": "07.11.2029",
+        "line": 331,
+        "context": "Ordinary Bonds  //  Maturity: 07.11.2029"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 335,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "17.01.2030",
+        "line": 341,
+        "context": "Ordinary Bonds  //  Maturity: 17.01.2030"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 346,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "13.02.2030",
+        "line": 353,
+        "context": "Zero Bonds  //  Maturity: 13.02.2030"
+      },
+      {
+        "date": "28.03.2025",
+        "line": 358,
+        "context": "28.03.2025"
+      },
+      {
+        "date": "13.02.2030",
+        "line": 360,
+        "context": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE"
+      },
+      {
+        "date": "20.12.2031",
+        "line": 365,
+        "context": "Ordinary Bonds  //  Maturity: 20.12.2031"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 370,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 373,
+        "context": "Print date 01.04.2025 // Page 6/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 377,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 408,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "09.05.2034",
+        "line": 411,
+        "context": "Ordinary Bonds  //  Maturity: 09.05.2034"
+      },
+      {
+        "date": "29.05.2026",
+        "line": 418,
+        "context": "Ordinary Bonds  //  Callable: 29.05.2026"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 423,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "18.06.2026",
+        "line": 430,
+        "context": "Ordinary Bonds  //  Callable: 18.06.2026"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 435,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "18.06.2034",
+        "line": 437,
+        "context": "GS 10Y CALLABLE NOTE 2024-18.06.2034"
+      },
+      {
+        "date": "09.07.2026",
+        "line": 442,
+        "context": "Zero Bonds  //  Callable: 09.07.2026"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 446,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 454,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "01.08.2034",
+        "line": 457,
+        "context": "Zero Bonds  //  Maturity: 01.08.2034"
+      },
+      {
+        "date": "30.09.2034",
+        "line": 463,
+        "context": "Ordinary Bonds  //  Maturity: 30.09.2034"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 467,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "30.09.2024",
+        "line": 468,
+        "context": "GOLDMAN SACHS EMTN 2024-30.09.2024"
+      },
+      {
+        "date": "17.10.2034",
+        "line": 473,
+        "context": "Zero Bonds  //  Maturity: 17.10.2034"
+      },
+      {
+        "date": "28.03.2025",
+        "line": 477,
+        "context": "28.03.2025"
+      },
+      {
+        "date": "17.10.2034",
+        "line": 478,
+        "context": "BANK OF AMERICA 0% NOTES 2024-17.10.2034"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 485,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "29.10.2034",
+        "line": 488,
+        "context": "Zero Bonds  //  Maturity: 29.10.2034"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 490,
+        "context": "Print date 01.04.2025 // Page 7/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 494,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "18.11.2034",
+        "line": 522,
+        "context": "18.11.2034"
+      },
+      {
+        "date": "27.03.2025",
+        "line": 525,
+        "context": "27.03.2025"
+      },
+      {
+        "date": "18.11.2034",
+        "line": 528,
+        "context": "Ordinary Bonds  //  Maturity: 18.11.2034"
+      },
+      {
+        "date": "11.12.2034",
+        "line": 534,
+        "context": "Zero Bonds  //  Maturity: 11.12.2034"
+      },
+      {
+        "date": "27.03.2025",
+        "line": 538,
+        "context": "27.03.2025"
+      },
+      {
+        "date": "19.12.2034",
+        "line": 544,
+        "context": "Zero Bonds  //  Maturity: 19.12.2034"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 548,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "19.12.2034",
+        "line": 549,
+        "context": "JPMORGAN CHASE 0% NOTES 2024-19.12.2034"
+      },
+      {
+        "date": "03.02.2035",
+        "line": 554,
+        "context": "Zero Bonds  //  Maturity: 03.02.2035"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 558,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "03.02.2035",
+        "line": 559,
+        "context": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035"
+      },
+      {
+        "date": "14.02.2035",
+        "line": 564,
+        "context": "Zero Bonds  //  Maturity: 14.02.2035"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 568,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "28.03.2025",
+        "line": 576,
+        "context": "28.03.2025"
+      },
+      {
+        "date": "28.03.2036",
+        "line": 579,
+        "context": "Ordinary Bonds  //  Maturity: 28.03.2036"
+      },
+      {
+        "date": "13.09.2024",
+        "line": 587,
+        "context": "13.09.2024"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 598,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "26.05.2028",
+        "line": 602,
+        "context": "Structured Bonds  //  Maturity: 26.05.2028"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 606,
+        "context": "Print date 01.04.2025 // Page 8/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 610,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "08.11.2028",
+        "line": 639,
+        "context": "Ordinary Bonds  //  Maturity: 08.11.2028"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 644,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "01.03.2030",
+        "line": 651,
+        "context": "Ordinary Bonds  //  Maturity: 01.03.2030"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 656,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 666,
+        "context": "Print date 01.04.2025 // Page 9/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 670,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 704,
+        "context": "31.03.202524'319"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 709,
+        "context": "Print date 01.04.2025 // Page 10/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 713,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "28.02.2025",
+        "line": 744,
+        "context": "28.02.2025"
+      },
+      {
+        "date": "21.06.2027",
+        "line": 748,
+        "context": "Other convertible bonds  //  Maturity: 21.06.2027"
+      },
+      {
+        "date": "08.01.2029",
+        "line": 754,
+        "context": "Structured Bonds  //  Maturity: 08.01.2029"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 759,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "02.12.2034",
+        "line": 766,
+        "context": "Structured Bonds  //  Maturity: 02.12.2034  //  PRC: 5.00"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 770,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "27.03.2025",
+        "line": 778,
+        "context": "27.03.2025"
+      },
+      {
+        "date": "17.09.2029",
+        "line": 782,
+        "context": "Structured Bonds  //  Maturity: 17.09.2029"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 791,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "20.12.2028",
+        "line": 795,
+        "context": "Structured Bonds  //  Maturity: 20.12.2028"
+      },
+      {
+        "date": "26.04.2033",
+        "line": 802,
+        "context": "Structured Bonds  //  Maturity: 26.04.2033"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 807,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 816,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "25.05.2029",
+        "line": 820,
+        "context": "Structured Bonds  //  Maturity: 25.05.2029"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 824,
+        "context": "Print date 01.04.2025 // Page 11/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 828,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 859,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "20.06.2026",
+        "line": 862,
+        "context": "Structured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00"
+      },
+      {
+        "date": "27.09.2029",
+        "line": 868,
+        "context": "Structured Bonds  //  Maturity: 27.09.2029"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 873,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "27.09.2029",
+        "line": 875,
+        "context": "NOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 882,
+        "context": "31.03.2025"
+      },
+      {
+        "date": "12.01.2028",
+        "line": 886,
+        "context": "Structured Bonds  //  Maturity: 12.01.2028"
+      },
+      {
+        "date": "28.03.2025",
+        "line": 896,
+        "context": "28.03.2025"
+      },
+      {
+        "date": "15.05.2026",
+        "line": 899,
+        "context": "Structured products equity  //  Maturity: 15.05.2026  //  PRC: 5.00"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 909,
+        "context": "Print date 01.04.2025 // Page 12/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 913,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "31.12.2023",
+        "line": 944,
+        "context": "31.12.2023"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 951,
+        "context": "Print date 01.04.2025 // Page 13/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 955,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 970,
+        "context": "Print date 01.04.2025 // Page 14/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 974,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 1013,
+        "context": "Print date 01.04.2025 // Page 15/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 1017,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 1036,
+        "context": "Print date 01.04.2025 // Page 16/17"
+      },
+      {
+        "date": "31.03.2025",
+        "line": 1040,
+        "context": "Valuation as of 31.03.2025"
+      },
+      {
+        "date": "01.04.2025",
+        "line": 1062,
+        "context": "Print date 01.04.2025 // Page 17/17"
+      }
+    ],
+    "currencies": [
+      {
+        "currency": "USD",
+        "line": 12,
+        "context": "USD"
+      },
+      {
+        "currency": "CHF",
+        "line": 60,
+        "context": "CHF"
+      },
+      {
+        "currency": "USD",
+        "line": 61,
+        "context": "USD"
+      },
+      {
+        "currency": "USD",
+        "line": 63,
+        "context": "AssetsCountervalue USDWeight in %"
+      },
+      {
+        "currency": "USD",
+        "line": 74,
+        "context": "IncomeCountervalue USD"
+      },
+      {
+        "currency": "USD",
+        "line": 77,
+        "context": "CurrenciesValueExchange RatesCountervalue USDWeight in %"
+      },
+      {
+        "currency": "USD",
+        "line": 78,
+        "context": "USD19'440'11299.88%"
+      },
+      {
+        "currency": "CHF",
+        "line": 79,
+        "context": "CHF21'4961.13130.883924'3190.12%"
+      },
+      {
+        "currency": "USD",
+        "line": 92,
+        "context": "Asset AllocationCountervalue USDWeight"
+      },
+      {
+        "currency": "USD",
+        "line": 118,
+        "context": "Liabilities and obligationsCountervalue USD"
+      },
+      {
+        "currency": "USD",
+        "line": 140,
+        "context": "Asset AllocationCountervalue USDWeightUSDCHF"
+      },
+      {
+        "currency": "USD",
+        "line": 140,
+        "context": "Asset AllocationCountervalue USDWeightUSDCHF"
+      },
+      {
+        "currency": "CHF",
+        "line": 140,
+        "context": "Asset AllocationCountervalue USDWeightUSDCHF"
+      },
+      {
+        "currency": "USD",
+        "line": 178,
+        "context": "in %USDEvaluation Period 01.01.2025 // 31.03.2025"
+      },
+      {
+        "currency": "USD",
+        "line": 231,
+        "context": "Countervalue USD"
+      },
+      {
+        "currency": "USD",
+        "line": 241,
+        "context": "USD6'069.770.03%"
+      },
+      {
+        "currency": "USD",
+        "line": 246,
+        "context": "ORDINARY USD"
+      },
+      {
+        "currency": "USD",
+        "line": 248,
+        "context": "USD100'000.00"
+      },
+      {
+        "currency": "USD",
+        "line": 257,
+        "context": "Total Liquidity103'770USD0.53%"
+      },
+      {
+        "currency": "USD",
+        "line": 258,
+        "context": "thereof Cash accountsUSD6'0700.03%"
+      },
+      {
+        "currency": "USD",
+        "line": 259,
+        "context": "thereof Money m arketUSD97'7000.50%"
+      },
+      {
+        "currency": "USD",
+        "line": 279,
+        "context": "Countervalue USD"
+      },
+      {
+        "currency": "USD",
+        "line": 289,
+        "context": "USD200'000"
+      },
+      {
+        "currency": "USD",
+        "line": 301,
+        "context": "USD200'000"
+      },
+      {
+        "currency": "USD",
+        "line": 314,
+        "context": "USD1'500'000"
+      },
+      {
+        "currency": "USD",
+        "line": 327,
+        "context": "USD690'000"
+      },
+      {
+        "currency": "USD",
+        "line": 337,
+        "context": "USD100'000"
+      },
+      {
+        "currency": "USD",
+        "line": 349,
+        "context": "USD100'000"
+      },
+      {
+        "currency": "USD",
+        "line": 361,
+        "context": "USD250'000"
+      },
+      {
+        "currency": "USD",
+        "line": 392,
+        "context": "Countervalue USD"
+      },
+      {
+        "currency": "USD",
+        "line": 402,
+        "context": "USD50'000"
+      },
+      {
+        "currency": "USD",
+        "line": 414,
+        "context": "USD440'000"
+      },
+      {
+        "currency": "USD",
+        "line": 426,
+        "context": "USD2'450'000"
+      },
+      {
+        "currency": "USD",
+        "line": 438,
+        "context": "USD1'100'000"
+      },
+      {
+        "currency": "USD",
+        "line": 448,
+        "context": "USD90'000"
+      },
+      {
+        "currency": "USD",
+        "line": 459,
+        "context": "USD100'000"
+      },
+      {
+        "currency": "USD",
+        "line": 469,
+        "context": "USD200'000"
+      },
+      {
+        "currency": "USD",
+        "line": 479,
+        "context": "USD100'000"
+      },
+      {
+        "currency": "USD",
+        "line": 509,
+        "context": "Countervalue USD"
+      },
+      {
+        "currency": "USD",
+        "line": 519,
+        "context": "USD250'000"
+      },
+      {
+        "currency": "EUR",
+        "line": 526,
+        "context": "GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-"
+      },
+      {
+        "currency": "USD",
+        "line": 530,
+        "context": "USD150'000"
+      },
+      {
+        "currency": "USD",
+        "line": 540,
+        "context": "USD500'000"
+      },
+      {
+        "currency": "USD",
+        "line": 550,
+        "context": "USD50'000"
+      },
+      {
+        "currency": "USD",
+        "line": 560,
+        "context": "USD1'470'000"
+      },
+      {
+        "currency": "USD",
+        "line": 570,
+        "context": "USD800'000"
+      },
+      {
+        "currency": "EUR",
+        "line": 577,
+        "context": "WELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36"
+      },
+      {
+        "currency": "USD",
+        "line": 581,
+        "context": "USD2'581.79"
+      },
+      {
+        "currency": "USD",
+        "line": 592,
+        "context": "USD350'000"
+      },
+      {
+        "currency": "USD",
+        "line": 625,
+        "context": "Countervalue USD"
+      },
+      {
+        "currency": "USD",
+        "line": 635,
+        "context": "USD690'000"
+      },
+      {
+        "currency": "USD",
+        "line": 647,
+        "context": "USD140'000"
+      },
+      {
+        "currency": "USD",
+        "line": 661,
+        "context": "12'363'974USD"
+      },
+      {
+        "currency": "USD",
+        "line": 662,
+        "context": "USD236'748"
+      },
+      {
+        "currency": "USD",
+        "line": 664,
+        "context": "thereof B ondsUSD11'002'50856.53%"
+      },
+      {
+        "currency": "USD",
+        "line": 665,
+        "context": "thereof B ond funds /  c ertficatesUSD1'361'4666.99%"
+      },
+      {
+        "currency": "USD",
+        "line": 685,
+        "context": "Countervalue USD"
+      },
+      {
+        "currency": "CHF",
+        "line": 695,
+        "context": "CHF800"
+      },
+      {
+        "currency": "USD",
+        "line": 707,
+        "context": "Total Equities24'319USD0.12%"
+      },
+      {
+        "currency": "USD",
+        "line": 708,
+        "context": "thereof E quities (without options)USD24'3190.12%"
+      },
+      {
+        "currency": "USD",
+        "line": 728,
+        "context": "Countervalue USD"
+      },
+      {
+        "currency": "USD",
+        "line": 738,
+        "context": "USD200'000"
+      },
+      {
+        "currency": "USD",
+        "line": 750,
+        "context": "USD500'000"
+      },
+      {
+        "currency": "USD",
+        "line": 762,
+        "context": "USD1'200'000"
+      },
+      {
+        "currency": "USD",
+        "line": 772,
+        "context": "USD690'000"
+      },
+      {
+        "currency": "USD",
+        "line": 785,
+        "context": "USD500'000"
+      },
+      {
+        "currency": "USD",
+        "line": 798,
+        "context": "USD1'600'000"
+      },
+      {
+        "currency": "USD",
+        "line": 810,
+        "context": "USD500'000"
+      },
+      {
+        "currency": "USD",
+        "line": 843,
+        "context": "Countervalue USD"
+      },
+      {
+        "currency": "USD",
+        "line": 853,
+        "context": "USD100'000"
+      },
+      {
+        "currency": "USD",
+        "line": 864,
+        "context": "USD200'000"
+      },
+      {
+        "currency": "USD",
+        "line": 876,
+        "context": "USD500'000"
+      },
+      {
+        "currency": "USD",
+        "line": 890,
+        "context": "USD1'000'000"
+      },
+      {
+        "currency": "USD",
+        "line": 904,
+        "context": "6'946'239USD"
+      },
+      {
+        "currency": "USD",
+        "line": 905,
+        "context": "USD108'309"
+      },
+      {
+        "currency": "USD",
+        "line": 907,
+        "context": "thereof S tructured products (Bonds)USD5'956'43930.60%"
+      },
+      {
+        "currency": "USD",
+        "line": 908,
+        "context": "thereof S tructured products (Equities)USD989'8005.09%"
+      },
+      {
+        "currency": "USD",
+        "line": 928,
+        "context": "Countervalue USD"
+      },
+      {
+        "currency": "USD",
+        "line": 938,
+        "context": "USD204.071"
+      },
+      {
+        "currency": "USD",
+        "line": 949,
+        "context": "Total Other assets26'129USD0.13%"
+      },
+      {
+        "currency": "USD",
+        "line": 950,
+        "context": "thereof Hedge funds &  P rivate EquityUSD26'1290.13%"
+      },
+      {
+        "currency": "USD",
+        "line": 964,
+        "context": "USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "currency": "USD",
+        "line": 965,
+        "context": "Total USD6'07092'80131'960146'761100'57937'9502'5005'31112'3062'500"
+      },
+      {
+        "currency": "USD",
+        "line": 968,
+        "context": "USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      },
+      {
+        "currency": "USD",
+        "line": 969,
+        "context": "Total USD100.00%16'878'474412'551280'902460'2852'995'2852'135'28510'594'166"
+      }
+    ],
+    "descriptions": [
+      {
+        "description": "RBC LONDON 0% NOTES 2025-28.03.2035",
+        "line": 256
+      },
+      {
+        "description": "TORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN",
+        "line": 300
+      },
+      {
+        "description": "CANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28",
+        "line": 309
+      },
+      {
+        "description": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028",
+        "line": 322
+      },
+      {
+        "description": "GOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P",
+        "line": 336
+      },
+      {
+        "description": "LUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30",
+        "line": 348
+      },
+      {
+        "description": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE",
+        "line": 360
+      },
+      {
+        "description": "BANK OF AMERICA NOTES 2023-20.12.31 VARIABLE RATE",
+        "line": 372
+      },
+      {
+        "description": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-",
+        "line": 409
+      },
+      {
+        "description": "CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34",
+        "line": 455
+      },
+      {
+        "description": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+        "line": 468
+      },
+      {
+        "description": "BANK OF AMERICA 0% NOTES 2024-17.10.2034",
+        "line": 478
+      },
+      {
+        "description": "JPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021-",
+        "line": 486
+      },
+      {
+        "description": "GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-",
+        "line": 526
+      },
+      {
+        "description": "BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S",
+        "line": 539
+      },
+      {
+        "description": "JPMORGAN CHASE 0% NOTES 2024-19.12.2034",
+        "line": 549
+      },
+      {
+        "description": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035",
+        "line": 559
+      },
+      {
+        "description": "DEUTSCHE BANK 0 % NOTES 2025-14.02.35",
+        "line": 569
+      },
+      {
+        "description": "WELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36",
+        "line": 577
+      },
+      {
+        "description": "DEUTSCHE BANK NOTES 23-08.11.28 VRN",
+        "line": 646
+      },
+      {
+        "description": "SOCIETE GENERALE 32.46 % NOTES 2024-01.03.30 REG S",
+        "line": 658
+      },
+      {
+        "description": "EMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN",
+        "line": 780
+      },
+      {
+        "description": "GOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT",
+        "line": 793
+      },
+      {
+        "description": "RABOBANK 29",
+        "line": 813
+      },
+      {
+        "description": "LUMINIS REPACK NOTES 23-25.05.29 VRN ON 4,625%",
+        "line": 818
+      },
+      {
+        "description": "NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21",
+        "line": 860
+      },
+      {
+        "description": "NOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029",
+        "line": 875
+      },
+      {
+        "description": "NOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ON CS",
+        "line": 897
+      }
+    ]
+  },
+  "extractedAt": "2025-07-15T13:13:16.649Z"
+}

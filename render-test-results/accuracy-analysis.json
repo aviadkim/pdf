@@ -1,0 +1,69 @@
+{
+  "timestamp": "2025-07-18T16:06:51.375Z",
+  "url": "https://pdf-fzzi.onrender.com",
+  "testResults": [
+    {
+      "test": "Site Accessibility",
+      "passed": true,
+      "details": {
+        "header": 1,
+        "demoButton": 1,
+        "testButton": 1,
+        "cards": 2
+      }
+    },
+    {
+      "test": "Demo Extraction",
+      "passed": false,
+      "reportedAccuracy": 99.5,
+      "calculatedAccuracy": 0,
+      "correctCount": 0,
+      "totalExpected": 4,
+      "securities": [
+        {
+          "isin": "XS2530201644\n                            TORONTO DOMINION BANK NOTES",
+          "quantity": "200,000",
+          "price": "$99.1991",
+          "value": "$199,080"
+        },
+        {
+          "isin": "XS2588105036\n                            CANADIAN IMPERIAL BANK NOTES",
+          "quantity": "200,000",
+          "price": "$99.6285",
+          "value": "$200,288"
+        },
+        {
+          "isin": "XS2665592833\n                            HARP ISSUER NOTES",
+          "quantity": "1,500,000",
+          "price": "$98.3700",
+          "value": "$1,507,550"
+        },
+        {
+          "isin": "XS2567543397\n                            GOLDMAN SACHS CALLABLE NOTE",
+          "quantity": "2,450,000",
+          "price": "$100.5200",
+          "value": "$2,570,405"
+        }
+      ]
+    },
+    {
+      "test": "Accuracy Test Suite",
+      "passed": true,
+      "testResults": {
+        "passed": 4,
+        "total": 4,
+        "accuracy": 99.5,
+        "details": "All test cases passed with 99.5% accuracy"
+      },
+      "accuracy": 99.5
+    },
+    {
+      "test": "Network Analysis",
+      "requests": [],
+      "responses": [],
+      "apiErrors": []
+    }
+  ],
+  "accuracyIssues": [],
+  "processingErrors": []
+}

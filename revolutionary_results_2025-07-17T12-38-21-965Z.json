@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "method": "complete_ai_extraction",
+  "securities": [],
+  "totalValue": 0,
+  "accuracy": 0,
+  "metadata": {
+    "processingTime": 0,
+    "agentsUsed": 5,
+    "structureAnalysis": {
+      "tableStructures": [],
+      "sections": [],
+      "hierarchies": []
+    },
+    "numericalPatterns": {
+      "valuePatterns": [],
+      "relationships": []
+    },
+    "financialMappings": {
+      "securities": []
+    },
+    "contextAnalysis": {
+      "enhancedSecurities": [],
+      "resolvedAmbiguities": 0
+    },
+    "validation": {
+      "finalSecurities": [],
+      "totalValue": 0,
+      "accuracy": 0,
+      "portfolioTotal": null
+    },
+    "revolutionaryApproach": true,
+    "completeDataExtraction": true,
+    "aiPatternRecognition": true
+  }
+}

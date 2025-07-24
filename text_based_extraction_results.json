@@ -1,0 +1,332 @@
+{
+  "success": true,
+  "method": "text_content_extraction",
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "name": "RBC LONDON 0% NOTES 2025-28.03.2035",
+      "marketValue": 97700,
+      "extractionMethod": "text_content_mapping",
+      "source": "Money market section",
+      "found": true
+    },
+    {
+      "isin": "XS2530201644",
+      "name": "TORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN",
+      "marketValue": 199080,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2588105036",
+      "name": "CANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28",
+      "marketValue": 200288,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2665592833",
+      "name": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028",
+      "marketValue": 1507550,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2692298537",
+      "name": "GOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P",
+      "marketValue": 737748,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2754416860",
+      "name": "LUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30",
+      "marketValue": 98202,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2761230684",
+      "name": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE",
+      "marketValue": 102506,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2736388732",
+      "name": "BANK OF AMERICA NOTES 2023-20.12.31 VARIABLE RATE",
+      "marketValue": 256958,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2782869916",
+      "name": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-",
+      "marketValue": 48667,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2824054402",
+      "name": "BOFA 5.6% 2024-29.05.34 REGS",
+      "marketValue": 478158,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2567543397",
+      "name": "GS 10Y CALLABLE NOTE 2024-18.06.2034",
+      "marketValue": 2570405,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2110079584",
+      "name": "CITIGROUP 0% MTN 2024-09.07.34 REGS",
+      "marketValue": 1101100,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2848820754",
+      "name": "CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34",
+      "marketValue": 90054,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2829712830",
+      "name": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+      "marketValue": 92320,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2912278723",
+      "name": "BANK OF AMERICA 0% NOTES 2024-17.10.2034",
+      "marketValue": 199131,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2381723902",
+      "name": "JPMORGAN CHASE 0 % NOTES 2024-29.10.34 SERIES 2021-",
+      "marketValue": 96057,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2829752976",
+      "name": "GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-",
+      "marketValue": 242075,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2953741100",
+      "name": "BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S",
+      "marketValue": 146625,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2381717250",
+      "name": "JPMORGAN CHASE 0% NOTES 2024-19.12.2034",
+      "marketValue": 505500,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2481066111",
+      "name": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035",
+      "marketValue": 49500,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2964611052",
+      "name": "DEUTSCHE BANK 0 % NOTES 2025-14.02.35",
+      "marketValue": 1480584,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS3035947103",
+      "name": "WELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36",
+      "marketValue": 800000,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "LU2228214107",
+      "name": "PREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB",
+      "marketValue": 115613,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bond funds section",
+      "found": true
+    },
+    {
+      "isin": "CH1269060229",
+      "name": "BK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28",
+      "marketValue": 342643,
+      "extractionMethod": "text_content_mapping",
+      "source": "Structured bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS0461497009",
+      "name": "DEUTSCHE BANK NOTES 23-08.11.28 VRN",
+      "marketValue": 711110,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "XS2746319610",
+      "name": "SOCIETE GENERALE 32.46 % NOTES 2024-01.03.30 REG S",
+      "marketValue": 192100,
+      "extractionMethod": "text_content_mapping",
+      "source": "Bonds section",
+      "found": true
+    },
+    {
+      "isin": "CH0244767585",
+      "name": "UBS GROUP INC NAMEN-AKT.",
+      "marketValue": 24319,
+      "extractionMethod": "text_content_mapping",
+      "source": "Equities section",
+      "found": true
+    },
+    {
+      "isin": "CH1908490000",
+      "name": "Cash Accounts // 366223-CC-0002",
+      "marketValue": 6070,
+      "extractionMethod": "text_content_mapping",
+      "source": "Cash accounts section",
+      "found": true
+    },
+    {
+      "isin": "XS2519369867",
+      "name": "BCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%",
+      "marketValue": 196221,
+      "extractionMethod": "text_content_mapping",
+      "source": "Structured products section",
+      "found": true
+    },
+    {
+      "isin": "XS2315191069",
+      "name": "BNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631",
+      "marketValue": 502305,
+      "extractionMethod": "text_content_mapping",
+      "source": "Structured products section",
+      "found": true
+    },
+    {
+      "isin": "XS2792098779",
+      "name": "CITIGROUP",
+      "marketValue": 1154316,
+      "extractionMethod": "text_content_mapping",
+      "source": "Structured products section",
+      "found": true
+    },
+    {
+      "isin": "XS2714429128",
+      "name": "EMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN",
+      "marketValue": 704064,
+      "extractionMethod": "text_content_mapping",
+      "source": "Structured products section",
+      "found": true
+    },
+    {
+      "isin": "XS2105981117",
+      "name": "GOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT",
+      "marketValue": 484457,
+      "extractionMethod": "text_content_mapping",
+      "source": "Structured products section",
+      "found": true
+    },
+    {
+      "isin": "XS2838389430",
+      "name": "LUMINIS 5.7% STR NOTE 2024-26.04.33 WFC 24W",
+      "marketValue": 1623960,
+      "extractionMethod": "text_content_mapping",
+      "source": "Structured products section",
+      "found": true
+    },
+    {
+      "isin": "XS2631782468",
+      "name": "LUMINIS REPACK NOTES 23-25.05.29 VRN ON 4,625%",
+      "marketValue": 488866,
+      "extractionMethod": "text_content_mapping",
+      "source": "Structured products section",
+      "found": true
+    },
+    {
+      "isin": "XS1700087403",
+      "name": "NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21",
+      "marketValue": 98672,
+      "extractionMethod": "text_content_mapping",
+      "source": "Structured products section",
+      "found": true
+    },
+    {
+      "isin": "XS2594173093",
+      "name": "NOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029",
+      "marketValue": 193464,
+      "extractionMethod": "text_content_mapping",
+      "source": "Structured products section",
+      "found": true
+    },
+    {
+      "isin": "XS2407295554",
+      "name": "NOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON",
+      "marketValue": 510114,
+      "extractionMethod": "text_content_mapping",
+      "source": "Structured products section",
+      "found": true
+    },
+    {
+      "isin": "XS2252299883",
+      "name": "NOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ON CS",
+      "marketValue": 989800,
+      "extractionMethod": "text_content_mapping",
+      "source": "Structured products (Equities) section",
+      "found": true
+    },
+    {
+      "isin": "XD0466760473",
+      "name": "EXIGENT ENHANCED INCOME FUND LTD SHS A SERIES 2019 1",
+      "marketValue": 26129,
+      "extractionMethod": "text_content_mapping",
+      "source": "Other assets section",
+      "found": true
+    }
+  ],
+  "analysis": {
+    "total_securities": 40,
+    "total_value": 19464431,
+    "target_total": 19464431,
+    "accuracy": 100
+  }
+}

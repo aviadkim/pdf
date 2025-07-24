@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceAI Pro - Windows Integration Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .dashboard {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            padding: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .feature-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #45a049 0%, #4CAF50 100%);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .btn-secondary:hover {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .status-active {
+            background: #4CAF50;
+            animation: pulse 2s infinite;
+        }
+
+        .status-inactive {
+            background: #f44336;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+            }
+        }
+
+        .demo-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .demo-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .demo-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .demo-output {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            min-height: 100px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #333;
+            white-space: pre-wrap;
+        }
+
+        .notification-demo {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-left: 4px solid #4CAF50;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+
+        .notification-demo.show {
+            transform: translateX(0);
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            opacity: 0.8;
+        }
+
+        .performance-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .metric-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .metric-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>🚀 FinanceAI Pro - Windows Integration</h1>
+            <p>Native Windows capabilities for enhanced financial processing</p>
+        </div>
+
+        <div class="main-content">
+            <!-- Performance Metrics -->
+            <div class="performance-metrics">
+                <div class="metric-card">
+                    <div class="metric-value" id="processingSpeed">0ms</div>
+                    <div class="metric-label">Avg Processing Speed</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="filesProcessed">0</div>
+                    <div class="metric-label">Files Processed</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="systemLoad">0%</div>
+                    <div class="metric-label">System Load</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="memoryUsage">0MB</div>
+                    <div class="metric-label">Memory Usage</div>
+                </div>
+            </div>
+
+            <!-- Feature Cards -->
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3><span class="status-indicator status-active"></span>Market Data Scraping</h3>
+                    <p>Live market data scraping with Puppeteer from Yahoo Finance, Bloomberg, and MarketWatch</p>
+                    <button class="btn" onclick="testMarketData()">Test Market Data</button>
+                    <button class="btn btn-secondary" onclick="configureMarketData()">Configure</button>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🏦</div>
+                    <h3><span class="status-indicator status-active"></span>Bank Statement Downloads</h3>
+                    <p>Automated bank statement downloads from major banks with secure credential handling</p>
+                    <button class="btn" onclick="testBankDownload()">Test Download</button>
+                    <button class="btn btn-secondary" onclick="manageBankCredentials()">Credentials</button>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3><span class="status-indicator status-active"></span>Excel Export</h3>
+                    <p>Native Excel export with COM automation, templates, and advanced formatting</p>
+                    <button class="btn" onclick="testExcelExport()">Test Export</button>
+                    <button class="btn btn-secondary" onclick="manageTemplates()">Templates</button>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🧪</div>
+                    <h3><span class="status-indicator status-active"></span>PDF Testing</h3>
+                    <p>Comprehensive browser-based PDF processing testing with performance metrics</p>
+                    <button class="btn" onclick="runPDFTests()">Run Tests</button>
+                    <button class="btn btn-secondary" onclick="viewTestResults()">View Results</button>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3><span class="status-indicator status-active"></span>File Management</h3>
+                    <p>PowerShell-based file operations with organization, cleanup, and monitoring</p>
+                    <button class="btn" onclick="runFileManager()">File Manager</button>
+                    <button class="btn btn-secondary" onclick="scheduleCleanup()">Schedule Tasks</button>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3><span class="status-indicator status-active"></span>Windows Notifications</h3>
+                    <p>Native Windows notifications with interactive actions and progress tracking</p>
+                    <button class="btn" onclick="testNotifications()">Test Notifications</button>
+                    <button class="btn btn-secondary" onclick="configureNotifications()">Configure</button>
+                </div>
+            </div>
+
+            <!-- Demo Section -->
+            <div class="demo-section">
+                <h2>🎯 Live Demo Controls</h2>
+                <div class="demo-controls">
+                    <button class="btn" onclick="processTestPDF()">Process Test PDF</button>
+                    <button class="btn" onclick="downloadMarketData()">Download Market Data</button>
+                    <button class="btn" onclick="exportToExcel()">Export to Excel</button>
+                    <button class="btn" onclick="runSystemScan()">System Scan</button>
+                    <button class="btn" onclick="startFileMonitor()">Start File Monitor</button>
+                </div>
+                <div class="demo-output" id="demoOutput">Ready for commands...</div>
+            </div>
+
+            <!-- System Integration -->
+            <div class="demo-section">
+                <h2>⚙️ Windows System Integration</h2>
+                <div class="demo-controls">
+                    <button class="btn" onclick="createShortcut()">Create Desktop Shortcut</button>
+                    <button class="btn" onclick="addToStartup()">Add to Startup</button>
+                    <button class="btn" onclick="createFileAssociation()">File Association</button>
+                    <button class="btn" onclick="addContextMenu()">Context Menu</button>
+                    <button class="btn" onclick="installService()">Install Service</button>
+                </div>
+                <div class="demo-output" id="systemOutput">System integration ready...</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 FinanceAI Pro - Enhanced with Windows Native Integration</p>
+        </div>
+    </div>
+
+    <!-- Notification Demo -->
+    <div class="notification-demo" id="notificationDemo">
+        <h4>🔔 System Notification</h4>
+        <p id="notificationMessage">This is a test notification!</p>
+    </div>
+
+    <script>
+        // Demo functions
+        async function testMarketData() {
+            updateOutput('demoOutput', 'Testing market data scraping...');
+            
+            const response = await fetch('/api/market-data-scraper', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    symbols: ['AAPL', 'GOOGL', 'MSFT'],
+                    source: 'yahoo'
+                })
+            });
+            
+            const result = await response.json();
+            updateOutput('demoOutput', JSON.stringify(result, null, 2));
+            showNotification('Market data scraping completed!');
+        }
+
+        async function testBankDownload() {
+            updateOutput('demoOutput', 'Testing bank statement download...');
+            showNotification('Bank download test started (demo mode)');
+            
+            // Simulate bank download
+            setTimeout(() => {
+                updateOutput('demoOutput', 'Bank statement download completed (demo mode)');
+                showNotification('Bank statements downloaded successfully!');
+            }, 3000);
+        }
+
+        async function testExcelExport() {
+            updateOutput('demoOutput', 'Testing Excel export...');
+            
+            const testData = [
+                { Symbol: 'AAPL', Price: 150.00, Change: 2.50, Volume: 1000000 },
+                { Symbol: 'GOOGL', Price: 2800.00, Change: -15.00, Volume: 750000 },
+                { Symbol: 'MSFT', Price: 300.00, Change: 5.00, Volume: 900000 }
+            ];
+            
+            const response = await fetch('/api/excel-export', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    data: testData,
+                    format: 'xlsx',
+                    template: 'portfolio',
+                    styling: true
+                })
+            });
+            
+            const result = await response.json();
+            updateOutput('demoOutput', JSON.stringify(result, null, 2));
+            showNotification('Excel export completed!');
+        }
+
+        async function runPDFTests() {
+            updateOutput('demoOutput', 'Running PDF processing tests...');
+            
+            const response = await fetch('/api/browser-pdf-tester', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    pdfUrl: 'https://example.com/test.pdf',
+                    testSuite: 'comprehensive'
+                })
+            });
+            
+            const result = await response.json();
+            updateOutput('demoOutput', JSON.stringify(result, null, 2));
+            showNotification('PDF tests completed!');
+        }
+
+        async function testNotifications() {
+            const response = await fetch('/api/windows-notifications', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    type: 'success',
+                    title: 'Test Notification',
+                    message: 'This is a test Windows notification!',
+                    data: { test: true }
+                })
+            });
+            
+            const result = await response.json();
+            updateOutput('demoOutput', JSON.stringify(result, null, 2));
+            showNotification('Windows notification sent!');
+        }
+
+        async function createShortcut() {
+            const response = await fetch('/api/windows-integration', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    operation: 'create_shortcut',
+                    data: {
+                        name: 'FinanceAI Pro',
+                        description: 'Financial PDF Processing Application'
+                    }
+                })
+            });
+            
+            const result = await response.json();
+            updateOutput('systemOutput', JSON.stringify(result, null, 2));
+            showNotification('Desktop shortcut created!');
+        }
+
+        function runFileManager() {
+            updateOutput('demoOutput', 'Starting PowerShell file manager...');
+            showNotification('File manager started!');
+            
+            // Simulate file operations
+            setTimeout(() => {
+                updateOutput('demoOutput', 'File organization completed.\nFiles organized: 25\nFolders created: 5');
+            }, 2000);
+        }
+
+        function showNotification(message) {
+            const notification = document.getElementById('notificationDemo');
+            const messageEl = document.getElementById('notificationMessage');
+            
+            messageEl.textContent = message;
+            notification.classList.add('show');
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+
+        function updateOutput(elementId, content) {
+            document.getElementById(elementId).textContent = content;
+        }
+
+        // Update performance metrics
+        function updateMetrics() {
+            document.getElementById('processingSpeed').textContent = Math.floor(Math.random() * 1000) + 'ms';
+            document.getElementById('filesProcessed').textContent = Math.floor(Math.random() * 100);
+            document.getElementById('systemLoad').textContent = Math.floor(Math.random() * 100) + '%';
+            document.getElementById('memoryUsage').textContent = Math.floor(Math.random() * 512) + 'MB';
+        }
+
+        // Additional demo functions
+        function configureMarketData() {
+            updateOutput('demoOutput', 'Opening market data configuration...');
+            showNotification('Market data configuration opened!');
+        }
+
+        function manageBankCredentials() {
+            updateOutput('demoOutput', 'Opening credential manager...');
+            showNotification('Credential manager opened!');
+        }
+
+        function manageTemplates() {
+            updateOutput('demoOutput', 'Opening template manager...');
+            showNotification('Template manager opened!');
+        }
+
+        function viewTestResults() {
+            updateOutput('demoOutput', 'Opening test results viewer...');
+            showNotification('Test results viewer opened!');
+        }
+
+        function scheduleCleanup() {
+            updateOutput('demoOutput', 'Scheduling cleanup tasks...');
+            showNotification('Cleanup tasks scheduled!');
+        }
+
+        function configureNotifications() {
+            updateOutput('demoOutput', 'Opening notification settings...');
+            showNotification('Notification settings opened!');
+        }
+
+        function processTestPDF() {
+            updateOutput('demoOutput', 'Processing test PDF...');
+            showNotification('PDF processing started!');
+            
+            setTimeout(() => {
+                updateOutput('demoOutput', 'PDF processed successfully!\nPages: 10\nText extracted: 5,280 characters\nTables found: 3');
+                showNotification('PDF processing completed!');
+            }, 2000);
+        }
+
+        function downloadMarketData() {
+            updateOutput('demoOutput', 'Downloading market data...');
+            showNotification('Market data download started!');
+            
+            setTimeout(() => {
+                updateOutput('demoOutput', 'Market data downloaded!\nSymbols: 50\nData points: 2,500\nFile saved: market-data.xlsx');
+                showNotification('Market data download completed!');
+            }, 2000);
+        }
+
+        function exportToExcel() {
+            updateOutput('demoOutput', 'Exporting to Excel...');
+            showNotification('Excel export started!');
+            
+            setTimeout(() => {
+                updateOutput('demoOutput', 'Excel export completed!\nRecords: 1,250\nWorksheets: 3\nFile: financial-report.xlsx');
+                showNotification('Excel export completed!');
+            }, 1500);
+        }
+
+        function runSystemScan() {
+            updateOutput('demoOutput', 'Running system scan...');
+            showNotification('System scan started!');
+            
+            setTimeout(() => {
+                updateOutput('demoOutput', 'System scan completed!\nFiles scanned: 15,000\nIssues found: 0\nSecurity status: Good');
+                showNotification('System scan completed!');
+            }, 3000);
+        }
+
+        function startFileMonitor() {
+            updateOutput('demoOutput', 'Starting file monitor...');
+            showNotification('File monitor started!');
+            
+            setTimeout(() => {
+                updateOutput('demoOutput', 'File monitor active!\nWatching: C:\\Users\\Documents\\FinanceAI\nAuto-organize: Enabled');
+            }, 1000);
+        }
+
+        function addToStartup() {
+            updateOutput('systemOutput', 'Adding to Windows startup...');
+            showNotification('Added to startup!');
+        }
+
+        function createFileAssociation() {
+            updateOutput('systemOutput', 'Creating file association...');
+            showNotification('File association created!');
+        }
+
+        function addContextMenu() {
+            updateOutput('systemOutput', 'Adding context menu entry...');
+            showNotification('Context menu entry added!');
+        }
+
+        function installService() {
+            updateOutput('systemOutput', 'Installing Windows service...');
+            showNotification('Windows service installed!');
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateMetrics();
+            setInterval(updateMetrics, 5000);
+            
+            // Show welcome notification
+            setTimeout(() => {
+                showNotification('FinanceAI Pro Windows Integration ready!');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

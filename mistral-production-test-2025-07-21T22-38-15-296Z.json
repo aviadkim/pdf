@@ -1,0 +1,172 @@
+{
+  "success": true,
+  "method": "mistral_pdf_extraction",
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "name": "RBC LONDON 0% NOTES 2025-28.03.2035",
+      "value": 97700,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2530201644",
+      "name": "TORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN",
+      "value": 1199080,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2588105036",
+      "name": "CANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28",
+      "value": 200288,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2665592833",
+      "name": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028",
+      "value": 1507550,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2692298537",
+      "name": "GOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P",
+      "value": 737748,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2754416860",
+      "name": "LUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30",
+      "value": 98202,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2761230684",
+      "name": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE",
+      "value": 102506,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2736388732",
+      "name": "BANK OF AMERICA NOTES 2023-20.12.31 VARIABLE RATE",
+      "value": 256958,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2782869916",
+      "name": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-",
+      "value": 48667,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2824054402",
+      "name": "BOFA 5.  6% 2024-29.05.34 REGS",
+      "value": 478158,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2567543397",
+      "name": "GS 10Y CALLABLE NOTE 2024-18.06.2034",
+      "value": 2570405,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2110079584",
+      "name": "CITIGROUP 0% MTN 2024-09.07.34 REGS",
+      "value": 1101100,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2848820754",
+      "name": "CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34",
+      "value": 90054,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2829712830",
+      "name": "GOLDMAN SACHS EMTN 2024-30.09.2034",
+      "value": 92320,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2912278723",
+      "name": "BANK OF AMERICA 0% NOTES 2024-17.10.2034",
+      "value": 199131,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2381723902",
+      "name": "JPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021-",
+      "value": 96057,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2829752976",
+      "name": "GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-",
+      "value": 242075,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2953741100",
+      "name": "BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S",
+      "value": 146625,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2381717250",
+      "name": "JPMORGAN CHASE 0% NOTES 2024-19.12.2034",
+      "value": 505500,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2481066111",
+      "name": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035",
+      "value": 49500,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS2964611052",
+      "name": "DEUTSCHE BANK 0 % NOTES 2025-14.02.35",
+      "value": 1480584,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS3035947103",
+      "name": "WELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36",
+      "value": 800000,
+      "confidence": 0.95
+    },
+    {
+      "isin": "LU2228214107",
+      "name": "PREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB",
+      "value": 115613,
+      "confidence": 0.95
+    },
+    {
+      "isin": "CH1269060229",
+      "name": "BK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28",
+      "value": 342643,
+      "confidence": 0.95
+    },
+    {
+      "isin": "XS0461497009",
+      "name": "Ordinary Bonds  //  Maturity: 08.11.2028",
+      "value": 711110,
+      "confidence": 0.95
+    }
+  ],
+  "summary": {
+    "totalSecurities": 25,
+    "totalValue": 13269574,
+    "accuracy": 68.17,
+    "processingTime": 27128,
+    "cost": 0.0021828,
+    "tokensUsed": 10914
+  },
+  "metadata": {
+    "model": "mistral-small-latest",
+    "extractedTextLength": 30376,
+    "currency": "CHF",
+    "date": "2025-07-21T22:38:15.293Z",
+    "legitimate": true,
+    "hardcoded": false
+  }
+}

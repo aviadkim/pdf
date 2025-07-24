@@ -1,0 +1,326 @@
+{
+  "timestamp": "2025-07-20T05:21:20.787Z",
+  "document": "Messos Enterprises Ltd - Portfolio Valuation 31.03.2025",
+  "extraction_method": "Final Working Extractor - Actual Format Parser",
+  "portfolio_summary": {
+    "totalValue": 19464431,
+    "breakdown": {
+      "Bonds": 12363974,
+      "Structured products": 6946239,
+      "Liquidity": 103770,
+      "Equities": 24319
+    },
+    "currency": "USD"
+  },
+  "extraction_results": {
+    "securities_found": 37,
+    "total_extracted_value": 1103519,
+    "individual_securities": [
+      {
+        "isin": "XS2993414619",
+        "valor": "140610687",
+        "name": "ORDINARY USD",
+        "quantity": 2,
+        "marketValue": 265002,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2530201644",
+        "valor": "125350273",
+        "name": "Bonds, Bond funds, Convertible bonds, Interest options",
+        "quantity": 2,
+        "marketValue": 27,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2588105036",
+        "valor": "112286204",
+        "name": "100.200099.6285200'288",
+        "quantity": 2,
+        "marketValue": 28,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2665592833",
+        "valor": "128829182",
+        "name": "99.099098.37001'507'550",
+        "quantity": 1,
+        "marketValue": 28,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2692298537",
+        "valor": "129157183",
+        "name": "Unknown Security",
+        "quantity": 0,
+        "marketValue": 29,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2754416860",
+        "valor": "132648671",
+        "name": "Unknown Security",
+        "quantity": 1,
+        "marketValue": 30,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2761230684",
+        "valor": "112288215",
+        "name": "Unknown Security",
+        "quantity": 1,
+        "marketValue": 30,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2736388732",
+        "valor": "131799640",
+        "name": "Unknown Security",
+        "quantity": 2,
+        "marketValue": 31,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2782869916",
+        "valor": "132544344",
+        "name": "100.200097.334048'667",
+        "quantity": 0,
+        "marketValue": 34,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2824054402",
+        "valor": "135337661",
+        "name": "Price to be verified",
+        "quantity": 2,
+        "marketValue": 26,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2567543397",
+        "valor": "134736192",
+        "name": "USD2'450'000",
+        "quantity": 1,
+        "marketValue": 26,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2110079584",
+        "valor": "136429245",
+        "name": "GS 10Y CALLABLE NOTE 2024-18.06.2034",
+        "quantity": 0,
+        "marketValue": 26,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2848820754",
+        "valor": "135116008",
+        "name": "100.2000100.060090'054",
+        "quantity": 0,
+        "marketValue": 34,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2829712830",
+        "valor": "134735316",
+        "name": "Zero Bonds  //  Maturity: 01.08.2034",
+        "quantity": 3,
+        "marketValue": 34,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2912278723",
+        "valor": "138689613",
+        "name": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+        "quantity": 1,
+        "marketValue": 34,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2381723902",
+        "valor": "128883231",
+        "name": "100.200096.056996'057",
+        "quantity": 2,
+        "marketValue": 34,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2829752976",
+        "valor": "138874416",
+        "name": "99.679096.8300242'075",
+        "quantity": 1,
+        "marketValue": 34,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2953741100",
+        "valor": "138494467",
+        "name": "Ordinary Bonds  //  Maturity: 18.11.2034",
+        "quantity": 1,
+        "marketValue": 34,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2381717250",
+        "valor": "128883267",
+        "name": "Unknown Security",
+        "quantity": 1,
+        "marketValue": 34,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2964611052",
+        "valor": "141235167",
+        "name": "USD1'470'000",
+        "quantity": 1,
+        "marketValue": 35,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS3035947103",
+        "valor": "143578751",
+        "name": "100.0000100.0000800'000",
+        "quantity": 2,
+        "marketValue": 36,
+        "currency": "USD"
+      },
+      {
+        "isin": "LU2228214107",
+        "valor": "57282891",
+        "name": "81.530444.7800115'613",
+        "quantity": 0,
+        "marketValue": 210907,
+        "currency": "USD"
+      },
+      {
+        "isin": "CH1269060229",
+        "valor": "126906022",
+        "name": "100.623797.6000342'643",
+        "quantity": 2,
+        "marketValue": 28,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS0461497009",
+        "valor": "130269069",
+        "name": "Bonds, Bond funds, Convertible bonds, Interest options",
+        "quantity": 0,
+        "marketValue": 28,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2746319610",
+        "valor": "133393503",
+        "name": "DEUTSCHE BANK NOTES 23-08.11.28 VRN",
+        "quantity": 0,
+        "marketValue": 30,
+        "currency": "USD"
+      },
+      {
+        "isin": "CH0244767585",
+        "valor": "24476758",
+        "name": "Equities, Equity funds, Options on equities/indices",
+        "quantity": 9,
+        "marketValue": 91,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2519369867",
+        "valor": "121050656",
+        "name": "100.728897.9853196'221",
+        "quantity": 2,
+        "marketValue": 27,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2315191069",
+        "valor": "111918998",
+        "name": "Other convertible bonds  //  Maturity: 21.06.2027",
+        "quantity": 0,
+        "marketValue": 29,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2792098779",
+        "valor": "140288136",
+        "name": "BNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631",
+        "quantity": 0,
+        "marketValue": 93492,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2714429128",
+        "valor": "130738882",
+        "name": "100.446299.0900704'064",
+        "quantity": 1,
+        "marketValue": 29,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2838389430",
+        "valor": "135968317",
+        "name": "Days: 10  //  PRC: 4.0 0",
+        "quantity": 2,
+        "marketValue": 33,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2631782468",
+        "valor": "127708275",
+        "name": "98.018197.4900488'866",
+        "quantity": 2,
+        "marketValue": 29,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS1700087403",
+        "valor": "39877135",
+        "name": "91.021798.671998'672",
+        "quantity": 2,
+        "marketValue": 243615,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2594173093",
+        "valor": "125443809",
+        "name": "Structured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00",
+        "quantity": 2,
+        "marketValue": 29,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2407295554",
+        "valor": "114718568",
+        "name": "100.5243100.7200510'114",
+        "quantity": 1,
+        "marketValue": 28,
+        "currency": "USD"
+      },
+      {
+        "isin": "XS2252299883",
+        "valor": "58001077",
+        "name": "100.366498.9800989'800",
+        "quantity": 1,
+        "marketValue": 98052,
+        "currency": "USD"
+      },
+      {
+        "isin": "XD0466760473",
+        "valor": "46676047",
+        "name": "1'008.3748128.039526'129",
+        "quantity": 0,
+        "marketValue": 191446,
+        "currency": "USD"
+      }
+    ]
+  },
+  "accuracy_analysis": {
+    "portfolio_total_usd": 19464431,
+    "extracted_total_usd": 1103519,
+    "value_difference": -18360912,
+    "value_accuracy": 5.67,
+    "count_accuracy": 92.5,
+    "overall_accuracy": 49.08
+  },
+  "status": "NEEDS_IMPROVEMENT"
+}

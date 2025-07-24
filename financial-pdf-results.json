@@ -1,0 +1,214 @@
+{
+  "success": true,
+  "results": {
+    "success": true,
+    "documentId": "7486d333-b663-445f-94ac-cf3ff0aec474",
+    "pages": [
+      {
+        "page": 1,
+        "text": "\n\nPORTFOLIO STATEMENT - SWISS BANK AG\nDate: 31.03.2024\nAccount: CH93 0076 2011 6238 5295 7\nSECURITIES HOLDINGS:\nISIN: CH0012032048  |  Roche Holding AG  |  CHF 1,234,567.89\nISIN: US0378331005  |  Apple Inc.        |  USD 987,654.32\nISIN: DE0007164600  |  SAP SE            |  EUR 456,789.01\nISIN: GB0002162385  |  BP PLC            |  GBP 234,567.89\nCASH POSITIONS:\nCHF Cash Balance:     CHF 123,456.78\nUSD Cash Balance:     USD 67,890.12\nEUR Cash Balance:     EUR 34,567.89\nTRANSACTION HISTORY:\n15.03.2024  BUY   ISIN: CH0012032048  100 shares  CHF 320.50\n10.03.2024  SELL  ISIN: US0378331005   50 shares  USD 175.25\n05.03.2024  DIV   ISIN: DE0007164600  Dividend    EUR 2.50\nPORTFOLIO SUMMARY:\nTotal Value (CHF):   CHF 2,891,234.56\nPerformance YTD:     +12.34%\nRisk Rating:         Moderate\nCONTACT: portfolio@swissbank.ch | +41 44 123 45 67",
+        "method": "pdf-parse",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKClBPUlRGT0xJTyBTVEFURU1FTlQgLSBTV0lTUyBCQU5LIEFHCkRhdGU6IDMxLjAzLjIwMjQKQWNjb3VudDogQ0g5MyAwMDc2IDIwMTEgNjIzOCA1Mjk1IDcKU0VDVVJJVElFLi4uCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+CiAgICAgICAgICAgICAgICAgICAgICAgIA=="
+      }
+    ],
+    "pageCount": 1,
+    "ocrResults": [
+      {
+        "success": true,
+        "method": "text-extraction-fallback",
+        "accuracy": 70,
+        "securities": [
+          {
+            "isin": "CH0012032048",
+            "value": 0,
+            "confidence": 1,
+            "line_number": 7,
+            "source_line": "ISIN: CH0012032048  |  Roche Holding AG  |  CHF 1,234,567.89",
+            "method": "text-extraction",
+            "appliedPatterns": [
+              "0fb2e1db-bf70-49df-86b3-4d045be16f56",
+              "7265d9e6-e537-4d34-9cbe-d5e798b2ffb9",
+              "21ae18dc-c9ac-4f85-af36-b04020aee3c0",
+              "ec00f493-d2fa-4ff7-92b8-8533e8005669",
+              "ded9068d-f258-4a72-98a1-f8cb4e476481",
+              "89ba5632-bfa4-4f4c-980f-fb5f64f5fe30",
+              "c277f905-c9dc-47d8-b829-7365dd2c1bc8",
+              "5523951f-b11f-497c-948e-6b61d5858a23",
+              "aeb7b5a4-adca-4e42-8b91-8c6ff634239c",
+              "04262ce1-2ca9-4ea0-9e12-0014b06521a6",
+              "8af4bc0d-9a2f-471c-ae50-e5c6aa33700e",
+              "5015767d-9c2a-4619-b7f5-ef39c8822969",
+              "8a10d66b-8cc2-4beb-a88d-05dfcd130efd",
+              "93514f0c-6b61-4257-ae65-a6e4ff7936a2"
+            ]
+          },
+          {
+            "isin": "US0378331005",
+            "value": 0,
+            "confidence": 1,
+            "line_number": 8,
+            "source_line": "ISIN: US0378331005  |  Apple Inc.        |  USD 987,654.32",
+            "method": "text-extraction",
+            "appliedPatterns": [
+              "0fb2e1db-bf70-49df-86b3-4d045be16f56",
+              "7265d9e6-e537-4d34-9cbe-d5e798b2ffb9",
+              "21ae18dc-c9ac-4f85-af36-b04020aee3c0",
+              "ec00f493-d2fa-4ff7-92b8-8533e8005669",
+              "ded9068d-f258-4a72-98a1-f8cb4e476481",
+              "89ba5632-bfa4-4f4c-980f-fb5f64f5fe30",
+              "c277f905-c9dc-47d8-b829-7365dd2c1bc8",
+              "5523951f-b11f-497c-948e-6b61d5858a23",
+              "aeb7b5a4-adca-4e42-8b91-8c6ff634239c",
+              "04262ce1-2ca9-4ea0-9e12-0014b06521a6",
+              "8af4bc0d-9a2f-471c-ae50-e5c6aa33700e",
+              "5015767d-9c2a-4619-b7f5-ef39c8822969",
+              "8a10d66b-8cc2-4beb-a88d-05dfcd130efd",
+              "93514f0c-6b61-4257-ae65-a6e4ff7936a2"
+            ]
+          },
+          {
+            "isin": "DE0007164600",
+            "value": 0,
+            "confidence": 1,
+            "line_number": 9,
+            "source_line": "ISIN: DE0007164600  |  SAP SE            |  EUR 456,789.01",
+            "method": "text-extraction",
+            "appliedPatterns": [
+              "0fb2e1db-bf70-49df-86b3-4d045be16f56",
+              "7265d9e6-e537-4d34-9cbe-d5e798b2ffb9",
+              "21ae18dc-c9ac-4f85-af36-b04020aee3c0",
+              "ec00f493-d2fa-4ff7-92b8-8533e8005669",
+              "ded9068d-f258-4a72-98a1-f8cb4e476481",
+              "89ba5632-bfa4-4f4c-980f-fb5f64f5fe30",
+              "c277f905-c9dc-47d8-b829-7365dd2c1bc8",
+              "5523951f-b11f-497c-948e-6b61d5858a23",
+              "aeb7b5a4-adca-4e42-8b91-8c6ff634239c",
+              "04262ce1-2ca9-4ea0-9e12-0014b06521a6",
+              "8af4bc0d-9a2f-471c-ae50-e5c6aa33700e",
+              "5015767d-9c2a-4619-b7f5-ef39c8822969",
+              "8a10d66b-8cc2-4beb-a88d-05dfcd130efd",
+              "93514f0c-6b61-4257-ae65-a6e4ff7936a2"
+            ]
+          },
+          {
+            "isin": "GB0002162385",
+            "value": 0,
+            "confidence": 1,
+            "line_number": 10,
+            "source_line": "ISIN: GB0002162385  |  BP PLC            |  GBP 234,567.89",
+            "method": "text-extraction",
+            "appliedPatterns": [
+              "0fb2e1db-bf70-49df-86b3-4d045be16f56",
+              "7265d9e6-e537-4d34-9cbe-d5e798b2ffb9",
+              "21ae18dc-c9ac-4f85-af36-b04020aee3c0",
+              "ec00f493-d2fa-4ff7-92b8-8533e8005669",
+              "ded9068d-f258-4a72-98a1-f8cb4e476481",
+              "89ba5632-bfa4-4f4c-980f-fb5f64f5fe30",
+              "c277f905-c9dc-47d8-b829-7365dd2c1bc8",
+              "5523951f-b11f-497c-948e-6b61d5858a23",
+              "aeb7b5a4-adca-4e42-8b91-8c6ff634239c",
+              "04262ce1-2ca9-4ea0-9e12-0014b06521a6",
+              "8af4bc0d-9a2f-471c-ae50-e5c6aa33700e",
+              "5015767d-9c2a-4619-b7f5-ef39c8822969",
+              "8a10d66b-8cc2-4beb-a88d-05dfcd130efd",
+              "93514f0c-6b61-4257-ae65-a6e4ff7936a2"
+            ]
+          },
+          {
+            "isin": "CH0012032048",
+            "value": 0,
+            "confidence": 1,
+            "line_number": 16,
+            "source_line": "15.03.2024  BUY   ISIN: CH0012032048  100 shares  CHF 320.50",
+            "method": "text-extraction",
+            "appliedPatterns": [
+              "0fb2e1db-bf70-49df-86b3-4d045be16f56",
+              "7265d9e6-e537-4d34-9cbe-d5e798b2ffb9",
+              "21ae18dc-c9ac-4f85-af36-b04020aee3c0",
+              "ec00f493-d2fa-4ff7-92b8-8533e8005669",
+              "ded9068d-f258-4a72-98a1-f8cb4e476481",
+              "89ba5632-bfa4-4f4c-980f-fb5f64f5fe30",
+              "c277f905-c9dc-47d8-b829-7365dd2c1bc8",
+              "5523951f-b11f-497c-948e-6b61d5858a23",
+              "aeb7b5a4-adca-4e42-8b91-8c6ff634239c",
+              "04262ce1-2ca9-4ea0-9e12-0014b06521a6",
+              "8af4bc0d-9a2f-471c-ae50-e5c6aa33700e",
+              "5015767d-9c2a-4619-b7f5-ef39c8822969",
+              "8a10d66b-8cc2-4beb-a88d-05dfcd130efd",
+              "93514f0c-6b61-4257-ae65-a6e4ff7936a2"
+            ]
+          },
+          {
+            "isin": "US0378331005",
+            "value": 0,
+            "confidence": 1,
+            "line_number": 17,
+            "source_line": "10.03.2024  SELL  ISIN: US0378331005   50 shares  USD 175.25",
+            "method": "text-extraction",
+            "appliedPatterns": [
+              "0fb2e1db-bf70-49df-86b3-4d045be16f56",
+              "7265d9e6-e537-4d34-9cbe-d5e798b2ffb9",
+              "21ae18dc-c9ac-4f85-af36-b04020aee3c0",
+              "ec00f493-d2fa-4ff7-92b8-8533e8005669",
+              "ded9068d-f258-4a72-98a1-f8cb4e476481",
+              "89ba5632-bfa4-4f4c-980f-fb5f64f5fe30",
+              "c277f905-c9dc-47d8-b829-7365dd2c1bc8",
+              "5523951f-b11f-497c-948e-6b61d5858a23",
+              "aeb7b5a4-adca-4e42-8b91-8c6ff634239c",
+              "04262ce1-2ca9-4ea0-9e12-0014b06521a6",
+              "8af4bc0d-9a2f-471c-ae50-e5c6aa33700e",
+              "5015767d-9c2a-4619-b7f5-ef39c8822969",
+              "8a10d66b-8cc2-4beb-a88d-05dfcd130efd",
+              "93514f0c-6b61-4257-ae65-a6e4ff7936a2"
+            ]
+          },
+          {
+            "isin": "DE0007164600",
+            "value": 0,
+            "confidence": 1,
+            "line_number": 18,
+            "source_line": "05.03.2024  DIV   ISIN: DE0007164600  Dividend    EUR 2.50",
+            "method": "text-extraction",
+            "appliedPatterns": [
+              "0fb2e1db-bf70-49df-86b3-4d045be16f56",
+              "7265d9e6-e537-4d34-9cbe-d5e798b2ffb9",
+              "21ae18dc-c9ac-4f85-af36-b04020aee3c0",
+              "ec00f493-d2fa-4ff7-92b8-8533e8005669",
+              "ded9068d-f258-4a72-98a1-f8cb4e476481",
+              "89ba5632-bfa4-4f4c-980f-fb5f64f5fe30",
+              "c277f905-c9dc-47d8-b829-7365dd2c1bc8",
+              "5523951f-b11f-497c-948e-6b61d5858a23",
+              "aeb7b5a4-adca-4e42-8b91-8c6ff634239c",
+              "04262ce1-2ca9-4ea0-9e12-0014b06521a6",
+              "8af4bc0d-9a2f-471c-ae50-e5c6aa33700e",
+              "5015767d-9c2a-4619-b7f5-ef39c8822969",
+              "8a10d66b-8cc2-4beb-a88d-05dfcd130efd",
+              "93514f0c-6b61-4257-ae65-a6e4ff7936a2"
+            ]
+          }
+        ],
+        "text": "\n\nPORTFOLIO STATEMENT - SWISS BANK AG\nDate: 31.03.2024\nAccount: CH93 0076 2011 6238 5295 7\nSECURITIES HOLDINGS:\nISIN: CH0012032048  |  Roche Holding AG  |  CHF 1,234,567.89\nISIN: US0378331005  |  Apple Inc.        |  USD 987,654.32\nISIN: DE0007164600  |  SAP SE            |  EUR 456,789.01\nISIN: GB0002162385  |  BP PLC            |  GBP 234,567.89\nCASH POSITIONS:\nCHF Cash Balance:     CHF 123,456.78\nUSD Cash Balance:     USD 67,890.12\nEUR Cash Balance:     EUR 34,567.89\nTRANSACTION HISTORY:\n15.03.2024  BUY   ISIN: CH0012032048  100 shares  CHF 320.50\n10.03.2024  SELL  ISIN: US0378331005   50 shares  USD 175.25\n05.03.2024  DIV   ISIN: DE0007164600  Dividend    EUR 2.50\nPORTFOLIO SUMMARY:\nTotal Value (CHF):   CHF 2,891,234.56\nPerformance YTD:     +12.34%\nRisk Rating:         Moderate\nCONTACT: portfolio@swissbank.ch | +41 44 123 45 67",
+        "text_length": 843,
+        "message": "Used text extraction fallback",
+        "page": 1
+      }
+    ],
+    "accuracy": 80,
+    "patternsUsed": 19,
+    "suggestedAnnotations": [
+      {
+        "field": "ISIN Detection",
+        "suggestedAction": "Mark ISIN column headers",
+        "reason": "Detected ISIN references - annotate for better pattern recognition"
+      },
+      {
+        "field": "Value Columns",
+        "suggestedAction": "Mark monetary value columns",
+        "reason": "Detected Swiss number format - annotate for precise extraction"
+      }
+    ],
+    "processingMethod": "standard",
+    "timestamp": "2025-07-21T18:12:20.638Z"
+  }
+}

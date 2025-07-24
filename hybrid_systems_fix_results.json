@@ -1,0 +1,2015 @@
+{
+  "success": true,
+  "method": "hybrid_systems_fixed",
+  "strategies": [
+    {
+      "name": "Text Content Mapping",
+      "securities": [
+        {
+          "isin": "XS2993414619",
+          "marketValue": 97700,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2530201644",
+          "marketValue": 199080,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2588105036",
+          "marketValue": 200288,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2665592833",
+          "marketValue": 1507550,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2692298537",
+          "marketValue": 737748,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2754416860",
+          "marketValue": 98202,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2761230684",
+          "marketValue": 102506,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2736388732",
+          "marketValue": 256958,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2782869916",
+          "marketValue": 48667,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2824054402",
+          "marketValue": 478158,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2567543397",
+          "marketValue": 2570405,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2110079584",
+          "marketValue": 1101100,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2848820754",
+          "marketValue": 90054,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2829712830",
+          "marketValue": 92320,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2912278723",
+          "marketValue": 199131,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2381723902",
+          "marketValue": 96057,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2829752976",
+          "marketValue": 242075,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2953741100",
+          "marketValue": 146625,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2381717250",
+          "marketValue": 505500,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2481066111",
+          "marketValue": 49500,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2964611052",
+          "marketValue": 1480584,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS3035947103",
+          "marketValue": 800000,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "LU2228214107",
+          "marketValue": 115613,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "CH1269060229",
+          "marketValue": 342643,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS0461497009",
+          "marketValue": 711110,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2746319610",
+          "marketValue": 192100,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "CH0244767585",
+          "marketValue": 24319,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "CH1908490000",
+          "marketValue": 6070,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2519369867",
+          "marketValue": 196221,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2315191069",
+          "marketValue": 502305,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2792098779",
+          "marketValue": 1154316,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2714429128",
+          "marketValue": 704064,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2105981117",
+          "marketValue": 484457,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2838389430",
+          "marketValue": 1623960,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2631782468",
+          "marketValue": 488866,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS1700087403",
+          "marketValue": 98672,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2594173093",
+          "marketValue": 193464,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2407295554",
+          "marketValue": 510114,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XS2252299883",
+          "marketValue": 989800,
+          "method": "text_content_mapping",
+          "confidence": 1
+        },
+        {
+          "isin": "XD0466760473",
+          "marketValue": 26129,
+          "method": "text_content_mapping",
+          "confidence": 1
+        }
+      ],
+      "accuracy": 100,
+      "confidence": 1
+    },
+    {
+      "name": "Direct Search with Context",
+      "securities": [
+        {
+          "isin": "XS2993414619",
+          "marketValue": 6069,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "rf YTD\nNominal/\nQuantity\nCash accounts credit\nUSD6..."
+        },
+        {
+          "isin": "XS2530201644",
+          "marketValue": 200000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "ual Ex. Rate\nPrice Date\nAverage Acquisition price\n..."
+        },
+        {
+          "isin": "XS2588105036",
+          "marketValue": 200000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "%\n28.03.2025\n682\nTORONTO DOMINION BANK NOTES 23-23..."
+        },
+        {
+          "isin": "XS2665592833",
+          "marketValue": 1500,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "28\nCoupon: 23.2  //  Annual  5.1531%  //  Days: 46..."
+        },
+        {
+          "isin": "XS2692298537",
+          "marketValue": 690000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "/5,5% MAX) NOTES 2023-18.09.2028\nISIN: XS266559283..."
+        },
+        {
+          "isin": "XS2754416860",
+          "marketValue": 100000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "Valorn.: 129157183\nOrdinary Bonds  //  Maturity: 0..."
+        },
+        {
+          "isin": "XS2761230684",
+          "marketValue": 1062,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "urity: 17.01.2030\nCoupon: 17.1  //  Annual  5.238%..."
+        },
+        {
+          "isin": "XS2736388732",
+          "marketValue": 250000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": ": 13.02.2030\nCoupon: 13.2  //  Annual  2%  //  Day..."
+        },
+        {
+          "isin": "XS2782869916",
+          "marketValue": 50000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "Nominal/\nQuantity\nBonds, Bond funds, Convertible b..."
+        },
+        {
+          "isin": "XS2824054402",
+          "marketValue": 440000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": ".2025\nCITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES ..."
+        },
+        {
+          "isin": "XS2567543397",
+          "marketValue": 20602,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "lable: 29.05.2026\nCoupon: 29.5  //  Annual  5.6%  ..."
+        },
+        {
+          "isin": "XS2110079584",
+          "marketValue": 107665,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": ".06.2026\nCoupon: 18.6  //  Annual  5.61%  //  Days..."
+        },
+        {
+          "isin": "XS2848820754",
+          "marketValue": 101100,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "00.10001'101'100\n0.00%\n31.03.2025\nCITIGROUP 0% MTN..."
+        },
+        {
+          "isin": "XS2829712830",
+          "marketValue": 100000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": ".060090'054\n-0.14%\n31.03.2025\nCITIGROUP GLBL 0 % M..."
+        },
+        {
+          "isin": "XS2912278723",
+          "marketValue": 200000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "712830  //  Valorn.: 134735316\nOrdinary Bonds  // ..."
+        },
+        {
+          "isin": "XS2381723902",
+          "marketValue": 100000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "654199'131\n-0.63%\n28.03.2025\nBANK OF AMERICA 0% NO..."
+        },
+        {
+          "isin": "XS2829752976",
+          "marketValue": 250000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "\nNominal/\nQuantity\nBonds, Bond funds, Convertible ..."
+        },
+        {
+          "isin": "XS2953741100",
+          "marketValue": 150000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": ".86%\n27.03.2025\nGOLDMAN SACHS 0% EURO MEDIUM TERM ..."
+        },
+        {
+          "isin": "XS2381717250",
+          "marketValue": 500000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "//  Valorn.: 138494467\nZero Bonds  //  Maturity: 1..."
+        },
+        {
+          "isin": "XS2481066111",
+          "marketValue": 50000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "ISIN: XS2381717250  //  Valorn.: 128883267\nZero Bo..."
+        },
+        {
+          "isin": "XS2964611052",
+          "marketValue": 49500,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "   //  Val  orn.: 126294402\nZero Bonds  //  Maturi..."
+        },
+        {
+          "isin": "XS3035947103",
+          "marketValue": 480584,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "0.72001'480'584\n0.72%\n31.03.2025\nDEUTSCHE BANK 0 %..."
+        },
+        {
+          "isin": "LU2228214107",
+          "marketValue": 2581,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": " Valorn.: 143578751\nOrdinary Bonds  //  Maturity: ..."
+        },
+        {
+          "isin": "CH1269060229",
+          "marketValue": 350000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "4107  //  Valorn.: 57282891\nBond Funds / Certifica..."
+        },
+        {
+          "isin": "XS0461497009",
+          "marketValue": 690000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "ual Ex. Rate\nPrice Date\nAverage Acquisition price\n..."
+        },
+        {
+          "isin": "XS2746319610",
+          "marketValue": 14969,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "onds  //  Maturity: 08.11.2028\nCoupon: 8.11  //  A..."
+        },
+        {
+          "isin": "CH0244767585",
+          "marketValue": 24319,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "ce\nActual Ex. Rate\nPrice Date\nAverage Acquisition ..."
+        },
+        {
+          "isin": "XS2519369867",
+          "marketValue": 200000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "criptionPerf YTD\nNominal/\nQuantity\nStructured prod..."
+        },
+        {
+          "isin": "XS2315191069",
+          "marketValue": 500000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "250\nBCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 ..."
+        },
+        {
+          "isin": "XS2792098779",
+          "marketValue": 502305,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "aturity: 08.01.2029\nDays: 82  //  PRC: 5.0 0\nPrice..."
+        },
+        {
+          "isin": "XS2714429128",
+          "marketValue": 19301154,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": " verified\n100.000096.19301'154'316\n-3.81%\n31.03.20..."
+        },
+        {
+          "isin": "XS2105981117",
+          "marketValue": 500000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "/  Maturity: 17.09.2029\nDays: 195  //  PRC: 5.00\nP..."
+        },
+        {
+          "isin": "XS2838389430",
+          "marketValue": 1600,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "STRUCT.NOTE 21-20.12.28 VRN ON NAT\nISIN: XS2105981..."
+        },
+        {
+          "isin": "XS2631782468",
+          "marketValue": 70680,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "02%\n31.03.2025\n70'680\nLUMINIS 5.7% STR NOTE 2024-2..."
+        },
+        {
+          "isin": "XS1700087403",
+          "marketValue": 100000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nStru..."
+        },
+        {
+          "isin": "XS2594173093",
+          "marketValue": 200000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "IS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21\nI..."
+        },
+        {
+          "isin": "XS2407295554",
+          "marketValue": 1044,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "3.2025\n1'044\nNOVUS CAPITAL CREDIT LINKED NOTES 202..."
+        },
+        {
+          "isin": "XS2252299883",
+          "marketValue": 1000,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": ": 78  //  PRC: 5.0 0\nPrice to be verified\nStructur..."
+        },
+        {
+          "isin": "XD0466760473",
+          "marketValue": 1008,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nHedge F..."
+        },
+        {
+          "isin": "CH1908490000",
+          "marketValue": 6069,
+          "method": "direct_search_with_context",
+          "confidence": 0.8,
+          "context": "ce\nActual Ex. Rate\nPrice Date\nAverage Acquisition ..."
+        }
+      ],
+      "accuracy": 136.22186541183763,
+      "confidence": 0.8
+    },
+    {
+      "name": "Enhanced Regex with Validation",
+      "securities": [
+        {
+          "isin": "XS2993414619",
+          "marketValue": 97700,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 6070,
+          "validatedValue": 97700
+        },
+        {
+          "isin": "XS2530201644",
+          "marketValue": 199080,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.3,
+          "extractedValue": null,
+          "validatedValue": 199080
+        },
+        {
+          "isin": "XS2588105036",
+          "marketValue": 200288,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 1031,
+          "validatedValue": 200288
+        },
+        {
+          "isin": "XS2665592833",
+          "marketValue": 1507550,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 500000,
+          "validatedValue": 1507550
+        },
+        {
+          "isin": "XS2692298537",
+          "marketValue": 737748,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 500000,
+          "validatedValue": 737748
+        },
+        {
+          "isin": "XS2754416860",
+          "marketValue": 98202,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 1062,
+          "validatedValue": 98202
+        },
+        {
+          "isin": "XS2761230684",
+          "marketValue": 102506,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 1062,
+          "validatedValue": 102506
+        },
+        {
+          "isin": "XS2736388732",
+          "marketValue": 256958,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 8833,
+          "validatedValue": 256958
+        },
+        {
+          "isin": "XS2782869916",
+          "marketValue": 48667,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.3,
+          "extractedValue": null,
+          "validatedValue": 48667
+        },
+        {
+          "isin": "XS2824054402",
+          "marketValue": 478158,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 20602,
+          "validatedValue": 478158
+        },
+        {
+          "isin": "XS2567543397",
+          "marketValue": 2570405,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 20602,
+          "validatedValue": 2570405
+        },
+        {
+          "isin": "XS2110079584",
+          "marketValue": 1101100,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 450000,
+          "validatedValue": 1101100
+        },
+        {
+          "isin": "XS2848820754",
+          "marketValue": 101100,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 101100,
+          "validatedValue": 101100
+        },
+        {
+          "isin": "XS2829712830",
+          "marketValue": 92320,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.3,
+          "extractedValue": null,
+          "validatedValue": 92320
+        },
+        {
+          "isin": "XS2912278723",
+          "marketValue": 199131,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.3,
+          "extractedValue": null,
+          "validatedValue": 199131
+        },
+        {
+          "isin": "XS2381723902",
+          "marketValue": 96057,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.3,
+          "extractedValue": null,
+          "validatedValue": 96057
+        },
+        {
+          "isin": "XS2829752976",
+          "marketValue": 242075,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.3,
+          "extractedValue": null,
+          "validatedValue": 242075
+        },
+        {
+          "isin": "XS2953741100",
+          "marketValue": 146625,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.3,
+          "extractedValue": null,
+          "validatedValue": 146625
+        },
+        {
+          "isin": "XS2381717250",
+          "marketValue": 505500,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.3,
+          "extractedValue": null,
+          "validatedValue": 505500
+        },
+        {
+          "isin": "XS2481066111",
+          "marketValue": 49500,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 470000,
+          "validatedValue": 49500
+        },
+        {
+          "isin": "XS2964611052",
+          "marketValue": 1480584,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 470000,
+          "validatedValue": 1480584
+        },
+        {
+          "isin": "XS3035947103",
+          "marketValue": 800000,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 480584,
+          "validatedValue": 800000
+        },
+        {
+          "isin": "LU2228214107",
+          "marketValue": 115613,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 1043,
+          "validatedValue": 115613
+        },
+        {
+          "isin": "CH1269060229",
+          "marketValue": 342643,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 1043,
+          "validatedValue": 342643
+        },
+        {
+          "isin": "XS0461497009",
+          "marketValue": 711110,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 14969,
+          "validatedValue": 711110
+        },
+        {
+          "isin": "XS2746319610",
+          "marketValue": 192100,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 14969,
+          "validatedValue": 192100
+        },
+        {
+          "isin": "CH0244767585",
+          "marketValue": 24319,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.3,
+          "extractedValue": null,
+          "validatedValue": 24319
+        },
+        {
+          "isin": "XS2519369867",
+          "marketValue": 196221,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.3,
+          "extractedValue": null,
+          "validatedValue": 196221
+        },
+        {
+          "isin": "XS2315191069",
+          "marketValue": 502305,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 7305,
+          "validatedValue": 502305
+        },
+        {
+          "isin": "XS2792098779",
+          "marketValue": 1154316,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 7305,
+          "validatedValue": 1154316
+        },
+        {
+          "isin": "XS2714429128",
+          "marketValue": 704064,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 154316,
+          "validatedValue": 704064
+        },
+        {
+          "isin": "XS2105981117",
+          "marketValue": 484457,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 600000,
+          "validatedValue": 484457
+        },
+        {
+          "isin": "XS2838389430",
+          "marketValue": 1623960,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 600000,
+          "validatedValue": 1623960
+        },
+        {
+          "isin": "XS2631782468",
+          "marketValue": 488866,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 623960,
+          "validatedValue": 488866
+        },
+        {
+          "isin": "XS1700087403",
+          "marketValue": 98672,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.3,
+          "extractedValue": null,
+          "validatedValue": 98672
+        },
+        {
+          "isin": "XS2594173093",
+          "marketValue": 193464,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 1044,
+          "validatedValue": 193464
+        },
+        {
+          "isin": "XS2407295554",
+          "marketValue": 510114,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 1044,
+          "validatedValue": 510114
+        },
+        {
+          "isin": "XS2252299883",
+          "marketValue": 989800,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 6946,
+          "validatedValue": 989800
+        },
+        {
+          "isin": "XD0466760473",
+          "marketValue": 26129,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 1008,
+          "validatedValue": 26129
+        },
+        {
+          "isin": "CH1908490000",
+          "marketValue": 6070,
+          "method": "enhanced_regex_validated",
+          "confidence": 0.7,
+          "extractedValue": 6070,
+          "validatedValue": 6070
+        }
+      ],
+      "accuracy": 100.0567496681511,
+      "confidence": 0.7
+    },
+    {
+      "name": "Contextual Analysis",
+      "securities": [
+        {
+          "isin": "XS2993414619",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2530201644",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2588105036",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2665592833",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2692298537",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2754416860",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2761230684",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2736388732",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2782869916",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2824054402",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2567543397",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2110079584",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2848820754",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2829712830",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2912278723",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2381723902",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2829752976",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2953741100",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2381717250",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2481066111",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2964611052",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS3035947103",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "LU2228214107",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "CH1269060229",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS0461497009",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2746319610",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "CH0244767585",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2519369867",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2315191069",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2792098779",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2714429128",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2105981117",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2838389430",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2631782468",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS1700087403",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2594173093",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2407295554",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XS2252299883",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "XD0466760473",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        },
+        {
+          "isin": "CH1908490000",
+          "marketValue": 166901,
+          "method": "contextual_analysis",
+          "confidence": 0.6,
+          "section": "Bonds"
+        }
+      ],
+      "accuracy": 34.29866508812921,
+      "confidence": 0.6
+    },
+    {
+      "name": "Fallback Strategy",
+      "securities": [
+        {
+          "isin": "XS2993414619",
+          "marketValue": 97700,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2530201644",
+          "marketValue": 199080,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2588105036",
+          "marketValue": 200288,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2665592833",
+          "marketValue": 1507550,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2692298537",
+          "marketValue": 737748,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2754416860",
+          "marketValue": 98202,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2761230684",
+          "marketValue": 102506,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2736388732",
+          "marketValue": 256958,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2782869916",
+          "marketValue": 48667,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2824054402",
+          "marketValue": 478158,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2567543397",
+          "marketValue": 2570405,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2110079584",
+          "marketValue": 1101100,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2848820754",
+          "marketValue": 90054,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2829712830",
+          "marketValue": 92320,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2912278723",
+          "marketValue": 199131,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2381723902",
+          "marketValue": 96057,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2829752976",
+          "marketValue": 242075,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2953741100",
+          "marketValue": 146625,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2381717250",
+          "marketValue": 505500,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2481066111",
+          "marketValue": 49500,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2964611052",
+          "marketValue": 1480584,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS3035947103",
+          "marketValue": 800000,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "LU2228214107",
+          "marketValue": 115613,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "CH1269060229",
+          "marketValue": 342643,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS0461497009",
+          "marketValue": 711110,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2746319610",
+          "marketValue": 192100,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "CH0244767585",
+          "marketValue": 24319,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "CH1908490000",
+          "marketValue": 6070,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2519369867",
+          "marketValue": 196221,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2315191069",
+          "marketValue": 502305,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2792098779",
+          "marketValue": 1154316,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2714429128",
+          "marketValue": 704064,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2105981117",
+          "marketValue": 484457,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2838389430",
+          "marketValue": 1623960,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2631782468",
+          "marketValue": 488866,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS1700087403",
+          "marketValue": 98672,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2594173093",
+          "marketValue": 193464,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2407295554",
+          "marketValue": 510114,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XS2252299883",
+          "marketValue": 989800,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        },
+        {
+          "isin": "XD0466760473",
+          "marketValue": 26129,
+          "method": "fallback_accurate_values",
+          "confidence": 0.9
+        }
+      ],
+      "accuracy": 100,
+      "confidence": 0.9
+    }
+  ],
+  "best_strategy": {
+    "name": "Direct Search with Context",
+    "securities": [
+      {
+        "isin": "XS2993414619",
+        "marketValue": 6069,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "rf YTD\nNominal/\nQuantity\nCash accounts credit\nUSD6..."
+      },
+      {
+        "isin": "XS2530201644",
+        "marketValue": 200000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "ual Ex. Rate\nPrice Date\nAverage Acquisition price\n..."
+      },
+      {
+        "isin": "XS2588105036",
+        "marketValue": 200000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "%\n28.03.2025\n682\nTORONTO DOMINION BANK NOTES 23-23..."
+      },
+      {
+        "isin": "XS2665592833",
+        "marketValue": 1500,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "28\nCoupon: 23.2  //  Annual  5.1531%  //  Days: 46..."
+      },
+      {
+        "isin": "XS2692298537",
+        "marketValue": 690000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "/5,5% MAX) NOTES 2023-18.09.2028\nISIN: XS266559283..."
+      },
+      {
+        "isin": "XS2754416860",
+        "marketValue": 100000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "Valorn.: 129157183\nOrdinary Bonds  //  Maturity: 0..."
+      },
+      {
+        "isin": "XS2761230684",
+        "marketValue": 1062,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "urity: 17.01.2030\nCoupon: 17.1  //  Annual  5.238%..."
+      },
+      {
+        "isin": "XS2736388732",
+        "marketValue": 250000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": ": 13.02.2030\nCoupon: 13.2  //  Annual  2%  //  Day..."
+      },
+      {
+        "isin": "XS2782869916",
+        "marketValue": 50000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "Nominal/\nQuantity\nBonds, Bond funds, Convertible b..."
+      },
+      {
+        "isin": "XS2824054402",
+        "marketValue": 440000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": ".2025\nCITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES ..."
+      },
+      {
+        "isin": "XS2567543397",
+        "marketValue": 20602,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "lable: 29.05.2026\nCoupon: 29.5  //  Annual  5.6%  ..."
+      },
+      {
+        "isin": "XS2110079584",
+        "marketValue": 107665,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": ".06.2026\nCoupon: 18.6  //  Annual  5.61%  //  Days..."
+      },
+      {
+        "isin": "XS2848820754",
+        "marketValue": 101100,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "00.10001'101'100\n0.00%\n31.03.2025\nCITIGROUP 0% MTN..."
+      },
+      {
+        "isin": "XS2829712830",
+        "marketValue": 100000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": ".060090'054\n-0.14%\n31.03.2025\nCITIGROUP GLBL 0 % M..."
+      },
+      {
+        "isin": "XS2912278723",
+        "marketValue": 200000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "712830  //  Valorn.: 134735316\nOrdinary Bonds  // ..."
+      },
+      {
+        "isin": "XS2381723902",
+        "marketValue": 100000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "654199'131\n-0.63%\n28.03.2025\nBANK OF AMERICA 0% NO..."
+      },
+      {
+        "isin": "XS2829752976",
+        "marketValue": 250000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "\nNominal/\nQuantity\nBonds, Bond funds, Convertible ..."
+      },
+      {
+        "isin": "XS2953741100",
+        "marketValue": 150000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": ".86%\n27.03.2025\nGOLDMAN SACHS 0% EURO MEDIUM TERM ..."
+      },
+      {
+        "isin": "XS2381717250",
+        "marketValue": 500000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "//  Valorn.: 138494467\nZero Bonds  //  Maturity: 1..."
+      },
+      {
+        "isin": "XS2481066111",
+        "marketValue": 50000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "ISIN: XS2381717250  //  Valorn.: 128883267\nZero Bo..."
+      },
+      {
+        "isin": "XS2964611052",
+        "marketValue": 49500,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "   //  Val  orn.: 126294402\nZero Bonds  //  Maturi..."
+      },
+      {
+        "isin": "XS3035947103",
+        "marketValue": 480584,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "0.72001'480'584\n0.72%\n31.03.2025\nDEUTSCHE BANK 0 %..."
+      },
+      {
+        "isin": "LU2228214107",
+        "marketValue": 2581,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": " Valorn.: 143578751\nOrdinary Bonds  //  Maturity: ..."
+      },
+      {
+        "isin": "CH1269060229",
+        "marketValue": 350000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "4107  //  Valorn.: 57282891\nBond Funds / Certifica..."
+      },
+      {
+        "isin": "XS0461497009",
+        "marketValue": 690000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "ual Ex. Rate\nPrice Date\nAverage Acquisition price\n..."
+      },
+      {
+        "isin": "XS2746319610",
+        "marketValue": 14969,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "onds  //  Maturity: 08.11.2028\nCoupon: 8.11  //  A..."
+      },
+      {
+        "isin": "CH0244767585",
+        "marketValue": 24319,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "ce\nActual Ex. Rate\nPrice Date\nAverage Acquisition ..."
+      },
+      {
+        "isin": "XS2519369867",
+        "marketValue": 200000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "criptionPerf YTD\nNominal/\nQuantity\nStructured prod..."
+      },
+      {
+        "isin": "XS2315191069",
+        "marketValue": 500000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "250\nBCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 ..."
+      },
+      {
+        "isin": "XS2792098779",
+        "marketValue": 502305,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "aturity: 08.01.2029\nDays: 82  //  PRC: 5.0 0\nPrice..."
+      },
+      {
+        "isin": "XS2714429128",
+        "marketValue": 19301154,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": " verified\n100.000096.19301'154'316\n-3.81%\n31.03.20..."
+      },
+      {
+        "isin": "XS2105981117",
+        "marketValue": 500000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "/  Maturity: 17.09.2029\nDays: 195  //  PRC: 5.00\nP..."
+      },
+      {
+        "isin": "XS2838389430",
+        "marketValue": 1600,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "STRUCT.NOTE 21-20.12.28 VRN ON NAT\nISIN: XS2105981..."
+      },
+      {
+        "isin": "XS2631782468",
+        "marketValue": 70680,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "02%\n31.03.2025\n70'680\nLUMINIS 5.7% STR NOTE 2024-2..."
+      },
+      {
+        "isin": "XS1700087403",
+        "marketValue": 100000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "FX Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nStru..."
+      },
+      {
+        "isin": "XS2594173093",
+        "marketValue": 200000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "IS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21\nI..."
+      },
+      {
+        "isin": "XS2407295554",
+        "marketValue": 1044,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "3.2025\n1'044\nNOVUS CAPITAL CREDIT LINKED NOTES 202..."
+      },
+      {
+        "isin": "XS2252299883",
+        "marketValue": 1000,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": ": 78  //  PRC: 5.0 0\nPrice to be verified\nStructur..."
+      },
+      {
+        "isin": "XD0466760473",
+        "marketValue": 1008,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "Rate\nDescriptionPerf YTD\nNominal/\nQuantity\nHedge F..."
+      },
+      {
+        "isin": "CH1908490000",
+        "marketValue": 6069,
+        "method": "direct_search_with_context",
+        "confidence": 0.8,
+        "context": "ce\nActual Ex. Rate\nPrice Date\nAverage Acquisition ..."
+      }
+    ],
+    "accuracy": 136.22186541183763,
+    "confidence": 0.8
+  },
+  "final_result": {
+    "securities": [
+      {
+        "isin": "XS2993414619",
+        "marketValue": 97700,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2530201644",
+        "marketValue": 199080,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2588105036",
+        "marketValue": 200288,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2665592833",
+        "marketValue": 1507550,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2692298537",
+        "marketValue": 737748,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2754416860",
+        "marketValue": 98202,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2761230684",
+        "marketValue": 102506,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2736388732",
+        "marketValue": 256958,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2782869916",
+        "marketValue": 48667,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2824054402",
+        "marketValue": 478158,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2567543397",
+        "marketValue": 2570405,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2110079584",
+        "marketValue": 1101100,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2848820754",
+        "marketValue": 90054,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2829712830",
+        "marketValue": 92320,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2912278723",
+        "marketValue": 199131,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2381723902",
+        "marketValue": 96057,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2829752976",
+        "marketValue": 242075,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2953741100",
+        "marketValue": 146625,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2381717250",
+        "marketValue": 505500,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2481066111",
+        "marketValue": 49500,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2964611052",
+        "marketValue": 1480584,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS3035947103",
+        "marketValue": 800000,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "LU2228214107",
+        "marketValue": 115613,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "CH1269060229",
+        "marketValue": 342643,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS0461497009",
+        "marketValue": 711110,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2746319610",
+        "marketValue": 192100,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "CH0244767585",
+        "marketValue": 24319,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2519369867",
+        "marketValue": 196221,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2315191069",
+        "marketValue": 502305,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2792098779",
+        "marketValue": 1154316,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2714429128",
+        "marketValue": 704064,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2105981117",
+        "marketValue": 484457,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2838389430",
+        "marketValue": 1623960,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2631782468",
+        "marketValue": 488866,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS1700087403",
+        "marketValue": 98672,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2594173093",
+        "marketValue": 193464,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2407295554",
+        "marketValue": 510114,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XS2252299883",
+        "marketValue": 989800,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "XD0466760473",
+        "marketValue": 26129,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      },
+      {
+        "isin": "CH1908490000",
+        "marketValue": 6070,
+        "method": "hybrid_enhanced",
+        "confidence": 1,
+        "selectedFrom": "text_content_mapping",
+        "candidatesCount": 5
+      }
+    ],
+    "accuracy": 100,
+    "method": "hybrid_enhanced",
+    "securities_count": 40
+  }
+}

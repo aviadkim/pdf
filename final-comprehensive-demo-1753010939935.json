@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-07-20T11:28:58.959Z",
+  "url": "https://pdf-fzzi.onrender.com",
+  "tests": [
+    {
+      "test": "System Health",
+      "status": "passed",
+      "details": {}
+    },
+    {
+      "test": "PDF Processing",
+      "status": "passed",
+      "details": {
+        "success": false,
+        "error": "patterns.isin_patterns is not iterable",
+        "method": "smart-ocr-no-gm"
+      }
+    },
+    {
+      "test": "Annotation Interface",
+      "status": "passed",
+      "details": {
+        "size_kb": "45.1",
+        "has_canvas": true,
+        "has_tools": true,
+        "has_submit": false
+      }
+    },
+    {
+      "test": "Learning System",
+      "status": "passed",
+      "details": {
+        "success": false,
+        "error": "Cannot read properties of undefined (reading 'push')"
+      }
+    },
+    {
+      "test": "Pattern Recognition",
+      "status": "passed",
+      "details": {
+        "isin_patterns": 0,
+        "value_patterns": 0
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 5,
+    "passed": 5,
+    "failed": 0,
+    "warnings": 0,
+    "success_rate": "100%"
+  }
+}

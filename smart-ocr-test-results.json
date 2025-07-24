@@ -1,0 +1,69 @@
+{
+  "total": 5,
+  "passed": 5,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Homepage UI and Navigation",
+      "passed": true,
+      "details": [
+        "✅ Correct title found",
+        "✅ Main heading found",
+        "✅ Found 1 navigation links",
+        "  - \n            Open Annotation Interface\n        : https://pdf-fzzi.onrender.com/smart-annotation",
+        "✅ File upload input found"
+      ],
+      "screenshots": [
+        "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\smart-ocr-test-screenshots\\homepage-1753007399688.png"
+      ]
+    },
+    {
+      "name": "Annotation Interface",
+      "passed": true,
+      "details": [
+        "✅ Annotation page loaded: 🧠 Smart Financial PDF OCR",
+        "⚠️ Pattern input not found",
+        "⚠️ Value input not found",
+        "⚠️ Submit button not found",
+        "✅ Submit button (text) found",
+        "📊 Found 0 annotation elements"
+      ],
+      "screenshots": [
+        "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\smart-ocr-test-screenshots\\annotation-interface-1753007400888.png"
+      ]
+    },
+    {
+      "name": "API Endpoints",
+      "passed": true,
+      "details": [
+        "✅ Stats API: Status 200",
+        "✅ Patterns API: Status 200",
+        "  - Patterns: [object Object]",
+        "⚠️ Learn API: Status 400"
+      ],
+      "screenshots": []
+    },
+    {
+      "name": "Form Submissions and Interactions",
+      "passed": true,
+      "details": [
+        "✅ Process button found",
+        "✅ Process button is enabled",
+        "📊 Found 0 dropdown menus",
+        "📊 Interactive elements: 2 buttons, 1 inputs"
+      ],
+      "screenshots": [
+        "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\smart-ocr-test-screenshots\\form-interactions-1753007404244.png"
+      ]
+    },
+    {
+      "name": "Learning System Stats",
+      "passed": true,
+      "details": [
+        "✅ Stats API returned data",
+        "⚠️ No patterns data returned"
+      ],
+      "screenshots": []
+    }
+  ]
+}

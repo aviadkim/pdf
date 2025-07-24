@@ -1,0 +1,86 @@
+{
+  "validationSuite": "Live Deployment Validation",
+  "timestamp": "2025-07-21T13:27:55.135Z",
+  "baseUrl": "https://pdf-fzzi.onrender.com",
+  "results": {
+    "endpoints": [
+      {
+        "name": "Homepage",
+        "path": "/",
+        "status": 200,
+        "healthy": true,
+        "content": "\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"",
+        "timestamp": "2025-07-21T13:27:39.351Z"
+      },
+      {
+        "name": "Health Check",
+        "path": "/api/smart-ocr-test",
+        "status": 200,
+        "healthy": true,
+        "content": "{\"status\":\"healthy\",\"service\":\"Smart OCR Learning ",
+        "timestamp": "2025-07-21T13:27:39.573Z"
+      },
+      {
+        "name": "Annotation Interface",
+        "path": "/smart-annotation",
+        "status": 200,
+        "healthy": true,
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta ",
+        "timestamp": "2025-07-21T13:27:39.659Z"
+      },
+      {
+        "name": "System Stats",
+        "path": "/api/smart-ocr-stats",
+        "status": 200,
+        "healthy": true,
+        "content": "{\"success\":true,\"stats\":{\"currentAccuracy\":80,\"pat",
+        "timestamp": "2025-07-21T13:27:39.747Z"
+      },
+      {
+        "name": "Learned Patterns",
+        "path": "/api/smart-ocr-patterns",
+        "status": 200,
+        "healthy": true,
+        "content": "{\"success\":true,\"patterns\":{\"tablePatterns\":[{\"id\"",
+        "timestamp": "2025-07-21T13:27:39.826Z"
+      }
+    ],
+    "functionality": [
+      {
+        "test": "Core API Functionality",
+        "status": "passed",
+        "timestamp": "2025-07-21T13:27:40.013Z"
+      },
+      {
+        "test": "Human-AI Workflow",
+        "uploadArea": true,
+        "annotationTools": true,
+        "learningProgress": true,
+        "patternsSection": true,
+        "apiConnectivity": true,
+        "timestamp": "2025-07-21T13:27:54.357Z"
+      }
+    ],
+    "performance": {},
+    "screenshots": [
+      "validation-results/screenshots/workflow-test.png"
+    ],
+    "errors": [
+      {
+        "test": "performance",
+        "error": "page.metrics is not a function",
+        "timestamp": "2025-07-21T13:27:46.438Z"
+      }
+    ]
+  },
+  "summary": {
+    "totalEndpoints": 5,
+    "healthyEndpoints": 5,
+    "successRate": 100,
+    "functionalityTests": 2,
+    "performanceData": false,
+    "screenshots": 1,
+    "errors": 1,
+    "overallStatus": "needs-attention"
+  }
+}

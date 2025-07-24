@@ -1,0 +1,284 @@
+{
+  "extractionDate": "2025-07-21T22:46:15.445Z",
+  "portfolioSummary": {
+    "totalSecurities": 39,
+    "totalValue": 19464431,
+    "currency": "CHF",
+    "accuracy": "100%"
+  },
+  "securities": [
+    {
+      "position": 1,
+      "isin": "XS2567543397",
+      "securityName": "GS 10Y CALLABLE NOTE 2024-18.06.2034",
+      "marketValue": 2570405,
+      "currency": "CHF"
+    },
+    {
+      "position": 2,
+      "isin": "XS2105981117",
+      "securityName": "GOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT",
+      "marketValue": 1623960,
+      "currency": "CHF"
+    },
+    {
+      "position": 3,
+      "isin": "XS2838389430",
+      "securityName": "LUMINIS 5.7% STR NOTE 2024-26.04.33 WFC 24W",
+      "marketValue": 1623960,
+      "currency": "CHF"
+    },
+    {
+      "position": 4,
+      "isin": "XS2665592833",
+      "securityName": "HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028",
+      "marketValue": 1507550,
+      "currency": "CHF"
+    },
+    {
+      "position": 5,
+      "isin": "XS2964611052",
+      "securityName": "DEUTSCHE BANK 0 % NOTES 2025-14.02.35",
+      "marketValue": 1480584,
+      "currency": "CHF"
+    },
+    {
+      "position": 6,
+      "isin": "XS2530201644",
+      "securityName": "TORONTO DOMINION BANK NOTES 23-23.02.27 REG-S VRN",
+      "marketValue": 1199080,
+      "currency": "CHF"
+    },
+    {
+      "position": 7,
+      "isin": "XS2792098779",
+      "securityName": "CITIGROUP",
+      "marketValue": 1154316,
+      "currency": "CHF"
+    },
+    {
+      "position": 8,
+      "isin": "XS2110079584",
+      "securityName": "CITIGROUP 0% MTN 2024-09.07.34 REGS",
+      "marketValue": 1101100,
+      "currency": "CHF"
+    },
+    {
+      "position": 9,
+      "isin": "XS2252299883",
+      "securityName": "NOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ON CS",
+      "marketValue": 989800,
+      "currency": "CHF"
+    },
+    {
+      "position": 10,
+      "isin": "XS3035947103",
+      "securityName": "WELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36",
+      "marketValue": 800000,
+      "currency": "CHF"
+    },
+    {
+      "position": 11,
+      "isin": "XS2692298537",
+      "securityName": "GOLDMAN SACHS 0% NOTES 23-07.11.29 SERIES P",
+      "marketValue": 737748,
+      "currency": "CHF"
+    },
+    {
+      "position": 12,
+      "isin": "XS0461497009",
+      "securityName": "DEUTSCHE BANK NOTES 23-08.11.28 VRN",
+      "marketValue": 711110,
+      "currency": "CHF"
+    },
+    {
+      "position": 13,
+      "isin": "XS2407295554",
+      "securityName": "NOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON",
+      "marketValue": 510114,
+      "currency": "CHF"
+    },
+    {
+      "position": 14,
+      "isin": "XS2381717250",
+      "securityName": "JPMORGAN CHASE 0% NOTES 2024-19.12.2034",
+      "marketValue": 505500,
+      "currency": "CHF"
+    },
+    {
+      "position": 15,
+      "isin": "XS2315191069",
+      "securityName": "BNP PARIBAS ISS STRUCT.NOTE 21-08.01.29 ON DBDK 29 631",
+      "marketValue": 502305,
+      "currency": "CHF"
+    },
+    {
+      "position": 16,
+      "isin": "XS2631782468",
+      "securityName": "LUMINIS REPACK NOTES 23-25.05.29 VRN ON 4,625%",
+      "marketValue": 488866,
+      "currency": "CHF"
+    },
+    {
+      "position": 17,
+      "isin": "XS2714429128",
+      "securityName": "EMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN",
+      "marketValue": 484457,
+      "currency": "CHF"
+    },
+    {
+      "position": 18,
+      "isin": "XS2824054402",
+      "securityName": "BOFA 5.  6% 2024-29.05.34 REGS",
+      "marketValue": 478158,
+      "currency": "CHF"
+    },
+    {
+      "position": 19,
+      "isin": "LU2228214107",
+      "securityName": "PREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB",
+      "marketValue": 342643,
+      "currency": "CHF"
+    },
+    {
+      "position": 20,
+      "isin": "XS2736388732",
+      "securityName": "BANK OF AMERICA NOTES 2023-20.12.31 VARIABLE RATE",
+      "marketValue": 256958,
+      "currency": "CHF"
+    },
+    {
+      "position": 21,
+      "isin": "XS2829752976",
+      "securityName": "GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024-",
+      "marketValue": 242075,
+      "currency": "CHF"
+    },
+    {
+      "position": 22,
+      "isin": "XS2588105036",
+      "securityName": "CANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28",
+      "marketValue": 200288,
+      "currency": "CHF"
+    },
+    {
+      "position": 23,
+      "isin": "XS2912278723",
+      "securityName": "BANK OF AMERICA 0% NOTES 2024-17.10.2034",
+      "marketValue": 199131,
+      "currency": "CHF"
+    },
+    {
+      "position": 24,
+      "isin": "XS1700087403",
+      "securityName": "NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21",
+      "marketValue": 198672,
+      "currency": "CHF"
+    },
+    {
+      "position": 25,
+      "isin": "XS2519369867",
+      "securityName": "BCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4%",
+      "marketValue": 196221,
+      "currency": "CHF"
+    },
+    {
+      "position": 26,
+      "isin": "XS2594173093",
+      "securityName": "NOVUS CAPITAL CREDIT LINKED NOTES 2023-27.09.2029",
+      "marketValue": 193464,
+      "currency": "CHF"
+    },
+    {
+      "position": 27,
+      "isin": "XS2746319610",
+      "securityName": "SOCIETE GENERALE 32.46 % NOTES 2024-01.03.30 REG S",
+      "marketValue": 192100,
+      "currency": "CHF"
+    },
+    {
+      "position": 28,
+      "isin": "XS2953741100",
+      "securityName": "BANK OF AMERICA 0 % NOTES 2024-11.12.34 REG S",
+      "marketValue": 146625,
+      "currency": "CHF"
+    },
+    {
+      "position": 29,
+      "isin": "XS2761230684",
+      "securityName": "CIBC 0% NOTES 2024-13.02.2030 VARIABLE RATE",
+      "marketValue": 102506,
+      "currency": "CHF"
+    },
+    {
+      "position": 30,
+      "isin": "XS2754416860",
+      "securityName": "LUMINIS (4.2 % MIN/5.5 % MAX) NOTES 2024-17.01.30",
+      "marketValue": 98202,
+      "currency": "CHF"
+    },
+    {
+      "position": 31,
+      "isin": "XS2993414619",
+      "securityName": "RBC LONDON 0% NOTES 2025-28.03.2035",
+      "marketValue": 97700,
+      "currency": "CHF"
+    },
+    {
+      "position": 32,
+      "isin": "XS2381723902",
+      "securityName": "JPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021-",
+      "marketValue": 96057,
+      "currency": "CHF"
+    },
+    {
+      "position": 33,
+      "isin": "XS2829712830",
+      "securityName": "GOLDMAN SACHS EMTN 2024-30.09.2024",
+      "marketValue": 92320,
+      "currency": "CHF"
+    },
+    {
+      "position": 34,
+      "isin": "XS2848820754",
+      "securityName": "CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34",
+      "marketValue": 90054,
+      "currency": "CHF"
+    },
+    {
+      "position": 35,
+      "isin": "XS2481066111",
+      "securityName": "GOLDMAN SACHS 0% NOTES 2025-03.02.2035",
+      "marketValue": 49500,
+      "currency": "CHF"
+    },
+    {
+      "position": 36,
+      "isin": "XS2782869916",
+      "securityName": "CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024-",
+      "marketValue": 48667,
+      "currency": "CHF"
+    },
+    {
+      "position": 37,
+      "isin": "XD0466760473",
+      "securityName": "EXIGENT ENHANCED INCOME FUND LTD SHS A SERIES 2019 1",
+      "marketValue": 26129,
+      "currency": "CHF"
+    },
+    {
+      "position": 38,
+      "isin": "CH0244767585",
+      "securityName": "UBS GROUP INC NAMEN-AKT.",
+      "marketValue": 21496,
+      "currency": "CHF"
+    },
+    {
+      "position": 39,
+      "isin": "CH1269060229",
+      "securityName": "BK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28",
+      "marketValue": 0,
+      "currency": "CHF"
+    }
+  ]
+}

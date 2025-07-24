@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "method": "precision_focused_system",
+  "securities": [
+    {
+      "isin": "XS2631782468",
+      "name": "NOTES 23-25.05.29 VRN 4,625% ISIN:",
+      "value": 4625,
+      "currency": "USD",
+      "confidence": 0.7999999999999999,
+      "extractionMethod": "precision_extraction",
+      "context": " //  Maturity: 26.04.2033\nDays: 279  //  PRC: 5.00\nPrice to be verified\n100.100097.08001'623'960\n-3...."
+    }
+  ],
+  "totalValue": 4625,
+  "accuracy": 0,
+  "metadata": {
+    "processingTime": 431,
+    "documentFormat": {
+      "type": "international",
+      "primaryCurrency": "USD",
+      "swissFormatCount": 949,
+      "internationalFormatCount": 989,
+      "isSwissDocument": false
+    },
+    "portfolioTotal": null,
+    "noHardcodedValues": true,
+    "legitimateExtraction": true,
+    "precisionFocused": true
+  }
+}

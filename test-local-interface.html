@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Test - Drag and Drop</title>
+    <style>
+        .upload-area {
+            border: 3px dashed #3498db;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: #f8f9fa;
+        }
+
+        .upload-area:hover {
+            border-color: #2980b9;
+            background: #e3f2fd;
+        }
+
+        .upload-area.dragover {
+            border-color: #e74c3c;
+            background: #ffeaa7;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .upload-btn {
+            background: #3498db;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .result {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Local Drag and Drop Test</h1>
+    
+    <div class="upload-area" id="uploadArea">
+        <h3>🎯 Drop PDF Here or Click to Upload</h3>
+        <input type="file" id="fileInput" class="file-input" accept=".pdf">
+        <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+            📤 Select PDF File
+        </button>
+    </div>
+
+    <div id="results"></div>
+
+    <script>
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const results = document.getElementById('results');
+
+        // Drag and drop handlers
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+            console.log('Drag over detected');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+            console.log('Drag leave detected');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            console.log('Drop detected');
+            
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleFileUpload(files[0]);
+            }
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFileUpload(e.target.files[0]);
+            }
+        });
+
+        function handleFileUpload(file) {
+            console.log('File uploaded:', file.name, file.size, file.type);
+            
+            results.innerHTML = `
+                <div class="result">
+                    <h3>✅ File Detected</h3>
+                    <p><strong>Name:</strong> ${file.name}</p>
+                    <p><strong>Size:</strong> ${(file.size / 1024 / 1024).toFixed(2)} MB</p>
+                    <p><strong>Type:</strong> ${file.type}</p>
+                    <p><strong>Drag and Drop:</strong> WORKING! 🎉</p>
+                </div>
+            `;
+        }
+
+        // Test if drag and drop is supported
+        if ('draggable' in document.createElement('span')) {
+            console.log('Drag and drop is supported');
+        } else {
+            console.log('Drag and drop is NOT supported');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,789 @@
+{
+  "summary": {
+    "totalTests": 6,
+    "passed": 6,
+    "failed": 0,
+    "successRate": 100,
+    "totalTime": 870
+  },
+  "tests": [
+    {
+      "name": "Messos PDF Processing",
+      "passed": true,
+      "timestamp": "2025-07-20T20:12:29.576Z",
+      "details": {
+        "processingTime": 588,
+        "documentType": "messos-corner-banca",
+        "confidence": 80,
+        "securitiesFound": 39,
+        "validation": {
+          "scores": {
+            "documentType": 100,
+            "securitiesCount": 100,
+            "securityNames": 100,
+            "securityValues": 100,
+            "portfolioData": 80
+          },
+          "issues": [],
+          "recommendations": [],
+          "overallScore": 96
+        }
+      }
+    },
+    {
+      "name": "Document Type Detection",
+      "passed": true,
+      "timestamp": "2025-07-20T20:12:29.613Z",
+      "details": {
+        "passed": 3,
+        "total": 3,
+        "successRate": 100
+      }
+    },
+    {
+      "name": "Learning System Integration",
+      "passed": true,
+      "timestamp": "2025-07-20T20:12:29.641Z",
+      "details": {
+        "annotationsStored": 4,
+        "patternsAvailable": 0,
+        "averageConfidence": 0.95
+      }
+    },
+    {
+      "name": "Annotation Processing",
+      "passed": true,
+      "timestamp": "2025-07-20T20:12:29.669Z",
+      "details": {
+        "success": true,
+        "annotationId": "ann_1753042349644_ezfohb5wv",
+        "improvements": 0,
+        "message": "Annotation processed successfully. The system will use this feedback to improve future extractions."
+      }
+    },
+    {
+      "name": "Validation System",
+      "passed": true,
+      "timestamp": "2025-07-20T20:12:29.688Z",
+      "details": {
+        "success": true,
+        "validationProcessed": true,
+        "corrections": 1,
+        "learningResult": {
+          "success": true,
+          "annotationId": "ann_1753042349675_d6e61xwlu",
+          "improvements": 0,
+          "message": "Annotation processed successfully. The system will use this feedback to improve future extractions."
+        }
+      }
+    },
+    {
+      "name": "Performance Benchmarks",
+      "passed": true,
+      "timestamp": "2025-07-20T20:12:29.856Z",
+      "details": {
+        "tests": [
+          {
+            "test": "Messos PDF Processing Speed",
+            "time": 165,
+            "success": true,
+            "benchmark": true
+          },
+          {
+            "test": "Memory Usage",
+            "heapUsed": 16,
+            "heapTotal": 31,
+            "benchmark": true
+          }
+        ]
+      }
+    }
+  ],
+  "messos": {
+    "success": true,
+    "processingTime": 588,
+    "validation": {
+      "scores": {
+        "documentType": 100,
+        "securitiesCount": 100,
+        "securityNames": 100,
+        "securityValues": 100,
+        "portfolioData": 80
+      },
+      "issues": [],
+      "recommendations": [],
+      "overallScore": 96
+    },
+    "result": {
+      "success": true,
+      "processingTime": 583,
+      "fileInfo": {
+        "path": "C:\\Users\\aviad\\OneDrive\\Desktop\\pdf-main\\2. Messos  - 31.03.2025.pdf",
+        "size": 627670,
+        "pages": 19
+      },
+      "extraction": {
+        "method": "pdf-parse-safe",
+        "textLength": 30376,
+        "processingTime": 541
+      },
+      "detection": {
+        "documentType": "messos-corner-banca",
+        "confidence": 1,
+        "alternatives": [
+          {
+            "type": "generic-portfolio",
+            "score": 0.8205128205128205,
+            "confidence": 0.6564102564102564
+          },
+          {
+            "type": "deutsche-bank",
+            "score": 0.41025641025641024,
+            "confidence": 0.41025641025641024
+          }
+        ]
+      },
+      "financialData": {
+        "securities": [
+          {
+            "isin": "XS2993414619",
+            "index": 1,
+            "context": "USD100'000.00 -2.30% 0.50% ISIN: XS2993414619  //  Valorn.: 140610687 MM secs discounted  //  Maturity: 28.03.2035  //  PRC: 5.00 100.000097.700097'700 -2.30%",
+            "name": "MM secs discounted",
+            "value": "100.00",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "28.03.2035",
+            "rating": null,
+            "performance": "-2.30%",
+            "coupon": null,
+            "type": "Unknown"
+          },
+          {
+            "isin": "XS2530201644",
+            "index": 2,
+            "context": "USD200'000 0.25% 1.02% ISIN: XS2530201644  //  Valorn.: 125350273 Ordinary Bonds  //  Maturity: 23.02.2027 Coupon: 23.5  //  Quarterly  3.32%  //  Days: 37 Moody's: A2  //  PRC: 2.00",
+            "name": "Ordinary Bonds",
+            "value": "23.02",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "23.02.2027",
+            "rating": "Moody's: A2",
+            "performance": "0.25%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2588105036",
+            "index": 3,
+            "context": "28.03.2025 1'031 CANADIAN IMPERIAL BANK OF COMMERCE NOTES 23-22.08.28 ISIN: XS2588105036  //  Valorn.: 112286204 Ordinary Bonds  //  Maturity: 22.02.2028 Coupon: 23.2  //  Annual  5.1531%  //  Days: 46 PRC: 5.00",
+            "name": "CANADIAN IMPERIAL BANK OF COMMERCE NOTES",
+            "value": "28.03",
+            "currency": null,
+            "yield": null,
+            "maturity": "22.02.2028",
+            "rating": null,
+            "performance": "5.1531%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2665592833",
+            "index": 4,
+            "context": "31.03.2025 32'000 HARP ISSUER (4% MIN/5,5% MAX) NOTES 2023-18.09.2028 ISIN: XS2665592833  //  Valorn.: 128829182 Ordinary Bonds  //  Maturity: 18.09.2028 Coupon: 18.9  //  Annual  4%  //  Days: 192 PRC: 5.00",
+            "name": "Ordinary Bonds",
+            "value": "31.03",
+            "currency": null,
+            "yield": null,
+            "maturity": "18.09.2028",
+            "rating": null,
+            "performance": "4%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2692298537",
+            "index": 5,
+            "context": "USD690'000 2.26% 3.79% ISIN: XS2692298537  //  Valorn.: 129157183 Ordinary Bonds  //  Maturity: 07.11.2029 YTM: -1.44  //  PRC: 5.00 100.1000106.9200737'748",
+            "name": "Ordinary Bonds",
+            "value": "106.92",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "07.11.2029",
+            "rating": null,
+            "performance": "2.26%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2754416860",
+            "index": 6,
+            "context": "USD100'000 1.16% 0.50% ISIN: XS2754416860  //  Valorn.: 132648671 Ordinary Bonds  //  Maturity: 17.01.2030 Coupon: 17.1  //  Annual  5.238%  //  Days: 73 PRC: 5.00",
+            "name": "Ordinary Bonds",
+            "value": "17.01",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "17.01.2030",
+            "rating": null,
+            "performance": "1.16%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2761230684",
+            "index": 7,
+            "context": "USD100'000 2.24% 0.53% ISIN: XS2761230684  //  Valorn.: 112288215 Zero Bonds  //  Maturity: 13.02.2030 Coupon: 13.2  //  Annual  2%  //  Days: 47  //  YTM: 6.89 PRC: 5.00",
+            "name": "Zero Bonds",
+            "value": "13.02",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "13.02.2030",
+            "rating": null,
+            "performance": "2.24%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2736388732",
+            "index": 8,
+            "context": "USD250'000 -2.58% 1.32% ISIN: XS2736388732  //  Valorn.: 131799640 Ordinary Bonds  //  Maturity: 20.12.2031 Days: 265 PRC: 5.00",
+            "name": "Ordinary Bonds",
+            "value": "20.12",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "20.12.2031",
+            "rating": null,
+            "performance": "-2.58%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2782869916",
+            "index": 9,
+            "context": "-2.86% 31.03.2025 CITIGROUP GLBL 5.65 % CALL FIXED RATE NOTES 2024- ISIN: XS2782869916  //  Valorn.: 132544344 Ordinary Bonds  //  Maturity: 09.05.2034 PRC: 5.00 Price to be verified",
+            "name": "CITIGROUP GLBL",
+            "value": "31.03",
+            "currency": null,
+            "yield": null,
+            "maturity": "09.05.2034",
+            "rating": null,
+            "performance": "-2.86%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2824054402",
+            "index": 10,
+            "context": "USD440'000 1.81% 2.46% ISIN: XS2824054402  //  Valorn.: 135337661 Ordinary Bonds  //  Callable: 29.05.2026 Coupon: 29.5  //  Annual  5.6%  //  Days: 301  //  YTM: 5.04 PRC: 5.00",
+            "name": "Ordinary Bonds",
+            "value": "29.05",
+            "currency": "USD",
+            "yield": null,
+            "maturity": null,
+            "rating": null,
+            "performance": "1.81%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2567543397",
+            "index": 11,
+            "context": "USD2'450'000 1.26% 13.21% ISIN: XS2567543397  //  Valorn.: 134736192 Ordinary Bonds  //  Callable: 18.06.2026 Coupon: 18.6  //  Annual  5.61%  //  Days: 282  //  YTM: 5.53 PRC: 5.00",
+            "name": "Ordinary Bonds",
+            "value": "18.06",
+            "currency": "USD",
+            "yield": null,
+            "maturity": null,
+            "rating": null,
+            "performance": "1.26%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2110079584",
+            "index": 12,
+            "context": "USD1'100'000 1.50% 5.66% ISIN: XS2110079584  //  Valorn.: 136429245 Zero Bonds  //  Callable: 09.07.2026 YTM: 5.88  //  PRC: 5.00 100.1000100.10001'101'100",
+            "name": "Zero Bonds",
+            "value": "100.10",
+            "currency": "USD",
+            "yield": null,
+            "maturity": null,
+            "rating": null,
+            "performance": "1.50%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2848820754",
+            "index": 13,
+            "context": "-0.14% 31.03.2025 CITIGROUP GLBL 0 % MEDIUM TERM NOTES 2024-01.08.34 ISIN: XS2848820754  //  Valorn.: 135116008 Zero Bonds  //  Maturity: 01.08.2034 PRC: 5.00 USD100'000",
+            "name": "CITIGROUP GLBL",
+            "value": "5.00",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "01.08.2034",
+            "rating": null,
+            "performance": "-0.14%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2829712830",
+            "index": 14,
+            "context": "USD100'000 1.16% 0.47% ISIN: XS2829712830  //  Valorn.: 134735316 Ordinary Bonds  //  Maturity: 30.09.2034 YTM: 5.64  //  PRC: 5.00 99.999692.320092'320",
+            "name": "Ordinary Bonds",
+            "value": "9,692.32",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "30.09.2034",
+            "rating": null,
+            "performance": "1.16%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2912278723",
+            "index": 15,
+            "context": "USD200'000 1.92% 1.02% ISIN: XS2912278723  //  Valorn.: 138689613 Zero Bonds  //  Maturity: 17.10.2034 YTM: 4.82  //  PRC: 5.00 100.200099.5654199'131",
+            "name": "Zero Bonds",
+            "value": "100.20",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "17.10.2034",
+            "rating": null,
+            "performance": "1.92%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2381723902",
+            "index": 16,
+            "context": "-4.13% 31.03.2025 JPMORGAN CHASE  0   % NOTES 2024-29.10.34 SERIES 2021- ISIN: XS2381723902  //  Valorn.: 128883231 Zero Bonds  //  Maturity: 29.10.2034 PRC: 5.00 Print date 01.04.2025 // Page 7/17",
+            "name": "Zero Bonds",
+            "value": "31.03",
+            "currency": null,
+            "yield": null,
+            "maturity": "29.10.2034",
+            "rating": null,
+            "performance": "-4.13%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2829752976",
+            "index": 17,
+            "context": "-2.86% 27.03.2025 GOLDMAN SACHS 0% EURO MEDIUM TERM NOTES 2024- ISIN: XS2829752976  //  Valorn.: 138874416 Ordinary Bonds  //  Maturity: 18.11.2034 YTM: 5.65  //  PRC: 5.00 USD150'000",
+            "name": "GOLDMAN SACHS",
+            "value": "5.00",
+            "currency": "EUR",
+            "yield": null,
+            "maturity": "18.11.2034",
+            "rating": null,
+            "performance": "-2.86%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2953741100",
+            "index": 18,
+            "context": "USD150'000 1.90% 0.75% ISIN: XS2953741100  //  Valorn.: 138494467 Zero Bonds  //  Maturity: 11.12.2034 YTM: 5.28  //  PRC: 5.00 99.198097.7500146'625",
+            "name": "Zero Bonds",
+            "value": "8,097.75",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "11.12.2034",
+            "rating": null,
+            "performance": "1.90%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2381717250",
+            "index": 19,
+            "context": "USD500'000 3.70% 2.60% ISIN: XS2381717250  //  Valorn.: 128883267 Zero Bonds  //  Maturity: 19.12.2034 PRC: 5.00 100.2000101.1000505'500",
+            "name": "Zero Bonds",
+            "value": "101.10",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "19.12.2034",
+            "rating": null,
+            "performance": "3.70%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2481066111",
+            "index": 20,
+            "context": "USD50'000 -1.10% 0.25% ISIN: XS2481066111    //  Val  orn.: 126294402 Zero Bonds  //  Maturity: 03.02.2035 YTM: 0.10  //  PRC: 5.00 100.100099.000049'500",
+            "name": "Zero Bonds",
+            "value": "100.10",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "03.02.2035",
+            "rating": null,
+            "performance": "-1.10%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2964611052",
+            "index": 21,
+            "context": "USD1'470'000 0.72% 7.61% ISIN: XS2964611052  //  Valorn.: 141235167 Zero Bonds  //  Maturity: 14.02.2035 YTM: 5.41  //  PRC: 5.00 100.0000100.72001'480'584",
+            "name": "Zero Bonds",
+            "value": "100.72",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "14.02.2035",
+            "rating": null,
+            "performance": "0.72%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS3035947103",
+            "index": 22,
+            "context": "0.00% 28.03.2025 WELLS FARGO 0 % EURO MEDIUM TERM NOTES 2025-28.03.36 ISIN: XS3035947103  //  Valorn.: 143578751 Ordinary Bonds  //  Maturity: 28.03.2036 PRC: 5.00 USD2'581.79",
+            "name": "EURO MEDIUM TERM NOTES",
+            "value": "5.00",
+            "currency": "EUR",
+            "yield": null,
+            "maturity": "28.03.2036",
+            "rating": null,
+            "performance": "0.00%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "LU2228214107",
+            "index": 23,
+            "context": "-45.08% 13.09.2024 PREMIUM ALT.S.A. SICAV-SIF - COMMERCIAL FINANCE OPP.XB ISIN: LU2228214107  //  Valorn.: 57282891 Bond Funds / Certificates PRC: 3.00 USD350'000",
+            "name": "Bond Funds",
+            "value": "3.00",
+            "currency": "USD",
+            "yield": null,
+            "maturity": null,
+            "rating": null,
+            "performance": "-45.08%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "CH1269060229",
+            "index": 24,
+            "context": "31.03.2025 1'043 BK JULIUS BAER CAP.PROT.(3,25% MIN.4,5% MAX)23-26.05.28 ISIN: CH1269060229  //  Valorn.: 126906022 Structured Bonds  //  Maturity: 26.05.2028 Coupon: 26.5  //  Quarterly  3.25%  //  Days: 33 PRC: 3.00",
+            "name": "Structured Bonds",
+            "value": "31.03",
+            "currency": null,
+            "yield": null,
+            "maturity": "26.05.2028",
+            "rating": null,
+            "performance": "25%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS0461497009",
+            "index": 25,
+            "context": "USD690'000 1.54% 3.65% ISIN: XS0461497009  //  Valorn.: 130269069 Ordinary Bonds  //  Maturity: 08.11.2028 Coupon: 8.11  //  Annual  5.5%  //  Days: 142 PRC: 5.00",
+            "name": "Ordinary Bonds",
+            "value": "8.11",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "08.11.2028",
+            "rating": null,
+            "performance": "1.54%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2746319610",
+            "index": 26,
+            "context": "USD140'000 3.10% 0.99% ISIN: XS2746319610  //  Valorn.: 133393503 Ordinary Bonds  //  Maturity: 01.03.2030 Coupon: Annual  32.46%  //  Days: 385  //  YTM: 16.79 PRC: 5.00",
+            "name": "Ordinary Bonds",
+            "value": "16.79",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "01.03.2030",
+            "rating": null,
+            "performance": "3.10%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "CH0244767585",
+            "index": 27,
+            "context": "CHF800 -3.10% 0.12% ISIN: CH0244767585  //  Valorn.: 24476758 Ordinary Stocks  //  PRC: 3.91 221.564126.870021'496 1.13401.1313",
+            "name": "Ordinary Stocks",
+            "value": "4,126.87",
+            "currency": "CHF",
+            "yield": null,
+            "maturity": null,
+            "rating": null,
+            "performance": "-3.10%",
+            "coupon": null,
+            "type": "Equity"
+          },
+          {
+            "isin": "XS2519369867",
+            "index": 28,
+            "context": "28.02.2025 250 BCO SAFRA CAYMAN 5% STRUCT.NOTE 2022-21.06.27 3,4% ISIN: XS2519369867  //  Valorn.: 121050656 Other convertible bonds  //  Maturity: 21.06.2027 Days: 9  //  PRC: 5.00 USD500'000",
+            "name": "BCO SAFRA CAYMAN",
+            "value": "5.00",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "21.06.2027",
+            "rating": null,
+            "performance": "5%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2315191069",
+            "index": 29,
+            "context": "USD500'000 0.22% 2.58% ISIN: XS2315191069  //  Valorn.: 111918998 Structured Bonds  //  Maturity: 08.01.2029 Days: 82  //  PRC: 5.0 0 Price to be verified",
+            "name": "Structured Bonds",
+            "value": "8.01",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "08.01.2029",
+            "rating": null,
+            "performance": "0.22%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2792098779",
+            "index": 30,
+            "context": "USD1'200'000 -1.83% 5.93% ISIN: XS2792098779  //  Valorn.: 140288136 Structured Bonds  //  Maturity: 02.12.2034  //  PRC: 5.00 Price to be verified 100.000096.19301'154'316",
+            "name": "Structured Bonds",
+            "value": "100.00",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "02.12.2034",
+            "rating": null,
+            "performance": "-1.83%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2714429128",
+            "index": 31,
+            "context": "27.03.2025 20'343 EMERALD BAY NOTES 23-17.09.29 S.2023-05 REG-S VRN ISIN: XS2714429128  //  Valorn.: 130738882 Structured Bonds  //  Maturity: 17.09.2029 Days: 195  //  PRC: 5.00 Price to be verified",
+            "name": "EMERALD BAY NOTES",
+            "value": "27.03",
+            "currency": null,
+            "yield": null,
+            "maturity": "17.09.2029",
+            "rating": null,
+            "performance": null,
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2105981117",
+            "index": 32,
+            "context": "31.03.2025 757 GOLDMAN SACHS GR.STRUCT.NOTE 21-20.12.28 VRN ON NAT ISIN: XS2105981117  //  Val  orn.: 114118068 Structured Bonds  //  Maturity: 20.12.2028 Days: 10  //  PRC: 4.0 0 Price to be verified",
+            "name": "GOLDMAN SACHS GR.STRUCT.NOTE",
+            "value": "31.03",
+            "currency": null,
+            "yield": null,
+            "maturity": "20.12.2028",
+            "rating": null,
+            "performance": null,
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2838389430",
+            "index": 33,
+            "context": "USD1'600'000 0.35% 8.34% ISIN: XS2838389430  //  Valorn.: 135968317 Structured Bonds  //  Maturity: 26.04.2033 Days: 279  //  PRC: 5.00 Price to be verified",
+            "name": "Structured Bonds",
+            "value": "26.04",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "26.04.2033",
+            "rating": null,
+            "performance": "0.35%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2631782468",
+            "index": 34,
+            "context": "31.03.2025 1'416 LUMINIS REPACK NOTES 23-25.05.29 VRN ON 4,625% ISIN: XS2631782468  //  Valorn.: 127708275 Structured Bonds  //  Maturity: 25.05.2029 Days: 19  //  PRC: 5.0 0 Price to be verified",
+            "name": "LUMINIS REPACK NOTES",
+            "value": "31.03",
+            "currency": null,
+            "yield": null,
+            "maturity": "25.05.2029",
+            "rating": null,
+            "performance": "625%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS1700087403",
+            "index": 35,
+            "context": "8.40% 31.03.2025 NATIXIS STRUC.NOTES 19-20.6.26 VRN ON 4,75%METLIFE 21 ISIN: XS1700087403  //  Valorn.: 39877135 Structured Bonds  //  Maturity: 20.06.2026  //  PRC: 5.00 Price to be verified USD200'000",
+            "name": "NATIXIS STRUC.NOTES",
+            "value": "31.03",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "20.06.2026",
+            "rating": null,
+            "performance": "8.40%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2594173093",
+            "index": 36,
+            "context": "USD200'000 -1.90% 0.99% ISIN: XS2594173093  //  Valorn.: 125443809 Structured Bonds  //  Maturity: 27.09.2029 Days: 33  //  PRC: 5.0 0 Price to be verified",
+            "name": "Structured Bonds",
+            "value": "27.09",
+            "currency": "USD",
+            "yield": null,
+            "maturity": "27.09.2029",
+            "rating": null,
+            "performance": "-1.90%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2407295554",
+            "index": 37,
+            "context": "31.03.2025 6'514 NOVUS CAPITAL STRUCT.NOTE 2021-12.01.28 VRN ON ISIN: XS2407295554  //  Valorn.: 114718568 Structured Bonds  //  Maturity: 12.01.2028 Days: 78  //  PRC: 5.0 0 Price to be verified",
+            "name": "Structured Bonds",
+            "value": "31.03",
+            "currency": null,
+            "yield": null,
+            "maturity": "12.01.2028",
+            "rating": null,
+            "performance": null,
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XS2252299883",
+            "index": 38,
+            "context": "-1.38% 28.03.2025 NOVUS CAPITAL STRUCTURED NOTES 20-15.05.26 ON CS ISIN: XS2252299883  //  Valorn.: 58001077 Structured products equity  //  Maturity: 15.05.2026  //  PRC: 5.00 Price to be verified Underlying:INTERBK LIBOR 3 MTH",
+            "name": "NOVUS CAPITAL STRUCTURED NOTES",
+            "value": "28.03",
+            "currency": null,
+            "yield": null,
+            "maturity": "15.05.2026",
+            "rating": null,
+            "performance": "-1.38%",
+            "coupon": null,
+            "type": "Bond"
+          },
+          {
+            "isin": "XD0466760473",
+            "index": 39,
+            "context": "-87.30% 31.12.2023 EXIGENT ENHANCED INCOME FUND LTD SHS A SERIES 2019 1 ISIN: XD0466760473  //  Valorn.: 46676047 Hedge Funds & Private Equity  //  PRC: 5.00 Price to be verified Total Other assets26'129USD0.13%",
+            "name": "EXIGENT ENHANCED INCOME FUND LTD SHS A SERIES",
+            "value": "0.13",
+            "currency": "USD",
+            "yield": null,
+            "maturity": null,
+            "rating": null,
+            "performance": "-87.30%",
+            "coupon": null,
+            "type": "Equity"
+          }
+        ],
+        "portfolio": {
+          "totalValue": "19,464,431",
+          "allocations": {},
+          "currency": "all",
+          "valuationDate": "31.03.2025",
+          "accountInfo": "366223",
+          "detailedAllocations": {
+            "liquidity": {
+              "value": "103,770",
+              "percentage": 0.53
+            },
+            "bonds": {
+              "value": "123,639,746",
+              "percentage": 3.52
+            },
+            "equities": {
+              "value": "24,319",
+              "percentage": 0.12
+            },
+            "structured": {
+              "value": "69,462,393",
+              "percentage": 5.69
+            },
+            "other": {
+              "value": "26,129",
+              "percentage": 0.13
+            }
+          },
+          "currencyBreakdown": {
+            "USD": {
+              "localValue": "19,440,112",
+              "usdValue": "9",
+              "percentage": 9.88
+            },
+            "CHF": {
+              "localValue": "214,961",
+              "usdValue": "319",
+              "percentage": 0.12
+            }
+          }
+        },
+        "performance": {
+          "ytd": "770.03%",
+          "annual": "0.00%",
+          "twr": "0.00%",
+          "earnings": "84,967",
+          "accruals": "345,057"
+        },
+        "currencies": {},
+        "dates": {
+          "valuation": "31.03.2025",
+          "print": "01.04.2025",
+          "period": [
+            "01.01.2025",
+            "31.03.2025"
+          ]
+        },
+        "metadata": {
+          "institution": "r Banca SA",
+          "client": "r Banca SA"
+        }
+      },
+      "analysis": {
+        "confidence": 80,
+        "suggestions": [],
+        "detectionSuggestions": []
+      },
+      "learning": {
+        "patternsApplied": 0,
+        "improvementOpportunities": []
+      },
+      "metadata": {
+        "timestamp": "2025-07-20T20:12:29.572Z",
+        "version": "1.0.0",
+        "processor": "enhanced-financial-processor"
+      }
+    }
+  },
+  "performance": [
+    {
+      "test": "Messos PDF Processing Speed",
+      "time": 165,
+      "success": true,
+      "benchmark": true
+    },
+    {
+      "test": "Memory Usage",
+      "heapUsed": 16,
+      "heapTotal": 31,
+      "benchmark": true
+    }
+  ],
+  "timestamp": "2025-07-20T20:12:29.857Z",
+  "version": "1.0.0"
+}

@@ -1,0 +1,290 @@
+{
+  "success": true,
+  "method": "full_ocr",
+  "securities": [
+    {
+      "isin": "XS2993414619",
+      "value": 366223,
+      "confidence": 90,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2530201644",
+      "value": 200099,
+      "confidence": 94,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2588105036",
+      "value": 1031,
+      "confidence": 92,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2665592833",
+      "value": 32000,
+      "confidence": 93,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2692298537",
+      "value": 32000,
+      "confidence": 94,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2754416860",
+      "value": 1000106,
+      "confidence": 85,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2761230684",
+      "value": 200097,
+      "confidence": 86,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2736388732",
+      "value": 2000102,
+      "confidence": 87,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2782869916",
+      "value": 200097,
+      "confidence": 93,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2824054402",
+      "value": 20602,
+      "confidence": 86,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2567543397",
+      "value": 450000,
+      "confidence": 87,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2110079584",
+      "value": 107665,
+      "confidence": 85,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2848820754",
+      "value": 2000100,
+      "confidence": 93,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2829712830",
+      "value": 999692,
+      "confidence": 94,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2912278723",
+      "value": 200099,
+      "confidence": 95,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2381723902",
+      "value": 37954,
+      "confidence": 92,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2829752976",
+      "value": 679096,
+      "confidence": 90,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2953741100",
+      "value": 198097,
+      "confidence": 91,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2381717250",
+      "value": 2000101,
+      "confidence": 90,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2481066111",
+      "value": 49500,
+      "confidence": 90,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2964611052",
+      "value": 470000,
+      "confidence": 88,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS3035947103",
+      "value": 800000,
+      "confidence": 90,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "LU2228214107",
+      "value": 530444,
+      "confidence": 94,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "CH1269060229",
+      "value": 1043,
+      "confidence": 95,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS0461497009",
+      "value": 14969,
+      "confidence": 87,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2746319610",
+      "value": 14969,
+      "confidence": 86,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "CH0244767585",
+      "value": 564126,
+      "confidence": 91,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2519369867",
+      "value": 502305,
+      "confidence": 90,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2315191069",
+      "value": 502305,
+      "confidence": 95,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2792098779",
+      "value": 502305,
+      "confidence": 92,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2714429128",
+      "value": 20343,
+      "confidence": 86,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2105981117",
+      "value": 600000,
+      "confidence": 90,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2838389430",
+      "value": 600000,
+      "confidence": 85,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2631782468",
+      "value": 1416,
+      "confidence": 93,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS1700087403",
+      "value": 21798,
+      "confidence": 85,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2594173093",
+      "value": 21798,
+      "confidence": 90,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2407295554",
+      "value": 6514,
+      "confidence": 90,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XS2252299883",
+      "value": 366498,
+      "confidence": 90,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    },
+    {
+      "isin": "XD0466760473",
+      "value": 1008,
+      "confidence": 94,
+      "method": "simulated_ocr_enhanced",
+      "reasoning": "OCR spatial analysis + text extraction"
+    }
+  ],
+  "summary": {
+    "totalSecurities": 39,
+    "totalValue": 16316502,
+    "accuracy": 83.82727447825215,
+    "averageConfidence": 90,
+    "processingTime": 755
+  },
+  "metadata": {
+    "extractionMethod": "full_ocr",
+    "timestamp": "2025-07-17T19:07:24.192Z"
+  }
+}

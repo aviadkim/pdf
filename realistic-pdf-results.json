@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "results": {
+    "success": true,
+    "documentId": "a96fef5a-fff4-493a-9a09-757736907f72",
+    "pages": [
+      {
+        "page": 1,
+        "text": "\n\nMESSOS FINANCIAL SERVICES AG\nPortfolio Statement - Quarterly Report Q4 2024\nClient: John Doe | Account: CH91 0873 1234 5678 9012 3\nReport Date: 31.12.2024 | Currency: CHF\nEQUITY HOLDINGS - INTERNATIONAL DIVERSIFICATION\nISIN: US0378331005 | Apple Inc. | Qty: 150 | Price: USD 195.89 | Value: CHF 27,234.56\nISIN: CH0012032048 | Roche Holding AG | Qty: 75 | Price: CHF 268.50 | Value: CHF 20,137.50\nISIN: DE0007164600 | SAP SE | Qty: 100 | Price: EUR 132.45 | Value: CHF 14,567.89\nISIN: GB0002162385 | BP PLC | Qty: 500 | Price: GBP 4.85 | Value: CHF 2,789.34\nISIN: FR0000120271 | Total SE | Qty: 200 | Price: EUR 58.92 | Value: CHF 12,945.67\nISIN: NL0000235190 | Airbus SE | Qty: 80 | Price: EUR 145.78 | Value: CHF 12,834.56\nISIN: IT0003128367 | ENEL SpA | Qty: 1000 | Price: EUR 6.45 | Value: CHF 7,089.23\nBOND HOLDINGS - FIXED INCOME PORTFOLIO\nISIN: CH0224397106 | Swiss Confederation 0.5% 2031 | Nominal: CHF 100,000 | Value: CHF 98,456.78\nISIN: DE0001102406 | Germany 0.25% 2029 | Nominal: EUR 50,000 | Value: CHF 52,345.67\nISIN: US912828XG55 | US Treasury 2.75% 2028 | Nominal: USD 75,000 | Value: CHF 69,234.89\nCASH AND MONEY MARKET\nCHF Current Account: CHF 45,678.90\nUSD Money Market: USD 25,000.00 = CHF 22,567.89\nEUR Money Market: EUR 15,000.00 = CHF 16,234.56\nTRANSACTION HISTORY - LAST 30 DAYS\n15.12.2024 | BUY | ISIN: US0378331005 | 50 shares | USD 195.89 | Commission: CHF 25.00\n10.12.2024 | SELL | ISIN: DE0007164600 | 25 shares | EUR 132.45 | Commission: CHF 18.50\n05.12.2024 | DIVIDEND | ISIN: CH0012032048 | CHF 3.50 per share | Total: CHF 262.50\n01.12.2024 | COUPON | ISIN: CH0224397106 | 0.5% annual | Amount: CHF 500.00\nP",
+        "method": "pdf-parse",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKCk1FU1NPUyBGSU5BTkNJQUwgU0VSVklDRVMgQUcKUG9ydGZvbGlvIFN0YXRlbWVudCAtIFF1YXJ0ZXJseSBSZXBvcnQgUTQgMjAyNApDbGllbnQ6IEpvaG4gRG9lIHwgQWNjLi4uCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+CiAgICAgICAgICAgICAgICAgICAgICAgIA=="
+      },
+      {
+        "page": 2,
+        "text": "ERFORMANCE ANALYSIS\nPortfolio Value (31.12.2024): CHF 456,789.12\nPortfolio Value (30.09.2024): CHF 423,567.89\nQuarterly Performance: +7.84% | YTD Performance: +12.45%\nBenchmark (SMI): +6.23% | Outperformance: +1.61%\nRISK METRICS AND ALLOCATION\nValue at Risk (95%, 1 day): CHF 8,234.56\nBeta vs SMI: 0.87 | Sharpe Ratio: 1.23\nAsset Allocation: Equities 65% | Bonds 25% | Cash 10%\nGeographic Allocation: Switzerland 35% | Europe 30% | USA 25% | Others 10%\n\nMESSOS FINANCIAL SERVICES AG - PAGE 2\nDETAILED HOLDINGS BREAKDOWN\nSECTOR ALLOCATION ANALYSIS\nTechnology: 35.2% | Healthcare: 18.7% | Energy: 12.4% | Financials: 15.8%\nIndustrials: 8.9% | Consumer Goods: 6.3% | Utilities: 2.7%\nCURRENCY EXPOSURE\nCHF: 45.6% | USD: 28.9% | EUR: 21.3% | GBP: 4.2%\nESG RATINGS AND SUSTAINABILITY\nPortfolio ESG Score: 8.2/10 | Carbon Footprint: 125 tCO2e/CHF 1M invested\nSustainable Investments: 67% of total portfolio\nFEES AND CHARGES SUMMARY\nManagement Fee (Q4 2024): CHF 1,142.37 | Transaction Costs: CHF 156.80\nCustody Fees: CHF 89.45 | Total Fees YTD: CHF 4,567.89\nUPCOMING CORPORATE ACTIONS\n15.01.2025 | ISIN: CH0012032048 | Dividend Payment | Est. CHF 3.75 per share\n28.01.2025 | ISIN: US0378331005 | Stock Split 4:1 | Adjustment required\nCONTACT INFORMATION\nRelationship Manager: Maria Schmidt | Phone: +41 44 123 45 67\nEmail: maria.schmidt@messos.ch | Emergency: +41 44 123 45 99\nOnline Banking: www.messos.ch | Mobile App: MESSOS Mobile\nIMPORTANT DISCLAIMERS\nThis document contains confidential information. Past performance\ndoes not guarantee future results. All investments carry risk.\nPlease consult your advisor before making investment decisions.",
+        "method": "pdf-parse",
+        "fallback": true,
+        "base64": "data:image/svg+xml;base64,CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmOGY5ZmEiIHN0cm9rZT0iI2UyZThmMCIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2NDc0OGIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0LW9ubHkgUERGCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNjAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBFUkZPUk1BTkNFIEFOQUxZU0lTClBvcnRmb2xpbyBWYWx1ZSAoMzEuMTIuMjAyNCk6IENIRiA0NTYsNzg5LjEyClBvcnRmb2xpbyBWYWx1ZSAoMzAuMDkuMjAyNCk6IENIRiA0Li4uCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+CiAgICAgICAgICAgICAgICAgICAgICAgIA=="
+      }
+    ],
+    "pageCount": 2,
+    "ocrResults": [],
+    "accuracy": 80,
+    "patternsUsed": 19,
+    "suggestedAnnotations": [],
+    "processingMethod": "standard",
+    "timestamp": "2025-07-21T19:39:37.686Z"
+  }
+}
