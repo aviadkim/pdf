@@ -5,7 +5,15 @@ const cors = require('cors');
 const pdfParse = require('pdf-parse');
 const multer = require('multer');
 const path = require('path');
-const PageByPageClaudeProcessor = require('./page-by-page-claude-processor');
+
+// Try to load page-by-page processor (optional)
+let PageByPageClaudeProcessor = null;
+try {
+    PageByPageClaudeProcessor = require('./page-by-page-claude-processor');
+    console.log('✅ Page-by-page Claude processor loaded successfully');
+} catch (error) {
+    console.warn('⚠️  Page-by-page processor not available:', error.message);
+}
 
 const app = express();
 const PORT = process.env.PORT || 10000;
@@ -172,23 +180,26 @@ app.get('/', (req, res) => {
 // Diagnostic endpoint
 app.get('/api/diagnostic', (req, res) => {
     const hasClaudeKey = !!process.env.ANTHROPIC_API_KEY;
+    const hasPageByPage = !!PageByPageClaudeProcessor;
+    
     res.json({
         status: 'enhanced',
         version: 'v4.6-page-by-page-enhanced',
         timestamp: new Date().toISOString(),
         memoryStorage: true,
         sigtermFix: true,
-        accuracy: hasClaudeKey ? '99%+ (page-by-page Claude Vision)' : '92.21% (proven text extraction)',
+        accuracy: (hasClaudeKey && hasPageByPage) ? '99%+ (page-by-page Claude Vision)' : '92.21% (proven text extraction)',
         deployment: 'enhanced-with-page-by-page',
         claudeVisionAvailable: hasClaudeKey,
-        costPerPDF: hasClaudeKey ? '$0.11 (19 pages × $0.006)' : '$0.00 (free text extraction)',
+        pageByPageAvailable: hasPageByPage,
+        costPerPDF: (hasClaudeKey && hasPageByPage) ? '$0.11 (19 pages × $0.006)' : '$0.00 (free text extraction)',
         endpoints: {
-            '/api/page-by-page-processor': 'Page-by-page Claude Vision (99% accuracy)',
+            '/api/page-by-page-processor': hasPageByPage ? 'Page-by-page Claude Vision (99% accuracy)' : 'Not available (module load error)',
             '/api/99-percent-enhanced': 'Smart processor (Claude if key available, text fallback)',
             '/api/99-percent-processor': 'Proven v4.6 text extraction (92.21%)',
             '/api/bulletproof-processor': 'Legacy endpoint (92.21%)'
         },
-        features: ['page-by-page-claude-vision', 'proven-text-extraction', 'smart-fallback', 'cost-optimization']
+        features: hasPageByPage ? ['page-by-page-claude-vision', 'proven-text-extraction', 'smart-fallback', 'cost-optimization'] : ['proven-text-extraction', 'smart-fallback']
     });
 });
 
@@ -385,6 +396,14 @@ app.post('/api/page-by-page-processor', upload.single('pdf'), async (req, res) =
             return res.status(400).json({ error: 'No PDF file uploaded' });
         }
 
+        if (!PageByPageClaudeProcessor) {
+            return res.status(500).json({ 
+                error: 'Page-by-page processor not available',
+                details: 'Module failed to load',
+                suggestion: 'Check deployment logs for require() errors'
+            });
+        }
+
         const claudeApiKey = process.env.ANTHROPIC_API_KEY;
         if (!claudeApiKey) {
             return res.status(500).json({ 
@@ -423,7 +442,7 @@ app.post('/api/99-percent-enhanced', upload.single('pdf'), async (req, res) => {
 
         const claudeApiKey = process.env.ANTHROPIC_API_KEY;
         
-        if (claudeApiKey) {
+        if (claudeApiKey && PageByPageClaudeProcessor) {
             // Use page-by-page Claude Vision for maximum accuracy
             console.log('Using page-by-page Claude Vision for 99% accuracy:', req.file.originalname);
             
