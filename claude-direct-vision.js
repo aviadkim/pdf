@@ -69,7 +69,20 @@ Return results as JSON array with this exact structure:
                 messages: [
                     {
                         role: 'user',
-                        content: prompt + '\n\nNote: Extract from this financial PDF and return structured JSON with all securities.'
+                        content: [
+                            {
+                                type: 'text',
+                                text: prompt + '\n\nNote: Extract from this financial PDF and return structured JSON with all securities.'
+                            },
+                            {
+                                type: 'document',
+                                source: {
+                                    type: 'base64',
+                                    media_type: 'application/pdf',
+                                    data: base64PDF
+                                }
+                            }
+                        ]
                     }
                 ]
             });
