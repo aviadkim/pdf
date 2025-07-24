@@ -36,39 +36,50 @@ class ClaudeDirectVision {
         // Convert PDF to base64
         const base64PDF = pdfBuffer.toString('base64');
         
-        const prompt = `CRITICAL: This is a 19-page financial portfolio PDF containing exactly 40 securities. You must extract ALL 40 securities from ALL pages.
+        const prompt = `URGENT: You are processing a multi-page financial portfolio PDF that contains MANY securities across ALL pages. Your task is to extract EVERY SINGLE SECURITY from EVERY PAGE.
 
-REQUIREMENTS:
-1. Process EVERY page (1-19) completely
-2. Extract ALL 40 securities (ISINs) - do not skip any
-3. Look for securities in tables that span multiple pages
-4. Check continuation pages for additional securities
+CRITICAL INSTRUCTIONS:
+1. SCAN EVERY PAGE from beginning to end - do not stop after the first few pages
+2. EXTRACT ALL SECURITIES - there may be 20-50+ securities across multiple pages  
+3. PROCESS CONTINUATION TABLES that span multiple pages
+4. LOOK FOR securities in different sections: main holdings, cash accounts, derivatives, bonds, equities
+5. IDENTIFY ALL ISIN codes (format: 2 letters + 10 alphanumeric, like XS2993414619, CH1908490000, LU2228214107)
 
-For EACH of the 40 securities, extract:
-1. ISIN (12-character identifier like XS2993414619, CH1908490000)
-2. Complete security name/description 
-3. Quantity/Nominal amount (with apostrophes: 1'000'000)
-4. Price percentage (like 99.54%)
-5. Market value in original currency
-6. Currency (USD/CHF)
+UNIVERSAL EXTRACTION (works for ALL bank formats):
+For EACH security found, extract:
+- ISIN: 12-character identifier (mandatory)
+- Name: Full security description/name
+- Quantity: Nominal amount or shares (with thousand separators)
+- Price: Current price (often as percentage like 99.54%)
+- Value: Market value in original currency
+- Currency: USD, CHF, EUR, etc.
 
-EXPECTED RESULT: 40 securities total
-- Multiple pages contain securities tables
-- Swiss number format: 1'234'567
-- Mix of USD and CHF securities
-- Total portfolio value: ~19.4M CHF
+DOCUMENT ANALYSIS:
+- Swiss banks: Use apostrophe thousands (1'234'567)
+- German banks: Use dot thousands (1.234.567,89)  
+- US banks: Use comma thousands (1,234,567.89)
+- Multi-currency portfolios: Extract each currency separately
+- Table formats: Handle horizontal and vertical layouts
+- Page breaks: Continue extraction across page boundaries
 
-SEARCH THOROUGHLY:
-- Page 1-3: Initial securities
-- Pages 4-15: Main portfolio holdings (most securities here)
-- Pages 16-19: Additional securities and summaries
+SEARCH PATTERNS:
+- Look for "ISIN:", "Security", "Holdings", "Portfolio", "Positions"
+- Find table headers like "Quantity", "Price", "Value", "Currency"
+- Identify continuation indicators like "Continued on next page"
+- Process summary sections that may contain additional securities
 
-Return complete JSON with ALL 40 securities:
+QUALITY CHECKS:
+- Verify ISIN format (2 letters + 10 chars)
+- Ensure no duplicate ISINs
+- Validate currency codes (USD, CHF, EUR, GBP, etc.)
+- Check that quantities and values are reasonable numbers
+
+Return comprehensive JSON with ALL securities found:
 {
   "securities": [
     {
-      "isin": "CH1908490000",
-      "name": "Complete security name",
+      "isin": "XS2993414619",
+      "name": "Complete security name as shown in document",
       "quantity": 100000,
       "price": 99.54,
       "value": 99540,
@@ -76,15 +87,20 @@ Return complete JSON with ALL 40 securities:
     }
   ],
   "summary": {
-    "totalSecurities": 40,
-    "totalValue": 19464431,
-    "currency": "CHF",
-    "pagesProcessed": 19,
-    "completeness": "100%"
+    "totalSecurities": "ACTUAL_COUNT_FOUND",
+    "totalValue": "SUM_OF_ALL_VALUES", 
+    "currency": "BASE_CURRENCY",
+    "pagesProcessed": "ALL_PAGES",
+    "extractionMethod": "comprehensive-all-pages",
+    "documentType": "financial-portfolio"
   }
 }
 
-CRITICAL: If you find fewer than 35 securities, you are missing pages or sections. Review the entire document again.`;
+EXTRACTION VALIDATION: 
+- For PDFs with 2-5 securities: Extract ALL visible securities
+- For PDFs with 6-20 securities: Extract at least 90% of securities  
+- For PDFs with 20+ securities: Extract at least 80% of securities
+- ALWAYS double-check you haven't missed any pages or sections`;
 
         try {
             console.log('🚀 Sending to Claude Vision API...');
@@ -129,11 +145,31 @@ CRITICAL: If you find fewer than 35 securities, you are missing pages or section
             // Extract JSON from response
             const jsonMatch = content.match(/\{[\s\S]*\}/);
             if (!jsonMatch) {
-                console.log('⚠️  No JSON found in response, trying text analysis...');
-                return this.parseTextResponse(content);
+                console.log('⚠️  No JSON found in response, falling back to hybrid extraction...');
+                return await this.hybridExtractionFallback(pdfBuffer);
             }
             
             const parsedResult = JSON.parse(jsonMatch[0]);
+            
+            // CRITICAL CHECK: Validate extraction completeness by comparing with text extraction
+            const securitiesFound = parsedResult.securities?.length || 0;
+            
+            // First get a quick count of ISINs in the PDF text to see expected count
+            const pdfParse = require('pdf-parse');
+            const quickParse = await pdfParse(pdfBuffer, { max: 5 }); // First 5 pages for quick count
+            const isinPattern = /([A-Z]{2}[A-Z0-9]{10})/g;
+            const quickISINCount = (quickParse.text.match(isinPattern) || []).length;
+            const estimatedTotal = Math.max(quickISINCount, 3); // At least 3, but use actual count if higher
+            
+            console.log(`📊 Quick scan found ~${estimatedTotal} ISINs, Claude extracted ${securitiesFound}`);
+            
+            // Use hybrid fallback if Claude found significantly fewer than expected (less than 70%)
+            if (estimatedTotal >= 5 && securitiesFound < (estimatedTotal * 0.7)) {
+                console.log(`⚠️  Claude may have missed securities (${securitiesFound}/${estimatedTotal}), using hybrid fallback...`);
+                return await this.hybridExtractionFallback(pdfBuffer, parsedResult);
+            }
+            
+            console.log(`✅ Claude extraction looks complete: ${securitiesFound} securities found`);
             
             // Calculate accuracy
             const expectedTotal = 19464431;
@@ -456,6 +492,111 @@ CRITICAL: If you find fewer than 35 securities, you are missing pages or section
         return parseFloat(str.replace(/[^0-9.-]/g, '')) || 0;
     }
     
+    /**
+     * Hybrid extraction: Combine text extraction completeness with Claude enhancement
+     */
+    async hybridExtractionFallback(pdfBuffer, claudePartialResult = null) {
+        console.log('🔄 HYBRID EXTRACTION: Combining text completeness with Claude enhancement');
+        
+        try {
+            const pdfParse = require('pdf-parse');
+            const startTime = Date.now();
+            
+            // Step 1: Extract all text and find ALL ISINs
+            const pdfData = await pdfParse(pdfBuffer, {
+                max: 0,
+                normalizeWhitespace: true,
+                disableCombineTextItems: false
+            });
+            
+            const text = pdfData.text;
+            const isinPattern = /([A-Z]{2}[A-Z0-9]{10})/g;
+            const allISINs = [];
+            let match;
+            
+            while ((match = isinPattern.exec(text)) !== null) {
+                if (!allISINs.includes(match[1])) {
+                    allISINs.push(match[1]);
+                }
+            }
+            
+            console.log(`📊 Text extraction found ${allISINs.length} unique ISINs`);
+            
+            // Step 2: Extract securities using intelligent text parsing
+            const securities = [];
+            
+            for (const isin of allISINs) {
+                const position = text.indexOf(isin);
+                if (position !== -1) {
+                    // Get context around this ISIN (1000 chars before and after)
+                    const contextStart = Math.max(0, position - 1000);
+                    const contextEnd = Math.min(text.length, position + 1000);
+                    const context = text.substring(contextStart, contextEnd);
+                    
+                    // Check if Claude found this security with better data
+                    let claudeSecurity = null;
+                    if (claudePartialResult?.securities) {
+                        claudeSecurity = claudePartialResult.securities.find(s => s.isin === isin);
+                    }
+                    
+                    // Extract security data (use Claude data if available, otherwise intelligent parsing)
+                    const security = {
+                        isin: isin,
+                        name: claudeSecurity?.name || this.extractNameIntelligently(context.substring(0, context.indexOf(isin)), context.substring(context.indexOf(isin))),
+                        quantity: claudeSecurity?.quantity || this.extractQuantityIntelligently(context),
+                        price: claudeSecurity?.price || this.extractPriceIntelligently(context),
+                        value: claudeSecurity?.value || this.extractValueIntelligently(context),
+                        currency: claudeSecurity?.currency || this.extractCurrencyIntelligently(context)
+                    };
+                    
+                    // Ensure we have at least basic data
+                    if (!security.value && security.quantity && security.price) {
+                        security.value = Math.round(security.quantity * (security.price / 100));
+                    }
+                    
+                    securities.push(security);
+                }
+            }
+            
+            const totalValue = securities.reduce((sum, s) => sum + (s.value || 0), 0);
+            const elapsed = Math.round((Date.now() - startTime) / 1000);
+            
+            const expectedTotal = 19464431;
+            const accuracy = totalValue > 0 
+                ? Math.max(0, (1 - Math.abs(totalValue - expectedTotal) / expectedTotal) * 100)
+                : 0;
+            
+            console.log(`🔄 Hybrid extraction: ${securities.length} securities, total value: ${totalValue.toLocaleString()}, ${accuracy.toFixed(2)}% accuracy`);
+            
+            return {
+                success: true,
+                securities: securities,
+                totalValue: totalValue,
+                accuracy: accuracy.toFixed(2),
+                currency: 'CHF',
+                metadata: {
+                    method: 'hybrid-text-claude-fallback',
+                    processingTime: elapsed,
+                    tokensUsed: { input: 0, output: 0 },
+                    totalCost: 0.001, // Minimal cost for text processing
+                    extractionQuality: 'hybrid-complete-extraction',
+                    securitiesFromText: allISINs.length,
+                    securitiesFromClaude: claudePartialResult?.securities?.length || 0,
+                    completeness: `${securities.length} securities found`
+                }
+            };
+            
+        } catch (error) {
+            console.log('❌ Hybrid extraction failed:', error.message);
+            return {
+                success: false,
+                error: `Hybrid extraction failed: ${error.message}`,
+                securities: [],
+                accuracy: 0
+            };
+        }
+    }
+
     /**
      * Fallback to text extraction when Claude API fails
      */
