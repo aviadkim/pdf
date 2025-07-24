@@ -139,17 +139,18 @@ function extractSecuritiesPrecise(text) {
         // Extract values with Swiss format support
         const valueCandidates = [];
         
-        // Look for Swiss numbers in the context
+        // FIXED: Look for Swiss apostrophe numbers in wider context (they're separated from ISINs)
         const swissPatterns = [
-            // Swiss format with apostrophes: 1'234'567
-            /(\\d{1,3}(?:'\\d{3})+)/g,
-            // Swiss format with periods: 1.234.567,89
-            /(\\d{1,3}(?:\\.\\d{3})+,\\d{2})/g,
+            // Swiss format with apostrophes: 6'069 or 12'363'974
+            /(\d{1,3}(?:'\d{3})+)/g,
+            // Decimal with apostrophes: 6'069.77
+            /(\d{1,3}(?:'\d{3})+\.\d{2})/g,
             // Regular large numbers
-            /(\\d{4,})/g,
-            // Numbers with CHF
-            /CHF\\s*([\\d'.,]+)/gi,
-            /([\\d'.,]+)\\s*CHF/gi
+            /(\d{5,})/g,
+            // Numbers with currency indicators
+            /USD(\d[\d'.,]+)/gi,
+            /CHF(\d[\d'.,]+)/gi,
+            /(\d[\d'.,]+)%/g
         ];
         
         for (const pattern of swissPatterns) {
@@ -157,23 +158,23 @@ function extractSecuritiesPrecise(text) {
             while ((valueMatch = pattern.exec(context)) !== null) {
                 let numStr = valueMatch[1] || valueMatch[0];
                 
-                // Parse Swiss format
+                // Clean and parse Swiss format
                 let value = 0;
                 if (numStr.includes("'")) {
-                    // Swiss apostrophe format: 1'234'567
+                    // Swiss apostrophe format: 12'363'974 -> 12363974
                     value = parseFloat(numStr.replace(/'/g, ''));
                 } else if (numStr.includes('.') && numStr.includes(',')) {
                     // European format: 1.234.567,89
-                    value = parseFloat(numStr.replace(/\\./g, '').replace(',', '.'));
+                    value = parseFloat(numStr.replace(/\./g, '').replace(',', '.'));
                 } else {
                     // Regular number
-                    value = parseFloat(numStr.replace(/[^\\d.]/g, ''));
+                    value = parseFloat(numStr.replace(/[^0-9.]/g, ''));
                 }
                 
-                // Reasonable value range for securities
-                if (value >= 5000 && value <= 20000000) {
+                // More liberal value range (the table has various amounts)
+                if (value >= 1000 && value <= 50000000) {
                     valueCandidates.push(value);
-                    console.log(`   💰 Value candidate: CHF ${value.toLocaleString()} (from "${numStr}")`);
+                    console.log(`   💰 Value candidate: ${value.toLocaleString()} (from "${numStr}")`);
                 }
             }
         }
