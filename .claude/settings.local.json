@@ -132,7 +132,9 @@
       "mcp__playwright__playwright_test",
       "mcp__puppeteer__scrape_webpage",
       "mcp__deployment__render_status",
-      "Bash(git remote get-url:*)"
+      "Bash(git remote get-url:*)",
+      "Bash(start /B node:*)",
+      "mcp__puppeteer__form_automation"
     ],
     "deny": []
   }

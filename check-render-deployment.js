@@ -2,7 +2,7 @@
 const axios = require('axios');
 const fs = require('fs');
 
-const RENDER_URL = 'https://pdf-fzzi.onrender.com';
+const RENDER_URL = 'https://pdf-production-5dis.onrender.com';
 const LOCAL_URL = 'http://localhost:10001';
 
 async function checkDeploymentStatus() {
@@ -28,12 +28,12 @@ async function checkDeploymentStatus() {
         const renderContent = renderResponse.data;
         
         // Check if new features are deployed
-        const hasMultiAgent = renderContent.includes('Multi-Agent Processing');
-        const hasUltimateFeatures = renderContent.includes('100% accuracy') || renderContent.includes('Ultimate');
+        const hasV5Features = renderContent.includes('99% Accuracy') || renderContent.includes('v5.0');
+        const hasUltimateFeatures = renderContent.includes('99% Accuracy Target') || renderContent.includes('Comprehensive');
         
         console.log('🔍 Feature Detection:');
-        console.log(`  Multi-Agent Processing: ${hasMultiAgent ? '✅' : '❌'}`);
-        console.log(`  Ultimate Features: ${hasUltimateFeatures ? '✅' : '❌'}`);
+        console.log(`  V5.0 Features: ${hasV5Features ? '✅' : '❌'}`);
+        console.log(`  99% Accuracy Features: ${hasUltimateFeatures ? '✅' : '❌'}`);
         
         if (!hasUltimateFeatures) {
             console.log('⚠️  Render appears to be running old version');
@@ -45,8 +45,8 @@ async function checkDeploymentStatus() {
         console.log('==============================');
         
         const endpoints = [
-            '/api/bulletproof-processor',
-            '/api/complete-processor'
+            '/api/99-percent-processor',
+            '/api/bulletproof-processor'
         ];
         
         for (const endpoint of endpoints) {
@@ -64,7 +64,7 @@ async function checkDeploymentStatus() {
         
         return {
             renderAccessible: true,
-            hasMultiAgent,
+            hasV5Features,
             hasUltimateFeatures,
             needsDeployment: !hasUltimateFeatures
         };
@@ -124,7 +124,7 @@ async function waitForDeployment() {
             const response = await axios.get(RENDER_URL);
             const content = response.data;
             
-            if (content.includes('Ultimate') || content.includes('100% accuracy')) {
+            if (content.includes('99% Accuracy') || content.includes('v5.0')) {
                 console.log('✅ NEW VERSION DEPLOYED!');
                 return true;
             }

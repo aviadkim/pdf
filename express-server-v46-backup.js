@@ -5,7 +5,6 @@ const cors = require('cors');
 const pdfParse = require('pdf-parse');
 const multer = require('multer');
 const path = require('path');
-const PageByPageClaudeProcessor = require('./page-by-page-claude-processor');
 
 const app = express();
 const PORT = process.env.PORT || 10000;
@@ -171,24 +170,14 @@ app.get('/', (req, res) => {
 
 // Diagnostic endpoint
 app.get('/api/diagnostic', (req, res) => {
-    const hasClaudeKey = !!process.env.ANTHROPIC_API_KEY;
     res.json({
-        status: 'enhanced',
-        version: 'v4.6-page-by-page-enhanced',
+        status: 'stable',
+        version: 'v4.6-smart-isin-extraction',
         timestamp: new Date().toISOString(),
         memoryStorage: true,
         sigtermFix: true,
-        accuracy: hasClaudeKey ? '99%+ (page-by-page Claude Vision)' : '92.21% (proven text extraction)',
-        deployment: 'enhanced-with-page-by-page',
-        claudeVisionAvailable: hasClaudeKey,
-        costPerPDF: hasClaudeKey ? '$0.11 (19 pages × $0.006)' : '$0.00 (free text extraction)',
-        endpoints: {
-            '/api/page-by-page-processor': 'Page-by-page Claude Vision (99% accuracy)',
-            '/api/99-percent-enhanced': 'Smart processor (Claude if key available, text fallback)',
-            '/api/99-percent-processor': 'Proven v4.6 text extraction (92.21%)',
-            '/api/bulletproof-processor': 'Legacy endpoint (92.21%)'
-        },
-        features: ['page-by-page-claude-vision', 'proven-text-extraction', 'smart-fallback', 'cost-optimization']
+        accuracy: '92.21%',
+        deployment: 'render-stable'
     });
 });
 
@@ -325,159 +314,6 @@ app.post('/api/hybrid-extract-fixed', upload.single('pdf'), async (req, res) => 
         res.status(500).json({ 
             error: 'Hybrid extraction failed', 
             details: error.message 
-        });
-    }
-});
-
-// 99% Accuracy endpoint - redirect to proven bulletproof processor
-app.post('/api/99-percent-processor', upload.single('pdf'), async (req, res) => {
-    try {
-        if (!req.file) {
-            return res.status(400).json({ error: 'No PDF file uploaded' });
-        }
-
-        console.log('Processing PDF with proven v4.6 method (92.21%):', req.file.originalname);
-        
-        // Parse PDF using buffer (NO FILE PATHS)
-        const pdfBuffer = req.file.buffer;
-        const pdfData = await pdfParse(pdfBuffer);
-        const text = pdfData.text;
-
-        // Extract securities with proven method
-        const securities = extractSecuritiesPrecise(text);
-        const totalValue = securities.reduce((sum, sec) => sum + sec.value, 0);
-        const accuracy = calculateAccuracy(totalValue);
-
-        const result = {
-            success: true,
-            securities: securities,
-            totalValue: Math.round(totalValue * 100) / 100,
-            portfolioTotal: 19464431,
-            accuracy: accuracy.toFixed(2),
-            currency: 'CHF',
-            metadata: {
-                method: 'v4.6-proven-92.21%',
-                extractionQuality: 'stable-proven',
-                processingTime: Date.now(),
-                securitiesFound: securities.length,
-                note: 'Based on proven v4.6 method',
-                timestamp: new Date().toISOString()
-            }
-        };
-
-        console.log(`Proven v4.6 Result: ${securities.length} securities, $${totalValue.toLocaleString()}, ${accuracy.toFixed(2)}% accuracy`);
-        res.json(result);
-
-    } catch (error) {
-        console.error('Proven v4.6 processing error:', error.message);
-        res.status(500).json({ 
-            error: 'Proven v4.6 processing failed', 
-            details: error.message,
-            version: 'v4.6-proven'
-        });
-    }
-});
-
-// Page-by-Page Claude Vision endpoint (99% accuracy target)
-app.post('/api/page-by-page-processor', upload.single('pdf'), async (req, res) => {
-    try {
-        if (!req.file) {
-            return res.status(400).json({ error: 'No PDF file uploaded' });
-        }
-
-        const claudeApiKey = process.env.ANTHROPIC_API_KEY;
-        if (!claudeApiKey) {
-            return res.status(500).json({ 
-                error: 'Claude API key not configured',
-                suggestion: 'Set ANTHROPIC_API_KEY environment variable'
-            });
-        }
-
-        console.log('Processing PDF with page-by-page Claude Vision:', req.file.originalname);
-        
-        const processor = new PageByPageClaudeProcessor(claudeApiKey);
-        const result = await processor.processPDFPageByPage(req.file.buffer);
-
-        if (result.success) {
-            console.log(`Page-by-page result: ${result.securities.length} securities, $${result.totalValue.toLocaleString()}, ${result.accuracy}% accuracy, cost: $${result.metadata.totalCost}`);
-        }
-
-        res.json(result);
-
-    } catch (error) {
-        console.error('Page-by-page processing error:', error.message);
-        res.status(500).json({ 
-            error: 'Page-by-page processing failed', 
-            details: error.message,
-            version: 'page-by-page-claude'
-        });
-    }
-});
-
-// Enhanced 99% processor - uses page-by-page if Claude key available
-app.post('/api/99-percent-enhanced', upload.single('pdf'), async (req, res) => {
-    try {
-        if (!req.file) {
-            return res.status(400).json({ error: 'No PDF file uploaded' });
-        }
-
-        const claudeApiKey = process.env.ANTHROPIC_API_KEY;
-        
-        if (claudeApiKey) {
-            // Use page-by-page Claude Vision for maximum accuracy
-            console.log('Using page-by-page Claude Vision for 99% accuracy:', req.file.originalname);
-            
-            const processor = new PageByPageClaudeProcessor(claudeApiKey);
-            const result = await processor.processPDFPageByPage(req.file.buffer);
-            
-            if (result.success) {
-                console.log(`Enhanced 99% result: ${result.securities.length} securities, $${result.totalValue.toLocaleString()}, ${result.accuracy}% accuracy`);
-                result.metadata.method = '99-percent-enhanced-claude-vision';
-                result.metadata.fallback = false;
-            }
-            
-            return res.json(result);
-            
-        } else {
-            // Fallback to proven v4.6 text extraction
-            console.log('Fallback to proven v4.6 text extraction:', req.file.originalname);
-            
-            const pdfBuffer = req.file.buffer;
-            const pdfData = await pdfParse(pdfBuffer);
-            const securities = extractSecuritiesPrecise(pdfData.text);
-            const totalValue = securities.reduce((sum, sec) => sum + sec.value, 0);
-            const accuracy = calculateAccuracy(totalValue);
-
-            const result = {
-                success: true,
-                securities: securities,
-                totalValue: Math.round(totalValue * 100) / 100,
-                portfolioTotal: 19464431,
-                accuracy: accuracy.toFixed(2),
-                currency: 'CHF',
-                metadata: {
-                    method: '99-percent-enhanced-fallback',
-                    extractionQuality: 'text-extraction-fallback',
-                    processingTime: Date.now(),
-                    securitiesFound: securities.length,
-                    fallback: true,
-                    fallbackReason: 'Claude API key not configured',
-                    baseAccuracy: '92.21% (proven v4.6)',
-                    totalCost: '0.0000',
-                    timestamp: new Date().toISOString()
-                }
-            };
-
-            console.log(`Enhanced fallback result: ${securities.length} securities, $${totalValue.toLocaleString()}, ${accuracy.toFixed(2)}% accuracy`);
-            return res.json(result);
-        }
-
-    } catch (error) {
-        console.error('Enhanced 99% processing error:', error.message);
-        res.status(500).json({ 
-            error: 'Enhanced 99% processing failed', 
-            details: error.message,
-            version: '99-percent-enhanced'
         });
     }
 });
