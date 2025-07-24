@@ -1,0 +1,21 @@
+{
+  "services": [
+    {
+      "type": "web",
+      "name": "pdf-fzzi",
+      "env": "node",
+      "buildCommand": "npm install",
+      "startCommand": "node express-server.js",
+      "envVars": [
+        {
+          "key": "NODE_ENV",
+          "value": "production"
+        },
+        {
+          "key": "PORT",
+          "value": "10002"
+        }
+      ]
+    }
+  ]
+}

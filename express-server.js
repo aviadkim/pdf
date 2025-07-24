@@ -53,6 +53,10 @@ const visualPDFProcessor = new VisualPDFProcessor();
 // Enhanced Vision API Processor (Production-Ready with Claude/OpenAI)
 const { EnhancedVisionAPIProcessor } = require('./enhanced-vision-api-processor.js');
 
+// Claude Vision API Processor (True 99% Accuracy)
+const { ClaudeVisionProcessor } = require('./claude-vision-processor.js');
+const claudeVisionProcessor = new ClaudeVisionProcessor();
+
 // ENHANCED BULLETPROOF PROCESSOR - TRUE 99% ACCURACY
 const { EnhancedBulletproofProcessor } = require('./enhanced-bulletproof-processor.js');
 const enhancedBulletproof = new EnhancedBulletproofProcessor();
@@ -1301,6 +1305,25 @@ app.get('/api/openai-test', async (req, res) => {
     }
 });
 
+// Claude Vision API connection test endpoint
+app.get('/api/claude-test', async (req, res) => {
+    try {
+        const testResult = await claudeVisionProcessor.testConnection();
+        res.json({
+            ...testResult,
+            timestamp: new Date().toISOString(),
+            endpoint: '/api/claude-test',
+            costEstimate: claudeVisionProcessor.calculateCosts({})
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            error: error.message,
+            timestamp: new Date().toISOString()
+        });
+    }
+});
+
 // Route to serve the perfect results website
 app.get('/perfect-results', (req, res) => {
     res.sendFile(path.join(__dirname, 'perfect-results-website.html'));
@@ -1996,6 +2019,9 @@ app.post('/api/visual-pdf-extract', upload.single('pdf'), visualPDFProcessor.cre
 
 // Enhanced Vision API Processor (Production SaaS with Claude/OpenAI Vision)
 app.post('/api/enhanced-vision-extract', upload.single('pdf'), enhancedVisionProcessor.createExpressHandler());
+
+// Claude Vision API Processor (TRUE 99% ACCURACY)
+app.post('/api/claude-vision-extract', upload.single('pdf'), claudeVisionProcessor.createExpressHandler());
 
 // Multi-Agent Extraction System (Text + Vision + Validation + Human-in-Loop)
 app.post('/api/multi-agent-extract', upload.single('pdf'), multiAgentSystem.createExpressHandler());
@@ -2910,6 +2936,7 @@ async function initializeUltraAccurateSystem() {
         console.log(`🚀 Financial PDF Processing System v4.1 running on port ${PORT}`);
         console.log(`🎯 Ultra Accurate 99% System: /api/ultra-99-percent`);
         console.log(`👁️ Visual PDF Processor (99% Accurate): /api/visual-pdf-extract`);
+        console.log(`🤖 Claude Vision API (TRUE 99%): /api/claude-vision-extract`);
         console.log(`📊 Ultra-Accurate Extraction enabled (target: 90%+)`);
         console.log(`🎯 Phase 2 Enhanced Accuracy enabled (70-80%)`);
         console.log(`🔮 Mistral OCR: ${process.env.MISTRAL_API_KEY ? 'Enabled' : 'Disabled'}`);

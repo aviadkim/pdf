@@ -124,7 +124,11 @@
       "Bash(curl -X GET \"https://pdf-fzzi.onrender.com/api/system-capabilities\" --max-time 15)",
       "Bash(curl -X GET \"https://pdf-fzzi.onrender.com/api/mistral-diagnostic\" --max-time 15)",
       "Bash(curl -X GET \"https://pdf-fzzi.onrender.com/api/diagnostic\" --max-time 15)",
-      "mcp__deployment__render_logs"
+      "mcp__deployment__render_logs",
+      "mcp__deployment__render_deploy",
+      "mcp__deployment__deploy_health_check",
+      "mcp__deployment__test_deployment",
+      "mcp__github__git_commit_push"
     ],
     "deny": []
   }
