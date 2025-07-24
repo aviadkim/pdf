@@ -138,11 +138,23 @@ Return results as JSON array with this exact structure:
             
         } catch (error) {
             console.log('❌ Claude Vision error:', error.message);
+            
+            // Check if it's an API key issue
+            if (error.message.includes('x-api-key') || error.message.includes('header')) {
+                console.log('🔑 API key header issue detected');
+                console.log('API key length:', this.apiKey ? this.apiKey.length : 'undefined');
+                console.log('API key starts with:', this.apiKey ? this.apiKey.substring(0, 8) + '...' : 'undefined');
+            }
+            
             return {
                 success: false,
                 error: error.message,
                 securities: [],
-                accuracy: 0
+                accuracy: 0,
+                metadata: {
+                    method: 'claude-direct-vision-error',
+                    errorType: error.message.includes('x-api-key') ? 'api-key-header' : 'unknown'
+                }
             };
         }
     }
@@ -159,7 +171,7 @@ Return results as JSON array with this exact structure:
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'x-api-key': this.apiKey,
+                    'x-api-key': this.apiKey.trim(),
                     'anthropic-version': '2023-06-01',
                     'Content-Length': Buffer.byteLength(postData)
                 }
