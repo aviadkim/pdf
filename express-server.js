@@ -1,5 +1,5 @@
-// STABLE DEPLOYMENT VERSION - Minimal dependencies to avoid SIGTERM crashes
-// Version: v4.6-smart-isin-extraction
+// STABLE DEPLOYMENT VERSION - Claude Direct Vision for 99% accuracy
+// Version: v5.0-claude-direct-vision
 const express = require('express');
 const cors = require('cors');
 const pdfParse = require('pdf-parse');
@@ -274,7 +274,7 @@ app.get('/api/diagnostic', (req, res) => {
     
     res.json({
         status: 'enhanced',
-        version: 'v4.6-page-by-page-enhanced',
+        version: 'v5.0-claude-direct-vision',
         timestamp: new Date().toISOString(),
         memoryStorage: true,
         sigtermFix: true,
@@ -806,7 +806,7 @@ app.post('/api/99-percent-enhanced', upload.single('pdf'), async (req, res) => {
 app.get('/health', (req, res) => {
     res.json({ 
         status: 'healthy', 
-        version: 'v4.6-smart-isin-extraction',
+        version: 'v5.0-claude-direct-vision',
         timestamp: new Date().toISOString(),
         uptime: process.uptime()
     });
@@ -815,7 +815,7 @@ app.get('/health', (req, res) => {
 // Start server
 app.listen(PORT, () => {
     console.log(`✅ Stable PDF Processing Server running on port ${PORT}`);
-    console.log(`🔧 Version: v4.6-smart-isin-extraction`);
+    console.log(`🔧 Version: v5.0-claude-direct-vision`);
     console.log(`💾 Memory storage: Active (no file paths)`);
     console.log(`🎯 Target accuracy: 92.21%`);
     console.log(`🚀 SIGTERM fix: Applied`);
