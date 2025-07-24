@@ -131,7 +131,8 @@
       "mcp__github__git_commit_push",
       "mcp__playwright__playwright_test",
       "mcp__puppeteer__scrape_webpage",
-      "mcp__deployment__render_status"
+      "mcp__deployment__render_status",
+      "Bash(git remote get-url:*)"
     ],
     "deny": []
   }
