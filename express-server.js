@@ -2388,8 +2388,8 @@ app.get('/api/diagnostic', (req, res) => {
     res.json({
         success: true,
         serverFile: 'express-server.js',
-        version: 'v3.1-quality-fixes',
-        deploymentTest: '🚀 QUALITY FIXES ACTIVE - express-server.js v3.1',
+        version: 'v4.3-claude-vision-ready',
+        deploymentTest: '🚀 CLAUDE VISION READY - express-server.js v4.3',
         timestamp: new Date().toISOString(),
         message: 'This response proves express-server.js is running with quality fixes'
     });
