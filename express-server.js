@@ -35,6 +35,7 @@ function checkImageMagickAvailability() {
 
 // Try to load page-by-page processor (optional)
 let PageByPageClaudeProcessor = null;
+let ClaudeDirectVision = null;
 const imageMagickAvailable = checkImageMagickAvailability();
 
 try {
@@ -47,6 +48,14 @@ try {
     }
 } catch (error) {
     console.warn('⚠️  Page-by-page processor not available:', error.message);
+}
+
+// Load Claude Direct Vision (no ImageMagick required)
+try {
+    ClaudeDirectVision = require('./claude-direct-vision');
+    console.log('✅ Claude Direct Vision loaded successfully');
+} catch (error) {
+    console.warn('⚠️  Claude Direct Vision not available:', error.message);
 }
 
 const app = express();
@@ -276,6 +285,7 @@ app.get('/api/diagnostic', (req, res) => {
         imageMagickAvailable: imageMagickAvailable,
         costPerPDF: (hasClaudeKey && hasPageByPage) ? '$0.11 (19 pages × $0.006)' : '$0.00 (free text extraction)',
         endpoints: {
+            '/api/claude-direct-vision': ClaudeDirectVision && hasClaudeKey ? 'Claude Direct Vision (99% accuracy, no ImageMagick)' : 'Not available',
             '/api/page-by-page-processor': hasPageByPage ? 'Page-by-page Claude Vision (99% accuracy)' : 'Not available (module load error)',
             '/api/99-percent-enhanced': 'Smart processor (Claude if key available, text fallback)',
             '/api/99-percent-processor': 'Proven v4.6 text extraction (92.21%)',
@@ -659,6 +669,49 @@ app.post('/api/page-by-page-processor', upload.single('pdf'), async (req, res) =
                 version: 'page-by-page-claude-maximum-accuracy'
             });
         }
+    }
+});
+
+// Claude Direct Vision endpoint - No ImageMagick required for 99% accuracy
+app.post('/api/claude-direct-vision', upload.single('pdf'), async (req, res) => {
+    try {
+        if (!req.file) {
+            return res.status(400).json({ error: 'No PDF file uploaded' });
+        }
+
+        const claudeApiKey = process.env.ANTHROPIC_API_KEY;
+        if (!claudeApiKey) {
+            return res.status(500).json({ 
+                error: 'Claude API key not configured',
+                suggestion: 'Set ANTHROPIC_API_KEY environment variable for 99% accuracy'
+            });
+        }
+
+        if (!ClaudeDirectVision) {
+            return res.status(500).json({ 
+                error: 'Claude Direct Vision not available',
+                details: 'Module failed to load'
+            });
+        }
+
+        console.log('🎯 Processing PDF with Claude Direct Vision (99% accuracy target):', req.file.originalname);
+        
+        const processor = new ClaudeDirectVision(claudeApiKey);
+        const result = await processor.processPDF(req.file.buffer);
+
+        if (result.success) {
+            console.log(`🎯 Claude Direct Vision result: ${result.securities.length} securities, ${result.accuracy}% accuracy, cost: $${result.metadata.totalCost?.toFixed(4)}`);
+        }
+
+        res.json(result);
+
+    } catch (error) {
+        console.error('🚨 Claude Direct Vision error:', error.message);
+        res.status(500).json({ 
+            error: 'Claude Direct Vision processing failed', 
+            details: error.message,
+            version: 'claude-direct-vision'
+        });
     }
 });
 

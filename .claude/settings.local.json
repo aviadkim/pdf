@@ -134,7 +134,8 @@
       "mcp__deployment__render_status",
       "Bash(git remote get-url:*)",
       "Bash(start /B node:*)",
-      "mcp__puppeteer__form_automation"
+      "mcp__puppeteer__form_automation",
+      "Bash(rg:*)"
     ],
     "deny": []
   }

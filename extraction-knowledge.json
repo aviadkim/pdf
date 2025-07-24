@@ -1,0 +1,11 @@
+{
+  "banks": {
+    "ubs": {
+      "extractions": 1,
+      "averageConfidence": 61,
+      "patterns": {}
+    }
+  },
+  "patterns": {},
+  "successes": 1
+}
