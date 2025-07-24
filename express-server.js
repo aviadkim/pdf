@@ -1,5 +1,5 @@
 // STABLE DEPLOYMENT VERSION - Minimal dependencies to avoid SIGTERM crashes
-// Version: v4.4-stable-deployment
+// Version: v4.5-isin-fix-stable
 const express = require('express');
 const cors = require('cors');
 const pdfParse = require('pdf-parse');
@@ -71,20 +71,23 @@ function extractSecuritiesPrecise(text) {
                     name = beforeIsin.replace(/^\d+\s*/, '').trim();
                 }
                 
-                // Enhanced value extraction with Swiss format support
+                // Enhanced value extraction with Swiss format support - AVOID ISINs!
                 const valueCandidates = [];
                 const valuePatterns = [
-                    /(\d{1,3}(?:'?\d{3})*\.?\d{0,2})\s*(?:CHF|USD|EUR|$)/gi,
-                    /(?:CHF|USD|EUR|\$)\s*(\d{1,3}(?:'?\d{3})*\.?\d{0,2})/gi,
-                    /(\d{1,3}(?:'?\d{3})*\.\d{2})/g
+                    /(\d{1,3}(?:'?\d{3})*\.?\d{0,2})\s*(?:CHF|USD|EUR)/gi,
+                    /(?:CHF|USD|EUR)\s*(\d{1,3}(?:'?\d{3})*\.?\d{0,2})/gi,
+                    /(\d{1,3}(?:'?\d{3})*\.\d{2})\s*$/g  // End of line values only
                 ];
                 
-                for (const pattern of valuePatterns) {
-                    let match;
-                    while ((match = pattern.exec(line)) !== null) {
-                        const candidate = parseSwissNumber(match[1]);
-                        if (candidate > 1000 && candidate < 50000000) { // Reasonable range
-                            valueCandidates.push(candidate);
+                // Skip if line contains ISIN (prevents parsing ISINs as values)
+                if (!/[A-Z]{2}[A-Z0-9]{10}/.test(line)) {
+                    for (const pattern of valuePatterns) {
+                        let match;
+                        while ((match = pattern.exec(line)) !== null) {
+                            const candidate = parseSwissNumber(match[1]);
+                            if (candidate > 1000 && candidate < 15000000) { // Reasonable range
+                                valueCandidates.push(candidate);
+                            }
                         }
                     }
                 }
@@ -166,7 +169,7 @@ app.get('/', (req, res) => {
 app.get('/api/diagnostic', (req, res) => {
     res.json({
         status: 'stable',
-        version: 'v4.4-stable-deployment',
+        version: 'v4.5-isin-fix-stable',
         timestamp: new Date().toISOString(),
         memoryStorage: true,
         sigtermFix: true,
@@ -316,7 +319,7 @@ app.post('/api/hybrid-extract-fixed', upload.single('pdf'), async (req, res) => 
 app.get('/health', (req, res) => {
     res.json({ 
         status: 'healthy', 
-        version: 'v4.4-stable-deployment',
+        version: 'v4.5-isin-fix-stable',
         timestamp: new Date().toISOString(),
         uptime: process.uptime()
     });
@@ -325,7 +328,7 @@ app.get('/health', (req, res) => {
 // Start server
 app.listen(PORT, () => {
     console.log(`✅ Stable PDF Processing Server running on port ${PORT}`);
-    console.log(`🔧 Version: v4.4-stable-deployment`);
+    console.log(`🔧 Version: v4.5-isin-fix-stable`);
     console.log(`💾 Memory storage: Active (no file paths)`);
     console.log(`🎯 Target accuracy: 92.21%`);
     console.log(`🚀 SIGTERM fix: Applied`);
