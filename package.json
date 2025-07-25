@@ -33,7 +33,9 @@
     "setup:playwright": "npm install @playwright/test && npx playwright install",
     "demo": "node quick-demo-test.js",
     "demo:full": "node run-demo.js",
-    "demo:mistral": "node mistral-ocr-demonstration.js"
+    "demo:mistral": "node mistral-ocr-demonstration.js",
+    "interactive": "node interactive-learning-processor.js",
+    "interactive:test": "node test-interactive-learning.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.56.0",
